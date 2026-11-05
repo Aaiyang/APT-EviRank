@@ -1,0 +1,3877 @@
+{
+  "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+  "title": "Lazarus Targets Chemical Sector",
+  "source": null,
+  "published_date": "January 17, 2022",
+  "report_metadata": {
+    "file_name": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022).pdf",
+    "file_path": "/root/APTtext/Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 12823,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_lazarus",
+      "type": "ThreatActor",
+      "name": "lazarus",
+      "normalized_name": "lazarus",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_4",
+        "ev_43"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_4",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Ntuser",
+      "type": "Malware",
+      "name": "Ntuser",
+      "normalized_name": "Ntuser",
+      "aliases": [
+        "ntuser.dat"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_31",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_57",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_ntuser.dat",
+      "family": "Ntuser",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Scskapplink",
+      "type": "Tool",
+      "name": "Scskapplink",
+      "normalized_name": "Scskapplink",
+      "aliases": [
+        "scskapplink.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_49",
+        "ev_50",
+        "ev_51",
+        "ev_17",
+        "ev_8",
+        "ev_9"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51",
+        "ev_11",
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "INISAFE",
+        "DOCTER",
+        "MEDICAL",
+        "OFFICE"
+      ],
+      "derived_from_file_id": "ent_file_scskapplink.dll",
+      "tool_name": "Scskapplink",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_defense_sector",
+      "type": "Victim",
+      "name": "defense sector",
+      "normalized_name": "defense sector",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_engineering_sector",
+      "type": "Victim",
+      "name": "engineering sector",
+      "normalized_name": "engineering sector",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_government",
+      "type": "Victim",
+      "name": "government",
+      "normalized_name": "government",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_tool_scskapplink",
+      "type": "Tool",
+      "name": "scskapplink",
+      "normalized_name": "scskapplink",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_17",
+        "ev_8",
+        "ev_9"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_8",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "scskapplink",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Cryptodome",
+      "type": "ThreatActor",
+      "name": "Cryptodome",
+      "normalized_name": "Cryptodome",
+      "aliases": [
+        "PyCrypto fork"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_ntuser.dat",
+      "type": "Malware",
+      "name": "ntuser.dat",
+      "normalized_name": "ntuser.dat",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_29",
+        "ev_31",
+        "ev_56"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Ntuser"
+    },
+    {
+      "id": "ent_malware_ntuser.dat",
+      "type": "Malware",
+      "name": "ntuser.dat",
+      "normalized_name": "ntuser.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_31",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "ntuser.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_57",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_tool_scskapplink.dll",
+      "type": "Tool",
+      "name": "scskapplink.dll",
+      "normalized_name": "scskapplink.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_11",
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_tool_Scskapplink"
+    },
+    {
+      "id": "ent_tool_scskapplink.dll",
+      "type": "Tool",
+      "name": "scskapplink.dll",
+      "normalized_name": "scskapplink.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_49",
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "scskapplink.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51",
+        "ev_11",
+        "ev_49"
+      ],
+      "needs_review": false,
+      "file_role": "abused_legitimate_file",
+      "historical_aliases": [],
+      "related_families": [],
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "INISAFE",
+        "DOCTER",
+        "MEDICAL",
+        "OFFICE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_tool_SiteShoter",
+      "type": "Tool",
+      "name": "SiteShoter",
+      "normalized_name": "SiteShoter",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_33"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "SiteShoter",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_continuation_of_Operation",
+      "type": "Campaign",
+      "name": "continuation of Operation",
+      "normalized_name": "continuation of Operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_Dream_Job",
+      "type": "Campaign",
+      "name": "Dream Job",
+      "normalized_name": "Dream Job",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_38",
+        "ev_4",
+        "ev_44",
+        "ev_6"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_38",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "historical_context"
+    },
+    {
+      "id": "ent_campaign_Operation_Dream_Job",
+      "type": "Campaign",
+      "name": "Operation Dream Job",
+      "normalized_name": "Operation Dream Job",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_2",
+        "ev_4",
+        "ev_44"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_44",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_happy.nanoace.co.kr",
+      "type": "Domain",
+      "name": "happy.nanoace.co.kr",
+      "normalized_name": "happy.nanoace.co.kr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "happy.nanoace.co.kr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mariamchurch.com",
+      "type": "Domain",
+      "name": "mariamchurch.com",
+      "normalized_name": "mariamchurch.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "mariamchurch.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_symantec-enterprise-blogs.security.com",
+      "type": "Domain",
+      "name": "symantec-enterprise-blogs.security.com",
+      "normalized_name": "symantec-enterprise-blogs.security.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "symantec-enterprise-blogs.security.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.aumentarelevisite.com",
+      "type": "Domain",
+      "name": "www.aumentarelevisite.com",
+      "normalized_name": "www.aumentarelevisite.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103",
+        "ev_104",
+        "ev_105"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "www.aumentarelevisite.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_103",
+        "ev_105"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.juneprint.com",
+      "type": "Domain",
+      "name": "www.juneprint.com",
+      "normalized_name": "www.juneprint.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "www.juneprint.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.jungfrau.co.kr",
+      "type": "Domain",
+      "name": "www.jungfrau.co.kr",
+      "normalized_name": "www.jungfrau.co.kr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106",
+        "ev_107"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "www.jungfrau.co.kr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [
+        "ev_107"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.ric-camid.re.kr",
+      "type": "Domain",
+      "name": "www.ric-camid.re.kr",
+      "normalized_name": "www.ric-camid.re.kr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "www.ric-camid.re.kr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_52.79.118.195",
+      "type": "IPv4",
+      "name": "52.79.118.195",
+      "normalized_name": "52.79.118.195",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_100",
+        "ev_46"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "52.79.118.195",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_61.81.50.174",
+      "type": "IPv4",
+      "name": "61.81.50.174",
+      "normalized_name": "61.81.50.174",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101",
+        "ev_46"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "61.81.50.174",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_happy.nanoace.co.kr_Content_rating_themes_krajee-fas_FrmAMEISMngWeb.asp",
+      "type": "URL",
+      "name": "http://happy.nanoace.co.kr/Content/rating/themes/krajee-fas/FrmAMEISMngWeb.asp",
+      "normalized_name": "http://happy.nanoace.co.kr/Content/rating/themes/krajee-fas/FrmAMEISMngWeb.asp",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "http://happy.nanoace.co.kr/Content/rating/themes/krajee-fas/FrmAMEISMngWeb.asp",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_mariamchurch.com_board_news_index.asp",
+      "type": "URL",
+      "name": "https://mariamchurch.com/board/news/index.asp",
+      "normalized_name": "https://mariamchurch.com/board/news/index.asp",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105",
+        "ev_47"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "https://mariamchurch.com/board/news/index.asp",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.aumentarelevisite.com_img_context_offline.php",
+      "type": "URL",
+      "name": "https://www.aumentarelevisite.com/img/context/offline.php",
+      "normalized_name": "https://www.aumentarelevisite.com/img/context/offline.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "https://www.aumentarelevisite.com/img/context/offline.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_105"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_164f6a8f7d2035ea47514ea84294348e32c90d817724b80ad9cd3af6f93d83f8",
+      "type": "SHA256",
+      "name": "164f6a8f7d2035ea47514ea84294348e32c90d817724b80ad9cd3af6f93d83f8",
+      "normalized_name": "164f6a8f7d2035ea47514ea84294348e32c90d817724b80ad9cd3af6f93d83f8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "164f6a8f7d2035ea47514ea84294348e32c90d817724b80ad9cd3af6f93d83f8",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_18686d04f22d3b593dd78078c9db0ac70f66c7138789ad38469ec13162b14cef",
+      "type": "SHA256",
+      "name": "18686d04f22d3b593dd78078c9db0ac70f66c7138789ad38469ec13162b14cef",
+      "normalized_name": "18686d04f22d3b593dd78078c9db0ac70f66c7138789ad38469ec13162b14cef",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "18686d04f22d3b593dd78078c9db0ac70f66c7138789ad38469ec13162b14cef",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1cb8ea3e959dee988272904dbb134dad93539f2c07f08e1d6e10e75a019b9976",
+      "type": "SHA256",
+      "name": "1cb8ea3e959dee988272904dbb134dad93539f2c07f08e1d6e10e75a019b9976",
+      "normalized_name": "1cb8ea3e959dee988272904dbb134dad93539f2c07f08e1d6e10e75a019b9976",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "1cb8ea3e959dee988272904dbb134dad93539f2c07f08e1d6e10e75a019b9976",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2dd29b36664b28803819054a59934f7a358a762068b18c744281e1589af00f1f",
+      "type": "SHA256",
+      "name": "2dd29b36664b28803819054a59934f7a358a762068b18c744281e1589af00f1f",
+      "normalized_name": "2dd29b36664b28803819054a59934f7a358a762068b18c744281e1589af00f1f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "2dd29b36664b28803819054a59934f7a358a762068b18c744281e1589af00f1f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_32bfdf1744077c9365a811d66a6ea152831a60a4f94e671a83228016fc87615f",
+      "type": "SHA256",
+      "name": "32bfdf1744077c9365a811d66a6ea152831a60a4f94e671a83228016fc87615f",
+      "normalized_name": "32bfdf1744077c9365a811d66a6ea152831a60a4f94e671a83228016fc87615f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "32bfdf1744077c9365a811d66a6ea152831a60a4f94e671a83228016fc87615f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_35de8163c433e8d9bf6a0097a506e3abbb8308330d3c5d1dea6db71e1d225fc3",
+      "type": "SHA256",
+      "name": "35de8163c433e8d9bf6a0097a506e3abbb8308330d3c5d1dea6db71e1d225fc3",
+      "normalized_name": "35de8163c433e8d9bf6a0097a506e3abbb8308330d3c5d1dea6db71e1d225fc3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "35de8163c433e8d9bf6a0097a506e3abbb8308330d3c5d1dea6db71e1d225fc3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4277fcaada4939b76a3df4515b7f74837bf8c4b75d4ff00f8d464169eede01e3",
+      "type": "SHA256",
+      "name": "4277fcaada4939b76a3df4515b7f74837bf8c4b75d4ff00f8d464169eede01e3",
+      "normalized_name": "4277fcaada4939b76a3df4515b7f74837bf8c4b75d4ff00f8d464169eede01e3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "4277fcaada4939b76a3df4515b7f74837bf8c4b75d4ff00f8d464169eede01e3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4446efafb4b757f7fc20485198236bed787c67ceffc05f70cd798612424384ce",
+      "type": "SHA256",
+      "name": "4446efafb4b757f7fc20485198236bed787c67ceffc05f70cd798612424384ce",
+      "normalized_name": "4446efafb4b757f7fc20485198236bed787c67ceffc05f70cd798612424384ce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "4446efafb4b757f7fc20485198236bed787c67ceffc05f70cd798612424384ce",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291",
+      "type": "SHA256",
+      "name": "48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291",
+      "normalized_name": "48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_75"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4a2236596e92fa704d8550c56598855121430f96fe088712b043cba516f1c76c",
+      "type": "SHA256",
+      "name": "4a2236596e92fa704d8550c56598855121430f96fe088712b043cba516f1c76c",
+      "normalized_name": "4a2236596e92fa704d8550c56598855121430f96fe088712b043cba516f1c76c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "4a2236596e92fa704d8550c56598855121430f96fe088712b043cba516f1c76c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_54029bd4fcc24551564942561a60b906bee136264f24f43775b7a8e15095a9e0",
+      "type": "SHA256",
+      "name": "54029bd4fcc24551564942561a60b906bee136264f24f43775b7a8e15095a9e0",
+      "normalized_name": "54029bd4fcc24551564942561a60b906bee136264f24f43775b7a8e15095a9e0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "54029bd4fcc24551564942561a60b906bee136264f24f43775b7a8e15095a9e0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_56da872e8b0f145417defd4a37f357b2f73f244836ee30ac27af7591cda2d283",
+      "type": "SHA256",
+      "name": "56da872e8b0f145417defd4a37f357b2f73f244836ee30ac27af7591cda2d283",
+      "normalized_name": "56da872e8b0f145417defd4a37f357b2f73f244836ee30ac27af7591cda2d283",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "56da872e8b0f145417defd4a37f357b2f73f244836ee30ac27af7591cda2d283",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5e7edc8f1c652f53a6d2eabfbd9252781598de91dbe59b7a74706f69eb52b287",
+      "type": "SHA256",
+      "name": "5e7edc8f1c652f53a6d2eabfbd9252781598de91dbe59b7a74706f69eb52b287",
+      "normalized_name": "5e7edc8f1c652f53a6d2eabfbd9252781598de91dbe59b7a74706f69eb52b287",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "5e7edc8f1c652f53a6d2eabfbd9252781598de91dbe59b7a74706f69eb52b287",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db",
+      "type": "SHA256",
+      "name": "5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db",
+      "normalized_name": "5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_81"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4",
+      "type": "SHA256",
+      "name": "61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4",
+      "normalized_name": "61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54",
+        "ev_82"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_82"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_67f1db122ad8f01e5faa60e2facf16c0752f6ab24b922f218efce19b0afaf607",
+      "type": "SHA256",
+      "name": "67f1db122ad8f01e5faa60e2facf16c0752f6ab24b922f218efce19b0afaf607",
+      "normalized_name": "67f1db122ad8f01e5faa60e2facf16c0752f6ab24b922f218efce19b0afaf607",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "67f1db122ad8f01e5faa60e2facf16c0752f6ab24b922f218efce19b0afaf607",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7491f298e27eb7ce7ebbf8821527667a88eecd5f3bc5b38cd5611f7ebefde21e",
+      "type": "SHA256",
+      "name": "7491f298e27eb7ce7ebbf8821527667a88eecd5f3bc5b38cd5611f7ebefde21e",
+      "normalized_name": "7491f298e27eb7ce7ebbf8821527667a88eecd5f3bc5b38cd5611f7ebefde21e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "7491f298e27eb7ce7ebbf8821527667a88eecd5f3bc5b38cd5611f7ebefde21e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_79b7964bde948b70a7c3869d34fe5d5205e6259d77d9ac7451727d68a751aa7d",
+      "type": "SHA256",
+      "name": "79b7964bde948b70a7c3869d34fe5d5205e6259d77d9ac7451727d68a751aa7d",
+      "normalized_name": "79b7964bde948b70a7c3869d34fe5d5205e6259d77d9ac7451727d68a751aa7d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_85"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "79b7964bde948b70a7c3869d34fe5d5205e6259d77d9ac7451727d68a751aa7d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7aa62af5a55022fd89b3f0c025ea508128a03aab5bc7f92787b30a3e9bc5c6e4",
+      "type": "SHA256",
+      "name": "7aa62af5a55022fd89b3f0c025ea508128a03aab5bc7f92787b30a3e9bc5c6e4",
+      "normalized_name": "7aa62af5a55022fd89b3f0c025ea508128a03aab5bc7f92787b30a3e9bc5c6e4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "7aa62af5a55022fd89b3f0c025ea508128a03aab5bc7f92787b30a3e9bc5c6e4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8769912b9769b4c11aabc523a699d029917851822d4bc1cb6cc65b0c27d2b135",
+      "type": "SHA256",
+      "name": "8769912b9769b4c11aabc523a699d029917851822d4bc1cb6cc65b0c27d2b135",
+      "normalized_name": "8769912b9769b4c11aabc523a699d029917851822d4bc1cb6cc65b0c27d2b135",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "8769912b9769b4c11aabc523a699d029917851822d4bc1cb6cc65b0c27d2b135",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8aace6989484b88abc7e3ec6f70b60d4554bf8ee0f1ccad15db84ad04c953c2d",
+      "type": "SHA256",
+      "name": "8aace6989484b88abc7e3ec6f70b60d4554bf8ee0f1ccad15db84ad04c953c2d",
+      "normalized_name": "8aace6989484b88abc7e3ec6f70b60d4554bf8ee0f1ccad15db84ad04c953c2d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "8aace6989484b88abc7e3ec6f70b60d4554bf8ee0f1ccad15db84ad04c953c2d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_942489ce7dce87f7888322a0e56b5e3c3b0130e11f57b3879fbefc48351a78f6",
+      "type": "SHA256",
+      "name": "942489ce7dce87f7888322a0e56b5e3c3b0130e11f57b3879fbefc48351a78f6",
+      "normalized_name": "942489ce7dce87f7888322a0e56b5e3c3b0130e11f57b3879fbefc48351a78f6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "942489ce7dce87f7888322a0e56b5e3c3b0130e11f57b3879fbefc48351a78f6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a881c9f40c1a5be3919cafb2ebe2bb5b19e29f0f7b28186ee1f4b554d692e776",
+      "type": "SHA256",
+      "name": "a881c9f40c1a5be3919cafb2ebe2bb5b19e29f0f7b28186ee1f4b554d692e776",
+      "normalized_name": "a881c9f40c1a5be3919cafb2ebe2bb5b19e29f0f7b28186ee1f4b554d692e776",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_90"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "a881c9f40c1a5be3919cafb2ebe2bb5b19e29f0f7b28186ee1f4b554d692e776",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bdb76c8d0afcd6b57c8f1fa644765b95375af2c3a844c286db7f60cf9ca1a22a",
+      "type": "SHA256",
+      "name": "bdb76c8d0afcd6b57c8f1fa644765b95375af2c3a844c286db7f60cf9ca1a22a",
+      "normalized_name": "bdb76c8d0afcd6b57c8f1fa644765b95375af2c3a844c286db7f60cf9ca1a22a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "bdb76c8d0afcd6b57c8f1fa644765b95375af2c3a844c286db7f60cf9ca1a22a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d815fb8febaf113f3cec82f552dfec1f205071a0492f7e6a2657fa6b069648c6",
+      "type": "SHA256",
+      "name": "d815fb8febaf113f3cec82f552dfec1f205071a0492f7e6a2657fa6b069648c6",
+      "normalized_name": "d815fb8febaf113f3cec82f552dfec1f205071a0492f7e6a2657fa6b069648c6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "d815fb8febaf113f3cec82f552dfec1f205071a0492f7e6a2657fa6b069648c6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e1997d1c3d84c29e02b1b7b726a0d0f889a044d7cd339f4fb88194c2c0c6606d",
+      "type": "SHA256",
+      "name": "e1997d1c3d84c29e02b1b7b726a0d0f889a044d7cd339f4fb88194c2c0c6606d",
+      "normalized_name": "e1997d1c3d84c29e02b1b7b726a0d0f889a044d7cd339f4fb88194c2c0c6606d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "e1997d1c3d84c29e02b1b7b726a0d0f889a044d7cd339f4fb88194c2c0c6606d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba",
+      "type": "SHA256",
+      "name": "e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba",
+      "normalized_name": "e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_94"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_94"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ef987baef9a1619454b14e1fec64283808d4e0ce16fb87d06049bfcf9cf56af3",
+      "type": "SHA256",
+      "name": "ef987baef9a1619454b14e1fec64283808d4e0ce16fb87d06049bfcf9cf56af3",
+      "normalized_name": "ef987baef9a1619454b14e1fec64283808d4e0ce16fb87d06049bfcf9cf56af3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "ef987baef9a1619454b14e1fec64283808d4e0ce16fb87d06049bfcf9cf56af3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f29d386bdf77142cf2436797fba1f8b05fab5597218c2b77f57e46b8400eb9de",
+      "type": "SHA256",
+      "name": "f29d386bdf77142cf2436797fba1f8b05fab5597218c2b77f57e46b8400eb9de",
+      "normalized_name": "f29d386bdf77142cf2436797fba1f8b05fab5597218c2b77f57e46b8400eb9de",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "f29d386bdf77142cf2436797fba1f8b05fab5597218c2b77f57e46b8400eb9de",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f7359490d6c141ef7a9ee2c03dbbd6ce3069e926d83439e1f8a3dfb3a7c3dc94",
+      "type": "SHA256",
+      "name": "f7359490d6c141ef7a9ee2c03dbbd6ce3069e926d83439e1f8a3dfb3a7c3dc94",
+      "normalized_name": "f7359490d6c141ef7a9ee2c03dbbd6ce3069e926d83439e1f8a3dfb3a7c3dc94",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "f7359490d6c141ef7a9ee2c03dbbd6ce3069e926d83439e1f8a3dfb3a7c3dc94",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f8995634b102179a5d3356c6f353cb3a42283d9822e157502486262a3af4447e",
+      "type": "SHA256",
+      "name": "f8995634b102179a5d3356c6f353cb3a42283d9822e157502486262a3af4447e",
+      "normalized_name": "f8995634b102179a5d3356c6f353cb3a42283d9822e157502486262a3af4447e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "f8995634b102179a5d3356c6f353cb3a42283d9822e157502486262a3af4447e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ff167e09b3b7ad6ed1dead9ee5b4747dd308699a00905e86162d1ec1b61e0476",
+      "type": "SHA256",
+      "name": "ff167e09b3b7ad6ed1dead9ee5b4747dd308699a00905e86162d1ec1b61e0476",
+      "normalized_name": "ff167e09b3b7ad6ed1dead9ee5b4747dd308699a00905e86162d1ec1b61e0476",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "value": "ff167e09b3b7ad6ed1dead9ee5b4747dd308699a00905e86162d1ec1b61e0476",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_addins.bat",
+      "type": "File",
+      "name": "addins.bat",
+      "normalized_name": "addins.bat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_63",
+        "ev_66"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "addins.bat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_66",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_arm.dat",
+      "type": "File",
+      "name": "arm.dat",
+      "normalized_name": "arm.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_59",
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "arm.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_33",
+        "ev_59",
+        "ev_60"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "CSIDL_SYSTEM",
+        "CSIDL_COMMON_APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_55",
+        "ev_58",
+        "ev_63",
+        "ev_64"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_58",
+        "ev_63",
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "REDACTED",
+        "MINUTE",
+        "CSIDL_SYSTEM",
+        "CSIDL_COMMON_APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Intel.bat",
+      "type": "File",
+      "name": "Intel.bat",
+      "normalized_name": "Intel.bat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_55"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "Intel.bat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "REDACTED",
+        "MINUTE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_officecert.ocx",
+      "type": "File",
+      "name": "officecert.ocx",
+      "normalized_name": "officecert.ocx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "officecert.ocx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_60",
+        "ev_62",
+        "ev_64"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_60",
+        "ev_62",
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "CSIDL_PROFILE",
+        "CSIDL_SYSTEM",
+        "CSIDL_COMMON_APPDATA",
+        "EO6-CRY-LS2-TRK3"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Chemical_Sector",
+      "type": "Victim",
+      "name": "Chemical Sector",
+      "normalized_name": "Chemical Sector",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1",
+        "ev_43"
+      ],
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_Thumbs.ini",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "File",
+      "name": "Thumbs.ini",
+      "normalized_name": "Thumbs.ini",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "Thumbs.ini",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_arm.bat",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "File",
+      "name": "arm.bat",
+      "normalized_name": "arm.bat",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_32"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "arm.bat",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ntuser.dat",
+      "tail_id": "ent_malware_Ntuser",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29",
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "alias_of",
+      "head_id": "ent_tool_scskapplink.dll",
+      "tail_id": "ent_tool_Scskapplink",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_11",
+        "ev_49",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; llm_sentence",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "scskapplink.dll"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "executes",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_addins.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_63",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "executes",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_40",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "executes",
+      "head_id": "ent_malware_Ntuser",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "executes",
+      "head_id": "ent_tool_Scskapplink",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_17",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_Intel.bat",
+      "tail_id": "ent_malware_Ntuser",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_23",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_addins.bat",
+      "tail_id": "ent_malware_Ntuser",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_37",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_addins.bat",
+      "tail_id": "ent_tool_Scskapplink",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_49",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "script_loads_payload",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_arm.dat",
+      "tail_id": "ent_malware_Ntuser",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "primary_evidence_id": "ev_59",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_addins.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_63",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_arm.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_malware_Ntuser",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_66",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_40",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_malware_Ntuser",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_40",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_tool_Scskapplink",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "cmd.exe executes addins.bat",
+      "evidence_ids": [
+        "ev_63",
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "rundll32.exe executes cmd.exe",
+      "evidence_ids": [
+        "ev_40",
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "Ntuser executes cmd.exe",
+      "evidence_ids": [
+        "ev_58"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "Scskapplink executes rundll32.exe",
+      "evidence_ids": [
+        "ev_17",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "Intel.bat loads Ntuser",
+      "evidence_ids": [
+        "ev_23"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "addins.bat loads Ntuser",
+      "evidence_ids": [
+        "ev_37"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "addins.bat loads Scskapplink",
+      "evidence_ids": [
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "arm.dat loads Ntuser",
+      "evidence_ids": [
+        "ev_59"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "cmd.exe loads addins.bat",
+      "evidence_ids": [
+        "ev_63",
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "cmd.exe loads arm.bat",
+      "evidence_ids": [
+        "ev_58"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "cmd.exe loads Ntuser",
+      "evidence_ids": [
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "rundll32.exe loads cmd.exe",
+      "evidence_ids": [
+        "ev_40",
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "loads",
+      "summary": "rundll32.exe loads Ntuser",
+      "evidence_ids": [
+        "ev_40",
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "loads",
+      "summary": "rundll32.exe loads Scskapplink",
+      "evidence_ids": [
+        "ev_17"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "symantec-enterprise-blogs.security.com /blogs/threat-intelligence/lazarus-dream-job-chemical Symantec, a division of Broadcom Software, has observed the North Korea-linked advanced persistent threat (APT) group known as Lazarus conducting an espionage campaign targeting organizations operating within the chemical sector.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The campaign appears to be a continuation of Lazarus activity dubbed Operation Dream Job, which was first observed in August 2020.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Operation Dream Job Operation Dream Job involves Lazarus using fake job offers as a means of luring victims into clicking on malicious links or opening malicious attachments that eventually lead to the installation of malware used for espionage.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "Past Dream Job campaigns have targeted individuals in the defense, government, and engineering sectors in activity observed in August 2020 and July 2021.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "That evidence includes file hashes, file names, and tools that were observed in previous Dream Job campaigns.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "The HTM file is copied to a DLL file called scskapplink.dll and injected into the legitimate system management software INISAFE Web EX Client.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "The scskapplink.dll file is typically a signed Trojanized tool with malicious exports added.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "Next, scskapplink.dll downloads and executes an additional payload from a command-and- control (C&C) server with the URL parameter key/values \"prd_fld=racket\".",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "The attackers were also observed deploying post-compromise tools, including a tool used to take screenshots of web pages viewed on the compromised machine at set intervals (SiteShoter).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The HTM file is copied to a DLL file: rundll32.exe CSIDL_PROFILE\\public\\scskapplink.dll,netsetcookie Cnusrmgr This DLL file is injected into the legitimate system management software INISAFE Web EX Client.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "The scheduled task instructs the system to execute 'Intel.bat' as user ‘[REDACTED].help/175287’ starting at 15:42 then every minute under the scheduled task name ‘arm’.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "The attackers were also observed installing Cryptodome (PyCrypto fork) Python encryption modules via CPL files.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "CSIDL_COMMON_APPDATA\\finaldata\\wpm.cpl Thumbs.ini 4 30 This file contains, and connects to, a list of IP addresses and records whether the connections were successful.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "23:49 – The file name of the CPL file changes to 'ntuser.dat'.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "January 19 00:24 – The CPL shellcode loader files (final.cpl and ntuser.dat) are executed multiple times.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "The command is used to schedule a task named 'arm' to run the file 'arm.bat' starting at at 09:28 then every minute after that under the user account '[REDACTED]\\i21076'.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s9"
+      },
+      "text": "The arm.dat file is a tool used to take screenshots of web pages viewed on the compromised machine every 10 seconds (SiteShoter), as determined by the command line arguments.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "07:34 – A new CPL file named addins.cpl (5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db) is executed multiple times, which again is another shellcode loader and has the same command line arguments as seen with final.cpl:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "The task is used to auto-start and execute addins.bat each time the system is booted.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "The task uses the service name 'uso' (a file name previously used in older Dream Job campaigns targeting security researchers).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "CSIDL_SYSTEM\\rundll32.exe CSIDL_COMMON_APPDATA\\addins.cpl, AppMgmt EO6-CRY-LS2-TRK3 sc start uso (via cmd.exe) sc delete uso",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "The Lazarus group is likely targeting organizations in the chemical sector to obtain intellectual property to further North Korea’s own pursuits in this area.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "The group’s continuation of Operation Dream Job, as witnessed by Symantec and others, suggests that the operation is sufficiently successful.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Network 52.79.118.195 61.81.50.174 happy.nanoace[.]co.kr",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "mariamchurch.com File names addins.cpl dolby.cpl ezhelp.cpl final.cpl officecert.ocx wpm.cpl Services arm uso About the Author",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "A typical attack begins when a malicious HTM file is received, likely as a malicious link in an email or downloaded from the web. The HTM file is copied to a DLL file called scskapplink.dll and injected into the legitimate system management software INISAFE Web EX Client.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "The scskapplink.dll file is typically a signed Trojanized tool with malicious exports added. The attackers have been observed using the following signatures: DOCTER USA, INC and \"A\" MEDICAL OFFICE, PLLC",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "Next, scskapplink.dll downloads and executes an additional payload from a command-and- control (C&C) server with the URL parameter key/values \"prd_fld=racket\".",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba - csidl_profile\\appdata\\local\\microsoft\\windows\\inetcache\\ie\\3tygrjkm\\join_06[1].htm",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "rundll32.exe CSIDL_PROFILE\\public\\scskapplink.dll,netsetcookie Cnusrmgr",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "01:04 – Another CPL file (61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4) is executed. This file, again, is a Trojanized version of LZMA Utils with a malicious added export.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "schtasks /create /RU [REDACTED].help\\175287 /ST 15:42 /TR \"cmd.exe /c C:\\ProgramData\\Intel\\Intel.bat\" /tn arm /sc MINUTE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "23:49 – The file name of the CPL file changes to 'ntuser.dat'. The file location and command-line arguments remain the same.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "00:24 – The CPL shellcode loader files (final.cpl and ntuser.dat) are executed multiple times.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "schtasks /create /RU [REDACTED]\\i21076 /ST 09:28 /TR \"cmd.exe /c C:\\ProgramData\\Adobe\\arm.bat\" /tn arm /sc MINUTE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "00:29 – A file named arm.dat (48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291) is executed with the following command line arguments:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r5"
+      },
+      "text": "CSIDL_SYSTEM\\rundll32.exe CSIDL_COMMON_APPDATA\\adobe\\arm.dat,packageautoupdater LimitedSpatialExtent_U_f48182 -d 1440 -i 10 -q 8 -s 5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r6"
+      },
+      "text": "The arm.dat file is a tool used to take screenshots of web pages viewed on the compromised machine every 10 seconds (SiteShoter), as determined by the command line arguments. The screenshots are saved in appdata\\local with the date at the top of the file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "CSIDL_SYSTEM\\rundll32.exe CSIDL_COMMON_APPDATA\\addins.cpl, AppMgmt EO6-CRY-LS2-TRK3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "sc create uso start= auto binPath= “cmd.exe /c start /b C:\\Programdata\\addins.bat” DisplayName= uso",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "CSIDL_SYSTEM\\rundll32.exe CSIDL_COMMON_APPDATA\\addins.cpl, AppMgmt EO6-CRY-LS2-TRK3 sc start uso (via cmd.exe) sc delete uso",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "sc create uso start= auto binPath= \"cmd.exe /c start /b C:\\Windows\\addins\\addins.bat\" DisplayName= uso sc start uso sc delete uso",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "164f6a8f7d2035ea47514ea84294348e32c90d817724b80ad9cd3af6f93d83f8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "18686d04f22d3b593dd78078c9db0ac70f66c7138789ad38469ec13162b14cef",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "1cb8ea3e959dee988272904dbb134dad93539f2c07f08e1d6e10e75a019b9976",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "2dd29b36664b28803819054a59934f7a358a762068b18c744281e1589af00f1f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "32bfdf1744077c9365a811d66a6ea152831a60a4f94e671a83228016fc87615f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "35de8163c433e8d9bf6a0097a506e3abbb8308330d3c5d1dea6db71e1d225fc3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "4277fcaada4939b76a3df4515b7f74837bf8c4b75d4ff00f8d464169eede01e3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "4446efafb4b757f7fc20485198236bed787c67ceffc05f70cd798612424384ce",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r9"
+      },
+      "text": "48f3ead8477f3ef16da6b74dadc89661a231c82b96f3574c6b7ceb9c03468291",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r10"
+      },
+      "text": "4a2236596e92fa704d8550c56598855121430f96fe088712b043cba516f1c76c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r11"
+      },
+      "text": "54029bd4fcc24551564942561a60b906bee136264f24f43775b7a8e15095a9e0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r12"
+      },
+      "text": "56da872e8b0f145417defd4a37f357b2f73f244836ee30ac27af7591cda2d283",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r13"
+      },
+      "text": "5e7edc8f1c652f53a6d2eabfbd9252781598de91dbe59b7a74706f69eb52b287",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "5f20cc6a6a82b940670a0f89eda5d68f091073091394c362bfcaf52145b058db",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "61e305d6325b1ffb6de329f1eb5b3a6bcafa26c856861a8200d717df0dec48c4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "67f1db122ad8f01e5faa60e2facf16c0752f6ab24b922f218efce19b0afaf607",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "7491f298e27eb7ce7ebbf8821527667a88eecd5f3bc5b38cd5611f7ebefde21e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "79b7964bde948b70a7c3869d34fe5d5205e6259d77d9ac7451727d68a751aa7d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "7aa62af5a55022fd89b3f0c025ea508128a03aab5bc7f92787b30a3e9bc5c6e4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r7"
+      },
+      "text": "8769912b9769b4c11aabc523a699d029917851822d4bc1cb6cc65b0c27d2b135",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r8"
+      },
+      "text": "8aace6989484b88abc7e3ec6f70b60d4554bf8ee0f1ccad15db84ad04c953c2d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r9"
+      },
+      "text": "942489ce7dce87f7888322a0e56b5e3c3b0130e11f57b3879fbefc48351a78f6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r10"
+      },
+      "text": "a881c9f40c1a5be3919cafb2ebe2bb5b19e29f0f7b28186ee1f4b554d692e776",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r11"
+      },
+      "text": "bdb76c8d0afcd6b57c8f1fa644765b95375af2c3a844c286db7f60cf9ca1a22a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r12"
+      },
+      "text": "d815fb8febaf113f3cec82f552dfec1f205071a0492f7e6a2657fa6b069648c6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r13"
+      },
+      "text": "e1997d1c3d84c29e02b1b7b726a0d0f889a044d7cd339f4fb88194c2c0c6606d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r14"
+      },
+      "text": "e31af5131a095fbc884c56068e19b0c98636d95f93c257a0c829ec3f3cc8e4ba",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r15"
+      },
+      "text": "ef987baef9a1619454b14e1fec64283808d4e0ce16fb87d06049bfcf9cf56af3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r16"
+      },
+      "text": "f29d386bdf77142cf2436797fba1f8b05fab5597218c2b77f57e46b8400eb9de",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r17"
+      },
+      "text": "f7359490d6c141ef7a9ee2c03dbbd6ce3069e926d83439e1f8a3dfb3a7c3dc94",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r18"
+      },
+      "text": "f8995634b102179a5d3356c6f353cb3a42283d9822e157502486262a3af4447e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r19"
+      },
+      "text": "ff167e09b3b7ad6ed1dead9ee5b4747dd308699a00905e86162d1ec1b61e0476",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r20"
+      },
+      "text": "52.79.118.195",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r21"
+      },
+      "text": "61.81.50.174",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb103"
+      },
+      "text": "hxxps://www.aumentarelevisite[.]com/img/context/offline.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb104"
+      },
+      "text": "www.aumentarelevisite[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb105"
+      },
+      "text": "8/8 hxxps://mariamchurch[.]com/board/news/index.asp hxxps://www.aumentarelevisite[.]com/img/context/offline.php mariamchurch.com www.aumentarelevisite[.]com www.juneprint[.]com www",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb106"
+      },
+      "text": "www.jungfrau[.]co.kr",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Lazarus-Targets-Chemical-Sector(04-14-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb107"
+      },
+      "text": "ariamchurch.com www.aumentarelevisite[.]com www.juneprint[.]com www.jungfrau[.]co.kr www.ric-camid[.]re.kr File names addins.cpl dolby.cpl ezhelp.cpl final.cpl officecert.ocx wpm.c",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_11",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_29",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ntuser",
+        "ent_malware_ntuser.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ntuser",
+        "ent_malware_ntuser.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ntuser",
+        "ent_malware_ntuser.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ntuser",
+        "ent_malware_ntuser.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_lazarus",
+        "ent_domain_symantec-enterprise-blogs.security.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Scskapplink",
+        "ent_tool_scskapplink.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_40",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_mariamchurch.com",
+        "ent_file_officecert.ocx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_Intel.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_arm.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_60",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_arm.dat",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_63",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_addins.bat",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_66",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_addins.bat",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

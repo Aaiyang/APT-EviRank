@@ -1,0 +1,1601 @@
+{
+  "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+  "title": "Dissecting the APT28 Mac OS X Payload",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017).pdf",
+    "file_path": "/root/APTtext/Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 21396,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT28",
+      "type": "ThreatActor",
+      "name": "APT28",
+      "normalized_name": "APT28",
+      "aliases": [
+        "Sofacy"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_13",
+        "ev_19",
+        "ev_20",
+        "ev_43"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_19",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Azzy",
+      "type": "Malware",
+      "name": "Azzy",
+      "normalized_name": "Azzy",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "family": "Azzy",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Fysbis",
+      "type": "Malware",
+      "name": "Fysbis",
+      "normalized_name": "Fysbis",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "family": "Fysbis",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Jhuhugit",
+      "type": "Malware",
+      "name": "Jhuhugit",
+      "normalized_name": "Jhuhugit",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "family": "Jhuhugit",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Komplex",
+      "type": "Malware",
+      "name": "Komplex",
+      "normalized_name": "Komplex",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13",
+        "ev_14",
+        "ev_18",
+        "ev_19"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "family": "Komplex",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_19",
+        "ev_14",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_XAgent",
+      "type": "Malware",
+      "name": "XAgent",
+      "normalized_name": "XAgent",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_2",
+        "ev_20",
+        "ev_8"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "family": "XAgent",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_8",
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_iclods.org",
+      "type": "Domain",
+      "name": "iclods.org",
+      "normalized_name": "iclods.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22",
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "iclods.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Sofacy",
+      "type": "ThreatActor",
+      "name": "Sofacy",
+      "normalized_name": "Sofacy",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_13",
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT28"
+    },
+    {
+      "id": "ent_malware_msgPacket",
+      "type": "Malware",
+      "name": "msgPacket",
+      "normalized_name": "msgPacket",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "family": "msgPacket",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_tool_Coreshell",
+      "type": "Tool",
+      "name": "Coreshell",
+      "normalized_name": "Coreshell",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "tool_name": "Coreshell",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_-2025.app",
+      "type": "Domain",
+      "name": "-2025.app",
+      "normalized_name": "-2025.app",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "-2025.app",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_apple-checker.org",
+      "type": "Domain",
+      "name": "apple-checker.org",
+      "normalized_name": "apple-checker.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "apple-checker.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_apple-iclods.net",
+      "type": "Domain",
+      "name": "apple-iclods.net",
+      "normalized_name": "apple-iclods.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "apple-iclods.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_apple-iclods.org",
+      "type": "Domain",
+      "name": "apple-iclods.org",
+      "normalized_name": "apple-iclods.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "apple-iclods.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_apple-search.info",
+      "type": "Domain",
+      "name": "apple-search.info",
+      "normalized_name": "apple-search.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "apple-search.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_apple-uptoday.org",
+      "type": "Domain",
+      "name": "apple-uptoday.org",
+      "normalized_name": "apple-uptoday.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "apple-uptoday.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_enterprise.bitdefender.com",
+      "type": "Domain",
+      "name": "enterprise.bitdefender.com",
+      "normalized_name": "enterprise.bitdefender.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "enterprise.bitdefender.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_preview.app",
+      "type": "Domain",
+      "name": "preview.app",
+      "normalized_name": "preview.app",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "preview.app",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_start.sh",
+      "type": "Domain",
+      "name": "start.sh",
+      "normalized_name": "start.sh",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65",
+        "ev_66"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "start.sh",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.bitdefender.com",
+      "type": "Domain",
+      "name": "www.bitdefender.com",
+      "normalized_name": "www.bitdefender.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "www.bitdefender.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_23.227.196.215",
+      "type": "IPv4",
+      "name": "23.227.196.215",
+      "normalized_name": "23.227.196.215",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_54"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "23.227.196.215",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_23.227.196.215",
+      "type": "URL",
+      "name": "http://23.227.196.215",
+      "normalized_name": "http://23.227.196.215",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_54"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://23.227.196.215",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_23.227.196.215_watch_itwm_7FJcXOPyN_Znh7quXfh4WAaKquNzY",
+      "type": "URL",
+      "name": "http://23.227.196.215/watch/?itwm=7FJcXOPyN_Znh7quXfh4WAaKquNzY",
+      "normalized_name": "http://23.227.196.215/watch/?itwm=7FJcXOPyN_Znh7quXfh4WAaKquNzY",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_54"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://23.227.196.215/watch/?itwm=7FJcXOPyN_Znh7quXfh4WAaKquNzY",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_apple-checker.org",
+      "type": "URL",
+      "name": "http://apple-checker.org",
+      "normalized_name": "http://apple-checker.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://apple-checker.org",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_apple-iclods.org",
+      "type": "URL",
+      "name": "http://apple-iclods.org",
+      "normalized_name": "http://apple-iclods.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://apple-iclods.org",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_apple-iclods.org_close_itwm",
+      "type": "URL",
+      "name": "http://apple-iclods.org/close/?itwm",
+      "normalized_name": "http://apple-iclods.org/close/?itwm",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://apple-iclods.org/close/?itwm",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_apple-search.info",
+      "type": "URL",
+      "name": "http://apple-search.info",
+      "normalized_name": "http://apple-search.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://apple-search.info",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_apple-uptoday.org",
+      "type": "URL",
+      "name": "http://apple-uptoday.org",
+      "normalized_name": "http://apple-uptoday.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://apple-uptoday.org",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.bitdefender.com_",
+      "type": "URL",
+      "name": "http://www.bitdefender.com/",
+      "normalized_name": "http://www.bitdefender.com/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "value": "http://www.bitdefender.com/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_file_roskosmos_2015-2025.app",
+      "type": "File",
+      "name": "roskosmos_2015-2025.app",
+      "normalized_name": "roskosmos_2015-2025.app",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "file_name": "roskosmos_2015-2025.app",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_roskosmos_2015-2025.pdf",
+      "type": "File",
+      "name": "roskosmos_2015-2025.pdf",
+      "normalized_name": "roskosmos_2015-2025.pdf",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "file_name": "roskosmos_2015-2025.pdf",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_start.sh",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "File",
+      "name": "start.sh",
+      "normalized_name": "start.sh",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "start.sh",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_19"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_XAgent",
+      "tail_id": "ent_file_roskosmos_2015-2025.pdf",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "primary_evidence_id": "ev_62",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_Azzy",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=sofacy",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_Fysbis",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=sofacy",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_Jhuhugit",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=sofacy, headline_or_event_use",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_Komplex",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_13",
+        "ev_46"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=sofacy",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "XAgent executes roskosmos_2015-2025.pdf",
+      "evidence_ids": [
+        "ev_62"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware Azzy",
+      "evidence_ids": [
+        "ev_7"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware Fysbis",
+      "evidence_ids": [
+        "ev_7"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware Jhuhugit",
+      "evidence_ids": [
+        "ev_7"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware Komplex",
+      "evidence_ids": [
+        "ev_13",
+        "ev_46"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "A post-mortem analysis of Trojan.MAC.APT28 - XAgent For the past decade, Windows users have been the main targets of consumer, for-profit cybercrime.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "Since the group’s emergence in 2007, Bitdefender has become familiar with the backdoors used to compromise Windows and Linux targets, such as Coreshell, Jhuhugit and Azzy for the former OS or Fysbis for the latter.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "This year we have been able to finally isolate the Mac OS X counterpart - the XAgent modular backdoor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "Context In mid-February this year, we discovered a new Mac sample that appeared to be the Mac version of the APT28 XAgent component.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Attack Flow Last year on 26 of September, PaloAlto identified a new Mac OS X Trojan associated with the APT28/Sofacy group that received the ‘Komplex’ name.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "The Komplex Trojan is a binder with multiple parts: a dropper, a payload and a decoy pdf file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "The Komplex Binder : Is the main executable of “roskosmos_2015-2025.app”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Komplex: roskosmos_2015-2025.pdf 3.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "The Komplex Payload : Is the final component of the Komplex malware, with the sole purpose of downloading and executing a file, as requested by the C&C servers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "In other words, Komplex is an APT28/Sofacy component that can be distributed via email, disguised as a PDF document, to establish a foothold in a system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "Once it infects the host, it can download and run the next APT28/Sofacy component, which - to the best of our knowledge - is the XAgent malware that forms the object of this paper.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Komplex XAgent Malware path on the infected system C&C apple-iclods[.]net apple-iclods.org Possible Attack Flow",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "Sending information to C&C server To exfiltrate information to the C&C server (such as screenshots, passwords, files and more), the agent uses a defined structure called msgPacket .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s3"
+      },
+      "text": "It was just a matter of time until the APT28 group realized they were missing out on a serious cyber-weapon to target Mac OS X users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "BD-Business-Feb.21.2017-Tk#: 70585 FOR MORE INFORMATION VISIT: enterprise.bitdefender.com Bitdefender is a global security technology company that delivers solutions in more than 100 countries through a network of value-added alliances, distributors and reseller partners.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Last year on 26 of September, PaloAlto identified a new Mac OS X Trojan associated with the APT28/Sofacy group that received the ‘Komplex’ name. The Komplex Trojan is a binder with multiple parts: a dropper, a payload and a decoy pdf file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "http://23.227.196.215",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "POST http://23.227.196.215/watch/?itwm=7FJcXOPyN_Znh7quXfh4WAaKquNzY &oe = 9cu2LRvfab&ags = Pi8KZsjwBh &oe = HXK20P &aq = h2RBWMQI&aq = yRRTH&i5H = MKNBXTB Host : 23.227.196.215 Content - Type : application /x-www-form-urlencoded; charset = utf- 8 Connection : keep -alive Proxy - Connection : keep -alive Accept : */* User - Agent : 4 fe4b9560e99e33dabca553e2eeee510 (unknown version) CFNetwork / 673.3 Darwin / 13.4.0 (x86_64) Accept - Language : en -us Accept - Encoding : gzip , deflate Content - Length : 81 0_a70HpSuFQI7FnNetyKM559SUEcCj- WBinNUfTdPQw0ZVTfyNXe26b6isibFp_cJLGqtiOZ9Em3iUA ==",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb60"
+      },
+      "text": "http://apple-checker.org",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb61"
+      },
+      "text": "ervers http://23.227.196.215 http://apple-iclods.org http://apple-checker.org http://apple-uptoday.org http://apple-search.info The command structure, called cmdPacket, contains a",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb62"
+      },
+      "text": "CFSTR(“open -a Preview.app %@/roskosmos_2015-2025.pdf”),",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb63"
+      },
+      "text": "&OBJC_CLASS___NSString, “stringWithFormat:”, CFSTR(“open -a Preview.app %@/roskosmos_2015-2025.pdf”), v6); v11 = objc_msgSend(&OBJC_CLASS___NSData, “dataWithBytes:length:”, &joiner",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb64"
+      },
+      "text": "off_10001B4F0(v7, &off_10001B4F0, CFSTR(“/Users/Shared/start.sh”), 1LL);",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb65"
+      },
+      "text": "system(“chmod 755 /Users/Shared/start.sh”);",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb66"
+      },
+      "text": "LL); off_10001B4F0(v7, &off_10001B4F0, CFSTR(“/Users/Shared/start.sh”), 1LL); system(“cp /Users/Shared/com.apple.updates.plist $HOME/Library/LaunchAgents/ &>/dev/null”); remove(“/U",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb67"
+      },
+      "text": "http://www.bitdefender.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web(02-23-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb68"
+      },
+      "text": "chnology providers. More information is available at http://www.bitdefender.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_20",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_XAgent",
+        "ent_threatactor_Sofacy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Azzy",
+        "ent_malware_Fysbis",
+        "ent_malware_Jhuhugit"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_29",
+      "page": 9,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_url_http_23.227.196.215",
+        "ent_url_http_apple-checker.org",
+        "ent_url_http_apple-iclods.org",
+        "ent_url_http_apple-search.info",
+        "ent_url_http_apple-uptoday.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_Komplex",
+        "ent_threatactor_Sofacy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_Komplex",
+        "ent_threatactor_Sofacy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_Komplex",
+        "ent_threatactor_Sofacy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Komplex",
+        "ent_malware_XAgent",
+        "ent_domain_apple-iclods.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_XAgent"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_XAgent"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_15",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Komplex",
+        "ent_file_roskosmos_2015-2025.app"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Komplex",
+        "ent_file_roskosmos_2015-2025.pdf"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

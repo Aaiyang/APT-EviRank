@@ -1,0 +1,3088 @@
+{
+  "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+  "title": "Taiwan Heist: Lazarus Tools and Ransomware",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017).pdf",
+    "file_path": "/root/APTtext/BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 20451,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_FileTokenBroker",
+      "type": "Malware",
+      "name": "FileTokenBroker",
+      "normalized_name": "FileTokenBroker",
+      "aliases": [
+        "FileTokenBroker.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_104",
+        "ev_108",
+        "ev_48",
+        "ev_80"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_104",
+        "ev_108",
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_FileTokenBroker.dll",
+      "family": "FileTokenBroker",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Hermes",
+      "type": "Malware",
+      "name": "Hermes",
+      "normalized_name": "Hermes",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_31",
+        "ev_55",
+        "ev_56",
+        "ev_68"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "family": "Hermes",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_56",
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Hermes_ransomware",
+      "type": "Malware",
+      "name": "Hermes ransomware",
+      "normalized_name": "Hermes ransomware",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_31",
+        "ev_55",
+        "ev_68"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "family": "Hermes ransomware",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_68",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_RSW7B37",
+      "type": "Malware",
+      "name": "RSW7B37",
+      "normalized_name": "RSW7B37",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "family": "RSW7B37",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Splwow32",
+      "type": "Malware",
+      "name": "Splwow32",
+      "normalized_name": "Splwow32",
+      "aliases": [
+        "splwow32.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_102",
+        "ev_42",
+        "ev_81"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_102",
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_splwow32.exe",
+      "family": "Splwow32",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Taiwan_Heist",
+      "type": "Campaign",
+      "name": "Taiwan Heist",
+      "normalized_name": "Taiwan Heist",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Far_Eastern_International_Bank",
+      "type": "Victim",
+      "name": "Far Eastern International Bank",
+      "normalized_name": "Far Eastern International Bank",
+      "aliases": [
+        "FEIB"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2",
+        "ev_5",
+        "ev_61",
+        "ev_68"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_68",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Bitsran_loader_spreader",
+      "type": "Malware",
+      "name": "Bitsran loader / spreader",
+      "normalized_name": "Bitsran loader / spreader",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "family": "Bitsran loader / spreader",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_FileTokenBroker.dll",
+      "type": "Malware",
+      "name": "FileTokenBroker.dll",
+      "normalized_name": "FileTokenBroker.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_104",
+        "ev_108",
+        "ev_48"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_FileTokenBroker"
+    },
+    {
+      "id": "ent_malware_FileTokenBroker.dll",
+      "type": "Malware",
+      "name": "FileTokenBroker.dll",
+      "normalized_name": "FileTokenBroker.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_104",
+        "ev_108",
+        "ev_48",
+        "ev_80"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "FileTokenBroker.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_104",
+        "ev_108",
+        "ev_48"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_splwow32.exe",
+      "type": "File",
+      "name": "splwow32.exe",
+      "normalized_name": "splwow32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_102",
+        "ev_42",
+        "ev_81"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "splwow32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_102",
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_splwow32.exe",
+      "type": "Malware",
+      "name": "splwow32.exe",
+      "normalized_name": "splwow32.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_102",
+        "ev_42",
+        "ev_81"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Splwow32"
+    },
+    {
+      "id": "ent_malware_VSS",
+      "type": "Malware",
+      "name": "VSS",
+      "normalized_name": "VSS",
+      "aliases": [
+        "Volume Shadow Copy Service"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_34",
+        "ev_71"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "VSS",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_WannaCry",
+      "type": "Malware",
+      "name": "WannaCry",
+      "normalized_name": "WannaCry",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "family": "WannaCry",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_tool_Cntaosmgr",
+      "type": "Tool",
+      "name": "Cntaosmgr",
+      "normalized_name": "Cntaosmgr",
+      "aliases": [
+        "cntaosmgr.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_89"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_cntaosmgr.exe",
+      "tool_name": "Cntaosmgr",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Vssadmin",
+      "type": "Tool",
+      "name": "Vssadmin",
+      "normalized_name": "Vssadmin",
+      "aliases": [
+        "vssadmin.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_110",
+        "ev_71"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_vssadmin.exe",
+      "tool_name": "Vssadmin",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_baesystemsai.blogspot.kr",
+      "type": "Domain",
+      "name": "baesystemsai.blogspot.kr",
+      "normalized_name": "baesystemsai.blogspot.kr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "baesystemsai.blogspot.kr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_bitmessage.ch",
+      "type": "Domain",
+      "name": "bitmessage.ch",
+      "normalized_name": "bitmessage.ch",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121",
+        "ev_122",
+        "ev_123"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "bitmessage.ch",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [
+        "ev_121",
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.baesystems.com",
+      "type": "Domain",
+      "name": "www.baesystems.com",
+      "normalized_name": "www.baesystems.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "www.baesystems.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_125"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.bitcoin.com",
+      "type": "Domain",
+      "name": "www.bitcoin.com",
+      "normalized_name": "www.bitcoin.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "www.bitcoin.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_126",
+      "supporting_evidence_ids": [
+        "ev_127"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.baesystems.com_en_cybersecurity_swift-customer-security-programme",
+      "type": "URL",
+      "name": "http://www.baesystems.com/en/cybersecurity/swift-customer-security-programme",
+      "normalized_name": "http://www.baesystems.com/en/cybersecurity/swift-customer-security-programme",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "http://www.baesystems.com/en/cybersecurity/swift-customer-security-programme",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_125"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.bitcoin.com_buy-bitcoin",
+      "type": "URL",
+      "name": "https://www.bitcoin.com/buy-bitcoin",
+      "normalized_name": "https://www.bitcoin.com/buy-bitcoin",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "https://www.bitcoin.com/buy-bitcoin",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_126",
+      "supporting_evidence_ids": [
+        "ev_127"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF_bitmessage.ch",
+      "type": "Email",
+      "name": "BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF@bitmessage.ch",
+      "normalized_name": "BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF@bitmessage.ch",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_122",
+        "ev_123"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF@bitmessage.ch",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw_bitmessage.ch",
+      "type": "Email",
+      "name": "BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw@bitmessage.ch",
+      "normalized_name": "BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw@bitmessage.ch",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121",
+        "ev_123",
+        "ev_127"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw@bitmessage.ch",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_123",
+        "ev_127"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_0dd7da89b7d1fe97e669f8b4156067c8",
+      "type": "MD5",
+      "name": "0dd7da89b7d1fe97e669f8b4156067c8",
+      "normalized_name": "0dd7da89b7d1fe97e669f8b4156067c8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_117",
+        "ev_83"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "0dd7da89b7d1fe97e669f8b4156067c8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [
+        "ev_117"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0edbad9e6041d43f97c7369439a40138",
+      "type": "MD5",
+      "name": "0edbad9e6041d43f97c7369439a40138",
+      "normalized_name": "0edbad9e6041d43f97c7369439a40138",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_114",
+        "ev_80"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "0edbad9e6041d43f97c7369439a40138",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_114"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3c9e71400b72cc0213c9c3e4ab4df9df",
+      "type": "MD5",
+      "name": "3c9e71400b72cc0213c9c3e4ab4df9df",
+      "normalized_name": "3c9e71400b72cc0213c9c3e4ab4df9df",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113",
+        "ev_79"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "3c9e71400b72cc0213c9c3e4ab4df9df",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_113"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_61075faba222f97d3367866793f0907b",
+      "type": "MD5",
+      "name": "61075faba222f97d3367866793f0907b",
+      "normalized_name": "61075faba222f97d3367866793f0907b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118",
+        "ev_84"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "61075faba222f97d3367866793f0907b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [
+        "ev_118"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_62217af0299d6e241778adb849fd2823",
+      "type": "MD5",
+      "name": "62217af0299d6e241778adb849fd2823",
+      "normalized_name": "62217af0299d6e241778adb849fd2823",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116",
+        "ev_82"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "62217af0299d6e241778adb849fd2823",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_116"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9563e2f443c3b4e1b00f25be0a30d56e",
+      "type": "MD5",
+      "name": "9563e2f443c3b4e1b00f25be0a30d56e",
+      "normalized_name": "9563e2f443c3b4e1b00f25be0a30d56e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "9563e2f443c3b4e1b00f25be0a30d56e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_97aaf130cfa251e5207ea74b2558293d",
+      "type": "MD5",
+      "name": "97aaf130cfa251e5207ea74b2558293d",
+      "normalized_name": "97aaf130cfa251e5207ea74b2558293d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115",
+        "ev_81"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "97aaf130cfa251e5207ea74b2558293d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_115"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b27881f59c8d8cc529fa80a58709db36",
+      "type": "MD5",
+      "name": "b27881f59c8d8cc529fa80a58709db36",
+      "normalized_name": "b27881f59c8d8cc529fa80a58709db36",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112",
+        "ev_120"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "b27881f59c8d8cc529fa80a58709db36",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d08f1211fe0138134e822e31a47ec5d4",
+      "type": "MD5",
+      "name": "d08f1211fe0138134e822e31a47ec5d4",
+      "normalized_name": "d08f1211fe0138134e822e31a47ec5d4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_111",
+        "ev_78"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "value": "d08f1211fe0138134e822e31a47ec5d4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [
+        "ev_78"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_bitsran.exe",
+      "type": "File",
+      "name": "bitsran.exe",
+      "normalized_name": "bitsran.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_78",
+        "ev_86",
+        "ev_94"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "bitsran.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_86",
+        "ev_78",
+        "ev_94"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_110",
+        "ev_71",
+        "ev_95"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [
+        "ev_110",
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "BITSRAN"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cntaosmgr.exe",
+      "type": "File",
+      "name": "cntaosmgr.exe",
+      "normalized_name": "cntaosmgr.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_89"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "cntaosmgr.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_fdsvc.dll",
+      "type": "File",
+      "name": "fdsvc.dll",
+      "normalized_name": "fdsvc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_100",
+        "ev_39"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "fdsvc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msmpeng.exe",
+      "type": "File",
+      "name": "msmpeng.exe",
+      "normalized_name": "msmpeng.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_38",
+        "ev_79",
+        "ev_99"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "msmpeng.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_99",
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_netsvc.dll",
+      "type": "File",
+      "name": "netsvc.dll",
+      "normalized_name": "netsvc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_107",
+        "ev_51"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "netsvc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_107"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ntrtscan.exe",
+      "type": "File",
+      "name": "ntrtscan.exe",
+      "normalized_name": "ntrtscan.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_90"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "ntrtscan.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pccntmon.exe",
+      "type": "File",
+      "name": "pccntmon.exe",
+      "normalized_name": "pccntmon.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_91"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "pccntmon.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RSW7B37.tmp",
+      "type": "File",
+      "name": "RSW7B37.tmp",
+      "normalized_name": "RSW7B37.tmp",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "RSW7B37.tmp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RSW7B37"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RSWXXXX.tmp",
+      "type": "File",
+      "name": "RSWXXXX.tmp",
+      "normalized_name": "RSWXXXX.tmp",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "RSWXXXX.tmp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RSWXXXX",
+        "XXXX"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.dll",
+      "type": "File",
+      "name": "svchost.dll",
+      "normalized_name": "svchost.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_106",
+        "ev_50"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "svchost.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_106"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_104",
+        "ev_105",
+        "ev_48",
+        "ev_50"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [
+        "ev_50",
+        "ev_104",
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_testlib.dll",
+      "type": "File",
+      "name": "testlib.dll",
+      "normalized_name": "testlib.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_120"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "testlib.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_120",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "HERMES",
+        "TEST",
+        "BUILD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tmbmsrv.exe",
+      "type": "File",
+      "name": "tmbmsrv.exe",
+      "normalized_name": "tmbmsrv.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_87"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "tmbmsrv.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tmccsf.exe",
+      "type": "File",
+      "name": "tmccsf.exe",
+      "normalized_name": "tmccsf.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_88"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "tmccsf.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tmlisten.exe",
+      "type": "File",
+      "name": "tmlisten.exe",
+      "normalized_name": "tmlisten.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_92"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "tmlisten.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tmpfw.exe",
+      "type": "File",
+      "name": "tmpfw.exe",
+      "normalized_name": "tmpfw.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_93"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "tmpfw.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vssadmin.exe",
+      "type": "File",
+      "name": "vssadmin.exe",
+      "normalized_name": "vssadmin.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_110",
+        "ev_71"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "file_name": "vssadmin.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Far_Easter",
+      "type": "Victim",
+      "name": "Far Easter",
+      "normalized_name": "Far Easter",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_FileTokenBroker.dll",
+      "tail_id": "ent_malware_FileTokenBroker",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_108"
+      ],
+      "primary_evidence_id": "ev_104",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_splwow32.exe",
+      "tail_id": "ent_malware_Splwow32",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_102",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_FileTokenBroker",
+      "tail_id": "ent_file_svchost.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_48",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "drop_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Malware Analysis – Sample #5 FileTokenBroker.dll is a DLL, installed as a service under the svchost.exe ( netsvcs ) service host."
+      },
+      "head": {
+        "id": "ent_malware_FileTokenBroker",
+        "type": "Malware",
+        "name": "FileTokenBroker",
+        "normalized_name": "FileTokenBroker",
+        "aliases": [
+          "FileTokenBroker.dll"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_104",
+          "ev_108",
+          "ev_48",
+          "ev_80"
+        ],
+        "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_80",
+        "supporting_evidence_ids": [
+          "ev_104",
+          "ev_108",
+          "ev_48"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_FileTokenBroker.dll",
+        "family": "FileTokenBroker",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_svchost.exe",
+        "type": "File",
+        "name": "svchost.exe",
+        "normalized_name": "svchost.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_104",
+          "ev_105",
+          "ev_48",
+          "ev_50"
+        ],
+        "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+        "file_name": "svchost.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_105",
+        "supporting_evidence_ids": [
+          "ev_50",
+          "ev_104",
+          "ev_48"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_FileTokenBroker",
+      "tail_id": "ent_file_vssadmin.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_71",
+        "ev_110"
+      ],
+      "primary_evidence_id": "ev_71",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "loads",
+      "head_id": "ent_file_bitsran.exe",
+      "tail_id": "ent_malware_Hermes",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_file_svchost.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_50",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_Hermes",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_50",
+        "ev_105"
+      ],
+      "primary_evidence_id": "ev_50",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "loads",
+      "head_id": "ent_file_vssadmin.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_71",
+        "ev_110"
+      ],
+      "primary_evidence_id": "ev_71",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "type": "targets",
+      "head_id": "ent_campaign_Taiwan_Heist",
+      "tail_id": "ent_victim_Far_Eastern_International_Bank",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_2",
+        "ev_12"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "FileTokenBroker drops svchost.exe",
+      "evidence_ids": [
+        "ev_48"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "FileTokenBroker executes vssadmin.exe",
+      "evidence_ids": [
+        "ev_71",
+        "ev_110"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "bitsran.exe loads Hermes",
+      "evidence_ids": [
+        "ev_30"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "svchost.exe loads svchost.dll",
+      "evidence_ids": [
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "svchost.exe loads Hermes",
+      "evidence_ids": [
+        "ev_50",
+        "ev_105"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "vssadmin.exe loads cmd.exe",
+      "evidence_ids": [
+        "ev_71",
+        "ev_110"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "baesystemsai.blogspot.kr /2017/10/taiwan-heist-lazarus-tools.html Reports emerged just over a week ago of a new cyber-enabled bank heist in Asia.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Attackers targeting Far Eastern International Bank (FEIB), a commercial firm in Taiwan, moved funds from its accounts to multiple overseas beneficiaries.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The timeline below provides an overview of the key events: 01 October 2017 Malware compiled containing admin credentials for the FEIB network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Samples #7-9 are older versions of the Hermes ransomware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Malware Analysis – Sample #2; Bitsran loader / spreader Sample #2 is designed to run and spread a malicious payload on the victim's network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Process Name Process Description tmbmsrv.exe Trend Micro Unauthorized Change Prevention Service tmccsf.exe Trend Micro OfficeScan Common Client Solution Framework cntaosmgr.exe Trend Micro OfficeScan Add-on Service Client Management Service ntrtscan.exe Trend Micro OfficeScan NT RealTime Scan pccntmon.exe Trend Micro OfficeScan Antivirus real-time scan monitor tmlisten.exe Trend Micro OfficeScan NT Listener tmpfw.exe Trend Micro OfficeScan NT Firewall",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "This takes the filename ‘RSWXXXX.tmp’ , where ‘XXXX’ is randomly generated through the GetTempFileName function.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Sample #3 ( RSW7B37.tmp ) is an example of this file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s10"
+      },
+      "text": "C:\\Windows\\Temp\\bitsran.exe If successful, a further command is executed using the same credentials, to create a scheduled task on the remote device with the name ‘BITSRAN’.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s11"
+      },
+      "text": "Malware Analysis – Sample #3, Dropped file / Hermes Ransomware The dropped file is a variant of the Hermes ransomware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "The ransomware deletes the Volume Shadow Copies (a type of backup on Windows), using command: vssadmin Delete Shadows /all /quiet",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Sample #4 ( msmpeng.exe ) is packed with Themida to hamper analysis under a debugger, a monitoring application, or a virtual machine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Once fully unpacked in memory, it appears to be an x86 variant of the fdsvc.dll backdoor described in our February blogpost “Lazarus’ False Flag Malware”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s5"
+      },
+      "text": "Sample #6 ( splwow32.exe ) is the same backdoor, only it’s not packed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Malware Analysis – Sample #5 FileTokenBroker.dll is a DLL, installed as a service under the svchost.exe ( netsvcs ) service host.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "For example, if the DLL is loaded into the address space of svchost.exe , the constructed filename will be: c:\\windows\\system32\\en-US\\svchost.dll.mui",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "Another possible name is: c:\\windows\\system32\\en-US\\netsvc.dll.mui The DLL then reads this file, and decrypts it with a running XOR mask.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s8"
+      },
+      "text": "Malware Analysis – Samples #7, #8, and #9, Further Hermes malware Samples #7, #8, and #9 relate to previous instances of Hermes ransomware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s9"
+      },
+      "text": "Malware of this category is typically widespread, but in the case of Hermes it seems relatively rare.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s10"
+      },
+      "text": "This is suspicious in itself and reminds us of WannaCry – another rarely observed ransomware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "The attack this month on Taiwanese Far Eastern International Bank has some of the hallmarks of the Lazarus group:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s10"
+      },
+      "text": "More work needs to be done to identify how FEIB was attacked, whether further custom tools were involved, confirm the context of the Lazarus malware in the intrusion, and where else this Hermes ransomware has been seen.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "• Application blacklisting should be implemented to prevent the use of tools such as vssadmin.exe , cmd.exe , powershell.exe and similar;",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "1 9563e2f443c3b4e1b00f25be0a30d56e FEIB_Samples_pwd(Virus).zi_ TW 2017- 10-12 02:50:16",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "2 d08f1211fe0138134e822e31a47ec5d4 bitsran.exe TW 2017- 10-03 01:01:31",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "4 3c9e71400b72cc0213c9c3e4ab4df9df msmpeng.exe US 2017- 10-07 08:58:00",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": "5 0edbad9e6041d43f97c7369439a40138 FileTokenBroker.dll TW 2017- 10-12 02:50:15",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": "6 97aaf130cfa251e5207ea74b2558293d splwow32.exe TW 2017- 10-12 02:50:15",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r7"
+      },
+      "text": "7 62217af0299d6e241778adb849fd2823 N/A GB 2017- 10-08 03:32:47",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r8"
+      },
+      "text": "8 0dd7da89b7d1fe97e669f8b4156067c8 N/A MY 2017- 03-14 02:13:01",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r9"
+      },
+      "text": "9 61075faba222f97d3367866793f0907b N/A MY 2017- 02-16 03:25:00",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r11"
+      },
+      "text": "C:\\Windows\\Temp\\bitsran.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "tmbmsrv.exe Trend Micro Unauthorized Change Prevention Service",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "tmccsf.exe Trend Micro OfficeScan Common Client Solution Framework",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "cntaosmgr.exe Trend Micro OfficeScan Add-on Service Client Management Service",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "ntrtscan.exe Trend Micro OfficeScan NT RealTime Scan",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "pccntmon.exe Trend Micro OfficeScan Antivirus real-time scan monitor",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "tmlisten.exe Trend Micro OfficeScan NT Listener",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r7"
+      },
+      "text": "tmpfw.exe Trend Micro OfficeScan NT Firewall",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "C:\\Windows\\Temp\\bitsran.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "cmd.exe /c schtasks /create /tn “BITSRAN” /tr /s /u /p /st 00:00 /et 23:59 /sc minute /mo 1 /ru system /f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Sample #4 ( msmpeng.exe ) is packed with Themida to hamper analysis under a debugger, a monitoring application, or a virtual machine.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Once fully unpacked in memory, it appears to be an x86 variant of the fdsvc.dll backdoor described in our February blogpost “Lazarus’ False Flag Malware”. This malware was discovered on networks in Poland and Mexico, following a series of watering-hole attacks.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "Sample #6 ( splwow32.exe ) is the same backdoor, only it’s not packed.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "FileTokenBroker.dll is a DLL, installed as a service under the svchost.exe ( netsvcs ) service host.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "For example, if the DLL is loaded into the address space of svchost.exe , the constructed filename will be:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "c:\\windows\\system32\\en-US\\svchost.dll.mui",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "c:\\windows\\system32\\en-US\\netsvc.dll.mui",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "Hence, FileTokenBroker.dll decrypts and executes a payload that is created by an external dropper or is implanted by the attackers.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "• Application blacklisting should be implemented to prevent the use of tools such as vssadmin.exe , cmd.exe , powershell.exe and similar;",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "MD5 Hashes d08f1211fe0138134e822e31a47ec5d4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "b27881f59c8d8cc529fa80a58709db36",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "3c9e71400b72cc0213c9c3e4ab4df9df",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r5"
+      },
+      "text": "0edbad9e6041d43f97c7369439a40138",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r6"
+      },
+      "text": "97aaf130cfa251e5207ea74b2558293d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r7"
+      },
+      "text": "62217af0299d6e241778adb849fd2823",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r8"
+      },
+      "text": "0dd7da89b7d1fe97e669f8b4156067c8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r9"
+      },
+      "text": "61075faba222f97d3367866793f0907b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r10"
+      },
+      "text": "File / Process name bitsran.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "rule Hermes2_1 { meta: date = \"2017/10/11\" author = \"BAE\" hash = \"b27881f59c8d8cc529fa80a58709db36\" strings: $magic = { 4D 5A } //in both version 2.1 and sample in Feb $s1 = \"SYSTEM\\\\CurrentControlSet\\\\Control\\\\Nls\\\\Language\\\\\" $s2 = \"0419\" $s3 = \"0422\" $s4 = \"0423\" //in version 2.1 only $S1 = \"HERMES\" $S2 = \"vssadminn\" $S3 = \"finish work\" $S4 = \"testlib.dll\" $S5 = \"shadowstorageiet\" //maybe unique in the file $u1 = \"ALKnvfoi4tbmiom3t40iomfr0i3t4jmvri3tb4mvi3btv3rgt4t777\" $u2 = \"HERMES 2.1 TEST BUILD, press ok\" $u3 = \"hnKwtMcOadHwnXutKHqPvpgfysFXfAFTcaDHNdCnktA\" //RSA Key part condition: $magic at 0 and all of ($s*) and 3 of ($S*) and 1 of ($u*) }",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb121"
+      },
+      "text": "Contact information: BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw@bitmessage.ch",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb122"
+      },
+      "text": "reserve: BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF@bitmessage.ch",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb123"
+      },
+      "text": "Contact information: BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw@bitmessage.ch reserve: BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF@bitmessage.ch Malware Analysis – Samples #4 and #6, Lazarus",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb124"
+      },
+      "text": "http://www.baesystems.com/en/cybersecurity/swift-customer-security-programme",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb125"
+      },
+      "text": "nst the SWIFT 27 controls. For more information see: http://www.baesystems.com/en/cybersecurity/swift-customer-security-programme APPENDIX A – INDICATORS OF ATTACK MD5 Hashes d08f1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb126"
+      },
+      "text": "We accept Bitcoin, you can find exchangers on https://www.bitcoin.com/buy-bitcoin and",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb127"
+      },
+      "text": "test. We accept Bitcoin, you can find exchangers on https://www.bitcoin.com/buy-bitcoin and others. Contact information: BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw@bitmessage.ch reserve",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_31",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Hermes",
+        "ent_malware_Hermes_ransomware"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_71",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_vssadmin.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_110",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_vssadmin.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_cntaosmgr.exe",
+        "ent_file_ntrtscan.exe",
+        "ent_file_pccntmon.exe",
+        "ent_file_tmbmsrv.exe",
+        "ent_file_tmccsf.exe",
+        "ent_file_tmlisten.exe",
+        "ent_file_tmpfw.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Splwow32",
+        "ent_file_splwow32.exe",
+        "ent_malware_splwow32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_FileTokenBroker",
+        "ent_malware_FileTokenBroker.dll",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_81",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Splwow32",
+        "ent_file_splwow32.exe",
+        "ent_malware_splwow32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_102",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Splwow32",
+        "ent_file_splwow32.exe",
+        "ent_malware_splwow32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_104",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_FileTokenBroker",
+        "ent_malware_FileTokenBroker.dll",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_68",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Hermes",
+        "ent_malware_Hermes_ransomware",
+        "ent_victim_Far_Eastern_International_Bank"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_127",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_domain_bitmessage.ch",
+        "ent_url_https_www.bitcoin.com_buy-bitcoin",
+        "ent_email_BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw_bitmessage.ch"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_123",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_domain_bitmessage.ch",
+        "ent_email_BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF_bitmessage.ch",
+        "ent_email_BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw_bitmessage.ch"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_80",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_FileTokenBroker",
+        "ent_malware_FileTokenBroker.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_108",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_FileTokenBroker",
+        "ent_malware_FileTokenBroker.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_24",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_RSW7B37",
+        "ent_file_RSW7B37.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_120",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_Hermes",
+        "ent_file_testlib.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_121",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_domain_bitmessage.ch",
+        "ent_email_BM-2cVcZL1xfve1yGGKwEBgG1ge6xJ5PYGfGw_bitmessage.ch"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_122",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_domain_bitmessage.ch",
+        "ent_email_BM-2cT4U1vBdjfqKDeWMEXgCWs9SfnMK1GLTF_bitmessage.ch"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

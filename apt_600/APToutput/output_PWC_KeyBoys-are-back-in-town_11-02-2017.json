@@ -1,0 +1,2300 @@
+{
+  "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+  "title": "The KeyBoys are back in town",
+  "source": null,
+  "published_date": "2017-07-06",
+  "report_metadata": {
+    "file_name": "PWC_KeyBoys-are-back-in-town(11-02-2017).pdf",
+    "file_path": "/root/APTtext/PWC_KeyBoys-are-back-in-town(11-02-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 10663,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Admin",
+      "type": "Malware",
+      "name": "Admin",
+      "normalized_name": "Admin",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_19"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "family": "Admin",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_InstallClient",
+      "type": "Malware",
+      "name": "InstallClient",
+      "normalized_name": "InstallClient",
+      "aliases": [
+        "InstallClient.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_50",
+        "ev_52",
+        "ev_9"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_InstallClient.dll",
+      "family": "InstallClient",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_KeyBoy",
+      "type": "Malware",
+      "name": "KeyBoy",
+      "normalized_name": "KeyBoy",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_22",
+        "ev_23",
+        "ev_37"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "family": "KeyBoy",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [
+        "ev_22",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_KeyBoys",
+      "type": "Malware",
+      "name": "KeyBoys",
+      "normalized_name": "KeyBoys",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "family": "KeyBoys",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_WolfSSL",
+      "type": "Malware",
+      "name": "WolfSSL",
+      "normalized_name": "WolfSSL",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "family": "WolfSSL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_KeyBoy",
+      "type": "Campaign",
+      "name": "KeyBoy",
+      "normalized_name": "KeyBoy",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_22",
+        "ev_23",
+        "ev_37"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_file_InstallClient.dll",
+      "type": "File",
+      "name": "InstallClient.dll",
+      "normalized_name": "InstallClient.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_50",
+        "ev_52",
+        "ev_9"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "InstallClient.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_InstallClient.dll",
+      "type": "Malware",
+      "name": "InstallClient.dll",
+      "normalized_name": "InstallClient.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_50",
+        "ev_52",
+        "ev_9"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_InstallClient"
+    },
+    {
+      "id": "ent_domain_21cn.com",
+      "type": "Domain",
+      "name": "21cn.com",
+      "normalized_name": "21cn.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "21cn.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_jessma.org",
+      "type": "Domain",
+      "name": "jessma.org",
+      "normalized_name": "jessma.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "jessma.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_qq.com",
+      "type": "Domain",
+      "name": "qq.com",
+      "normalized_name": "qq.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "qq.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_weblogic1709.zzux.com",
+      "type": "Domain",
+      "name": "weblogic1709.zzux.com",
+      "normalized_name": "weblogic1709.zzux.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "weblogic1709.zzux.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_weblogic727.xxuz.com",
+      "type": "Domain",
+      "name": "weblogic727.xxuz.com",
+      "normalized_name": "weblogic727.xxuz.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "weblogic727.xxuz.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_657603405_qq.com",
+      "type": "Email",
+      "name": "657603405@qq.com",
+      "normalized_name": "657603405@qq.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "657603405@qq.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_ldcsaa_21cn.com",
+      "type": "Email",
+      "name": "ldcsaa@21cn.com",
+      "normalized_name": "ldcsaa@21cn.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "ldcsaa@21cn.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha256_f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92",
+      "type": "SHA256",
+      "name": "f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92",
+      "normalized_name": "f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1bb516d70591a5a0eb55ee71f9f38597f3640b14",
+      "type": "SHA1",
+      "name": "1bb516d70591a5a0eb55ee71f9f38597f3640b14",
+      "normalized_name": "1bb516d70591a5a0eb55ee71f9f38597f3640b14",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "1bb516d70591a5a0eb55ee71f9f38597f3640b14",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1dbbdd99cb8d7089ab31efb5dcf09706",
+      "type": "MD5",
+      "name": "1dbbdd99cb8d7089ab31efb5dcf09706",
+      "normalized_name": "1dbbdd99cb8d7089ab31efb5dcf09706",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_51",
+        "ev_64"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "1dbbdd99cb8d7089ab31efb5dcf09706",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_292843976600e8ad2130224d70356bfc",
+      "type": "MD5",
+      "name": "292843976600e8ad2130224d70356bfc",
+      "normalized_name": "292843976600e8ad2130224d70356bfc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "292843976600e8ad2130224d70356bfc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_29e44cfa7bcde079e9c7afb23ca8ef86",
+      "type": "MD5",
+      "name": "29e44cfa7bcde079e9c7afb23ca8ef86",
+      "normalized_name": "29e44cfa7bcde079e9c7afb23ca8ef86",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_66"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "29e44cfa7bcde079e9c7afb23ca8ef86",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2e04cdf98aead9dd9a5210d7e601cca7",
+      "type": "MD5",
+      "name": "2e04cdf98aead9dd9a5210d7e601cca7",
+      "normalized_name": "2e04cdf98aead9dd9a5210d7e601cca7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_64"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "2e04cdf98aead9dd9a5210d7e601cca7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5708e0320879de6f9ac928046b1e4f4e",
+      "type": "MD5",
+      "name": "5708e0320879de6f9ac928046b1e4f4e",
+      "normalized_name": "5708e0320879de6f9ac928046b1e4f4e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "5708e0320879de6f9ac928046b1e4f4e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_581ddf0208038a90f8bc2cdc75833425",
+      "type": "MD5",
+      "name": "581ddf0208038a90f8bc2cdc75833425",
+      "normalized_name": "581ddf0208038a90f8bc2cdc75833425",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_64"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "581ddf0208038a90f8bc2cdc75833425",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_64b2ac701a0d67da134e13b2efc46900",
+      "type": "MD5",
+      "name": "64b2ac701a0d67da134e13b2efc46900",
+      "normalized_name": "64b2ac701a0d67da134e13b2efc46900",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "64b2ac701a0d67da134e13b2efc46900",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7aea7486e3a7a839f49ebc61f1680ba3",
+      "type": "MD5",
+      "name": "7aea7486e3a7a839f49ebc61f1680ba3",
+      "normalized_name": "7aea7486e3a7a839f49ebc61f1680ba3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "7aea7486e3a7a839f49ebc61f1680ba3",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7d39cef34bdc751e9cf9d46d2f0bef95",
+      "type": "MD5",
+      "name": "7d39cef34bdc751e9cf9d46d2f0bef95",
+      "normalized_name": "7d39cef34bdc751e9cf9d46d2f0bef95",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "7d39cef34bdc751e9cf9d46d2f0bef95",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a55b0c98ac3965067d0270a95e60e87e",
+      "type": "MD5",
+      "name": "a55b0c98ac3965067d0270a95e60e87e",
+      "normalized_name": "a55b0c98ac3965067d0270a95e60e87e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "a55b0c98ac3965067d0270a95e60e87e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a6903d93f9d6f328bcfe3e196fd8c78b",
+      "type": "MD5",
+      "name": "a6903d93f9d6f328bcfe3e196fd8c78b",
+      "normalized_name": "a6903d93f9d6f328bcfe3e196fd8c78b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "a6903d93f9d6f328bcfe3e196fd8c78b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ac9b8c82651eafff9a3bbe7c69d69447",
+      "type": "MD5",
+      "name": "ac9b8c82651eafff9a3bbe7c69d69447",
+      "normalized_name": "ac9b8c82651eafff9a3bbe7c69d69447",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "ac9b8c82651eafff9a3bbe7c69d69447",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_cf6f333f99ee6342d6735ac2f6a37c1e",
+      "type": "MD5",
+      "name": "cf6f333f99ee6342d6735ac2f6a37c1e",
+      "normalized_name": "cf6f333f99ee6342d6735ac2f6a37c1e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "cf6f333f99ee6342d6735ac2f6a37c1e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d6ddecdb823de235dd650c0f7a2f3d8f",
+      "type": "MD5",
+      "name": "d6ddecdb823de235dd650c0f7a2f3d8f",
+      "normalized_name": "d6ddecdb823de235dd650c0f7a2f3d8f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_52",
+        "ev_64",
+        "ev_9"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "value": "d6ddecdb823de235dd650c0f7a2f3d8f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_51",
+        "ev_64",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_2017_Q4_Work_Plan.docx",
+      "type": "File",
+      "name": "2017 Q4 Work Plan.docx",
+      "normalized_name": "2017 Q4 Work Plan.docx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "2017 Q4 Work Plan.docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_debug.dll",
+      "type": "File",
+      "name": "debug.dll",
+      "normalized_name": "debug.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_7"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "debug.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PE32"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_DebugLog.TXT",
+      "type": "File",
+      "name": "DebugLog.TXT",
+      "normalized_name": "DebugLog.TXT",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_15"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "DebugLog.TXT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Dllhost.exe",
+      "type": "File",
+      "name": "Dllhost.exe",
+      "normalized_name": "Dllhost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_21",
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "Dllhost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_60",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MDDEFGEGETGIZ"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ikeext.dll",
+      "type": "File",
+      "name": "ikeext.dll",
+      "normalized_name": "ikeext.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "ikeext.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_net.exe",
+      "type": "File",
+      "name": "net.exe",
+      "normalized_name": "net.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "net.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_net1.exe",
+      "type": "File",
+      "name": "net1.exe",
+      "normalized_name": "net1.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "net1.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rasauto.dll",
+      "type": "File",
+      "name": "rasauto.dll",
+      "normalized_name": "rasauto.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_12",
+        "ev_53",
+        "ev_54"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "rasauto.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_10",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rasauto32.dll",
+      "type": "File",
+      "name": "rasauto32.dll",
+      "normalized_name": "rasauto32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_54",
+        "ev_57"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "rasauto32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_12",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_sinet.dll",
+      "type": "File",
+      "name": "sinet.dll",
+      "normalized_name": "sinet.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_34",
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "file_name": "sinet.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_34",
+        "ev_64",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "rundll32.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_InstallClient.dll",
+      "tail_id": "ent_malware_InstallClient",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50",
+        "ev_52"
+      ],
+      "primary_evidence_id": "ev_50",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_KeyBoy",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_5",
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_5",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_Admin",
+      "tail_id": "ent_file_2017_Q4_Work_Plan.docx",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_1"
+      },
+      "head": {
+        "id": "ent_malware_Admin",
+        "type": "Malware",
+        "name": "Admin",
+        "normalized_name": "Admin",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_1",
+          "ev_19"
+        ],
+        "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+        "family": "Admin",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_19"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_2017_Q4_Work_Plan.docx",
+        "type": "File",
+        "name": "2017 Q4 Work Plan.docx",
+        "normalized_name": "2017 Q4 Work Plan.docx",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_1"
+        ],
+        "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+        "file_name": "2017 Q4 Work Plan.docx",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "executes",
+      "head_id": "ent_file_2017_Q4_Work_Plan.docx",
+      "tail_id": "ent_malware_Admin",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "executes",
+      "head_id": "ent_file_net.exe",
+      "tail_id": "ent_file_net1.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "loads",
+      "head_id": "ent_file_2017_Q4_Work_Plan.docx",
+      "tail_id": "ent_malware_Admin",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "loads",
+      "head_id": "ent_file_net.exe",
+      "tail_id": "ent_file_net1.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "loads",
+      "head_id": "ent_file_net.exe",
+      "tail_id": "ent_malware_KeyBoy",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "type": "writes_output",
+      "head_id": "ent_malware_KeyBoy",
+      "tail_id": "ent_file_DebugLog.TXT",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "downloads_payload",
+      "summary": "KeyBoy downloads_payload rundll32.exe",
+      "evidence_ids": [
+        "ev_5",
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "Admin drops 2017 Q4 Work Plan.docx",
+      "evidence_ids": [
+        "ev_1"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "2017 Q4 Work Plan.docx executes Admin",
+      "evidence_ids": [
+        "ev_1"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "net.exe executes net1.exe",
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "2017 Q4 Work Plan.docx loads Admin",
+      "evidence_ids": [
+        "ev_1"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "net.exe loads net1.exe",
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "net.exe loads KeyBoy",
+      "evidence_ids": [
+        "ev_13",
+        "ev_55"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "collection",
+      "relation_id": "rel_0009",
+      "type": "writes_output",
+      "summary": "KeyBoy writes_output DebugLog.TXT",
+      "evidence_ids": [
+        "ev_14"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Analysis Our analysis starts with a Microsoft Word document named 2017 Q4 Work Plan.docx (with a hash of 292843976600e8ad2130224d70356bfc), which was created on 2017-10- 11 by a user called “Admin’’, and first uploaded to VirusTotal, a website and file scanning service, on the same day, by a user in South Africa.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "payload, in this case a DLL, will be downloaded using PowerShell, moved to the user’s temporary folder, and run using rundll32.exe, starting in the HOK function or export.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "This debug.dll is a PE32 binary file with the following properties:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "We have analysed d6ddecdb823de235dd650c0f7a2f3d8f, which also has InstallClient.dll as its internal name, as it seems to be the earliest dropper DLL used in this campaign, and does not appear to be very different from any of the other DLLs so far uncovered.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": " Prepare target DLL, in this case rasauto.dll, for replacement in C:\\Windows\\System32;  Stop the service belonging to the target DLL, and use the takeown and icacls commands to gain full permissions for the system service DLL;",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": " Copy the target DLL, rasauto.dll, to a new file named rasauto32.dll;  Replace the target DLL with the malware’s DLL, which is time-stomped in order to evade detection;",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": " Start the now malicious service using net.exe and net1.exe; and,  Create configuration and keylogs in C:\\Windows\\system32, using an uncommon extension, in this case .tsp, and additionally create a folder in C:\\Programdata for the purpose of screen captures.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "The malware will also, in some observed cases, output debug or error messages in a newly created file in the user’s Application Data folder as DebugLog.TXT, for example:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "\\AppData\\Roaming\\Microsoft\\Windows\\Cookies\\DebugLog.TXT Then, the original dropper DLL will then be deleted, using a simple batch file that runs in a loop.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "disables Windows File Protection and thus any pop-ups, it may not be immediately obvious to system administrators that a legitimate DLL was actually replaced.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Dllhost.exe is additionally seen to call back or phone home to a hardcoded range of C2 servers, on ports 53, 80, and 443.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "Attaching a debugger to dllhost.exe, reveals the keylogger files and configuration, replaced DLL file, as well as another folder, which is likely used to store screenshots and other data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "Another ASCII string can be discovered in the DLL’s config, MDDEFGEGETGIZ, which likely pertains to the specific KeyBoy campaign, or target.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "The malware leveraged by KeyBoy has a plethora of functionality, including, but not limited to:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s8"
+      },
+      "text": "Converting this certificate to the DER format, we find strings pointing to jessma.org, and an email address, ldcsaa@21cn.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "2e04cdf98aead9dd9a5210d7e601cca7 rasauto.dll Remote Access Auto Connection Manager d6ddecdb823de235dd650c0f7a2f3d8f rasauto.dll Remote Access Auto Connection Manager 1dbbdd99cb8d7089ab31efb5dcf09706 sinet.dll Unknown 581ddf0208038a90f8bc2cdc75833425 sinet.dll Unknown Table 1 - Impersonated DLLs",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Sinet.dll may relate to SPlayer, a popular video player in China.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s4"
+      },
+      "text": "While the connection initially seems rather weak, it did hit the same Yara rule as mentioned before and the sample with hash 29e44cfa7bcde079e9c7afb23ca8ef86 additionally includes an SSL certificate, which, when converted, points to another custom SSL library, called WolfSSL, which is a “a small, fast, portable implementation of TLS/SSL for embedded devices to the cloud”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s5"
+      },
+      "text": "The same hash or binary also includes what we assess to be a campaign name or KeyBoy version identifier, which is weblogic20170727.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "There was some overlap with the samples and infrastructure, and one email address appears to jump out, which is linked to several domains: 657603405@qq[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": " Weblogic727.xxuz[.]com (2017-07-27 campaign); and,  Weblogic1709.zzux[.]com (2017-09-17 campaign).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "payload, in this case a DLL, will be downloaded using PowerShell, moved to the user’s temporary folder, and run using rundll32.exe, starting in the HOK function or export. Figure 2 shows the relevant part in our XML file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "This debug.dll is a PE32 binary file with the following properties:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": " md5 hash: 64b2ac701a0d67da134e13b2efc46900",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": " sha1 hash: 1bb516d70591a5a0eb55ee71f9f38597f3640b14",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": " sha256 hash: f3f55c3df39b85d934121355bed439b53501f996e9b39d4abed14c7fe8081d92",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": " internal DLL name: InstallClient.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r7"
+      },
+      "text": "1dbbdd99cb8d7089ab31efb5dcf09706 5708e0320879de6f9ac928046b1e4f4e a6903d93f9d6f328bcfe3e196fd8c78b cf6f333f99ee6342d6735ac2f6a37c1e ac9b8c82651eafff9a3bbe7c69d69447 d6ddecdb823de235dd650c0f7a2f3d8f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r8"
+      },
+      "text": "We have analysed d6ddecdb823de235dd650c0f7a2f3d8f, which also has InstallClient.dll as its internal name, as it seems to be the earliest dropper DLL used in this campaign, and does not appear to be very different from any of the other DLLs so far uncovered.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": " Prepare target DLL, in this case rasauto.dll, for replacement in C:\\Windows\\System32;",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": " Copy the target DLL, rasauto.dll, to a new file named rasauto32.dll;",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": " Start the now malicious service using net.exe and net1.exe; and,",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Figure 4 - Real and fake rasauto.dll (rasauto32.dll is the real or original DLL)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "Dllhost.exe is additionally seen to call back or phone home to a hardcoded range of C2 servers, on ports 53, 80, and 443.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "Attaching a debugger to dllhost.exe, reveals the keylogger files and configuration, replaced DLL file, as well as another folder, which is likely used to store screenshots and other data. Another ASCII string can be discovered in the DLL’s config, MDDEFGEGETGIZ, which likely pertains to the specific KeyBoy campaign, or target.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "a55b0c98ac3965067d0270a95e60e87e ikeext.dll IKE and AuthIP IPsec Keying Modules",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "2e04cdf98aead9dd9a5210d7e601cca7 rasauto.dll Remote Access Auto Connection Manager d6ddecdb823de235dd650c0f7a2f3d8f rasauto.dll Remote Access Auto Connection Manager 1dbbdd99cb8d7089ab31efb5dcf09706 sinet.dll Unknown 581ddf0208038a90f8bc2cdc75833425 sinet.dll Unknown Table 1 - Impersonated DLLs",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "Sinet.dll may relate to SPlayer, a popular video player in China.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "Both samples include references to a “work” folder, and a “VS” or “VS Project”. The latter likely points to a Visual Studio project short name, or VS. While the connection initially seems rather weak, it did hit the same Yara rule as mentioned before and the sample with hash 29e44cfa7bcde079e9c7afb23ca8ef86 additionally includes an SSL certificate, which, when converted, points to another custom SSL library, called WolfSSL, which is a “a small, fast, portable implementation of TLS/SSL for embedded devices to the cloud”. The same hash or binary also includes what we assess to be a campaign name or KeyBoy version identifier, which is weblogic20170727.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "Another sample which hit our Yara rule is 7aea7486e3a7a839f49ebc61f1680ba3, which was first uploaded to VirusTotal on 2017-08-25. This sample appears to be an older variant of KeyBoy, as there are several plain-text strings present, which are consistent with CitizenLab’s report referenced in the introduction.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb68"
+      },
+      "text": "7d39cef34bdc751e9cf9d46d2f0bef95",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "PWC_KeyBoys-are-back-in-town(11-02-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb69"
+      },
+      "text": "e, with additional interesting debug paths: Hash Debug path 7d39cef34bdc751e9cf9d46d2f0bef95 D:\\work\\vs\\UsbFerry_v2\\bin\\UsbFerry.pdb 29e44cfa7bcde079e9c7afb23ca8ef86 E:\\Work\\VS Pro",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_13",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_net.exe",
+        "ent_file_net1.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_InstallClient",
+        "ent_file_InstallClient.dll",
+        "ent_malware_InstallClient.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_InstallClient",
+        "ent_file_InstallClient.dll",
+        "ent_malware_InstallClient.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_KeyBoy",
+        "ent_file_Dllhost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_net.exe",
+        "ent_file_net1.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_InstallClient",
+        "ent_file_InstallClient.dll",
+        "ent_malware_InstallClient.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_66",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_KeyBoy",
+        "ent_malware_WolfSSL"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Admin",
+        "ent_file_2017_Q4_Work_Plan.docx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_rasauto.dll",
+        "ent_file_rasauto32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_rasauto.dll",
+        "ent_file_sinet.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_54",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_rasauto.dll",
+        "ent_file_rasauto32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_rasauto.dll",
+        "ent_file_rasauto32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_rasauto.dll",
+        "ent_file_sinet.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_WolfSSL"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

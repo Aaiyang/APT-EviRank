@@ -1,0 +1,3860 @@
+{
+  "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+  "title": "Tags: APT, backdoor, Credential Harvesting, credential stealer, KdcSponge, ManageEngine, NGLite, TiltedTemple, Trojan, Zoho ManageEngine Palo Alto Networks customers are protected against this campaign through the following:",
+  "source": "Unit 42",
+  "published_date": "November 8, 2021",
+  "report_metadata": {
+    "file_name": "PaloAlto-Godzilla-Webshell(11-07-2021).pdf",
+    "file_path": "/root/APTtext/PaloAlto-Godzilla-Webshell(11-07-2021).pdf",
+    "source_type": "pdf",
+    "char_length": 35253,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT27",
+      "type": "ThreatActor",
+      "name": "APT27",
+      "normalized_name": "APT27",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ADAudit",
+      "type": "Malware",
+      "name": "ADAudit",
+      "normalized_name": "ADAudit",
+      "aliases": [
+        "ADAudit.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_145",
+        "ev_147",
+        "ev_31",
+        "ev_32"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_145",
+      "supporting_evidence_ids": [
+        "ev_31",
+        "ev_147",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA256"
+      ],
+      "derived_from_file_id": "ent_file_ADAudit.exe",
+      "family": "ADAudit",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_KdcSponge",
+      "type": "Malware",
+      "name": "KdcSponge",
+      "normalized_name": "KdcSponge",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_125",
+        "ev_132",
+        "ev_27",
+        "ev_91"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "family": "KdcSponge",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_125",
+        "ev_132"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ME_ADAudit",
+      "type": "Malware",
+      "name": "ME_ADAudit",
+      "normalized_name": "ME_ADAudit",
+      "aliases": [
+        "ME_ADAudit.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_147",
+        "ev_198",
+        "ev_32",
+        "ev_67"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_147",
+      "supporting_evidence_ids": [
+        "ev_32",
+        "ev_67",
+        "ev_198"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA256"
+      ],
+      "derived_from_file_id": "ent_file_ME_ADAudit.exe",
+      "family": "ME_ADAudit",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ME_ADManager",
+      "type": "Malware",
+      "name": "ME_ADManager",
+      "normalized_name": "ME_ADManager",
+      "aliases": [
+        "ME_ADManager.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_139",
+        "ev_140",
+        "ev_141",
+        "ev_197"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_139",
+      "supporting_evidence_ids": [
+        "ev_197",
+        "ev_140",
+        "ev_141"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_ME_ADManager.exe",
+      "family": "ME_ADManager",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_NGLite",
+      "type": "Malware",
+      "name": "NGLite",
+      "normalized_name": "NGLite",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27",
+        "ev_59",
+        "ev_68",
+        "ev_8"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "family": "NGLite",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_27",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Godzilla",
+      "type": "Tool",
+      "name": "Godzilla",
+      "normalized_name": "Godzilla",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_24",
+        "ev_36",
+        "ev_42"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_24",
+        "ev_36",
+        "ev_42"
+      ],
+      "needs_review": false,
+      "tool_name": "Godzilla",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Surge",
+      "type": "Tool",
+      "name": "Surge",
+      "normalized_name": "Surge",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Surge",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2021-40539",
+      "type": "CVE",
+      "name": "CVE-2021-40539",
+      "normalized_name": "CVE-2021-40539",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138",
+        "ev_147",
+        "ev_152",
+        "ev_180"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_180",
+      "supporting_evidence_ids": [
+        "ev_138",
+        "ev_147",
+        "ev_152"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_technology_defense_healthcare_energy_and_education_industries",
+      "type": "Victim",
+      "name": "technology, defense, healthcare, energy and education industries",
+      "normalized_name": "technology, defense, healthcare, energy and education industries",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_122",
+        "ev_23",
+        "ev_5"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_ADAudit.exe",
+      "type": "Malware",
+      "name": "ADAudit.exe",
+      "normalized_name": "ADAudit.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_145",
+        "ev_147",
+        "ev_31"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_ADAudit"
+    },
+    {
+      "id": "ent_malware_ADAudit.exe",
+      "type": "Malware",
+      "name": "ADAudit.exe",
+      "normalized_name": "ADAudit.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_145",
+        "ev_147",
+        "ev_31",
+        "ev_32"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "ADAudit.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_145",
+      "supporting_evidence_ids": [
+        "ev_31",
+        "ev_147",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "SHA256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_malware_ChinaChopper",
+      "type": "Malware",
+      "name": "ChinaChopper",
+      "normalized_name": "ChinaChopper",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_113",
+        "ev_36"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_113"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "ChinaChopper",
+      "subtype": "WebShell",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_ManageEngine",
+      "type": "Malware",
+      "name": "ManageEngine",
+      "normalized_name": "ManageEngine",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "family": "ManageEngine",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_ME_ADAudit.exe",
+      "type": "Malware",
+      "name": "ME_ADAudit.exe",
+      "normalized_name": "ME_ADAudit.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_147",
+        "ev_198",
+        "ev_32"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_ME_ADAudit"
+    },
+    {
+      "id": "ent_malware_ME_ADAudit.exe",
+      "type": "Malware",
+      "name": "ME_ADAudit.exe",
+      "normalized_name": "ME_ADAudit.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_147",
+        "ev_198",
+        "ev_32",
+        "ev_67"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "ME_ADAudit.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_147",
+      "supporting_evidence_ids": [
+        "ev_32",
+        "ev_67",
+        "ev_198"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "SHA256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_tool_ME_ADManager.exe",
+      "type": "Tool",
+      "name": "ME_ADManager.exe",
+      "normalized_name": "ME_ADManager.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_139",
+        "ev_140",
+        "ev_141"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_ME_ADManager"
+    },
+    {
+      "id": "ent_malware_PwDump",
+      "type": "Malware",
+      "name": "PwDump",
+      "normalized_name": "PwDump",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "PwDump",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_Tags",
+      "type": "Campaign",
+      "name": "Tags",
+      "normalized_name": "Tags",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_Tags",
+      "type": "Malware",
+      "name": "Tags",
+      "normalized_name": "Tags",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "family": "Tags",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_tool_Cobalt_Strike",
+      "type": "Tool",
+      "name": "Cobalt Strike",
+      "normalized_name": "Cobalt Strike",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Cobalt Strike",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Godzilla_webshell_V3.00_",
+      "type": "Tool",
+      "name": "Godzilla webshell V3.00+",
+      "normalized_name": "Godzilla webshell V3.00+",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Godzilla webshell V3.00+",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_TG-3390",
+      "type": "Tool",
+      "name": "TG-3390",
+      "normalized_name": "TG-3390",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_112",
+        "ev_113"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [
+        "ev_112"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "TG-3390",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_paloaltonetworks.com",
+      "type": "Domain",
+      "name": "paloaltonetworks.com",
+      "normalized_name": "paloaltonetworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133",
+        "ev_19"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "paloaltonetworks.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_149.248.11.205",
+      "type": "IPv4",
+      "name": "149.248.11.205",
+      "normalized_name": "149.248.11.205",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "149.248.11.205",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_199.188.59.192",
+      "type": "IPv4",
+      "name": "199.188.59.192",
+      "normalized_name": "199.188.59.192",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "199.188.59.192",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_email_unit42-investigations_paloaltonetworks.com",
+      "type": "Email",
+      "name": "unit42-investigations@paloaltonetworks.com",
+      "normalized_name": "unit42-investigations@paloaltonetworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "unit42-investigations@paloaltonetworks.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha256_3c90df0e02cc9b1cf1a86f9d7e6f777366c5748bd3cf4070b49460b48b4d4090",
+      "type": "SHA256",
+      "name": "3c90df0e02cc9b1cf1a86f9d7e6f777366c5748bd3cf4070b49460b48b4d4090",
+      "normalized_name": "3c90df0e02cc9b1cf1a86f9d7e6f777366c5748bd3cf4070b49460b48b4d4090",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_163",
+        "ev_195"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "3c90df0e02cc9b1cf1a86f9d7e6f777366c5748bd3cf4070b49460b48b4d4090",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_195",
+      "supporting_evidence_ids": [
+        "ev_163"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3da8d1bfb8192f43cf5d9247035aa4445381d2d26bed981662e3db34824c71fd",
+      "type": "SHA256",
+      "name": "3da8d1bfb8192f43cf5d9247035aa4445381d2d26bed981662e3db34824c71fd",
+      "normalized_name": "3da8d1bfb8192f43cf5d9247035aa4445381d2d26bed981662e3db34824c71fd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_155",
+        "ev_186"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "3da8d1bfb8192f43cf5d9247035aa4445381d2d26bed981662e3db34824c71fd",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_155"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3f868ac52916ebb6f6186ac20b20903f63bc8e9c460e2418f2b032a207d8f21d",
+      "type": "SHA256",
+      "name": "3f868ac52916ebb6f6186ac20b20903f63bc8e9c460e2418f2b032a207d8f21d",
+      "normalized_name": "3f868ac52916ebb6f6186ac20b20903f63bc8e9c460e2418f2b032a207d8f21d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_157",
+        "ev_188"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "3f868ac52916ebb6f6186ac20b20903f63bc8e9c460e2418f2b032a207d8f21d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_188",
+      "supporting_evidence_ids": [
+        "ev_157"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5475aec3b9837b514367c89d8362a9d524bfa02e75b85b401025588839a40bcb",
+      "type": "SHA256",
+      "name": "5475aec3b9837b514367c89d8362a9d524bfa02e75b85b401025588839a40bcb",
+      "normalized_name": "5475aec3b9837b514367c89d8362a9d524bfa02e75b85b401025588839a40bcb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_193"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "5475aec3b9837b514367c89d8362a9d524bfa02e75b85b401025588839a40bcb",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_193",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5b8c307c424e777972c0fa1322844d4d04e9eb200fe9532644888c4b6386d755",
+      "type": "SHA256",
+      "name": "5b8c307c424e777972c0fa1322844d4d04e9eb200fe9532644888c4b6386d755",
+      "normalized_name": "5b8c307c424e777972c0fa1322844d4d04e9eb200fe9532644888c4b6386d755",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_156",
+        "ev_187"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "5b8c307c424e777972c0fa1322844d4d04e9eb200fe9532644888c4b6386d755",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_187",
+      "supporting_evidence_ids": [
+        "ev_156"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5fcc9f3b514b853e8e9077ed4940538aba7b3044edbba28ca92ed37199292058",
+      "type": "SHA256",
+      "name": "5fcc9f3b514b853e8e9077ed4940538aba7b3044edbba28ca92ed37199292058",
+      "normalized_name": "5fcc9f3b514b853e8e9077ed4940538aba7b3044edbba28ca92ed37199292058",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_183"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "5fcc9f3b514b853e8e9077ed4940538aba7b3044edbba28ca92ed37199292058",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_75574959bbdad4b4ac7b16906cd8f1fd855d2a7df8e63905ab18540e2d6f1600",
+      "type": "SHA256",
+      "name": "75574959bbdad4b4ac7b16906cd8f1fd855d2a7df8e63905ab18540e2d6f1600",
+      "normalized_name": "75574959bbdad4b4ac7b16906cd8f1fd855d2a7df8e63905ab18540e2d6f1600",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_192"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "75574959bbdad4b4ac7b16906cd8f1fd855d2a7df8e63905ab18540e2d6f1600",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f",
+      "type": "SHA256",
+      "name": "805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f",
+      "normalized_name": "805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_147",
+        "ev_153",
+        "ev_32",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_147",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_32",
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a44a5e8e65266611d5845d88b43c9e4a9d84fe074fd18f48b50fb837fa6e429d",
+      "type": "SHA256",
+      "name": "a44a5e8e65266611d5845d88b43c9e4a9d84fe074fd18f48b50fb837fa6e429d",
+      "normalized_name": "a44a5e8e65266611d5845d88b43c9e4a9d84fe074fd18f48b50fb837fa6e429d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_190"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "a44a5e8e65266611d5845d88b43c9e4a9d84fe074fd18f48b50fb837fa6e429d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_190",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b2a29d99a1657140f4e254221d8666a736160ce960d06557778318e0d1b7423b",
+      "type": "SHA256",
+      "name": "b2a29d99a1657140f4e254221d8666a736160ce960d06557778318e0d1b7423b",
+      "normalized_name": "b2a29d99a1657140f4e254221d8666a736160ce960d06557778318e0d1b7423b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_182"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "b2a29d99a1657140f4e254221d8666a736160ce960d06557778318e0d1b7423b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_182",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b4162f039172dcb85ca4b85c99dd77beb70743ffd2e6f9e0ba78531945577665",
+      "type": "SHA256",
+      "name": "b4162f039172dcb85ca4b85c99dd77beb70743ffd2e6f9e0ba78531945577665",
+      "normalized_name": "b4162f039172dcb85ca4b85c99dd77beb70743ffd2e6f9e0ba78531945577665",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_164",
+        "ev_196"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "b4162f039172dcb85ca4b85c99dd77beb70743ffd2e6f9e0ba78531945577665",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_196",
+      "supporting_evidence_ids": [
+        "ev_164"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ce310ab611895db1767877bd1f635ee3c4350d6e17ea28f8d100313f62b87382",
+      "type": "SHA256",
+      "name": "ce310ab611895db1767877bd1f635ee3c4350d6e17ea28f8d100313f62b87382",
+      "normalized_name": "ce310ab611895db1767877bd1f635ee3c4350d6e17ea28f8d100313f62b87382",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_191"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "value": "ce310ab611895db1767877bd1f635ee3c4350d6e17ea28f8d100313f62b87382",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_191",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_comsvcs.dll",
+      "type": "File",
+      "name": "comsvcs.dll",
+      "normalized_name": "comsvcs.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_161",
+        "ev_86"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "comsvcs.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_161",
+      "supporting_evidence_ids": [
+        "ev_86"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_kdccli.dll",
+      "type": "File",
+      "name": "kdccli.dll",
+      "normalized_name": "kdccli.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_172",
+        "ev_99"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "kdccli.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_172",
+      "supporting_evidence_ids": [
+        "ev_99"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_kdcsvc.dll",
+      "type": "File",
+      "name": "kdcsvc.dll",
+      "normalized_name": "kdcsvc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_166",
+        "ev_172",
+        "ev_174",
+        "ev_93"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "kdcsvc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_166",
+      "supporting_evidence_ids": [
+        "ev_172",
+        "ev_174",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Kdcsvs.dll",
+      "type": "File",
+      "name": "Kdcsvs.dll",
+      "normalized_name": "Kdcsvs.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_172",
+        "ev_99"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "Kdcsvs.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_172",
+      "supporting_evidence_ids": [
+        "ev_99"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_lsass.exe",
+      "type": "File",
+      "name": "lsass.exe",
+      "normalized_name": "lsass.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_161",
+        "ev_166",
+        "ev_170",
+        "ev_86"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "lsass.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_166",
+      "supporting_evidence_ids": [
+        "ev_161",
+        "ev_86",
+        "ev_170"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RECYCLE.BIN",
+      "type": "File",
+      "name": "RECYCLE.BIN",
+      "normalized_name": "RECYCLE.BIN",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_179"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "RECYCLE.BIN",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "RECYCLE",
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_REDACTED.rar",
+      "type": "File",
+      "name": "REDACTED.rar",
+      "normalized_name": "REDACTED.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_117",
+        "ev_177",
+        "ev_179"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "REDACTED.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_177",
+      "supporting_evidence_ids": [
+        "ev_179",
+        "ev_117"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "REDACTED",
+        "RECYCLE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_sfc_os.dll",
+      "type": "File",
+      "name": "sfc_os.dll",
+      "normalized_name": "sfc_os.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_166",
+        "ev_93"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "sfc_os.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_166",
+      "supporting_evidence_ids": [
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_117",
+        "ev_177"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_177",
+      "supporting_evidence_ids": [
+        "ev_117"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_user64.dll",
+      "type": "File",
+      "name": "user64.dll",
+      "normalized_name": "user64.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_162",
+        "ev_165",
+        "ev_170",
+        "ev_171"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "user64.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_170",
+      "supporting_evidence_ids": [
+        "ev_171",
+        "ev_162",
+        "ev_165"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "SHA256",
+        "HKEY_LOCAL_MACHINE",
+        "SOFTWARE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vmtools.exe",
+      "type": "File",
+      "name": "vmtools.exe",
+      "normalized_name": "vmtools.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_179"
+      ],
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "file_name": "vmtools.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "RECYCLE",
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ADAudit.exe",
+      "tail_id": "ent_malware_ADAudit",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_145",
+        "ev_147"
+      ],
+      "primary_evidence_id": "ev_145",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ME_ADAudit.exe",
+      "tail_id": "ent_malware_ME_ADAudit",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_147",
+        "ev_198"
+      ],
+      "primary_evidence_id": "ev_147",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "drops",
+      "head_id": "ent_malware_KdcSponge",
+      "tail_id": "ent_file_comsvcs.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_86"
+      },
+      "head": {
+        "id": "ent_malware_KdcSponge",
+        "type": "Malware",
+        "name": "KdcSponge",
+        "normalized_name": "KdcSponge",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_125",
+          "ev_132",
+          "ev_27",
+          "ev_91"
+        ],
+        "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+        "family": "KdcSponge",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_91",
+          "ev_125",
+          "ev_132"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_comsvcs.dll",
+        "type": "File",
+        "name": "comsvcs.dll",
+        "normalized_name": "comsvcs.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_161",
+          "ev_86"
+        ],
+        "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+        "file_name": "comsvcs.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_161",
+        "supporting_evidence_ids": [
+          "ev_86"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "drops",
+      "head_id": "ent_malware_KdcSponge",
+      "tail_id": "ent_file_lsass.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_86"
+      },
+      "head": {
+        "id": "ent_malware_KdcSponge",
+        "type": "Malware",
+        "name": "KdcSponge",
+        "normalized_name": "KdcSponge",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_125",
+          "ev_132",
+          "ev_27",
+          "ev_91"
+        ],
+        "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+        "family": "KdcSponge",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_91",
+          "ev_125",
+          "ev_132"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_lsass.exe",
+        "type": "File",
+        "name": "lsass.exe",
+        "normalized_name": "lsass.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_161",
+          "ev_166",
+          "ev_170",
+          "ev_86"
+        ],
+        "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+        "file_name": "lsass.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_166",
+        "supporting_evidence_ids": [
+          "ev_161",
+          "ev_86",
+          "ev_170"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "executes",
+      "head_id": "ent_file_kdcsvc.dll",
+      "tail_id": "ent_file_kdccli.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "primary_evidence_id": "ev_99",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "executes",
+      "head_id": "ent_file_user64.dll",
+      "tail_id": "ent_file_lsass.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_98",
+        "ev_170"
+      ],
+      "primary_evidence_id": "ev_98",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "executes",
+      "head_id": "ent_file_user64.dll",
+      "tail_id": "ent_malware_KdcSponge",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "primary_evidence_id": "ev_91",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "executes",
+      "head_id": "ent_malware_ME_ADAudit",
+      "tail_id": "ent_malware_NGLite",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_139"
+      ],
+      "primary_evidence_id": "ev_139",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "executes",
+      "head_id": "ent_malware_NGLite",
+      "tail_id": "ent_file_comsvcs.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "executes",
+      "head_id": "ent_malware_NGLite",
+      "tail_id": "ent_tool_Godzilla",
+      "head_type": "Malware",
+      "tail_type": "Tool",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "primary_evidence_id": "ev_82",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT27",
+      "tail_id": "ent_cve_CVE-2021-40539",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_54",
+        "ev_152"
+      ],
+      "primary_evidence_id": "ev_54",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_file_comsvcs.dll",
+      "tail_id": "ent_file_lsass.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_file_kdcsvc.dll",
+      "tail_id": "ent_file_kdccli.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "primary_evidence_id": "ev_99",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_file_lsass.exe",
+      "tail_id": "ent_malware_NGLite",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_94",
+        "ev_166"
+      ],
+      "primary_evidence_id": "ev_94",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_file_user64.dll",
+      "tail_id": "ent_file_lsass.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_98",
+        "ev_170"
+      ],
+      "primary_evidence_id": "ev_98",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_file_user64.dll",
+      "tail_id": "ent_malware_KdcSponge",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "primary_evidence_id": "ev_91",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload, load_event",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_file_user64.dll",
+      "tail_id": "ent_malware_NGLite",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_92",
+        "ev_98",
+        "ev_170"
+      ],
+      "primary_evidence_id": "ev_92",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "loads",
+      "head_id": "ent_malware_KdcSponge",
+      "tail_id": "ent_file_user64.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "primary_evidence_id": "ev_91",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "report_load_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_91"
+      },
+      "head": {
+        "id": "ent_malware_KdcSponge",
+        "type": "Malware",
+        "name": "KdcSponge",
+        "normalized_name": "KdcSponge",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_125",
+          "ev_132",
+          "ev_27",
+          "ev_91"
+        ],
+        "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+        "family": "KdcSponge",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_91",
+          "ev_125",
+          "ev_132"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_user64.dll",
+        "type": "File",
+        "name": "user64.dll",
+        "normalized_name": "user64.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_162",
+          "ev_165",
+          "ev_170",
+          "ev_171"
+        ],
+        "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+        "file_name": "user64.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_170",
+        "supporting_evidence_ids": [
+          "ev_171",
+          "ev_162",
+          "ev_165"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "SHA256",
+          "HKEY_LOCAL_MACHINE",
+          "SOFTWARE"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0019",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT27",
+      "tail_id": "ent_malware_ME_ADAudit",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_32",
+        "ev_147"
+      ],
+      "primary_evidence_id": "ev_32",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_or_event_use",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0020",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT27",
+      "tail_id": "ent_malware_NGLite",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_70",
+        "ev_68"
+      ],
+      "primary_evidence_id": "ev_70",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0021",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_APT27",
+      "tail_id": "ent_tool_Godzilla",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "primary_evidence_id": "ev_24",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0022",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "writes_output",
+      "head_id": "ent_malware_KdcSponge",
+      "tail_id": "ent_file_comsvcs.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0023",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "type": "writes_output",
+      "head_id": "ent_malware_KdcSponge",
+      "tail_id": "ent_file_lsass.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0011",
+      "type": "exploits",
+      "summary": "APT27 exploits CVE-2021-40539",
+      "evidence_ids": [
+        "ev_54",
+        "ev_152"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "KdcSponge drops comsvcs.dll",
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "KdcSponge drops lsass.exe",
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "kdcsvc.dll executes kdccli.dll",
+      "evidence_ids": [
+        "ev_99"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "user64.dll executes lsass.exe",
+      "evidence_ids": [
+        "ev_98",
+        "ev_170"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "user64.dll executes KdcSponge",
+      "evidence_ids": [
+        "ev_91"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "executes",
+      "summary": "ME_ADAudit executes NGLite",
+      "evidence_ids": [
+        "ev_139"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "executes",
+      "summary": "NGLite executes comsvcs.dll",
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "NGLite executes Godzilla",
+      "evidence_ids": [
+        "ev_82"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "comsvcs.dll loads lsass.exe",
+      "evidence_ids": [
+        "ev_86",
+        "ev_161"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "kdcsvc.dll loads kdccli.dll",
+      "evidence_ids": [
+        "ev_99"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "lsass.exe loads NGLite",
+      "evidence_ids": [
+        "ev_94",
+        "ev_166"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "loads",
+      "summary": "user64.dll loads lsass.exe",
+      "evidence_ids": [
+        "ev_98",
+        "ev_170"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "loads",
+      "summary": "user64.dll loads KdcSponge",
+      "evidence_ids": [
+        "ev_91"
+      ]
+    },
+    {
+      "step_id": "step_015",
+      "stage": "execution",
+      "relation_id": "rel_0017",
+      "type": "loads",
+      "summary": "user64.dll loads NGLite",
+      "evidence_ids": [
+        "ev_92",
+        "ev_98",
+        "ev_170"
+      ]
+    },
+    {
+      "step_id": "step_016",
+      "stage": "execution",
+      "relation_id": "rel_0018",
+      "type": "loads",
+      "summary": "KdcSponge loads user64.dll",
+      "evidence_ids": [
+        "ev_91"
+      ]
+    },
+    {
+      "step_id": "step_017",
+      "stage": "execution",
+      "relation_id": "rel_0019",
+      "type": "uses_malware",
+      "summary": "APT27 uses_malware ME_ADAudit",
+      "evidence_ids": [
+        "ev_32",
+        "ev_147"
+      ]
+    },
+    {
+      "step_id": "step_018",
+      "stage": "execution",
+      "relation_id": "rel_0020",
+      "type": "uses_malware",
+      "summary": "APT27 uses_malware NGLite",
+      "evidence_ids": [
+        "ev_70",
+        "ev_68"
+      ]
+    },
+    {
+      "step_id": "step_019",
+      "stage": "execution",
+      "relation_id": "rel_0021",
+      "type": "uses_tool",
+      "summary": "APT27 uses_tool Godzilla",
+      "evidence_ids": [
+        "ev_24"
+      ]
+    },
+    {
+      "step_id": "step_020",
+      "stage": "collection",
+      "relation_id": "rel_0022",
+      "type": "writes_output",
+      "summary": "KdcSponge writes_output comsvcs.dll",
+      "evidence_ids": [
+        "ev_86"
+      ]
+    },
+    {
+      "step_id": "step_021",
+      "stage": "collection",
+      "relation_id": "rel_0023",
+      "type": "writes_output",
+      "summary": "KdcSponge writes_output lsass.exe",
+      "evidence_ids": [
+        "ev_86"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s5"
+      },
+      "text": "During that window, the actor successfully compromised at least nine global entities across the technology, defense, healthcare, energy and education industries.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s8"
+      },
+      "text": "The threat actors then used either the webshell or the NGLite payload to run commands and move laterally to other systems on the network, while they exfiltrated files of interest simply by downloading them from the web server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s11"
+      },
+      "text": "Godzilla is a functionality- rich webshell that parses inbound HTTP POST requests, decrypts the data with a secret key, executes decrypted content to carry out additional functionality and returns the result via a HTTP response.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s19"
+      },
+      "text": "Godzilla Webshell unit42.paloaltonetworks.com /manageengine-godzilla-nglite-kdcsponge Category: Unit 42 This post is also available in: 日本語 (Japanese)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "While we lack insight into the totality of organizations that were exploited during this campaign, we believe that, globally, at least nine entities across the technology, defense, healthcare, energy and education industries were compromised.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Following successful exploitation, the actor uploaded a payload which deployed a Godzilla webshell, thereby enabling additional access to a victim network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "The following leased IP addresses in the United States were observed interacting with compromised servers: 24.64.36[.]238 45.63.62[.]109 45.76.173[.]103 45.77.121[.]232 66.42.98[.]156 140.82.17[.]161 149.28.93[.]184 149.248.11[.]205 199.188.59[.]192",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Specifically, the actors deployed a custom variant of an open-source backdoor called NGLite and a credential-harvesting tool we track as KdcSponge.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s12"
+      },
+      "text": "The dropper then copies ADAudit.exe from the current directory to the following path and runs the file with WinExec:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s13"
+      },
+      "text": "During our analysis of multiple incidents, we found that the ME_ADAudit.exe sample maintained a consistent SHA256 hash of 805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f, therefore suggesting that the actor deployed the same customized version of the NGLite backdoor against multiple targets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Upon analysis of the webshell, it was determined to be the Chinese-language Godzilla webshell V3.00+.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "It’s no surprise that the Godzilla webshell has been adopted by regional threat groups during their intrusions, as it offers more functionality and network evasion than other webshells used by the same groups, such as ChinaChopper.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "To figure out how these are presented in the webshell itself, we can take a look at the Godzilla JAR file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "To illustrate, below is a snippet of the web server access logs that show the initial exploit using the Curl application and sending the custom URL payload to trigger the CVE-2021-40539 vulnerability.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s6"
+      },
+      "text": "While the capabilities are standard for a backdoor, NGLite uses a novel C2 channel that leverages a decentralized network based on the legitimate NKN to communicate between the backdoor and the actors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s11"
+      },
+      "text": "We have seen only 13 samples communicating with NKN altogether – nine NGLite samples and four related to an open-source utility called Surge that uses NKN for file sharing.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s13"
+      },
+      "text": "As mentioned in the previous section, the dropper creates registry keys and executes a custom variant of the NGLite backdoor (SHA256: 805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f) saved at the following path:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s14"
+      },
+      "text": "C:\\Windows\\system32\\ME_ADAudit.exe The data structures within the Go-based backdoor contain the following path, which is used to store the main source code for this custom variant of NGLite on the developers’ system:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s15"
+      },
+      "text": "Based on this path, one might surmise that the actor used CrossC2 to build a cross platform Cobalt Strike C2 payload; however, we have no reason to believe that this payload is actually based on CrossC2, as the payload is a customized version of the publicly available NGLite backdoor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s16"
+      },
+      "text": "It is possible that the threat actors included the CrossC2 string in the path as a misdirection, hoping to confuse threat analysts into thinking they are delivering a Cobalt Strike payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s17"
+      },
+      "text": "11, which suggests that this threat actor has been using this tool for several months:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "Post-exploitation Activity Upon compromising a network, the threat actor moved quickly from their initial foothold to gain access to other systems on the target networks by running commands via their NGLite payload and the Godzilla webshell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s7"
+      },
+      "text": "Credential Harvesting and KdcSponge During analysis, Unit 42 found logs that suggest the threat actors used PwDump and the built-in comsvcs.dll to create a mini dump of the lsass.exe process for credential theft; however, when the actor wished to steal credentials from a domain controller, they installed their custom tool that we track as KdcSponge.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s12"
+      },
+      "text": "To launch the KdcSponge credential stealer, the threat actor will run the following command to load and execute the malicious module: regsvr32 /s user64.dll",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s13"
+      },
+      "text": "Upon first execution, the regsvr32 application runs the DllRegisterServer function exported by user64.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s14"
+      },
+      "text": "The DllRegisterServer function resolves the SetSfcFileException function within sfc_os.dll and attempts to disable Windows File Protection (WFP) on the c:\\windows\\system32\\kdcsvc.dll file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s15"
+      },
+      "text": "It then attempts to inject itself into the running lsass.exe process by: 1.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s19"
+      },
+      "text": "Now that user64.dll is running within the lsass.exe process, it will start by creating the following registry key to establish persistence through system reboots:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "From there, the sample will check to make sure the system is running a Kerberos service by attempting to obtain a handle to one of the following modules: kdcsvc.dll kdccli.dll Kdcsvs.dll",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s5"
+      },
+      "text": "[<timestamp>]<domain><username> <cleartext password> Attribution While attribution is still ongoing and we have been unable to validate the actor behind the campaign, we did observe some correlations between the tactics and tooling used in the cases we analyzed and Threat Group 3390 (TG-3390, Emissary Panda, APT27).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s6"
+      },
+      "text": "Specifically, as documented by SecureWorks in an article on a previous TG-3390 operation, we can see that TG-3390 similarly used web exploitation and another popular Chinese webshell called ChinaChopper for their initial footholds before leveraging legitimate stolen credentials for lateral movement and attacks on a domain controller.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s10"
+      },
+      "text": "@echo off c:\\windows\\temp\\svchost.exe a -k -r -s -m5 -v1024000 -padmin-windows2014 “e:\\recycler\\REDACTED.rar” “e:\\ProgramData\\REDACTED\\”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s15"
+      },
+      "text": "At least nine entities across the technology, defense, healthcare, energy and education industries were compromised in this attack campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s18"
+      },
+      "text": "Several other tools have novel characteristics or have not been publicly discussed as being used in previous attacks, specifically the NGLite backdoor and the KdcSponge stealer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s25"
+      },
+      "text": "All known samples (Dropper, NGLite, KdcSponge) are classified as malware in WildFire.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "If you think you may have been impacted, please email unit42-investigations@paloaltonetworks.com or call (866) 486-4842 – (866) 4- UNIT42 – for U.S.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Upon obtaining scan results, the threat actor transitioned to exploitation attempts on Sept. 22. These attempts focused on CVE-2021-40539, which allows for REST API authentication bypass with resultant remote code execution in vulnerable devices. To achieve this result, the actors delivered uniquely crafted POST statements to the REST API LicenseMgr.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "At the time of exploitation, two different executables were saved to the compromised server: ME_ADManager.exe and ME_ADAudit.exe. The ME_ADManager.exe file acts as a dropper Trojan that not only saves a Godzilla webshell to the system, but also installs and runs the other executable saved to the system, specifically ME_ADAudit.exe. The ME_ADAudit.exe executable is based on NGLite, which the threat actors use as their payload to run commands on the system.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "ME_ADManager.exe Dropper",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "c:\\Users\\[username]\\AppData\\Roaming\\ADManager\\ME_ADManager.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r8"
+      },
+      "text": "The dropper then copies ADAudit.exe from the current directory to the following path and runs the file with WinExec:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_147",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r10"
+      },
+      "text": "The dropper does not write the ME_ADAudit.exe file to disk, meaning the threat actor must upload this file to the server prior to the execution of the dropper, likely as part of the initial exploitation of the CVE-2021-40539 vulnerability. During our analysis of multiple incidents, we found that the ME_ADAudit.exe sample maintained a consistent SHA256 hash of 805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f, therefore suggesting that the actor deployed the same customized version of the NGLite backdoor against multiple targets.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "To illustrate, below is a snippet of the web server access logs that show the initial exploit using the Curl application and sending the custom URL payload to trigger the CVE-2021-40539 vulnerability. It then shows the subsequent access of the Godzilla webshell, which has been placed into the hardcoded paths by the initial dropper. By reviewing the User-Agent, we can determine that the time from exploit to initial webshell access took just over four minutes for the threat actor.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "As mentioned in the previous section, the dropper creates registry keys and executes a custom variant of the NGLite backdoor (SHA256: 805b92787ca7833eef5e61e2df1310e4b6544955e812e60b5f834f904623fd9f) saved at the following path:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "3da8d1bfb8192f43cf5d9247035aa4445381d2d26bed981662e3db34824c71fd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_156",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "5b8c307c424e777972c0fa1322844d4d04e9eb200fe9532644888c4b6386d755",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_157",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "3f868ac52916ebb6f6186ac20b20903f63bc8e9c460e2418f2b032a207d8f21d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_161",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "During analysis, Unit 42 found logs that suggest the threat actors used PwDump and the built-in comsvcs.dll to create a mini dump of the lsass.exe process for credential theft; however, when the actor wished to steal credentials from a domain controller, they installed their custom tool that we track as KdcSponge.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_162",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "We know of two KdcSponge samples, both of which were named user64.dll. They had the following SHA256 hashes:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_163",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "3c90df0e02cc9b1cf1a86f9d7e6f777366c5748bd3cf4070b49460b48b4d4090",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_164",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "b4162f039172dcb85ca4b85c99dd77beb70743ffd2e6f9e0ba78531945577665",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_165",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "regsvr32 /s user64.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_166",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "Upon first execution, the regsvr32 application runs the DllRegisterServer function exported by user64.dll. The DllRegisterServer function resolves the SetSfcFileException function within sfc_os.dll and attempts to disable Windows File Protection (WFP) on the c:\\windows\\system32\\kdcsvc.dll file. It then attempts to inject itself into the running lsass.exe process by:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_170",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r10"
+      },
+      "text": "Now that user64.dll is running within the lsass.exe process, it will start by creating the following registry key to establish persistence through system reboots:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_171",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r11"
+      },
+      "text": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce\\KDC Service : regsvr32 /s user64.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_172",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "kdcsvc.dll kdccli.dll Kdcsvs.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_174",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "If the domain controller is running Windows Server 2008 or Server 2012 (major version 6), KdcSponge does not reach out to the symbol server and instead will search the entire kdcsvc.dll module for the byte sequences listed in Table 2 to find the API functions.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_177",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "c:\\windows\\temp\\svchost.exe a -k -r -s -m5 -v1024000 -padmin-windows2014 “e:\\recycler\\REDACTED.rar” “e:\\ProgramData\\REDACTED\\”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_179",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r5"
+      },
+      "text": "%~dp0\\vmtools.exe a -k -r -s -m5 -v4096000 -pREDACTED \"e:\\$RECYCLE.BIN\\REDACTED.rar\" \"E:\\Programs\\REDACTED\\REDACTED\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_180",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r6"
+      },
+      "text": "In September 2021, Unit 42 observed an attack campaign in which the actors gained initial access to targeted organizations by exploiting a recently patched vulnerability in Zoho’s ManageEngine product, ADSelfService Plus, tracked in CVE-2021-40539. At least nine entities across the technology, defense, healthcare, energy and education industries were compromised in this attack campaign.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_182",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "b2a29d99a1657140f4e254221d8666a736160ce960d06557778318e0d1b7423b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_183",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r3"
+      },
+      "text": "5fcc9f3b514b853e8e9077ed4940538aba7b3044edbba28ca92ed37199292058",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_186",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r6"
+      },
+      "text": "3da8d1bfb8192f43cf5d9247035aa4445381d2d26bed981662e3db34824c71fd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_187",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r7"
+      },
+      "text": "5b8c307c424e777972c0fa1322844d4d04e9eb200fe9532644888c4b6386d755",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_188",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r8"
+      },
+      "text": "3f868ac52916ebb6f6186ac20b20903f63bc8e9c460e2418f2b032a207d8f21d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_190",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r10"
+      },
+      "text": "a44a5e8e65266611d5845d88b43c9e4a9d84fe074fd18f48b50fb837fa6e429d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_191",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r11"
+      },
+      "text": "ce310ab611895db1767877bd1f635ee3c4350d6e17ea28f8d100313f62b87382",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_192",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r12"
+      },
+      "text": "75574959bbdad4b4ac7b16906cd8f1fd855d2a7df8e63905ab18540e2d6f1600",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_193",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r13"
+      },
+      "text": "5475aec3b9837b514367c89d8362a9d524bfa02e75b85b401025588839a40bcb",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_195",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r15"
+      },
+      "text": "3c90df0e02cc9b1cf1a86f9d7e6f777366c5748bd3cf4070b49460b48b4d4090",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_196",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r16"
+      },
+      "text": "b4162f039172dcb85ca4b85c99dd77beb70743ffd2e6f9e0ba78531945577665",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_197",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r17"
+      },
+      "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ME_ADManager.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_198",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto-Godzilla-Webshell(11-07-2021)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r18"
+      },
+      "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Run\\ME_ADAudit.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_152",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_tool_Godzilla",
+        "ent_cve_CVE-2021-40539"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_147",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ME_ADAudit",
+        "ent_malware_NGLite",
+        "ent_cve_CVE-2021-40539",
+        "ent_malware_ME_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_ME_ADAudit",
+        "ent_malware_NGLite",
+        "ent_malware_ME_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_malware_NGLite"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_malware_NGLite"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_NGLite",
+        "ent_tool_Surge"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_139",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ME_ADAudit",
+        "ent_malware_ME_ADManager",
+        "ent_malware_NGLite",
+        "ent_tool_Godzilla",
+        "ent_malware_ME_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ME_ADAudit",
+        "ent_malware_NGLite",
+        "ent_malware_ME_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_86",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_file_comsvcs.dll",
+        "ent_file_lsass.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_161",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_file_comsvcs.dll",
+        "ent_file_lsass.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_125",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_malware_NGLite"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_91",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_file_user64.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_113",
+      "page": 10,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_malware_NGLite",
+        "ent_tool_Godzilla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_99",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_kdccli.dll",
+        "ent_file_kdcsvc.dll",
+        "ent_file_Kdcsvs.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_166",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_kdcsvc.dll",
+        "ent_file_lsass.exe",
+        "ent_file_sfc_os.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_172",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_kdccli.dll",
+        "ent_file_kdcsvc.dll",
+        "ent_file_Kdcsvs.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_179",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_RECYCLE.BIN",
+        "ent_file_REDACTED.rar",
+        "ent_file_vmtools.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ADAudit",
+        "ent_malware_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_132",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_malware_NGLite"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_145",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ADAudit",
+        "ent_malware_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_198",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_malware_ME_ADAudit",
+        "ent_malware_ME_ADAudit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_82",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_NGLite",
+        "ent_tool_Godzilla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_174",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_KdcSponge",
+        "ent_file_kdcsvc.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_93",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_kdcsvc.dll",
+        "ent_file_sfc_os.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_98",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_lsass.exe",
+        "ent_file_user64.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_117",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_REDACTED.rar",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_170",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_lsass.exe",
+        "ent_file_user64.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_177",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_REDACTED.rar",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_133",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_domain_paloaltonetworks.com",
+        "ent_email_unit42-investigations_paloaltonetworks.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_180",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2021-40539",
+        "ent_victim_technology_defense_healthcare_energy_and_education_industries"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

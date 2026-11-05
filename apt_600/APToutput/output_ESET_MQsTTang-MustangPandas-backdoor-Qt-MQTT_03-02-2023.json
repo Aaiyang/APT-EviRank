@@ -1,0 +1,4085 @@
+{
+  "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+  "title": "MQsTTang: Mustang Panda’s latest backdoor treads new ground with Qt and MQTT",
+  "source": "ESET",
+  "published_date": "March 2, 2023",
+  "report_metadata": {
+    "file_name": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023).pdf",
+    "file_path": "/root/APTtext/ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 15950,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Mustang_Panda",
+      "type": "ThreatActor",
+      "name": "Mustang Panda",
+      "normalized_name": "Mustang Panda",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_12",
+        "ev_13",
+        "ev_58"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_12",
+        "ev_13",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_MQsTTang",
+      "type": "Malware",
+      "name": "MQsTTang",
+      "normalized_name": "MQsTTang",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_45",
+        "ev_50",
+        "ev_64",
+        "ev_35",
+        "ev_68",
+        "ev_72"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "family": "MQsTTang",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_45",
+        "ev_64",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_MQsTTang",
+      "type": "Campaign",
+      "name": "MQsTTang",
+      "normalized_name": "MQsTTang",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_35",
+        "ev_45",
+        "ev_68",
+        "ev_72"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_45",
+        "ev_68",
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Lazarus",
+      "type": "ThreatActor",
+      "name": "Lazarus",
+      "normalized_name": "Lazarus",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_Korplug",
+      "type": "Malware",
+      "name": "Korplug",
+      "normalized_name": "Korplug",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "family": "Korplug",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_MagicRAT",
+      "type": "Malware",
+      "name": "MagicRAT",
+      "normalized_name": "MagicRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "family": "MagicRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_SHA-1",
+      "type": "Malware",
+      "name": "SHA-1",
+      "normalized_name": "SHA-1",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_48",
+        "ev_49"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "family": "SHA-1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_campaign_Mustang_Panda_campaign",
+      "type": "Campaign",
+      "name": "Mustang Panda campaign",
+      "normalized_name": "Mustang Panda campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_12",
+        "ev_43"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "historical_context"
+    },
+    {
+      "id": "ent_campaign_previous_Mustang_Panda_campaign",
+      "type": "Campaign",
+      "name": "previous Mustang Panda campaign",
+      "normalized_name": "previous Mustang Panda campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "historical_context"
+    },
+    {
+      "id": "ent_domain_amazon.com",
+      "type": "Domain",
+      "name": "amazon.com",
+      "normalized_name": "amazon.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "amazon.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_broker.emqx.io",
+      "type": "Domain",
+      "name": "broker.emqx.io",
+      "normalized_name": "broker.emqx.io",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "broker.emqx.io",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_raw.githubusercontent.com",
+      "type": "Domain",
+      "name": "raw.githubusercontent.com",
+      "normalized_name": "raw.githubusercontent.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "raw.githubusercontent.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_url_https_raw.githubusercontent.com_YanNaingOo0072022_14_main_Documents.rar",
+      "type": "URL",
+      "name": "https://raw.githubusercontent.com/YanNaingOo0072022/14/main/Documents.rar",
+      "normalized_name": "https://raw.githubusercontent.com/YanNaingOo0072022/14/main/Documents.rar",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "https://raw.githubusercontent.com/YanNaingOo0072022/14/main/Documents.rar",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_url_https_raw.githubusercontent.com_YanNaingOo0072022_ee_main_CVs",
+      "type": "URL",
+      "name": "https://raw.githubusercontent.com/YanNaingOo0072022/ee/main/CVs",
+      "normalized_name": "https://raw.githubusercontent.com/YanNaingOo0072022/ee/main/CVs",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "https://raw.githubusercontent.com/YanNaingOo0072022/ee/main/CVs",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_technique_T1036.004",
+      "type": "Technique",
+      "name": "T1036.004",
+      "normalized_name": "T1036.004",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_116",
+        "ev_67"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1036.004",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1036.005",
+      "type": "Technique",
+      "name": "T1036.005",
+      "normalized_name": "T1036.005",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_117",
+        "ev_68"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1036.005",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_117",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1041",
+      "type": "Technique",
+      "name": "T1041",
+      "normalized_name": "T1041",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_124",
+        "ev_75"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1041",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1071",
+      "type": "Technique",
+      "name": "T1071",
+      "normalized_name": "T1071",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_120",
+        "ev_71"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1071",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_120",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1102.002",
+      "type": "Technique",
+      "name": "T1102.002",
+      "normalized_name": "T1102.002",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_121",
+        "ev_72"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1102.002",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1106",
+      "type": "Technique",
+      "name": "T1106",
+      "normalized_name": "T1106",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_113",
+        "ev_64"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1106",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1132.001",
+      "type": "Technique",
+      "name": "T1132.001",
+      "normalized_name": "T1132.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_122",
+        "ev_73"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1132.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [
+        "ev_73"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1204.002",
+      "type": "Technique",
+      "name": "T1204.002",
+      "normalized_name": "T1204.002",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_114",
+        "ev_65"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1204.002",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1480",
+      "type": "Technique",
+      "name": "T1480",
+      "normalized_name": "T1480",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_118",
+        "ev_69"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1480",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1547.001",
+      "type": "Technique",
+      "name": "T1547.001",
+      "normalized_name": "T1547.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_115",
+        "ev_66"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1547.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1566.002",
+      "type": "Technique",
+      "name": "T1566.002",
+      "normalized_name": "T1566.002",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_112",
+        "ev_63"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1566.002",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1573.001",
+      "type": "Technique",
+      "name": "T1573.001",
+      "normalized_name": "T1573.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_123",
+        "ev_74"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1573.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_123",
+      "supporting_evidence_ids": [
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1583.003",
+      "type": "Technique",
+      "name": "T1583.003",
+      "normalized_name": "T1583.003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_106",
+        "ev_57"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1583.003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1583.004",
+      "type": "Technique",
+      "name": "T1583.004",
+      "normalized_name": "T1583.004",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_107",
+        "ev_58"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1583.004",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1587.001",
+      "type": "Technique",
+      "name": "T1587.001",
+      "normalized_name": "T1587.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_108",
+        "ev_59"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1587.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_108",
+      "supporting_evidence_ids": [
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1588.002",
+      "type": "Technique",
+      "name": "T1588.002",
+      "normalized_name": "T1588.002",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_109",
+        "ev_60"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1588.002",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [
+        "ev_60"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1608.001",
+      "type": "Technique",
+      "name": "T1608.001",
+      "normalized_name": "T1608.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_110",
+        "ev_61"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1608.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1608.002",
+      "type": "Technique",
+      "name": "T1608.002",
+      "normalized_name": "T1608.002",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_111",
+        "ev_62"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1608.002",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1622",
+      "type": "Technique",
+      "name": "T1622",
+      "normalized_name": "T1622",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_119",
+        "ev_70"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "technique_id": "T1622",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_ioc_sha1_02D95E0C369B08248BFFAAC8607BBA119D83B95B",
+      "type": "SHA1",
+      "name": "02D95E0C369B08248BFFAAC8607BBA119D83B95B",
+      "normalized_name": "02D95E0C369B08248BFFAAC8607BBA119D83B95B",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81",
+        "ev_90"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "02D95E0C369B08248BFFAAC8607BBA119D83B95B",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_0EA5D10399524C189A197A847B8108AA8070F1B1",
+      "type": "SHA1",
+      "name": "0EA5D10399524C189A197A847B8108AA8070F1B1",
+      "normalized_name": "0EA5D10399524C189A197A847B8108AA8070F1B1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "0EA5D10399524C189A197A847B8108AA8070F1B1",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_30277F3284BCEEF0ADC5E9D45B66897FA8828BFD",
+      "type": "SHA1",
+      "name": "30277F3284BCEEF0ADC5E9D45B66897FA8828BFD",
+      "normalized_name": "30277F3284BCEEF0ADC5E9D45B66897FA8828BFD",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "30277F3284BCEEF0ADC5E9D45B66897FA8828BFD",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_430C2EF474C7710345B410F49DF853BDEAFBDD78",
+      "type": "SHA1",
+      "name": "430C2EF474C7710345B410F49DF853BDEAFBDD78",
+      "normalized_name": "430C2EF474C7710345B410F49DF853BDEAFBDD78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "430C2EF474C7710345B410F49DF853BDEAFBDD78",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_61A2D34625706F17221C1110D36A435438BC0665",
+      "type": "SHA1",
+      "name": "61A2D34625706F17221C1110D36A435438BC0665",
+      "normalized_name": "61A2D34625706F17221C1110D36A435438BC0665",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "61A2D34625706F17221C1110D36A435438BC0665",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_740C8492DDA786E2231A46BFC422A2720DB0279A",
+      "type": "SHA1",
+      "name": "740C8492DDA786E2231A46BFC422A2720DB0279A",
+      "normalized_name": "740C8492DDA786E2231A46BFC422A2720DB0279A",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "740C8492DDA786E2231A46BFC422A2720DB0279A",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_982CCAF1CB84F6E44E9296C7A1DDE2CE6A09D7BB",
+      "type": "SHA1",
+      "name": "982CCAF1CB84F6E44E9296C7A1DDE2CE6A09D7BB",
+      "normalized_name": "982CCAF1CB84F6E44E9296C7A1DDE2CE6A09D7BB",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "982CCAF1CB84F6E44E9296C7A1DDE2CE6A09D7BB",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_A1C660D31518C8AFAA6973714DE30F3D576B68FC",
+      "type": "SHA1",
+      "name": "A1C660D31518C8AFAA6973714DE30F3D576B68FC",
+      "normalized_name": "A1C660D31518C8AFAA6973714DE30F3D576B68FC",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "A1C660D31518C8AFAA6973714DE30F3D576B68FC",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_AB01E099872A094DC779890171A11764DE8B4360",
+      "type": "SHA1",
+      "name": "AB01E099872A094DC779890171A11764DE8B4360",
+      "normalized_name": "AB01E099872A094DC779890171A11764DE8B4360",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "AB01E099872A094DC779890171A11764DE8B4360",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_BEE0B741142A9C392E05E0443AAE1FA41EF512D6",
+      "type": "SHA1",
+      "name": "BEE0B741142A9C392E05E0443AAE1FA41EF512D6",
+      "normalized_name": "BEE0B741142A9C392E05E0443AAE1FA41EF512D6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "BEE0B741142A9C392E05E0443AAE1FA41EF512D6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_F1A8BF83A410B99EF0E7FDF7BA02B543B9F0E66C",
+      "type": "SHA1",
+      "name": "F1A8BF83A410B99EF0E7FDF7BA02B543B9F0E66C",
+      "normalized_name": "F1A8BF83A410B99EF0E7FDF7BA02B543B9F0E66C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "F1A8BF83A410B99EF0E7FDF7BA02B543B9F0E66C",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_F6F3343F64536BF98DE7E287A7419352BF94EB93",
+      "type": "SHA1",
+      "name": "F6F3343F64536BF98DE7E287A7419352BF94EB93",
+      "normalized_name": "F6F3343F64536BF98DE7E287A7419352BF94EB93",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "F6F3343F64536BF98DE7E287A7419352BF94EB93",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_F848C4F3B9D7F3FE1DB3847370F8EEFAA9BF60F1",
+      "type": "SHA1",
+      "name": "F848C4F3B9D7F3FE1DB3847370F8EEFAA9BF60F1",
+      "normalized_name": "F848C4F3B9D7F3FE1DB3847370F8EEFAA9BF60F1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "value": "F848C4F3B9D7F3FE1DB3847370F8EEFAA9BF60F1",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_Affairs.exe",
+      "type": "File",
+      "name": "Affairs.exe",
+      "normalized_name": "Affairs.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_77",
+        "ev_88"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "Affairs.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_88",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PASSPORT",
+        "JAPAN"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Amb.rar",
+      "type": "File",
+      "name": "Amb.rar",
+      "normalized_name": "Amb.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_87"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "Amb.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "AFBI"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_BoomerangLib.dll",
+      "type": "File",
+      "name": "BoomerangLib.dll",
+      "normalized_name": "BoomerangLib.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "BoomerangLib.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_breakpad.dll",
+      "type": "File",
+      "name": "breakpad.dll",
+      "normalized_name": "breakpad.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "breakpad.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cheatengine-x86_64.exe",
+      "type": "File",
+      "name": "cheatengine-x86_64.exe",
+      "normalized_name": "cheatengine-x86_64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "cheatengine-x86_64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_coreclr.dll",
+      "type": "File",
+      "name": "coreclr.dll",
+      "normalized_name": "coreclr.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "coreclr.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "ADMW"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Documents.rar",
+      "type": "File",
+      "name": "Documents.rar",
+      "normalized_name": "Documents.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_89",
+        "ev_92"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "Documents.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_92",
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "AFBI"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_fiddler.exe",
+      "type": "File",
+      "name": "fiddler.exe",
+      "normalized_name": "fiddler.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "fiddler.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Germany.Exe",
+      "type": "File",
+      "name": "Germany.Exe",
+      "normalized_name": "Germany.Exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_77",
+        "ev_91"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "Germany.Exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PASSPORT",
+        "JAPAN"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_HPCustPartUI.dll",
+      "type": "File",
+      "name": "HPCustPartUI.dll",
+      "normalized_name": "HPCustPartUI.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_97",
+        "ev_98"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "HPCustPartUI.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_98"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ida.exe",
+      "type": "File",
+      "name": "ida.exe",
+      "normalized_name": "ida.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "ida.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ida64.exe",
+      "type": "File",
+      "name": "ida64.exe",
+      "normalized_name": "ida64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "ida64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_JAPAN.eXE",
+      "type": "File",
+      "name": "JAPAN.eXE",
+      "normalized_name": "JAPAN.eXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_77",
+        "ev_78",
+        "ev_90"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "JAPAN.eXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_77",
+        "ev_78",
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "NG-23",
+        "PASSPORT",
+        "JAPAN"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_libcef.dll",
+      "type": "File",
+      "name": "libcef.dll",
+      "normalized_name": "libcef.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "libcef.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ollydbg.exe",
+      "type": "File",
+      "name": "ollydbg.exe",
+      "normalized_name": "ollydbg.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "ollydbg.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pestudio.exe",
+      "type": "File",
+      "name": "pestudio.exe",
+      "normalized_name": "pestudio.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "pestudio.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_processhacker.exe",
+      "type": "File",
+      "name": "processhacker.exe",
+      "normalized_name": "processhacker.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "processhacker.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_procexp.exe",
+      "type": "File",
+      "name": "procexp.exe",
+      "normalized_name": "procexp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "procexp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_procmon.exe",
+      "type": "File",
+      "name": "procmon.exe",
+      "normalized_name": "procmon.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "procmon.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_procmon64.exe",
+      "type": "File",
+      "name": "procmon64.exe",
+      "normalized_name": "procmon64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "procmon64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_radare2.exe",
+      "type": "File",
+      "name": "radare2.exe",
+      "normalized_name": "radare2.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "radare2.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_systracerx32.exe",
+      "type": "File",
+      "name": "systracerx32.exe",
+      "normalized_name": "systracerx32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "systracerx32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tcpview.exe",
+      "type": "File",
+      "name": "tcpview.exe",
+      "normalized_name": "tcpview.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "tcpview.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vcall.exe",
+      "type": "File",
+      "name": "vcall.exe",
+      "normalized_name": "vcall.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_40",
+        "ev_84",
+        "ev_85",
+        "ev_86"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "vcall.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [
+        "ev_85",
+        "ev_86",
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vdump.exe",
+      "type": "File",
+      "name": "vdump.exe",
+      "normalized_name": "vdump.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "vdump.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Win32_Agent.AFBI",
+      "type": "File",
+      "name": "Win32/Agent.AFBI",
+      "normalized_name": "Win32/Agent.AFBI",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_49",
+        "ev_87",
+        "ev_89",
+        "ev_92"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "Win32/Agent.AFBI",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_87",
+        "ev_89",
+        "ev_92"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "SHA-1",
+        "AFBI"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_x64dbg.exe",
+      "type": "File",
+      "name": "x64dbg.exe",
+      "normalized_name": "x64dbg.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_79"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "file_name": "x64dbg.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Europea",
+      "type": "Victim",
+      "name": "Europea",
+      "normalized_name": "Europea",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_44",
+        "ev_9"
+      ],
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_MQTT",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "Tool",
+      "name": "MQTT",
+      "normalized_name": "MQTT",
+      "aliases": [],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint",
+      "tool_name": "MQTT"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "executes",
+      "head_id": "ent_file_vcall.exe",
+      "tail_id": "ent_malware_MQsTTang",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_42",
+        "ev_86"
+      ],
+      "primary_evidence_id": "ev_42",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "executes",
+      "head_id": "ent_malware_MQsTTang",
+      "tail_id": "ent_file_Affairs.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_20",
+        "ev_77"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "loads",
+      "head_id": "ent_file_Affairs.exe",
+      "tail_id": "ent_file_Germany.Exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_20",
+        "ev_77"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "loads",
+      "head_id": "ent_file_vcall.exe",
+      "tail_id": "ent_malware_MQsTTang",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_40",
+        "ev_42",
+        "ev_85",
+        "ev_86"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Mustang_Panda",
+      "tail_id": "ent_malware_MQsTTang",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_title",
+        "ev_5"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "title_possessive, headline_or_event_use; headline_actor_tool",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "MQsTTang: Mustang Panda’s latest backdoor treads new ground with Qt and MQTT"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "uses_service_api",
+      "head_id": "ent_malware_MQsTTang",
+      "tail_id": "ent_tool_MQTT",
+      "head_type": "Malware",
+      "tail_type": "Tool",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_36",
+        "ev_71",
+        "ev_72",
+        "ev_82",
+        "ev_83",
+        "ev_120"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_service_api",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "service_api_marker",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "uses_tool",
+      "head_id": "ent_malware_MQsTTang",
+      "tail_id": "ent_tool_MQTT",
+      "head_type": "Malware",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "primary_evidence_id": "ev_71",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "use_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "T1071 Application Layer Protocol MQsTTang communicates with its C&C server using the MQTT protocol."
+      },
+      "head": {
+        "id": "ent_malware_MQsTTang",
+        "type": "Malware",
+        "name": "MQsTTang",
+        "normalized_name": "MQsTTang",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_14",
+          "ev_45",
+          "ev_50",
+          "ev_64",
+          "ev_35",
+          "ev_68",
+          "ev_72"
+        ],
+        "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+        "family": "MQsTTang",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_14",
+        "supporting_evidence_ids": [
+          "ev_45",
+          "ev_64",
+          "ev_50"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_tool_MQTT",
+        "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+        "type": "Tool",
+        "name": "MQTT",
+        "normalized_name": "MQTT",
+        "aliases": [],
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ev_15"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "service_endpoint",
+        "tool_name": "MQTT"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_Mustang_Panda",
+      "tail_id": "ent_tool_MQTT",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "MQsTTang: Mustang Panda’s latest backdoor treads new ground with Qt and MQTT"
+      },
+      "head": {
+        "id": "ent_threatactor_Mustang_Panda",
+        "type": "ThreatActor",
+        "name": "Mustang Panda",
+        "normalized_name": "Mustang Panda",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_12",
+          "ev_13",
+          "ev_58"
+        ],
+        "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_12",
+          "ev_13",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_tool_MQTT",
+        "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+        "type": "Tool",
+        "name": "MQTT",
+        "normalized_name": "MQTT",
+        "aliases": [],
+        "confidence": 0.82,
+        "evidence_ids": [
+          "ev_15"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "service_endpoint",
+        "tool_name": "MQTT"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "vcall.exe executes MQsTTang",
+      "evidence_ids": [
+        "ev_42",
+        "ev_86"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "MQsTTang executes Affairs.exe",
+      "evidence_ids": [
+        "ev_20",
+        "ev_77"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "Affairs.exe loads Germany.Exe",
+      "evidence_ids": [
+        "ev_20",
+        "ev_77"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "vcall.exe loads MQsTTang",
+      "evidence_ids": [
+        "ev_40",
+        "ev_42",
+        "ev_85"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "Mustang Panda uses_malware MQsTTang",
+      "evidence_ids": [
+        "ev_title",
+        "ev_5"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "uses_tool",
+      "summary": "MQsTTang uses_tool MQTT",
+      "evidence_ids": [
+        "ev_71"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "uses_tool",
+      "summary": "Mustang Panda uses_tool MQTT",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "command_and_control",
+      "relation_id": "rel_0006",
+      "type": "uses_service_api",
+      "summary": "MQsTTang uses_service_api MQTT",
+      "evidence_ids": [
+        "ev_36",
+        "ev_71",
+        "ev_72"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "ESET researchers have analyzed MQsTTang, a new custom backdoor that we attribute to the Mustang Panda APT group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Mustang Panda is known for its customized Korplug variants (also dubbed PlugX) and elaborate loading chains.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "In a departure from the group’s usual tactics, MQsTTang has only a single stage and doesn’t use any obfuscation techniques.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "As documented by fellow researchers at Proofpoint, Mustang Panda has been known to target European governmental entities since at least 2020 and has increased its activity in Europe even further, since Russia’s invasion of Ukraine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Another GitHub repository of the same user was used in a previous Mustang Panda campaign described by Avast in a December 2022 blogpost.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Some of the infrastructure used in this campaign also matches the network fingerprint of previously known Mustang Panda servers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "MQsTTang is a barebones backdoor that allows the attacker to execute arbitrary commands on a victim’s machine and get the output.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "MQTT is typically used for communication between IoT devices and controllers, and the protocol hasn’t been used in many publicly documented malware families.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Lazarus’s MagicRAT is one of the rare recently documented examples.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s10"
+      },
+      "text": "CVs Amb Officer PASSPORT Ministry Of Foreign Affairs.exe Documents members of delegation diplomatic from Germany.Exe PDF_Passport and CVs of diplomatic members from Tokyo of JAPAN.eXE",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Note No.18-NG-23 from Embassy of Japan.exe These archives are hosted on a web server with no associated domain name.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "cheatengine-x86_64.exe ollydbg.exe ida.exe ida64.exe radare2.exe x64dbg.exe procmon.exe procmon64.exe procexp.exe processhacker.exe pestudio.exe systracerx32.exe fiddler.exe tcpview.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "This is supported by the low number of samples we’ve observed and the very simple nature of MQsTTang.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "As shown in Figure 4, the malware and C&C server use two MQTT topics for their communication.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Task 4: Establishing persistence Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "When MQsTTang is executed on startup as c:\\users\\public\\vcall.exe, only the C&C communication task is executed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s5"
+      },
+      "text": "Conclusion The Mustang Panda campaign described in this article is ongoing as of this writing.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s6"
+      },
+      "text": "The victimology is unclear, but the decoy filenames are in line with the group’s other campaigns that target European political entities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s7"
+      },
+      "text": "This new MQsTTang backdoor provides a kind of remote shell without any of the bells and whistles associated with the group’s other malware families.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s10"
+      },
+      "text": "IoCs Files SHA-1 Filename Detection Description",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "SHA-1 Filename Detection Description Win32/Agent.AFBI MQsTTang backdoor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Win32/Agent.AFBI MQsTTang backdoor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "Network IP Domain Hosting provider First seen Details 3.228.54.173 broker.emqx.io Amazon.com, Inc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Tactic ID Name Description Resource Development T1583.003 Acquire Infrastructure: Virtual Private Server Some servers used in the campaign are on shared hosting.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "T1583.004 Acquire Infrastructure: Server Some servers used in the campaign seem to be exclusive to Mustang Panda.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "T1587.001 Develop Capabilities: Malware MQsTTang is a custom backdoor, probably developed by Mustang Panda.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s4"
+      },
+      "text": "T1588.002 Obtain Capabilities: Tool Multiple legitimate and open- source tools, including psexec, ps, curl, and plink, were found on the staging server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s5"
+      },
+      "text": "T1608.001 Stage Capabilities: Upload Malware MQsTTang was uploaded to the web server for distribution.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s6"
+      },
+      "text": "T1608.002 Stage Capabilities: Upload Tool Multiple tools were uploaded to an FTP server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s7"
+      },
+      "text": "Initial Access T1566.002 Phishing: Spearphishing Link MQsTTang is distributed via spearphishing links to a malicious file on an attacker-controlled web server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s8"
+      },
+      "text": "Execution T1106 Native API MQsTTang uses the QProcess class from the Qt framework to execute commands.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s9"
+      },
+      "text": "T1204.002 User Execution: Malicious File MQsTTang relies on the user to execute the downloaded malicious file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s10"
+      },
+      "text": "Persistence T1547.001 Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder MQsTTang persists by creating a registry Run key.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s11"
+      },
+      "text": "Defense Evasion T1036.004 Masquerading: Masquerade Task or Service In most samples, the registry key is created with the name qvlc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s12"
+      },
+      "text": "T1036.005 Masquerading: Match Legitimate Name or Location When creating copies, MQsTTang uses filenames of legitimate programs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s13"
+      },
+      "text": "T1480 Execution Guardrails MQsTTang checks the paths it is executed from to determine which tasks to execute.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s14"
+      },
+      "text": "T1622 Debugger Evasion MQsTTang detects running debuggers and alters its behavior if any are found to be present.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s15"
+      },
+      "text": "T1071 Application Layer Protocol MQsTTang communicates with its C&C server using the MQTT protocol.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s16"
+      },
+      "text": "T1102.002 Web Service: Bidirectional Communication MQsTTang uses a legitimate public MQTT broker.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s17"
+      },
+      "text": "T1132.001 Data Encoding: Standard Encoding The content of the messages between the malware and server is base64 encoded.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s18"
+      },
+      "text": "T1573.001 Encrypted Channel: Symmetric Cryptography The content of the messages between the malware and server is encrypted using a repeating XOR key.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s19"
+      },
+      "text": "Exfiltration T1041 Exfiltration Over C2 Channel The output of executed commands is sent back to the server using the same protocol.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "CVs Amb Officer PASSPORT Ministry Of Foreign Affairs.exe Documents members of delegation diplomatic from Germany.Exe PDF_Passport and CVs of diplomatic members from Tokyo of JAPAN.eXE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Note No.18-NG-23 from Embassy of Japan.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "cheatengine-x86_64.exe ollydbg.exe ida.exe ida64.exe radare2.exe x64dbg.exe procmon.exe procmon64.exe procexp.exe processhacker.exe pestudio.exe systracerx32.exe fiddler.exe tcpview.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "When executed directly, the malware will launch a copy of itself with 1 as a command line argument. This is repeated by the new process, with the argument being incremented by 1 on every run. When this argument hits specific values, certain tasks will be executed. Note that the exact values vary between samples; the ones mentioned below correspond to the sample with SHA-1 02D95E0C369B08248BFFAAC8607BBA119D83B95B. However, the tasks themselves and the order in which they are executed is constant.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "As was previously mentioned, MQsTTang communicates with its C&C server over the MQTT protocol. All observed samples use 3.228.54.173 as broker. This server is a public broker operated by EMQX, who also happen to be the maintainers of the QMQTT library. This could be a way to make the network traffic seem legitimate and to hide Mustang Panda’s own infrastructure. Using this public broker also provides resiliency; the service is unlikely to be taken down because of its many legitimate users and, even if the current C&C servers are banned or taken down, Mustang Panda could spin up new ones and use the same MQTT topics without disrupting MQsTTang’s operation.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "As shown in Figure 4, the malware and C&C server use two MQTT topics for their communication. The first one, iot/server2, is used for communication from the client to the server. The second one is used for communication from the server to the client. It follows the format iot/v2/<Unique ID> where <Unique ID> is generated by taking the last 8 bytes, in hex form, of a UUID. If any analysis tool is detected, server2 and v2 are respectively replaced with server0 and v0. This is likely in order to avoid tipping off defenders by entirely aborting the malware’s execution early.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "The second and third tasks are fairly similar to each other. They copy the malware’s executable to a hardcoded path; c:\\users\\public\\vdump.exe and c:\\users\\public\\vcall.exe respectively. The filenames used are different for each sample, but they are always located in the C:\\users\\public directory.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key. This will cause the malware to be executed on startup.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "When MQsTTang is executed on startup as c:\\users\\public\\vcall.exe, only the C&C communication task is executed.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "A1C660D31518C8AFAA6973714DE30F3D576B68FC CVs Amb.rar Win32/Agent.AFBI RAR archive used to distribute MQsTTang backdoor.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "430C2EF474C7710345B410F49DF853BDEAFBDD78 CVs Amb Officer PASSPORT Ministry Of Foreign Affairs.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "F1A8BF83A410B99EF0E7FDF7BA02B543B9F0E66C Documents.rar Win32/Agent.AFBI RAR archive used to distribute MQsTTang backdoor.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "02D95E0C369B08248BFFAAC8607BBA119D83B95B PDF_Passport and CVs of diplomatic members from Tokyo of JAPAN.eXE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "0EA5D10399524C189A197A847B8108AA8070F1B1 Documents members of delegation diplomatic from Germany.Exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "982CCAF1CB84F6E44E9296C7A1DDE2CE6A09D7BB Documents.rar Win32/Agent.AFBI RAR archive used to distribute MQsTTang backdoor.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "740C8492DDA786E2231A46BFC422A2720DB0279A 23 from Embassy of Japan.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r7"
+      },
+      "text": "AB01E099872A094DC779890171A11764DE8B4360 BoomerangLib.dll Win32/Korplug.TH Known Mustang Panda Korplug loader.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r8"
+      },
+      "text": "61A2D34625706F17221C1110D36A435438BC0665 breakpad.dll Win32/Korplug.UB Known Mustang Panda Korplug loader.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r9"
+      },
+      "text": "30277F3284BCEEF0ADC5E9D45B66897FA8828BFD coreclr.dll Win32/Agent.ADMW Known Mustang Panda Korplug loader.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r10"
+      },
+      "text": "BEE0B741142A9C392E05E0443AAE1FA41EF512D6 HPCustPartUI.dll Win32/Korplug.UB Known Mustang Panda Korplug loader.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r11"
+      },
+      "text": "F6F3343F64536BF98DE7E287A7419352BF94EB93 HPCustPartUI.dll Win32/Korplug.UB Known Mustang Panda Korplug loader.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r12"
+      },
+      "text": "F848C4F3B9D7F3FE1DB3847370F8EEFAA9BF60F1 libcef.dll Win32/Korplug.TX Known Mustang Panda Korplug loader.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "https://raw.githubusercontent[.]com/YanNaingOo0072022/14/main/Documents.rar https://raw.githubusercontent[.]com/YanNaingOo0072022/ee/main/CVs Amb.rar",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "T1583.003 Acquire Infrastructure: Virtual Private Server",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "T1583.004 Acquire Infrastructure: Server Some servers used in the campaign seem to be exclusive to Mustang Panda.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "T1587.001 Develop Capabilities: Malware MQsTTang is a custom backdoor, probably developed by Mustang Panda.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r7"
+      },
+      "text": "T1588.002 Obtain Capabilities: Tool Multiple legitimate and open- source tools, including psexec, ps, curl, and plink, were found on the staging server.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r8"
+      },
+      "text": "T1608.001 Stage Capabilities: Upload Malware",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r9"
+      },
+      "text": "T1608.002 Stage Capabilities: Upload Tool Multiple tools were uploaded to an FTP server.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r10"
+      },
+      "text": "Initial Access T1566.002 Phishing: Spearphishing Link MQsTTang is distributed via spearphishing links to a malicious file on an attacker-controlled web server.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r11"
+      },
+      "text": "Execution T1106 Native API MQsTTang uses the QProcess class from the Qt framework to execute commands.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r12"
+      },
+      "text": "T1204.002 User Execution: Malicious File MQsTTang relies on the user to execute the downloaded malicious file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r13"
+      },
+      "text": "Persistence T1547.001 Boot or Logon Autostart Execution: Registry Run Keys / Startup Folder",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r14"
+      },
+      "text": "T1036.004 Masquerading: Masquerade Task or Service",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r15"
+      },
+      "text": "T1036.005 Masquerading: Match Legitimate Name or Location",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r16"
+      },
+      "text": "T1480 Execution Guardrails MQsTTang checks the paths it is executed from to determine which tasks to execute.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r17"
+      },
+      "text": "T1622 Debugger Evasion MQsTTang detects running debuggers and alters its behavior if any are found to be present.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r18"
+      },
+      "text": "T1071 Application Layer Protocol MQsTTang communicates with its C&C server using the MQTT protocol.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r19"
+      },
+      "text": "T1102.002 Web Service: Bidirectional Communication",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r20"
+      },
+      "text": "T1132.001 Data Encoding: Standard Encoding",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r21"
+      },
+      "text": "T1573.001 Encrypted Channel: Symmetric Cryptography",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "ESET_MQsTTang-MustangPandas-backdoor-Qt-MQTT(03-02-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r22"
+      },
+      "text": "Exfiltration T1041 Exfiltration Over C2 Channel The output of executed commands is sent back to the server using the same protocol.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_82",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_malware_MQsTTang",
+        "ent_tool_MQTT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_malware_MQsTTang",
+        "ent_tool_MQTT"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_71",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_tool_MQTT"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_120",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_tool_MQTT"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_84",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_vcall.exe",
+        "ent_file_vdump.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_87",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_Amb.rar",
+        "ent_file_Win32_Agent.AFBI"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_89",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_Documents.rar",
+        "ent_file_Win32_Agent.AFBI"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_92",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_Documents.rar",
+        "ent_file_Win32_Agent.AFBI"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_72",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_tool_MQTT"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_cheatengine-x86_64.exe",
+        "ent_file_fiddler.exe",
+        "ent_file_ida.exe",
+        "ent_file_ida64.exe",
+        "ent_file_ollydbg.exe",
+        "ent_file_pestudio.exe",
+        "ent_file_processhacker.exe",
+        "ent_file_procexp.exe",
+        "ent_file_procmon.exe",
+        "ent_file_procmon64.exe",
+        "ent_file_radare2.exe",
+        "ent_file_systracerx32.exe",
+        "ent_file_tcpview.exe",
+        "ent_file_x64dbg.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_79",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_cheatengine-x86_64.exe",
+        "ent_file_fiddler.exe",
+        "ent_file_ida.exe",
+        "ent_file_ida64.exe",
+        "ent_file_ollydbg.exe",
+        "ent_file_pestudio.exe",
+        "ent_file_processhacker.exe",
+        "ent_file_procexp.exe",
+        "ent_file_procmon.exe",
+        "ent_file_procmon64.exe",
+        "ent_file_radare2.exe",
+        "ent_file_systracerx32.exe",
+        "ent_file_tcpview.exe",
+        "ent_file_x64dbg.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_Affairs.exe",
+        "ent_file_Germany.Exe",
+        "ent_file_JAPAN.eXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_77",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_Affairs.exe",
+        "ent_file_Germany.Exe",
+        "ent_file_JAPAN.eXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_malware_MQsTTang"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_malware_MQsTTang"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_108",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_malware_MQsTTang"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_94",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_file_BoomerangLib.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_95",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_file_breakpad.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_96",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_file_coreclr.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_97",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_file_HPCustPartUI.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_98",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_file_HPCustPartUI.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_99",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Mustang_Panda",
+        "ent_file_libcef.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_vcall.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_Win32_Agent.AFBI"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_Win32_Agent.AFBI"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_86",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_MQsTTang",
+        "ent_file_vcall.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_amazon.com",
+        "ent_domain_broker.emqx.io"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

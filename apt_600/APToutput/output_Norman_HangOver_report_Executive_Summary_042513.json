@@ -1,0 +1,136 @@
+{
+  "report_id": "Norman_HangOver report_Executive Summary_042513",
+  "title": "OPERATION HANGOVER |Executive Summary",
+  "source": null,
+  "published_date": "March 17, 2013",
+  "report_metadata": {
+    "file_name": "Norman_HangOver report_Executive Summary_042513.pdf",
+    "file_path": "/root/APTtext/Norman_HangOver report_Executive Summary_042513.pdf",
+    "source_type": "pdf",
+    "char_length": 5451,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_victim_Selectio",
+      "type": "Victim",
+      "name": "Selectio",
+      "normalized_name": "Selectio",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "Norman_HangOver report_Executive Summary_042513",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_claritycommunications.us",
+      "type": "Domain",
+      "name": "claritycommunications.us",
+      "normalized_name": "claritycommunications.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Norman_HangOver report_Executive Summary_042513",
+      "value": "claritycommunications.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_norman_claritycommunications.us",
+      "type": "Email",
+      "name": "norman@claritycommunications.us",
+      "normalized_name": "norman@claritycommunications.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Norman_HangOver report_Executive Summary_042513",
+      "value": "norman@claritycommunications.us",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Norman_HangOver report_Executive Summary_042513",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Target Selection Based on analysis of IP addresses collected from criminal data stores discov- ered during the investigation, it appears that potential victims have been target- ed in over a dozen countries, most heavily represented by Pakistan, Iran, and the United States.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Norman_HangOver report_Executive Summary_042513",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s12"
+      },
+      "text": "Gary Thompson, 925.768.2400 Tim Johnson, 415.385.9537 norman@claritycommunications.us",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_15",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_domain_claritycommunications.us",
+        "ent_email_norman_claritycommunications.us"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

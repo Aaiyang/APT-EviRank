@@ -1,0 +1,558 @@
+{
+  "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+  "title": "Energetic Bear/Crouching Yeti: attacks on servers Kaspersky Lab ICS CERT",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018).pdf",
+    "file_path": "/root/APTtext/Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018).pdf",
+    "source_type": "pdf",
+    "char_length": 22904,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Energetic_Bear",
+      "type": "ThreatActor",
+      "name": "Energetic Bear",
+      "normalized_name": "Energetic Bear",
+      "aliases": [
+        "Crouching Yeti"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_14",
+        "ev_7"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Real_estate_agency",
+      "type": "Victim",
+      "name": "Real estate agency",
+      "normalized_name": "Real estate agency",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Server_of_a_university",
+      "type": "Victim",
+      "name": "Server of a university",
+      "normalized_name": "Server of a university",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Crouching_Yeti",
+      "type": "ThreatActor",
+      "name": "Crouching Yeti",
+      "normalized_name": "Crouching Yeti",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14",
+        "ev_7"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Energetic_Bear"
+    },
+    {
+      "id": "ent_threatactor_Subnets",
+      "type": "ThreatActor",
+      "name": "Subnets",
+      "normalized_name": "Subnets",
+      "aliases": [
+        "Chechen Republic"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_ftpChecker",
+      "type": "Malware",
+      "name": "ftpChecker",
+      "normalized_name": "ftpChecker",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "family": "ftpChecker",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91",
+        "ev_92",
+        "ev_93",
+        "ev_94"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [
+        "ev_93",
+        "ev_94",
+        "ev_92"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_bediger4000_php-malware-analysis_tree_master_db-config.php",
+      "type": "URL",
+      "name": "https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php",
+      "normalized_name": "https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "value": "https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_jivoi_openssh-backdoor-kit",
+      "type": "URL",
+      "name": "https://github.com/jivoi/openssh-backdoor-kit",
+      "normalized_name": "https://github.com/jivoi/openssh-backdoor-kit",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "value": "https://github.com/jivoi/openssh-backdoor-kit",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_sqlmapproject_sqlmap.git",
+      "type": "URL",
+      "name": "https://github.com/sqlmapproject/sqlmap.git",
+      "normalized_name": "https://github.com/sqlmapproject/sqlmap.git",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "value": "https://github.com/sqlmapproject/sqlmap.git",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_wso-shell_WSO",
+      "type": "URL",
+      "name": "https://github.com/wso-shell/WSO",
+      "normalized_name": "https://github.com/wso-shell/WSO",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "value": "https://github.com/wso-shell/WSO",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_file_error_log.php",
+      "type": "File",
+      "name": "error_log.php",
+      "normalized_name": "error_log.php",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44",
+        "ev_45"
+      ],
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "file_name": "error_log.php",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Crouching_Yeti",
+      "tail_id": "ent_threatactor_Energetic_Bear",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_7"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Energetic Bear/Crouching Yeti is a widely known APT group active since at least 2010.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "The report also includes the findings of an analysis of several webservers compromised by the Energetic Bear group during 2016 and in early 2017.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "Country Description Role in the attack Russia Opposition political website Waterhole Real estate agency Auxiliary (collecting user data in the waterhole attack)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Industrial group Waterhole Investment group Waterhole Greece Server of a university Auxiliary (collecting user data in the waterhole attack)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Personal website of a developer Vainah Telecom IPs and Subnets (Chechen Republic) Various Chechen resources (governmental organizations, universities, industrial enterprises, etc.)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s9"
+      },
+      "text": "In addition, a custom Python script named ftpChecker.py was found on one of the servers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "wso shell – error_log.php",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "Deobfuscated wso shell – error_log.php",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb91"
+      },
+      "text": "https://github.com/wso-shell/WSO",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb92"
+      },
+      "text": "https://github.com/bediger4000/php-malware-analysis/tree/master/db-config.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb93"
+      },
+      "text": "https://github.com/jivoi/openssh-backdoor-kit",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_EB_public_FINAL_EN_20042018(04-23-2018)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb94"
+      },
+      "text": "git clone https://github.com/sqlmapproject/sqlmap.git",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_Energetic_Bear",
+        "ent_threatactor_Crouching_Yeti"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Energetic_Bear",
+        "ent_threatactor_Crouching_Yeti"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

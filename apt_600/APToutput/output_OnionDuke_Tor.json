@@ -1,0 +1,837 @@
+{
+  "report_id": "OnionDuke_Tor",
+  "title": "OnionDuke: APT Attacks Via the Tor Network - F-Secure Weblog : News from the Lab",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "OnionDuke_Tor.pdf",
+    "file_path": "/root/APTtext/OnionDuke_Tor.pdf",
+    "source_type": "pdf",
+    "char_length": 6350,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_MiniDuke",
+      "type": "Malware",
+      "name": "MiniDuke",
+      "normalized_name": "MiniDuke",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_18",
+        "ev_19",
+        "ev_2",
+        "ev_20"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "family": "MiniDuke",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_18",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_OnionDuke",
+      "type": "Malware",
+      "name": "OnionDuke",
+      "normalized_name": "OnionDuke",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_23",
+        "ev_5",
+        "ev_8",
+        "ev_20",
+        "ev_21"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "family": "OnionDuke",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_5",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_overpict.com",
+      "type": "Domain",
+      "name": "overpict.com",
+      "normalized_name": "overpict.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15",
+        "ev_16"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "overpict.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_OnionDuke",
+      "type": "Campaign",
+      "name": "OnionDuke",
+      "normalized_name": "OnionDuke",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_11",
+        "ev_20",
+        "ev_21",
+        "ev_8"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_11",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_domain_airtravelabroad.com",
+      "type": "Domain",
+      "name": "airtravelabroad.com",
+      "normalized_name": "airtravelabroad.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "airtravelabroad.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_beijingnewsblog.net",
+      "type": "Domain",
+      "name": "beijingnewsblog.net",
+      "normalized_name": "beijingnewsblog.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "beijingnewsblog.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_grouptumbler.com",
+      "type": "Domain",
+      "name": "grouptumbler.com",
+      "normalized_name": "grouptumbler.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17",
+        "ev_18"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "grouptumbler.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_leveldelta.com",
+      "type": "Domain",
+      "name": "leveldelta.com",
+      "normalized_name": "leveldelta.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17",
+        "ev_18"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "leveldelta.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_nasdaqblog.net",
+      "type": "Domain",
+      "name": "nasdaqblog.net",
+      "normalized_name": "nasdaqblog.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "nasdaqblog.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_natureinhome.com",
+      "type": "Domain",
+      "name": "natureinhome.com",
+      "normalized_name": "natureinhome.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "natureinhome.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_nestedmail.com",
+      "type": "Domain",
+      "name": "nestedmail.com",
+      "normalized_name": "nestedmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "nestedmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_nostressjob.com",
+      "type": "Domain",
+      "name": "nostressjob.com",
+      "normalized_name": "nostressjob.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "nostressjob.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_nytunion.com",
+      "type": "Domain",
+      "name": "nytunion.com",
+      "normalized_name": "nytunion.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "nytunion.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_oilnewsblog.com",
+      "type": "Domain",
+      "name": "oilnewsblog.com",
+      "normalized_name": "oilnewsblog.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "oilnewsblog.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_sixsquare.net",
+      "type": "Domain",
+      "name": "sixsquare.net",
+      "normalized_name": "sixsquare.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "sixsquare.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ustradecomp.com",
+      "type": "Domain",
+      "name": "ustradecomp.com",
+      "normalized_name": "ustradecomp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "ustradecomp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_a75995f94854dea8799650a2f4a97980b71199d2",
+      "type": "SHA1",
+      "name": "a75995f94854dea8799650a2f4a97980b71199d2",
+      "normalized_name": "a75995f94854dea8799650a2f4a97980b71199d2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_27"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "a75995f94854dea8799650a2f4a97980b71199d2",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b491c14d8cfb48636f6095b7b16555e9a575d57f",
+      "type": "SHA1",
+      "name": "b491c14d8cfb48636f6095b7b16555e9a575d57f",
+      "normalized_name": "b491c14d8cfb48636f6095b7b16555e9a575d57f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_28"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "b491c14d8cfb48636f6095b7b16555e9a575d57f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d433f281cf56015941a1c2cb87066ca62ea1db37",
+      "type": "SHA1",
+      "name": "d433f281cf56015941a1c2cb87066ca62ea1db37",
+      "normalized_name": "d433f281cf56015941a1c2cb87066ca62ea1db37",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "OnionDuke_Tor",
+      "value": "d433f281cf56015941a1c2cb87066ca62ea1db37",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The malware used in this case is, however, not a version of MiniDuke.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "In all the cases we have observed, this detected as Trojan-Dropper:W32/OnionDuke.A ).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "A flowchart of the infection process Backdoor:W32/OnionDuke.B ) will decrypt an embedded configuration (shown below) and attempt to connect to hardcoded C&C URLs specified in the configuration data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "A screenshot of the embedded configuration data Through our research, we have also been able to identify multiple other components of the OnionDuke malware family.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "This DLL file (SHA1 among its configuration data a different hardcoded C&C domain, overpict.com and also evidence suggesting that this component may abuse Twitter as an additional C&C channel.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "What makes the overpict.com domain interesting, is it was originally registered in 2011 with the alias of \" John Kasai \".",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "Within a two-week window, \" John Kasai \" also registered the following domains: airtravelabroad.com, beijingnewsblog.net, grouptumbler.com, leveldelta.com, nasdaqblog.net, natureinhome.com, nestedmail.com, nostressjob.com, nytunion.com, oilnewsblog.com, sixsquare.net and ustradecomp.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "This is significant because the domains leveldelta.com and grouptumbler.com have previously been identified as C&C domains used by MiniDuke.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s9"
+      },
+      "text": "MiniDuke are two separate families of malware, the actors behind them are connected through the use of shared infrastructure.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "A visualization of the infrastructure shared between OnionDuke and MiniDuke Based on compilation timestamps and discovery dates of samples we have observed, we believe the",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "OnionDuke operators have been infecting downloaded executables at least since the end of October 2013.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Backdoor:W32/OnionDuke.B .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "malicious executable has been the same binary (SHA1: a75995f94854dea8799650a2f4a97980b71199d2,",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Once executed, the DLL file (SHA1: b491c14d8cfb48636f6095b7b16555e9a575d57f , detected as",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "• a75995f94854dea8799650a2f4a97980b71199d2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "• b491c14d8cfb48636f6095b7b16555e9a575d57f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "OnionDuke_Tor",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "• d433f281cf56015941a1c2cb87066ca62ea1db37",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_18",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_domain_grouptumbler.com",
+        "ent_domain_leveldelta.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_overpict.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_airtravelabroad.com",
+        "ent_domain_beijingnewsblog.net",
+        "ent_domain_grouptumbler.com",
+        "ent_domain_leveldelta.com",
+        "ent_domain_nasdaqblog.net",
+        "ent_domain_natureinhome.com",
+        "ent_domain_nestedmail.com",
+        "ent_domain_nostressjob.com",
+        "ent_domain_nytunion.com",
+        "ent_domain_oilnewsblog.com",
+        "ent_domain_sixsquare.net",
+        "ent_domain_ustradecomp.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_malware_OnionDuke"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

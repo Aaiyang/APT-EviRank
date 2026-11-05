@@ -1,0 +1,689 @@
+{
+  "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+  "title": "Juan Andrés Guerrero-Saade HermeticWiper | New Destructive Malware Used In Cyber Attacks on Ukraine",
+  "source": "ESET",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Sentinelone_HermeticWiper-Ukraine(02-23-2022).pdf",
+    "file_path": "/root/APTtext/Sentinelone_HermeticWiper-Ukraine(02-23-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 6889,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT33",
+      "type": "ThreatActor",
+      "name": "APT33",
+      "normalized_name": "APT33",
+      "aliases": [
+        "Shamoon"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Destover",
+      "type": "ThreatActor",
+      "name": "Destover",
+      "normalized_name": "Destover",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Lazarus",
+      "type": "ThreatActor",
+      "name": "Lazarus",
+      "normalized_name": "Lazarus",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Lazarus_Group",
+      "type": "ThreatActor",
+      "name": "Lazarus Group",
+      "normalized_name": "Lazarus Group",
+      "aliases": [
+        "Destover"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Destover"
+    },
+    {
+      "id": "ent_threatactor_Shamoon",
+      "type": "ThreatActor",
+      "name": "Shamoon",
+      "normalized_name": "Shamoon",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_threatactor_APT33"
+    },
+    {
+      "id": "ent_malware_Shamoon",
+      "type": "Malware",
+      "name": "Shamoon",
+      "normalized_name": "Shamoon",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "family": "Shamoon",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_sentinelone.com",
+      "type": "Domain",
+      "name": "sentinelone.com",
+      "normalized_name": "sentinelone.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "sentinelone.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_youtu.be",
+      "type": "Domain",
+      "name": "youtu.be",
+      "normalized_name": "youtu.be",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "youtu.be",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_youtu.be_keWfVA6F4IM",
+      "type": "URL",
+      "name": "https://youtu.be/keWfVA6F4IM",
+      "normalized_name": "https://youtu.be/keWfVA6F4IM",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "https://youtu.be/keWfVA6F4IM",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591",
+      "type": "SHA256",
+      "name": "1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591",
+      "normalized_name": "1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_61b25d11392172e587d8da3045812a66c3385451",
+      "type": "SHA1",
+      "name": "61b25d11392172e587d8da3045812a66c3385451",
+      "normalized_name": "61b25d11392172e587d8da3045812a66c3385451",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "61b25d11392172e587d8da3045812a66c3385451",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_912342f1c840a42f6b74132f8a7c4ffe7d40fb77",
+      "type": "SHA1",
+      "name": "912342f1c840a42f6b74132f8a7c4ffe7d40fb77",
+      "normalized_name": "912342f1c840a42f6b74132f8a7c4ffe7d40fb77",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "912342f1c840a42f6b74132f8a7c4ffe7d40fb77",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_095a1678021b034903c85dd5acb447ad",
+      "type": "MD5",
+      "name": "095a1678021b034903c85dd5acb447ad",
+      "normalized_name": "095a1678021b034903c85dd5acb447ad",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "095a1678021b034903c85dd5acb447ad",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_231b3385ac17e41c5bb1b1fcb59599c4",
+      "type": "MD5",
+      "name": "231b3385ac17e41c5bb1b1fcb59599c4",
+      "normalized_name": "231b3385ac17e41c5bb1b1fcb59599c4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "231b3385ac17e41c5bb1b1fcb59599c4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a952e288a1ead66490b3275a807f52e5",
+      "type": "MD5",
+      "name": "a952e288a1ead66490b3275a807f52e5",
+      "normalized_name": "a952e288a1ead66490b3275a807f52e5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_32"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "a952e288a1ead66490b3275a807f52e5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_eb845b7a16ed82bd248e395d9852f467",
+      "type": "MD5",
+      "name": "eb845b7a16ed82bd248e395d9852f467",
+      "normalized_name": "eb845b7a16ed82bd248e395d9852f467",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "value": "eb845b7a16ed82bd248e395d9852f467",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_empntdrv.sys",
+      "type": "File",
+      "name": "empntdrv.sys",
+      "normalized_name": "empntdrv.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_26"
+      ],
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "file_name": "empntdrv.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "sentinelone.com /labs/hermetic-wiper-ukraine-under-attack",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "Both the Lazarus Group (Destover) and APT33",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "(Shamoon) took advantage of Eldos Rawdisk in order to get direct userland access to the filesystem without calling Windows APIs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "HermeticWiper uses a similar technique by abusing a different driver, empntdrv.sys .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "(Shamoon) took advantage of Eldos Rawdisk in order to get direct userland access to the filesystem without calling Windows APIs. HermeticWiper uses a similar technique by abusing a different driver, empntdrv.sys .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Win32 EXE 912342f1c840a42f6b74132f8a7c4ffe7d40fb77",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "Win32 EXE 61b25d11392172e587d8da3045812a66c3385451",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "RCDATA_DRV_X64 a952e288a1ead66490b3275a807f52e5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "RCDATA_DRV_X86 231b3385ac17e41c5bb1b1fcb59599c4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "RCDATA_DRV_XP_X64 095a1678021b034903c85dd5acb447ad",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "RCDATA_DRV_XP_X86 eb845b7a16ed82bd248e395d9852f467",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r10"
+      },
+      "text": "meta: desc = \"HermeticWiper - broad hunting rule\" author = \"Friends @ SentinelLabs\" version = \"1.0\" last_modified = \"02.23.2022\" hash = \"1bc44eef75779e3ca1eefb8ff5a64807dbc942b1e4a2672d77b9f6928d292591\" strings: $string1 = \"DRV_XP_X64\" wide ascii nocase $string2 = \"EPMNTDRV\\\\%u\" wide ascii nocase $string3 = \"PhysicalDrive%u\" wide ascii nocase $cert1 = \"Hermetica Digital Ltd\" wide ascii nocase condition: uint16(0) == 0x5A4D and all of them }",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb38"
+      },
+      "text": "Watch Video At: https://youtu.be/keWfVA6F4IM",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Sentinelone_HermeticWiper-Ukraine(02-23-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb39"
+      },
+      "text": "se. SentinelOne Customers Protected Watch Video At: https://youtu.be/keWfVA6F4IM",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_26",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT33",
+        "ent_file_empntdrv.sys"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT33",
+        "ent_threatactor_Destover",
+        "ent_threatactor_Lazarus",
+        "ent_threatactor_Lazarus_Group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

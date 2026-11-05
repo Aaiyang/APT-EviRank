@@ -1,0 +1,4761 @@
+{
+  "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+  "title": "Threat Actors Target Government of Belarus Using CMSTAR Trojan",
+  "source": "Unit 42",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017).pdf",
+    "file_path": "/root/APTtext/PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 23346,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_CMSTAR",
+      "type": "Malware",
+      "name": "CMSTAR",
+      "normalized_name": "CMSTAR",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "family": "CMSTAR",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_via",
+      "type": "Malware",
+      "name": "via",
+      "normalized_name": "via",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_19",
+        "ev_35",
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "family": "via",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2015-1641",
+      "type": "CVE",
+      "name": "CVE-2015-1641",
+      "normalized_name": "CVE-2015-1641",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93",
+        "ev_95"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [
+        "ev_95"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_oeiowidfla22.com",
+      "type": "Domain",
+      "name": "oeiowidfla22.com",
+      "normalized_name": "oeiowidfla22.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_86"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "oeiowidfla22.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [
+        "ev_73"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Belarusia",
+      "type": "Victim",
+      "name": "Belarusia",
+      "normalized_name": "Belarusia",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_12",
+        "ev_20"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Government_of_Belarus",
+      "type": "Victim",
+      "name": "Government of Belarus",
+      "normalized_name": "Government of Belarus",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_researchcenter.paloaltonetworks.com",
+      "type": "Domain",
+      "name": "researchcenter.paloaltonetworks.com",
+      "normalized_name": "researchcenter.paloaltonetworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_154",
+        "ev_155"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "researchcenter.paloaltonetworks.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [
+        "ev_155"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_wait.waisttoomuchmind.com",
+      "type": "Domain",
+      "name": "wait.waisttoomuchmind.com",
+      "normalized_name": "wait.waisttoomuchmind.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_85"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "wait.waisttoomuchmind.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_104.238.188.211_gl7xljvn3fqGt3u.dat",
+      "type": "URL",
+      "name": "http://104.238.188.211/gl7xljvn3fqGt3u.dat",
+      "normalized_name": "http://104.238.188.211/gl7xljvn3fqGt3u.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://104.238.188.211/gl7xljvn3fqGt3u.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.103.123_06JcD5jz5dSHVAy.dat",
+      "type": "URL",
+      "name": "http://108.61.103.123/06JcD5jz5dSHVAy.dat",
+      "normalized_name": "http://108.61.103.123/06JcD5jz5dSHVAy.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.103.123/06JcD5jz5dSHVAy.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.103.123_fHZvWtBGlFvs2Nr.dat",
+      "type": "URL",
+      "name": "http://108.61.103.123/fHZvWtBGlFvs2Nr.dat",
+      "normalized_name": "http://108.61.103.123/fHZvWtBGlFvs2Nr.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.103.123/fHZvWtBGlFvs2Nr.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.103.123_jvZfZ0gdTWtr46y.dat",
+      "type": "URL",
+      "name": "http://108.61.103.123/jvZfZ0gdTWtr46y.dat",
+      "normalized_name": "http://108.61.103.123/jvZfZ0gdTWtr46y.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.103.123/jvZfZ0gdTWtr46y.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.103.123_nj3dsMMpyQQDBF3.dat",
+      "type": "URL",
+      "name": "http://108.61.103.123/nj3dsMMpyQQDBF3.dat",
+      "normalized_name": "http://108.61.103.123/nj3dsMMpyQQDBF3.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.103.123/nj3dsMMpyQQDBF3.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.175.110_bDtzGVtqgiJU9PI.dat",
+      "type": "URL",
+      "name": "http://108.61.175.110/bDtzGVtqgiJU9PI.dat",
+      "normalized_name": "http://108.61.175.110/bDtzGVtqgiJU9PI.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.175.110/bDtzGVtqgiJU9PI.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_119"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.175.110_gkMmqVvZ7gGGxpY.dat",
+      "type": "URL",
+      "name": "http://108.61.175.110/gkMmqVvZ7gGGxpY.dat",
+      "normalized_name": "http://108.61.175.110/gkMmqVvZ7gGGxpY.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.175.110/gkMmqVvZ7gGGxpY.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_119"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.175.110_oiUfxZfej29MAbF.dat",
+      "type": "URL",
+      "name": "http://108.61.175.110/oiUfxZfej29MAbF.dat",
+      "normalized_name": "http://108.61.175.110/oiUfxZfej29MAbF.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.175.110/oiUfxZfej29MAbF.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.175.110_tlhXVFeBvT64LC9.dat",
+      "type": "URL",
+      "name": "http://108.61.175.110/tlhXVFeBvT64LC9.dat",
+      "normalized_name": "http://108.61.175.110/tlhXVFeBvT64LC9.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.175.110/tlhXVFeBvT64LC9.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.175.110_z_gaDZyeZXvScQ6.dat",
+      "type": "URL",
+      "name": "http://108.61.175.110/z_gaDZyeZXvScQ6.dat",
+      "normalized_name": "http://108.61.175.110/z_gaDZyeZXvScQ6.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://108.61.175.110/z_gaDZyeZXvScQ6.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_119"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.76.80.32_tYD7jzfVNZqMfye.dat",
+      "type": "URL",
+      "name": "http://45.76.80.32/tYD7jzfVNZqMfye.dat",
+      "normalized_name": "http://45.76.80.32/tYD7jzfVNZqMfye.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.76.80.32/tYD7jzfVNZqMfye.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.58.160_8h5NPYB5fAn301E.dat",
+      "type": "URL",
+      "name": "http://45.77.58.160/8h5NPYB5fAn301E.dat",
+      "normalized_name": "http://45.77.58.160/8h5NPYB5fAn301E.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.58.160/8h5NPYB5fAn301E.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.58.160_9EkCWYA3OtDbz1l.dat",
+      "type": "URL",
+      "name": "http://45.77.58.160/9EkCWYA3OtDbz1l.dat",
+      "normalized_name": "http://45.77.58.160/9EkCWYA3OtDbz1l.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.58.160/9EkCWYA3OtDbz1l.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.58.49_54xfapkezW64xDE.dat",
+      "type": "URL",
+      "name": "http://45.77.58.49/54xfapkezW64xDE.dat",
+      "normalized_name": "http://45.77.58.49/54xfapkezW64xDE.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.58.49/54xfapkezW64xDE.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_3kK24dXFYRgM6Ac.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/3kK24dXFYRgM6Ac.dat",
+      "normalized_name": "http://45.77.60.138/3kK24dXFYRgM6Ac.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/3kK24dXFYRgM6Ac.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_c2KoCT5OHcVwGi7.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/c2KoCT5OHcVwGi7.dat",
+      "normalized_name": "http://45.77.60.138/c2KoCT5OHcVwGi7.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/c2KoCT5OHcVwGi7.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138",
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_cw1PlY308OpfVeZ.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/cw1PlY308OpfVeZ.dat",
+      "normalized_name": "http://45.77.60.138/cw1PlY308OpfVeZ.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/cw1PlY308OpfVeZ.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_ezD19AweVIj5NaH.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/ezD19AweVIj5NaH.dat",
+      "normalized_name": "http://45.77.60.138/ezD19AweVIj5NaH.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/ezD19AweVIj5NaH.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_HJDBvnJ7wc4S5qZ.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/HJDBvnJ7wc4S5qZ.dat",
+      "normalized_name": "http://45.77.60.138/HJDBvnJ7wc4S5qZ.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/HJDBvnJ7wc4S5qZ.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_JUmoT4Pbw6U2xcj.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/JUmoT4Pbw6U2xcj.dat",
+      "normalized_name": "http://45.77.60.138/JUmoT4Pbw6U2xcj.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/JUmoT4Pbw6U2xcj.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138",
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_jVJlw3wp379neaJ.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/jVJlw3wp379neaJ.dat",
+      "normalized_name": "http://45.77.60.138/jVJlw3wp379neaJ.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/jVJlw3wp379neaJ.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_liW0ecpxEWCfIgU.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/liW0ecpxEWCfIgU.dat",
+      "normalized_name": "http://45.77.60.138/liW0ecpxEWCfIgU.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/liW0ecpxEWCfIgU.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138",
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_mePVDjnAZsYCw5j.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/mePVDjnAZsYCw5j.dat",
+      "normalized_name": "http://45.77.60.138/mePVDjnAZsYCw5j.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/mePVDjnAZsYCw5j.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_UScHrzGWbXb01gv.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/UScHrzGWbXb01gv.dat",
+      "normalized_name": "http://45.77.60.138/UScHrzGWbXb01gv.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/UScHrzGWbXb01gv.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_VFdSKlgCAZD7mmp.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/VFdSKlgCAZD7mmp.dat",
+      "normalized_name": "http://45.77.60.138/VFdSKlgCAZD7mmp.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/VFdSKlgCAZD7mmp.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_w57E8dktKb9UQyV.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/w57E8dktKb9UQyV.dat",
+      "normalized_name": "http://45.77.60.138/w57E8dktKb9UQyV.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/w57E8dktKb9UQyV.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_WsEeRyHEhLO1kUm.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/WsEeRyHEhLO1kUm.dat",
+      "normalized_name": "http://45.77.60.138/WsEeRyHEhLO1kUm.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/WsEeRyHEhLO1kUm.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.60.138_YXza9HkKWzqtXlt.dat",
+      "type": "URL",
+      "name": "http://45.77.60.138/YXza9HkKWzqtXlt.dat",
+      "normalized_name": "http://45.77.60.138/YXza9HkKWzqtXlt.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.60.138/YXza9HkKWzqtXlt.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.77.62.181_naIXl13kqeV7Y2j.dat",
+      "type": "URL",
+      "name": "http://45.77.62.181/naIXl13kqeV7Y2j.dat",
+      "normalized_name": "http://45.77.62.181/naIXl13kqeV7Y2j.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "http://45.77.62.181/naIXl13kqeV7Y2j.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_ablameiko_mia.by",
+      "type": "Email",
+      "name": "ablameiko@mia.by",
+      "normalized_name": "ablameiko@mia.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "ablameiko@mia.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_armscontrol_mfa.gov.by",
+      "type": "Email",
+      "name": "armscontrol@mfa.gov.by",
+      "normalized_name": "armscontrol@mfa.gov.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "armscontrol@mfa.gov.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_inform_mod.mil.by",
+      "type": "Email",
+      "name": "inform@mod.mil.by",
+      "normalized_name": "inform@mod.mil.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "inform@mod.mil.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_itsc_mod.mil.by",
+      "type": "Email",
+      "name": "itsc@mod.mil.by",
+      "normalized_name": "itsc@mod.mil.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "itsc@mod.mil.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_mineuvs_mod.mil.by",
+      "type": "Email",
+      "name": "mineuvs@mod.mil.by",
+      "normalized_name": "mineuvs@mod.mil.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "mineuvs@mod.mil.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_uporov_milcoop_mod.mil.by",
+      "type": "Email",
+      "name": "uporov_milcoop@mod.mil.by",
+      "normalized_name": "uporov_milcoop@mod.mil.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "uporov_milcoop@mod.mil.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_video_gpk.gov.by",
+      "type": "Email",
+      "name": "video@gpk.gov.by",
+      "normalized_name": "video@gpk.gov.by",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "video@gpk.gov.by",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha256_09890dc8898b99647cdc1cceb97e764b6a88d55b5a520c8d0ea3bfd8f75ed83b",
+      "type": "SHA256",
+      "name": "09890dc8898b99647cdc1cceb97e764b6a88d55b5a520c8d0ea3bfd8f75ed83b",
+      "normalized_name": "09890dc8898b99647cdc1cceb97e764b6a88d55b5a520c8d0ea3bfd8f75ed83b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_117"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "09890dc8898b99647cdc1cceb97e764b6a88d55b5a520c8d0ea3bfd8f75ed83b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_117",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_13acddf9b7c2daafd815cbfa75fbb778a7074a6f90277e858040275ae61a252b",
+      "type": "SHA256",
+      "name": "13acddf9b7c2daafd815cbfa75fbb778a7074a6f90277e858040275ae61a252b",
+      "normalized_name": "13acddf9b7c2daafd815cbfa75fbb778a7074a6f90277e858040275ae61a252b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_132"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "13acddf9b7c2daafd815cbfa75fbb778a7074a6f90277e858040275ae61a252b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5",
+      "type": "SHA256",
+      "name": "16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5",
+      "normalized_name": "16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2008ec82cec0b62bdb4d2cea64ff5a159a4327a058dfd867f877536389a72fb6",
+      "type": "SHA256",
+      "name": "2008ec82cec0b62bdb4d2cea64ff5a159a4327a058dfd867f877536389a72fb6",
+      "normalized_name": "2008ec82cec0b62bdb4d2cea64ff5a159a4327a058dfd867f877536389a72fb6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "2008ec82cec0b62bdb4d2cea64ff5a159a4327a058dfd867f877536389a72fb6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2a0169c72c84e6d3fa49af701fd46ee7aaf1d1d9e107798d93a6ca8df5d25957",
+      "type": "SHA256",
+      "name": "2a0169c72c84e6d3fa49af701fd46ee7aaf1d1d9e107798d93a6ca8df5d25957",
+      "normalized_name": "2a0169c72c84e6d3fa49af701fd46ee7aaf1d1d9e107798d93a6ca8df5d25957",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "2a0169c72c84e6d3fa49af701fd46ee7aaf1d1d9e107798d93a6ca8df5d25957",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2a8e5551b9905e907da7268aba50fcbc526cfd0549ff2e352f9f4d1d71bf32a7",
+      "type": "SHA256",
+      "name": "2a8e5551b9905e907da7268aba50fcbc526cfd0549ff2e352f9f4d1d71bf32a7",
+      "normalized_name": "2a8e5551b9905e907da7268aba50fcbc526cfd0549ff2e352f9f4d1d71bf32a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_149"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "2a8e5551b9905e907da7268aba50fcbc526cfd0549ff2e352f9f4d1d71bf32a7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_149",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2c8267192b196bf8a92c8b72d52096e46e307fa4d4dafdc030d3e0f5b4145e9e",
+      "type": "SHA256",
+      "name": "2c8267192b196bf8a92c8b72d52096e46e307fa4d4dafdc030d3e0f5b4145e9e",
+      "normalized_name": "2c8267192b196bf8a92c8b72d52096e46e307fa4d4dafdc030d3e0f5b4145e9e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_109"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "2c8267192b196bf8a92c8b72d52096e46e307fa4d4dafdc030d3e0f5b4145e9e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2debf12b1cb1291cbd096b24897856948734fa62fd61a1f24d379b4224bda212",
+      "type": "SHA256",
+      "name": "2debf12b1cb1291cbd096b24897856948734fa62fd61a1f24d379b4224bda212",
+      "normalized_name": "2debf12b1cb1291cbd096b24897856948734fa62fd61a1f24d379b4224bda212",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_110"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "2debf12b1cb1291cbd096b24897856948734fa62fd61a1f24d379b4224bda212",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_38197abde967326568e101b65203c2efa75500e5f3c084b6dd08fd1ba1430726",
+      "type": "SHA256",
+      "name": "38197abde967326568e101b65203c2efa75500e5f3c084b6dd08fd1ba1430726",
+      "normalized_name": "38197abde967326568e101b65203c2efa75500e5f3c084b6dd08fd1ba1430726",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_145"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "38197abde967326568e101b65203c2efa75500e5f3c084b6dd08fd1ba1430726",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_145",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_383a2d8f421ad2f243cbc142e9715c78f867a114b037626c2097cb3e070f67d6",
+      "type": "SHA256",
+      "name": "383a2d8f421ad2f243cbc142e9715c78f867a114b037626c2097cb3e070f67d6",
+      "normalized_name": "383a2d8f421ad2f243cbc142e9715c78f867a114b037626c2097cb3e070f67d6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "383a2d8f421ad2f243cbc142e9715c78f867a114b037626c2097cb3e070f67d6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_123",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3c3efa89d1dd39e1112558af38ba656e048be842a3bedb7933cdd4210025f791",
+      "type": "SHA256",
+      "name": "3c3efa89d1dd39e1112558af38ba656e048be842a3bedb7933cdd4210025f791",
+      "normalized_name": "3c3efa89d1dd39e1112558af38ba656e048be842a3bedb7933cdd4210025f791",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "3c3efa89d1dd39e1112558af38ba656e048be842a3bedb7933cdd4210025f791",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4da6ce5921b0dfff9045ada7e775c1755e6ea44eab55da7ccc362f2a70ce26a6",
+      "type": "SHA256",
+      "name": "4da6ce5921b0dfff9045ada7e775c1755e6ea44eab55da7ccc362f2a70ce26a6",
+      "normalized_name": "4da6ce5921b0dfff9045ada7e775c1755e6ea44eab55da7ccc362f2a70ce26a6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "4da6ce5921b0dfff9045ada7e775c1755e6ea44eab55da7ccc362f2a70ce26a6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4e38e627ae21f1a85aa963ca990a66cf75789b450605fdca2f31ee6f0f8ab8f2",
+      "type": "SHA256",
+      "name": "4e38e627ae21f1a85aa963ca990a66cf75789b450605fdca2f31ee6f0f8ab8f2",
+      "normalized_name": "4e38e627ae21f1a85aa963ca990a66cf75789b450605fdca2f31ee6f0f8ab8f2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "4e38e627ae21f1a85aa963ca990a66cf75789b450605fdca2f31ee6f0f8ab8f2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5703565ec64d72eb693b9fafcba5951e937c8ee38829948e9518b7d226f81c10",
+      "type": "SHA256",
+      "name": "5703565ec64d72eb693b9fafcba5951e937c8ee38829948e9518b7d226f81c10",
+      "normalized_name": "5703565ec64d72eb693b9fafcba5951e937c8ee38829948e9518b7d226f81c10",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_147"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "5703565ec64d72eb693b9fafcba5951e937c8ee38829948e9518b7d226f81c10",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_147",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_625ed818a25c63d8b2c264d0f5bd96ba5ad1c702702d8ffaa4e0e93e5f411fac",
+      "type": "SHA256",
+      "name": "625ed818a25c63d8b2c264d0f5bd96ba5ad1c702702d8ffaa4e0e93e5f411fac",
+      "normalized_name": "625ed818a25c63d8b2c264d0f5bd96ba5ad1c702702d8ffaa4e0e93e5f411fac",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "625ed818a25c63d8b2c264d0f5bd96ba5ad1c702702d8ffaa4e0e93e5f411fac",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6419255d017b217fe984d3439694eb96806d06c7ea41a422298650969028c08c",
+      "type": "SHA256",
+      "name": "6419255d017b217fe984d3439694eb96806d06c7ea41a422298650969028c08c",
+      "normalized_name": "6419255d017b217fe984d3439694eb96806d06c7ea41a422298650969028c08c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "6419255d017b217fe984d3439694eb96806d06c7ea41a422298650969028c08c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_65d5ef9aa617e7060779bc217a42372e99d59dc88f8ea2f3b9f45aacf3ba7209",
+      "type": "SHA256",
+      "name": "65d5ef9aa617e7060779bc217a42372e99d59dc88f8ea2f3b9f45aacf3ba7209",
+      "normalized_name": "65d5ef9aa617e7060779bc217a42372e99d59dc88f8ea2f3b9f45aacf3ba7209",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "65d5ef9aa617e7060779bc217a42372e99d59dc88f8ea2f3b9f45aacf3ba7209",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6843d183b41b6b22976fc8d85e448dcc4d2e0bd2c159e6d966bfd4afa1cd9221",
+      "type": "SHA256",
+      "name": "6843d183b41b6b22976fc8d85e448dcc4d2e0bd2c159e6d966bfd4afa1cd9221",
+      "normalized_name": "6843d183b41b6b22976fc8d85e448dcc4d2e0bd2c159e6d966bfd4afa1cd9221",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_114"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "6843d183b41b6b22976fc8d85e448dcc4d2e0bd2c159e6d966bfd4afa1cd9221",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7170b104367530ae837daed466035a8be719fdb17423fc01da9c0ded74ca6ad1",
+      "type": "SHA256",
+      "name": "7170b104367530ae837daed466035a8be719fdb17423fc01da9c0ded74ca6ad1",
+      "normalized_name": "7170b104367530ae837daed466035a8be719fdb17423fc01da9c0ded74ca6ad1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_131"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "7170b104367530ae837daed466035a8be719fdb17423fc01da9c0ded74ca6ad1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_131",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_726df91a395827d11dc433854b3f19b3e28eac4feff329e0bdad93890b03af84",
+      "type": "SHA256",
+      "name": "726df91a395827d11dc433854b3f19b3e28eac4feff329e0bdad93890b03af84",
+      "normalized_name": "726df91a395827d11dc433854b3f19b3e28eac4feff329e0bdad93890b03af84",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_146"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "726df91a395827d11dc433854b3f19b3e28eac4feff329e0bdad93890b03af84",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_146",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_75ea6e8dfaf56fb35f35cb043bd77aef9e2c7d46f3e2a0454dff0952a09c134f",
+      "type": "SHA256",
+      "name": "75ea6e8dfaf56fb35f35cb043bd77aef9e2c7d46f3e2a0454dff0952a09c134f",
+      "normalized_name": "75ea6e8dfaf56fb35f35cb043bd77aef9e2c7d46f3e2a0454dff0952a09c134f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "75ea6e8dfaf56fb35f35cb043bd77aef9e2c7d46f3e2a0454dff0952a09c134f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_79b30634075896084135b9891c42fca8a59db1c0c731e445940671efab9a0b61",
+      "type": "SHA256",
+      "name": "79b30634075896084135b9891c42fca8a59db1c0c731e445940671efab9a0b61",
+      "normalized_name": "79b30634075896084135b9891c42fca8a59db1c0c731e445940671efab9a0b61",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_111"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "79b30634075896084135b9891c42fca8a59db1c0c731e445940671efab9a0b61",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7e2c9e4acd05bc8ca45263b196e80e919ff60890a872bdc0576735a566369c46",
+      "type": "SHA256",
+      "name": "7e2c9e4acd05bc8ca45263b196e80e919ff60890a872bdc0576735a566369c46",
+      "normalized_name": "7e2c9e4acd05bc8ca45263b196e80e919ff60890a872bdc0576735a566369c46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "7e2c9e4acd05bc8ca45263b196e80e919ff60890a872bdc0576735a566369c46",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_85e06a2beaa4469f13ca58d5d09fec672d3d8962a7adad3c3cb74f3f9ef1fed4",
+      "type": "SHA256",
+      "name": "85e06a2beaa4469f13ca58d5d09fec672d3d8962a7adad3c3cb74f3f9ef1fed4",
+      "normalized_name": "85e06a2beaa4469f13ca58d5d09fec672d3d8962a7adad3c3cb74f3f9ef1fed4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_139"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "85e06a2beaa4469f13ca58d5d09fec672d3d8962a7adad3c3cb74f3f9ef1fed4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_139",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8609360b43498e296e14237d318c96c58dce3e91b7a1c608cd146496703a7fac",
+      "type": "SHA256",
+      "name": "8609360b43498e296e14237d318c96c58dce3e91b7a1c608cd146496703a7fac",
+      "normalized_name": "8609360b43498e296e14237d318c96c58dce3e91b7a1c608cd146496703a7fac",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "8609360b43498e296e14237d318c96c58dce3e91b7a1c608cd146496703a7fac",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8de3fa2614b1767cfd12936c5adf4423ef25ea60800fa170752266e0ca063274",
+      "type": "SHA256",
+      "name": "8de3fa2614b1767cfd12936c5adf4423ef25ea60800fa170752266e0ca063274",
+      "normalized_name": "8de3fa2614b1767cfd12936c5adf4423ef25ea60800fa170752266e0ca063274",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_144"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "8de3fa2614b1767cfd12936c5adf4423ef25ea60800fa170752266e0ca063274",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_144",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8e9136d6dc7419469c959241bc8745af7ba51c7b02a12d04fec0bc4d3f7dcdf0",
+      "type": "SHA256",
+      "name": "8e9136d6dc7419469c959241bc8745af7ba51c7b02a12d04fec0bc4d3f7dcdf0",
+      "normalized_name": "8e9136d6dc7419469c959241bc8745af7ba51c7b02a12d04fec0bc4d3f7dcdf0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "8e9136d6dc7419469c959241bc8745af7ba51c7b02a12d04fec0bc4d3f7dcdf0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8f7294072a470b886791a7a32eedf0f0505aaecec154626c6334d986957086e4",
+      "type": "SHA256",
+      "name": "8f7294072a470b886791a7a32eedf0f0505aaecec154626c6334d986957086e4",
+      "normalized_name": "8f7294072a470b886791a7a32eedf0f0505aaecec154626c6334d986957086e4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_151"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "8f7294072a470b886791a7a32eedf0f0505aaecec154626c6334d986957086e4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_151",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_960a17797738dc0bc5623c74b6f8a5d74375f6d18d20ba18775f26a43898bae6",
+      "type": "SHA256",
+      "name": "960a17797738dc0bc5623c74b6f8a5d74375f6d18d20ba18775f26a43898bae6",
+      "normalized_name": "960a17797738dc0bc5623c74b6f8a5d74375f6d18d20ba18775f26a43898bae6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_127"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "960a17797738dc0bc5623c74b6f8a5d74375f6d18d20ba18775f26a43898bae6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9e6fdbbc2371ac8bc6db3b878475ed0b0af8950d50a4652df688e778beb87397",
+      "type": "SHA256",
+      "name": "9e6fdbbc2371ac8bc6db3b878475ed0b0af8950d50a4652df688e778beb87397",
+      "normalized_name": "9e6fdbbc2371ac8bc6db3b878475ed0b0af8950d50a4652df688e778beb87397",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_141"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "9e6fdbbc2371ac8bc6db3b878475ed0b0af8950d50a4652df688e778beb87397",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_141",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a4b969b93f7882ed2d15fd10970c4720961e42f3ae3fced501c0a1ffa3896ff5",
+      "type": "SHA256",
+      "name": "a4b969b93f7882ed2d15fd10970c4720961e42f3ae3fced501c0a1ffa3896ff5",
+      "normalized_name": "a4b969b93f7882ed2d15fd10970c4720961e42f3ae3fced501c0a1ffa3896ff5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_135"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "a4b969b93f7882ed2d15fd10970c4720961e42f3ae3fced501c0a1ffa3896ff5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_135",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a56cd758608034c90e81e4d4f1fe383982247d6aeffd74a1dd98d84e9b56afdf",
+      "type": "SHA256",
+      "name": "a56cd758608034c90e81e4d4f1fe383982247d6aeffd74a1dd98d84e9b56afdf",
+      "normalized_name": "a56cd758608034c90e81e4d4f1fe383982247d6aeffd74a1dd98d84e9b56afdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_134"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "a56cd758608034c90e81e4d4f1fe383982247d6aeffd74a1dd98d84e9b56afdf",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a65e01412610e5ed8fde12cb78e6265a18ef78d2fd3c8c14ed8a3d1cef17c91d",
+      "type": "SHA256",
+      "name": "a65e01412610e5ed8fde12cb78e6265a18ef78d2fd3c8c14ed8a3d1cef17c91d",
+      "normalized_name": "a65e01412610e5ed8fde12cb78e6265a18ef78d2fd3c8c14ed8a3d1cef17c91d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_130"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "a65e01412610e5ed8fde12cb78e6265a18ef78d2fd3c8c14ed8a3d1cef17c91d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_aecf53a3a52662b441703e56555d06c9d3c61bddf4d3b23d9da02abbe390c609",
+      "type": "SHA256",
+      "name": "aecf53a3a52662b441703e56555d06c9d3c61bddf4d3b23d9da02abbe390c609",
+      "normalized_name": "aecf53a3a52662b441703e56555d06c9d3c61bddf4d3b23d9da02abbe390c609",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "aecf53a3a52662b441703e56555d06c9d3c61bddf4d3b23d9da02abbe390c609",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_126",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b0065fc16ae785834908f024fb3ddd4d9d62b29675859a8e737e3b949e85327a",
+      "type": "SHA256",
+      "name": "b0065fc16ae785834908f024fb3ddd4d9d62b29675859a8e737e3b949e85327a",
+      "normalized_name": "b0065fc16ae785834908f024fb3ddd4d9d62b29675859a8e737e3b949e85327a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "b0065fc16ae785834908f024fb3ddd4d9d62b29675859a8e737e3b949e85327a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b2bebb381bc3722304ab1a21a21e082583bf6b88b84e7f65c4fdda48971c20a2",
+      "type": "SHA256",
+      "name": "b2bebb381bc3722304ab1a21a21e082583bf6b88b84e7f65c4fdda48971c20a2",
+      "normalized_name": "b2bebb381bc3722304ab1a21a21e082583bf6b88b84e7f65c4fdda48971c20a2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "b2bebb381bc3722304ab1a21a21e082583bf6b88b84e7f65c4fdda48971c20a2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b8ef93227b59e6c8d3a1494b4860d15be819fae17b57fd56bfff9a51b7972ff0",
+      "type": "SHA256",
+      "name": "b8ef93227b59e6c8d3a1494b4860d15be819fae17b57fd56bfff9a51b7972ff0",
+      "normalized_name": "b8ef93227b59e6c8d3a1494b4860d15be819fae17b57fd56bfff9a51b7972ff0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_140"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "b8ef93227b59e6c8d3a1494b4860d15be819fae17b57fd56bfff9a51b7972ff0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_140",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_cecd72851c265f885ff02c60cbc3e6cbf1a40b298274761f623dfa44782a01f8",
+      "type": "SHA256",
+      "name": "cecd72851c265f885ff02c60cbc3e6cbf1a40b298274761f623dfa44782a01f8",
+      "normalized_name": "cecd72851c265f885ff02c60cbc3e6cbf1a40b298274761f623dfa44782a01f8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "cecd72851c265f885ff02c60cbc3e6cbf1a40b298274761f623dfa44782a01f8",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d0544a3e6d1b34b8b4e976c7fc62d4500f28f617e2f549d9a3e590b71b1f9cc5",
+      "type": "SHA256",
+      "name": "d0544a3e6d1b34b8b4e976c7fc62d4500f28f617e2f549d9a3e590b71b1f9cc5",
+      "normalized_name": "d0544a3e6d1b34b8b4e976c7fc62d4500f28f617e2f549d9a3e590b71b1f9cc5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_148"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "d0544a3e6d1b34b8b4e976c7fc62d4500f28f617e2f549d9a3e590b71b1f9cc5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_148",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d7cd6f367a84f6d5cf5ffb3c2537dd3f48297bd45a8f5a4c50190f683b7c9e90",
+      "type": "SHA256",
+      "name": "d7cd6f367a84f6d5cf5ffb3c2537dd3f48297bd45a8f5a4c50190f683b7c9e90",
+      "normalized_name": "d7cd6f367a84f6d5cf5ffb3c2537dd3f48297bd45a8f5a4c50190f683b7c9e90",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "d7cd6f367a84f6d5cf5ffb3c2537dd3f48297bd45a8f5a4c50190f683b7c9e90",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d8c0f8ecdeceba83396c98370f8f458ea7f7a935aabbcc3d41b80d4e85746357",
+      "type": "SHA256",
+      "name": "d8c0f8ecdeceba83396c98370f8f458ea7f7a935aabbcc3d41b80d4e85746357",
+      "normalized_name": "d8c0f8ecdeceba83396c98370f8f458ea7f7a935aabbcc3d41b80d4e85746357",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_108"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "d8c0f8ecdeceba83396c98370f8f458ea7f7a935aabbcc3d41b80d4e85746357",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_108",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e37c045418259ecdc07874b85e7b688ba53f5a7dc989db19d7e8c440300bd574",
+      "type": "SHA256",
+      "name": "e37c045418259ecdc07874b85e7b688ba53f5a7dc989db19d7e8c440300bd574",
+      "normalized_name": "e37c045418259ecdc07874b85e7b688ba53f5a7dc989db19d7e8c440300bd574",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_128"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "e37c045418259ecdc07874b85e7b688ba53f5a7dc989db19d7e8c440300bd574",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_128",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e833bbb79ca8ea1dbeb408520b97fb5a1b691d5a5f9c4f9deabecb3787b47f73",
+      "type": "SHA256",
+      "name": "e833bbb79ca8ea1dbeb408520b97fb5a1b691d5a5f9c4f9deabecb3787b47f73",
+      "normalized_name": "e833bbb79ca8ea1dbeb408520b97fb5a1b691d5a5f9c4f9deabecb3787b47f73",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "e833bbb79ca8ea1dbeb408520b97fb5a1b691d5a5f9c4f9deabecb3787b47f73",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f0f2215457200bb3003eecb277bf7e3888d16edcf132d88203b27966407c7dc3",
+      "type": "SHA256",
+      "name": "f0f2215457200bb3003eecb277bf7e3888d16edcf132d88203b27966407c7dc3",
+      "normalized_name": "f0f2215457200bb3003eecb277bf7e3888d16edcf132d88203b27966407c7dc3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_125"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "f0f2215457200bb3003eecb277bf7e3888d16edcf132d88203b27966407c7dc3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_125",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f4ff0ca7f2ea2a011a2a4615d9b488b7806ff5dd61577a9e3a9860f2980e7fc0",
+      "type": "SHA256",
+      "name": "f4ff0ca7f2ea2a011a2a4615d9b488b7806ff5dd61577a9e3a9860f2980e7fc0",
+      "normalized_name": "f4ff0ca7f2ea2a011a2a4615d9b488b7806ff5dd61577a9e3a9860f2980e7fc0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_143"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "f4ff0ca7f2ea2a011a2a4615d9b488b7806ff5dd61577a9e3a9860f2980e7fc0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_143",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fd22973451b88a4d10d9f485baef7f5e7a6f2cb9ce0826953571bd8f5d866c2a",
+      "type": "SHA256",
+      "name": "fd22973451b88a4d10d9f485baef7f5e7a6f2cb9ce0826953571bd8f5d866c2a",
+      "normalized_name": "fd22973451b88a4d10d9f485baef7f5e7a6f2cb9ce0826953571bd8f5d866c2a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "value": "fd22973451b88a4d10d9f485baef7f5e7a6f2cb9ce0826953571bd8f5d866c2a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_06JcD5jz5dSHVAy.dat",
+      "type": "File",
+      "name": "06JcD5jz5dSHVAy.dat",
+      "normalized_name": "06JcD5jz5dSHVAy.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "06JcD5jz5dSHVAy.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_3kK24dXFYRgM6Ac.dat",
+      "type": "File",
+      "name": "3kK24dXFYRgM6Ac.dat",
+      "normalized_name": "3kK24dXFYRgM6Ac.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "3kK24dXFYRgM6Ac.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_54xfapkezW64xDE.dat",
+      "type": "File",
+      "name": "54xfapkezW64xDE.dat",
+      "normalized_name": "54xfapkezW64xDE.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "54xfapkezW64xDE.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_8h5NPYB5fAn301E.dat",
+      "type": "File",
+      "name": "8h5NPYB5fAn301E.dat",
+      "normalized_name": "8h5NPYB5fAn301E.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "8h5NPYB5fAn301E.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_9EkCWYA3OtDbz1l.dat",
+      "type": "File",
+      "name": "9EkCWYA3OtDbz1l.dat",
+      "normalized_name": "9EkCWYA3OtDbz1l.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "9EkCWYA3OtDbz1l.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_bDtzGVtqgiJU9PI.dat",
+      "type": "File",
+      "name": "bDtzGVtqgiJU9PI.dat",
+      "normalized_name": "bDtzGVtqgiJU9PI.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "bDtzGVtqgiJU9PI.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_c2KoCT5OHcVwGi7.dat",
+      "type": "File",
+      "name": "c2KoCT5OHcVwGi7.dat",
+      "normalized_name": "c2KoCT5OHcVwGi7.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "c2KoCT5OHcVwGi7.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cw1PlY308OpfVeZ.dat",
+      "type": "File",
+      "name": "cw1PlY308OpfVeZ.dat",
+      "normalized_name": "cw1PlY308OpfVeZ.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "cw1PlY308OpfVeZ.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ezD19AweVIj5NaH.dat",
+      "type": "File",
+      "name": "ezD19AweVIj5NaH.dat",
+      "normalized_name": "ezD19AweVIj5NaH.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "ezD19AweVIj5NaH.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_fHZvWtBGlFvs2Nr.dat",
+      "type": "File",
+      "name": "fHZvWtBGlFvs2Nr.dat",
+      "normalized_name": "fHZvWtBGlFvs2Nr.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "fHZvWtBGlFvs2Nr.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_gkMmqVvZ7gGGxpY.dat",
+      "type": "File",
+      "name": "gkMmqVvZ7gGGxpY.dat",
+      "normalized_name": "gkMmqVvZ7gGGxpY.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "gkMmqVvZ7gGGxpY.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_gl7xljvn3fqGt3u.dat",
+      "type": "File",
+      "name": "gl7xljvn3fqGt3u.dat",
+      "normalized_name": "gl7xljvn3fqGt3u.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "gl7xljvn3fqGt3u.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_HJDBvnJ7wc4S5qZ.dat",
+      "type": "File",
+      "name": "HJDBvnJ7wc4S5qZ.dat",
+      "normalized_name": "HJDBvnJ7wc4S5qZ.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "HJDBvnJ7wc4S5qZ.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_JUmoT4Pbw6U2xcj.dat",
+      "type": "File",
+      "name": "JUmoT4Pbw6U2xcj.dat",
+      "normalized_name": "JUmoT4Pbw6U2xcj.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "JUmoT4Pbw6U2xcj.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_jVJlw3wp379neaJ.dat",
+      "type": "File",
+      "name": "jVJlw3wp379neaJ.dat",
+      "normalized_name": "jVJlw3wp379neaJ.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "jVJlw3wp379neaJ.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_jvZfZ0gdTWtr46y.dat",
+      "type": "File",
+      "name": "jvZfZ0gdTWtr46y.dat",
+      "normalized_name": "jvZfZ0gdTWtr46y.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "jvZfZ0gdTWtr46y.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_liW0ecpxEWCfIgU.dat",
+      "type": "File",
+      "name": "liW0ecpxEWCfIgU.dat",
+      "normalized_name": "liW0ecpxEWCfIgU.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "liW0ecpxEWCfIgU.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mePVDjnAZsYCw5j.dat",
+      "type": "File",
+      "name": "mePVDjnAZsYCw5j.dat",
+      "normalized_name": "mePVDjnAZsYCw5j.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "mePVDjnAZsYCw5j.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_naIXl13kqeV7Y2j.dat",
+      "type": "File",
+      "name": "naIXl13kqeV7Y2j.dat",
+      "normalized_name": "naIXl13kqeV7Y2j.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "naIXl13kqeV7Y2j.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_nj3dsMMpyQQDBF3.dat",
+      "type": "File",
+      "name": "nj3dsMMpyQQDBF3.dat",
+      "normalized_name": "nj3dsMMpyQQDBF3.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "nj3dsMMpyQQDBF3.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_oiUfxZfej29MAbF.dat",
+      "type": "File",
+      "name": "oiUfxZfej29MAbF.dat",
+      "normalized_name": "oiUfxZfej29MAbF.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "oiUfxZfej29MAbF.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pilot.dll",
+      "type": "File",
+      "name": "pilot.dll",
+      "normalized_name": "pilot.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_48",
+        "ev_97"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "pilot.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_102",
+        "ev_94",
+        "ev_96",
+        "ev_99"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [
+        "ev_99",
+        "ev_102",
+        "ev_96"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "BYEBY",
+        "CMSTAR",
+        "APPDATA",
+        "SYSTEM32"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_100",
+        "ev_101",
+        "ev_70",
+        "ev_98"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [
+        "ev_98",
+        "ev_101",
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "V09SS010",
+        "WORKMN",
+        "TEMP",
+        "SYSTEM32"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tlhXVFeBvT64LC9.dat",
+      "type": "File",
+      "name": "tlhXVFeBvT64LC9.dat",
+      "normalized_name": "tlhXVFeBvT64LC9.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "tlhXVFeBvT64LC9.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tYD7jzfVNZqMfye.dat",
+      "type": "File",
+      "name": "tYD7jzfVNZqMfye.dat",
+      "normalized_name": "tYD7jzfVNZqMfye.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "tYD7jzfVNZqMfye.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_UScHrzGWbXb01gv.dat",
+      "type": "File",
+      "name": "UScHrzGWbXb01gv.dat",
+      "normalized_name": "UScHrzGWbXb01gv.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "UScHrzGWbXb01gv.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_VFdSKlgCAZD7mmp.dat",
+      "type": "File",
+      "name": "VFdSKlgCAZD7mmp.dat",
+      "normalized_name": "VFdSKlgCAZD7mmp.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "VFdSKlgCAZD7mmp.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_w57E8dktKb9UQyV.dat",
+      "type": "File",
+      "name": "w57E8dktKb9UQyV.dat",
+      "normalized_name": "w57E8dktKb9UQyV.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "w57E8dktKb9UQyV.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_WsEeRyHEhLO1kUm.dat",
+      "type": "File",
+      "name": "WsEeRyHEhLO1kUm.dat",
+      "normalized_name": "WsEeRyHEhLO1kUm.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "WsEeRyHEhLO1kUm.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_YXza9HkKWzqtXlt.dat",
+      "type": "File",
+      "name": "YXza9HkKWzqtXlt.dat",
+      "normalized_name": "YXza9HkKWzqtXlt.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_153"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "YXza9HkKWzqtXlt.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_z_gaDZyeZXvScQ6.dat",
+      "type": "File",
+      "name": "z_gaDZyeZXvScQ6.dat",
+      "normalized_name": "z_gaDZyeZXvScQ6.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_138"
+      ],
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "file_name": "z_gaDZyeZXvScQ6.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "communicates_with",
+      "head_id": "ent_malware_CMSTAR",
+      "tail_id": "ent_domain_oeiowidfla22.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "primary_evidence_id": "ev_86",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_via",
+      "tail_id": "ent_file_pilot.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_48",
+        "ev_97"
+      ],
+      "primary_evidence_id": "ev_48",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "executes",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_malware_CMSTAR",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_19",
+        "ev_94"
+      ],
+      "primary_evidence_id": "ev_19",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "exploits",
+      "head_id": "ent_malware_CMSTAR",
+      "tail_id": "ent_cve_CVE-2015-1641",
+      "head_type": "Malware",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_34",
+        "ev_95"
+      ],
+      "primary_evidence_id": "ev_34",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_malware_CMSTAR",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_19",
+        "ev_47",
+        "ev_71",
+        "ev_94",
+        "ev_102"
+      ],
+      "primary_evidence_id": "ev_19",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_CMSTAR",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_70",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_70",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "type": "writes_output",
+      "head_id": "ent_malware_CMSTAR",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "primary_evidence_id": "ev_47",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0004",
+      "type": "exploits",
+      "summary": "CMSTAR exploits CVE-2015-1641",
+      "evidence_ids": [
+        "ev_34",
+        "ev_95"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "downloads_payload",
+      "summary": "via downloads_payload pilot.dll",
+      "evidence_ids": [
+        "ev_48",
+        "ev_97"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "rundll32.exe executes CMSTAR",
+      "evidence_ids": [
+        "ev_19",
+        "ev_94"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "rundll32.exe loads CMSTAR",
+      "evidence_ids": [
+        "ev_19",
+        "ev_47",
+        "ev_71"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "svchost.exe loads CMSTAR",
+      "evidence_ids": [
+        "ev_70",
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "communicates_with",
+      "summary": "CMSTAR communicates_with oeiowidfla22.com",
+      "evidence_ids": [
+        "ev_86"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "collection",
+      "relation_id": "rel_0007",
+      "type": "writes_output",
+      "summary": "CMSTAR writes_output rundll32.exe",
+      "evidence_ids": [
+        "ev_47"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "Email Address Description itsc@mod.mil[.]by Unknown.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "Likely used by Ministry of Defense of the Republic of Belarus mineuvs@mod.mil[.]by Minsk Operational Administration of the Armed Forces inform@mod.mil[.]by Unknown.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s8"
+      },
+      "text": "Likely used by Ministry of Defense of the Republic of Belarus uporov_milcoop@mod.mil[.]by Unknown.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Likely used by Ministry of Defense of the Republic of Belarus video@gpk.gov[.]by State Border Committee of the Republic of Belarus armscontrol@mfa.gov[.]by International Security and Arms Control Department, Ministry of Foreign Affairs ablameiko@mia[.]by Unknown.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The rough translation of the folder and file names above are ‘Preparations for large-scale West-2017 exercises in this format are being held for the first time.’ Within the actual folder, there are a series of JPG images, as well as a decoy document with a title that is translated to ‘Thousands of Russian and Belarusian military are involved in the training of the rear services.’",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "The SCR file mentioned previously drops a CMSTAR DLL and runs it via an external call to rundll32.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "CMSTAR Variations and Payloads In total, we observed three variations of CMSTAR in these recent attacks against Belarusian targets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s9"
+      },
+      "text": "Conclusion During the course of this research, we identified a phishing campaign consisting of 20 unique emails targeting the government of Belarus.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s13"
+      },
+      "text": "Domains observed to act as C2s have been flagged as malicious Traps 4.1 identifies and blocks the CVE-2015-1641 exploit used in these documents",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\WinCred rundll32 %APPDATA%\\Microsof\\Office\\WinCred.acl ,WinCred These strings will be used at the end of the macro’s execution to ensure persistence via the Run registry key.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s11"
+      },
+      "text": "Software\\Microsoft\\Windows\\CurrentVersion\\Run : Microsoft The shellcode saves the following command to this autorun key, which will execute the OutL12.pip payload, specifically calling its ‘WinCred’ exported function: rundll32.exe “%APPDATA\\Roaming\\Microsoft\\Office\\OutL12.pip”,WinCred",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "This malware family was named via a combination of the DLLs original name of ‘pilot.dll’, along with the fact it downloads files with a Python (.py) file extension.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s10"
+      },
+      "text": "When the malware runs within the context of svchost.exe, it bypasses the installation routines and immediately enters the C2 handler.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s11"
+      },
+      "text": "When BYEBY is run within the context of rundll32.exe, it expects itself to be running for the first time.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s13"
+      },
+      "text": "BYEBY uses TLS for network communication, connecting to the following host on port 443: oeiowidfla22[.]com After the initial connection is established, BYEBY will collect the following system information and upload it to the remote C2:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "CMSTAR Variants Identified in Phishing Campaign CMSTAR Download Locations in Phishing Campaign PYLOT SHA256 PYLOT C2 wait.waisttoomuchmind[.]com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "BYEBY SHA256 BYEBY C2 oeiowidfla22[.]com CMSTAR.B SHA256",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "The RTF documents made use of CVE-2015-1641 . This vulnerability, patched in 2015, allows attackers to execute malicious code when these specially crafted documents are opened within vulnerable instances of Microsoft Word. The payload for these samples is embedded within them and obfuscated using a 4-byte XOR key of 0xCAFEBABE. We have included a script that can be used to extract the underlying payload of these RTFs statically that can be found in the Appendix.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "The SCR file mentioned previously drops a CMSTAR DLL and runs it via an external call to rundll32.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Traps 4.1 identifies and blocks the CVE-2015-1641 exploit used in these documents",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "rundll32.exe “%APPDATA\\Roaming\\Microsoft\\Office\\OutL12.pip”,WinCred",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "This malware family was named via a combination of the DLLs original name of ‘pilot.dll’, along with the fact it downloads files with a Python (.py) file extension.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "[SYSTEM32]\\svchost.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "[SYSTEM32]\\rundll32.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "If it finds itself not running in either location, it will immediately exit. This is likely a technique used to bypass various sandboxing systems. Should it find itself running as svchost.exe, it will write the current timestamp and a value of ‘V09SS010’ (Base64 Decoded: ‘WORKMN’) to a file named ‘vmunisvc.cab’ within the user’s local %TEMP% folder. This file acts as a lot file and is written to frequently throughout the malware’s execution.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "When the malware runs within the context of svchost.exe, it bypasses the installation routines and immediately enters the C2 handler.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r5"
+      },
+      "text": "When BYEBY is run within the context of rundll32.exe, it expects itself to be running for the first time. As such, it will register itself as a service with a name of ‘VideoSrv.’ After this service is created, BYEBY proceeds to enter it’s C2 handler function in a new thread.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "65d5ef9aa617e7060779bc217a42372e99d59dc88f8ea2f3b9f45aacf3ba7209",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "2a0169c72c84e6d3fa49af701fd46ee7aaf1d1d9e107798d93a6ca8df5d25957",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r3"
+      },
+      "text": "4da6ce5921b0dfff9045ada7e775c1755e6ea44eab55da7ccc362f2a70ce26a6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r4"
+      },
+      "text": "2008ec82cec0b62bdb4d2cea64ff5a159a4327a058dfd867f877536389a72fb6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r5"
+      },
+      "text": "cecd72851c265f885ff02c60cbc3e6cbf1a40b298274761f623dfa44782a01f8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r6"
+      },
+      "text": "d8c0f8ecdeceba83396c98370f8f458ea7f7a935aabbcc3d41b80d4e85746357",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r7"
+      },
+      "text": "2c8267192b196bf8a92c8b72d52096e46e307fa4d4dafdc030d3e0f5b4145e9e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r8"
+      },
+      "text": "2debf12b1cb1291cbd096b24897856948734fa62fd61a1f24d379b4224bda212",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r9"
+      },
+      "text": "79b30634075896084135b9891c42fca8a59db1c0c731e445940671efab9a0b61",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r10"
+      },
+      "text": "b0065fc16ae785834908f024fb3ddd4d9d62b29675859a8e737e3b949e85327a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r11"
+      },
+      "text": "16697c95db5add6c1c23b2591b9d8eec5ed96074d057b9411f0b57a54af298d5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r12"
+      },
+      "text": "6843d183b41b6b22976fc8d85e448dcc4d2e0bd2c159e6d966bfd4afa1cd9221",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r13"
+      },
+      "text": "3c3efa89d1dd39e1112558af38ba656e048be842a3bedb7933cdd4210025f791",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r14"
+      },
+      "text": "b2bebb381bc3722304ab1a21a21e082583bf6b88b84e7f65c4fdda48971c20a2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r15"
+      },
+      "text": "09890dc8898b99647cdc1cceb97e764b6a88d55b5a520c8d0ea3bfd8f75ed83b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r16"
+      },
+      "text": "fd22973451b88a4d10d9f485baef7f5e7a6f2cb9ce0826953571bd8f5d866c2a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r17"
+      },
+      "text": "http://45.77.60[.]138/YXza9HkKWzqtXlt.dat http://45.77.60[.]138/mePVDjnAZsYCw5j.dat http://45.77.60[.]138/UScHrzGWbXb01gv.dat http://45.76.80[.]32/tYD7jzfVNZqMfye.dat http://45.77.60[.]138/liW0ecpxEWCfIgU.dat http://45.77.60[.]138/ezD19AweVIj5NaH.dat http://45.77.60[.]138/jVJlw3wp379neaJ.dat http://108.61.175[.]110/tlhXVFeBvT64LC9.dat http://45.77.60[.]138/HJDBvnJ7wc4S5qZ.dat http://45.77.60[.]138/JUmoT4Pbw6U2xcj.dat http://108.61.175[.]110/oiUfxZfej29MAbF.dat http://45.77.60[.]138/cw1PlY308OpfVeZ.dat http://45.77.60[.]138/VFdSKlgCAZD7mmp.dat http://45.77.60[.]138/c2KoCT5OHcVwGi7.dat http://45.77.60[.]138/3kK24dXFYRgM6Ac.dat http://45.77.60[.]138/WsEeRyHEhLO1kUm.dat",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r19"
+      },
+      "text": "7e2c9e4acd05bc8ca45263b196e80e919ff60890a872bdc0576735a566369c46",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r21"
+      },
+      "text": "383a2d8f421ad2f243cbc142e9715c78f867a114b037626c2097cb3e070f67d6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r22"
+      },
+      "text": "8609360b43498e296e14237d318c96c58dce3e91b7a1c608cd146496703a7fac",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r23"
+      },
+      "text": "f0f2215457200bb3003eecb277bf7e3888d16edcf132d88203b27966407c7dc3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r24"
+      },
+      "text": "aecf53a3a52662b441703e56555d06c9d3c61bddf4d3b23d9da02abbe390c609",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r25"
+      },
+      "text": "960a17797738dc0bc5623c74b6f8a5d74375f6d18d20ba18775f26a43898bae6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r26"
+      },
+      "text": "e37c045418259ecdc07874b85e7b688ba53f5a7dc989db19d7e8c440300bd574",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r27"
+      },
+      "text": "75ea6e8dfaf56fb35f35cb043bd77aef9e2c7d46f3e2a0454dff0952a09c134f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r28"
+      },
+      "text": "a65e01412610e5ed8fde12cb78e6265a18ef78d2fd3c8c14ed8a3d1cef17c91d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r29"
+      },
+      "text": "7170b104367530ae837daed466035a8be719fdb17423fc01da9c0ded74ca6ad1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "13acddf9b7c2daafd815cbfa75fbb778a7074a6f90277e858040275ae61a252b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r2"
+      },
+      "text": "625ed818a25c63d8b2c264d0f5bd96ba5ad1c702702d8ffaa4e0e93e5f411fac",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_134",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r3"
+      },
+      "text": "a56cd758608034c90e81e4d4f1fe383982247d6aeffd74a1dd98d84e9b56afdf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r4"
+      },
+      "text": "a4b969b93f7882ed2d15fd10970c4720961e42f3ae3fced501c0a1ffa3896ff5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r5"
+      },
+      "text": "e833bbb79ca8ea1dbeb408520b97fb5a1b691d5a5f9c4f9deabecb3787b47f73",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r6"
+      },
+      "text": "8e9136d6dc7419469c959241bc8745af7ba51c7b02a12d04fec0bc4d3f7dcdf0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r7"
+      },
+      "text": "http://108.61.175[.]110/tlhXVFeBvT64LC9.dat http://104.238.188[.]211/gl7xljvn3fqGt3u.dat http://45.77.60[.]138/c2KoCT5OHcVwGi7.dat http://108.61.175[.]110/gkMmqVvZ7gGGxpY.dat http://108.61.175[.]110/z_gaDZyeZXvScQ6.dat http://108.61.175[.]110/bDtzGVtqgiJU9PI.dat http://45.77.60[.]138/liW0ecpxEWCfIgU.dat http://45.77.60[.]138/JUmoT4Pbw6U2xcj.dat http://108.61.175[.]110/oiUfxZfej29MAbF.dat http://108.61.103[.]123/jvZfZ0gdTWtr46y.dat http://108.61.103[.]123/06JcD5jz5dSHVAy.dat http://108.61.103[.]123/nj3dsMMpyQQDBF3.dat http://108.61.103[.]123/fHZvWtBGlFvs2Nr.dat http://45.77.60[.]138/w57E8dktKb9UQyV.dat",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r8"
+      },
+      "text": "85e06a2beaa4469f13ca58d5d09fec672d3d8962a7adad3c3cb74f3f9ef1fed4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r9"
+      },
+      "text": "b8ef93227b59e6c8d3a1494b4860d15be819fae17b57fd56bfff9a51b7972ff0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r10"
+      },
+      "text": "9e6fdbbc2371ac8bc6db3b878475ed0b0af8950d50a4652df688e778beb87397",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r11"
+      },
+      "text": "4e38e627ae21f1a85aa963ca990a66cf75789b450605fdca2f31ee6f0f8ab8f2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_143",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r12"
+      },
+      "text": "f4ff0ca7f2ea2a011a2a4615d9b488b7806ff5dd61577a9e3a9860f2980e7fc0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r13"
+      },
+      "text": "8de3fa2614b1767cfd12936c5adf4423ef25ea60800fa170752266e0ca063274",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r14"
+      },
+      "text": "38197abde967326568e101b65203c2efa75500e5f3c084b6dd08fd1ba1430726",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_146",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r15"
+      },
+      "text": "726df91a395827d11dc433854b3f19b3e28eac4feff329e0bdad93890b03af84",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_147",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r16"
+      },
+      "text": "5703565ec64d72eb693b9fafcba5951e937c8ee38829948e9518b7d226f81c10",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_148",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r17"
+      },
+      "text": "d0544a3e6d1b34b8b4e976c7fc62d4500f28f617e2f549d9a3e590b71b1f9cc5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r18"
+      },
+      "text": "2a8e5551b9905e907da7268aba50fcbc526cfd0549ff2e352f9f4d1d71bf32a7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_150",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r19"
+      },
+      "text": "d7cd6f367a84f6d5cf5ffb3c2537dd3f48297bd45a8f5a4c50190f683b7c9e90",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r20"
+      },
+      "text": "8f7294072a470b886791a7a32eedf0f0505aaecec154626c6334d986957086e4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r21"
+      },
+      "text": "6419255d017b217fe984d3439694eb96806d06c7ea41a422298650969028c08c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r22"
+      },
+      "text": "http://45.77.58[.]49/54xfapkezW64xDE.dat http://45.77.58[.]49/54xfapkezW64xDE.dat http://45.77.62[.]181/naIXl13kqeV7Y2j.dat http://45.77.58[.]160/9EkCWYA3OtDbz1l.dat http://45.77.58[.]160/8h5NPYB5fAn301E.dat http://45.77.58[.]160/9EkCWYA3OtDbz1l.dat http://45.77.60[.]138/3kK24dXFYRgM6Ac.dat http://45.77.60[.]138/ezD19AweVIj5NaH.dat http://45.77.60[.]138/VFdSKlgCAZD7mmp.dat http://45.77.60[.]138/HJDBvnJ7wc4S5qZ.dat http://45.77.60[.]138/jVJlw3wp379neaJ.dat http://45.77.60[.]138/YXza9HkKWzqtXlt.dat http://45.77.60[.]138/UScHrzGWbXb01gv.dat http://45.77.60[.]138/WsEeRyHEhLO1kUm.dat",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_154",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb154"
+      },
+      "text": "researchcenter.paloaltonetworks.com /2017/09/unit42-threat-actors-target-government-belarus-using-cmstar-trojan/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Threat-Actors-Target-Government-Belarus-Using-CMSTAR-Trojan(09-28-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb155"
+      },
+      "text": "eat Actors Target Government of Belarus Using CMSTAR Trojan researchcenter.paloaltonetworks.com /2017/09/unit42-threat-actors-target-government-belarus-using-cmstar-trojan/ Palo Al",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_155",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_CMSTAR",
+        "ent_victim_Government_of_Belarus",
+        "ent_domain_researchcenter.paloaltonetworks.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_CMSTAR",
+        "ent_victim_Government_of_Belarus"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_via",
+        "ent_file_pilot.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_97",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_via",
+        "ent_file_pilot.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CMSTAR",
+        "ent_malware_via"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_94",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CMSTAR",
+        "ent_malware_via"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_154",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_CMSTAR",
+        "ent_domain_researchcenter.paloaltonetworks.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

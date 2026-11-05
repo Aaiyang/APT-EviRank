@@ -1,0 +1,3515 @@
+{
+  "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+  "title": "Darkhotel’s attacks in 2015",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Kaspersky_Report_Darkhotel_2015(08-10-2015).pdf",
+    "file_path": "/root/APTtext/Kaspersky_Report_Darkhotel_2015(08-10-2015).pdf",
+    "source_type": "pdf",
+    "char_length": 16911,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Darkhotel",
+      "type": "ThreatActor",
+      "name": "Darkhotel",
+      "normalized_name": "Darkhotel",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_30",
+        "ev_37",
+        "ev_44"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_30",
+        "ev_44",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_internet_explorer_Smart_recovery",
+      "type": "Malware",
+      "name": "internet_explorer_Smart_recovery",
+      "normalized_name": "internet_explorer_Smart_recovery",
+      "aliases": [
+        "internet_explorer_Smart_recovery.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_49",
+        "ev_51"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_49",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_internet_explorer_Smart_recovery.exe",
+      "family": "internet_explorer_Smart_recovery",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2014-0497",
+      "type": "CVE",
+      "name": "CVE-2014-0497",
+      "normalized_name": "CVE-2014-0497",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59",
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_60",
+        "ev_58",
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_internet_explorer_Smart_recovery.exe",
+      "type": "File",
+      "name": "internet_explorer_Smart_recovery.exe",
+      "normalized_name": "internet_explorer_Smart_recovery.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_49",
+        "ev_51"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "internet_explorer_Smart_recovery.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_49",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_internet_explorer_Smart_recovery.exe",
+      "type": "Malware",
+      "name": "internet_explorer_Smart_recovery.exe",
+      "normalized_name": "internet_explorer_Smart_recovery.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_13",
+        "ev_49",
+        "ev_51"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_internet_explorer_Smart_recovery"
+    },
+    {
+      "id": "ent_domain_blog.kaspersky.fr",
+      "type": "Domain",
+      "name": "blog.kaspersky.fr",
+      "normalized_name": "blog.kaspersky.fr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "blog.kaspersky.fr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_blog.trendmicro.com",
+      "type": "Domain",
+      "name": "blog.trendmicro.com",
+      "normalized_name": "blog.trendmicro.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "blog.trendmicro.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_daily.enewsbank.net",
+      "type": "Domain",
+      "name": "daily.enewsbank.net",
+      "normalized_name": "daily.enewsbank.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "daily.enewsbank.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_67",
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_enewsbank.net",
+      "type": "Domain",
+      "name": "enewsbank.net",
+      "normalized_name": "enewsbank.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "enewsbank.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_eonlineworld.net",
+      "type": "Domain",
+      "name": "eonlineworld.net",
+      "normalized_name": "eonlineworld.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "eonlineworld.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_error-page.net",
+      "type": "Domain",
+      "name": "error-page.net",
+      "normalized_name": "error-page.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "error-page.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hotwirepr.com",
+      "type": "Domain",
+      "name": "hotwirepr.com",
+      "normalized_name": "hotwirepr.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69",
+        "ev_70"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "hotwirepr.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_newsroom.kaspersky.eu",
+      "type": "Domain",
+      "name": "newsroom.kaspersky.eu",
+      "normalized_name": "newsroom.kaspersky.eu",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71",
+        "ev_72"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "newsroom.kaspersky.eu",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_office-revision.com",
+      "type": "Domain",
+      "name": "office-revision.com",
+      "normalized_name": "office-revision.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "office-revision.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_online.newssupply.net",
+      "type": "Domain",
+      "name": "online.newssupply.net",
+      "normalized_name": "online.newssupply.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "online.newssupply.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_openofficev.info",
+      "type": "Domain",
+      "name": "openofficev.info",
+      "normalized_name": "openofficev.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "openofficev.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_photo.storyonboard.net",
+      "type": "Domain",
+      "name": "photo.storyonboard.net",
+      "normalized_name": "photo.storyonboard.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_74",
+        "ev_75",
+        "ev_76"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "photo.storyonboard.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_75",
+        "ev_74",
+        "ev_76"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_saytargetworld.net",
+      "type": "Domain",
+      "name": "saytargetworld.net",
+      "normalized_name": "saytargetworld.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "saytargetworld.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_sendspace.servermsys.com",
+      "type": "Domain",
+      "name": "sendspace.servermsys.com",
+      "normalized_name": "sendspace.servermsys.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "sendspace.servermsys.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_storyonboard.net",
+      "type": "Domain",
+      "name": "storyonboard.net",
+      "normalized_name": "storyonboard.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "storyonboard.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_thewordusrapid.com",
+      "type": "Domain",
+      "name": "thewordusrapid.com",
+      "normalized_name": "thewordusrapid.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "thewordusrapid.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_tisone360.com",
+      "type": "Domain",
+      "name": "tisone360.com",
+      "normalized_name": "tisone360.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_29",
+        "ev_39"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "tisone360.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_tisone360.org",
+      "type": "Domain",
+      "name": "tisone360.org",
+      "normalized_name": "tisone360.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "tisone360.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_unionnewsreport.net",
+      "type": "Domain",
+      "name": "unionnewsreport.net",
+      "normalized_name": "unionnewsreport.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77",
+        "ev_78"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "unionnewsreport.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_78"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.kaspersky.com",
+      "type": "Domain",
+      "name": "www.kaspersky.com",
+      "normalized_name": "www.kaspersky.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "www.kaspersky.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_80"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.kaspersky.fr",
+      "type": "Domain",
+      "name": "www.kaspersky.fr",
+      "normalized_name": "www.kaspersky.fr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "www.kaspersky.fr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.openofficev.info",
+      "type": "Domain",
+      "name": "www.openofficev.info",
+      "normalized_name": "www.openofficev.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "www.openofficev.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.securelist.com",
+      "type": "Domain",
+      "name": "www.securelist.com",
+      "normalized_name": "www.securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "www.securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_blog.kaspersky.fr_",
+      "type": "URL",
+      "name": "http://blog.kaspersky.fr/",
+      "normalized_name": "http://blog.kaspersky.fr/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63",
+        "ev_72"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "http://blog.kaspersky.fr/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_72",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_blog.trendmicro.com_trendlabs-security-intelligence_hacking-team-flash-zero-day-tied-to-attacks-in-",
+      "type": "URL",
+      "name": "http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-zero-day-tied-to-attacks-in-",
+      "normalized_name": "http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-zero-day-tied-to-attacks-in-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-zero-day-tied-to-attacks-in-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_newsroom.kaspersky.eu_fr_",
+      "type": "URL",
+      "name": "http://newsroom.kaspersky.eu/fr/",
+      "normalized_name": "http://newsroom.kaspersky.eu/fr/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71",
+        "ev_72"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "http://newsroom.kaspersky.eu/fr/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_sendspace.servermsys.com_readme.php_type_execution_result_created_and_executed_info_",
+      "type": "URL",
+      "name": "http://sendspace.servermsys.com/readme.php?type=execution&result=created_and_executed&info=",
+      "normalized_name": "http://sendspace.servermsys.com/readme.php?type=execution&result=created_and_executed&info=",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "http://sendspace.servermsys.com/readme.php?type=execution&result=created_and_executed&info=",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_sendspace.servermsys.com_wnctprx.",
+      "type": "URL",
+      "name": "http://sendspace.servermsys.com/wnctprx.",
+      "normalized_name": "http://sendspace.servermsys.com/wnctprx.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "http://sendspace.servermsys.com/wnctprx.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.securelist.com",
+      "type": "URL",
+      "name": "http://www.securelist.com",
+      "normalized_name": "http://www.securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "http://www.securelist.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_securelist.com_blog_incidents_58244_cve-2014-0497-a-0-day-vulnerability_",
+      "type": "URL",
+      "name": "https://securelist.com/blog/incidents/58244/cve-2014-0497-a-0-day-vulnerability/",
+      "normalized_name": "https://securelist.com/blog/incidents/58244/cve-2014-0497-a-0-day-vulnerability/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "https://securelist.com/blog/incidents/58244/cve-2014-0497-a-0-day-vulnerability/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_securelist.com_blog_research_66779_the-darkhotel-apt_",
+      "type": "URL",
+      "name": "https://securelist.com/blog/research/66779/the-darkhotel-apt/",
+      "normalized_name": "https://securelist.com/blog/research/66779/the-darkhotel-apt/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81",
+        "ev_82",
+        "ev_83",
+        "ev_84"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "https://securelist.com/blog/research/66779/the-darkhotel-apt/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_83",
+        "ev_81",
+        "ev_84"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_email_KasperskyFrance_hotwirepr.com",
+      "type": "Email",
+      "name": "KasperskyFrance@hotwirepr.com",
+      "normalized_name": "KasperskyFrance@hotwirepr.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69",
+        "ev_70"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "KasperskyFrance@hotwirepr.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_009d85773d519a9a97129102d8116305",
+      "type": "MD5",
+      "name": "009d85773d519a9a97129102d8116305",
+      "normalized_name": "009d85773d519a9a97129102d8116305",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_85",
+        "ev_86"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "009d85773d519a9a97129102d8116305",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [
+        "ev_86"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_021685613fb739dec7303247212c3b09",
+      "type": "MD5",
+      "name": "021685613fb739dec7303247212c3b09",
+      "normalized_name": "021685613fb739dec7303247212c3b09",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "021685613fb739dec7303247212c3b09",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_054471f7e168e016c565412227acfe7f",
+      "type": "MD5",
+      "name": "054471f7e168e016c565412227acfe7f",
+      "normalized_name": "054471f7e168e016c565412227acfe7f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "054471f7e168e016c565412227acfe7f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1ee3dfce97ab318b416c1ba7463ee405",
+      "type": "MD5",
+      "name": "1ee3dfce97ab318b416c1ba7463ee405",
+      "normalized_name": "1ee3dfce97ab318b416c1ba7463ee405",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "1ee3dfce97ab318b416c1ba7463ee405",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_214709aa7c5e4e8b60759a175737bb2b",
+      "type": "MD5",
+      "name": "214709aa7c5e4e8b60759a175737bb2b",
+      "normalized_name": "214709aa7c5e4e8b60759a175737bb2b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "214709aa7c5e4e8b60759a175737bb2b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2899f4099c76232d6362fd62ab730741",
+      "type": "MD5",
+      "name": "2899f4099c76232d6362fd62ab730741",
+      "normalized_name": "2899f4099c76232d6362fd62ab730741",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "2899f4099c76232d6362fd62ab730741",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2dee887b20a06b8e556e878c62e46e13",
+      "type": "MD5",
+      "name": "2dee887b20a06b8e556e878c62e46e13",
+      "normalized_name": "2dee887b20a06b8e556e878c62e46e13",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "2dee887b20a06b8e556e878c62e46e13",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_33e278c5ba6bf1a545d45e17f7582512",
+      "type": "MD5",
+      "name": "33e278c5ba6bf1a545d45e17f7582512",
+      "normalized_name": "33e278c5ba6bf1a545d45e17f7582512",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87",
+        "ev_88"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "33e278c5ba6bf1a545d45e17f7582512",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [
+        "ev_88"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_39562e410bc3fb5a30aca8162b20bdd0",
+      "type": "MD5",
+      "name": "39562e410bc3fb5a30aca8162b20bdd0",
+      "normalized_name": "39562e410bc3fb5a30aca8162b20bdd0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "39562e410bc3fb5a30aca8162b20bdd0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3d2e941ac48ae9d79380ca0f133f4a49",
+      "type": "MD5",
+      "name": "3d2e941ac48ae9d79380ca0f133f4a49",
+      "normalized_name": "3d2e941ac48ae9d79380ca0f133f4a49",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "3d2e941ac48ae9d79380ca0f133f4a49",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_42a837c4433ae6bd7490baec8aeb5091",
+      "type": "MD5",
+      "name": "42a837c4433ae6bd7490baec8aeb5091",
+      "normalized_name": "42a837c4433ae6bd7490baec8aeb5091",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "42a837c4433ae6bd7490baec8aeb5091",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_560d68c31980c26d2adab7406b61c651",
+      "type": "MD5",
+      "name": "560d68c31980c26d2adab7406b61c651",
+      "normalized_name": "560d68c31980c26d2adab7406b61c651",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "560d68c31980c26d2adab7406b61c651",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5c74db6f755555ea99b51e1c68e796f9",
+      "type": "MD5",
+      "name": "5c74db6f755555ea99b51e1c68e796f9",
+      "normalized_name": "5c74db6f755555ea99b51e1c68e796f9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "5c74db6f755555ea99b51e1c68e796f9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5e01b8bc78afc6ecb3376c06cbceb680",
+      "type": "MD5",
+      "name": "5e01b8bc78afc6ecb3376c06cbceb680",
+      "normalized_name": "5e01b8bc78afc6ecb3376c06cbceb680",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "5e01b8bc78afc6ecb3376c06cbceb680",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_61637a0637fb25c53f396c305efa5dc5",
+      "type": "MD5",
+      "name": "61637a0637fb25c53f396c305efa5dc5",
+      "normalized_name": "61637a0637fb25c53f396c305efa5dc5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "61637a0637fb25c53f396c305efa5dc5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_61cc019c3141281073181c4ef1f4e524",
+      "type": "MD5",
+      "name": "61cc019c3141281073181c4ef1f4e524",
+      "normalized_name": "61cc019c3141281073181c4ef1f4e524",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_54",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "61cc019c3141281073181c4ef1f4e524",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46",
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6b9e9b2dc97ff0b26a8a61ba95ca8ff6",
+      "type": "MD5",
+      "name": "6b9e9b2dc97ff0b26a8a61ba95ca8ff6",
+      "normalized_name": "6b9e9b2dc97ff0b26a8a61ba95ca8ff6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "6b9e9b2dc97ff0b26a8a61ba95ca8ff6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_852a9411a949add69386a72805c8cb05",
+      "type": "MD5",
+      "name": "852a9411a949add69386a72805c8cb05",
+      "normalized_name": "852a9411a949add69386a72805c8cb05",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "852a9411a949add69386a72805c8cb05",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a07124b65a76ee7d721d746fd8047066",
+      "type": "MD5",
+      "name": "a07124b65a76ee7d721d746fd8047066",
+      "normalized_name": "a07124b65a76ee7d721d746fd8047066",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "a07124b65a76ee7d721d746fd8047066",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a7e78fd4bf305509c2fc1b3706567acd",
+      "type": "MD5",
+      "name": "a7e78fd4bf305509c2fc1b3706567acd",
+      "normalized_name": "a7e78fd4bf305509c2fc1b3706567acd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91",
+        "ev_92"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "a7e78fd4bf305509c2fc1b3706567acd",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [
+        "ev_92"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b1f56a54309147b07dda54623fecbb89",
+      "type": "MD5",
+      "name": "b1f56a54309147b07dda54623fecbb89",
+      "normalized_name": "b1f56a54309147b07dda54623fecbb89",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86",
+        "ev_88"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "b1f56a54309147b07dda54623fecbb89",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_86"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_be59994b5008a0be48934a9c5771dfa5",
+      "type": "MD5",
+      "name": "be59994b5008a0be48934a9c5771dfa5",
+      "normalized_name": "be59994b5008a0be48934a9c5771dfa5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "be59994b5008a0be48934a9c5771dfa5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c3ae70b3012cc9b5c9ceb060a251715a",
+      "type": "MD5",
+      "name": "c3ae70b3012cc9b5c9ceb060a251715a",
+      "normalized_name": "c3ae70b3012cc9b5c9ceb060a251715a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "c3ae70b3012cc9b5c9ceb060a251715a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d896ebfc819741e0a97c651de1d15fec",
+      "type": "MD5",
+      "name": "d896ebfc819741e0a97c651de1d15fec",
+      "normalized_name": "d896ebfc819741e0a97c651de1d15fec",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "d896ebfc819741e0a97c651de1d15fec",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d965a5b3548047da27b503029440e77f",
+      "type": "MD5",
+      "name": "d965a5b3548047da27b503029440e77f",
+      "normalized_name": "d965a5b3548047da27b503029440e77f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "d965a5b3548047da27b503029440e77f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_da0717899e3ccc1ba0e8d32774566219",
+      "type": "MD5",
+      "name": "da0717899e3ccc1ba0e8d32774566219",
+      "normalized_name": "da0717899e3ccc1ba0e8d32774566219",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "da0717899e3ccc1ba0e8d32774566219",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_da360e94e60267dce08e6d47fc1fcecc",
+      "type": "MD5",
+      "name": "da360e94e60267dce08e6d47fc1fcecc",
+      "normalized_name": "da360e94e60267dce08e6d47fc1fcecc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "da360e94e60267dce08e6d47fc1fcecc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_dc0de14d9d36d13a6c8a34b2c583e70a",
+      "type": "MD5",
+      "name": "dc0de14d9d36d13a6c8a34b2c583e70a",
+      "normalized_name": "dc0de14d9d36d13a6c8a34b2c583e70a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "dc0de14d9d36d13a6c8a34b2c583e70a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e29693ce15acd552f1a0435e2d31d6df",
+      "type": "MD5",
+      "name": "e29693ce15acd552f1a0435e2d31d6df",
+      "normalized_name": "e29693ce15acd552f1a0435e2d31d6df",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "e29693ce15acd552f1a0435e2d31d6df",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e85e0365b6f77cc2e9862f987b152a89",
+      "type": "MD5",
+      "name": "e85e0365b6f77cc2e9862f987b152a89",
+      "normalized_name": "e85e0365b6f77cc2e9862f987b152a89",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "e85e0365b6f77cc2e9862f987b152a89",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fa67142728e40a2a4e97ccc6db919f2b",
+      "type": "MD5",
+      "name": "fa67142728e40a2a4e97ccc6db919f2b",
+      "normalized_name": "fa67142728e40a2a4e97ccc6db919f2b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "fa67142728e40a2a4e97ccc6db919f2b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fc78b15507e920b3ee405f843f48a7b3",
+      "type": "MD5",
+      "name": "fc78b15507e920b3ee405f843f48a7b3",
+      "normalized_name": "fc78b15507e920b3ee405f843f48a7b3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93",
+        "ev_94"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "fc78b15507e920b3ee405f843f48a7b3",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [
+        "ev_94"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fef8fda27deb3e950ba1a71968ec7466",
+      "type": "MD5",
+      "name": "fef8fda27deb3e950ba1a71968ec7466",
+      "normalized_name": "fef8fda27deb3e950ba1a71968ec7466",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "value": "fef8fda27deb3e950ba1a71968ec7466",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_congratulation.rar",
+      "type": "File",
+      "name": "congratulation.rar",
+      "normalized_name": "congratulation.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "congratulation.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_csrtsrm.exe",
+      "type": "File",
+      "name": "csrtsrm.exe",
+      "normalized_name": "csrtsrm.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "csrtsrm.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "WINDOWS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_letter.rar",
+      "type": "File",
+      "name": "letter.rar",
+      "normalized_name": "letter.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "letter.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mshta.exe",
+      "type": "File",
+      "name": "mshta.exe",
+      "normalized_name": "mshta.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "mshta.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mspaint.exe",
+      "type": "File",
+      "name": "mspaint.exe",
+      "normalized_name": "mspaint.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_18",
+        "ev_52"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "mspaint.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RealTemp.exe",
+      "type": "File",
+      "name": "RealTemp.exe",
+      "normalized_name": "RealTemp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "file_name": "RealTemp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_kernel32.dll",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "File",
+      "name": "kernel32.dll",
+      "normalized_name": "kernel32.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "kernel32.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "alias_of",
+      "head_id": "ent_malware_internet_explorer_Smart_recovery.exe",
+      "tail_id": "ent_malware_internet_explorer_Smart_recovery",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "downloads",
+      "head_id": "ent_malware_internet_explorer_Smart_recovery",
+      "tail_id": "ent_file_internet_explorer_Smart_recovery.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "primary_evidence_id": "ev_51",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_51"
+      },
+      "head": {
+        "id": "ent_malware_internet_explorer_Smart_recovery",
+        "type": "Malware",
+        "name": "internet_explorer_Smart_recovery",
+        "normalized_name": "internet_explorer_Smart_recovery",
+        "aliases": [
+          "internet_explorer_Smart_recovery.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_49",
+          "ev_51"
+        ],
+        "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_51",
+        "supporting_evidence_ids": [
+          "ev_49",
+          "ev_13"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_internet_explorer_Smart_recovery.exe",
+        "family": "internet_explorer_Smart_recovery",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_internet_explorer_Smart_recovery.exe",
+        "type": "File",
+        "name": "internet_explorer_Smart_recovery.exe",
+        "normalized_name": "internet_explorer_Smart_recovery.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_49",
+          "ev_51"
+        ],
+        "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+        "file_name": "internet_explorer_Smart_recovery.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_51",
+        "supporting_evidence_ids": [
+          "ev_49",
+          "ev_13"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "drops",
+      "head_id": "ent_malware_internet_explorer_Smart_recovery",
+      "tail_id": "ent_file_internet_explorer_Smart_recovery.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "primary_evidence_id": "ev_51",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_51"
+      },
+      "head": {
+        "id": "ent_malware_internet_explorer_Smart_recovery",
+        "type": "Malware",
+        "name": "internet_explorer_Smart_recovery",
+        "normalized_name": "internet_explorer_Smart_recovery",
+        "aliases": [
+          "internet_explorer_Smart_recovery.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_49",
+          "ev_51"
+        ],
+        "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_51",
+        "supporting_evidence_ids": [
+          "ev_49",
+          "ev_13"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_internet_explorer_Smart_recovery.exe",
+        "family": "internet_explorer_Smart_recovery",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_internet_explorer_Smart_recovery.exe",
+        "type": "File",
+        "name": "internet_explorer_Smart_recovery.exe",
+        "normalized_name": "internet_explorer_Smart_recovery.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_49",
+          "ev_51"
+        ],
+        "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+        "file_name": "internet_explorer_Smart_recovery.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_51",
+        "supporting_evidence_ids": [
+          "ev_49",
+          "ev_13"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_Darkhotel",
+      "tail_id": "ent_cve_CVE-2014-0497",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_58",
+        "ev_61"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "loads",
+      "head_id": "ent_file_csrtsrm.exe",
+      "tail_id": "ent_malware_internet_explorer_Smart_recovery",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_53",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "type": "loads",
+      "head_id": "ent_file_mshta.exe",
+      "tail_id": "ent_malware_internet_explorer_Smart_recovery",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_50",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0004",
+      "type": "exploits",
+      "summary": "Darkhotel exploits CVE-2014-0497",
+      "evidence_ids": [
+        "ev_58",
+        "ev_61"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "internet_explorer_Smart_recovery drops internet_explorer_Smart_recovery.exe",
+      "evidence_ids": [
+        "ev_51"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "csrtsrm.exe loads internet_explorer_Smart_recovery",
+      "evidence_ids": [
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "mshta.exe loads internet_explorer_Smart_recovery",
+      "evidence_ids": [
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "downloads",
+      "summary": "internet_explorer_Smart_recovery downloads internet_explorer_Smart_recovery.exe",
+      "evidence_ids": [
+        "ev_51"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "10 août 2015 Darkhotel APT attacks dated 2014 and earlier are characterized by the misuse of stolen certificates, the deployment of .hta files with multiple techniques, and the use of unusual methods like the infiltration of hotel Wi-Fi to place backdoors in targets’ systems.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "● storyonboard[.]net ● tisone360[.]org ● openofficev[.]info ● saytargetworld[.]net ● error-page[.]net ● eonlineworld[.]net ● enewsbank[.]net ● thewordusrapid[.]com 2015 spearphishing incident attachment name subset:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "From the recent sendspace.servermsys.com/downloader.hta:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The “internet_explorer_Smart_recovery.exe” file is a simple obfuscated downloader.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "When the target attempts to open what they think is a jpg image file, the executable code runs and drops a jpg image to disk, then opens it with mspaint.exe in the background.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "Tisone360.com, Visits, and Hacking Team Flash 0day The tisone360.com site was especially interesting to us.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s6"
+      },
+      "text": "We can pivot from “tisone360.com” to identify some of this activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s7"
+      },
+      "text": "We reported the related vulnerability to Adobe in January 2014, when it was being used by the Darkhotel APT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "● Finland ● Canada ● Taiwan ● France (likely to be research) ● Czech Republic A consistent attack flow The Darkhotel group tends to stick with what works.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s3"
+      },
+      "text": "Now, as with the tisone360.com site above, we have seen repeated use in 2015 of a creative chain of delivery sets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s6"
+      },
+      "text": "openofficev[.]info (2015) office-revision[.]com (2014) online.newssupply[.]net (2011) Hiding infrastructure in plain sight The group is now more vigilant in maintaining its sites, tightening up configuration and response content.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s1"
+      },
+      "text": "Other Darkhotel c2s tend to blend in with random sites on the web when incorrect or missing pages are visited.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s3"
+      },
+      "text": "HTA md5 : 021685613fb739dec7303247212c3b09 1ee3dfce97ab318b416c1ba7463ee405 2899f4099c76232d6362fd62ab730741 2dee887b20a06b8e556e878c62e46e13 6b9e9b2dc97ff0b26a8a61ba95ca8ff6 852a9411a949add69386a72805c8cb05 be59994b5008a0be48934a9c5771dfa5 e29693ce15acd552f1a0435e2d31d6df fa67142728e40a2a4e97ccc6db919f2b fef8fda27deb3e950ba1a71968ec7466 Spearphish attachments md5 : 5c74db6f755555ea99b51e1c68e796f9 c3ae70b3012cc9b5c9ceb060a251715a 560d68c31980c26d2adab7406b61c651 da0717899e3ccc1ba0e8d32774566219 d965a5b3548047da27b503029440e77f dc0de14d9d36d13a6c8a34b2c583e70a 39562e410bc3fb5a30aca8162b20bdd0 (first seen late 2014, used into 2015) e85e0365b6f77cc2e9862f987b152a89 (first seen late 2014, used into 2015) 2015 large downloader md5 : 5e01b8bc78afc6ecb3376c06cbceb680 61cc019c3141281073181c4ef1f4e524 3d2e941ac48ae9d79380ca0f133f4a49",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s1"
+      },
+      "text": "Pour en savoir plus : www.kaspersky.fr",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "● schedule(6.1~6).rar -> schedule(6.1~6)_?gpj.scr ● schedule(2.11~16).rar -> schedule(2.11~16)_?gpj.scr ● congratulation.rar -> congratulation_?gpj.scr ● letter.rar -> letter_?gpj.scr Consistent use of obfuscated .hta downloaders",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "This code results in the execution of “internet_explorer_Smart_recovery.exe” 054471f7e168e016c565412227acfe7f, and a hidden browser window phoning back to its c2. In this case,",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "it seems that Darkhotel operators are checking as to whether or not the victim’s default browser is Internet Explorer, as all versions of IE return the value “0” and other browsers leave “appMinorVersion” undefined. This data collection seems somewhat odd, because .hta files are supported and run by mshta.exe on Windows systems only, still delivered with Windows 8. Perhaps it is an artefact from early development of the code. Here is a recent version: “hxxp://sendspace.servermsys.com/readme.php?type=execution&result=created_and_executed&info=\" + navigator.appMinorVersion + ”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "The “internet_explorer_Smart_recovery.exe” file is a simple obfuscated downloader. A series of xor 0x28 loops decrypt the contents of a self-deletion batch file, which is then written to disk and executed. Later in the execution, a more complex rc4 loop decrypts the download url and other strings and imports.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "When the target attempts to open what they think is a jpg image file, the executable code runs and drops a jpg image to disk, then opens it with mspaint.exe in the background. This “congratulations” document is in Korean, revealing a likely characteristic of the intended target.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "This executable code is saved to %temp%\\csrtsrm.exe and executed there. It is a relatively large executable (~1.2 mb) that injects malicious code and spawns remote threads into legitimate processes. Stolen certificates and evasion The group appears to maintain a stockpile of stolen certificates and deploys their downloaders and the backdoors signed with them. Some of the more recent revoked certificates include ones that belong to Xuchang Hongguang Technology Co. Ltd. Darkhotel now tends to hide its code behind layers of encryption. It is likely that it has slowly adapted to attacking better-defended environments and prefers not to burn these stolen digital certificates. In previous attacks it would simply have taken advantage of a long list of weakly implemented, broken certificates. Not only are its obfuscation techniques becoming stronger, but its anti-detection technology list is growing. For example, this signed downloader (d896ebfc819741e0a97c651de1d15fec) decrypts a set of anti-malware strings in stages to identify defensive technologies on a newly-infected system, and then opens each process, looking for a matching image name: c:\\avast! sandbox\\WINDOWS\\system32\\kernel32.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "It is the ims2 directory that is the most active. It contains a set of backdoors and exploits. The most interesting of these is the reported Hacking Team Flash 0day, icon.swf. In the days following the public mention of this server, the crew slowly tightened down open access to /ims2/. Either way, the contents continued to be actively used. icon.swf (214709aa7c5e4e8b60759a175737bb2b) -> icon.jpg (42a837c4433ae6bd7490baec8aeb5091) -> %temp%\\RealTemp.exe (61cc019c3141281073181c4ef1f4e524)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "HTA md5 : 021685613fb739dec7303247212c3b09 1ee3dfce97ab318b416c1ba7463ee405 2899f4099c76232d6362fd62ab730741 2dee887b20a06b8e556e878c62e46e13 6b9e9b2dc97ff0b26a8a61ba95ca8ff6 852a9411a949add69386a72805c8cb05 be59994b5008a0be48934a9c5771dfa5 e29693ce15acd552f1a0435e2d31d6df fa67142728e40a2a4e97ccc6db919f2b fef8fda27deb3e950ba1a71968ec7466 Spearphish attachments md5 : 5c74db6f755555ea99b51e1c68e796f9 c3ae70b3012cc9b5c9ceb060a251715a 560d68c31980c26d2adab7406b61c651 da0717899e3ccc1ba0e8d32774566219 d965a5b3548047da27b503029440e77f dc0de14d9d36d13a6c8a34b2c583e70a 39562e410bc3fb5a30aca8162b20bdd0 (first seen late 2014, used into 2015) e85e0365b6f77cc2e9862f987b152a89 (first seen late 2014, used into 2015) 2015 large downloader md5 : 5e01b8bc78afc6ecb3376c06cbceb680 61cc019c3141281073181c4ef1f4e524 3d2e941ac48ae9d79380ca0f133f4a49",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb58"
+      },
+      "text": "was delivering a Flash CVE-2014-0497 exploit in April. We reported the related vulnerability to Adobe in",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb59"
+      },
+      "text": "CVE-2014-0497 – A 0-day Vulnerability",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb60"
+      },
+      "text": "https://securelist.com/blog/incidents/58244/cve-2014-0497-a-0-day-vulnerability/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb61"
+      },
+      "text": "s as though the “tisone360.com” site was delivering a Flash CVE-2014-0497 exploit in April. We reported the related vulnerability to Adobe in January 2014, when it was being used b",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb62"
+      },
+      "text": "Blog français de Kaspersky Lab : http://blog.kaspersky.fr/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb63"
+      },
+      "text": "om.kaspersky.eu/fr/ Blog français de Kaspersky Lab : http://blog.kaspersky.fr/ Hotwire pour Kaspersky Lab Marion Delmas / Eric Le Yavanc / Marion Larivière 01 43 12 55 62 / 47 / 64",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb64"
+      },
+      "text": "http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-zero-day-tied-to-attacks-in-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb65"
+      },
+      "text": "ro-Day Tied To Attacks In Korea and Japan… on July 1 http://blog.trendmicro.com/trendlabs-security-intelligence/hacking-team-flash-zero-day-tied-to-attacks-in- korea-and-japan-on-j",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb66"
+      },
+      "text": "daily.enewsbank.net/wmpsrx64",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb67"
+      },
+      "text": "daily.enewsbank.net/newsviewer.hta",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb68"
+      },
+      "text": "com/htdoc/ImageView.hta tisone360.com/htdoc/page1/page.html daily.enewsbank.net/wmpsrx64 daily.enewsbank.net/newsviewer.hta saytargetworld.net/season/nextpage.php sendspace.serverm",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb69"
+      },
+      "text": "KasperskyFrance@hotwirepr.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb70"
+      },
+      "text": "/ Marion Larivière 01 43 12 55 62 / 47 / 64 KasperskyFrance@hotwirepr.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb71"
+      },
+      "text": "Salle de presse virtuelle Kaspersky Lab : http://newsroom.kaspersky.eu/fr/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb72"
+      },
+      "text": "relist.com Salle de presse virtuelle Kaspersky Lab : http://newsroom.kaspersky.eu/fr/ Blog français de Kaspersky Lab : http://blog.kaspersky.fr/ Hotwire pour Kaspersky Lab Marion D",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb73"
+      },
+      "text": "photo.storyonboard.net/wmpsrx64",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb74"
+      },
+      "text": "photo.storyonboard.net/photoviewer.hta",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb75"
+      },
+      "text": "photo.storyonboard.net/readme.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb76"
+      },
+      "text": "space.servermsys.com/wnctprx error-page.net/update/load.php photo.storyonboard.net/wmpsrx64 photo.storyonboard.net/photoviewer.hta photo.storyonboard.net/readme.php unionnewsreport",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb77"
+      },
+      "text": "unionnewsreport.net/aeroflot_bonus/ticket.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb78"
+      },
+      "text": "board.net/photoviewer.hta photo.storyonboard.net/readme.php unionnewsreport.net/aeroflot_bonus/ticket.php www.openofficev.info/xopen88/office2 www.openofficev.info/dec98/unzip.js w",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb79"
+      },
+      "text": "Pour en savoir plus : www.kaspersky.com/fr/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb80"
+      },
+      "text": "our en savoir plus : www.kaspersky.fr Pour en savoir plus : www.kaspersky.com/fr/ Pour plus d’informations sur l’actualité virale : http://www.securelist.com Salle de presse virtue",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb81"
+      },
+      "text": "https://securelist.com/blog/incidents/58244/cve-2014-0497-a-0-day-vulnerability/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb82"
+      },
+      "text": "https://securelist.com/blog/research/66779/the-darkhotel-apt/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb83"
+      },
+      "text": "Pour plus d’informations sur l’actualité virale : http://www.securelist.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb84"
+      },
+      "text": "to-attacks-in- korea-and-japan-on-july-1/ The Darkhotel APT https://securelist.com/blog/research/66779/the-darkhotel-apt/ À propos de Kaspersky Lab",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb85"
+      },
+      "text": "009d85773d519a9a97129102d8116305",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb86"
+      },
+      "text": "c5ba6bf1a545d45e17f7582512 b1f56a54309147b07dda54623fecbb89 009d85773d519a9a97129102d8116305 Infostealers dropped in 2015 61637a0637fb25c53f396c305efa5dc5 a7e78fd4bf305509c2fc1b370",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb87"
+      },
+      "text": "33e278c5ba6bf1a545d45e17f7582512",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb88"
+      },
+      "text": "5507e920b3ee405f843f48a7b3 da360e94e60267dce08e6d47fc1fcecc 33e278c5ba6bf1a545d45e17f7582512 b1f56a54309147b07dda54623fecbb89 009d85773d519a9a97129102d8116305 Infostealers dropped",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb89"
+      },
+      "text": "(a07124b65a76ee7d721d746fd8047066) on openofficev.info. This is another wscript file implementing",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb90"
+      },
+      "text": "ins an AJAX-based download process for the “unzip.js” file (a07124b65a76ee7d721d746fd8047066) on openofficev.info. This is another wscript file implementing AJAX to download and ex",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb91"
+      },
+      "text": "a7e78fd4bf305509c2fc1b3706567acd",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb92"
+      },
+      "text": "fostealers dropped in 2015 61637a0637fb25c53f396c305efa5dc5 a7e78fd4bf305509c2fc1b3706567acd Subhosts and urls: tisone360.com/img_h/ims2/icon.swf tisone360.com/img_h/ims2/1.php tis",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb93"
+      },
+      "text": "fc78b15507e920b3ee405f843f48a7b3",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Report_Darkhotel_2015(08-10-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb94"
+      },
+      "text": "fc78b15507e920b3ee405f843f48a7b3 da360e94e60267dce08e6d47fc1fcecc 33e278c5ba6bf1a545d45e17f7582512 b1f56a54309147b07dda54623fecbb89 009d85773d519a9a9712",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_61",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2014-0497",
+        "ent_domain_tisone360.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_internet_explorer_Smart_recovery",
+        "ent_file_internet_explorer_Smart_recovery.exe",
+        "ent_malware_internet_explorer_Smart_recovery.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_internet_explorer_Smart_recovery",
+        "ent_file_internet_explorer_Smart_recovery.exe",
+        "ent_malware_internet_explorer_Smart_recovery.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_congratulation.rar",
+        "ent_file_letter.rar"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_internet_explorer_Smart_recovery",
+        "ent_file_internet_explorer_Smart_recovery.exe",
+        "ent_malware_internet_explorer_Smart_recovery.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Darkhotel",
+        "ent_file_mshta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_82",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_threatactor_Darkhotel",
+        "ent_url_https_securelist.com_blog_research_66779_the-darkhotel-apt_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_84",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_threatactor_Darkhotel",
+        "ent_url_https_securelist.com_blog_research_66779_the-darkhotel-apt_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_60",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2014-0497",
+        "ent_url_https_securelist.com_blog_incidents_58244_cve-2014-0497-a-0-day-vulnerability_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_81",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2014-0497",
+        "ent_url_https_securelist.com_blog_incidents_58244_cve-2014-0497-a-0-day-vulnerability_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_72",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_url_http_blog.kaspersky.fr_",
+        "ent_url_http_newsroom.kaspersky.eu_fr_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_80",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_domain_www.kaspersky.fr",
+        "ent_url_http_www.securelist.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_69",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_domain_hotwirepr.com",
+        "ent_email_KasperskyFrance_hotwirepr.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_70",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_domain_hotwirepr.com",
+        "ent_email_KasperskyFrance_hotwirepr.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

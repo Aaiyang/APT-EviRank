@@ -1,0 +1,4756 @@
+{
+  "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+  "title": "Backdoor.Cadelspy and Backdoor.Remexi Backdoor.Cadelspy and Backdoor.Remexi indicators of compromise Version 1.0: December 7, 2015, 14:00 GMT Security Response",
+  "source": null,
+  "published_date": "Dec 7, 2015",
+  "report_metadata": {
+    "file_name": "Symantec_CadelSpy-Remexi-IOC(12-07-2015).pdf",
+    "file_path": "/root/APTtext/Symantec_CadelSpy-Remexi-IOC(12-07-2015).pdf",
+    "source_type": "pdf",
+    "char_length": 20136,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Ldr32_x64",
+      "type": "Malware",
+      "name": "Ldr32_x64",
+      "normalized_name": "Ldr32_x64",
+      "aliases": [
+        "ldr32_x64.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_3",
+        "ev_40",
+        "ev_48"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_40",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "SHA256"
+      ],
+      "derived_from_file_id": "ent_file_ldr32_x64.exe",
+      "family": "Ldr32_x64",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Ldr32_x86",
+      "type": "Malware",
+      "name": "Ldr32_x86",
+      "normalized_name": "Ldr32_x86",
+      "aliases": [
+        "ldr32_x86.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_2",
+        "ev_41",
+        "ev_46"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_41",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "SHA256"
+      ],
+      "derived_from_file_id": "ent_file_ldr32_x86.exe",
+      "family": "Ldr32_x86",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Ntinst",
+      "type": "Malware",
+      "name": "Ntinst",
+      "normalized_name": "Ntinst",
+      "aliases": [
+        "ntinst.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "SHA256"
+      ],
+      "derived_from_file_id": "ent_file_ntinst.exe",
+      "family": "Ntinst",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Ryeol",
+      "type": "Malware",
+      "name": "Ryeol",
+      "normalized_name": "Ryeol",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "family": "Ryeol",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_5ppob16.dockerjsbin.com",
+      "type": "Domain",
+      "name": "5ppob16.dockerjsbin.com",
+      "normalized_name": "5ppob16.dockerjsbin.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "5ppob16.dockerjsbin.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Backdoor.Remexi.B",
+      "type": "Malware",
+      "name": "Backdoor.Remexi.B",
+      "normalized_name": "Backdoor.Remexi.B",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_26",
+        "ev_30",
+        "ev_37"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "family": "Backdoor.Remexi.B",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_30",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_ldr32_x64.exe",
+      "type": "File",
+      "name": "ldr32_x64.exe",
+      "normalized_name": "ldr32_x64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_3",
+        "ev_40",
+        "ev_48"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "ldr32_x64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_40",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "SHA1",
+        "SHA256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_ldr32_x64.exe",
+      "type": "Malware",
+      "name": "ldr32_x64.exe",
+      "normalized_name": "ldr32_x64.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_3",
+        "ev_40",
+        "ev_48"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Ldr32_x64"
+    },
+    {
+      "id": "ent_file_ldr32_x86.exe",
+      "type": "File",
+      "name": "ldr32_x86.exe",
+      "normalized_name": "ldr32_x86.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_2",
+        "ev_41",
+        "ev_46"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "ldr32_x86.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_41",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "SHA1",
+        "SHA256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_ldr32_x86.exe",
+      "type": "Malware",
+      "name": "ldr32_x86.exe",
+      "normalized_name": "ldr32_x86.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_2",
+        "ev_41",
+        "ev_46"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Ldr32_x86"
+    },
+    {
+      "id": "ent_file_ntinst.exe",
+      "type": "File",
+      "name": "ntinst.exe",
+      "normalized_name": "ntinst.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "ntinst.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "SHA1",
+        "SHA256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_ntinst.exe",
+      "type": "Malware",
+      "name": "ntinst.exe",
+      "normalized_name": "ntinst.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Ntinst"
+    },
+    {
+      "id": "ent_malware_SHA256",
+      "type": "Malware",
+      "name": "SHA256",
+      "normalized_name": "SHA256",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_3",
+        "ev_37"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "family": "SHA256",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_3",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_domain_37atypz123.dns-bind9.com",
+      "type": "Domain",
+      "name": "37atypz123.dns-bind9.com",
+      "normalized_name": "37atypz123.dns-bind9.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "37atypz123.dns-bind9.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_87abfg113.dockerjsbin.com",
+      "type": "Domain",
+      "name": "87abfg113.dockerjsbin.com",
+      "normalized_name": "87abfg113.dockerjsbin.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "87abfg113.dockerjsbin.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_87pqxz159.dockerjsbin.com",
+      "type": "Domain",
+      "name": "87pqxz159.dockerjsbin.com",
+      "normalized_name": "87pqxz159.dockerjsbin.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "87pqxz159.dockerjsbin.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.symantec.com",
+      "type": "Domain",
+      "name": "www.symantec.com",
+      "normalized_name": "www.symantec.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_105",
+        "ev_106",
+        "ev_107"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "www.symantec.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_104",
+        "ev_107"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_www.symantec.com_social_",
+      "type": "URL",
+      "name": "http://www.symantec.com/social/",
+      "normalized_name": "http://www.symantec.com/social/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105",
+        "ev_107"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "http://www.symantec.com/social/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [
+        "ev_107"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_0595979c000ef1aa3a237b0822c0556a64a75edaec8560e37e9214fd57569461",
+      "type": "SHA256",
+      "name": "0595979c000ef1aa3a237b0822c0556a64a75edaec8560e37e9214fd57569461",
+      "normalized_name": "0595979c000ef1aa3a237b0822c0556a64a75edaec8560e37e9214fd57569461",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "0595979c000ef1aa3a237b0822c0556a64a75edaec8560e37e9214fd57569461",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400",
+      "type": "SHA256",
+      "name": "0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400",
+      "normalized_name": "0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_55",
+        "ev_63"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_17a73d715333d4af746bf6d180fd129b6334a34599bf299bef48d7e27de95a68",
+      "type": "SHA256",
+      "name": "17a73d715333d4af746bf6d180fd129b6334a34599bf299bef48d7e27de95a68",
+      "normalized_name": "17a73d715333d4af746bf6d180fd129b6334a34599bf299bef48d7e27de95a68",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "17a73d715333d4af746bf6d180fd129b6334a34599bf299bef48d7e27de95a68",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_18CE17849CD25452D98B24987556322DA72E1031D1C8D8680EE9FEC3DFB7CB46",
+      "type": "SHA256",
+      "name": "18CE17849CD25452D98B24987556322DA72E1031D1C8D8680EE9FEC3DFB7CB46",
+      "normalized_name": "18CE17849CD25452D98B24987556322DA72E1031D1C8D8680EE9FEC3DFB7CB46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "18CE17849CD25452D98B24987556322DA72E1031D1C8D8680EE9FEC3DFB7CB46",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1E5022576367F6A614AFE0F8963AEDD1F0C7B06502E326C43362A59DDEFD118E",
+      "type": "SHA256",
+      "name": "1E5022576367F6A614AFE0F8963AEDD1F0C7B06502E326C43362A59DDEFD118E",
+      "normalized_name": "1E5022576367F6A614AFE0F8963AEDD1F0C7B06502E326C43362A59DDEFD118E",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "1E5022576367F6A614AFE0F8963AEDD1F0C7B06502E326C43362A59DDEFD118E",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_22261e840bfaa43b982ce08a1eb18fd53400dca2a2dc6edebd1398229e5a32ee",
+      "type": "SHA256",
+      "name": "22261e840bfaa43b982ce08a1eb18fd53400dca2a2dc6edebd1398229e5a32ee",
+      "normalized_name": "22261e840bfaa43b982ce08a1eb18fd53400dca2a2dc6edebd1398229e5a32ee",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "22261e840bfaa43b982ce08a1eb18fd53400dca2a2dc6edebd1398229e5a32ee",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2317f2448a689aa3d4802e838ae3dfd772246e6f1eb9e262df4012a221a63825",
+      "type": "SHA256",
+      "name": "2317f2448a689aa3d4802e838ae3dfd772246e6f1eb9e262df4012a221a63825",
+      "normalized_name": "2317f2448a689aa3d4802e838ae3dfd772246e6f1eb9e262df4012a221a63825",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "2317f2448a689aa3d4802e838ae3dfd772246e6f1eb9e262df4012a221a63825",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_247511a37c6e01e1b4acf360003e9e72208c86df614fc711b2b152a4c3fc524f",
+      "type": "SHA256",
+      "name": "247511a37c6e01e1b4acf360003e9e72208c86df614fc711b2b152a4c3fc524f",
+      "normalized_name": "247511a37c6e01e1b4acf360003e9e72208c86df614fc711b2b152a4c3fc524f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "247511a37c6e01e1b4acf360003e9e72208c86df614fc711b2b152a4c3fc524f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_26f0d3d4eb4d445f4231157198eae01846797ce5ffc624872b0daf90736994e8",
+      "type": "SHA256",
+      "name": "26f0d3d4eb4d445f4231157198eae01846797ce5ffc624872b0daf90736994e8",
+      "normalized_name": "26f0d3d4eb4d445f4231157198eae01846797ce5ffc624872b0daf90736994e8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "26f0d3d4eb4d445f4231157198eae01846797ce5ffc624872b0daf90736994e8",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_27f2350d51cb41a4e5330b7cffd87ca89d263278e2a3fb8cbf0d324a4a267223",
+      "type": "SHA256",
+      "name": "27f2350d51cb41a4e5330b7cffd87ca89d263278e2a3fb8cbf0d324a4a267223",
+      "normalized_name": "27f2350d51cb41a4e5330b7cffd87ca89d263278e2a3fb8cbf0d324a4a267223",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "27f2350d51cb41a4e5330b7cffd87ca89d263278e2a3fb8cbf0d324a4a267223",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2f0b3cf460b3909f259550a3a09e679d63391847ae45bd44306ddbfc1f53d5ec",
+      "type": "SHA256",
+      "name": "2f0b3cf460b3909f259550a3a09e679d63391847ae45bd44306ddbfc1f53d5ec",
+      "normalized_name": "2f0b3cf460b3909f259550a3a09e679d63391847ae45bd44306ddbfc1f53d5ec",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "2f0b3cf460b3909f259550a3a09e679d63391847ae45bd44306ddbfc1f53d5ec",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_36f5744f72674524f56bf286dce7e4b1c93ac2859036513cfdb479daf1c014f1",
+      "type": "SHA256",
+      "name": "36f5744f72674524f56bf286dce7e4b1c93ac2859036513cfdb479daf1c014f1",
+      "normalized_name": "36f5744f72674524f56bf286dce7e4b1c93ac2859036513cfdb479daf1c014f1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "36f5744f72674524f56bf286dce7e4b1c93ac2859036513cfdb479daf1c014f1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3db1b57303326b9fea0fbf919ae6113d013e695b2844d645bfe69d3b4bc0ec57",
+      "type": "SHA256",
+      "name": "3db1b57303326b9fea0fbf919ae6113d013e695b2844d645bfe69d3b4bc0ec57",
+      "normalized_name": "3db1b57303326b9fea0fbf919ae6113d013e695b2844d645bfe69d3b4bc0ec57",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "3db1b57303326b9fea0fbf919ae6113d013e695b2844d645bfe69d3b4bc0ec57",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_54abd9863f185e7ebd47a3f39f99335532bd55849228a7ed29ffdab8090dc4f6",
+      "type": "SHA256",
+      "name": "54abd9863f185e7ebd47a3f39f99335532bd55849228a7ed29ffdab8090dc4f6",
+      "normalized_name": "54abd9863f185e7ebd47a3f39f99335532bd55849228a7ed29ffdab8090dc4f6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "54abd9863f185e7ebd47a3f39f99335532bd55849228a7ed29ffdab8090dc4f6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6079c6ff09440faa673be55f0f7f8a613d8654e7d2cb49990db316b0add53063",
+      "type": "SHA256",
+      "name": "6079c6ff09440faa673be55f0f7f8a613d8654e7d2cb49990db316b0add53063",
+      "normalized_name": "6079c6ff09440faa673be55f0f7f8a613d8654e7d2cb49990db316b0add53063",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6079c6ff09440faa673be55f0f7f8a613d8654e7d2cb49990db316b0add53063",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_688dbf4cfc00957d2679dc319de0bb80f38e7b5ac4414c1543e135e37c561b8b",
+      "type": "SHA256",
+      "name": "688dbf4cfc00957d2679dc319de0bb80f38e7b5ac4414c1543e135e37c561b8b",
+      "normalized_name": "688dbf4cfc00957d2679dc319de0bb80f38e7b5ac4414c1543e135e37c561b8b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "688dbf4cfc00957d2679dc319de0bb80f38e7b5ac4414c1543e135e37c561b8b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6a88964db3e97e8176dd1df4ca69e2bfd92366a5b051d3313fa48aefa4ad288f",
+      "type": "SHA256",
+      "name": "6a88964db3e97e8176dd1df4ca69e2bfd92366a5b051d3313fa48aefa4ad288f",
+      "normalized_name": "6a88964db3e97e8176dd1df4ca69e2bfd92366a5b051d3313fa48aefa4ad288f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6a88964db3e97e8176dd1df4ca69e2bfd92366a5b051d3313fa48aefa4ad288f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6b8a220272382f5481e1900c1c603f67ec9d5fb45ad78bf7788dece1f20dddcd",
+      "type": "SHA256",
+      "name": "6b8a220272382f5481e1900c1c603f67ec9d5fb45ad78bf7788dece1f20dddcd",
+      "normalized_name": "6b8a220272382f5481e1900c1c603f67ec9d5fb45ad78bf7788dece1f20dddcd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6b8a220272382f5481e1900c1c603f67ec9d5fb45ad78bf7788dece1f20dddcd",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6c0d1268177ebc1ad7b8f34f04b3d38c74cf4b43e18259677759c0ef91615e24",
+      "type": "SHA256",
+      "name": "6c0d1268177ebc1ad7b8f34f04b3d38c74cf4b43e18259677759c0ef91615e24",
+      "normalized_name": "6c0d1268177ebc1ad7b8f34f04b3d38c74cf4b43e18259677759c0ef91615e24",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6c0d1268177ebc1ad7b8f34f04b3d38c74cf4b43e18259677759c0ef91615e24",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535",
+      "type": "SHA256",
+      "name": "6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535",
+      "normalized_name": "6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_48",
+        "ev_58"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_82ed6493c494e88e49799c75f6b22c101c1ca3d97ac001b5487610f81d21d961",
+      "type": "SHA256",
+      "name": "82ed6493c494e88e49799c75f6b22c101c1ca3d97ac001b5487610f81d21d961",
+      "normalized_name": "82ed6493c494e88e49799c75f6b22c101c1ca3d97ac001b5487610f81d21d961",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "82ed6493c494e88e49799c75f6b22c101c1ca3d97ac001b5487610f81d21d961",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8455598c9bbb0a93aa35b083ee8bb83bb01fe27cf02ee7c44052a813cb66767c",
+      "type": "SHA256",
+      "name": "8455598c9bbb0a93aa35b083ee8bb83bb01fe27cf02ee7c44052a813cb66767c",
+      "normalized_name": "8455598c9bbb0a93aa35b083ee8bb83bb01fe27cf02ee7c44052a813cb66767c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "8455598c9bbb0a93aa35b083ee8bb83bb01fe27cf02ee7c44052a813cb66767c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_90bea454ed11dbdfe0d21e097299db4354999b693489cbccc652c11cc1adce22",
+      "type": "SHA256",
+      "name": "90bea454ed11dbdfe0d21e097299db4354999b693489cbccc652c11cc1adce22",
+      "normalized_name": "90bea454ed11dbdfe0d21e097299db4354999b693489cbccc652c11cc1adce22",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "90bea454ed11dbdfe0d21e097299db4354999b693489cbccc652c11cc1adce22",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_98a9b2329eefe618daa78b6afed82cebf40cb918ad0aae7a8d7f59af4cb13b41",
+      "type": "SHA256",
+      "name": "98a9b2329eefe618daa78b6afed82cebf40cb918ad0aae7a8d7f59af4cb13b41",
+      "normalized_name": "98a9b2329eefe618daa78b6afed82cebf40cb918ad0aae7a8d7f59af4cb13b41",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "98a9b2329eefe618daa78b6afed82cebf40cb918ad0aae7a8d7f59af4cb13b41",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9be5fa0e44b2fe964f292db44236ecf2d790465a9d42fe550dff20faca5a2d52",
+      "type": "SHA256",
+      "name": "9be5fa0e44b2fe964f292db44236ecf2d790465a9d42fe550dff20faca5a2d52",
+      "normalized_name": "9be5fa0e44b2fe964f292db44236ecf2d790465a9d42fe550dff20faca5a2d52",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "9be5fa0e44b2fe964f292db44236ecf2d790465a9d42fe550dff20faca5a2d52",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9f0ac7fa30e86b4015de6f77fe219cced164f317799fdc3faaf35af730a48700",
+      "type": "SHA256",
+      "name": "9f0ac7fa30e86b4015de6f77fe219cced164f317799fdc3faaf35af730a48700",
+      "normalized_name": "9f0ac7fa30e86b4015de6f77fe219cced164f317799fdc3faaf35af730a48700",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "9f0ac7fa30e86b4015de6f77fe219cced164f317799fdc3faaf35af730a48700",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a8921363b0f3cca72c5487f67230b564598b2c20dcd7ea04807b7b18b78af53a",
+      "type": "SHA256",
+      "name": "a8921363b0f3cca72c5487f67230b564598b2c20dcd7ea04807b7b18b78af53a",
+      "normalized_name": "a8921363b0f3cca72c5487f67230b564598b2c20dcd7ea04807b7b18b78af53a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_90"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "a8921363b0f3cca72c5487f67230b564598b2c20dcd7ea04807b7b18b78af53a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ac187ad5ce438cfbcd58743b2641978c2d9d000d7c30130d2df42c767be08996",
+      "type": "SHA256",
+      "name": "ac187ad5ce438cfbcd58743b2641978c2d9d000d7c30130d2df42c767be08996",
+      "normalized_name": "ac187ad5ce438cfbcd58743b2641978c2d9d000d7c30130d2df42c767be08996",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "ac187ad5ce438cfbcd58743b2641978c2d9d000d7c30130d2df42c767be08996",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120",
+      "type": "SHA256",
+      "name": "bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120",
+      "normalized_name": "bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2",
+        "ev_47",
+        "ev_59"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42",
+      "type": "SHA256",
+      "name": "c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42",
+      "normalized_name": "c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39",
+        "ev_57"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c5460b3e2b4dfe9af1c209ecd143c7f847a9092abea86275a071324110f74555",
+      "type": "SHA256",
+      "name": "c5460b3e2b4dfe9af1c209ecd143c7f847a9092abea86275a071324110f74555",
+      "normalized_name": "c5460b3e2b4dfe9af1c209ecd143c7f847a9092abea86275a071324110f74555",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "c5460b3e2b4dfe9af1c209ecd143c7f847a9092abea86275a071324110f74555",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d6e769121d327a3f00c615459ac04bc4e2149aa17ea29479b86156298834eb62",
+      "type": "SHA256",
+      "name": "d6e769121d327a3f00c615459ac04bc4e2149aa17ea29479b86156298834eb62",
+      "normalized_name": "d6e769121d327a3f00c615459ac04bc4e2149aa17ea29479b86156298834eb62",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "d6e769121d327a3f00c615459ac04bc4e2149aa17ea29479b86156298834eb62",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_D94B920A5645218D8368C1277E5D2081916E66D815C9C3E150B07ADE02DE970F",
+      "type": "SHA256",
+      "name": "D94B920A5645218D8368C1277E5D2081916E66D815C9C3E150B07ADE02DE970F",
+      "normalized_name": "D94B920A5645218D8368C1277E5D2081916E66D815C9C3E150B07ADE02DE970F",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "D94B920A5645218D8368C1277E5D2081916E66D815C9C3E150B07ADE02DE970F",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_da84353f914c297878e5d5eb55a6905b655410df67b881092008b24faa90bb79",
+      "type": "SHA256",
+      "name": "da84353f914c297878e5d5eb55a6905b655410df67b881092008b24faa90bb79",
+      "normalized_name": "da84353f914c297878e5d5eb55a6905b655410df67b881092008b24faa90bb79",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "da84353f914c297878e5d5eb55a6905b655410df67b881092008b24faa90bb79",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_de529597194ed2088eb7fc246bcb698dac739c2ac3de8d7b9a5fd0e969f124fa",
+      "type": "SHA256",
+      "name": "de529597194ed2088eb7fc246bcb698dac739c2ac3de8d7b9a5fd0e969f124fa",
+      "normalized_name": "de529597194ed2088eb7fc246bcb698dac739c2ac3de8d7b9a5fd0e969f124fa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "de529597194ed2088eb7fc246bcb698dac739c2ac3de8d7b9a5fd0e969f124fa",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e2f430fb6f3588cd9cf63a74760e37738c91e7589df41f0bbac9a4e23b745d7e",
+      "type": "SHA256",
+      "name": "e2f430fb6f3588cd9cf63a74760e37738c91e7589df41f0bbac9a4e23b745d7e",
+      "normalized_name": "e2f430fb6f3588cd9cf63a74760e37738c91e7589df41f0bbac9a4e23b745d7e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "e2f430fb6f3588cd9cf63a74760e37738c91e7589df41f0bbac9a4e23b745d7e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ebc9d6bcd5f8e738d2ed82b1c232df06b9caf0b33ea8b4b45d7f0bfd8252a97d",
+      "type": "SHA256",
+      "name": "ebc9d6bcd5f8e738d2ed82b1c232df06b9caf0b33ea8b4b45d7f0bfd8252a97d",
+      "normalized_name": "ebc9d6bcd5f8e738d2ed82b1c232df06b9caf0b33ea8b4b45d7f0bfd8252a97d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "ebc9d6bcd5f8e738d2ed82b1c232df06b9caf0b33ea8b4b45d7f0bfd8252a97d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f4db775254f4139ec677efa1a633e310189d7ad425a7f5a84fdb6ee4a3c1aa21",
+      "type": "SHA256",
+      "name": "f4db775254f4139ec677efa1a633e310189d7ad425a7f5a84fdb6ee4a3c1aa21",
+      "normalized_name": "f4db775254f4139ec677efa1a633e310189d7ad425a7f5a84fdb6ee4a3c1aa21",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_100"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "f4db775254f4139ec677efa1a633e310189d7ad425a7f5a84fdb6ee4a3c1aa21",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f7e44314521c04626d586e07cbab655ee59a5a0805cccef8311f669c175f5d86",
+      "type": "SHA256",
+      "name": "f7e44314521c04626d586e07cbab655ee59a5a0805cccef8311f669c175f5d86",
+      "normalized_name": "f7e44314521c04626d586e07cbab655ee59a5a0805cccef8311f669c175f5d86",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "f7e44314521c04626d586e07cbab655ee59a5a0805cccef8311f669c175f5d86",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_102",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f8fe5edcdf087368a4aa9e39d583fc80a625209f3297a4db9697d4ade6c8b9ce",
+      "type": "SHA256",
+      "name": "f8fe5edcdf087368a4aa9e39d583fc80a625209f3297a4db9697d4ade6c8b9ce",
+      "normalized_name": "f8fe5edcdf087368a4aa9e39d583fc80a625209f3297a4db9697d4ade6c8b9ce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "f8fe5edcdf087368a4aa9e39d583fc80a625209f3297a4db9697d4ade6c8b9ce",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fead15c401f0aba8e770b7a85df96852dd1b72ca367c2aef3a0913bca10da0d5",
+      "type": "SHA256",
+      "name": "fead15c401f0aba8e770b7a85df96852dd1b72ca367c2aef3a0913bca10da0d5",
+      "normalized_name": "fead15c401f0aba8e770b7a85df96852dd1b72ca367c2aef3a0913bca10da0d5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "fead15c401f0aba8e770b7a85df96852dd1b72ca367c2aef3a0913bca10da0d5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_14a694517ca05165ca09c81c984888923a35f0b0",
+      "type": "SHA1",
+      "name": "14a694517ca05165ca09c81c984888923a35f0b0",
+      "normalized_name": "14a694517ca05165ca09c81c984888923a35f0b0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_48"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "14a694517ca05165ca09c81c984888923a35f0b0",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_65bb99e15e098166bff04f22805b15810f8fbf71",
+      "type": "SHA1",
+      "name": "65bb99e15e098166bff04f22805b15810f8fbf71",
+      "normalized_name": "65bb99e15e098166bff04f22805b15810f8fbf71",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2",
+        "ev_47"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "65bb99e15e098166bff04f22805b15810f8fbf71",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_72219ba63f2cb336bc7d2e59e9e527af612e207d",
+      "type": "SHA1",
+      "name": "72219ba63f2cb336bc7d2e59e9e527af612e207d",
+      "normalized_name": "72219ba63f2cb336bc7d2e59e9e527af612e207d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "72219ba63f2cb336bc7d2e59e9e527af612e207d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c5f1bb651f665cc30cf789ce554f2bfc9d91a19f",
+      "type": "SHA1",
+      "name": "c5f1bb651f665cc30cf789ce554f2bfc9d91a19f",
+      "normalized_name": "c5f1bb651f665cc30cf789ce554f2bfc9d91a19f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_55"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "c5f1bb651f665cc30cf789ce554f2bfc9d91a19f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0069360b20a03728665bd92c4bccf380",
+      "type": "MD5",
+      "name": "0069360b20a03728665bd92c4bccf380",
+      "normalized_name": "0069360b20a03728665bd92c4bccf380",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "0069360b20a03728665bd92c4bccf380",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_05a88017b65754dc66f83c1d37778cc7",
+      "type": "MD5",
+      "name": "05a88017b65754dc66f83c1d37778cc7",
+      "normalized_name": "05a88017b65754dc66f83c1d37778cc7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "05a88017b65754dc66f83c1d37778cc7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_06291777cc2840a89ce1f8f82db97453",
+      "type": "MD5",
+      "name": "06291777cc2840a89ce1f8f82db97453",
+      "normalized_name": "06291777cc2840a89ce1f8f82db97453",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "06291777cc2840a89ce1f8f82db97453",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0b88451740471839755d5e46255c4bb5",
+      "type": "MD5",
+      "name": "0b88451740471839755d5e46255c4bb5",
+      "normalized_name": "0b88451740471839755d5e46255c4bb5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "0b88451740471839755d5e46255c4bb5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_135b226e06a309dad5c4af1e36528f93",
+      "type": "MD5",
+      "name": "135b226e06a309dad5c4af1e36528f93",
+      "normalized_name": "135b226e06a309dad5c4af1e36528f93",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "135b226e06a309dad5c4af1e36528f93",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_15db41840f77723aa7e43460d9d3a5cc",
+      "type": "MD5",
+      "name": "15db41840f77723aa7e43460d9d3a5cc",
+      "normalized_name": "15db41840f77723aa7e43460d9d3a5cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "15db41840f77723aa7e43460d9d3a5cc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_19cd900c135a5e9d486735ae3d2c3e97",
+      "type": "MD5",
+      "name": "19cd900c135a5e9d486735ae3d2c3e97",
+      "normalized_name": "19cd900c135a5e9d486735ae3d2c3e97",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "19cd900c135a5e9d486735ae3d2c3e97",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1fe84feb00e779bcdbece24ddddb38f7",
+      "type": "MD5",
+      "name": "1fe84feb00e779bcdbece24ddddb38f7",
+      "normalized_name": "1fe84feb00e779bcdbece24ddddb38f7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "1fe84feb00e779bcdbece24ddddb38f7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_200e662384542ccd979d4994dd08163e",
+      "type": "MD5",
+      "name": "200e662384542ccd979d4994dd08163e",
+      "normalized_name": "200e662384542ccd979d4994dd08163e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_55",
+        "ev_63"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "200e662384542ccd979d4994dd08163e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2374b9655f6330b07bc3d63df399731e",
+      "type": "MD5",
+      "name": "2374b9655f6330b07bc3d63df399731e",
+      "normalized_name": "2374b9655f6330b07bc3d63df399731e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "2374b9655f6330b07bc3d63df399731e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_253e32699d5b9c4cdf8a589ef6309af5",
+      "type": "MD5",
+      "name": "253e32699d5b9c4cdf8a589ef6309af5",
+      "normalized_name": "253e32699d5b9c4cdf8a589ef6309af5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "253e32699d5b9c4cdf8a589ef6309af5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_269b5a5270b34bf86c60bc793486aab7",
+      "type": "MD5",
+      "name": "269b5a5270b34bf86c60bc793486aab7",
+      "normalized_name": "269b5a5270b34bf86c60bc793486aab7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_48",
+        "ev_58"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "269b5a5270b34bf86c60bc793486aab7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_26afc6ef4315460e7e9e1cd8a3d20700",
+      "type": "MD5",
+      "name": "26afc6ef4315460e7e9e1cd8a3d20700",
+      "normalized_name": "26afc6ef4315460e7e9e1cd8a3d20700",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "26afc6ef4315460e7e9e1cd8a3d20700",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_27524accc1559da37deecb583419eb6e",
+      "type": "MD5",
+      "name": "27524accc1559da37deecb583419eb6e",
+      "normalized_name": "27524accc1559da37deecb583419eb6e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "27524accc1559da37deecb583419eb6e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2c3ebabc800fd2256dae4a9c363e0f49",
+      "type": "MD5",
+      "name": "2c3ebabc800fd2256dae4a9c363e0f49",
+      "normalized_name": "2c3ebabc800fd2256dae4a9c363e0f49",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_100"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "2c3ebabc800fd2256dae4a9c363e0f49",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2d8ba12d741fee7edae6454b06f6bc9c",
+      "type": "MD5",
+      "name": "2d8ba12d741fee7edae6454b06f6bc9c",
+      "normalized_name": "2d8ba12d741fee7edae6454b06f6bc9c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "2d8ba12d741fee7edae6454b06f6bc9c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_34b4d84d5e771d2d018d925c6ac40293",
+      "type": "MD5",
+      "name": "34b4d84d5e771d2d018d925c6ac40293",
+      "normalized_name": "34b4d84d5e771d2d018d925c6ac40293",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "34b4d84d5e771d2d018d925c6ac40293",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_38f9efa16a3b360c8ad1c872413f8dd9",
+      "type": "MD5",
+      "name": "38f9efa16a3b360c8ad1c872413f8dd9",
+      "normalized_name": "38f9efa16a3b360c8ad1c872413f8dd9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "38f9efa16a3b360c8ad1c872413f8dd9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4387a0855c11ac9b8e8f7593eca32e6e",
+      "type": "MD5",
+      "name": "4387a0855c11ac9b8e8f7593eca32e6e",
+      "normalized_name": "4387a0855c11ac9b8e8f7593eca32e6e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "4387a0855c11ac9b8e8f7593eca32e6e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5c0d7e787c39d64ef8546c5d2bcdab6d",
+      "type": "MD5",
+      "name": "5c0d7e787c39d64ef8546c5d2bcdab6d",
+      "normalized_name": "5c0d7e787c39d64ef8546c5d2bcdab6d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "5c0d7e787c39d64ef8546c5d2bcdab6d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5c587530e0d3daca90ca26436e091d08",
+      "type": "MD5",
+      "name": "5c587530e0d3daca90ca26436e091d08",
+      "normalized_name": "5c587530e0d3daca90ca26436e091d08",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "5c587530e0d3daca90ca26436e091d08",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6542d5f614ba093a43cd6a3a846d37ff",
+      "type": "MD5",
+      "name": "6542d5f614ba093a43cd6a3a846d37ff",
+      "normalized_name": "6542d5f614ba093a43cd6a3a846d37ff",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2",
+        "ev_47",
+        "ev_59"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6542d5f614ba093a43cd6a3a846d37ff",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6d70e287bf472663c1fbb4682d13d74a",
+      "type": "MD5",
+      "name": "6d70e287bf472663c1fbb4682d13d74a",
+      "normalized_name": "6d70e287bf472663c1fbb4682d13d74a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "6d70e287bf472663c1fbb4682d13d74a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7beeb3bd4681c17fe93fffcefcd125aa",
+      "type": "MD5",
+      "name": "7beeb3bd4681c17fe93fffcefcd125aa",
+      "normalized_name": "7beeb3bd4681c17fe93fffcefcd125aa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "7beeb3bd4681c17fe93fffcefcd125aa",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_894fd325751465d6f48c17106a1a91d1",
+      "type": "MD5",
+      "name": "894fd325751465d6f48c17106a1a91d1",
+      "normalized_name": "894fd325751465d6f48c17106a1a91d1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "894fd325751465d6f48c17106a1a91d1",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8a58cb79c33b196036f8d5b960316319",
+      "type": "MD5",
+      "name": "8a58cb79c33b196036f8d5b960316319",
+      "normalized_name": "8a58cb79c33b196036f8d5b960316319",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "8a58cb79c33b196036f8d5b960316319",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8b9d1fc8e5864a46ba5992f7350d5d89",
+      "type": "MD5",
+      "name": "8b9d1fc8e5864a46ba5992f7350d5d89",
+      "normalized_name": "8b9d1fc8e5864a46ba5992f7350d5d89",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39",
+        "ev_57"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "8b9d1fc8e5864a46ba5992f7350d5d89",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8d26621cc8e969266985f7000536f557",
+      "type": "MD5",
+      "name": "8d26621cc8e969266985f7000536f557",
+      "normalized_name": "8d26621cc8e969266985f7000536f557",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "8d26621cc8e969266985f7000536f557",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9aba0581781b7f5f9e57f07716a41f26",
+      "type": "MD5",
+      "name": "9aba0581781b7f5f9e57f07716a41f26",
+      "normalized_name": "9aba0581781b7f5f9e57f07716a41f26",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "9aba0581781b7f5f9e57f07716a41f26",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a437c10da3aaa8fe3241c8629c18d21a",
+      "type": "MD5",
+      "name": "a437c10da3aaa8fe3241c8629c18d21a",
+      "normalized_name": "a437c10da3aaa8fe3241c8629c18d21a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "a437c10da3aaa8fe3241c8629c18d21a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ac2b52010d43632b2f66573d2550984c",
+      "type": "MD5",
+      "name": "ac2b52010d43632b2f66573d2550984c",
+      "normalized_name": "ac2b52010d43632b2f66573d2550984c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "ac2b52010d43632b2f66573d2550984c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_102",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_adad23e3ca8057b562fad57a4b1c6137",
+      "type": "MD5",
+      "name": "adad23e3ca8057b562fad57a4b1c6137",
+      "normalized_name": "adad23e3ca8057b562fad57a4b1c6137",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "adad23e3ca8057b562fad57a4b1c6137",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b457ebbfbaf3d8adcce8bf8b2a7adcea",
+      "type": "MD5",
+      "name": "b457ebbfbaf3d8adcce8bf8b2a7adcea",
+      "normalized_name": "b457ebbfbaf3d8adcce8bf8b2a7adcea",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_90"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "b457ebbfbaf3d8adcce8bf8b2a7adcea",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_be303010e6ac78c7975c93aa459f2319",
+      "type": "MD5",
+      "name": "be303010e6ac78c7975c93aa459f2319",
+      "normalized_name": "be303010e6ac78c7975c93aa459f2319",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "be303010e6ac78c7975c93aa459f2319",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c6acff232a12259d75196a5ba6a233c7",
+      "type": "MD5",
+      "name": "c6acff232a12259d75196a5ba6a233c7",
+      "normalized_name": "c6acff232a12259d75196a5ba6a233c7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "c6acff232a12259d75196a5ba6a233c7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d5601ec9a7d2853b68e639cf9d55b987",
+      "type": "MD5",
+      "name": "d5601ec9a7d2853b68e639cf9d55b987",
+      "normalized_name": "d5601ec9a7d2853b68e639cf9d55b987",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "d5601ec9a7d2853b68e639cf9d55b987",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_dc8fe2004c7cd048bc93c5803c001e3f",
+      "type": "MD5",
+      "name": "dc8fe2004c7cd048bc93c5803c001e3f",
+      "normalized_name": "dc8fe2004c7cd048bc93c5803c001e3f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "dc8fe2004c7cd048bc93c5803c001e3f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e40e83cdf0688e48df2cdb70962a6be2",
+      "type": "MD5",
+      "name": "e40e83cdf0688e48df2cdb70962a6be2",
+      "normalized_name": "e40e83cdf0688e48df2cdb70962a6be2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "e40e83cdf0688e48df2cdb70962a6be2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f35ad22d762d59672e1977a4d96658af",
+      "type": "MD5",
+      "name": "f35ad22d762d59672e1977a4d96658af",
+      "normalized_name": "f35ad22d762d59672e1977a4d96658af",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "f35ad22d762d59672e1977a4d96658af",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fd2e29ad73d2e73f16667748f4536c4c",
+      "type": "MD5",
+      "name": "fd2e29ad73d2e73f16667748f4536c4c",
+      "normalized_name": "fd2e29ad73d2e73f16667748f4536c4c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "fd2e29ad73d2e73f16667748f4536c4c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ff521e2a7908745fc951979e03cf0c01",
+      "type": "MD5",
+      "name": "ff521e2a7908745fc951979e03cf0c01",
+      "normalized_name": "ff521e2a7908745fc951979e03cf0c01",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "value": "ff521e2a7908745fc951979e03cf0c01",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_CamCap.dll",
+      "type": "File",
+      "name": "CamCap.dll",
+      "normalized_name": "CamCap.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_19",
+        "ev_68"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "CamCap.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_85"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "YEAR",
+        "MONTH",
+        "PRINTERNAME",
+        "DRIVE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_explorer.exe",
+      "type": "File",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_49",
+        "ev_5",
+        "ev_6"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "explorer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ntsvc32.dll",
+      "type": "File",
+      "name": "ntsvc32.dll",
+      "normalized_name": "ntsvc32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_43",
+        "ev_45",
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "ntsvc32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_45",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ntsvcst32.dll",
+      "type": "File",
+      "name": "ntsvcst32.dll",
+      "normalized_name": "ntsvcst32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_42",
+        "ev_44",
+        "ev_51",
+        "ev_53"
+      ],
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "file_name": "ntsvcst32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_44",
+        "ev_51",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_2093101001.rou2093101001.txt",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "File",
+      "name": "2093101001.rou2093101001.txt",
+      "normalized_name": "2093101001.rou2093101001.txt",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "2093101001.rou2093101001.txt",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ldr32_x64.exe",
+      "tail_id": "ent_malware_Ldr32_x64",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ldr32_x86.exe",
+      "tail_id": "ent_malware_Ldr32_x86",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2",
+        "ev_41"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ntinst.exe",
+      "tail_id": "ent_malware_Ntinst",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "drops",
+      "head_id": "ent_malware_Ldr32_x64",
+      "tail_id": "ent_file_ldr32_x64.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_3",
+        "ev_40",
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_3"
+      },
+      "head": {
+        "id": "ent_malware_Ldr32_x64",
+        "type": "Malware",
+        "name": "Ldr32_x64",
+        "normalized_name": "Ldr32_x64",
+        "aliases": [
+          "ldr32_x64.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_3",
+          "ev_40",
+          "ev_48"
+        ],
+        "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_48",
+        "supporting_evidence_ids": [
+          "ev_40",
+          "ev_3"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "SHA256"
+        ],
+        "derived_from_file_id": "ent_file_ldr32_x64.exe",
+        "family": "Ldr32_x64",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_ldr32_x64.exe",
+        "type": "File",
+        "name": "ldr32_x64.exe",
+        "normalized_name": "ldr32_x64.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_3",
+          "ev_40",
+          "ev_48"
+        ],
+        "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+        "file_name": "ldr32_x64.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_48",
+        "supporting_evidence_ids": [
+          "ev_40",
+          "ev_3"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "SHA1",
+          "SHA256"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "drops",
+      "head_id": "ent_malware_Ldr32_x86",
+      "tail_id": "ent_file_ldr32_x86.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_2",
+        "ev_41"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_2"
+      },
+      "head": {
+        "id": "ent_malware_Ldr32_x86",
+        "type": "Malware",
+        "name": "Ldr32_x86",
+        "normalized_name": "Ldr32_x86",
+        "aliases": [
+          "ldr32_x86.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_2",
+          "ev_41",
+          "ev_46"
+        ],
+        "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_2",
+        "supporting_evidence_ids": [
+          "ev_41",
+          "ev_46"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "SHA256"
+        ],
+        "derived_from_file_id": "ent_file_ldr32_x86.exe",
+        "family": "Ldr32_x86",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_ldr32_x86.exe",
+        "type": "File",
+        "name": "ldr32_x86.exe",
+        "normalized_name": "ldr32_x86.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_2",
+          "ev_41",
+          "ev_46"
+        ],
+        "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+        "file_name": "ldr32_x86.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_2",
+        "supporting_evidence_ids": [
+          "ev_41",
+          "ev_46"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "SHA1",
+          "SHA256"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "drops",
+      "head_id": "ent_malware_Ntinst",
+      "tail_id": "ent_file_ntinst.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "llm_sentence",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Drops all components from its resource section"
+      },
+      "head": {
+        "id": "ent_malware_Ntinst",
+        "type": "Malware",
+        "name": "Ntinst",
+        "normalized_name": "Ntinst",
+        "aliases": [
+          "ntinst.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_1",
+          "ev_39"
+        ],
+        "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_39",
+        "supporting_evidence_ids": [
+          "ev_1"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "SHA256"
+        ],
+        "derived_from_file_id": "ent_file_ntinst.exe",
+        "family": "Ntinst",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_ntinst.exe",
+        "type": "File",
+        "name": "ntinst.exe",
+        "normalized_name": "ntinst.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_1",
+          "ev_39"
+        ],
+        "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+        "file_name": "ntinst.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_39",
+        "supporting_evidence_ids": [
+          "ev_1"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "SHA1",
+          "SHA256"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "executes",
+      "head_id": "ent_file_explorer.exe",
+      "tail_id": "ent_file_ntsvc32.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_6",
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_malware_Ldr32_x64",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "primary_evidence_id": "ev_103",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_explorer.exe",
+      "tail_id": "ent_file_ntsvc32.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_6",
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain, load_event; load_head",
+        "schema_version": "v5.0-event-frame",
+        "evidence_span": "Windows will automatically re-launch explorer.exe and load %System%\\ntsvc32\\ntsvc32.dll  The second parameter is a file name that needs to be deleted."
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_explorer.exe",
+      "tail_id": "ent_malware_Ldr32_x64",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_6",
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "Ldr32_x64 drops ldr32_x64.exe",
+      "evidence_ids": [
+        "ev_3",
+        "ev_40",
+        "ev_48"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0005",
+      "type": "drops",
+      "summary": "Ldr32_x86 drops ldr32_x86.exe",
+      "evidence_ids": [
+        "ev_2",
+        "ev_41"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0006",
+      "type": "drops",
+      "summary": "Ntinst drops ntinst.exe",
+      "evidence_ids": [
+        "ev_39"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "explorer.exe executes ntsvc32.dll",
+      "evidence_ids": [
+        "ev_6",
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "cmd.exe loads Ldr32_x64",
+      "evidence_ids": [
+        "ev_103"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "explorer.exe loads ntsvc32.dll",
+      "evidence_ids": [
+        "ev_6",
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "explorer.exe loads Ldr32_x64",
+      "evidence_ids": [
+        "ev_6",
+        "ev_49"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Backdoor.Cadelspy Dropper File name ntinst.exe MD5 8b9d1fc8e5864a46ba5992f7350d5d89 SHA1 72219ba63f2cb336bc7d2e59e9e527af612e207d SHA256 c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42 Size 636,416 bytes Purpose Drops all components from its resource section",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Installer 32-bit installer File name ldr32_x86.exe MD5 6542d5f614ba093a43cd6a3a846d37ff SHA1 65bb99e15e098166bff04f22805b15810f8fbf71 SHA256 bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120 Size 75,264 bytes Purpose Installs the 32-bit files from the dropper",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "64-bit installer File name ldr32_x64.exe MD5 269b5a5270b34bf86c60bc793486aab7 SHA1 14a694517ca05165ca09c81c984888923a35f0b0 SHA256 6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535 Size 91,648 bytes Purpose Installs the 64-bit files from the dropper",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": " The first parameter may be the string “true”, upon which the installer will terminate the explorer.exe process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "Windows will automatically re-launch explorer.exe and load %System%\\ntsvc32\\ntsvc32.dll  The second parameter is a file name that needs to be deleted.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "Back door File name ntsvc32.dll MD5 200e662384542ccd979d4994dd08163e SHA1 c5f1bb651f665cc30cf789ce554f2bfc9d91a19f SHA256 0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400 Size 415,232 bytes Purpose Main module containing the back door routine",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "The back door component appears to use an open-source HTTP client called Ryeol to communicate with the C&C servers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": " [C&C SERVER ADDRESS]/allusers/2093101001.rou2093101001.txt If the configuration update is unavailable, the default .rou configuration file is used.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "To do this, it calls the WebCamCapture export in \\ntsvc32\\CamCap.dll keylog Logs keystrokes and saves them in the main log file msc Captures window titles or text that the mouse clicked.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Backdoor.Remexi and Backdoor.Remexi.B Backdoor.Remexi is a basic back door that lets the attackers open a remote shell and execute commands.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s5"
+      },
+      "text": " HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\services\\SEA\\Parameters\\Arguments For Backdoor.Remexi.B, the service may be called “MAS”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Backdoor.Remexi.B hashes MD5 SHA256 Backdoor.Remexi C&C domains  37atypz123.dns-bind9.com  5ppob16.dockerjsbin.com  87abfg113.dockerjsbin.com  87pqxz159.dockerjsbin.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "File name ntinst.exe MD5 8b9d1fc8e5864a46ba5992f7350d5d89 SHA1 72219ba63f2cb336bc7d2e59e9e527af612e207d SHA256 c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42 Size 636,416 bytes Purpose Drops all components from its resource section",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "create %Temp% ldr32_x64.exe 64-bit installer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "create %Temp% ldr32_x86.exe 32-bit installer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "create %Temp%\\tmp001\\x64 ntsvcst32.dll 64-bit loader of the back door",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": "create %Temp%\\tmp001\\x64 ntsvc32.dll 64-bit back door",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": "create %Temp%\\tmp001\\x86 ntsvcst32.dll 32-bit loader of the back door",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r7"
+      },
+      "text": "create %Temp%\\tmp001\\x86 ntsvc32.dll 32-bit back door",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r8"
+      },
+      "text": "ldr32_x86.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r9"
+      },
+      "text": "MD5 6542d5f614ba093a43cd6a3a846d37ff SHA1 65bb99e15e098166bff04f22805b15810f8fbf71 SHA256 bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120 Size 75,264 bytes Purpose Installs the 32-bit files from the dropper",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "64-bit installer File name ldr32_x64.exe MD5 269b5a5270b34bf86c60bc793486aab7 SHA1 14a694517ca05165ca09c81c984888923a35f0b0 SHA256 6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535 Size 91,648 bytes Purpose Installs the 64-bit files from the dropper",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": " The first parameter may be the string “true”, upon which the installer will terminate the explorer.exe process. Windows will automatically re-launch explorer.exe and load %System%\\ntsvc32\\ntsvc32.dll  The second parameter is a file name that needs to be deleted. This may remove the dropper component from the computer after the threat is successfully installed.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "move %Temp%\\tmp001\\x86 ntsvc32.dll %System%\\ntsvc32",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "move %Temp%\\tmp001\\x86 ntsvcst32.dll %System%\\ntsvc32",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "move %Temp%\\tmp001\\x64 ntsvcst32.dll %System%\\ntsvc32",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "File name ntsvc32.dll MD5 200e662384542ccd979d4994dd08163e SHA1 c5f1bb651f665cc30cf789ce554f2bfc9d91a19f SHA256 0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400 Size 415,232 bytes Purpose Main module containing the back door routine",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "8b9d1fc8e5864a46ba5992f7350d5d89 c3a14dab06866ce635b45196022a35fe99e1d7ceccf8b378cc807249771e6e42",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "269b5a5270b34bf86c60bc793486aab7 6e8f5c8addab6d875a06bc92e109c0298aede342810eb25e16d292b4fffce535",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "6542d5f614ba093a43cd6a3a846d37ff bf24d7f4e40aaa102d8e5b048de82c6ca9ffcc6c07f207ea79d1a4af5ffc9120",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "be303010e6ac78c7975c93aa459f2319 36f5744f72674524f56bf286dce7e4b1c93ac2859036513cfdb479daf1c014f1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "34b4d84d5e771d2d018d925c6ac40293 82ed6493c494e88e49799c75f6b22c101c1ca3d97ac001b5487610f81d21d961",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r7"
+      },
+      "text": "8d26621cc8e969266985f7000536f557 3db1b57303326b9fea0fbf919ae6113d013e695b2844d645bfe69d3b4bc0ec57",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "200e662384542ccd979d4994dd08163e 0f7f0283baddacac623b0adcadf4ce146f6e61cc514abb31982299d25cd86400",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "7beeb3bd4681c17fe93fffcefcd125aa d6e769121d327a3f00c615459ac04bc4e2149aa17ea29479b86156298834eb62",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r10"
+      },
+      "text": "6d70e287bf472663c1fbb4682d13d74a fead15c401f0aba8e770b7a85df96852dd1b72ca367c2aef3a0913bca10da0d5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r11"
+      },
+      "text": "ff521e2a7908745fc951979e03cf0c01 ac187ad5ce438cfbcd58743b2641978c2d9d000d7c30130d2df42c767be08996",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r12"
+      },
+      "text": "f35ad22d762d59672e1977a4d96658af e2f430fb6f3588cd9cf63a74760e37738c91e7589df41f0bbac9a4e23b745d7e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r13"
+      },
+      "text": "wbm Captures a webcam image and saves it as wbm.fjr. To do this, it calls the WebCamCapture export in \\ntsvc32\\CamCap.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "06291777cc2840a89ce1f8f82db97453 0595979c000ef1aa3a237b0822c0556a64a75edaec8560e37e9214fd57569461",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "2d8ba12d741fee7edae6454b06f6bc9c 2f0b3cf460b3909f259550a3a09e679d63391847ae45bd44306ddbfc1f53d5ec",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "15db41840f77723aa7e43460d9d3a5cc 688dbf4cfc00957d2679dc319de0bb80f38e7b5ac4414c1543e135e37c561b8b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "05a88017b65754dc66f83c1d37778cc7 247511a37c6e01e1b4acf360003e9e72208c86df614fc711b2b152a4c3fc524f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "0069360b20a03728665bd92c4bccf380 c5460b3e2b4dfe9af1c209ecd143c7f847a9092abea86275a071324110f74555",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "d5601ec9a7d2853b68e639cf9d55b987 8455598c9bbb0a93aa35b083ee8bb83bb01fe27cf02ee7c44052a813cb66767c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "5c0d7e787c39d64ef8546c5d2bcdab6d 26f0d3d4eb4d445f4231157198eae01846797ce5ffc624872b0daf90736994e8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "0b88451740471839755d5e46255c4bb5 54abd9863f185e7ebd47a3f39f99335532bd55849228a7ed29ffdab8090dc4f6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r9"
+      },
+      "text": "4387a0855c11ac9b8e8f7593eca32e6e 27f2350d51cb41a4e5330b7cffd87ca89d263278e2a3fb8cbf0d324a4a267223",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r10"
+      },
+      "text": "9aba0581781b7f5f9e57f07716a41f26 6a88964db3e97e8176dd1df4ca69e2bfd92366a5b051d3313fa48aefa4ad288f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r11"
+      },
+      "text": "e40e83cdf0688e48df2cdb70962a6be2 ebc9d6bcd5f8e738d2ed82b1c232df06b9caf0b33ea8b4b45d7f0bfd8252a97d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r12"
+      },
+      "text": "dc8fe2004c7cd048bc93c5803c001e3f 2317f2448a689aa3d4802e838ae3dfd772246e6f1eb9e262df4012a221a63825",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r13"
+      },
+      "text": "38f9efa16a3b360c8ad1c872413f8dd9 f8fe5edcdf087368a4aa9e39d583fc80a625209f3297a4db9697d4ade6c8b9ce",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r14"
+      },
+      "text": "5c587530e0d3daca90ca26436e091d08 90bea454ed11dbdfe0d21e097299db4354999b693489cbccc652c11cc1adce22",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r15"
+      },
+      "text": "8a58cb79c33b196036f8d5b960316319 6079c6ff09440faa673be55f0f7f8a613d8654e7d2cb49990db316b0add53063",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "$s15 = \"</YEAR>\" wide ascii $s16 = \"</MONTH>\" wide ascii $s17 = \"<PRINTERNAME>\" wide ascii $s18 = \"</DRIVE>\" wide ascii $s19 = \"<DATATYPE>\" wide ascii $s20 = \"<MACADDRESS>\" wide ascii $s21 = \"FlashMemory\" wide ascii condition: 12 of them } rule Cadelle_3 { strings: $s1 = \"SOFTWARE\\\\ntsvc32\\\\HDD\" wide ascii $s2 = \"SOFTWARE\\\\ntsvc32\\\\ROU\" wide ascii $s3 = \"SOFTWARE\\\\ntsvc32\\\\HST\" wide ascii $s4 = \"SOFTWARE\\\\ntsvc32\\\\FLS\" wide ascii $s5 = \"ntsvc32\" wide ascii $s6 = \".Win$py.\" wide ascii $s7 = \"C:\\\\users\\\\\" wide ascii $s8 = \"%system32%\" wide ascii $s9 = \"\\\\Local Settings\\\\Temp\" wide ascii $s10 = \"SVWATAUAVAW\" wide ascii $s11 = \"\\\\AppData\\\\Local\" wide ascii $s12 = \"\\\\AppData\" wide ascii condition: 6 of them } rule Cadelle_4 { strings: $s1 = \"AppInit_DLLs\" wide ascii $s2 = { 5C 00 62 00 61 00 63 00 6B 00 75 00 70 00 00 } $s3 = { 5C 00 75 00 70 00 64 00 61 00 74 00 65 00 00 } $s4 = \"\\\\cmd.exe\" wide ascii condition: all of them }",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "19cd900c135a5e9d486735ae3d2c3e97 6c0d1268177ebc1ad7b8f34f04b3d38c74cf4b43e18259677759c0ef91615e24",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "253e32699d5b9c4cdf8a589ef6309af5 17a73d715333d4af746bf6d180fd129b6334a34599bf299bef48d7e27de95a68",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "a437c10da3aaa8fe3241c8629c18d21a 6b8a220272382f5481e1900c1c603f67ec9d5fb45ad78bf7788dece1f20dddcd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "b457ebbfbaf3d8adcce8bf8b2a7adcea a8921363b0f3cca72c5487f67230b564598b2c20dcd7ea04807b7b18b78af53a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "fd2e29ad73d2e73f16667748f4536c4c da84353f914c297878e5d5eb55a6905b655410df67b881092008b24faa90bb79",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "c6acff232a12259d75196a5ba6a233c7 9be5fa0e44b2fe964f292db44236ecf2d790465a9d42fe550dff20faca5a2d52",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "26afc6ef4315460e7e9e1cd8a3d20700 18CE17849CD25452D98B24987556322DA72E1031D1C8D8680EE9FEC3DFB7CB46",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "adad23e3ca8057b562fad57a4b1c6137 1E5022576367F6A614AFE0F8963AEDD1F0C7B06502E326C43362A59DDEFD118E",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r5"
+      },
+      "text": "135b226e06a309dad5c4af1e36528f93 de529597194ed2088eb7fc246bcb698dac739c2ac3de8d7b9a5fd0e969f124fa",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r6"
+      },
+      "text": "1fe84feb00e779bcdbece24ddddb38f7 D94B920A5645218D8368C1277E5D2081916E66D815C9C3E150B07ADE02DE970F",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r7"
+      },
+      "text": "2374b9655f6330b07bc3d63df399731e 9f0ac7fa30e86b4015de6f77fe219cced164f317799fdc3faaf35af730a48700",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r8"
+      },
+      "text": "27524accc1559da37deecb583419eb6e 22261e840bfaa43b982ce08a1eb18fd53400dca2a2dc6edebd1398229e5a32ee",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r9"
+      },
+      "text": "2c3ebabc800fd2256dae4a9c363e0f49 f4db775254f4139ec677efa1a633e310189d7ad425a7f5a84fdb6ee4a3c1aa21",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r10"
+      },
+      "text": "894fd325751465d6f48c17106a1a91d1 98a9b2329eefe618daa78b6afed82cebf40cb918ad0aae7a8d7f59af4cb13b41",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r11"
+      },
+      "text": "ac2b52010d43632b2f66573d2550984c f7e44314521c04626d586e07cbab655ee59a5a0805cccef8311f669c175f5d86",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r12"
+      },
+      "text": "rule Remexi { strings: $c1 = { 00 3C 65 78 69 74 3E 00 } /* <exit> */ $c2 = { 00 3C 69 64 3E 00 } /* <id> */ $c3 = { 00 3C 72 65 6D 3E 00 } /* <rem> */ $c4 = { 00 3C 63 6C 6F 73 65 3E 00} /* <close> */ $c5 = { 00 57 49 4E 00 } /* WIN */ $c6 = { 00 63 6D 64 2E 65 78 65 00 } /* cmd.exe */ $c7 = { 00 49 44 00 } /* ID */ $c8 = { 00 72 65 6D 00 } /* rem */ $d1 = \"\\\\SEA.pdb\" $d2 = \"\\\\mas.pdb\" $s1 = \"Connecting to the server...\" $s2 = \"cmd.exe /c sc stop sea & sc start sea\" $s3 = \"SYSTEM\\\\CurrentControlSet\\\\services\\\\SEA\\\\Parameters\" $s4 = \"RecvWrit()-Read_Sock-Failed\" $s5 = \"ReadPipeSendSock()\" condition: (4 of ($c*) and (2 of ($s*) or any of ($d*))) or (5 of ($c*) and any of ($s*)) }",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb104"
+      },
+      "text": "www.symantec.com or connect with Symantec at:",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb105"
+      },
+      "text": "http://www.symantec.com/social/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb106"
+      },
+      "text": "www.symantec.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_CadelSpy-Remexi-IOC(12-07-2015)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb107"
+      },
+      "text": ", it recorded revenues of $6.7 billion. To learn more go to www.symantec.com or connect with Symantec at: http://www.symantec.com/social/ For specific country offices and contact n",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_14",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ryeol"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Ntinst",
+        "ent_file_ntinst.exe",
+        "ent_malware_ntinst.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Ntinst",
+        "ent_file_ntinst.exe",
+        "ent_malware_ntinst.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_explorer.exe",
+        "ent_file_ntsvc32.dll"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_explorer.exe",
+        "ent_file_ntsvc32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_107",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_domain_www.symantec.com",
+        "ent_url_http_www.symantec.com_social_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_5ppob16.dockerjsbin.com",
+        "ent_domain_37atypz123.dns-bind9.com",
+        "ent_domain_87abfg113.dockerjsbin.com",
+        "ent_domain_87pqxz159.dockerjsbin.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Ldr32_x86",
+        "ent_file_ldr32_x86.exe",
+        "ent_malware_ldr32_x86.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Ldr32_x64",
+        "ent_file_ldr32_x64.exe",
+        "ent_malware_ldr32_x64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_40",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Ldr32_x64",
+        "ent_file_ldr32_x64.exe",
+        "ent_malware_ldr32_x64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Ldr32_x86",
+        "ent_file_ldr32_x86.exe",
+        "ent_malware_ldr32_x86.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Ldr32_x86",
+        "ent_file_ldr32_x86.exe",
+        "ent_malware_ldr32_x86.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Ldr32_x64",
+        "ent_file_ldr32_x64.exe",
+        "ent_malware_ldr32_x64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 8,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

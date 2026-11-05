@@ -1,0 +1,2028 @@
+{
+  "report_id": "Novetta_winntianalysis(04-07-2015)",
+  "title": "WINNTI ANALYSIS",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Novetta_winntianalysis(04-07-2015).pdf",
+    "file_path": "/root/APTtext/Novetta_winntianalysis(04-07-2015).pdf",
+    "source_type": "pdf",
+    "char_length": 39119,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Explorer",
+      "type": "Malware",
+      "name": "Explorer",
+      "normalized_name": "Explorer",
+      "aliases": [
+        "explorer.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_34",
+        "ev_96",
+        "ev_97"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [
+        "ev_97",
+        "ev_33",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_explorer.exe",
+      "family": "Explorer",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Hikit",
+      "type": "Malware",
+      "name": "Hikit",
+      "normalized_name": "Hikit",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_4",
+        "ev_5"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Hikit",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Winnti",
+      "type": "Malware",
+      "name": "Winnti",
+      "normalized_name": "Winnti",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_31",
+        "ev_45",
+        "ev_80",
+        "ev_93"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "family": "Winnti",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_93",
+        "ev_31",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_SMN",
+      "type": "Campaign",
+      "name": "Operation SMN",
+      "normalized_name": "Operation SMN",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_explorer.exe",
+      "type": "Malware",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_33",
+        "ev_34",
+        "ev_96"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Explorer"
+    },
+    {
+      "id": "ent_malware_explorer.exe",
+      "type": "Malware",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_34",
+        "ev_96",
+        "ev_97"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "explorer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [
+        "ev_97",
+        "ev_33",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_campaign_As_part_of_Operation",
+      "type": "Campaign",
+      "name": "As part of Operation",
+      "normalized_name": "As part of Operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_ftp.openssl.org",
+      "type": "Domain",
+      "name": "ftp.openssl.org",
+      "normalized_name": "ftp.openssl.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_127",
+        "ev_128"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "ftp.openssl.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [
+        "ev_128"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_kasperskycontenthub.com",
+      "type": "Domain",
+      "name": "kasperskycontenthub.com",
+      "normalized_name": "kasperskycontenthub.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129",
+        "ev_130"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "kasperskycontenthub.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_130"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_sourceforge.net",
+      "type": "Domain",
+      "name": "sourceforge.net",
+      "normalized_name": "sourceforge.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_128"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "sourceforge.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_128",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.nedprod.com",
+      "type": "Domain",
+      "name": "www.nedprod.com",
+      "normalized_name": "www.nedprod.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_131",
+        "ev_132"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "www.nedprod.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_131",
+      "supporting_evidence_ids": [
+        "ev_132"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.winsim.com",
+      "type": "Domain",
+      "name": "www.winsim.com",
+      "normalized_name": "www.winsim.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133",
+        "ev_134",
+        "ev_135"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "www.winsim.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_133",
+        "ev_135"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_zlib.net",
+      "type": "Domain",
+      "name": "zlib.net",
+      "normalized_name": "zlib.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136",
+        "ev_137"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "zlib.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [
+        "ev_137"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_download.pureftpd.",
+      "type": "URL",
+      "name": "http://download.pureftpd.",
+      "normalized_name": "http://download.pureftpd.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138",
+        "ev_139"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "http://download.pureftpd.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_139"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_kasperskycontenthub.com_wp-",
+      "type": "URL",
+      "name": "http://kasperskycontenthub.com/wp-",
+      "normalized_name": "http://kasperskycontenthub.com/wp-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129",
+        "ev_130"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "http://kasperskycontenthub.com/wp-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_130"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_sourceforge.net_projects_sevenzip_files_LZMA_20SDK_lzma922.tar.bz2_download.",
+      "type": "URL",
+      "name": "http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma922.tar.bz2/download.",
+      "normalized_name": "http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma922.tar.bz2/download.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_140",
+        "ev_141"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma922.tar.bz2/download.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_140",
+      "supporting_evidence_ids": [
+        "ev_141"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.nedprod.com_programs_portable_nedmalloc_.",
+      "type": "URL",
+      "name": "http://www.nedprod.com/programs/portable/nedmalloc/.",
+      "normalized_name": "http://www.nedprod.com/programs/portable/nedmalloc/.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_131",
+        "ev_132"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "http://www.nedprod.com/programs/portable/nedmalloc/.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_131",
+      "supporting_evidence_ids": [
+        "ev_132"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_zlib.net_.",
+      "type": "URL",
+      "name": "http://zlib.net/.",
+      "normalized_name": "http://zlib.net/.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136",
+        "ev_137"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "http://zlib.net/.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [
+        "ev_137"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.winsim.com_diskid32_diskid32.html.",
+      "type": "URL",
+      "name": "https://www.winsim.com/diskid32/diskid32.html.",
+      "normalized_name": "https://www.winsim.com/diskid32/diskid32.html.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133",
+        "ev_135",
+        "ev_137"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "https://www.winsim.com/diskid32/diskid32.html.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_137",
+        "ev_135"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.winsim.com_index.html.",
+      "type": "URL",
+      "name": "https://www.winsim.com/index.html.",
+      "normalized_name": "https://www.winsim.com/index.html.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_134"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "value": "https://www.winsim.com/index.html.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_file_cryptbase.dll",
+      "type": "File",
+      "name": "cryptbase.dll",
+      "normalized_name": "cryptbase.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_114",
+        "ev_61"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "cryptbase.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "SYSDIR"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_otfkty.dat",
+      "type": "File",
+      "name": "otfkty.dat",
+      "normalized_name": "otfkty.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_115",
+        "ev_59",
+        "ev_63"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "otfkty.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [
+        "ev_115",
+        "ev_63",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "SYSDIR",
+        "UPDATE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_otfkyt.dat",
+      "type": "File",
+      "name": "otfkyt.dat",
+      "normalized_name": "otfkyt.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "otfkyt.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "SYSDIR",
+        "UPDATE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.dll",
+      "type": "File",
+      "name": "rundll32.dll",
+      "normalized_name": "rundll32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_106",
+        "ev_30",
+        "ev_46",
+        "ev_95"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "rundll32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [
+        "ev_106",
+        "ev_30",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_105",
+        "ev_106",
+        "ev_30",
+        "ev_95"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_106",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wmm2.dat",
+      "type": "File",
+      "name": "wmm2.dat",
+      "normalized_name": "wmm2.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103",
+        "ev_107",
+        "ev_98"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "wmm2.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [
+        "ev_98",
+        "ev_102",
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "TEMP",
+        "SYSDIR"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wmtsk.dll",
+      "type": "File",
+      "name": "wmtsk.dll",
+      "normalized_name": "wmtsk.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_101",
+        "ev_103",
+        "ev_121",
+        "ev_98"
+      ],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "file_name": "wmtsk.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_98",
+        "ev_101",
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "TEMP",
+        "SYSDIR"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_malware_ANALYSIS",
+      "type": "Malware",
+      "name": "ANALYSIS",
+      "normalized_name": "ANALYSIS",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "family": "ANALYSIS",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "refiner_demoted"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "alias_of",
+      "head_id": "ent_malware_explorer.exe",
+      "tail_id": "ent_malware_Explorer",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_34"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "executes",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_file_rundll32.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_30",
+        "ev_46",
+        "ev_95",
+        "ev_106"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "executes",
+      "head_id": "ent_malware_Winnti",
+      "tail_id": "ent_file_otfkty.dat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_120"
+      ],
+      "primary_evidence_id": "ev_120",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_otfkty.dat",
+      "tail_id": "ent_malware_Winnti",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_67",
+        "ev_118"
+      ],
+      "primary_evidence_id": "ev_67",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_file_rundll32.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_30",
+        "ev_46",
+        "ev_95",
+        "ev_106"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain, load_event; load_head",
+        "schema_version": "v5.0-event-frame",
+        "evidence_span": "\u0007The service component determines if the host binary responsible for the service component is either svchost.exe (if run as a service) or rundll32.dll (if loaded pseudo manually or from the dropper)."
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_Explorer",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "primary_evidence_id": "ev_95",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_Winnti",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_30",
+        "ev_43",
+        "ev_46",
+        "ev_106"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "type": "loads",
+      "head_id": "ent_file_wmtsk.dll",
+      "tail_id": "ent_malware_Winnti",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_60",
+        "ev_113"
+      ],
+      "primary_evidence_id": "ev_60",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "svchost.exe executes rundll32.dll",
+      "evidence_ids": [
+        "ev_30",
+        "ev_46",
+        "ev_95"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "Winnti executes otfkty.dat",
+      "evidence_ids": [
+        "ev_120"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "otfkty.dat loads Winnti",
+      "evidence_ids": [
+        "ev_67",
+        "ev_118"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "svchost.exe loads rundll32.dll",
+      "evidence_ids": [
+        "ev_30",
+        "ev_46",
+        "ev_95"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "svchost.exe loads Explorer",
+      "evidence_ids": [
+        "ev_95"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "svchost.exe loads Winnti",
+      "evidence_ids": [
+        "ev_30",
+        "ev_43",
+        "ev_46"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "wmtsk.dll loads Winnti",
+      "evidence_ids": [
+        "ev_60",
+        "ev_113"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "As part of Operation SMN, Novetta analyzed recent versions of the Winnti malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "It should be noted that operators of Winnti that were observed by Novetta leveraged existing Axiom-specific malware infections (Hikit) to move laterally and install Winnti in the furtherance of their objectives.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "It is with high confidence that we assess the operators of Winnti in these monitored environments were not the same actors who originally installed and leveraged Hikit.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "\u0007The service component determines if the host binary responsible for the service component is either svchost.exe (if run as a service) or rundll32.dll (if loaded pseudo manually or from the dropper).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "The installation functionality for the version 3.0 Winnti malware variants exists within the Install export.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "\u0007The Install function checks if the process responsible for calling the Install function is explorer.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "If these conditions are met, the dropper is called again from explorer.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s6"
+      },
+      "text": "The service that the engine component installs runs under the svchost.exe executable as a netsvc .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s8"
+      },
+      "text": "In either case, the DllMain function is called prior to the ServiceMainEx function of the service component being called by Windows, thus kicking off the activation of the Winnti version 3.0 malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s9"
+      },
+      "text": "\u0007The service component determines if the host binary responsible for the service component is either svchost.exe (if run as a service) or rundll32.dll (if loaded pseudo-manually or from the dropper).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s8"
+      },
+      "text": "\u0007The %SYSDIR%\\otfkty.dat file is read as an INI file, the filename specified by the File variable under the UPDATE section is read, and the otfkty.dat file is deleted from disk if the file specified by the File variable exists and is not a directory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s9"
+      },
+      "text": "\u0007The configuration of %SYSDIR%\\wmtsk.dll is loaded into memory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s10"
+      },
+      "text": "\u0007If %SYSDIR%\\sysprep\\cryptbase.dll exists, the file is deleted.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s12"
+      },
+      "text": "\u0007The file specified by otfkty.dat ’s File variable is copied to the filename of the worker component’s file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "The presence of the otfkty.dat file informs the engine’s activation thread that a new worker component is available and should be loaded.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s7"
+      },
+      "text": "Optionally, as part of the integration of the plugin into the Winnti malware, the attacker can request that a copy of the plugin be stored within the %PROGRAMFILE%\\Microsoft Shared\\MSInfo\\ en-US\\ directory, which will allow the worker component to load the plugin automatically whenever the Winnti malware restarts; however, storing a plugin is not mandatory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s5"
+      },
+      "text": "Novetta established the following YARA signatures for detecting the various components of version 3.0 of the Winnti malware; administrators are advised to use these signatures to help detect and remediate active version 3.0 Winnti infections.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "is either svchost.exe (if run as a service) or rundll32.dll (if loaded pseudo manually or from the dropper).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "is explorer.exe. If so, the function uses a variant of the sysprep User Account Control (UAC) bypass. 2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "process has administrative privileges. If these conditions are met, the dropper is called again from explorer.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "4. \u0007The files %SYSDIR%\\wmtsk.dll and %SYSDIR%\\wmm2.dat are checked to ensure that they do not",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "exist and that they are not directories. If either condition is not met, an INI file named %SYSDIR%\\ otfkyt.dat is generated with the UPDATE section containing File ={path to service component DLL} and the process terminates.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "6. \u0007The service component is copied from the %TEMP% directory to %SYSDIR%\\wmtsk.dll , and the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "worker component is copied from the %TEMP% directory to %SYSDIR%\\wmm2.dat .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "7. \u0007The timestamps of both wmtsk.dll and wmm2.dat are set to match that of cmd.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "The service that the engine component installs runs under the svchost.exe executable as a netsvc . The engine will directly modify the registry after using the CreateServiceA function to establish the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "is either svchost.exe (if run as a service) or rundll32.dll (if loaded pseudo-manually or from the dropper).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "3. \u0007The path to the worker component (e.g., %SYSDIR%\\wmm2.dat ) is extracted from the service",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "12. \u0007The %SYSDIR%\\otfkty.dat file is read as an INI file, the filename specified by the File variable",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "14. \u0007The configuration of %SYSDIR%\\wmtsk.dll is loaded into memory.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r7"
+      },
+      "text": "15. \u0007If %SYSDIR%\\sysprep\\cryptbase.dll exists, the file is deleted.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r8"
+      },
+      "text": "17. \u0007The file specified by otfkty.dat ’s File variable is copied to the filename of the worker",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "component updating without a need to restart the service. The infinite loop listens for the indicator that the engine’s Install function is performing an installation (with an existing Winnti installation, this effectively becomes an update). As part of the installation process by the engine component’s Install function, the presence of an existing service and worker component’s files is verified (Installation Phase 3, step 4), resulting in the generation of the %SYSDIR%\\otfkty.dat file. The presence of the otfkty.dat file informs the engine’s activation thread that a new worker component is available and should be loaded. As a result, the engine cleanly shuts down the existing worker component by calling its work_end function, deletes the old worker, and replaces the worker component’s file before loading and executing the new worker component. The beauty of this approach is that not only does it allow hot patching of the malware but it does so without restarting the service, which could indicate an erroneous system event to an astute systems administrator.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "• %SYSDIR%\\otfkty.dat",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r2"
+      },
+      "text": "• %SYSDIR%\\wmtsk.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb127"
+      },
+      "text": "3 ftp://ftp.openssl.org/source/old/0.9.x/openssl-0.9.8x.tar.gz. 10 May 2012.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb128"
+      },
+      "text": "12 WINNTI ANALYSIS 3 ftp://ftp.openssl.org/source/old/0.9.x/openssl-0.9.8x.tar.gz. 10 May 2012. 4 \u0007http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma9",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb129"
+      },
+      "text": "1 \u0007Kaspersky. “Winnti: More than just a game”. http://kasperskycontenthub.com/wp- content/uploads/sites/43/vlpdfs/winnti-more-than-just-a-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb130"
+      },
+      "text": "ders. 1 \u0007Kaspersky. “Winnti: More than just a game”. http://kasperskycontenthub.com/wp- content/uploads/sites/43/vlpdfs/winnti-more-than-just-a- game-130410.pdf. 10 April 2014.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb131"
+      },
+      "text": "“nedalloc Homepage”. http://www.nedprod.com/programs/portable/nedmalloc/. 5 December 2014.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb132"
+      },
+      "text": "18 April 2010. 5 Niall Douglas. “nedalloc Homepage”. http://www.nedprod.com/programs/portable/nedmalloc/. 5 December 2014. 6 Jean-loup Gailly and Mark Adler. “zlib”. http://zlib.ne",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb133"
+      },
+      "text": "7 WinSim, Inc. “DISKID32 (FREEWARE)”. https://www.winsim.com/diskid32/diskid32.html. Accessed 1 December 2014.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_134",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb134"
+      },
+      "text": "8 WinSim, Inc. “About WinSim”. https://www.winsim.com/index.html. Accessed 1 December 2014.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb135"
+      },
+      "text": "6 March 2014. 7 WinSim, Inc. “DISKID32 (FREEWARE)”. https://www.winsim.com/diskid32/diskid32.html. Accessed 1 December 2014. 8 WinSim, Inc. “About WinSim”. https://www.winsim.com/i",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb136"
+      },
+      "text": "6 Jean-loup Gailly and Mark Adler. “zlib”. http://zlib.net/. 26 March 2014.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb137"
+      },
+      "text": "ber 2014. 6 Jean-loup Gailly and Mark Adler. “zlib”. http://zlib.net/. 26 March 2014. 7 WinSim, Inc. “DISKID32 (FREEWARE)”. https://www.winsim.com/diskid32/diskid32.html. Accessed",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb138"
+      },
+      "text": "s 8 DP, CP all 32-bit for admin with default UAC settings”. http://download.pureftpd.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb139"
+      },
+      "text": "s 8 DP, CP all 32-bit for admin with default UAC settings”. http://download.pureftpd. org/pub/misc/UAC.cpp. Accessed 1 December 2014 The engine component exists as a data blob with",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb140"
+      },
+      "text": "4 \u0007http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma922.tar.bz/download. 18 April 2010. 5 Niall Douglas.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "Novetta_winntianalysis(04-07-2015)",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb141"
+      },
+      "text": "org/source/old/0.9.x/openssl-0.9.8x.tar.gz. 10 May 2012. 4 \u0007http://sourceforge.net/projects/sevenzip/files/LZMA%20SDK/lzma922.tar.bz/download. 18 April 2010. 5 Niall Douglas. “ned",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Hikit",
+        "ent_malware_Winnti"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Hikit",
+        "ent_malware_Winnti"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_rundll32.dll",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_rundll32.dll",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_95",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_rundll32.dll",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_106",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_rundll32.dll",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Winnti",
+        "ent_campaign_Operation_SMN"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_129",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Winnti",
+        "ent_url_http_kasperskycontenthub.com_wp-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_130",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Winnti",
+        "ent_url_http_kasperskycontenthub.com_wp-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_98",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_wmm2.dat",
+        "ent_file_wmtsk.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_103",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_wmm2.dat",
+        "ent_file_wmtsk.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_137",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_url_http_zlib.net_.",
+        "ent_url_https_www.winsim.com_diskid32_diskid32.html."
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Winnti"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_97",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "report_id": "Modified_Binaries_Tor",
+  "title": "After creating and using a new exitmap module, I found downloaded binaries being patched through a Tor exit node in Russia. Tor is a wonderful tool for protecting the identity of journalists, their sources, and even regular users around the world; however, anonymity does not guarantee security.",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Modified_Binaries_Tor.pdf",
+    "file_path": "/root/APTtext/Modified_Binaries_Tor.pdf",
+    "source_type": "pdf",
+    "char_length": 5657,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [],
+  "observations": [
+    {
+      "id": "ent_malware_Spoiled",
+      "type": "Malware",
+      "name": "Spoiled",
+      "normalized_name": "Spoiled",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "Modified_Binaries_Tor",
+      "family": "Spoiled",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_check.torproject.org",
+      "type": "Domain",
+      "name": "check.torproject.org",
+      "normalized_name": "check.torproject.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22"
+      ],
+      "report_id": "Modified_Binaries_Tor",
+      "value": "check.torproject.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_check.torproject.org_exit-addresses",
+      "type": "URL",
+      "name": "https://check.torproject.org/exit-addresses",
+      "normalized_name": "https://check.torproject.org/exit-addresses",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22"
+      ],
+      "report_id": "Modified_Binaries_Tor",
+      "value": "https://check.torproject.org/exit-addresses",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_8361A794DFA231D863E109FC9EEEF21F4CF09DDD",
+      "type": "SHA1",
+      "name": "8361A794DFA231D863E109FC9EEEF21F4CF09DDD",
+      "normalized_name": "8361A794DFA231D863E109FC9EEEF21F4CF09DDD",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Modified_Binaries_Tor",
+      "value": "8361A794DFA231D863E109FC9EEEF21F4CF09DDD",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Modified_Binaries_Tor",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Exitmap is the result of a research project called Spoiled Onions that was completed by both the PriSec group at Karlstad University and SBA",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Modified_Binaries_Tor",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "ExitNode 8361A794DFA231D863E109FC9EEEF21F4CF09DDD",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Modified_Binaries_Tor",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb21"
+      },
+      "text": "Details from https://check.torproject.org/exit-addresses",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Modified_Binaries_Tor",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb22"
+      },
+      "text": "malicious exit node. Details from https://check.torproject.org/exit-addresses ExitNode 8361A794DFA231D863E109FC9EEEF21F4CF09DDD Published 2014-10-22 01:06:40 LastStatus 2014-10-22",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_10",
+      "page": 6,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

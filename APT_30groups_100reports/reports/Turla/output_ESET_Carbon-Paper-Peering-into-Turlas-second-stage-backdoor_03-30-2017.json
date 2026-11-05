@@ -1,0 +1,4678 @@
+{
+  "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+  "title": "Carbon Paper: Peering into Turla’s second stage backdoor",
+  "source": "ESET",
+  "published_date": "March 30, 2017",
+  "report_metadata": {
+    "file_name": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017).pdf",
+    "file_path": "/root/APTtext/ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 38656,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Carbon",
+      "type": "Malware",
+      "name": "Carbon",
+      "normalized_name": "Carbon",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_16",
+        "ev_20",
+        "ev_62"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "family": "Carbon",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_16",
+        "ev_20",
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_KmSvc",
+      "type": "Malware",
+      "name": "KmSvc",
+      "normalized_name": "KmSvc",
+      "aliases": [
+        "KmSvc.DLL"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "derived_from_file_id": "ent_file_KmSvc.DLL",
+      "family": "KmSvc",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_SERVICE",
+      "type": "Malware",
+      "name": "SERVICE",
+      "normalized_name": "SERVICE",
+      "aliases": [
+        "SERVICE.DLL"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "derived_from_file_id": "ent_file_SERVICE.DLL",
+      "family": "SERVICE",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Turla",
+      "type": "Malware",
+      "name": "Turla",
+      "normalized_name": "Turla",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_10",
+        "ev_14",
+        "ev_6"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_14",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Turla",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Turla_group",
+      "type": "Malware",
+      "name": "Turla group",
+      "normalized_name": "Turla group",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_14",
+        "ev_2",
+        "ev_6"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_14",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Turla group",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Carbon_Paper",
+      "type": "Campaign",
+      "name": "Carbon Paper",
+      "normalized_name": "Carbon Paper",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_doctorshand.org",
+      "type": "Domain",
+      "name": "doctorshand.org",
+      "normalized_name": "doctorshand.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_226",
+        "ev_227",
+        "ev_228",
+        "ev_229"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "doctorshand.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_227",
+      "supporting_evidence_ids": [
+        "ev_226",
+        "ev_228",
+        "ev_229"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_KmSvc.DLL",
+      "type": "File",
+      "name": "KmSvc.DLL",
+      "normalized_name": "KmSvc.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "KmSvc.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_KmSvc.DLL",
+      "type": "Malware",
+      "name": "KmSvc.DLL",
+      "normalized_name": "KmSvc.DLL",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_KmSvc"
+    },
+    {
+      "id": "ent_file_SERVICE.DLL",
+      "type": "File",
+      "name": "SERVICE.DLL",
+      "normalized_name": "SERVICE.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "SERVICE.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_SERVICE.DLL",
+      "type": "Malware",
+      "name": "SERVICE.DLL",
+      "normalized_name": "SERVICE.DLL",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_SERVICE"
+    },
+    {
+      "id": "ent_malware_Skipper",
+      "type": "Malware",
+      "name": "Skipper",
+      "normalized_name": "Skipper",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "family": "Skipper",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_Snake",
+      "type": "Malware",
+      "name": "Snake",
+      "normalized_name": "Snake",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "family": "Snake",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_Tavdig",
+      "type": "Malware",
+      "name": "Tavdig",
+      "normalized_name": "Tavdig",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "family": "Tavdig",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_Uroburos",
+      "type": "Malware",
+      "name": "Uroburos",
+      "normalized_name": "Uroburos",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_13",
+        "ev_15",
+        "ev_54"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "family": "Uroburos",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_54",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_61paris.fr",
+      "type": "Domain",
+      "name": "61paris.fr",
+      "normalized_name": "61paris.fr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_222",
+        "ev_223"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "61paris.fr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_222",
+      "supporting_evidence_ids": [
+        "ev_223"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_blog.gdatasoftware.com",
+      "type": "Domain",
+      "name": "blog.gdatasoftware.com",
+      "normalized_name": "blog.gdatasoftware.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_224",
+        "ev_225"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "blog.gdatasoftware.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_224",
+      "supporting_evidence_ids": [
+        "ev_225"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_encodebase.info",
+      "type": "Domain",
+      "name": "encodebase.info",
+      "normalized_name": "encodebase.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "encodebase.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_230",
+        "ev_231"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_230",
+      "supporting_evidence_ids": [
+        "ev_231"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_govcert.ch",
+      "type": "Domain",
+      "name": "govcert.ch",
+      "normalized_name": "govcert.ch",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "govcert.ch",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_jucheafrica.com",
+      "type": "Domain",
+      "name": "jucheafrica.com",
+      "normalized_name": "jucheafrica.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_223"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "jucheafrica.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_223",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_232",
+        "ev_233"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_232",
+      "supporting_evidence_ids": [
+        "ev_233"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_tazohor.com",
+      "type": "Domain",
+      "name": "tazohor.com",
+      "normalized_name": "tazohor.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_234",
+        "ev_235"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "tazohor.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_234",
+      "supporting_evidence_ids": [
+        "ev_235"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.bing.com",
+      "type": "Domain",
+      "name": "www.bing.com",
+      "normalized_name": "www.bing.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_236",
+        "ev_237"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "www.bing.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_236",
+      "supporting_evidence_ids": [
+        "ev_237"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.lasac.eu",
+      "type": "Domain",
+      "name": "www.lasac.eu",
+      "normalized_name": "www.lasac.eu",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_228",
+        "ev_229"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "www.lasac.eu",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_228",
+      "supporting_evidence_ids": [
+        "ev_229"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.melani.admin.ch",
+      "type": "Domain",
+      "name": "www.melani.admin.ch",
+      "normalized_name": "www.melani.admin.ch",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_225"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "www.melani.admin.ch",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_225",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.shoppingexpert.it",
+      "type": "Domain",
+      "name": "www.shoppingexpert.it",
+      "normalized_name": "www.shoppingexpert.it",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_238",
+        "ev_239"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "www.shoppingexpert.it",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_238",
+      "supporting_evidence_ids": [
+        "ev_239"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.yahoo.com",
+      "type": "Domain",
+      "name": "www.yahoo.com",
+      "normalized_name": "www.yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_237"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "www.yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_237",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_url_https_blog.gdatasoftware.com_2015_01_23926-analysis-of-project-cobra",
+      "type": "URL",
+      "name": "https://blog.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra",
+      "normalized_name": "https://blog.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_224",
+        "ev_225"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "https://blog.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_224",
+      "supporting_evidence_ids": [
+        "ev_225"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_eset_malware-",
+      "type": "URL",
+      "name": "https://github.com/eset/malware-",
+      "normalized_name": "https://github.com/eset/malware-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_230",
+        "ev_231"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "https://github.com/eset/malware-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_230",
+      "supporting_evidence_ids": [
+        "ev_231"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_securelist.com_analysis_publications_65545_the-epic-turla-operation_",
+      "type": "URL",
+      "name": "https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+      "normalized_name": "https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_232",
+        "ev_233"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_232",
+      "supporting_evidence_ids": [
+        "ev_233"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.melani.admin.ch_melani_en_home_dokumentation_reports_technical-",
+      "type": "URL",
+      "name": "https://www.melani.admin.ch/melani/en/home/dokumentation/reports/technical-",
+      "normalized_name": "https://www.melani.admin.ch/melani/en/home/dokumentation/reports/technical-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_240",
+        "ev_241"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "https://www.melani.admin.ch/melani/en/home/dokumentation/reports/technical-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_240",
+      "supporting_evidence_ids": [
+        "ev_241"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_1ad46547e3dc264f940bf62df455b26e65b0101f",
+      "type": "SHA1",
+      "name": "1ad46547e3dc264f940bf62df455b26e65b0101f",
+      "normalized_name": "1ad46547e3dc264f940bf62df455b26e65b0101f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_203"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "1ad46547e3dc264f940bf62df455b26e65b0101f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_203",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1b233af41106d7915f6fa6fd1448b7f070b47eb3",
+      "type": "SHA1",
+      "name": "1b233af41106d7915f6fa6fd1448b7f070b47eb3",
+      "normalized_name": "1b233af41106d7915f6fa6fd1448b7f070b47eb3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_215"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "1b233af41106d7915f6fa6fd1448b7f070b47eb3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_215",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1dbfcb9005abb2c83ffa6a3127257a009612798c",
+      "type": "SHA1",
+      "name": "1dbfcb9005abb2c83ffa6a3127257a009612798c",
+      "normalized_name": "1dbfcb9005abb2c83ffa6a3127257a009612798c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_208"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "1dbfcb9005abb2c83ffa6a3127257a009612798c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_208",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_20393222d4eb1ba72a6536f7e67e139aadfa47fe",
+      "type": "SHA1",
+      "name": "20393222d4eb1ba72a6536f7e67e139aadfa47fe",
+      "normalized_name": "20393222d4eb1ba72a6536f7e67e139aadfa47fe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_207"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "20393222d4eb1ba72a6536f7e67e139aadfa47fe",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_207",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_2227fd6fc9d669a9b66c59593533750477669557",
+      "type": "SHA1",
+      "name": "2227fd6fc9d669a9b66c59593533750477669557",
+      "normalized_name": "2227fd6fc9d669a9b66c59593533750477669557",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_213"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "2227fd6fc9d669a9b66c59593533750477669557",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_213",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_2f7e335e092e04f3f4734b60c5345003d10aa15d",
+      "type": "SHA1",
+      "name": "2f7e335e092e04f3f4734b60c5345003d10aa15d",
+      "normalized_name": "2f7e335e092e04f3f4734b60c5345003d10aa15d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_209"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "2f7e335e092e04f3f4734b60c5345003d10aa15d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_209",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_311f399c299741e80db8bec65bbf4b56109eedaf",
+      "type": "SHA1",
+      "name": "311f399c299741e80db8bec65bbf4b56109eedaf",
+      "normalized_name": "311f399c299741e80db8bec65bbf4b56109eedaf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_210"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "311f399c299741e80db8bec65bbf4b56109eedaf",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_210",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4636dccac5acf1d95a474747bb7bcd9b1a506cc3",
+      "type": "SHA1",
+      "name": "4636dccac5acf1d95a474747bb7bcd9b1a506cc3",
+      "normalized_name": "4636dccac5acf1d95a474747bb7bcd9b1a506cc3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_201"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "4636dccac5acf1d95a474747bb7bcd9b1a506cc3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_201",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_554f59c1578f4ee77dbba6a23507401359a59f23",
+      "type": "SHA1",
+      "name": "554f59c1578f4ee77dbba6a23507401359a59f23",
+      "normalized_name": "554f59c1578f4ee77dbba6a23507401359a59f23",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_212"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "554f59c1578f4ee77dbba6a23507401359a59f23",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_212",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_56b5627debb93790fdbcc9ecbffc3260adeafbab",
+      "type": "SHA1",
+      "name": "56b5627debb93790fdbcc9ecbffc3260adeafbab",
+      "normalized_name": "56b5627debb93790fdbcc9ecbffc3260adeafbab",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_220"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "56b5627debb93790fdbcc9ecbffc3260adeafbab",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_220",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_678d486e21b001deb58353ca0255e3e5678f9614",
+      "type": "SHA1",
+      "name": "678d486e21b001deb58353ca0255e3e5678f9614",
+      "normalized_name": "678d486e21b001deb58353ca0255e3e5678f9614",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_221"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "678d486e21b001deb58353ca0255e3e5678f9614",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_221",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_744b43d8c0fe8b217acf0494ad992df6d5191ed9",
+      "type": "SHA1",
+      "name": "744b43d8c0fe8b217acf0494ad992df6d5191ed9",
+      "normalized_name": "744b43d8c0fe8b217acf0494ad992df6d5191ed9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_217"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "744b43d8c0fe8b217acf0494ad992df6d5191ed9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_217",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_777e2695ae408e1578a16991373144333732c3f6",
+      "type": "SHA1",
+      "name": "777e2695ae408e1578a16991373144333732c3f6",
+      "normalized_name": "777e2695ae408e1578a16991373144333732c3f6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_219"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "777e2695ae408e1578a16991373144333732c3f6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_219",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7c43f5df784bf50423620d8f1c96e43d8d9a9b28",
+      "type": "SHA1",
+      "name": "7c43f5df784bf50423620d8f1c96e43d8d9a9b28",
+      "normalized_name": "7c43f5df784bf50423620d8f1c96e43d8d9a9b28",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_205"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "7c43f5df784bf50423620d8f1c96e43d8d9a9b28",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_205",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7ce746bb988cb3b7e64f08174bdb02938555ea53",
+      "type": "SHA1",
+      "name": "7ce746bb988cb3b7e64f08174bdb02938555ea53",
+      "normalized_name": "7ce746bb988cb3b7e64f08174bdb02938555ea53",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_206"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "7ce746bb988cb3b7e64f08174bdb02938555ea53",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_206",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7f3a60613a3bdb5f1f8616e6ca469d3b78b1b45b",
+      "type": "SHA1",
+      "name": "7f3a60613a3bdb5f1f8616e6ca469d3b78b1b45b",
+      "normalized_name": "7f3a60613a3bdb5f1f8616e6ca469d3b78b1b45b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_199"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "7f3a60613a3bdb5f1f8616e6ca469d3b78b1b45b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_199",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_851e538357598ed96f0123b47694e25c2d52552b",
+      "type": "SHA1",
+      "name": "851e538357598ed96f0123b47694e25c2d52552b",
+      "normalized_name": "851e538357598ed96f0123b47694e25c2d52552b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_216"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "851e538357598ed96f0123b47694e25c2d52552b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_216",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_87d718f2d6e46c53490c6a22de399c13f05336f0",
+      "type": "SHA1",
+      "name": "87d718f2d6e46c53490c6a22de399c13f05336f0",
+      "normalized_name": "87d718f2d6e46c53490c6a22de399c13f05336f0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_214"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "87d718f2d6e46c53490c6a22de399c13f05336f0",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_214",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a08b8371ead1919500a4759c2f46553620d5a9d9",
+      "type": "SHA1",
+      "name": "a08b8371ead1919500a4759c2f46553620d5a9d9",
+      "normalized_name": "a08b8371ead1919500a4759c2f46553620d5a9d9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_200"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "a08b8371ead1919500a4759c2f46553620d5a9d9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_200",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a28164de29e51f154be12d163ce5818fceb69233",
+      "type": "SHA1",
+      "name": "a28164de29e51f154be12d163ce5818fceb69233",
+      "normalized_name": "a28164de29e51f154be12d163ce5818fceb69233",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_204"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "a28164de29e51f154be12d163ce5818fceb69233",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_204",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_bcf52240cc7940185ce424224d39564257610340",
+      "type": "SHA1",
+      "name": "bcf52240cc7940185ce424224d39564257610340",
+      "normalized_name": "bcf52240cc7940185ce424224d39564257610340",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_218"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "bcf52240cc7940185ce424224d39564257610340",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_218",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_cbde204e7641830017bb84b89223131b2126bc46",
+      "type": "SHA1",
+      "name": "cbde204e7641830017bb84b89223131b2126bc46",
+      "normalized_name": "cbde204e7641830017bb84b89223131b2126bc46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_202"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "cbde204e7641830017bb84b89223131b2126bc46",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_202",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_fbc43636e3c9378162f3b9712cb6d87bd48ddbd3",
+      "type": "SHA1",
+      "name": "fbc43636e3c9378162f3b9712cb6d87bd48ddbd3",
+      "normalized_name": "fbc43636e3c9378162f3b9712cb6d87bd48ddbd3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_211"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "value": "fbc43636e3c9378162f3b9712cb6d87bd48ddbd3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_211",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_adobeupdater.exe",
+      "type": "File",
+      "name": "adobeupdater.exe",
+      "normalized_name": "adobeupdater.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "adobeupdater.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_C_56743.NLS",
+      "type": "File",
+      "name": "C_56743.NLS",
+      "normalized_name": "C_56743.NLS",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_75",
+        "ev_83",
+        "ev_85",
+        "ev_88"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "C_56743.NLS",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [
+        "ev_75",
+        "ev_83",
+        "ev_88"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "C_56743"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_chrome.exe",
+      "type": "File",
+      "name": "chrome.exe",
+      "normalized_name": "chrome.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_137",
+        "ev_183"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "chrome.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_136",
+        "ev_137"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_186",
+        "ev_74"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "NAME",
+        "RESULT",
+        "COMPRESSION",
+        "DELETE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_dsniff.exe",
+      "type": "File",
+      "name": "dsniff.exe",
+      "normalized_name": "dsniff.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "dsniff.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ethereal.exe",
+      "type": "File",
+      "name": "ethereal.exe",
+      "normalized_name": "ethereal.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "ethereal.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ettercap.exe",
+      "type": "File",
+      "name": "ettercap.exe",
+      "normalized_name": "ettercap.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "ettercap.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_explorer.exe",
+      "type": "File",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_176",
+        "ev_180",
+        "ev_181",
+        "ev_184"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "explorer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_176",
+      "supporting_evidence_ids": [
+        "ev_180",
+        "ev_181",
+        "ev_184"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_firefox.exe",
+      "type": "File",
+      "name": "firefox.exe",
+      "normalized_name": "firefox.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_183"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "firefox.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_fsbootfail.dat",
+      "type": "File",
+      "name": "fsbootfail.dat",
+      "normalized_name": "fsbootfail.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "fsbootfail.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ieuser.exe",
+      "type": "File",
+      "name": "ieuser.exe",
+      "normalized_name": "ieuser.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_184",
+        "ev_65"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "ieuser.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_184",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_iexplore.exe",
+      "type": "File",
+      "name": "iexplore.exe",
+      "normalized_name": "iexplore.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_183"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "iexplore.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_miniport.dat",
+      "type": "File",
+      "name": "miniport.dat",
+      "normalized_name": "miniport.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_131",
+        "ev_32"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "miniport.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_131",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "SENS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mkfieldsec.dll",
+      "type": "File",
+      "name": "mkfieldsec.dll",
+      "normalized_name": "mkfieldsec.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_130"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "mkfieldsec.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mozilla.exe",
+      "type": "File",
+      "name": "mozilla.exe",
+      "normalized_name": "mozilla.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "mozilla.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_MSIMGHLP.DLL",
+      "type": "File",
+      "name": "MSIMGHLP.DLL",
+      "normalized_name": "MSIMGHLP.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115",
+        "ev_195"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "MSIMGHLP.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_195",
+      "supporting_evidence_ids": [
+        "ev_115"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msimn.exe",
+      "type": "File",
+      "name": "msimn.exe",
+      "normalized_name": "msimn.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_183"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "msimn.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_MSXIML.DLL",
+      "type": "File",
+      "name": "MSXIML.DLL",
+      "normalized_name": "MSXIML.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115",
+        "ev_120",
+        "ev_195"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "MSXIML.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_195",
+      "supporting_evidence_ids": [
+        "ev_115",
+        "ev_120"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_netscape.exe",
+      "type": "File",
+      "name": "netscape.exe",
+      "normalized_name": "netscape.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "netscape.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_opera.exe",
+      "type": "File",
+      "name": "opera.exe",
+      "normalized_name": "opera.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_183"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "opera.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_outlook.exe",
+      "type": "File",
+      "name": "outlook.exe",
+      "normalized_name": "outlook.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_183"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "outlook.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_qavscr.dat",
+      "type": "File",
+      "name": "qavscr.dat",
+      "normalized_name": "qavscr.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_123"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "qavscr.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_123",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SERVICE.EXE",
+      "type": "File",
+      "name": "SERVICE.EXE",
+      "normalized_name": "SERVICE.EXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_115",
+        "ev_195"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "SERVICE.EXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_195",
+      "supporting_evidence_ids": [
+        "ev_115"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "SERVICE",
+        "MSIMGHLP",
+        "MSXIML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_snoop.exe",
+      "type": "File",
+      "name": "snoop.exe",
+      "normalized_name": "snoop.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "snoop.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_TCPdump.exe",
+      "type": "File",
+      "name": "TCPdump.exe",
+      "normalized_name": "TCPdump.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "TCPdump.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_windump.exe",
+      "type": "File",
+      "name": "windump.exe",
+      "normalized_name": "windump.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "windump.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wireshark.exe",
+      "type": "File",
+      "name": "wireshark.exe",
+      "normalized_name": "wireshark.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_192"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "wireshark.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ximarsh.dll",
+      "type": "File",
+      "name": "ximarsh.dll",
+      "normalized_name": "ximarsh.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_124"
+      ],
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "file_name": "ximarsh.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_kernel32.dll",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "File",
+      "name": "kernel32.dll",
+      "normalized_name": "kernel32.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "kernel32.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_KmSvc.DLL",
+      "tail_id": "ent_malware_KmSvc",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "primary_evidence_id": "ev_115",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_SERVICE.DLL",
+      "tail_id": "ent_malware_SERVICE",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "primary_evidence_id": "ev_115",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_C_56743.NLS",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "primary_evidence_id": "ev_75",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_75"
+      },
+      "head": {
+        "id": "ent_malware_Carbon",
+        "type": "Malware",
+        "name": "Carbon",
+        "normalized_name": "Carbon",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_10",
+          "ev_16",
+          "ev_20",
+          "ev_62"
+        ],
+        "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+        "family": "Carbon",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_62",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_20",
+          "ev_10"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_C_56743.NLS",
+        "type": "File",
+        "name": "C_56743.NLS",
+        "normalized_name": "C_56743.NLS",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_75",
+          "ev_83",
+          "ev_85",
+          "ev_88"
+        ],
+        "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+        "file_name": "C_56743.NLS",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_85",
+        "supporting_evidence_ids": [
+          "ev_75",
+          "ev_83",
+          "ev_88"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "config_or_data",
+        "family_hints": [
+          "C_56743"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_file_TCPdump.exe",
+      "tail_id": "ent_file_windump.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_111"
+      ],
+      "primary_evidence_id": "ev_111",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_file_explorer.exe",
+      "tail_id": "ent_file_ieuser.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_65",
+        "ev_184"
+      ],
+      "primary_evidence_id": "ev_65",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_C_56743.NLS",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_104"
+      ],
+      "primary_evidence_id": "ev_104",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_SERVICE.EXE",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "primary_evidence_id": "ev_115",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "primary_evidence_id": "ev_74",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_explorer.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_miniport.dat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_32"
+      ],
+      "primary_evidence_id": "ev_32",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "loads",
+      "head_id": "ent_file_TCPdump.exe",
+      "tail_id": "ent_file_windump.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_111"
+      ],
+      "primary_evidence_id": "ev_111",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "loads",
+      "head_id": "ent_file_explorer.exe",
+      "tail_id": "ent_file_ieuser.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_65",
+        "ev_184"
+      ],
+      "primary_evidence_id": "ev_65",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain, load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "loads",
+      "head_id": "ent_file_explorer.exe",
+      "tail_id": "ent_malware_Carbon",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_176"
+      ],
+      "primary_evidence_id": "ev_176",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Carbon_Paper",
+      "tail_id": "ent_malware_Carbon",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Carbon Paper: Peering into Turla’s second stage backdoor"
+      },
+      "head": {
+        "id": "ent_campaign_Carbon_Paper",
+        "type": "Campaign",
+        "name": "Carbon Paper",
+        "normalized_name": "Carbon Paper",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [],
+        "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": null,
+        "supporting_evidence_ids": [],
+        "needs_review": true,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Carbon",
+        "type": "Malware",
+        "name": "Carbon",
+        "normalized_name": "Carbon",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_10",
+          "ev_16",
+          "ev_20",
+          "ev_62"
+        ],
+        "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+        "family": "Carbon",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_62",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_20",
+          "ev_10"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Carbon_Paper",
+      "tail_id": "ent_malware_Turla",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Carbon Paper: Peering into Turla’s second stage backdoor"
+      },
+      "head": {
+        "id": "ent_campaign_Carbon_Paper",
+        "type": "Campaign",
+        "name": "Carbon Paper",
+        "normalized_name": "Carbon Paper",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [],
+        "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": null,
+        "supporting_evidence_ids": [],
+        "needs_review": true,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Turla",
+        "type": "Malware",
+        "name": "Turla",
+        "normalized_name": "Turla",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_10",
+          "ev_14",
+          "ev_6"
+        ],
+        "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_10",
+        "supporting_evidence_ids": [
+          "ev_6",
+          "ev_14",
+          "ev_1"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family": "Turla",
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "type": "writes_output",
+      "head_id": "ent_malware_Carbon",
+      "tail_id": "ent_file_C_56743.NLS",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "primary_evidence_id": "ev_75",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "Carbon drops C_56743.NLS",
+      "evidence_ids": [
+        "ev_75"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "TCPdump.exe executes windump.exe",
+      "evidence_ids": [
+        "ev_111"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "explorer.exe executes ieuser.exe",
+      "evidence_ids": [
+        "ev_65",
+        "ev_184"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "Carbon executes C_56743.NLS",
+      "evidence_ids": [
+        "ev_104"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "Carbon executes SERVICE.EXE",
+      "evidence_ids": [
+        "ev_115"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "executes",
+      "summary": "Carbon executes cmd.exe",
+      "evidence_ids": [
+        "ev_74"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "executes",
+      "summary": "Carbon executes explorer.exe",
+      "evidence_ids": [
+        "ev_61"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "Carbon executes miniport.dat",
+      "evidence_ids": [
+        "ev_32"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "TCPdump.exe loads windump.exe",
+      "evidence_ids": [
+        "ev_111"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "explorer.exe loads ieuser.exe",
+      "evidence_ids": [
+        "ev_65",
+        "ev_184"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "explorer.exe loads Carbon",
+      "evidence_ids": [
+        "ev_176"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "uses_malware",
+      "summary": "Carbon Paper uses_malware Carbon",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "uses_malware",
+      "summary": "Carbon Paper uses_malware Turla",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "collection",
+      "relation_id": "rel_0016",
+      "type": "writes_output",
+      "summary": "Carbon writes_output C_56743.NLS",
+      "evidence_ids": [
+        "ev_75"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "The Turla espionage group has been targeting various institutions for many years.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Recently, we found several new versions of Carbon, a second stage backdoor in the Turla group arsenal.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Last year, a technical analysis of this component was made by Swiss GovCERT.ch as part of their report detailing the attack that a defense firm owned by the Swiss government, RUAG, suffered in the past.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "Infection vectors The Turla group is known to be painstaking and work in stages, first doing reconnaissance on their victims’ systems before deploying their most sophisticated tools such as Carbon.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "After a successful attack, a first stage backdoor — such as Tavdig or Skipper — is installed on the user machine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Carbon is a sophisticated backdoor used to steal sensitive information from targets of interest by the Turla group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "This malware shares some similarities with “Uroburos” , a rootkit used by the same group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "Indeed, Carbon might be a “lite” version of Uroburos (without kernel components and without exploits).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "For Turla group to decide to install Carbon on a system, a (stage 1) recognition tool is usually delivered first to the target: this tool collects several pieces of information about the victim’s machine and its network (through Tavdig or Skipper for example).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "If the target is considered interesting enough, it will receive more sophisticated malware (such as Carbon or Uroburos).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s10"
+      },
+      "text": "Global architecture The Carbon framework consists of: a dropper that installs the carbon components and its configuration file a component that communicates with the C&C an orchestrator that handles the tasks, dispatches them to other computers on the network and injects into a legitimate process the DLL that communicates with the C&C a loader that executes the orchestrator",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Working directory Several files are created by Carbon to keep logs, tasks to execute and configuration that will modify the malware’s behavior.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "“Global\\\\SENS.LockStarterCacheResource” (used to ensure exclusive access to “miniport.dat”) “Global\\\\ShimSharedMemoryLock” (used to ensure exclusive access to “asmcerts.rs”)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "P2P Like Uroburos/Snake, Carbon can dispatch tasks to other computers from the same network via named pipe or TCP.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "4 = similar than 3 but the environment variables for the user represented by the “explorer.exe” token are retrieved and passed to the function CreateProcessAsUser()",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s2"
+      },
+      "text": "If it is a PE file: the file is loaded into the malware process memory the module is parsed to check if it is a DLL if the module is a DLL and exports a function “ModStart” (since Carbon 3.77) or “ModuleStart” (for older versions of Carbon), a new thread is created to execute this function.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s5"
+      },
+      "text": "For each process on the list that is running on the system, if its parent process name is either “explorer.exe” or “ieuser.exe”, the DLL will be injected into this process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s6"
+      },
+      "text": "The process injection is very classical: the functions “CreateToolHelp32Snapshot / Module32FirstW / Module32NextW” are used to retrieve the base address of the module “kernel32.dll” the module EAT is parsed to get the address of the function “LoadLibraryW” the privilege “SeDebugPrivilege” is enabled for the current process memory is allocated into the remote process and the library path is written into it NtCreateThreadEx or CreateRemoteThread (if the address of the first function cannot be retrieved) is called to execute LoadLibraryW to load the DLL into the memory of the remote process *",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s8"
+      },
+      "text": "[CONFIG] NAME (“cmd.exe” by default) ARG RESULT (“stdout” by default) COMPRESSION (“yes” by default) DELETE (“no” by default)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s1"
+      },
+      "text": "In both cases, the same line as written into “C_56743.NLS” is also written into the field “run_task” from the Carbon configuration file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s9"
+      },
+      "text": "A new line is added at the end of the file “C_56743.NLS” (for Carbon v3.7x) or “dsntype.gif” (for Carbon v3.8x):",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "Communication with the C&C server The code of this thread is used to retrieve new tasks from the C&C server, to send new files to the server (the files listed in the file “C_56743.NLS” / “dsntype.gif”) and to send the new tasks to the orchestrator.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 17,
+        "section": "body",
+        "sentence_id": "p17_s1"
+      },
+      "text": "If the file “C_56743.NLS” / “dsntype.gif” is not empty, it means there are data to be sent the C&C server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 20,
+        "section": "body",
+        "sentence_id": "p20_s1"
+      },
+      "text": "the data are decrypted and stored in few temporary files (the task, its configuration etc) in the “Nls” and “0208” folder (or “0409” and “1033” for Carbon v3.8x) depending of the content of the data, one of these lines will be added to the beginning of the file “a67ncode.ax” (encodebase.info on v3.8x) in this case, the configuration file is updated with the new key encoded in base64 (field publicc) data to be sent to an instance of Carbon running in another computer in the same network the data can contains a specific IP address and port, a named pipe or a named pipe with a username and password.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "body",
+        "sentence_id": "p21_s4"
+      },
+      "text": "To notify the thread that communicates with the C&C server that a new file is ready to be sent to the server, the following line is appending to the file “C_56743.NLS” (for Carbon v3.7x) or “dsntype.gif” (for Carbon v3.8x):",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "body",
+        "sentence_id": "p22_s2"
+      },
+      "text": "TCPdump.exe windump.exe ethereal.exe wireshark.exe ettercap.exe snoop.exe dsniff.exe If any of these processes are running, no communication will be done.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "the dropper: “SERVICE.EXE” the loader: “SERVICE.DLL” or “KmSvc.DLL” the orchestrator: “MSIMGHLP.DLL” the injected library: “MSXIML.DLL”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "<span class=\"tok-go\">├── miniport.dat // configuration file</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "<span class=\"tok-go\">├── msximl.dll // injected library (x32)</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r7"
+      },
+      "text": "<span class=\"tok-go\">├── qavscr.dat // error log</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r8"
+      },
+      "text": "<span class=\"tok-go\">└── ximarsh.dll // injected library (x64)</span></code></span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "<span class=\"tok-go\">├── fsbootfail.dat // error log</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "<span class=\"tok-go\">├── mkfieldsec.dll // injected library (x32)</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "“Global\\\\SENS.LockStarterCacheResource” (used to ensure exclusive access to “miniport.dat”) “Global\\\\ShimSharedMemoryLock” (used to ensure exclusive access to “asmcerts.rs”)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "<span class=\"tok-go\">iproc = iexplore.exe,outlook.exe,msimn.exe,firefox.exe,opera.exe,chrome.exe</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "<span class=\"tok-go\">ex = #,netscape.exe,mozilla.exe,adobeupdater.exe,chrome.exe</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_176",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "0 or 1: normal execution 2: the task is executed in the security context of a specific user (credentials are provided through the username/password fields) 3 or 4: the task is executed in the security context of the user represented by the “explorer.exe” token",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_180",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r3"
+      },
+      "text": "1 = execution with current user privilege in the current process context through CreateProcess(). 2 = execution as the user specified in the configuration (:%username%:%password% attributes), the token of this specific user is retrieved through the LogonUserAs() function. 3 = execution in the security context of the user represented by the “explorer.exe” token (the token of the process “explorer.exe” is duplicated and passed through the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_181",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "CreateProcessAsUser() function. 4 = similar than 3 but the environment variables for the user represented by the “explorer.exe” token are retrieved and passed to the function CreateProcessAsUser()",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_183",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r3"
+      },
+      "text": "<span class=\"tok-go\">iproc = iexplore.exe,outlook.exe,msimn.exe,firefox.exe,opera.exe,chrome.exe</span>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_184",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r4"
+      },
+      "text": "For each process on the list that is running on the system, if its parent process name is either “explorer.exe” or “ieuser.exe”, the DLL will be injected into this process.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_186",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r1"
+      },
+      "text": "NAME (“cmd.exe” by default) ARG RESULT (“stdout” by default) COMPRESSION (“yes” by default) DELETE (“no” by default)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_192",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r1"
+      },
+      "text": "TCPdump.exe windump.exe ethereal.exe wireshark.exe ettercap.exe snoop.exe dsniff.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_195",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r4"
+      },
+      "text": "rule carbon_metadata { condition: (pe.version_info[“InternalName”] contains “SERVICE.EXE” or pe.version_info[“InternalName”] contains “MSIMGHLP.DLL” or pe.version_info[“InternalName”] contains “MSXIML.DLL”) and pe.version_info[“CompanyName”] contains “Microsoft Corporation” }",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_199",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r2"
+      },
+      "text": "7f3a60613a3bdb5f1f8616e6ca469d3b78b1b45b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_200",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r3"
+      },
+      "text": "a08b8371ead1919500a4759c2f46553620d5a9d9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_201",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r4"
+      },
+      "text": "4636dccac5acf1d95a474747bb7bcd9b1a506cc3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_202",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r5"
+      },
+      "text": "cbde204e7641830017bb84b89223131b2126bc46",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_203",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r6"
+      },
+      "text": "1ad46547e3dc264f940bf62df455b26e65b0101f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_204",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r7"
+      },
+      "text": "a28164de29e51f154be12d163ce5818fceb69233",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_205",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r8"
+      },
+      "text": "7c43f5df784bf50423620d8f1c96e43d8d9a9b28",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_206",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r9"
+      },
+      "text": "7ce746bb988cb3b7e64f08174bdb02938555ea53",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_207",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r10"
+      },
+      "text": "20393222d4eb1ba72a6536f7e67e139aadfa47fe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_208",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r11"
+      },
+      "text": "1dbfcb9005abb2c83ffa6a3127257a009612798c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_209",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r12"
+      },
+      "text": "2f7e335e092e04f3f4734b60c5345003d10aa15d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_210",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r13"
+      },
+      "text": "311f399c299741e80db8bec65bbf4b56109eedaf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_211",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r14"
+      },
+      "text": "fbc43636e3c9378162f3b9712cb6d87bd48ddbd3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_212",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r15"
+      },
+      "text": "554f59c1578f4ee77dbba6a23507401359a59f23",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_213",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r16"
+      },
+      "text": "2227fd6fc9d669a9b66c59593533750477669557",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_214",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r17"
+      },
+      "text": "87d718f2d6e46c53490c6a22de399c13f05336f0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_215",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r18"
+      },
+      "text": "1b233af41106d7915f6fa6fd1448b7f070b47eb3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_216",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r19"
+      },
+      "text": "851e538357598ed96f0123b47694e25c2d52552b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_217",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r20"
+      },
+      "text": "744b43d8c0fe8b217acf0494ad992df6d5191ed9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_218",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r21"
+      },
+      "text": "bcf52240cc7940185ce424224d39564257610340",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_219",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r22"
+      },
+      "text": "777e2695ae408e1578a16991373144333732c3f6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_220",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r23"
+      },
+      "text": "56b5627debb93790fdbcc9ecbffc3260adeafbab",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_221",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r24"
+      },
+      "text": "678d486e21b001deb58353ca0255e3e5678f9614",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_222",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb222"
+      },
+      "text": "61paris.fr:80:/wp-includes/ms-set.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_223",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb223"
+      },
+      "text": "ments.php jucheafrica.com:80:/wp-includes/class-wp-edit.php 61paris.fr:80:/wp-includes/ms-set.php 24/25",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_224",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb224"
+      },
+      "text": "https://blog.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_225",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb225"
+      },
+      "text": "alysis/publications/65545/the-epic-turla-operation/ https://blog.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra https://www.melani.admin.ch/melani/en/home/dokumentation/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_226",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb226"
+      },
+      "text": "<span class=\"tok-go\">address1 = doctorshand.org:80:/wp-content/about/</span>",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_227",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 25,
+        "section": "rule_backfill",
+        "sentence_id": "p25_rb227"
+      },
+      "text": "doctorshand.org:80:/wp-content/about/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_228",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 25,
+        "section": "rule_backfill",
+        "sentence_id": "p25_rb228"
+      },
+      "text": "doctorshand.org:80:/wp-content/about/ www.lasac.eu:80:/credit_payment/url/ C&C server address Notes 25/25",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_229",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb229"
+      },
+      "text": "tok-go\">quantity = 3</span> <span class=\"tok-go\">address1 = doctorshand.org:80:/wp-content/about/</span> <span class=\"tok-go\">address2 = www.lasac.eu:80:/credit_payment/url/</span>",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_230",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb230"
+      },
+      "text": "IoCs are also available on ESET’s GitHub repository https://github.com/eset/malware-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_231",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb231"
+      },
+      "text": "IoCs are also available on ESET’s GitHub repository https://github.com/eset/malware- ioc/tree/master/turla Appendices Yara rules import “pe” rule generic_carbon { strings: $s1 = “M",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_232",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb232"
+      },
+      "text": "https://securelist.com/analysis/publications/65545/the-epic-turla-operation/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_233",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb233"
+      },
+      "text": "“wb”).write(data) if __name__ == “__main__”: main() https://securelist.com/analysis/publications/65545/the-epic-turla-operation/ https://blog.gdatasoftware.com/2015/01/23926-analys",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_234",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb234"
+      },
+      "text": "tazohor.com:80:/wp-includes/feed-rss-comments.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_235",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb235"
+      },
+      "text": "erver address soheylistore.ir:80:/modules/mod_feed/feed.php tazohor.com:80:/wp-includes/feed-rss-comments.php jucheafrica.com:80:/wp-includes/class-wp-edit.php 61paris.fr:80:/wp-in",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_236",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 20,
+        "section": "rule_backfill",
+        "sentence_id": "p20_rb236"
+      },
+      "text": "www.bing.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_237",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 20,
+        "section": "rule_backfill",
+        "sentence_id": "p20_rb237"
+      },
+      "text": "sts to the following websites: www.google.com www.yahoo.com www.bing.com update.microsoft.com windowsupdate.microsoft.com microsoft.com An event is used to notify the other threads",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_238",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb238"
+      },
+      "text": "<span class=\"tok-go\">address3 = www.shoppingexpert.it:80:/wp-content/gallery/</span>",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_239",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb239"
+      },
+      "text": "/credit_payment/url/</span> <span class=\"tok-go\">address3 = www.shoppingexpert.it:80:/wp-content/gallery/</span> <span class=\"tok-go\">[TRANSPORT]</span> <span class=\"tok-go\">system",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_240",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb240"
+      },
+      "text": "https://www.melani.admin.ch/melani/en/home/dokumentation/reports/technical-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_241",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Carbon-Paper-Peering-into-Turlas-second-stage-backdoor(03-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb241"
+      },
+      "text": "g.gdatasoftware.com/2015/01/23926-analysis-of-project-cobra https://www.melani.admin.ch/melani/en/home/dokumentation/reports/technical- reports/technical-report_apt_case_ruag.html",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_66",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_file_kernel32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_malware_Turla",
+        "ent_campaign_Carbon_Paper"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_75",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_file_C_56743.NLS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_malware_Turla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_104",
+      "page": 21,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_file_C_56743.NLS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_233",
+      "page": 23,
+      "candidate_entity_ids": [
+        "ent_malware_Turla",
+        "ent_url_https_securelist.com_analysis_publications_65545_the-epic-turla-operation_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_237",
+      "page": 20,
+      "candidate_entity_ids": [
+        "ent_domain_www.bing.com",
+        "ent_domain_www.yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_115",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_KmSvc",
+        "ent_malware_SERVICE",
+        "ent_file_KmSvc.DLL",
+        "ent_malware_KmSvc.DLL",
+        "ent_file_SERVICE.DLL",
+        "ent_malware_SERVICE.DLL",
+        "ent_file_MSIMGHLP.DLL",
+        "ent_file_MSXIML.DLL",
+        "ent_file_SERVICE.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_111",
+      "page": 22,
+      "candidate_entity_ids": [
+        "ent_file_dsniff.exe",
+        "ent_file_ethereal.exe",
+        "ent_file_ettercap.exe",
+        "ent_file_snoop.exe",
+        "ent_file_TCPdump.exe",
+        "ent_file_windump.exe",
+        "ent_file_wireshark.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_192",
+      "page": 22,
+      "candidate_entity_ids": [
+        "ent_file_dsniff.exe",
+        "ent_file_ethereal.exe",
+        "ent_file_ettercap.exe",
+        "ent_file_snoop.exe",
+        "ent_file_TCPdump.exe",
+        "ent_file_windump.exe",
+        "ent_file_wireshark.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_136",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_chrome.exe",
+        "ent_file_firefox.exe",
+        "ent_file_iexplore.exe",
+        "ent_file_msimn.exe",
+        "ent_file_opera.exe",
+        "ent_file_outlook.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_183",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_file_chrome.exe",
+        "ent_file_firefox.exe",
+        "ent_file_iexplore.exe",
+        "ent_file_msimn.exe",
+        "ent_file_opera.exe",
+        "ent_file_outlook.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_195",
+      "page": 22,
+      "candidate_entity_ids": [
+        "ent_malware_SERVICE",
+        "ent_file_MSIMGHLP.DLL",
+        "ent_file_MSXIML.DLL",
+        "ent_file_SERVICE.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_137",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_adobeupdater.exe",
+        "ent_file_chrome.exe",
+        "ent_file_mozilla.exe",
+        "ent_file_netscape.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_malware_Turla",
+        "ent_malware_Turla_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_malware_Turla",
+        "ent_malware_Turla_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_malware_Turla",
+        "ent_malware_Turla_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_235",
+      "page": 24,
+      "candidate_entity_ids": [
+        "ent_domain_61paris.fr",
+        "ent_domain_jucheafrica.com",
+        "ent_domain_tazohor.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_83",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_file_C_56743.NLS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_98",
+      "page": 20,
+      "candidate_entity_ids": [
+        "ent_malware_Carbon",
+        "ent_domain_encodebase.info"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_225",
+      "page": 23,
+      "candidate_entity_ids": [
+        "ent_malware_Turla",
+        "ent_url_https_blog.gdatasoftware.com_2015_01_23926-analysis-of-project-cobra"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_231",
+      "page": 22,
+      "candidate_entity_ids": [
+        "ent_malware_Turla",
+        "ent_url_https_github.com_eset_malware-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_232",
+      "page": 23,
+      "candidate_entity_ids": [
+        "ent_malware_Turla",
+        "ent_url_https_securelist.com_analysis_publications_65545_the-epic-turla-operation_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_file_explorer.exe",
+        "ent_file_ieuser.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_184",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_file_explorer.exe",
+        "ent_file_ieuser.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_223",
+      "page": 24,
+      "candidate_entity_ids": [
+        "ent_domain_61paris.fr",
+        "ent_domain_jucheafrica.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_228",
+      "page": 25,
+      "candidate_entity_ids": [
+        "ent_domain_doctorshand.org",
+        "ent_domain_www.lasac.eu"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_229",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_doctorshand.org",
+        "ent_domain_www.lasac.eu"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

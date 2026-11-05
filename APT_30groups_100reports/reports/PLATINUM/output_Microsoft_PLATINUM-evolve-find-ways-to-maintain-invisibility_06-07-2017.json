@@ -1,0 +1,223 @@
+{
+  "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+  "title": "PLATINUM continues to evolve, find ways to maintain invisibility",
+  "source": null,
+  "published_date": "June 7, 2017",
+  "report_metadata": {
+    "file_name": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017).pdf",
+    "file_path": "/root/APTtext/Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 7735,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [],
+  "observations": [
+    {
+      "id": "ent_threatactor_Active_Management_Technology",
+      "type": "ThreatActor",
+      "name": "Active Management Technology",
+      "normalized_name": "Active Management Technology",
+      "aliases": [
+        "AMT"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_15",
+        "ev_18",
+        "ev_4",
+        "ev_8"
+      ],
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_18",
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Serial-over-LAN",
+      "type": "ThreatActor",
+      "name": "Serial-over-LAN",
+      "normalized_name": "Serial-over-LAN",
+      "aliases": [
+        "SOL"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_18",
+        "ev_4",
+        "ev_8"
+      ],
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_10",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_imrsdk.dll",
+      "type": "File",
+      "name": "imrsdk.dll",
+      "normalized_name": "imrsdk.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_22"
+      ],
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "file_name": "imrsdk.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PLATINUM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Since the 2016 publication, Microsoft has come across an evolution of PLATINUM’s file-transfer tool, one that uses the Intel® Active Management Technology (AMT) Serial-over-LAN (SOL) channel for communication.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "AMT Serial-over-LAN (SOL) communication channel Active Management Technology (AMT) enables remote management of devices and is provided as a feature of Intel® vPro™ processors and chipsets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "AMT has a Serial-over-LAN (SOL) feature that exposes a virtual serial device with a chipset-provided channel over",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "The new SOL protocol within the PLATINUM file-transfer tool makes use of the AMT Technology SDK’s Redirection Library API ( imrsdk.dll ).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "The following video demonstrates how the PLATINUM tool can be used to transfer malware to a computer with AMT provisioned:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "While the technique used here by PLATINUM is OS independent, Windows Defender ATP can detect and notify network administrators of attempts to leverage the AMT SOL communication channel for unauthorized activity, specifically when used against a computer running Windows.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_PLATINUM-evolve-find-ways-to-maintain-invisibility(06-07-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "The new SOL protocol within the PLATINUM file-transfer tool makes use of the AMT Technology SDK’s Redirection Library API ( imrsdk.dll ). Data transactions are performed by the calls IMR_SOLSendText() / IMR_SOLReceiveText() , which are analogous to networking send() and recv() calls. The SOL protocol used is identical to the TCP protocol other than the addition of a variable-length header on the data for error detection. Also, the updated client sends an unencrypted packet with the content “ 007″ before authentication.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ]
+}

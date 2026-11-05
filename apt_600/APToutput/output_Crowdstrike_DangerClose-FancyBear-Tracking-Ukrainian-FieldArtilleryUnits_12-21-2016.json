@@ -1,0 +1,741 @@
+{
+  "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+  "title": "Danger Close: Fancy Bear Tracking of Ukrainian Field Artillery Units",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016).pdf",
+    "file_path": "/root/APTtext/Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 6467,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Russian_Military_Intelligence",
+      "type": "ThreatActor",
+      "name": "Russian Military Intelligence",
+      "normalized_name": "Russian Military Intelligence",
+      "aliases": [
+        "GRU"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_X-Agent-Android",
+      "type": "ThreatActor",
+      "name": "X-Agent-Android",
+      "normalized_name": "X-Agent-Android",
+      "aliases": [
+        "X-Agent"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_13",
+        "ev_5",
+        "ev_9"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_13",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_RC4",
+      "type": "Malware",
+      "name": "RC4",
+      "normalized_name": "RC4",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "family": "RC4",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_X-Agent",
+      "type": "Malware",
+      "name": "X-Agent",
+      "normalized_name": "X-Agent",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_12",
+        "ev_13",
+        "ev_5",
+        "ev_9",
+        "ev_1"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "family": "X-Agent",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [
+        "ev_12",
+        "ev_5",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Danger_Close",
+      "type": "Campaign",
+      "name": "Danger Close",
+      "normalized_name": "Danger Close",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_X-Agent",
+      "type": "ThreatActor",
+      "name": "X-Agent",
+      "normalized_name": "X-Agent",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_13",
+        "ev_5"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_threatactor_X-Agent-Android"
+    },
+    {
+      "id": "ent_threatactor_GRU",
+      "type": "ThreatActor",
+      "name": "GRU",
+      "normalized_name": "GRU",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Russian_Military_Intelligence"
+    },
+    {
+      "id": "ent_domain_crowdstrike.com",
+      "type": "Domain",
+      "name": "crowdstrike.com",
+      "normalized_name": "crowdstrike.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_19"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "value": "crowdstrike.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_6f7523d3019fa190499f327211e01fcb",
+      "type": "MD5",
+      "name": "6f7523d3019fa190499f327211e01fcb",
+      "normalized_name": "6f7523d3019fa190499f327211e01fcb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "value": "6f7523d3019fa190499f327211e01fcb",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file__-_30.apk",
+      "type": "File",
+      "name": "Попр-Д30.apk",
+      "normalized_name": "Попр-Д30.apk",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_6",
+        "ev_8"
+      ],
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "file_name": "Попр-Д30.apk",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "D-30"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_X-Agent",
+      "tail_id": "ent_malware_RC4",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "(APK) named ‘Попр-Д30.apk’ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. Initial research identified that the filename suggested a relationship to the D-30 122mm towed howitzer, an artillery weapon first manufactured in the Soviet Union in the 1960s but still in use today. In-depth reverse engineering revealed the APK contained an Android "
+      },
+      "head": {
+        "id": "ent_malware_X-Agent",
+        "type": "Malware",
+        "name": "X-Agent",
+        "normalized_name": "X-Agent",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_12",
+          "ev_13",
+          "ev_5",
+          "ev_9",
+          "ev_1"
+        ],
+        "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+        "family": "X-Agent",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_9",
+        "supporting_evidence_ids": [
+          "ev_12",
+          "ev_5",
+          "ev_13"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_RC4",
+        "type": "Malware",
+        "name": "RC4",
+        "normalized_name": "RC4",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_5"
+        ],
+        "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+        "family": "RC4",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_5",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_X-Agent",
+      "tail_id": "ent_threatactor_X-Agent-Android",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_13"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_GRU",
+      "tail_id": "ent_threatactor_Russian_Military_Intelligence",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_X-Agent-Android",
+      "tail_id": "ent_malware_RC4",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_5",
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_5",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=x-agent; headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "(APK) named ‘Попр-Д30.apk’ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. Initial research identified that the filename suggested a relationship to the D-30 122mm towed howitzer, an artillery weapon first manufactured in the Soviet Union in the 1960s but still in use today. In-depth reverse engineering revealed the APK contained an Android "
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_X-Agent-Android",
+      "tail_id": "ent_malware_X-Agent",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_1",
+        "ev_5",
+        "ev_16",
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "use",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=x-agent; headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "(APK) named ‘Попр-Д30.apk’ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. Initial research identified that the filename suggested a relationship to the D-30 122mm towed howitzer, an artillery weapon first manufactured in the Soviet Union in the 1960s but still in use today. In-depth reverse engineering revealed the APK contained an Android "
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "X-Agent-Android uses_malware RC4",
+      "evidence_ids": [
+        "ev_5",
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "X-Agent-Android uses_malware X-Agent",
+      "evidence_ids": [
+        "ev_1",
+        "ev_5",
+        "ev_16"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Also known as Sofacy, X-Agent has been tracked by the security community for almost a decade, CrowdStrike associates the use of X-Agent with an actor we call FANCY BEAR .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "This actor to date is the exclusive operator of the malware, and has continuously developed the platform for ongoing operations which CrowdStrike assesses is likely tied to Russian Military Intelligence (GRU).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "In-depth reverse engineering revealed the APK contained an Android variant of X-Agent, the command and control protocol was closely linked to observed Windows variants of X-Agent, and utilized a cryptographic algorithm called RC4 with a very similar 50 byte base key.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "The filename ‘Попр-Д30.apk’ was linked to a legitimate application which was initially developed domestically within Ukraine by an officer of the 55th Artillery Brigade named Yaroslav Sherstuk.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "D-30 Howitzer in service with Ukrainian military personnel Today CrowdStrike is releasing publicly an intelligence report which was circulated to CrowdStrike Falcon Intelligence customers detailing the use of the trojanized ‘Попр-Д30.apk’ application by the Ukrainian military and the deadly repercussions inflicted on that platform by Russian forces.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "From late 2014 and through 2016, FANCY BEAR X-Agent implant was covertly distributed on Ukrainian military forums within a legitimate Android application developed by Ukrainian artillery officer Yaroslav Sherstuk.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "This previously unseen variant of X-Agent represents FANCY BEAR’s expansion in mobile malware development from iOS-capable implants to Android devices, and reveals one more component of the broad spectrum approach to cyber operations taken by Russia-based actors in the war in Ukraine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "The following Snort rule matches on the X-Agent-Android C2 beacon request:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "(APK) named ‘Попр-Д30.apk’ (MD5: 6f7523d3019fa190499f327211e01fcb) which contained a number of Russian language artifacts that were military in nature. Initial research identified that the filename suggested a relationship to the D-30 122mm towed howitzer, an artillery weapon first manufactured in the Soviet Union in the 1960s but still in use today. In-depth reverse engineering revealed the APK contained an Android variant of X-Agent, the command and control protocol was closely linked to observed Windows variants of X-Agent, and utilized a cryptographic algorithm called RC4 with a very similar 50 byte base key.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb18"
+      },
+      "text": "crowdstrike.com/blog/danger-close-fancy-bear-tracking-ukrainian-field-artillery-units/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Crowdstrike_DangerClose-FancyBear-Tracking-Ukrainian-FieldArtilleryUnits(12-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb19"
+      },
+      "text": "ose: Fancy Bear Tracking of Ukrainian Field Artillery Units crowdstrike.com/blog/danger-close-fancy-bear-tracking-ukrainian-field-artillery-units/ Update – As of March 2017, the es",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_16",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_X-Agent-Android",
+        "ent_malware_RC4",
+        "ent_malware_X-Agent",
+        "ent_file__-_30.apk"
+      ],
+      "rule_relation_count": 3,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_X-Agent-Android",
+        "ent_malware_RC4",
+        "ent_malware_X-Agent"
+      ],
+      "rule_relation_count": 3,
+      "llm_relation_count": 3
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_X-Agent-Android",
+        "ent_malware_X-Agent"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_X-Agent-Android",
+        "ent_malware_X-Agent"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_X-Agent-Android",
+        "ent_malware_X-Agent"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Russian_Military_Intelligence",
+        "ent_threatactor_GRU"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_X-Agent-Android",
+        "ent_malware_X-Agent"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    }
+  ]
+}

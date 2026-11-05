@@ -1,0 +1,2752 @@
+{
+  "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+  "title": "Chafer used Remexi malware to spy on Iran-based foreign diplomatic entities",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019).pdf",
+    "file_path": "/root/APTtext/Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 14145,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Chafer_APT_group",
+      "type": "ThreatActor",
+      "name": "Chafer APT group",
+      "normalized_name": "Chafer APT group",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Remexi",
+      "type": "Malware",
+      "name": "Remexi",
+      "normalized_name": "Remexi",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_13",
+        "ev_44",
+        "ev_9"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "family": "Remexi",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [
+        "ev_11",
+        "ev_13",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Chafer",
+      "type": "Tool",
+      "name": "Chafer",
+      "normalized_name": "Chafer",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2",
+        "ev_44",
+        "ev_46",
+        "ev_9"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_46",
+        "ev_9",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "tool_name": "Chafer",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Expand",
+      "type": "Tool",
+      "name": "Expand",
+      "normalized_name": "Expand",
+      "aliases": [
+        "expand.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_expand.exe",
+      "tool_name": "Expand",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_expand.exe",
+      "type": "File",
+      "name": "expand.exe",
+      "normalized_name": "expand.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "expand.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_expand.exe",
+      "type": "Tool",
+      "name": "expand.exe",
+      "normalized_name": "expand.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_31",
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Expand"
+    },
+    {
+      "id": "ent_tool_Extract",
+      "type": "Tool",
+      "name": "Extract",
+      "normalized_name": "Extract",
+      "aliases": [
+        "extract.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_extract.exe",
+      "tool_name": "Extract",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ipv4_108.61.189.174",
+      "type": "IPv4",
+      "name": "108.61.189.174",
+      "normalized_name": "108.61.189.174",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_59",
+        "ev_76"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "108.61.189.174",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_76"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_108.61.189.174",
+      "type": "URL",
+      "name": "http://108.61.189.174",
+      "normalized_name": "http://108.61.189.174",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_59",
+        "ev_76"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "http://108.61.189.174",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_76"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ioc_sha256_a77f9e441415dbc8a20ad66d4d00ae606faab370ffaee5604e93ed484983d3ff",
+      "type": "SHA256",
+      "name": "a77f9e441415dbc8a20ad66d4d00ae606faab370ffaee5604e93ed484983d3ff",
+      "normalized_name": "a77f9e441415dbc8a20ad66d4d00ae606faab370ffaee5604e93ed484983d3ff",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "a77f9e441415dbc8a20ad66d4d00ae606faab370ffaee5604e93ed484983d3ff",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b1fa803c19aa9f193b67232c9893ea57574a2055791b3de9f836411ce000ce31",
+      "type": "SHA256",
+      "name": "b1fa803c19aa9f193b67232c9893ea57574a2055791b3de9f836411ce000ce31",
+      "normalized_name": "b1fa803c19aa9f193b67232c9893ea57574a2055791b3de9f836411ce000ce31",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "b1fa803c19aa9f193b67232c9893ea57574a2055791b3de9f836411ce000ce31",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_028515d12e9d59d272a2538045d1f636",
+      "type": "MD5",
+      "name": "028515d12e9d59d272a2538045d1f636",
+      "normalized_name": "028515d12e9d59d272a2538045d1f636",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "028515d12e9d59d272a2538045d1f636",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_03055149340b7a1fd218006c98b30482",
+      "type": "MD5",
+      "name": "03055149340b7a1fd218006c98b30482",
+      "normalized_name": "03055149340b7a1fd218006c98b30482",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "03055149340b7a1fd218006c98b30482",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_12477223678e4a41020e66faebd3dd95",
+      "type": "MD5",
+      "name": "12477223678e4a41020e66faebd3dd95",
+      "normalized_name": "12477223678e4a41020e66faebd3dd95",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "12477223678e4a41020e66faebd3dd95",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1FF40E79D673461CD33BD8B68F8BB5B8",
+      "type": "MD5",
+      "name": "1FF40E79D673461CD33BD8B68F8BB5B8",
+      "normalized_name": "1FF40E79D673461CD33BD8B68F8BB5B8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70",
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "1FF40E79D673461CD33BD8B68F8BB5B8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_25469ddaeff0dd3edb0f39bbe1dcdc46",
+      "type": "MD5",
+      "name": "25469ddaeff0dd3edb0f39bbe1dcdc46",
+      "normalized_name": "25469ddaeff0dd3edb0f39bbe1dcdc46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "25469ddaeff0dd3edb0f39bbe1dcdc46",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_41b2339950d50cf678c0e5b34e68f537",
+      "type": "MD5",
+      "name": "41b2339950d50cf678c0e5b34e68f537",
+      "normalized_name": "41b2339950d50cf678c0e5b34e68f537",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "41b2339950d50cf678c0e5b34e68f537",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_460211f1c19f8b213ffaafcdda2a7295",
+      "type": "MD5",
+      "name": "460211f1c19f8b213ffaafcdda2a7295",
+      "normalized_name": "460211f1c19f8b213ffaafcdda2a7295",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "460211f1c19f8b213ffaafcdda2a7295",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4bf178f778255b6e72a317c2eb8f4103",
+      "type": "MD5",
+      "name": "4bf178f778255b6e72a317c2eb8f4103",
+      "normalized_name": "4bf178f778255b6e72a317c2eb8f4103",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "4bf178f778255b6e72a317c2eb8f4103",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_53e035273164f24c200262d61fa374ca",
+      "type": "MD5",
+      "name": "53e035273164f24c200262d61fa374ca",
+      "normalized_name": "53e035273164f24c200262d61fa374ca",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "53e035273164f24c200262d61fa374ca",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7d1efce9c06a310627f47e7d70543aaf",
+      "type": "MD5",
+      "name": "7d1efce9c06a310627f47e7d70543aaf",
+      "normalized_name": "7d1efce9c06a310627f47e7d70543aaf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "7d1efce9c06a310627f47e7d70543aaf",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9f313e8ef91ac899a27575bc5af64051",
+      "type": "MD5",
+      "name": "9f313e8ef91ac899a27575bc5af64051",
+      "normalized_name": "9f313e8ef91ac899a27575bc5af64051",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "9f313e8ef91ac899a27575bc5af64051",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_aa6246dc04e9089e366cc57a447fc3a4",
+      "type": "MD5",
+      "name": "aa6246dc04e9089e366cc57a447fc3a4",
+      "normalized_name": "aa6246dc04e9089e366cc57a447fc3a4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "aa6246dc04e9089e366cc57a447fc3a4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c6721344af76403e9a7d816502dca1c8",
+      "type": "MD5",
+      "name": "c6721344af76403e9a7d816502dca1c8",
+      "normalized_name": "c6721344af76403e9a7d816502dca1c8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "c6721344af76403e9a7d816502dca1c8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c981273c32b581de824e1fd66a19a281",
+      "type": "MD5",
+      "name": "c981273c32b581de824e1fd66a19a281",
+      "normalized_name": "c981273c32b581de824e1fd66a19a281",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63",
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "c981273c32b581de824e1fd66a19a281",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d3a2b41b1cd953d254c0fc88071e5027",
+      "type": "MD5",
+      "name": "d3a2b41b1cd953d254c0fc88071e5027",
+      "normalized_name": "d3a2b41b1cd953d254c0fc88071e5027",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "d3a2b41b1cd953d254c0fc88071e5027",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_dcb0ea3a540205ad11f32b67030c1e5a",
+      "type": "MD5",
+      "name": "dcb0ea3a540205ad11f32b67030c1e5a",
+      "normalized_name": "dcb0ea3a540205ad11f32b67030c1e5a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "dcb0ea3a540205ad11f32b67030c1e5a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ecae141bb068131108c1cd826c82d88b",
+      "type": "MD5",
+      "name": "ecae141bb068131108c1cd826c82d88b",
+      "normalized_name": "ecae141bb068131108c1cd826c82d88b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "value": "ecae141bb068131108c1cd826c82d88b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_bitsadmin.exe",
+      "type": "File",
+      "name": "bitsadmin.exe",
+      "normalized_name": "bitsadmin.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_4",
+        "ev_49",
+        "ev_72"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "bitsadmin.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_49",
+        "ev_72",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BITS",
+        "HTTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_19",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BITS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_events.exe",
+      "type": "File",
+      "name": "events.exe",
+      "normalized_name": "events.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_36",
+        "ev_53",
+        "ev_61",
+        "ev_71"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "events.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_53",
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "I386"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_extract.exe",
+      "type": "File",
+      "name": "extract.exe",
+      "normalized_name": "extract.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "extract.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_schtasks.exe",
+      "type": "File",
+      "name": "schtasks.exe",
+      "normalized_name": "schtasks.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "schtasks.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Splitter.exe",
+      "type": "File",
+      "name": "Splitter.exe",
+      "normalized_name": "Splitter.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_68",
+        "ev_75"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "Splitter.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_68",
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_taskkill.exe",
+      "type": "File",
+      "name": "taskkill.exe",
+      "normalized_name": "taskkill.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15",
+        "ev_52"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "taskkill.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_upFile.txt",
+      "type": "File",
+      "name": "upFile.txt",
+      "normalized_name": "upFile.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "upFile.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_upLog.txt",
+      "type": "File",
+      "name": "upLog.txt",
+      "normalized_name": "upLog.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "upLog.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_upMSLog.txt",
+      "type": "File",
+      "name": "upMSLog.txt",
+      "normalized_name": "upMSLog.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "upMSLog.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_upSCRLog.txt",
+      "type": "File",
+      "name": "upSCRLog.txt",
+      "normalized_name": "upSCRLog.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "upSCRLog.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_upSpecial.txt",
+      "type": "File",
+      "name": "upSpecial.txt",
+      "normalized_name": "upSpecial.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "upSpecial.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wmic.exe",
+      "type": "File",
+      "name": "wmic.exe",
+      "normalized_name": "wmic.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_19",
+        "ev_56"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "wmic.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BITS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_XPTask.vbs",
+      "type": "File",
+      "name": "XPTask.vbs",
+      "normalized_name": "XPTask.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ],
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "file_name": "XPTask.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Config.ini",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "File",
+      "name": "Config.ini",
+      "normalized_name": "Config.ini",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "Config.ini",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_log.txt",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "File",
+      "name": "log.txt",
+      "normalized_name": "log.txt",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "log.txt",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_tool_for",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "Tool",
+      "name": "for",
+      "normalized_name": "for",
+      "aliases": [],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "tool_name": "for",
+      "file_role": "task_artifact"
+    },
+    {
+      "id": "ent_tool_.xml",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "Tool",
+      "name": ".xml",
+      "normalized_name": ".xml",
+      "aliases": [],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "tool_name": ".xml",
+      "file_role": "task_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "alias_of",
+      "head_id": "ent_tool_expand.exe",
+      "tail_id": "ent_tool_Expand",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "creates_task",
+      "head_id": "ent_file_events.exe",
+      "tail_id": "ent_tool_.xml",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_17",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "creates_task",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "task_create",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "creates_task",
+      "head_id": "ent_file_events.exe",
+      "tail_id": "ent_tool_for",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "creates_task",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "task_create",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Remexi",
+      "tail_id": "ent_file_Splitter.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "executes",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_wmic.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "primary_evidence_id": "ev_19",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "executes",
+      "head_id": "ent_file_events.exe",
+      "tail_id": "ent_file_XPTask.vbs",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "executes",
+      "head_id": "ent_file_extract.exe",
+      "tail_id": "ent_file_bitsadmin.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_bitsadmin.exe",
+      "tail_id": "ent_malware_Remexi",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_33",
+        "ev_51"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_wmic.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "primary_evidence_id": "ev_19",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_malware_Remexi",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "primary_evidence_id": "ev_19",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_events.exe",
+      "tail_id": "ent_file_XPTask.vbs",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_events.exe",
+      "tail_id": "ent_malware_Remexi",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_16",
+        "ev_36",
+        "ev_47",
+        "ev_53",
+        "ev_71"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_extract.exe",
+      "tail_id": "ent_file_bitsadmin.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "loads",
+      "head_id": "ent_file_wmic.exe",
+      "tail_id": "ent_malware_Remexi",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "primary_evidence_id": "ev_56",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Chafer_APT_group",
+      "tail_id": "ent_malware_Remexi",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_9",
+        "ev_8",
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_9",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_Chafer_APT_group",
+      "tail_id": "ent_tool_Chafer",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_9",
+        "ev_8",
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_9",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "type": "writes_output",
+      "head_id": "ent_malware_Remexi",
+      "tail_id": "ent_file_Config.ini",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "write_output",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "downloads_payload",
+      "summary": "Remexi downloads_payload Splitter.exe",
+      "evidence_ids": [
+        "ev_35"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "creates_task",
+      "summary": "events.exe creates_task .xml",
+      "evidence_ids": [
+        "ev_17",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "creates_task",
+      "summary": "events.exe creates_task for",
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "cmd.exe executes wmic.exe",
+      "evidence_ids": [
+        "ev_19"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "events.exe executes XPTask.vbs",
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "extract.exe executes bitsadmin.exe",
+      "evidence_ids": [
+        "ev_14"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "bitsadmin.exe loads Remexi",
+      "evidence_ids": [
+        "ev_33",
+        "ev_51"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "cmd.exe loads wmic.exe",
+      "evidence_ids": [
+        "ev_19"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "cmd.exe loads Remexi",
+      "evidence_ids": [
+        "ev_19"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "events.exe loads XPTask.vbs",
+      "evidence_ids": [
+        "ev_16",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "events.exe loads Remexi",
+      "evidence_ids": [
+        "ev_16",
+        "ev_36",
+        "ev_47"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "extract.exe loads bitsadmin.exe",
+      "evidence_ids": [
+        "ev_14"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "wmic.exe loads Remexi",
+      "evidence_ids": [
+        "ev_56"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "uses_malware",
+      "summary": "Chafer APT group uses_malware Remexi",
+      "evidence_ids": [
+        "ev_9",
+        "ev_8",
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_015",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "uses_tool",
+      "summary": "Chafer APT group uses_tool Chafer",
+      "evidence_ids": [
+        "ev_9",
+        "ev_8",
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_016",
+      "stage": "collection",
+      "relation_id": "rel_0017",
+      "type": "writes_output",
+      "summary": "Remexi writes_output Config.ini",
+      "evidence_ids": [
+        "ev_22"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s2"
+      },
+      "text": "This malware has previously been associated with an APT actor that Symantec calls Chafer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s4"
+      },
+      "text": "The attackers rely heavily on Microsoft technologies on both the client and server sides: the Trojan uses standard Windows utilities like Microsoft Background Intelligent Transfer Service (BITS) bitsadmin.exe to receive commands and exfiltrate data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s8"
+      },
+      "text": "For more information please contact: intelreports@kaspersky.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "securelist.com /chafer-used-remexi-malware/89538 The main tool used in this campaign is an updated version of the Remexi malware, publicly reported by Symantec back in 2015.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Proliferation So far, our telemetry hasn’t provided any concrete evidence that shows us how the Remexi malware spread.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "However, we think it’s worth mentioning that for one victim we found a correlation between the execution of Remexi´s main module and the execution of an AutoIt script compiled as PE, which we believe may have dropped the malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Malware features Remexi boasts features that allow it to gather keystrokes, take screenshots of windows of interest (as defined in its configuration), steal credentials, logons and the browser history, and execute remote commands.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Utility Usage extract.exe Deploys modules from the .cab file into the working Event Cache directory bitsadmin.exe Fetches files from the C2 server to parse and execute commands.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "Send exfiltrated data taskkill.exe Ends working cycle of modules",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "In the case of old Windows versions like XP, main module events.exe runs an edited XPTask.vbs Microsoft sample script to create a weekly scheduled task for itself.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "For newer operating systems, events.exe creates task.xml as follows:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Command Description search Searches for corresponding files search&upload Encrypts and adds the corresponding files to the upload directory with the provided name uploadfile Encrypts and adds the specified file to the upload directory with the provided name uploadfolder Encrypts and adds the mentioned directory to the upload directory with the provided name shellexecute Silently executes received command with cmd.exe wmic Silently executes received command with wmic.exe (for WMI commands) sendIEPass Encrypts and adds all gathered browser data into files for upload to C2 uninstall Removes files, directory and BITS tasks",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "Configuration Config.ini is the file where the malware stores its encrypted configuration data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "CaptureSites VPN*0,0 Login*0,0 mail*0,0 Security*0,0 Window titles of interest for screenshots, using left mouse button and Enter keypress hook important upLog.txt upSCRLog.txt upSpecial.txt upFile.txt upMSLog.txt",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "Servers http://108.61.189.174 Control server HTTP URL ZipPass KtJvOXulgibfiHk Password for uploaded zip archives",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "Size 68 608 After checking that the malware is not already installed, it unpacks HCK.cab using the Microsoft standard utility expand.exe with the following arguments:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "ID Thread description 1 Gets commands from C2 and saves them to a file and system registry using the bitsadmin.exe utility 2 Decrypts command from registry using RC4 with a hardcoded key, and executes it",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "3 Transfers screenshots from the clipboard to \\Cache005 subdirectory and Unicode text from clipboard to log.txt, XOR-ed with the “salamati” key (“health” in Farsi) 4 Transfers screenshots to \\Cache005 subdirectory with captureScreenTimeOut and captureScreenTimeOut frequencies 5 Checks network connection, encrypts and sends gathered logs 6 Unhooks mouse and keyboard, removes bitsadmin task 7 Checks if malware’s working directory size already exceeds its threshold 8 Gathers victim´s credentials, visited website cache, decrypted Chrome login data, as well as Firefox databases with cookies, keys, signons and downloads",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "The malware uses the following command to receive data from its C2: 1 2 Activity logging module (Splitter.exe) This module is called from the main thread to obtain screenshots of windows whose titles are specified in the configuration CaptureSites field, bitmaps and text from clipboard, etc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "Compiled 2017.08.06 11:32:36 (GMT), 2.22 Type I386 Windows Console EXE Size 101 888 Instead of implementing this auxiliary module in the form of a dynamic linked library with its corresponding exported functions, the developers decided to use a standalone executable started by events.exe with the following parameters:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s7"
+      },
+      "text": "Attribution The Remexi malware has been associated with an APT actor called Chafer by Symantec.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s9"
+      },
+      "text": "Conclusions Activity of the Chafer APT group has been observed since at least 2015, but based on things like compilation timestamps and C&C registration, it’s possible they have been active for even longer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Events.exe persistence records in Windows system registry keys HKLM\\Software\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon\\Userinit HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\Microsoft Activity Manager",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "The malware can exfiltrate keystrokes, screenshots, browser-related data like cookies and history, decrypted when possible. The attackers rely heavily on Microsoft technologies on both the client and server sides: the Trojan uses standard Windows utilities like Microsoft Background Intelligent Transfer Service (BITS) bitsadmin.exe to receive commands and exfiltrate data. Its C2 is based on IIS using .asp technology to handle the victims’ HTTP requests.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "extract.exe Deploys modules from the .cab file into the working Event Cache directory",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "bitsadmin.exe Fetches files from the C2 server to parse and execute commands. Send exfiltrated data",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "taskkill.exe Ends working cycle of modules",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "Persistence modules are based on scheduled tasks and system registry. Mechanisms vary for different OS versions. In the case of old Windows versions like XP, main module events.exe runs an edited XPTask.vbs Microsoft sample script to create a weekly scheduled task for itself. For newer operating systems, events.exe creates task.xml as follows:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "1 schtasks.exe /create /TN \\\"Events\\\\CacheTask_<user_name_here>\" /XML \\\" <event_cache_dir_path>t /F\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "shellexecute Silently executes received command with cmd.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "wmic Silently executes received command with wmic.exe (for WMI commands)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "Servers http://108.61.189.174 Control server HTTP URL",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "Main module (events.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "SHA256 b1fa803c19aa9f193b67232c9893ea57574a2055791b3de9f836411ce000ce31",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "MD5 c981273c32b581de824e1fd66a19a281",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "After checking that the malware is not already installed, it unpacks HCK.cab using the Microsoft standard utility expand.exe with the following arguments:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "1 expand.exe -r \\\"<full path to HCK.cab>\\\" -f:* \\\"<event_cache_dir_path>\\\\\\\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Activity logging module (Splitter.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "SHA256 a77f9e441415dbc8a20ad66d4d00ae606faab370ffaee5604e93ed484983d3ff",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "MD5 1ff40e79d673461cd33bd8b68f8bb5b8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "Instead of implementing this auxiliary module in the form of a dynamic linked library with its corresponding exported functions, the developers decided to use a standalone executable started by events.exe with the following parameters:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "Exfiltration is done through the bitsadmin.exe utility. The BITS mechanism has existed since Windows XP up to the current Windows 10 versions and was developed to create download/upload jobs, mostly to update the OS itself. The following is the command used to exfiltrate data from the victim to the C2:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "events.exe 028515d12e9d59d272a2538045d1f636 03055149340b7a1fd218006c98b30482 25469ddaeff0dd3edb0f39bbe1dcdc46 41b2339950d50cf678c0e5b34e68f537 4bf178f778255b6e72a317c2eb8f4103 7d1efce9c06a310627f47e7d70543aaf 9f313e8ef91ac899a27575bc5af64051 aa6246dc04e9089e366cc57a447fc3a4 c981273c32b581de824e1fd66a19a281 dcb0ea3a540205ad11f32b67030c1e5a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "splitter.exe c6721344af76403e9a7d816502dca1c8 d3a2b41b1cd953d254c0fc88071e5027 1FF40E79D673461CD33BD8B68F8BB5B8 ecae141bb068131108c1cd826c82d88b 12477223678e4a41020e66faebd3dd95 460211f1c19f8b213ffaafcdda2a7295 53e035273164f24c200262d61fa374ca",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_Chafer-Remexi-Iran-diplomatic(01-30-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "108.61.189.174",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_14",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_bitsadmin.exe",
+        "ent_file_extract.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Remexi",
+        "ent_tool_Chafer",
+        "ent_domain_securelist.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_Remexi",
+        "ent_tool_Chafer"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_Splitter.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_upFile.txt",
+        "ent_file_upLog.txt",
+        "ent_file_upMSLog.txt",
+        "ent_file_upSCRLog.txt",
+        "ent_file_upSpecial.txt",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_tool_Expand",
+        "ent_file_expand.exe",
+        "ent_tool_expand.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_tool_Expand",
+        "ent_file_expand.exe",
+        "ent_tool_expand.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_wmic.exe",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Remexi",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_Chafer_APT_group",
+        "ent_tool_Chafer",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_tool_Expand",
+        "ent_file_expand.exe",
+        "ent_tool_expand.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_events.exe",
+        "ent_file_XPTask.vbs",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_events.exe",
+        "ent_file_XPTask.vbs",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Remexi",
+        "ent_tool_Chafer"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_events.exe",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_url_http_108.61.189.174",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_wmic.exe",
+        "ent_tool_for"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+  "title": "ViperRAT: The mobile APT targeting the Israeli Defense Force that should be on your radar",
+  "source": null,
+  "published_date": "2017/02/16",
+  "report_metadata": {
+    "file_name": "Lookout_ViperRAT-IDF(02-16-2017).pdf",
+    "file_path": "/root/APTtext/Lookout_ViperRAT-IDF(02-16-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 7332,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [],
+  "observations": [
+    {
+      "id": "ent_threatactor_Pegasus",
+      "type": "ThreatActor",
+      "name": "Pegasus",
+      "normalized_name": "Pegasus",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Hamas",
+      "type": "Tool",
+      "name": "Hamas",
+      "normalized_name": "Hamas",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_21",
+        "ev_24"
+      ],
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Hamas",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_ViperRAT",
+      "type": "Campaign",
+      "name": "ViperRAT",
+      "normalized_name": "ViperRAT",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_10",
+        "ev_12",
+        "ev_2",
+        "ev_4"
+      ],
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_10",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_victim_Israeli_Defense_Force",
+      "type": "Victim",
+      "name": "Israeli Defense Force",
+      "normalized_name": "Israeli Defense Force",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "ViperRAT is an active, advanced persistent threat (APT) that sophisticated threat actors are actively using to target and spy on the Israeli Defense Force.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The threat actors behind the ViperRAT surveillanceware collect a significant amount of sensitive information off of the device, and seem most interested in exfiltrating images and audio content.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Lookout has determined ViperRAT is a very sophisticated threat that adds to the mounting evidence that targeted mobile attacks against governments and business is a real problem.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "We also uncovered ViperRAT in a billiards game, an Israeli Love Songs player, and a Move To iOS app.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "ViperRAT takes this one step further by using its dropper app to identify an appropriate second stage ‘update’ that may go unnoticed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "On attribution Media reporting on ViperRAT thus far attributes this surveillanceware tool to Hamas.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "Hamas is not widely known for having a sophisticated mobile capability, which makes it unlikely they are directly responsible for ViperRAT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Lookout_ViperRAT-IDF(02-16-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "However, the existence of threats like ViperRAT and Pegasus, the most sophisticated piece of mobile surveillanceware we’ve seen to date , are evidence that attackers are targeting mobile devices.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ]
+}

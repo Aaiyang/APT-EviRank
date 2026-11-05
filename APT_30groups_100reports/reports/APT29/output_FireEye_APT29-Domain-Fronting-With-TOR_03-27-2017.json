@@ -1,0 +1,876 @@
+{
+  "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+  "title": "APT29 Domain Fronting With TOR",
+  "source": "Mandiant",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017).pdf",
+    "file_path": "/root/APTtext/FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 9515,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT29",
+      "type": "ThreatActor",
+      "name": "APT29",
+      "normalized_name": "APT29",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_16",
+        "ev_3",
+        "ev_40"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_40",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_meek-reflect.appspot.com",
+      "type": "Domain",
+      "name": "meek-reflect.appspot.com",
+      "normalized_name": "meek-reflect.appspot.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15",
+        "ev_25",
+        "ev_9"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "value": "meek-reflect.appspot.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_https_meek-reflect.appspot.com",
+      "type": "URL",
+      "name": "https://meek-reflect.appspot.com",
+      "normalized_name": "https://meek-reflect.appspot.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15",
+        "ev_25",
+        "ev_9"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "value": "https://meek-reflect.appspot.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+      "type": "SHA256",
+      "name": "2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+      "normalized_name": "2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "value": "2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+      "type": "SHA256",
+      "name": "fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+      "normalized_name": "fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "value": "fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_googleService.exe",
+      "type": "File",
+      "name": "googleService.exe",
+      "normalized_name": "googleService.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_24",
+        "ev_43",
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "file_name": "googleService.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_56",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "SHA256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_GoogleUpdate.exe",
+      "type": "File",
+      "name": "GoogleUpdate.exe",
+      "normalized_name": "GoogleUpdate.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_19",
+        "ev_44",
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "file_name": "GoogleUpdate.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_44",
+        "ev_58",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_install.bat",
+      "type": "File",
+      "name": "install.bat",
+      "normalized_name": "install.bat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_30"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "file_name": "install.bat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_sethc.exe",
+      "type": "File",
+      "name": "sethc.exe",
+      "normalized_name": "sethc.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_36",
+        "ev_62"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "file_name": "sethc.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_start.ps1",
+      "type": "File",
+      "name": "start.ps1",
+      "normalized_name": "start.ps1",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_30",
+        "ev_33",
+        "ev_38"
+      ],
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "file_name": "start.ps1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_30",
+        "ev_33",
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "cmd.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "type": "executes",
+      "head_id": "ent_file_sethc.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_36",
+        "ev_62"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "type": "executes",
+      "head_id": "ent_file_start.ps1",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_21",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "type": "loads",
+      "head_id": "ent_file_sethc.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_36",
+        "ev_62"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "type": "loads",
+      "head_id": "ent_file_start.ps1",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_21",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "sethc.exe executes cmd.exe",
+      "evidence_ids": [
+        "ev_36",
+        "ev_62"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "start.ps1 executes install.bat",
+      "evidence_ids": [
+        "ev_21",
+        "ev_30"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "sethc.exe loads cmd.exe",
+      "evidence_ids": [
+        "ev_36",
+        "ev_62"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "start.ps1 loads install.bat",
+      "evidence_ids": [
+        "ev_21",
+        "ev_30"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "APT29 has used The Onion Router (TOR) and the TOR domain fronting plugin meek to create a hidden, encrypted network tunnel that appeared to connect to Google services over TLS.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "We first discussed APT29’s use of these techniques as part of our “No Easy Breach” talk at DerbyCon 6.0.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "First, it encodes TOR traffic into HTTP specifying the host name of the reflection server (for example, the default server meek-reflect.appspot.com).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s15"
+      },
+      "text": "Note: Google suspended the reflection server meek-reflect.appspot.com, but other servers, in the Google cloud or other supported CDNs, can fulfill the same function.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Backdoor Overview Mandiant discovered that APT29 enabled a TOR hidden service that forwarded traffic from the TOR client to local ports 139, 445 and 3389 (NetBIOS, SMB and TS, respectively).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "C:\\Program Files(x86)\\Google\\googleService.exe C:\\Program Files(x86)\\Google\\GoogleUpdate.exe C:\\Program Files(x86)\\Google\\core",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "C:\\Program Files(x86)\\Google\\state C:\\Program Files(x86)\\Google\\start.ps1 C:\\Program Files(x86)\\Google\\install.bat The file googleService.exe is the primary TOR executable, responsible for establishing and maintaining encrypted proxy connections.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "Filename SHA256 The file C:\\Program Files (x86)\\Google\\core contains configuration information for the TOR service googleService.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "Communicate on ports 1, 80 and 443 Bridge traffic using the meek plugin to https://meek-reflect.appspot.com and obfuscate HTTPS and DNS requests to appear destined for www.google.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "The attackers used the scripts start.ps1 and install.bat to install the TOR service.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Installation and Persistence The attacker executed the PowerShell script C:\\Program Files(x86)\\Google\\start.ps1 to install the TOR services and implement the “Sticky Keys” exploit.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "By replacing the “Sticky Keys” binary, C:\\Windows\\System32\\sethc.exe, with the Windows Command Processor cmd.exe, the attackers then accessed a privileged Windows console session without authenticating to the system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "Pressing the shift key five times activates “Sticky Keys” and executes sethc.exe, which, when replaced with cmd.exe, opens a System-level command shell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s9"
+      },
+      "text": "The installation script start.ps1 created a Windows service named Google Update to maintain persistence after a system reboot.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Conclusion APT29 adopted domain fronting long before these techniques were widely known.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "C:\\Program Files(x86)\\Google\\googleService.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "C:\\Program Files(x86)\\Google\\GoogleUpdate.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "The file googleService.exe is the primary TOR executable, responsible for establishing and maintaining encrypted proxy connections. GoogleUpdate.exe is the meek-client plugin, which obfuscates the TOR connection. These files are publicly available and have the following hashes:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "googleService.exe fe744a5b2d07de396a8b3fe97155fc64e350b76d88db36c619cd941279987dc5 GoogleUpdate.exe 2f39dee2ee608e39917cc022d9aae399959e967a2dd70d83b81785a98bd9ed36",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_APT29-Domain-Fronting-With-TOR(03-27-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "By replacing the “Sticky Keys” binary, C:\\Windows\\System32\\sethc.exe, with the Windows Command Processor cmd.exe, the attackers then accessed a privileged Windows console session without authenticating to the system. “Sticky Keys” is an accessibility feature that allows users to activate Windows modifier keys without pressing more than one key at a time. Pressing the shift key five times activates “Sticky Keys” and executes sethc.exe, which, when replaced with cmd.exe, opens a System-level command shell. From this shell, the attackers can execute arbitrary Windows commands, including adding or modifying accounts on the system, even from the logon screen (pre-authentication). By tunneling RDP traffic to the system, the attackers could gain both persistent access and privilege escalation using this simple and well-known exploit.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_62",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_sethc.exe",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_install.bat",
+        "ent_file_start.ps1"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_googleService.exe",
+        "ent_file_install.bat",
+        "ent_file_start.ps1"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_googleService.exe",
+        "ent_file_GoogleUpdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_sethc.exe",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_sethc.exe",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_googleService.exe",
+        "ent_file_GoogleUpdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_googleService.exe",
+        "ent_file_GoogleUpdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

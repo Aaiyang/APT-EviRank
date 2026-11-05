@@ -1,0 +1,2915 @@
+{
+  "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+  "title": "MM Core In-Memory Backdoor Returns as \"BigBoss\" and \"SillyGoose\"",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017).pdf",
+    "file_path": "/root/APTtext/Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 8148,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_BaneChant",
+      "type": "Malware",
+      "name": "BaneChant",
+      "normalized_name": "BaneChant",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_2",
+        "ev_3"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "family": "BaneChant",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BigBoss",
+      "type": "Malware",
+      "name": "BigBoss",
+      "normalized_name": "BigBoss",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "family": "BigBoss",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ChoiceGuard",
+      "type": "Malware",
+      "name": "ChoiceGuard",
+      "normalized_name": "ChoiceGuard",
+      "aliases": [
+        "ChoiceGuard.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_19",
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_12",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "JPEG"
+      ],
+      "derived_from_file_id": "ent_file_ChoiceGuard.dll",
+      "family": "ChoiceGuard",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Gratem",
+      "type": "Malware",
+      "name": "Gratem",
+      "normalized_name": "Gratem",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_32",
+        "ev_33",
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "family": "Gratem",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_33",
+        "ev_35",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_MM_Core",
+      "type": "Malware",
+      "name": "MM Core",
+      "normalized_name": "MM Core",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_14",
+        "ev_15",
+        "ev_9"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "family": "MM Core",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_15",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2015-1641",
+      "type": "CVE",
+      "name": "CVE-2015-1641",
+      "normalized_name": "CVE-2015-1641",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_38"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_ChoiceGuard.dll",
+      "type": "Malware",
+      "name": "ChoiceGuard.dll",
+      "normalized_name": "ChoiceGuard.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_12",
+        "ev_19",
+        "ev_38"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_ChoiceGuard"
+    },
+    {
+      "id": "ent_malware_ChoiceGuard.dll",
+      "type": "Malware",
+      "name": "ChoiceGuard.dll",
+      "normalized_name": "ChoiceGuard.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_19",
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "file_name": "ChoiceGuard.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_12",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "JPEG"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_malware_SillyGoose",
+      "type": "Malware",
+      "name": "SillyGoose",
+      "normalized_name": "SillyGoose",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "family": "SillyGoose",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_adnetwork33.redirectme.net",
+      "type": "Domain",
+      "name": "adnetwork33.redirectme.net",
+      "normalized_name": "adnetwork33.redirectme.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_52"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "adnetwork33.redirectme.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_adrev22.ddns.net",
+      "type": "Domain",
+      "name": "adrev22.ddns.net",
+      "normalized_name": "adrev22.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "adrev22.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_adworks.webhop.me",
+      "type": "Domain",
+      "name": "adworks.webhop.me",
+      "normalized_name": "adworks.webhop.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_54"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "adworks.webhop.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_blogs.forcepoint.com",
+      "type": "Domain",
+      "name": "blogs.forcepoint.com",
+      "normalized_name": "blogs.forcepoint.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "blogs.forcepoint.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_davidjone.net",
+      "type": "Domain",
+      "name": "davidjone.net",
+      "normalized_name": "davidjone.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "davidjone.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hawahawa123.no-ip.org",
+      "type": "Domain",
+      "name": "hawahawa123.no-ip.org",
+      "normalized_name": "hawahawa123.no-ip.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "hawahawa123.no-ip.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ichoose.zapto.org",
+      "type": "Domain",
+      "name": "ichoose.zapto.org",
+      "normalized_name": "ichoose.zapto.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57",
+        "ev_58"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "ichoose.zapto.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mockingbird.no-ip.org",
+      "type": "Domain",
+      "name": "mockingbird.no-ip.org",
+      "normalized_name": "mockingbird.no-ip.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_60"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "mockingbird.no-ip.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_60"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_nayanew1.no-ip.org",
+      "type": "Domain",
+      "name": "nayanew1.no-ip.org",
+      "normalized_name": "nayanew1.no-ip.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61",
+        "ev_62"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "nayanew1.no-ip.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_network-resources.net",
+      "type": "Domain",
+      "name": "network-resources.net",
+      "normalized_name": "network-resources.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "network-resources.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_presspublishing24.net",
+      "type": "Domain",
+      "name": "presspublishing24.net",
+      "normalized_name": "presspublishing24.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_60",
+        "ev_62"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "presspublishing24.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_60",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_waterlily.ddns.net",
+      "type": "Domain",
+      "name": "waterlily.ddns.net",
+      "normalized_name": "waterlily.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "waterlily.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_adnetwork33.redirectme.net_wp-content_themes_booswrap_layers.png",
+      "type": "URL",
+      "name": "http://adnetwork33.redirectme.net/wp-content/themes/booswrap/layers.png",
+      "normalized_name": "http://adnetwork33.redirectme.net/wp-content/themes/booswrap/layers.png",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_52"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://adnetwork33.redirectme.net/wp-content/themes/booswrap/layers.png",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_adrev22.ddns.net_network_superads_logo.dat",
+      "type": "URL",
+      "name": "http://adrev22.ddns.net/network/superads/logo.dat",
+      "normalized_name": "http://adrev22.ddns.net/network/superads/logo.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://adrev22.ddns.net/network/superads/logo.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_adworks.webhop.me_wp-content_themes_bmw_s6.png",
+      "type": "URL",
+      "name": "http://adworks.webhop.me/wp-content/themes/bmw/s6.png",
+      "normalized_name": "http://adworks.webhop.me/wp-content/themes/bmw/s6.png",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_54"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://adworks.webhop.me/wp-content/themes/bmw/s6.png",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_davidjone.net_huan_normaldot.exe",
+      "type": "URL",
+      "name": "http://davidjone.net/huan/normaldot.exe",
+      "normalized_name": "http://davidjone.net/huan/normaldot.exe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://davidjone.net/huan/normaldot.exe",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_davidjone.net_network_superads_logo.dat",
+      "type": "URL",
+      "name": "http://davidjone.net/network/superads/logo.dat",
+      "normalized_name": "http://davidjone.net/network/superads/logo.dat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://davidjone.net/network/superads/logo.dat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_davidjone.net_plugins_xim_logo.jpg",
+      "type": "URL",
+      "name": "http://davidjone.net/plugins/xim/logo.jpg",
+      "normalized_name": "http://davidjone.net/plugins/xim/logo.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://davidjone.net/plugins/xim/logo.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_davidjone.net_plugins_xim_top.jpg",
+      "type": "URL",
+      "name": "http://davidjone.net/plugins/xim/top.jpg",
+      "normalized_name": "http://davidjone.net/plugins/xim/top.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://davidjone.net/plugins/xim/top.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_hawahawa123.no-ip.org_plugins_xim_logo.jpg",
+      "type": "URL",
+      "name": "http://hawahawa123.no-ip.org/plugins/xim/logo.jpg",
+      "normalized_name": "http://hawahawa123.no-ip.org/plugins/xim/logo.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://hawahawa123.no-ip.org/plugins/xim/logo.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_ichoose.zapto.org_plugins_cc_me.jpg",
+      "type": "URL",
+      "name": "http://ichoose.zapto.org/plugins/cc/me.jpg",
+      "normalized_name": "http://ichoose.zapto.org/plugins/cc/me.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57",
+        "ev_58"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://ichoose.zapto.org/plugins/cc/me.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_mockingbird.no-ip.org_plugins_xim_top.jpg",
+      "type": "URL",
+      "name": "http://mockingbird.no-ip.org/plugins/xim/top.jpg",
+      "normalized_name": "http://mockingbird.no-ip.org/plugins/xim/top.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_60"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://mockingbird.no-ip.org/plugins/xim/top.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_60"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_nayanew1.no-ip.org_plugins_xim_top.jpg",
+      "type": "URL",
+      "name": "http://nayanew1.no-ip.org/plugins/xim/top.jpg",
+      "normalized_name": "http://nayanew1.no-ip.org/plugins/xim/top.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61",
+        "ev_62"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://nayanew1.no-ip.org/plugins/xim/top.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_network-resources.net_wp-content_themes_booswrap_layers.png",
+      "type": "URL",
+      "name": "http://network-resources.net/wp-content/themes/booswrap/layers.png",
+      "normalized_name": "http://network-resources.net/wp-content/themes/booswrap/layers.png",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63",
+        "ev_64"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://network-resources.net/wp-content/themes/booswrap/layers.png",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_presspublishing24.net_plugins_cc_me.jpg",
+      "type": "URL",
+      "name": "http://presspublishing24.net/plugins/cc/me.jpg",
+      "normalized_name": "http://presspublishing24.net/plugins/cc/me.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://presspublishing24.net/plugins/cc/me.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_presspublishing24.net_plugins_cc_mik.php",
+      "type": "URL",
+      "name": "http://presspublishing24.net/plugins/cc/mik.php",
+      "normalized_name": "http://presspublishing24.net/plugins/cc/mik.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65",
+        "ev_66",
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://presspublishing24.net/plugins/cc/mik.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_68",
+        "ev_65",
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_presspublishing24.net_plugins_slm_log.php",
+      "type": "URL",
+      "name": "http://presspublishing24.net/plugins/slm/log.php",
+      "normalized_name": "http://presspublishing24.net/plugins/slm/log.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69",
+        "ev_70",
+        "ev_71",
+        "ev_72"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://presspublishing24.net/plugins/slm/log.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_72",
+        "ev_69",
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_presspublishing24.net_plugins_slm_pogo.jpg",
+      "type": "URL",
+      "name": "http://presspublishing24.net/plugins/slm/pogo.jpg",
+      "normalized_name": "http://presspublishing24.net/plugins/slm/pogo.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_67",
+        "ev_71"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://presspublishing24.net/plugins/slm/pogo.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_67",
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_presspublishing24.net_plugins_xim_top.jpg",
+      "type": "URL",
+      "name": "http://presspublishing24.net/plugins/xim/top.jpg",
+      "normalized_name": "http://presspublishing24.net/plugins/xim/top.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_60",
+        "ev_65",
+        "ev_69"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://presspublishing24.net/plugins/xim/top.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_65",
+        "ev_60",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_presspublishing24.net_plugins_xim_trail.php",
+      "type": "URL",
+      "name": "http://presspublishing24.net/plugins/xim/trail.php",
+      "normalized_name": "http://presspublishing24.net/plugins/xim/trail.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_74",
+        "ev_75",
+        "ev_76"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://presspublishing24.net/plugins/xim/trail.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_76",
+        "ev_73",
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_waterlily.ddns.net_plugins_slm_pogo.jpg",
+      "type": "URL",
+      "name": "http://waterlily.ddns.net/plugins/slm/pogo.jpg",
+      "normalized_name": "http://waterlily.ddns.net/plugins/slm/pogo.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77",
+        "ev_78"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "http://waterlily.ddns.net/plugins/slm/pogo.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_78"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_08bfdefef8a1fb1ea6f292b1ed7d709fbbc2c602",
+      "type": "SHA1",
+      "name": "08bfdefef8a1fb1ea6f292b1ed7d709fbbc2c602",
+      "normalized_name": "08bfdefef8a1fb1ea6f292b1ed7d709fbbc2c602",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "08bfdefef8a1fb1ea6f292b1ed7d709fbbc2c602",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_13b25ba2b139b9f45e21697ae00cf1b452eeeff5",
+      "type": "SHA1",
+      "name": "13b25ba2b139b9f45e21697ae00cf1b452eeeff5",
+      "normalized_name": "13b25ba2b139b9f45e21697ae00cf1b452eeeff5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "13b25ba2b139b9f45e21697ae00cf1b452eeeff5",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_188776d098f61fa2c3b482b2ace202caee18b411",
+      "type": "SHA1",
+      "name": "188776d098f61fa2c3b482b2ace202caee18b411",
+      "normalized_name": "188776d098f61fa2c3b482b2ace202caee18b411",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "188776d098f61fa2c3b482b2ace202caee18b411",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1cf86d87140f13bf88ede74654e01853bae2413c",
+      "type": "SHA1",
+      "name": "1cf86d87140f13bf88ede74654e01853bae2413c",
+      "normalized_name": "1cf86d87140f13bf88ede74654e01853bae2413c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "1cf86d87140f13bf88ede74654e01853bae2413c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_21c1904477ceb8d4d26ac9306e844b4ba0af1b43",
+      "type": "SHA1",
+      "name": "21c1904477ceb8d4d26ac9306e844b4ba0af1b43",
+      "normalized_name": "21c1904477ceb8d4d26ac9306e844b4ba0af1b43",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "21c1904477ceb8d4d26ac9306e844b4ba0af1b43",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_3a8b7ce642a5b4d1147de227249ecb6a89cbd2d3",
+      "type": "SHA1",
+      "name": "3a8b7ce642a5b4d1147de227249ecb6a89cbd2d3",
+      "normalized_name": "3a8b7ce642a5b4d1147de227249ecb6a89cbd2d3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "3a8b7ce642a5b4d1147de227249ecb6a89cbd2d3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_415ad0a84fe7ae5b88a68b8c97d2d27de5b3aed2",
+      "type": "SHA1",
+      "name": "415ad0a84fe7ae5b88a68b8c97d2d27de5b3aed2",
+      "normalized_name": "415ad0a84fe7ae5b88a68b8c97d2d27de5b3aed2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "415ad0a84fe7ae5b88a68b8c97d2d27de5b3aed2",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4372bb675827922280e8de87a78bf61a6a3e7e4d",
+      "type": "SHA1",
+      "name": "4372bb675827922280e8de87a78bf61a6a3e7e4d",
+      "normalized_name": "4372bb675827922280e8de87a78bf61a6a3e7e4d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "4372bb675827922280e8de87a78bf61a6a3e7e4d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_5498bb49083289dfc2557a7c205aed7f8b97b2a8",
+      "type": "SHA1",
+      "name": "5498bb49083289dfc2557a7c205aed7f8b97b2a8",
+      "normalized_name": "5498bb49083289dfc2557a7c205aed7f8b97b2a8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "5498bb49083289dfc2557a7c205aed7f8b97b2a8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_673f315388d9c3e47adc280da1ff8b85a0893525",
+      "type": "SHA1",
+      "name": "673f315388d9c3e47adc280da1ff8b85a0893525",
+      "normalized_name": "673f315388d9c3e47adc280da1ff8b85a0893525",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "673f315388d9c3e47adc280da1ff8b85a0893525",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7031f4be6ced5241ae0dd4315d66a261f654dbd6",
+      "type": "SHA1",
+      "name": "7031f4be6ced5241ae0dd4315d66a261f654dbd6",
+      "normalized_name": "7031f4be6ced5241ae0dd4315d66a261f654dbd6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "7031f4be6ced5241ae0dd4315d66a261f654dbd6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_83e7b2d6ea775c8eb1f6cfefb32df754609a8129",
+      "type": "SHA1",
+      "name": "83e7b2d6ea775c8eb1f6cfefb32df754609a8129",
+      "normalized_name": "83e7b2d6ea775c8eb1f6cfefb32df754609a8129",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "83e7b2d6ea775c8eb1f6cfefb32df754609a8129",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ab53485990ac503fb9c440ab469771fac661f3cc",
+      "type": "SHA1",
+      "name": "ab53485990ac503fb9c440ab469771fac661f3cc",
+      "normalized_name": "ab53485990ac503fb9c440ab469771fac661f3cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "ab53485990ac503fb9c440ab469771fac661f3cc",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b8e6f570e02d105df2d78698de12ae80d66c54a2",
+      "type": "SHA1",
+      "name": "b8e6f570e02d105df2d78698de12ae80d66c54a2",
+      "normalized_name": "b8e6f570e02d105df2d78698de12ae80d66c54a2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "b8e6f570e02d105df2d78698de12ae80d66c54a2",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b931d3988eb37491506504990cae3081208e1a66",
+      "type": "SHA1",
+      "name": "b931d3988eb37491506504990cae3081208e1a66",
+      "normalized_name": "b931d3988eb37491506504990cae3081208e1a66",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "b931d3988eb37491506504990cae3081208e1a66",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c58aac5567df7676c2b08e1235cd70daec3023e8",
+      "type": "SHA1",
+      "name": "c58aac5567df7676c2b08e1235cd70daec3023e8",
+      "normalized_name": "c58aac5567df7676c2b08e1235cd70daec3023e8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "c58aac5567df7676c2b08e1235cd70daec3023e8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ce18064f675348dd327569bd50528286929bc37a",
+      "type": "SHA1",
+      "name": "ce18064f675348dd327569bd50528286929bc37a",
+      "normalized_name": "ce18064f675348dd327569bd50528286929bc37a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "ce18064f675348dd327569bd50528286929bc37a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d336b8424a65f5c0b83328aa89089c2e4ddbcf72",
+      "type": "SHA1",
+      "name": "d336b8424a65f5c0b83328aa89089c2e4ddbcf72",
+      "normalized_name": "d336b8424a65f5c0b83328aa89089c2e4ddbcf72",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "d336b8424a65f5c0b83328aa89089c2e4ddbcf72",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e0ed40ec0196543814b00fd0aac7218f23de5ec5",
+      "type": "SHA1",
+      "name": "e0ed40ec0196543814b00fd0aac7218f23de5ec5",
+      "normalized_name": "e0ed40ec0196543814b00fd0aac7218f23de5ec5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "e0ed40ec0196543814b00fd0aac7218f23de5ec5",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e8bfa4ed85aac19ab2e77e2b6dfe77252288d89b",
+      "type": "SHA1",
+      "name": "e8bfa4ed85aac19ab2e77e2b6dfe77252288d89b",
+      "normalized_name": "e8bfa4ed85aac19ab2e77e2b6dfe77252288d89b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "e8bfa4ed85aac19ab2e77e2b6dfe77252288d89b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ef59b4ffc8a92a5a49308ba98cb38949f74774f1",
+      "type": "SHA1",
+      "name": "ef59b4ffc8a92a5a49308ba98cb38949f74774f1",
+      "normalized_name": "ef59b4ffc8a92a5a49308ba98cb38949f74774f1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "ef59b4ffc8a92a5a49308ba98cb38949f74774f1",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_f7372222ec3e56d384e7ca2650eb39c0f420bc88",
+      "type": "SHA1",
+      "name": "f7372222ec3e56d384e7ca2650eb39c0f420bc88",
+      "normalized_name": "f7372222ec3e56d384e7ca2650eb39c0f420bc88",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "f7372222ec3e56d384e7ca2650eb39c0f420bc88",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_f89a81c51e67c0bd3fc738bf927cd7cc95b05ea6",
+      "type": "SHA1",
+      "name": "f89a81c51e67c0bd3fc738bf927cd7cc95b05ea6",
+      "normalized_name": "f89a81c51e67c0bd3fc738bf927cd7cc95b05ea6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "f89a81c51e67c0bd3fc738bf927cd7cc95b05ea6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_f94bada2e3ef2461f9f9b291aac8ffbf81bf46ab",
+      "type": "SHA1",
+      "name": "f94bada2e3ef2461f9f9b291aac8ffbf81bf46ab",
+      "normalized_name": "f94bada2e3ef2461f9f9b291aac8ffbf81bf46ab",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "value": "f94bada2e3ef2461f9f9b291aac8ffbf81bf46ab",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_logo.dat",
+      "type": "File",
+      "name": "logo.dat",
+      "normalized_name": "logo.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "file_name": "logo.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_normaldot.exe",
+      "type": "File",
+      "name": "normaldot.exe",
+      "normalized_name": "normaldot.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "file_name": "normaldot.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_ChoiceGuard.dll",
+      "tail_id": "ent_malware_ChoiceGuard",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12",
+        "ev_19"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_MM_Core",
+      "tail_id": "ent_malware_Gratem",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_32"
+      ],
+      "primary_evidence_id": "ev_32",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "On the other hand, while the volume of related MM Core samples remain low, we noticed that the MM Core downloader shares code, techniques and network infrastructure with a trojan called \"Gratem\", as well as sharing the same authenticode certificate for recent samples."
+      },
+      "head": {
+        "id": "ent_malware_MM_Core",
+        "type": "Malware",
+        "name": "MM Core",
+        "normalized_name": "MM Core",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_1",
+          "ev_14",
+          "ev_15",
+          "ev_9"
+        ],
+        "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+        "family": "MM Core",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_14",
+        "supporting_evidence_ids": [
+          "ev_9",
+          "ev_15",
+          "ev_1"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Gratem",
+        "type": "Malware",
+        "name": "Gratem",
+        "normalized_name": "Gratem",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_32",
+          "ev_33",
+          "ev_34",
+          "ev_35"
+        ],
+        "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+        "family": "Gratem",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_32",
+        "supporting_evidence_ids": [
+          "ev_33",
+          "ev_35",
+          "ev_34"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_BaneChant",
+      "tail_id": "ent_malware_MM_Core",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_MM_Core",
+      "tail_id": "ent_file_normaldot.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_49",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "type": "exploits",
+      "head_id": "ent_malware_ChoiceGuard",
+      "tail_id": "ent_cve_CVE-2015-1641",
+      "head_type": "Malware",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_12",
+        "ev_38"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "type": "exploits",
+      "head_id": "ent_malware_MM_Core",
+      "tail_id": "ent_cve_CVE-2015-1641",
+      "head_type": "Malware",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_10",
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0005",
+      "type": "exploits",
+      "summary": "ChoiceGuard exploits CVE-2015-1641",
+      "evidence_ids": [
+        "ev_12",
+        "ev_38"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "initial_access",
+      "relation_id": "rel_0006",
+      "type": "exploits",
+      "summary": "MM Core exploits CVE-2015-1641",
+      "evidence_ids": [
+        "ev_10",
+        "ev_37"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "BaneChant executes MM Core",
+      "evidence_ids": [
+        "ev_2"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "MM Core executes normaldot.exe",
+      "evidence_ids": [
+        "ev_49"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "blogs.forcepoint.com /security-labs/mm-core-memory-backdoor-returns-bigboss-and-sillygoose In October 2016 Forcepoint Security Labs™ discovered new versions of the MM Core backdoor being used in targeted attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Also known as “BaneChant”, MM Core is a file-less APT which is executed in memory by a downloader component.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "It was first reported in 2013 under the version number “2.0-LNK” where it used the tag “BaneChant” in its command-and-control (C2) network request.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Download and execute file Download and execute file in memory Update itself Uninstall itself Infection Method Previously the MM Core downloader component was downloaded and executed through shellcode by a DOC file exploiting CVE 2012-0158.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s10"
+      },
+      "text": "However, the new DOC exploit we found exploits a more recent CVE-2015-1641 Microsoft Word vulnerability which it uses to extract embedded malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "This document exploits CVE-2015-1641 and executes shellcode which drops a legitimate Microsoft executable along with a trojanised DLL named “ChoiceGuard.dll”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "The DLL downloads and executes the file-less MM Core backdoor in memory, which uses steganography to hide itself inside a JPEG file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Once decrypted and executed in memory, the MM Core backdoor will extract and install an embedded downloader when it is first run and add it to Windows start-up for persistence.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "\"ChoiceGuard.dll\") are signed with a valid authenticode certificate from Russian organisation \"Bor Port\":",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "On the other hand, while the volume of related MM Core samples remain low, we noticed that the MM Core downloader shares code, techniques and network infrastructure with a trojan called \"Gratem\", as well as sharing the same authenticode certificate for recent samples.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s9"
+      },
+      "text": "Gratem is a more active downloader malware family which has been distributed since at least 2014.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "MM Core Unpacked DLL Samples (SHA1) Related Gratem Samples (SHA1) Dropper/Downloader Payload Locations MM Core Payload Locations",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "MM Core C2s Gratem Second Stage Payload Locations",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "Previously the MM Core downloader component was downloaded and executed through shellcode by a DOC file exploiting CVE 2012-0158. However, the new DOC exploit we found exploits a more recent CVE-2015-1641 Microsoft Word vulnerability which it uses to extract embedded malware. The extracted malware is then executed by leveraging a DLL side-loading vulnerability.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "The DOC file we analysed (SHA1 d336b8424a65f5c0b83328aa89089c2e4ddbcf72 ) was named “US pak track ii naval dialogues.doc”. This document exploits CVE-2015-1641 and executes shellcode which drops a legitimate Microsoft executable along with a trojanised DLL named “ChoiceGuard.dll”. The shellcode then executes the Microsoft executable, causing the malicious DLL to automatically be loaded into the file when it is run - hence the term \"side-loading\". The DLL downloads and executes the file-less MM Core backdoor in memory, which uses steganography to hide itself inside a JPEG file. The JPEG contains code to decrypt itself using the Shikata ga nai algorithm.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "Some of the downloader components we found (i.e. \"ChoiceGuard.dll\") are signed with a valid authenticode certificate from Russian organisation \"Bor Port\":",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "f94bada2e3ef2461f9f9b291aac8ffbf81bf46ab ef59b4ffc8a92a5a49308ba98cb38949f74774f1 1cf86d87140f13bf88ede74654e01853bae2413c 415ad0a84fe7ae5b88a68b8c97d2d27de5b3aed2 e8bfa4ed85aac19ab2e77e2b6dfe77252288d89b f94bada2e3ef2461f9f9b291aac8ffbf81bf46ab 83e7b2d6ea775c8eb1f6cfefb32df754609a8129 b931d3988eb37491506504990cae3081208e1a66 7031f4be6ced5241ae0dd4315d66a261f654dbd6 ab53485990ac503fb9c440ab469771fac661f3cc b8e6f570e02d105df2d78698de12ae80d66c54a2 188776d098f61fa2c3b482b2ace202caee18b411 e0ed40ec0196543814b00fd0aac7218f23de5ec5 5498bb49083289dfc2557a7c205aed7f8b97b2a8 ce18064f675348dd327569bd50528286929bc37a 3a8b7ce642a5b4d1147de227249ecb6a89cbd2d3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "21c1904477ceb8d4d26ac9306e844b4ba0af1b43 f89a81c51e67c0bd3fc738bf927cd7cc95b05ea6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "13b25ba2b139b9f45e21697ae00cf1b452eeeff5 c58aac5567df7676c2b08e1235cd70daec3023e8 4372bb675827922280e8de87a78bf61a6a3e7e4d 08bfdefef8a1fb1ea6f292b1ed7d709fbbc2c602",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "673f315388d9c3e47adc280da1ff8b85a0893525 f7372222ec3e56d384e7ca2650eb39c0f420bc88",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r7"
+      },
+      "text": "hxxp://davidjone[.]net/huan/normaldot.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "hxxp://adrev22[.]ddns.net/network/superads/logo.dat hxxp://davidjone[.]net/network/superads/logo.dat",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb51"
+      },
+      "text": "hxxp://adnetwork33.redirectme[.]net/wp-content/themes/booswrap/layers.png",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb52"
+      },
+      "text": "ns/xim/trail.php Gratem Second Stage Payload Locations hxxp://adnetwork33.redirectme[.]net/wp-content/themes/booswrap/layers.png hxxp://network-resources[.]net/wp-content/themes/bo",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb53"
+      },
+      "text": "hxxp://adworks.webhop[.]me/wp-content/themes/bmw/s6.png",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb54"
+      },
+      "text": "-resources[.]net/wp-content/themes/booswrap/layers.png hxxp://adworks.webhop[.]me/wp-content/themes/bmw/s6.png hxxp://adrev22[.]ddns.net/network/superads/logo.dat hxxp://davidjone[",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb55"
+      },
+      "text": "hxxp://hawahawa123.no-ip[.]org/plugins/xim/logo.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb56"
+      },
+      "text": "s/xim/top.jpg hxxp://davidjone[.]net/plugins/xim/top.jpg hxxp://hawahawa123.no-ip[.]org/plugins/xim/logo.jpg hxxp://davidjone[.]net/plugins/xim/logo.jpg MM Core C2s hxxp://presspub",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb57"
+      },
+      "text": "hxxp://ichoose.zapto[.]org/plugins/cc/me.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb58"
+      },
+      "text": "p.jpg hxxp://presspublishing24[.]net/plugins/xim/top.jpg hxxp://ichoose.zapto[.]org/plugins/cc/me.jpg hxxp://presspublishing24[.]net/plugins/cc/me.jpg hxxp://waterlily.ddns[.]net/p",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb59"
+      },
+      "text": "hxxp://mockingbird.no-ip[.]org/plugins/xim/top.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb60"
+      },
+      "text": "one[.]net/huan/normaldot.exe MM Core Payload Locations hxxp://mockingbird.no-ip[.]org/plugins/xim/top.jpg hxxp://presspublishing24[.]net/plugins/xim/top.jpg hxxp://ichoose.zapto[.]",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb61"
+      },
+      "text": "hxxp://nayanew1.no-ip[.]org/plugins/xim/top.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb62"
+      },
+      "text": ".jpg hxxp://presspublishing24[.]net/plugins/slm/pogo.jpg hxxp://nayanew1.no-ip[.]org/plugins/xim/top.jpg hxxp://davidjone[.]net/plugins/xim/top.jpg hxxp://hawahawa123.no-ip[.]org/p",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb63"
+      },
+      "text": "hxxp://network-resources[.]net/wp-content/themes/booswrap/layers.png",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb64"
+      },
+      "text": "work33.redirectme[.]net/wp-content/themes/booswrap/layers.png hxxp://network-resources[.]net/wp-content/themes/booswrap/layers.png hxxp://adworks.webhop[.]me/wp-content/themes/bmw/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb65"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/xim/top.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb66"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/cc/me.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb67"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/slm/pogo.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb68"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/cc/mik.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb69"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/xim/top.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb70"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/cc/me.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb71"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/slm/pogo.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb72"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/cc/mik.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb73"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/xim/top.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb74"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/cc/me.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb75"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/slm/pogo.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb76"
+      },
+      "text": "hxxp://presspublishing24[.]net/plugins/cc/mik.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb77"
+      },
+      "text": "hxxp://waterlily.ddns[.]net/plugins/slm/pogo.jpg",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Forcepoint-MMCore-Fileless-Returns-BigBoss-SillyGoose(01-05-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb78"
+      },
+      "text": "gins/cc/me.jpg hxxp://presspublishing24[.]net/plugins/cc/me.jpg hxxp://waterlily.ddns[.]net/plugins/slm/pogo.jpg hxxp://presspublishing24[.]net/plugins/slm/pogo.jpg hxxp://nayanew1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_38",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ChoiceGuard",
+        "ent_malware_MM_Core",
+        "ent_cve_CVE-2015-1641",
+        "ent_malware_ChoiceGuard.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_MM_Core",
+        "ent_cve_CVE-2015-1641"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ChoiceGuard",
+        "ent_cve_CVE-2015-1641",
+        "ent_malware_ChoiceGuard.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_BigBoss",
+        "ent_malware_MM_Core"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_BigBoss",
+        "ent_malware_MM_Core",
+        "ent_domain_blogs.forcepoint.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_BaneChant",
+        "ent_malware_MM_Core"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Gratem",
+        "ent_malware_MM_Core"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Gratem",
+        "ent_malware_MM_Core"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ChoiceGuard",
+        "ent_malware_ChoiceGuard.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Gratem",
+        "ent_malware_MM_Core"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_ChoiceGuard",
+        "ent_malware_ChoiceGuard.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

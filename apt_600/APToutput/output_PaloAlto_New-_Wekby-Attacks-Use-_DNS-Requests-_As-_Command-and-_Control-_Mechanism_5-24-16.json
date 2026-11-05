@@ -1,0 +1,1965 @@
+{
+  "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+  "title": "New Wekby Attacks Use DNS Requests As Command and Control Mechanism",
+  "source": "Unit 42",
+  "published_date": "May 24, 2016",
+  "report_metadata": {
+    "file_name": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16).pdf",
+    "file_path": "/root/APTtext/PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16).pdf",
+    "source_type": "pdf",
+    "char_length": 12059,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Wekby",
+      "type": "ThreatActor",
+      "name": "Wekby",
+      "normalized_name": "Wekby",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_32",
+        "ev_4"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_32",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_HTTPBrowser",
+      "type": "Malware",
+      "name": "HTTPBrowser",
+      "normalized_name": "HTTPBrowser",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_30",
+        "ev_31",
+        "ev_4"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "family": "HTTPBrowser",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_31",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_pisloader",
+      "type": "Malware",
+      "name": "pisloader",
+      "normalized_name": "pisloader",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_16",
+        "ev_23",
+        "ev_33"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "family": "pisloader",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_16",
+        "ev_1",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Poison_Ivy",
+      "type": "Malware",
+      "name": "Poison Ivy",
+      "normalized_name": "Poison Ivy",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "family": "Poison Ivy",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_C3PRO-RACCOON",
+      "type": "Malware",
+      "name": "C3PRO-RACCOON",
+      "normalized_name": "C3PRO-RACCOON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "family": "C3PRO-RACCOON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_PlugX",
+      "type": "Malware",
+      "name": "PlugX",
+      "normalized_name": "PlugX",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "family": "PlugX",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_blog.anomali.com",
+      "type": "Domain",
+      "name": "blog.anomali.com",
+      "normalized_name": "blog.anomali.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "blog.anomali.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_glb.it-desktop.com",
+      "type": "Domain",
+      "name": "glb.it-desktop.com",
+      "normalized_name": "glb.it-desktop.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_53"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "glb.it-desktop.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_globalprint-us.com",
+      "type": "Domain",
+      "name": "globalprint-us.com",
+      "normalized_name": "globalprint-us.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "globalprint-us.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hi.getgo2.com",
+      "type": "Domain",
+      "name": "hi.getgo2.com",
+      "normalized_name": "hi.getgo2.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "hi.getgo2.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_intranetwabcam.com",
+      "type": "Domain",
+      "name": "intranetwabcam.com",
+      "normalized_name": "intranetwabcam.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "intranetwabcam.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_local.it-desktop.com",
+      "type": "Domain",
+      "name": "local.it-desktop.com",
+      "normalized_name": "local.it-desktop.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "local.it-desktop.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_login.access-mail.com",
+      "type": "Domain",
+      "name": "login.access-mail.com",
+      "normalized_name": "login.access-mail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "login.access-mail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ns1.logitech-usa.com",
+      "type": "Domain",
+      "name": "ns1.logitech-usa.com",
+      "normalized_name": "ns1.logitech-usa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "ns1.logitech-usa.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.secureworks.com",
+      "type": "Domain",
+      "name": "www.secureworks.com",
+      "normalized_name": "www.secureworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "www.secureworks.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.volexity.com",
+      "type": "Domain",
+      "name": "www.volexity.com",
+      "normalized_name": "www.volexity.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_56"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "www.volexity.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_globalprint-us.com_proxy_plugin.exe",
+      "type": "URL",
+      "name": "http://globalprint-us.com/proxy_plugin.exe",
+      "normalized_name": "http://globalprint-us.com/proxy_plugin.exe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "http://globalprint-us.com/proxy_plugin.exe",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_globalprint-us.com_proxy_web_plugin.exe",
+      "type": "URL",
+      "name": "http://globalprint-us.com/proxy_web_plugin.exe",
+      "normalized_name": "http://globalprint-us.com/proxy_web_plugin.exe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "http://globalprint-us.com/proxy_web_plugin.exe",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.volexity.com_blog_p_158",
+      "type": "URL",
+      "name": "http://www.volexity.com/blog/?p=158",
+      "normalized_name": "http://www.volexity.com/blog/?p=158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "http://www.volexity.com/blog/?p=158",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_blog.anomali.com_evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-",
+      "type": "URL",
+      "name": "https://blog.anomali.com/evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-",
+      "normalized_name": "https://blog.anomali.com/evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "https://blog.anomali.com/evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.secureworks.com_research_threat-group-3390-targets-organizations-for-cyberespionage",
+      "type": "URL",
+      "name": "https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage",
+      "normalized_name": "https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.zscaler.com_blogs_research_chinese-cyber-espionage-apt-group-leveraging-recently-",
+      "type": "URL",
+      "name": "https://www.zscaler.com/blogs/research/chinese-cyber-espionage-apt-group-leveraging-recently-",
+      "normalized_name": "https://www.zscaler.com/blogs/research/chinese-cyber-espionage-apt-group-leveraging-recently-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57",
+        "ev_58"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "https://www.zscaler.com/blogs/research/chinese-cyber-espionage-apt-group-leveraging-recently-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www._reeye.com_blog_threat-research_2015_07_demonstrating_hustle.html",
+      "type": "URL",
+      "name": "https://www.ﬁreeye.com/blog/threat-research/2015/07/demonstrating_hustle.html",
+      "normalized_name": "https://www.ﬁreeye.com/blog/threat-research/2015/07/demonstrating_hustle.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "https://www.ﬁreeye.com/blog/threat-research/2015/07/demonstrating_hustle.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_60"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_1b341dab023de64598d80456349db146aafe9b9e2ec24490c7d0ac881cecc094",
+      "type": "SHA256",
+      "name": "1b341dab023de64598d80456349db146aafe9b9e2ec24490c7d0ac881cecc094",
+      "normalized_name": "1b341dab023de64598d80456349db146aafe9b9e2ec24490c7d0ac881cecc094",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "1b341dab023de64598d80456349db146aafe9b9e2ec24490c7d0ac881cecc094",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_456FFFC256422AD667CA023D694494881BAED1496A3067485D56ECC8FEFBFAEB",
+      "type": "SHA256",
+      "name": "456FFFC256422AD667CA023D694494881BAED1496A3067485D56ECC8FEFBFAEB",
+      "normalized_name": "456FFFC256422AD667CA023D694494881BAED1496A3067485D56ECC8FEFBFAEB",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "456FFFC256422AD667CA023D694494881BAED1496A3067485D56ECC8FEFBFAEB",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4d62caef1ca8f4f9aead7823c95228a52852a1145ca6aaa58ad8493e042aed16",
+      "type": "SHA256",
+      "name": "4d62caef1ca8f4f9aead7823c95228a52852a1145ca6aaa58ad8493e042aed16",
+      "normalized_name": "4d62caef1ca8f4f9aead7823c95228a52852a1145ca6aaa58ad8493e042aed16",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "4d62caef1ca8f4f9aead7823c95228a52852a1145ca6aaa58ad8493e042aed16",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6852ba95720af64809995e04f4818517ca1bd650bc42ea86d9adfdb018d6b274",
+      "type": "SHA256",
+      "name": "6852ba95720af64809995e04f4818517ca1bd650bc42ea86d9adfdb018d6b274",
+      "normalized_name": "6852ba95720af64809995e04f4818517ca1bd650bc42ea86d9adfdb018d6b274",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "6852ba95720af64809995e04f4818517ca1bd650bc42ea86d9adfdb018d6b274",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9200f80c08b21ebae065141f0367f9c88f8fed896b0b4af9ec30fc98c606129b",
+      "type": "SHA256",
+      "name": "9200f80c08b21ebae065141f0367f9c88f8fed896b0b4af9ec30fc98c606129b",
+      "normalized_name": "9200f80c08b21ebae065141f0367f9c88f8fed896b0b4af9ec30fc98c606129b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "9200f80c08b21ebae065141f0367f9c88f8fed896b0b4af9ec30fc98c606129b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_930772d6af8f43f62ea78092914fa8d6b03e8e3360dd4678eec1a3dda17206ed",
+      "type": "SHA256",
+      "name": "930772d6af8f43f62ea78092914fa8d6b03e8e3360dd4678eec1a3dda17206ed",
+      "normalized_name": "930772d6af8f43f62ea78092914fa8d6b03e8e3360dd4678eec1a3dda17206ed",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "930772d6af8f43f62ea78092914fa8d6b03e8e3360dd4678eec1a3dda17206ed",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_DA3261C332E72E4C1641CA0DE439AF280E064B224D950817A11922A8078B11F1",
+      "type": "SHA256",
+      "name": "DA3261C332E72E4C1641CA0DE439AF280E064B224D950817A11922A8078B11F1",
+      "normalized_name": "DA3261C332E72E4C1641CA0DE439AF280E064B224D950817A11922A8078B11F1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "DA3261C332E72E4C1641CA0DE439AF280E064B224D950817A11922A8078B11F1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_07B9B62FB3B1C068837C188FEFBD5DE9",
+      "type": "MD5",
+      "name": "07B9B62FB3B1C068837C188FEFBD5DE9",
+      "normalized_name": "07B9B62FB3B1C068837C188FEFBD5DE9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "07B9B62FB3B1C068837C188FEFBD5DE9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_E8D58AA76DD97536AC225949A2767E05",
+      "type": "MD5",
+      "name": "E8D58AA76DD97536AC225949A2767E05",
+      "normalized_name": "E8D58AA76DD97536AC225949A2767E05",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "value": "E8D58AA76DD97536AC225949A2767E05",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_lsm.exe",
+      "type": "File",
+      "name": "lsm.exe",
+      "normalized_name": "lsm.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_40",
+        "ev_41",
+        "ev_42"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "file_name": "lsm.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_42",
+        "ev_16",
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_proxy_plugin.exe",
+      "type": "File",
+      "name": "proxy_plugin.exe",
+      "normalized_name": "proxy_plugin.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "file_name": "proxy_plugin.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_proxy_web_plugin.exe",
+      "type": "File",
+      "name": "proxy_web_plugin.exe",
+      "normalized_name": "proxy_web_plugin.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "file_name": "proxy_web_plugin.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "drops",
+      "head_id": "ent_malware_pisloader",
+      "tail_id": "ent_file_lsm.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_16",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_16"
+      },
+      "head": {
+        "id": "ent_malware_pisloader",
+        "type": "Malware",
+        "name": "pisloader",
+        "normalized_name": "pisloader",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_1",
+          "ev_16",
+          "ev_23",
+          "ev_33"
+        ],
+        "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+        "family": "pisloader",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_33",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_1",
+          "ev_23"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_lsm.exe",
+        "type": "File",
+        "name": "lsm.exe",
+        "normalized_name": "lsm.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_16",
+          "ev_40",
+          "ev_41",
+          "ev_42"
+        ],
+        "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+        "file_name": "lsm.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_41",
+        "supporting_evidence_ids": [
+          "ev_42",
+          "ev_16",
+          "ev_40"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "HKCU"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "executes",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_lsm.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "executes",
+      "head_id": "ent_file_lsm.exe",
+      "tail_id": "ent_malware_pisloader",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_16",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "loads",
+      "head_id": "ent_file_cmd.exe",
+      "tail_id": "ent_file_lsm.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "loads",
+      "head_id": "ent_file_lsm.exe",
+      "tail_id": "ent_malware_pisloader",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_16",
+        "ev_41",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Wekby",
+      "tail_id": "ent_malware_HTTPBrowser",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_4",
+        "ev_3",
+        "ev_5"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "The malware used by the Wekby group has ties to the HTTPBrowser malware family, and uses DNS requests as a command and control mechanism."
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Wekby",
+      "tail_id": "ent_malware_pisloader",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_32",
+        "ev_33",
+        "ev_49",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_32",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "using",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "type": "writes_output",
+      "head_id": "ent_malware_pisloader",
+      "tail_id": "ent_file_lsm.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_16",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0001",
+      "type": "drops",
+      "summary": "pisloader drops lsm.exe",
+      "evidence_ids": [
+        "ev_16",
+        "ev_42"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "cmd.exe executes lsm.exe",
+      "evidence_ids": [
+        "ev_40"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "lsm.exe executes pisloader",
+      "evidence_ids": [
+        "ev_16",
+        "ev_42"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "cmd.exe loads lsm.exe",
+      "evidence_ids": [
+        "ev_40"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "lsm.exe loads pisloader",
+      "evidence_ids": [
+        "ev_16",
+        "ev_41",
+        "ev_42"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "uses_malware",
+      "summary": "Wekby uses_malware HTTPBrowser",
+      "evidence_ids": [
+        "ev_4",
+        "ev_3",
+        "ev_5"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "uses_malware",
+      "summary": "Wekby uses_malware pisloader",
+      "evidence_ids": [
+        "ev_32",
+        "ev_33",
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "collection",
+      "relation_id": "rel_0008",
+      "type": "writes_output",
+      "summary": "pisloader writes_output lsm.exe",
+      "evidence_ids": [
+        "ev_16",
+        "ev_42"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "ﬁled in: Malware , Threat Prevention , Unit 42 tagged: command and control , DNS , pisloader , Wekby We have observed an attack led by the APT group Wekby targeting a US-based organization in recent weeks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Wekby is a group that has been active for a number of years, targeting various industries such as healthcare, telecommunications, aerospace, defense, and high tech.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "The group is known to leverage recently released exploits very shortly after those exploits are available, such as in the case of HackingTeamâ€™s Flash zero-day exploit .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "The malware used by the Wekby group has ties to the HTTPBrowser malware family, and uses DNS requests as a command and control mechanism.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "Additionally, it uses various obfuscation techniques to thwart researchers during analysis.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "This discovered ﬁle was found to be an instance of the common Poison Ivy malware family with the following conﬁguration data:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "After this ﬁle is written, the malware executes the newly written lsm.exe ﬁle, which contains the pisloader payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "FrameworkPOS C3PRO-RACCOON FeederBot Morto PlugX Variants The use of DNS as a C2 allows pisloader to bypass certain security products that may not be inspecting this trafﬁc correctly.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "The pisloader sample will send a beacon periodically that is composed of a random 4-byte uppercase string that is used as the payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "A single host of â€˜ns1.logitech-usa[.]comâ€™ is found in this speciﬁc sample.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Additionally, a number of commands themselves, such as the â€˜listâ€™, â€˜driveâ€™, and â €˜uploadâ€™ commands are consistent with HTTPBrowser.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "A known HTTPBrowser sample was spotted with similar metadata as the discussed pisloader sample, which adds further credibility that pisloader is likely a variant of this malware family.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Conclusion The Wekby group continues to target various high proﬁle organizations using sophisticated malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "The pisloader malware family uses various novel techniques, such as using DNS as a C2 protocol, as well as making use of return-oriented programming and other anti-analysis tactics.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "http://globalprint-us[.]com/proxy_plugin.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "http://globalprint-us[.]com/proxy_web_plugin.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "MD5: E8D58AA76DD97536AC225949A2767E05 SHA256: DA3261C332E72E4C1641CA0DE439AF280E064B224D950817A11922A8078B11F1 Size: 126976 Bytes Compile Time: 2016-04-27 14:37:34 UTC",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "cmd.exe /c reg add HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run /v lsm /t reg_sz /d â€œ %appdata%\\lsm.exeâ€ /f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "This particular command will set the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\lsm registry key with a value of â€œ%appdata%\\lsm.exeâ€. After this key is set, the malware proceeds to decrypt a two blobs of data with a single-byte XOR key of 0x54. The resulting data is written to the %appdata%\\lsm.exe ﬁle path.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "After this ﬁle is written, the malware executes the newly written lsm.exe ﬁle, which contains the pisloader payload.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "MD5: 07B9B62FB3B1C068837C188FEFBD5DE9 SHA256: 456FFFC256422AD667CA023D694494881BAED1496A3067485D56ECC8FEFBFAEB Size: 102400 Bytes Compile Timestamp: 2016-04-27 13:39:02 UTC",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "da3261c332e72e4c1641ca0de439af280e064b224d950817a11922a8078b11f1 930772d6af8f43f62ea78092914fa8d6b03e8e3360dd4678eec1a3dda17206ed 6852ba95720af64809995e04f4818517ca1bd650bc42ea86d9adfdb018d6b274 9200f80c08b21ebae065141f0367f9c88f8fed896b0b4af9ec30fc98c606129b 4d62caef1ca8f4f9aead7823c95228a52852a1145ca6aaa58ad8493e042aed16 1b341dab023de64598d80456349db146aafe9b9e2ec24490c7d0ac881cecc094 456fffc256422ad667ca023d694494881baed1496a3067485d56ecc8fefbfaeb",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "WildFire correctly identiﬁes all pisloader samples as malicious A pisloader AutoFocus tag has been created in order to track this malware family All domains/IPs used in this attack have been ﬂagged as malicious. An IPS rule has been created to detect pisloader DNS trafﬁc",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb50"
+      },
+      "text": "https://blog.anomali.com/evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb51"
+      },
+      "text": "ct pisloader DNS trafﬁc Appendix External Resources https://blog.anomali.com/evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via- custom-rop http://www.volexity.com/bl",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb52"
+      },
+      "text": "glb.it-desktop[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb53"
+      },
+      "text": "m globalprint-us[.]com intranetwabcam[.]com login.access-mail[.]com glb.it-desktop[.]com local.it-desktop[.]com hi.getgo[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb54"
+      },
+      "text": "hi.getgo[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb55"
+      },
+      "text": "https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb56"
+      },
+      "text": "via- custom-rop http://www.volexity.com/blog/?p=158 https://www.secureworks.com/research/threat-group-3390-targets-organizations-for-cyberespionage https://www.zscaler.com/blogs/re",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb57"
+      },
+      "text": "https://www.zscaler.com/blogs/research/chinese-cyber-espionage-apt-group-leveraging-recently-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb58"
+      },
+      "text": "/threat-group-3390-targets-organizations-for-cyberespionage https://www.zscaler.com/blogs/research/chinese-cyber-espionage-apt-group-leveraging-recently- leaked-hacking-team-exploi",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb59"
+      },
+      "text": "https://www.ﬁreeye.com/blog/threat-research/2015/07/demonstrating_hustle.html",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_New- Wekby-Attacks-Use- DNS-Requests- As- Command-and- Control- Mechanism(5-24-16)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb60"
+      },
+      "text": "- leaked-hacking-team-exploits-target-ﬁnancial-services-ﬁrm https://www.ﬁreeye.com/blog/threat-research/2015/07/demonstrating_hustle.html SHA256 Hashes da3261c332e72e4c1641ca0de439",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Wekby",
+        "ent_malware_HTTPBrowser"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_HTTPBrowser",
+        "ent_malware_pisloader"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_pisloader",
+        "ent_file_lsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_pisloader",
+        "ent_file_lsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Wekby",
+        "ent_malware_pisloader"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_threatactor_Wekby",
+        "ent_malware_pisloader",
+        "ent_url_https_blog.anomali.com_evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_threatactor_Wekby",
+        "ent_url_https_blog.anomali.com_evasive-maneuvers-the-wekby-group-attempts-to-evade-analysis-via-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_40",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_lsm.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_url_http_www.volexity.com_blog_p_158",
+        "ent_url_https_www.secureworks.com_research_threat-group-3390-targets-organizations-for-cyberespionage"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

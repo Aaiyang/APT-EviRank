@@ -1,0 +1,2002 @@
+{
+  "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+  "title": "Tortoiseshell Group Targets IT Providers in Saudi Arabia in Probable Supply Chain Attacks",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019).pdf",
+    "file_path": "/root/APTtext/Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 8044,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT34",
+      "type": "ThreatActor",
+      "name": "APT34",
+      "normalized_name": "APT34",
+      "aliases": [
+        "Oilrig"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_27",
+        "ev_30"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Backdoor",
+      "type": "Malware",
+      "name": "Backdoor",
+      "normalized_name": "Backdoor",
+      "aliases": [
+        "Backdoor.Sys"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_34",
+        "ev_6",
+        "ev_9"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_Backdoor.Sys",
+      "family": "Backdoor",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BondUpdater",
+      "type": "Malware",
+      "name": "BondUpdater",
+      "normalized_name": "BondUpdater",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "family": "BondUpdater",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Poison_Frog",
+      "type": "Malware",
+      "name": "Poison Frog",
+      "normalized_name": "Poison Frog",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_26",
+        "ev_28",
+        "ev_30"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "family": "Poison Frog",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_30",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Stereoversioncontrol",
+      "type": "Tool",
+      "name": "Stereoversioncontrol",
+      "normalized_name": "Stereoversioncontrol",
+      "aliases": [
+        "Infostealer",
+        "stereoversioncontrol.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_36",
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_stereoversioncontrol.exe",
+      "tool_name": "Stereoversioncontrol",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Oilrig",
+      "type": "ThreatActor",
+      "name": "Oilrig",
+      "normalized_name": "Oilrig",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_27",
+        "ev_30"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT34"
+    },
+    {
+      "id": "ent_file_Backdoor.Sys",
+      "type": "File",
+      "name": "Backdoor.Sys",
+      "normalized_name": "Backdoor.Sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_34",
+        "ev_6",
+        "ev_9"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "Backdoor.Sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_Backdoor.Sys",
+      "type": "Malware",
+      "name": "Backdoor.Sys",
+      "normalized_name": "Backdoor.Sys",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_34",
+        "ev_6",
+        "ev_9"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Backdoor"
+    },
+    {
+      "id": "ent_tool_Infostealer",
+      "type": "Tool",
+      "name": "Infostealer",
+      "normalized_name": "Infostealer",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17",
+        "ev_36"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Stereoversioncontrol"
+    },
+    {
+      "id": "ent_tool_Sha432",
+      "type": "Tool",
+      "name": "Sha432",
+      "normalized_name": "Sha432",
+      "aliases": [
+        "Infostealer",
+        "Sha432.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_18",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_16",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_Sha432.exe",
+      "tool_name": "Sha432",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_stereoversioncontrol.exe",
+      "type": "Tool",
+      "name": "stereoversioncontrol.exe",
+      "normalized_name": "stereoversioncontrol.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17",
+        "ev_36"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_tool_Stereoversioncontrol"
+    },
+    {
+      "id": "ent_tool_stereoversioncontrol.exe",
+      "type": "Tool",
+      "name": "stereoversioncontrol.exe",
+      "normalized_name": "stereoversioncontrol.exe",
+      "aliases": [
+        "Infostealer"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "stereoversioncontrol.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_36",
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_domain_symantec.com",
+      "type": "Domain",
+      "name": "symantec.com",
+      "normalized_name": "symantec.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "value": "symantec.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_symc.ly_2lV4Ovn",
+      "type": "URL",
+      "name": "https://symc.ly/2lV4Ovn",
+      "normalized_name": "https://symc.ly/2lV4Ovn",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_43"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "value": "https://symc.ly/2lV4Ovn",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2",
+      "type": "SHA256",
+      "name": "02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2",
+      "normalized_name": "02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_44",
+        "ev_45"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "value": "02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4",
+      "type": "SHA256",
+      "name": "07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4",
+      "normalized_name": "07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_47"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "value": "07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d9ac9c950e5495c9005b04843a40f01fa49d5fd49226cb5b03a055232ffc36f3",
+      "type": "SHA256",
+      "name": "d9ac9c950e5495c9005b04843a40f01fa49d5fd49226cb5b03a055232ffc36f3",
+      "normalized_name": "d9ac9c950e5495c9005b04843a40f01fa49d5fd49226cb5b03a055232ffc36f3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "value": "d9ac9c950e5495c9005b04843a40f01fa49d5fd49226cb5b03a055232ffc36f3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193",
+      "type": "SHA256",
+      "name": "f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193",
+      "normalized_name": "f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48",
+        "ev_49"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "value": "f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_bak.exe",
+      "type": "File",
+      "name": "bak.exe",
+      "normalized_name": "bak.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "bak.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_get-logon-history.ps1",
+      "type": "File",
+      "name": "get-logon-history.ps1",
+      "normalized_name": "get-logon-history.ps1",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_36"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "get-logon-history.ps1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Sha.exe",
+      "type": "File",
+      "name": "Sha.exe",
+      "normalized_name": "Sha.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_18",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "Sha.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_16",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Sha432.exe",
+      "type": "File",
+      "name": "Sha432.exe",
+      "normalized_name": "Sha432.exe",
+      "aliases": [
+        "Infostealer"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_18",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "file_name": "Sha432.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_16",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_history.ps1",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "File",
+      "name": "history.ps1",
+      "normalized_name": "history.ps1",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "history.ps1",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Backdoor.Sys",
+      "tail_id": "ent_malware_Backdoor",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_34",
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_34",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Poison_Frog",
+      "tail_id": "ent_malware_BondUpdater",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "primary_evidence_id": "ev_26",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Poison Frog is a backdoor and a variant of a tool called BondUpdater, which was previously seen used in attacks on organizations in the Middle East."
+      },
+      "head": {
+        "id": "ent_malware_Poison_Frog",
+        "type": "Malware",
+        "name": "Poison Frog",
+        "normalized_name": "Poison Frog",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_26",
+          "ev_28",
+          "ev_30"
+        ],
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "family": "Poison Frog",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_26",
+        "supporting_evidence_ids": [
+          "ev_30",
+          "ev_28"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_BondUpdater",
+        "type": "Malware",
+        "name": "BondUpdater",
+        "normalized_name": "BondUpdater",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_26"
+        ],
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "family": "BondUpdater",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_26",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Oilrig",
+      "tail_id": "ent_threatactor_APT34",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "The tools were leaked on Telegram in April this year and are associated with the group known as APT34, aka Oilrig."
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "alias_of",
+      "head_id": "ent_tool_Infostealer",
+      "tail_id": "ent_tool_Stereoversioncontrol",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "alias_of",
+      "head_id": "ent_tool_stereoversioncontrol.exe",
+      "tail_id": "ent_tool_Stereoversioncontrol",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "downloads",
+      "head_id": "ent_file_Sha432.exe",
+      "tail_id": "ent_file_history.ps1",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_37",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "llm_sentence",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Infostealer/stereoversioncontrol.exe downloads a RAR file, as well as the get-logon- history.ps1 tool"
+      },
+      "head": {
+        "id": "ent_file_Sha432.exe",
+        "type": "File",
+        "name": "Sha432.exe",
+        "normalized_name": "Sha432.exe",
+        "aliases": [
+          "Infostealer"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_16",
+          "ev_18",
+          "ev_36",
+          "ev_37"
+        ],
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "file_name": "Sha432.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_37",
+        "supporting_evidence_ids": [
+          "ev_36",
+          "ev_16",
+          "ev_18"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_history.ps1",
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "type": "File",
+        "name": "history.ps1",
+        "normalized_name": "history.ps1",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_17"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "history.ps1",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "downloads",
+      "head_id": "ent_tool_Stereoversioncontrol",
+      "tail_id": "ent_file_Sha432.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_17",
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_17"
+      },
+      "head": {
+        "id": "ent_tool_Stereoversioncontrol",
+        "type": "Tool",
+        "name": "Stereoversioncontrol",
+        "normalized_name": "Stereoversioncontrol",
+        "aliases": [
+          "Infostealer",
+          "stereoversioncontrol.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_16",
+          "ev_17",
+          "ev_36",
+          "ev_37"
+        ],
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_37",
+        "supporting_evidence_ids": [
+          "ev_17",
+          "ev_36",
+          "ev_16"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_stereoversioncontrol.exe",
+        "tool_name": "Stereoversioncontrol",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_Sha432.exe",
+        "type": "File",
+        "name": "Sha432.exe",
+        "normalized_name": "Sha432.exe",
+        "aliases": [
+          "Infostealer"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_16",
+          "ev_18",
+          "ev_36",
+          "ev_37"
+        ],
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "file_name": "Sha432.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_37",
+        "supporting_evidence_ids": [
+          "ev_36",
+          "ev_16",
+          "ev_18"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "downloads",
+      "head_id": "ent_tool_Stereoversioncontrol",
+      "tail_id": "ent_file_history.ps1",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_17",
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "download_event; download_head",
+        "schema_version": "v5.0-event-frame",
+        "evidence_span": "Infostealer/stereoversioncontrol.exe downloads a RAR file, as well as the get-logon- history.ps1 tool. It runs several commands on the infected machine to gather information about it and also the Firefox data of all users of the machine. It then compresses this information before transferring it to a remote directory. Infostealer/Sha.exe/Sha432.exe operates in a similar manner, gathering information about the infecte"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "downloads",
+      "head_id": "ent_tool_stereoversioncontrol.exe",
+      "tail_id": "ent_file_history.ps1",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_37",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "llm_sentence",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Infostealer/stereoversioncontrol.exe downloads a RAR file, as well as the get-logon- history.ps1 tool"
+      },
+      "head": {
+        "id": "ent_tool_stereoversioncontrol.exe",
+        "type": "Tool",
+        "name": "stereoversioncontrol.exe",
+        "normalized_name": "stereoversioncontrol.exe",
+        "aliases": [
+          "Infostealer"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_16",
+          "ev_17",
+          "ev_36",
+          "ev_37"
+        ],
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "file_name": "stereoversioncontrol.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_37",
+        "supporting_evidence_ids": [
+          "ev_17",
+          "ev_36",
+          "ev_16"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_history.ps1",
+        "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+        "type": "File",
+        "name": "history.ps1",
+        "normalized_name": "history.ps1",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_17"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "history.ps1",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "executes",
+      "head_id": "ent_file_bak.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "executes",
+      "head_id": "ent_malware_Backdoor",
+      "tail_id": "ent_file_Sha.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "loads",
+      "head_id": "ent_file_Sha.exe",
+      "tail_id": "ent_file_Sha432.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "loads",
+      "head_id": "ent_file_bak.exe",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "loads",
+      "head_id": "ent_file_bak.exe",
+      "tail_id": "ent_tool_Stereoversioncontrol",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT34",
+      "tail_id": "ent_malware_BondUpdater",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_25",
+        "ev_26",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=oilrig",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT34",
+      "tail_id": "ent_malware_Poison_Frog",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_30",
+        "ev_25",
+        "ev_26",
+        "ev_27",
+        "ev_29",
+        "ev_31",
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=oilrig, event_use, headline_or_event_use; report_use_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_30"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "downloads",
+      "summary": "Stereoversioncontrol downloads history.ps1",
+      "evidence_ids": [
+        "ev_17",
+        "ev_37"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "bak.exe executes cmd.exe",
+      "evidence_ids": [
+        "ev_35"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "executes",
+      "summary": "Backdoor executes Sha.exe",
+      "evidence_ids": [
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "Sha.exe loads Sha432.exe",
+      "evidence_ids": [
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "bak.exe loads cmd.exe",
+      "evidence_ids": [
+        "ev_35"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "bak.exe loads Stereoversioncontrol",
+      "evidence_ids": [
+        "ev_35"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "uses_malware",
+      "summary": "APT34 uses_malware BondUpdater",
+      "evidence_ids": [
+        "ev_25",
+        "ev_26",
+        "ev_27"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "uses_malware",
+      "summary": "APT34 uses_malware Poison Frog",
+      "evidence_ids": [
+        "ev_30",
+        "ev_25",
+        "ev_26"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "command_and_control",
+      "relation_id": "rel_0006",
+      "type": "downloads",
+      "summary": "Sha432.exe downloads history.ps1",
+      "evidence_ids": [
+        "ev_37"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "command_and_control",
+      "relation_id": "rel_0007",
+      "type": "downloads",
+      "summary": "Stereoversioncontrol downloads Sha432.exe",
+      "evidence_ids": [
+        "ev_17",
+        "ev_37"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "command_and_control",
+      "relation_id": "rel_0009",
+      "type": "downloads",
+      "summary": "stereoversioncontrol.exe downloads history.ps1",
+      "evidence_ids": [
+        "ev_37"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "symantec.com /blogs/threat-intelligence/tortoiseshell-apt-supply-chain A previously undocumented attack group is using both custom and off-the-shelf malware to target IT providers in Saudi Arabia in what appear to be supply chain attacks with the end goal of compromising the IT providers’ customers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "The unique component used by Tortoiseshell is a malware called Backdoor.Syskit.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Backdoor.Syskit is run with the “-install” parameter to install itself.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s11"
+      },
+      "text": "Infostealer/Sha.exe/Sha432.exe Infostealer/stereoversioncontrol.exe get-logon-history.ps1",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Infostealer/stereoversioncontrol.exe downloads a RAR file, as well as the get-logon- history.ps1 tool.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Infostealer/Sha.exe/Sha432.exe operates in a similar manner, gathering information about the infected machine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s9"
+      },
+      "text": "This activity indicates the attackers had achieved domain admin level access on these networks, meaning they had access to all machines on the network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s10"
+      },
+      "text": "Poison Frog is a backdoor and a variant of a tool called BondUpdater, which was previously seen used in attacks on organizations in the Middle East.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s11"
+      },
+      "text": "The tools were leaked on Telegram in April this year and are associated with the group known as APT34, aka Oilrig.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s12"
+      },
+      "text": "It is unclear if the same actor deployed both the Poison Frog tool and the Tortoiseshell tools, however, given the gap in time between the two sets of tools being used, and without further evidence, the current assumption is that the activity is unrelated.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s13"
+      },
+      "text": "If that is the case, this activity demonstrates the interest from multiple attack groups in industries in this region.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s14"
+      },
+      "text": "The Poison Frog tool also appears to have been leaked prior to deployment to this victim, so could be used by a group unrelated to APT34/Oilrig.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "Supply chain attacks, which exploit third-party services and software to compromise a final target, take many forms, including hijacking software updates and injecting malicious code into legitimate software.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Backdoor.Syskit C&C servers The Attack Investigation Team is a group of security experts within Symantec Security Response whose mission is to investigate targeted attacks, drive enhanced protection in Symantec products, and offer analysis which helps customers respond to attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "\"kill_me\": stops the dllhost service and deletes %Windir%\\temp\\bak.exe \"upload \" downloads from the URL provided by the C&C server \"unzip\" uses PowerShell to unzip a specified file to a specified destination, or to run cmd.exe /c <received command>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "Infostealer/Sha.exe/Sha432.exe Infostealer/stereoversioncontrol.exe get-logon-history.ps1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Infostealer/stereoversioncontrol.exe downloads a RAR file, as well as the get-logon- history.ps1 tool. It runs several commands on the infected machine to gather information about it and also the Firefox data of all users of the machine. It then compresses this information before transferring it to a remote directory. Infostealer/Sha.exe/Sha432.exe operates in a similar manner, gathering information about the infected machine.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "The initial infection vector used by Tortoiseshell to get onto infected machines has not been confirmed, but it is possible that, in one instance, a web server was compromised to gain access by the attacker. For at least one victim, the first indication of malware on their network was a web shell (d9ac9c950e5495c9005b04843a40f01fa49d5fd49226cb5b03a055232ffc36f3). This indicates that the attackers likely compromised a web server, and then used this to deploy malware onto the network.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "It is unclear if the same actor deployed both the Poison Frog tool and the Tortoiseshell tools, however, given the gap in time between the two sets of tools being used, and without further evidence, the current assumption is that the activity is unrelated. If that is the case, this activity demonstrates the interest from multiple attack groups in industries in this region. The Poison Frog tool also appears to have been leaked prior to deployment to this victim, so could be used by a group unrelated to APT34/Oilrig.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb42"
+      },
+      "text": "to compromise victims https://symc.ly/2lV4Ovn\"",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb43"
+      },
+      "text": "f tools, #livingofftheland techniques to compromise victims https://symc.ly/2lV4Ovn\" Another notable element of this attack is that, on two of the compromised networks, several hun",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb44"
+      },
+      "text": "02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb45"
+      },
+      "text": "c988697eb4aa62c8655d8f0be3268636fc23addd193 Backdoor.Syskit 02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2 Backdoor.Syskit 07d123364d8d04e3fe0bfa4e0e23ddc7050ef03",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb46"
+      },
+      "text": "07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb47"
+      },
+      "text": "7f4949d31914c15d96726fb4902322c065153b364b2 Backdoor.Syskit 07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4 Backdoor.Syskit Backdoor.Syskit C&C servers 64.235.60.1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb48"
+      },
+      "text": "f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Tortoiseshell-Targets-ITProviders-Saudi-Supply-Chain(09-18-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb49"
+      },
+      "text": "ivity: Backdoor.Syskit Indicators of Compromise SHA256 Name f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193 Backdoor.Syskit 02a3296238a3d127a2e517f4949d31914c15d96",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_39",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT34",
+        "ent_malware_Poison_Frog",
+        "ent_threatactor_Oilrig"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Stereoversioncontrol",
+        "ent_tool_Infostealer",
+        "ent_tool_stereoversioncontrol.exe",
+        "ent_file_Sha432.exe",
+        "ent_file_history.ps1"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 3
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Backdoor",
+        "ent_malware_BondUpdater",
+        "ent_malware_Poison_Frog"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_bak.exe",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Stereoversioncontrol",
+        "ent_tool_Infostealer",
+        "ent_tool_stereoversioncontrol.exe",
+        "ent_file_Sha432.exe",
+        "ent_file_history.ps1"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_18",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Stereoversioncontrol",
+        "ent_tool_Infostealer",
+        "ent_tool_stereoversioncontrol.exe",
+        "ent_file_Sha432.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT34",
+        "ent_malware_Poison_Frog",
+        "ent_threatactor_Oilrig"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT34",
+        "ent_threatactor_Oilrig"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Backdoor"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Stereoversioncontrol",
+        "ent_tool_Infostealer",
+        "ent_tool_stereoversioncontrol.exe",
+        "ent_file_get-logon-history.ps1",
+        "ent_file_Sha432.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_tool_Stereoversioncontrol",
+        "ent_tool_Infostealer",
+        "ent_tool_stereoversioncontrol.exe",
+        "ent_file_get-logon-history.ps1",
+        "ent_file_Sha432.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

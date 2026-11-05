@@ -1,0 +1,2051 @@
+{
+  "report_id": "w32_regin_stage_1",
+  "title": "Malware Analysis Report",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "w32_regin_stage_1.pdf",
+    "file_path": "/root/APTtext/w32_regin_stage_1.pdf",
+    "source_type": "pdf",
+    "char_length": 34800,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_DATA_DIRECTORIES",
+      "type": "Malware",
+      "name": "DATA_DIRECTORIES",
+      "normalized_name": "DATA_DIRECTORIES",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "family": "DATA_DIRECTORIES",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Regin",
+      "type": "Malware",
+      "name": "Regin",
+      "normalized_name": "Regin",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_31",
+        "ev_34",
+        "ev_49"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "family": "Regin",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_49",
+        "ev_1",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ZeroAccess",
+      "type": "Malware",
+      "name": "ZeroAccess",
+      "normalized_name": "ZeroAccess",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_23",
+        "ev_24"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "family": "ZeroAccess",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_f-secure.com",
+      "type": "Domain",
+      "name": "f-secure.com",
+      "normalized_name": "f-secure.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "f-secure.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.symantec.com",
+      "type": "Domain",
+      "name": "www.symantec.com",
+      "normalized_name": "www.symantec.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "www.symantec.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_125"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_www.symantec.com_connect_blogs_trojanzeroaccessc-hidden-ntfs-ea",
+      "type": "URL",
+      "name": "http://www.symantec.com/connect/blogs/trojanzeroaccessc-hidden-ntfs-ea",
+      "normalized_name": "http://www.symantec.com/connect/blogs/trojanzeroaccessc-hidden-ntfs-ea",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "http://www.symantec.com/connect/blogs/trojanzeroaccessc-hidden-ntfs-ea",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_125"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_email_irt_f-secure.com",
+      "type": "Email",
+      "name": "irt@f-secure.com",
+      "normalized_name": "irt@f-secure.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "irt@f-secure.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_01C2F321B6BFDB9473C079B0797567BA",
+      "type": "MD5",
+      "name": "01C2F321B6BFDB9473C079B0797567BA",
+      "normalized_name": "01C2F321B6BFDB9473C079B0797567BA",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "01C2F321B6BFDB9473C079B0797567BA",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_049436BB90F71CF38549817D9B90E2DA",
+      "type": "MD5",
+      "name": "049436BB90F71CF38549817D9B90E2DA",
+      "normalized_name": "049436BB90F71CF38549817D9B90E2DA",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "049436BB90F71CF38549817D9B90E2DA",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_06665B96E293B23ACC80451ABB413E50",
+      "type": "MD5",
+      "name": "06665B96E293B23ACC80451ABB413E50",
+      "normalized_name": "06665B96E293B23ACC80451ABB413E50",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "06665B96E293B23ACC80451ABB413E50",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_148C1BB9D405D717252C77593AFF4BD8",
+      "type": "MD5",
+      "name": "148C1BB9D405D717252C77593AFF4BD8",
+      "normalized_name": "148C1BB9D405D717252C77593AFF4BD8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "148C1BB9D405D717252C77593AFF4BD8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1800DEF71006CA6790767E202FAE9B9A",
+      "type": "MD5",
+      "name": "1800DEF71006CA6790767E202FAE9B9A",
+      "normalized_name": "1800DEF71006CA6790767E202FAE9B9A",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "1800DEF71006CA6790767E202FAE9B9A",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_187044596BC1328EFA0ED636D8AA4A5C",
+      "type": "MD5",
+      "name": "187044596BC1328EFA0ED636D8AA4A5C",
+      "normalized_name": "187044596BC1328EFA0ED636D8AA4A5C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "187044596BC1328EFA0ED636D8AA4A5C",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1C024E599AC055312A4AB75B3950040A",
+      "type": "MD5",
+      "name": "1C024E599AC055312A4AB75B3950040A",
+      "normalized_name": "1C024E599AC055312A4AB75B3950040A",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "1C024E599AC055312A4AB75B3950040A",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_22BFC970F707FD775D49E875B63C2F0C",
+      "type": "MD5",
+      "name": "22BFC970F707FD775D49E875B63C2F0C",
+      "normalized_name": "22BFC970F707FD775D49E875B63C2F0C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "22BFC970F707FD775D49E875B63C2F0C",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_26297DC3CD0B688DE3B846983C5385E5",
+      "type": "MD5",
+      "name": "26297DC3CD0B688DE3B846983C5385E5",
+      "normalized_name": "26297DC3CD0B688DE3B846983C5385E5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69",
+        "ev_77"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "26297DC3CD0B688DE3B846983C5385E5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_77"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2C8B9D2885543D7ADE3CAE98225E263B",
+      "type": "MD5",
+      "name": "2C8B9D2885543D7ADE3CAE98225E263B",
+      "normalized_name": "2C8B9D2885543D7ADE3CAE98225E263B",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "2C8B9D2885543D7ADE3CAE98225E263B",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_47D0E8F9D7A6429920329207A32ECC2E",
+      "type": "MD5",
+      "name": "47D0E8F9D7A6429920329207A32ECC2E",
+      "normalized_name": "47D0E8F9D7A6429920329207A32ECC2E",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "47D0E8F9D7A6429920329207A32ECC2E",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4B6B86C7FEC1C574706CECEDF44ABDED",
+      "type": "MD5",
+      "name": "4B6B86C7FEC1C574706CECEDF44ABDED",
+      "normalized_name": "4B6B86C7FEC1C574706CECEDF44ABDED",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "4B6B86C7FEC1C574706CECEDF44ABDED",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6662C390B2BBBD291EC7987388FC75D7",
+      "type": "MD5",
+      "name": "6662C390B2BBBD291EC7987388FC75D7",
+      "normalized_name": "6662C390B2BBBD291EC7987388FC75D7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_90"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "6662C390B2BBBD291EC7987388FC75D7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_744C07E886497F7B68F6F7FE57B7AB54",
+      "type": "MD5",
+      "name": "744C07E886497F7B68F6F7FE57B7AB54",
+      "normalized_name": "744C07E886497F7B68F6F7FE57B7AB54",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "744C07E886497F7B68F6F7FE57B7AB54",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_89003E9A1AE635C97EBAD07AEBC67F00",
+      "type": "MD5",
+      "name": "89003E9A1AE635C97EBAD07AEBC67F00",
+      "normalized_name": "89003E9A1AE635C97EBAD07AEBC67F00",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "89003E9A1AE635C97EBAD07AEBC67F00",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8FCF4E53ECE6111758A1DD3139DC7CAD",
+      "type": "MD5",
+      "name": "8FCF4E53ECE6111758A1DD3139DC7CAD",
+      "normalized_name": "8FCF4E53ECE6111758A1DD3139DC7CAD",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "8FCF4E53ECE6111758A1DD3139DC7CAD",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_90FECC6A89B2E22D82D58878D93477D4",
+      "type": "MD5",
+      "name": "90FECC6A89B2E22D82D58878D93477D4",
+      "normalized_name": "90FECC6A89B2E22D82D58878D93477D4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "90FECC6A89B2E22D82D58878D93477D4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_B269894F434657DB2B15949641A67532",
+      "type": "MD5",
+      "name": "B269894F434657DB2B15949641A67532",
+      "normalized_name": "B269894F434657DB2B15949641A67532",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "B269894F434657DB2B15949641A67532",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_B29CA4F22AE7B7B25F79C1D4A421139D",
+      "type": "MD5",
+      "name": "B29CA4F22AE7B7B25F79C1D4A421139D",
+      "normalized_name": "B29CA4F22AE7B7B25F79C1D4A421139D",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "B29CA4F22AE7B7B25F79C1D4A421139D",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_B505D65721BB2453D5039A389113B566",
+      "type": "MD5",
+      "name": "B505D65721BB2453D5039A389113B566",
+      "normalized_name": "B505D65721BB2453D5039A389113B566",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "B505D65721BB2453D5039A389113B566",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_102",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_BA7BB65634CE1E30C1E5415BE3D1DB1D",
+      "type": "MD5",
+      "name": "BA7BB65634CE1E30C1E5415BE3D1DB1D",
+      "normalized_name": "BA7BB65634CE1E30C1E5415BE3D1DB1D",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_100"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "BA7BB65634CE1E30C1E5415BE3D1DB1D",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_BFBE8C3EE78750C3A520480700E440F8",
+      "type": "MD5",
+      "name": "BFBE8C3EE78750C3A520480700E440F8",
+      "normalized_name": "BFBE8C3EE78750C3A520480700E440F8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_85"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "BFBE8C3EE78750C3A520480700E440F8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_D240F06E98C8D3E647CBF4D442D79475",
+      "type": "MD5",
+      "name": "D240F06E98C8D3E647CBF4D442D79475",
+      "normalized_name": "D240F06E98C8D3E647CBF4D442D79475",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "D240F06E98C8D3E647CBF4D442D79475",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_DB405AD775AC887A337B02EA8B07FDDC",
+      "type": "MD5",
+      "name": "DB405AD775AC887A337B02EA8B07FDDC",
+      "normalized_name": "DB405AD775AC887A337B02EA8B07FDDC",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "DB405AD775AC887A337B02EA8B07FDDC",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_E94393561901895CB0783EDC34740FD4",
+      "type": "MD5",
+      "name": "E94393561901895CB0783EDC34740FD4",
+      "normalized_name": "E94393561901895CB0783EDC34740FD4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "E94393561901895CB0783EDC34740FD4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_F3FFC2AAAA1E2AB55EC26FF098653347",
+      "type": "MD5",
+      "name": "F3FFC2AAAA1E2AB55EC26FF098653347",
+      "normalized_name": "F3FFC2AAAA1E2AB55EC26FF098653347",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "F3FFC2AAAA1E2AB55EC26FF098653347",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_FFB0B9B5B610191051A7BDF0806E1E47",
+      "type": "MD5",
+      "name": "FFB0B9B5B610191051A7BDF0806E1E47",
+      "normalized_name": "FFB0B9B5B610191051A7BDF0806E1E47",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "value": "FFB0B9B5B610191051A7BDF0806E1E47",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_abiosdsk.sys",
+      "type": "File",
+      "name": "abiosdsk.sys",
+      "normalized_name": "abiosdsk.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "abiosdsk.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Atapi.sys",
+      "type": "File",
+      "name": "Atapi.sys",
+      "normalized_name": "Atapi.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_73"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "Atapi.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "NTOSKRNL"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_atdisk.sys",
+      "type": "File",
+      "name": "atdisk.sys",
+      "normalized_name": "atdisk.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_81",
+        "ev_83",
+        "ev_88"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "atdisk.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_81",
+        "ev_83"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Disk.sys",
+      "type": "File",
+      "name": "Disk.sys",
+      "normalized_name": "Disk.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_73",
+        "ev_87",
+        "ev_88"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "Disk.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_45",
+        "ev_87",
+        "ev_88"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "NTOSKRNL"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_floppy.sys",
+      "type": "File",
+      "name": "floppy.sys",
+      "normalized_name": "floppy.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "floppy.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_HAL.dll",
+      "type": "File",
+      "name": "HAL.dll",
+      "normalized_name": "HAL.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_73"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "HAL.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "NTOSKRNL"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_NTOKRNL.EXE",
+      "type": "File",
+      "name": "NTOKRNL.EXE",
+      "normalized_name": "NTOKRNL.EXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "NTOKRNL.EXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "ADDR",
+        "NTOKRNL",
+        "MEMSET"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_parclass.sys",
+      "type": "File",
+      "name": "parclass.sys",
+      "normalized_name": "parclass.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "parclass.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pciclass.sys",
+      "type": "File",
+      "name": "pciclass.sys",
+      "normalized_name": "pciclass.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "pciclass.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pcidump.sys",
+      "type": "File",
+      "name": "pcidump.sys",
+      "normalized_name": "pcidump.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_85"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "pcidump.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pciport.sys",
+      "type": "File",
+      "name": "pciport.sys",
+      "normalized_name": "pciport.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "pciport.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rdpmdd.sys",
+      "type": "File",
+      "name": "rdpmdd.sys",
+      "normalized_name": "rdpmdd.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "rdpmdd.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ser8uart.sys",
+      "type": "File",
+      "name": "ser8uart.sys",
+      "normalized_name": "ser8uart.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "ser8uart.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_usbclass.sys",
+      "type": "File",
+      "name": "usbclass.sys",
+      "normalized_name": "usbclass.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_67",
+        "ev_86",
+        "ev_90"
+      ],
+      "report_id": "w32_regin_stage_1",
+      "file_name": "usbclass.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_11",
+        "ev_86",
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "w32_regin_stage_1",
+      "type": "executes",
+      "head_id": "ent_malware_Regin",
+      "tail_id": "ent_file_NTOKRNL.EXE",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "primary_evidence_id": "ev_62",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "Regin executes NTOKRNL.EXE",
+      "evidence_ids": [
+        "ev_62"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Based on our analysis of the malware’s functionalities, this part of the Regin threat can be considered just a support module — its sole purpose is to facilitate and enable the operations of stage #2 by loading it and making it more difficult to detect by security products.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Paolo Palumbo Senior Researcher Security Response F-Secure Labs Twitter: @paolo_3_1415926 Contact F-Secure Incident Response irt@f-secure.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "In 12 cases (44% of samples), the decoy names used by the files was “usbclass.sys”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "<WINDOWS>\\Cursors The use of Extended Attributes was not observed in malware until the recent emergence of the ZeroAccess rootkit [4] .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "As the Regin threat appears to have emerged earlier than ZeroAccess however, we are convinced that significant skills, knowledge and resources were available to the developers of Regin to enable earlier use of this unusual technique.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s14"
+      },
+      "text": "Regin’s stage #1 PE loader is quite comprehensive; considering the suspected age of the threat, the generic nature of the PE loader and the fact that the PE loading happens completely in kernel mode, we can speculate that the authors of this threat are skilled and well-funded.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Regin’s stage #1 begins the loading process by verifying that its payload is a valid PE file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "This set of modules includes: y y NTOSKRNL.EXE y y HAL.dll y y Disk.sys y y Atapi.sys",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Each of the values is customized as follows: 2.10.4 Trampolines Trampolines are the mechanism that Regin’s stage #1 uses to reroute the execution through several pieces of code every time the payload executes a call to an external function.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "As the final step in the loading process, the malware scans the payload’s DATA_DIRECTORIES to perform a final modification to the mapped image.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s1"
+      },
+      "text": "IAT ADDR: call dword ptr [IAT:NTOKRNL.EXE!MEMSET] ADDR + 6: ...",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "It also interesting to consider the filenames of the samples as they were observed in the wild or during submission for analysis. In 12 cases (44% of samples), the decoy names used by the files was “usbclass.sys”. [1] This particular name was used only for “pure” samples (though not all such samples used this name). It is our opinion that this particular name was selected to allay any suspicions on the victim’s part, if the file was discovered.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "The analysis in this section focuses on the sample with MD5 26297dc3cd0b688de3b846983c5385e5, which was chosen for two reasons: first, the sample was among the first few",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "y y NTOSKRNL.EXE y y HAL.dll y y Disk.sys y y Atapi.sys",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "1 26297DC3CD0B688DE3B846983C5385E5 plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r3"
+      },
+      "text": "2 47D0E8F9D7A6429920329207A32ECC2E abiosdsk.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r4"
+      },
+      "text": "3 01C2F321B6BFDB9473C079B0797567BA ser8uart.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r5"
+      },
+      "text": "4 4B6B86C7FEC1C574706CECEDF44ABDED usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r6"
+      },
+      "text": "5 744C07E886497F7B68F6F7FE57B7AB54 floppy.sys, atdisk.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r7"
+      },
+      "text": "6 2C8B9D2885543D7ADE3CAE98225E263B usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r8"
+      },
+      "text": "7 F3FFC2AAAA1E2AB55EC26FF098653347 atdisk.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r9"
+      },
+      "text": "8 E94393561901895CB0783EDC34740FD4 plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r10"
+      },
+      "text": "9 BFBE8C3EE78750C3A520480700E440F8 pcidump.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r11"
+      },
+      "text": "10 89003E9A1AE635C97EBAD07AEBC67F00 usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r12"
+      },
+      "text": "11 1800DEF71006CA6790767E202FAE9B9A abiosdisk.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r13"
+      },
+      "text": "12 90FECC6A89B2E22D82D58878D93477D4 atdisk.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r14"
+      },
+      "text": "13 DB405AD775AC887A337B02EA8B07FDDC parclass.sys embedded",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r15"
+      },
+      "text": "14 6662C390B2BBBD291EC7987388FC75D7 usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r16"
+      },
+      "text": "15 06665B96E293B23ACC80451ABB413E50 rdpmdd.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r17"
+      },
+      "text": "16 FFB0B9B5B610191051A7BDF0806E1E47 pciclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r18"
+      },
+      "text": "17 187044596BC1328EFA0ED636D8AA4A5C usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r19"
+      },
+      "text": "18 B29CA4F22AE7B7B25F79C1D4A421139D pciport.sys, usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r20"
+      },
+      "text": "19 D240F06E98C8D3E647CBF4D442D79475 usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r21"
+      },
+      "text": "20 8FCF4E53ECE6111758A1DD3139DC7CAD plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r22"
+      },
+      "text": "21 148C1BB9D405D717252C77593AFF4BD8 usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r23"
+      },
+      "text": "22 1C024E599AC055312A4AB75B3950040A usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r24"
+      },
+      "text": "23 B269894F434657DB2B15949641A67532 usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r25"
+      },
+      "text": "24 BA7BB65634CE1E30C1E5415BE3D1DB1D usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r26"
+      },
+      "text": "25 22BFC970F707FD775D49E875B63C2F0C plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r27"
+      },
+      "text": "26 B505D65721BB2453D5039A389113B566 usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r28"
+      },
+      "text": "27 049436BB90F71CF38549817D9B90E2DA usbclass.sys plain",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r1"
+      },
+      "text": "ADDR: call dword ptr [IAT:NTOKRNL.EXE!MEMSET]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb124"
+      },
+      "text": "http://www.symantec.com/connect/blogs/trojanzeroaccessc-hidden-ntfs-ea",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "w32_regin_stage_1",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb125"
+      },
+      "text": "roaccess.C Hidden in NTFS EA; published 14 Aug 2012; http://www.symantec.com/connect/blogs/trojanzeroaccessc-hidden-ntfs-ea Image 2: Payload verification code Image 1: Content decr",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_24",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Regin",
+        "ent_malware_ZeroAccess"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_Atapi.sys",
+        "ent_file_Disk.sys",
+        "ent_file_HAL.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_Atapi.sys",
+        "ent_file_Disk.sys",
+        "ent_file_HAL.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_81",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_atdisk.sys",
+        "ent_file_floppy.sys"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_94",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_pciport.sys",
+        "ent_file_usbclass.sys"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_domain_f-secure.com",
+        "ent_email_irt_f-secure.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

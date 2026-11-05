@@ -1,0 +1,302 @@
+{
+  "report_id": "Derusbi_Server_Analysis-Final",
+  "title": "Derusbi (Server Variant) Analysis",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Derusbi_Server_Analysis-Final.pdf",
+    "file_path": "/root/APTtext/Derusbi_Server_Analysis-Final.pdf",
+    "source_type": "pdf",
+    "char_length": 27339,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Derusbi",
+      "type": "Malware",
+      "name": "Derusbi",
+      "normalized_name": "Derusbi",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "family": "Derusbi",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_5"
+      ],
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tmp1.dat",
+      "type": "File",
+      "name": "tmp1.dat",
+      "normalized_name": "tmp1.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15",
+        "ev_25"
+      ],
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "file_name": "tmp1.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "TEMP",
+        "PCC_BASEMOD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ZhuDongFangYu.exe",
+      "type": "File",
+      "name": "ZhuDongFangYu.exe",
+      "normalized_name": "ZhuDongFangYu.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "file_name": "ZhuDongFangYu.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "B307-8EEBFE7DB28F",
+        "SYSDIR"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_Derusbi",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_5",
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_5",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "type": "loads",
+      "head_id": "ent_file_tmp1.dat",
+      "tail_id": "ent_malware_Derusbi",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "loads",
+      "summary": "svchost.exe loads Derusbi",
+      "evidence_ids": [
+        "ev_5",
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "loads",
+      "summary": "tmp1.dat loads Derusbi",
+      "evidence_ids": [
+        "ev_25"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Overview There are two types of Derusbi malware: a client-server model and a server-client model.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "When loaded into memory via a LoadLibrary or equivalent function call, the server variant will determine the name of the host binary (presumably svchost.exe ) as well as its own DLL’s name.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "0x18 Shutdown the server variant (set fShutdown to true ) 0x1C Drop a new DLL to %TEMP%\\tmp1.dat , load the DLL into memory and call DllRegisterServer to install a new server variant binary on the victim’s system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "When loaded into memory via a LoadLibrary or equivalent function call, the server variant will determine the name of the host binary (presumably svchost.exe ) as well as its own DLL’s name. The binary then spawns a new thread that contains the main server variant code in order to allow the DllEntryPoint routine to return to the calling function.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "The mainLoop attempts to get the privileges for SeDebugPrivilege , SeLoadDriverPrivilege , SeShutdownPrivilege , and SeTcbPrivilege in order to perform the necessary operations to load the driver portion of the server variant. The mainLoop will attempt to open a handle to the driver (if it is already installed) by calling CreateFile with the filename of \\Device\\{93144EB0-8E3E-4591-B307-8EEBFE7DB28F} . Failing this, the mainLoop determines if the victim’s machine is running the 360 antivirus product by looking for a process with the name ZhuDongFangYu.exe. If the process is running, the driver is not installed but the mainLoop continues regardless. If the process is not found, however, the mainLoop will extract the driver binary from an encoded buffer within itself, decode the file in memory (using a rotating 4-byte XOR key), and install the driver on the victim’s machine as %SYSDIR%\\Drivers\\{93144EB0-8E3E-4591-B307-8EEBFE7DB28F}.sys .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Derusbi_Server_Analysis-Final",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "dwCommandType Functionality 0x08 Terminate the current network connection between the client and the server variant. 0x10 Run the Cleanup member function of each of the registered PCC_BASEMOD derived objects, effectively resetting the state of each of the modules. 0x14 Write infection ID to the registry and immediately terminate the server variant. 0x18 Shutdown the server variant (set fShutdown to true ) 0x1C Drop a new DLL to %TEMP%\\tmp1.dat , load the DLL into memory and call DllRegisterServer to install a new server variant binary on the victim’s system.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ]
+}

@@ -1,0 +1,3055 @@
+{
+  "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+  "title": "New Sofacy Attacks Against US Government Agency",
+  "source": "Unit 42",
+  "published_date": "May 28, 2016",
+  "report_metadata": {
+    "file_name": "PaloAlto_SofacyUSGov(06-14-2016).pdf",
+    "file_path": "/root/APTtext/PaloAlto_SofacyUSGov(06-14-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 12080,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT28",
+      "type": "ThreatActor",
+      "name": "APT28",
+      "normalized_name": "APT28",
+      "aliases": [
+        "The Sofacy group"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Sofacy",
+      "type": "ThreatActor",
+      "name": "Sofacy",
+      "normalized_name": "Sofacy",
+      "aliases": [
+        "Tsar Team"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_15",
+        "ev_39",
+        "ev_42"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_15",
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BEACON",
+      "type": "Malware",
+      "name": "BEACON",
+      "normalized_name": "BEACON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_18",
+        "ev_25",
+        "ev_29",
+        "ev_31"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "family": "BEACON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_18",
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Btecache",
+      "type": "Malware",
+      "name": "Btecache",
+      "normalized_name": "Btecache",
+      "aliases": [
+        "btecache.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_54",
+        "ev_55",
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_58",
+        "ev_54",
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_btecache.dll",
+      "family": "Btecache",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2015-1641",
+      "type": "CVE",
+      "name": "CVE-2015-1641",
+      "normalized_name": "CVE-2015-1641",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_wscapi.com",
+      "type": "Domain",
+      "name": "wscapi.com",
+      "normalized_name": "wscapi.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_41",
+        "ev_53",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "wscapi.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_41",
+        "ev_66",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_US_Government_Agency",
+      "type": "Victim",
+      "name": "US Government Agency",
+      "normalized_name": "US Government Agency",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_The_Sofacy_group",
+      "type": "ThreatActor",
+      "name": "The Sofacy group",
+      "normalized_name": "The Sofacy group",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT28"
+    },
+    {
+      "id": "ent_threatactor_Tsar_Team",
+      "type": "ThreatActor",
+      "name": "Tsar Team",
+      "normalized_name": "Tsar Team",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_15",
+        "ev_39"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Sofacy"
+    },
+    {
+      "id": "ent_malware_btecache.dll",
+      "type": "Malware",
+      "name": "btecache.dll",
+      "normalized_name": "btecache.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_54",
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Btecache"
+    },
+    {
+      "id": "ent_malware_btecache.dll",
+      "type": "Malware",
+      "name": "btecache.dll",
+      "normalized_name": "btecache.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_54",
+        "ev_55",
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "btecache.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_58",
+        "ev_54",
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_domain_munimonoce.com",
+      "type": "Domain",
+      "name": "munimonoce.com",
+      "normalized_name": "munimonoce.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_40",
+        "ev_53",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "munimonoce.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_40",
+        "ev_66",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_researchcenter.paloaltonetworks.com",
+      "type": "Domain",
+      "name": "researchcenter.paloaltonetworks.com",
+      "normalized_name": "researchcenter.paloaltonetworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "researchcenter.paloaltonetworks.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_servicecdp.com",
+      "type": "Domain",
+      "name": "servicecdp.com",
+      "normalized_name": "servicecdp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35",
+        "ev_53",
+        "ev_63",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "servicecdp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_66",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_storsvc.org",
+      "type": "Domain",
+      "name": "storsvc.org",
+      "normalized_name": "storsvc.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_41",
+        "ev_53",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "storsvc.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_41",
+        "ev_66",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_tabsync.net",
+      "type": "Domain",
+      "name": "tabsync.net",
+      "normalized_name": "tabsync.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_41",
+        "ev_53",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "tabsync.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_41",
+        "ev_66",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.tabsync.net",
+      "type": "Domain",
+      "name": "www.tabsync.net",
+      "normalized_name": "www.tabsync.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_41"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "www.tabsync.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_41"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.wscapi.com",
+      "type": "Domain",
+      "name": "www.wscapi.com",
+      "normalized_name": "www.wscapi.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_41"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "www.wscapi.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_41"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ioc_sha256_03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca",
+      "type": "SHA256",
+      "name": "03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca",
+      "normalized_name": "03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69",
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5",
+      "type": "SHA256",
+      "name": "12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5",
+      "normalized_name": "12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71",
+        "ev_72"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b",
+      "type": "SHA256",
+      "name": "57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b",
+      "normalized_name": "57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261",
+      "type": "SHA256",
+      "name": "69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261",
+      "normalized_name": "69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632",
+      "type": "SHA256",
+      "name": "aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632",
+      "normalized_name": "aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0",
+      "type": "SHA256",
+      "name": "be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0",
+      "normalized_name": "be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785",
+      "type": "SHA256",
+      "name": "c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785",
+      "normalized_name": "c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc",
+      "type": "SHA256",
+      "name": "dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc",
+      "normalized_name": "dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301",
+      "type": "SHA256",
+      "name": "fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301",
+      "normalized_name": "fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "value": "fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_amdcache.dll",
+      "type": "File",
+      "name": "amdcache.dll",
+      "normalized_name": "amdcache.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "amdcache.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_bitsprex3.dll",
+      "type": "File",
+      "name": "bitsprex3.dll",
+      "normalized_name": "bitsprex3.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "bitsprex3.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_clconfg.dll",
+      "type": "File",
+      "name": "clconfg.dll",
+      "normalized_name": "clconfg.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "clconfg.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_conhost.exe",
+      "type": "File",
+      "name": "conhost.exe",
+      "normalized_name": "conhost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "conhost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_csrss.exe",
+      "type": "File",
+      "name": "csrss.exe",
+      "normalized_name": "csrss.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "csrss.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_dwm.exe",
+      "type": "File",
+      "name": "dwm.exe",
+      "normalized_name": "dwm.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "dwm.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_explorer.exe",
+      "type": "File",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "explorer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_iprpp.dll",
+      "type": "File",
+      "name": "iprpp.dll",
+      "normalized_name": "iprpp.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "iprpp.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_lsass.exe",
+      "type": "File",
+      "name": "lsass.exe",
+      "normalized_name": "lsass.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "lsass.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_lsm.exe",
+      "type": "File",
+      "name": "lsm.exe",
+      "normalized_name": "lsm.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "lsm.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_reader_sl.exe",
+      "type": "File",
+      "name": "reader_sl.exe",
+      "normalized_name": "reader_sl.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "reader_sl.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SearchFilterHost.exe",
+      "type": "File",
+      "name": "SearchFilterHost.exe",
+      "normalized_name": "SearchFilterHost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "SearchFilterHost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SearchIndexer.exe",
+      "type": "File",
+      "name": "SearchIndexer.exe",
+      "normalized_name": "SearchIndexer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "SearchIndexer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SearchProtocolHost.exe",
+      "type": "File",
+      "name": "SearchProtocolHost.exe",
+      "normalized_name": "SearchProtocolHost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "SearchProtocolHost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_services.exe",
+      "type": "File",
+      "name": "services.exe",
+      "normalized_name": "services.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "services.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_smss.exe",
+      "type": "File",
+      "name": "smss.exe",
+      "normalized_name": "smss.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "smss.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_spoolsv.exe",
+      "type": "File",
+      "name": "spoolsv.exe",
+      "normalized_name": "spoolsv.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "spoolsv.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.dll",
+      "type": "File",
+      "name": "svchost.dll",
+      "normalized_name": "svchost.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_5",
+        "ev_54",
+        "ev_58"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "svchost.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_54",
+        "ev_14",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61",
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_taskhost.exe",
+      "type": "File",
+      "name": "taskhost.exe",
+      "normalized_name": "taskhost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "taskhost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_userinit.exe",
+      "type": "File",
+      "name": "userinit.exe",
+      "normalized_name": "userinit.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "userinit.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wininit.exe",
+      "type": "File",
+      "name": "wininit.exe",
+      "normalized_name": "wininit.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "wininit.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_winlogon.exe",
+      "type": "File",
+      "name": "winlogon.exe",
+      "normalized_name": "winlogon.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_60"
+      ],
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "file_name": "winlogon.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_btecache.dll",
+      "tail_id": "ent_malware_Btecache",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54",
+        "ev_55"
+      ],
+      "primary_evidence_id": "ev_54",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_The_Sofacy_group",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_The_Sofacy_group",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "llm_sentence",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Sofacy group"
+      },
+      "head": {
+        "id": "ent_threatactor_The_Sofacy_group",
+        "type": "ThreatActor",
+        "name": "The Sofacy group",
+        "normalized_name": "The Sofacy group",
+        "aliases": [],
+        "confidence": 0.85,
+        "evidence_ids": [
+          "ev_1"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_threatactor_APT28"
+      },
+      "tail": {
+        "id": "ent_threatactor_Sofacy",
+        "type": "ThreatActor",
+        "name": "Sofacy",
+        "normalized_name": "Sofacy",
+        "aliases": [
+          "Tsar Team"
+        ],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_15",
+          "ev_39",
+          "ev_42"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_39",
+        "supporting_evidence_ids": [
+          "ev_1",
+          "ev_15",
+          "ev_42"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Tsar_Team",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The secondary C2 domains may appear familiar, as they were widely publicized in a report from iSight Partners in July 2015 as C2 domains related to the Sofacy group aka Tsar Team."
+      },
+      "head": {
+        "id": "ent_threatactor_Tsar_Team",
+        "type": "ThreatActor",
+        "name": "Tsar Team",
+        "normalized_name": "Tsar Team",
+        "aliases": [],
+        "confidence": 0.85,
+        "evidence_ids": [
+          "ev_1",
+          "ev_15",
+          "ev_39"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_threatactor_Sofacy"
+      },
+      "tail": {
+        "id": "ent_threatactor_APT28",
+        "type": "ThreatActor",
+        "name": "APT28",
+        "normalized_name": "APT28",
+        "aliases": [
+          "The Sofacy group"
+        ],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Tsar_Team",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_15"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "executes",
+      "head_id": "ent_file_svchost.dll",
+      "tail_id": "ent_malware_Btecache",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_6",
+        "ev_13",
+        "ev_54",
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "executes",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_file_bitsprex3.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_cve_CVE-2015-1641",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_5",
+        "ev_54"
+      ],
+      "primary_evidence_id": "ev_5",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit; report_exploit_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_54"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "loads",
+      "head_id": "ent_file_bitsprex3.dll",
+      "tail_id": "ent_file_amdcache.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.dll",
+      "tail_id": "ent_malware_Btecache",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_6",
+        "ev_13",
+        "ev_54",
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload, load_event",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "loads",
+      "head_id": "ent_malware_btecache.dll",
+      "tail_id": "ent_file_svchost.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The “btecache.dll” file is a Trojan that loads and executes “svchost.dll”, which is a Carberp variant the Sofacy Trojan."
+      },
+      "head": {
+        "id": "ent_malware_btecache.dll",
+        "type": "Malware",
+        "name": "btecache.dll",
+        "normalized_name": "btecache.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_54",
+          "ev_55",
+          "ev_56",
+          "ev_58"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "file_name": "btecache.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_55",
+        "supporting_evidence_ids": [
+          "ev_58",
+          "ev_54",
+          "ev_56"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_svchost.dll",
+        "type": "File",
+        "name": "svchost.dll",
+        "normalized_name": "svchost.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_14",
+          "ev_5",
+          "ev_54",
+          "ev_58"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "file_name": "svchost.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_58",
+        "supporting_evidence_ids": [
+          "ev_54",
+          "ev_14",
+          "ev_5"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "targets",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_victim_US_Government_Agency",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "targets",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_victim_US_Government_Agency",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_68",
+        null,
+        "ev_29",
+        "ev_62",
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_68",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_Btecache",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "report_use_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_58"
+      },
+      "head": {
+        "id": "ent_threatactor_APT28",
+        "type": "ThreatActor",
+        "name": "APT28",
+        "normalized_name": "APT28",
+        "aliases": [
+          "The Sofacy group"
+        ],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Btecache",
+        "type": "Malware",
+        "name": "Btecache",
+        "normalized_name": "Btecache",
+        "aliases": [
+          "btecache.dll"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_54",
+          "ev_55",
+          "ev_56",
+          "ev_58"
+        ],
+        "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_55",
+        "supporting_evidence_ids": [
+          "ev_58",
+          "ev_54",
+          "ev_56"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_btecache.dll",
+        "family": "Btecache",
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_12",
+        "ev_57"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_malware_Btecache",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; report_use_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_58"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0008",
+      "type": "exploits",
+      "summary": "Sofacy exploits CVE-2015-1641",
+      "evidence_ids": [
+        "ev_5",
+        "ev_54"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "svchost.dll executes Btecache",
+      "evidence_ids": [
+        "ev_6",
+        "ev_13",
+        "ev_54"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "BEACON executes bitsprex3.dll",
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "bitsprex3.dll loads amdcache.dll",
+      "evidence_ids": [
+        "ev_52",
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "svchost.dll loads Btecache",
+      "evidence_ids": [
+        "ev_6",
+        "ev_13",
+        "ev_54"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "btecache.dll loads svchost.dll",
+      "evidence_ids": [
+        "ev_6"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware Btecache",
+      "evidence_ids": [
+        "ev_58"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "uses_malware",
+      "summary": "Sofacy uses_malware BEACON",
+      "evidence_ids": [
+        "ev_12",
+        "ev_57"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "uses_malware",
+      "summary": "Sofacy uses_malware Btecache",
+      "evidence_ids": [
+        "ev_58"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "The Sofacy group, also known as APT28, is a well-known threat group that frequently conducts cyber espionage campaigns.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Recently, Unit 42 identified a spear phishing e-mail from the Sofacy group that targeted the United States government.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The Delivery The RTF file is a weaponized document that attempts to exploit CVE-2015-1641 to drop two files to the system, specifically, “btecache.dll” and “svchost.dll”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "The “btecache.dll” file is a Trojan that loads and executes “svchost.dll”, which is a Carberp variant the Sofacy Trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s12"
+      },
+      "text": "An added benefit for the threat actor to using this specific tactic for persistence is that it requires user interaction to load and execute the malicious payload, which can cause challenges for detection in automated sandboxes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s13"
+      },
+      "text": "The Carberp variant of Sofacy The “btecache.dll” file is the loader Trojan that is responsible for loading the “svchost.dll” DLL and executing it.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s14"
+      },
+      "text": "Both the “btecache.dll” and “svchost.dll” files contain code from the leaked Carberp source code, specifically the API resolution functions, as well as the RC2 key.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s15"
+      },
+      "text": "The Sofacy group has used the Carberp source code in the past, specifically discussed in a blog by F-Secure , which is the reason we call this Trojan the Carberp variant.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "The Trojan sends network beacons to its command and control (C2) serverallowing the threat actors to identify targets of interest.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "Figure 1 shows an example beacon sent from the Trojan to the C2 server during analysis.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s10"
+      },
+      "text": ",^Bid=I,;<&w@[System Process] System smss.exe csrss.exe wininit.exe csrss.exe winlogon.exe services.exe lsass.exe lsm.exe svchost.exe svchost.exe svchost.exe svchost.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "This callback data allows the threat actors to determine if the infected machine is a target of interest, as the beacon contains a list of running processes and the name of the storage device that could be used to filter out analysis systems or researchers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "The Trojan parses the response to the beacons for two actions “Execute” and “Delete” between the tags “[file]” and “[/file]”, as well as settings labeled “FileName”, “PathToSave”, “Rundll” and “IP” between the tags “[settings]” and “[/settings]”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "The sample also seen by Prevenity appeared to only have a single primary C2 domain, servicecdp[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "Two additional payloads with recent compile dates of March 7, 2016, were discovered using the same persistence mechanism, and analysis of those payloads revealed one primary C2 domain, munimonoce[.]com, and three secondary C2 domains, www.wscapi[.]com, www.tabsync[.]net, and storsvc[.]org.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "The secondary C2 domains may appear familiar, as they were widely publicized in a report from iSight Partners in July 2015 as C2 domains related to the Sofacy group aka Tsar Team.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "In addition, the primary C2 domain munimonoce[.]com previously had resolved to the IP 66.172.11.207, which was previously identified as a primary C2 IP for a Sofacy payload with a compile timestamp of June 11, 2015.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s9"
+      },
+      "text": "This particular sample also happened to use the exact same secondary C2 domains of www.wscapi[.]com , www.tabsync[.]net , and storsvc[.]org, but lacked the newly discovered persistence mechanism.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s10"
+      },
+      "text": "The Sofacy group often re-uses infrastructure components across multiple attack campaigns, whether to speed the flow of attacks, for a lack of available resources committed, or out of sheer laziness.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Indicators Delivery Documents Loader Trojans c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785 (btecache.dll) be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0 (bitsprex3.dll) fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301 (amdcache.dll)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "Payloads 69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261 (svchost.dll) aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632 (clconfg.dll) dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc (iprpp.dll) 57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b (clconfg.dll) 191.101.31.6 munimonoce[.]com wscapi[.]com tabsync[.]net storsvc[.]org servicecdp[.]com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "The RTF file is a weaponized document that attempts to exploit CVE-2015-1641 to drop two files to the system, specifically, “btecache.dll” and “svchost.dll”. The “btecache.dll” file is a Trojan that loads and executes “svchost.dll”, which is a Carberp variant the Sofacy Trojan. Surprisingly, unlike many other espionage actors who display decoy documents after successful exploitation, this RTF document does not drop or open a decoy document after exploiting the vulnerability.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "In the installation process, we observed the delivery document creating a very interesting registry key that it uses for persistence to run the Trojan. The path to the “btecache.dll” file is added to the following registry key:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "Software\\Microsoft\\Office test\\Special\\Perf\\: “C:\\Users\\[username]\\AppData\\Roaming\\btecache.dll”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r4"
+      },
+      "text": "This registry key is interesting, because unlike traditional methods of maintaining persistence, it does not automatically run the “btecache.dll” file at system start up. Instead, this registry key will cause the DLL to load only when the user opens any Microsoft Office application, such as Word or Excel. This is the first time Unit 42 has seen the Sofacy group, or any other threat group for that matter, use this tactic for persistence purposes. An added benefit for the threat actor to using this specific tactic for persistence is that it requires user interaction to load and execute the malicious payload, which can cause challenges for detection in automated sandboxes.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r5"
+      },
+      "text": "The “btecache.dll” file is the loader Trojan that is responsible for loading the “svchost.dll” DLL and executing it. Both the “btecache.dll” and “svchost.dll” files contain code from the leaked Carberp source code, specifically the API resolution functions, as well as the RC2 key. The Sofacy group has used the Carberp source code in the past, specifically discussed in a blog by F-Secure , which is the reason we call this Trojan the Carberp variant.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": ",^Bid=I,;<&w@[System Process] System smss.exe csrss.exe wininit.exe csrss.exe winlogon.exe services.exe lsass.exe lsm.exe svchost.exe svchost.exe svchost.exe svchost.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "svchost.exe svchost.exe svchost.exe spoolsv.exe svchost.exe taskhost.exe userinit.exe dwm.exe explorer.exe svchost.exe cmd.exe conhost.exe reader_sl.exe svchost.exe cmd.exe conhost.exe SearchIndexer.exe SearchProtocolHost.exe SearchFilterHost.exe SearchProtocolHost.exe explorer.exe svchost.exe svchost.exe disk=IDE\\DiskMAXTOR_HARDDISK_________________________2.2.1___\\5&2770a7af&0&0.0.0 build=0x7caa0e19",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "This callback data allows the threat actors to determine if the infected machine is a target of interest, as the beacon contains a list of running processes and the name of the storage device that could be used to filter out analysis systems or researchers. If the actors believe the system is of interest, they will respond to these network beacons to download and execute additional secondary payloads on the system. The Trojan parses the response to the beacons for two actions “Execute” and “Delete” between the tags “[file]” and “[/file]”, as well as settings labeled “FileName”, “PathToSave”, “Rundll” and “IP” between the tags “[settings]” and “[/settings]”. This allows the threat actors to download additional files to the system, execute both executables and DLLs and delete files.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "The initial analyzed sample in this attack only contained a single malicious command and control location, 191.101.31.6. We have not observed this IP address used by the Sofacy group in any previous attack campaigns, and examining passive DNS data showed no other correlations to potentially related attacks. The sample also seen by Prevenity appeared to only have a single primary C2 domain, servicecdp[.]com. This domain also appears to be newly created for this specific attack campaign, with no strong links to any previous attacks.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "c2551c4e6521ac72982cb952503a2e6f016356e02ee31dea36c713141d4f3785 (btecache.dll) be1cfa10fcf2668ae01b98579b345ebe87dab77b6b1581c368d1aba9fd2f10a0 (bitsprex3.dll) fbd5c2cf1c1f17402cc313fe3266b097a46e08f48b971570ef4667fbfd6b7301 (amdcache.dll)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "69940a20ab9abb31a03fcefe6de92a16ed474bbdff3288498851afc12a834261 (svchost.dll) aeeab3272a2ed2157ebf67f74c00fafc787a2b9bbaa17a03be1e23d4cb273632 (clconfg.dll) dfa8a85e26c07a348a854130c652dcc6d29b203ee230ce0603c83d9f11bbcacc (iprpp.dll) 57d230ddaf92e2d0504e5bb12abf52062114fb8980c5ecc413116b1d6ffedf1b (clconfg.dll)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "191.101.31.6 munimonoce[.]com wscapi[.]com tabsync[.]net storsvc[.]org servicecdp[.]com",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb67"
+      },
+      "text": "researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-against-us-government-agency/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb68"
+      },
+      "text": "New Sofacy Attacks Against US Government Agency researchcenter.paloaltonetworks.com/2016/06/unit42-new-sofacy-attacks-against-us-government-agency/ The Sofacy group, also known as",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb69"
+      },
+      "text": "03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca (Exercise_Noble_Partner_16.rtf)",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb70"
+      },
+      "text": "ve been created SofacyCarberp Indicators Delivery Documents 03cb76bdc619fac422d2b954adfa511e7ecabc106adce804b1834581b5913bca (Exercise_Noble_Partner_16.rtf) 12572c2fc2b0298ffd4305c",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb71"
+      },
+      "text": "12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_SofacyUSGov(06-14-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb72"
+      },
+      "text": "c106adce804b1834581b5913bca (Exercise_Noble_Partner_16.rtf) 12572c2fc2b0298ffd4305ca532317dc8b97ddfd0a05671066fe594997ec38f5 (Putin_Is_Being_Pushed_to_Prepare_for_War.rtf and Russi",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_54",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Btecache",
+        "ent_cve_CVE-2015-1641",
+        "ent_malware_btecache.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Btecache",
+        "ent_threatactor_The_Sofacy_group",
+        "ent_malware_btecache.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_The_Sofacy_group",
+        "ent_threatactor_Tsar_Team"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_63",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Btecache",
+        "ent_threatactor_The_Sofacy_group",
+        "ent_malware_btecache.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Btecache",
+        "ent_cve_CVE-2015-1641",
+        "ent_malware_btecache.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_15",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_victim_US_Government_Agency"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_68",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_victim_US_Government_Agency",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_conhost.exe",
+        "ent_file_dwm.exe",
+        "ent_file_explorer.exe",
+        "ent_file_reader_sl.exe",
+        "ent_file_SearchFilterHost.exe",
+        "ent_file_SearchIndexer.exe",
+        "ent_file_SearchProtocolHost.exe",
+        "ent_file_spoolsv.exe",
+        "ent_file_svchost.exe",
+        "ent_file_taskhost.exe",
+        "ent_file_userinit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_csrss.exe",
+        "ent_file_lsass.exe",
+        "ent_file_lsm.exe",
+        "ent_file_services.exe",
+        "ent_file_smss.exe",
+        "ent_file_svchost.exe",
+        "ent_file_wininit.exe",
+        "ent_file_winlogon.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_60",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_csrss.exe",
+        "ent_file_lsass.exe",
+        "ent_file_lsm.exe",
+        "ent_file_services.exe",
+        "ent_file_smss.exe",
+        "ent_file_svchost.exe",
+        "ent_file_wininit.exe",
+        "ent_file_winlogon.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll",
+        "ent_file_amdcache.dll",
+        "ent_file_bitsprex3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll",
+        "ent_file_amdcache.dll",
+        "ent_file_bitsprex3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_clconfg.dll",
+        "ent_file_iprpp.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_clconfg.dll",
+        "ent_file_iprpp.dll",
+        "ent_file_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Btecache",
+        "ent_malware_btecache.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

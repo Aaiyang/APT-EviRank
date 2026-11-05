@@ -1,0 +1,1436 @@
+{
+  "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+  "title": "The Ghost Dragon blog.cylance.com /the-ghost-dragon The Standard Gh0st RAT Protocol",
+  "source": null,
+  "published_date": "April 22, 2016",
+  "report_metadata": {
+    "file_name": "Cylance_The_Ghost_Dragon(04-22-2016).pdf",
+    "file_path": "/root/APTtext/Cylance_The_Ghost_Dragon(04-22-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 11343,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Ghost_Dragon",
+      "type": "ThreatActor",
+      "name": "Ghost Dragon",
+      "normalized_name": "Ghost Dragon",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_19",
+        "ev_2",
+        "ev_4",
+        "ev_8"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_8",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Gh0st_RAT",
+      "type": "Malware",
+      "name": "Gh0st RAT",
+      "normalized_name": "Gh0st RAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_3",
+        "ev_4",
+        "ev_7"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "family": "Gh0st RAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_14",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Ghost_Dragon_malware",
+      "type": "Malware",
+      "name": "Ghost Dragon malware",
+      "normalized_name": "Ghost Dragon malware",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_15"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "family": "Ghost Dragon malware",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_ipv4_122.10.36.94",
+      "type": "IPv4",
+      "name": "122.10.36.94",
+      "normalized_name": "122.10.36.94",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_19",
+        "ev_21",
+        "ev_40"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "122.10.36.94",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_40",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_122.10.41.85",
+      "type": "IPv4",
+      "name": "122.10.41.85",
+      "normalized_name": "122.10.41.85",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_40"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "122.10.41.85",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_64.111.220.218",
+      "type": "IPv4",
+      "name": "64.111.220.218",
+      "normalized_name": "64.111.220.218",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22",
+        "ev_41"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "64.111.220.218",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42",
+      "type": "SHA256",
+      "name": "1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42",
+      "normalized_name": "1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_27",
+        "ev_34"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df",
+      "type": "SHA256",
+      "name": "6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df",
+      "normalized_name": "6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26",
+        "ev_28",
+        "ev_29",
+        "ev_30"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_26",
+        "ev_28",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97",
+      "type": "SHA256",
+      "name": "71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97",
+      "normalized_name": "71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_99ee5b764a5db1cb6b8a4f62605b5536487d9c35a28a23de8f9174659f65bcb2",
+      "type": "SHA256",
+      "name": "99ee5b764a5db1cb6b8a4f62605b5536487d9c35a28a23de8f9174659f65bcb2",
+      "normalized_name": "99ee5b764a5db1cb6b8a4f62605b5536487d9c35a28a23de8f9174659f65bcb2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "99ee5b764a5db1cb6b8a4f62605b5536487d9c35a28a23de8f9174659f65bcb2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_A48f881f254dc8452561a8f13e2fb81933473ff22e549787f0ca67f19ba7fe67",
+      "type": "SHA256",
+      "name": "A48f881f254dc8452561a8f13e2fb81933473ff22e549787f0ca67f19ba7fe67",
+      "normalized_name": "A48f881f254dc8452561a8f13e2fb81933473ff22e549787f0ca67f19ba7fe67",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "A48f881f254dc8452561a8f13e2fb81933473ff22e549787f0ca67f19ba7fe67",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_b803381535ac24ce7c8fdcf6155566d208dfca63fd66ec71bbc6754233e251f5",
+      "type": "SHA256",
+      "name": "b803381535ac24ce7c8fdcf6155566d208dfca63fd66ec71bbc6754233e251f5",
+      "normalized_name": "b803381535ac24ce7c8fdcf6155566d208dfca63fd66ec71bbc6754233e251f5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "b803381535ac24ce7c8fdcf6155566d208dfca63fd66ec71bbc6754233e251f5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197",
+      "type": "SHA256",
+      "name": "f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197",
+      "normalized_name": "f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_28",
+        "ev_31",
+        "ev_35"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_31",
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fb5a7cb34040b1e98b077edaf91cb59a446d8ff07263afe875cf6bd85bfb359d",
+      "type": "SHA256",
+      "name": "fb5a7cb34040b1e98b077edaf91cb59a446d8ff07263afe875cf6bd85bfb359d",
+      "normalized_name": "fb5a7cb34040b1e98b077edaf91cb59a446d8ff07263afe875cf6bd85bfb359d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "value": "fb5a7cb34040b1e98b077edaf91cb59a446d8ff07263afe875cf6bd85bfb359d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_ExtensionManager.exe",
+      "type": "File",
+      "name": "ExtensionManager.exe",
+      "normalized_name": "ExtensionManager.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "file_name": "ExtensionManager.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_iconfig.exe",
+      "type": "File",
+      "name": "iconfig.exe",
+      "normalized_name": "iconfig.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "file_name": "iconfig.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_install.exe",
+      "type": "File",
+      "name": "install.exe",
+      "normalized_name": "install.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_36"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "file_name": "install.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_operas.exe",
+      "type": "File",
+      "name": "operas.exe",
+      "normalized_name": "operas.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "file_name": "operas.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "type": "downloads",
+      "head_id": "ent_malware_Gh0st_RAT",
+      "tail_id": "ent_file_operas.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "primary_evidence_id": "ev_38",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "download_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Upon obtaining the files on the FTP server, an older Gh0st RAT variant was obtained with the file name ‘operas.exe’. This variant sends the system info to the controller in clear text for the login request."
+      },
+      "head": {
+        "id": "ent_malware_Gh0st_RAT",
+        "type": "Malware",
+        "name": "Gh0st RAT",
+        "normalized_name": "Gh0st RAT",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_14",
+          "ev_3",
+          "ev_4",
+          "ev_7"
+        ],
+        "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+        "family": "Gh0st RAT",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_4",
+        "supporting_evidence_ids": [
+          "ev_3",
+          "ev_14",
+          "ev_7"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_operas.exe",
+        "type": "File",
+        "name": "operas.exe",
+        "normalized_name": "operas.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_20",
+          "ev_38",
+          "ev_39"
+        ],
+        "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+        "file_name": "operas.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_38",
+        "supporting_evidence_ids": [
+          "ev_39",
+          "ev_20"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Gh0st_RAT",
+      "tail_id": "ent_file_operas.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_20",
+        "ev_38"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_Gh0st_RAT",
+      "tail_id": "ent_file_install.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_36"
+      },
+      "head": {
+        "id": "ent_malware_Gh0st_RAT",
+        "type": "Malware",
+        "name": "Gh0st RAT",
+        "normalized_name": "Gh0st RAT",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_14",
+          "ev_3",
+          "ev_4",
+          "ev_7"
+        ],
+        "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+        "family": "Gh0st RAT",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_4",
+        "supporting_evidence_ids": [
+          "ev_3",
+          "ev_14",
+          "ev_7"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_install.exe",
+        "type": "File",
+        "name": "install.exe",
+        "normalized_name": "install.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_35",
+          "ev_36"
+        ],
+        "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+        "file_name": "install.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_35",
+        "supporting_evidence_ids": [
+          "ev_36"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Ghost_Dragon",
+      "tail_id": "ent_malware_Gh0st_RAT",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_4",
+        "ev_9",
+        "ev_14",
+        "ev_1",
+        "ev_2",
+        "ev_3",
+        "ev_5",
+        "ev_19",
+        "ev_20"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Connecting to the Ghost Dragon Malware After successful identification of the malware as Gh0st RAT and confirmation of the modified command and control protocol, the final step toward verification was to connect with the malware to ensure that it would parse the normal Gh0st RAT commands."
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Ghost_Dragon",
+      "tail_id": "ent_malware_Ghost_Dragon_malware",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Connecting to the Ghost Dragon Malware After successful identification of the malware as Gh0st RAT and confirmation of the modified command and control protocol, the final step toward verification was to connect with the malware to ensure that it would parse the normal Gh0st RAT commands."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "downloads_payload",
+      "summary": "Gh0st RAT downloads_payload operas.exe",
+      "evidence_ids": [
+        "ev_20",
+        "ev_38"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "Gh0st RAT drops install.exe",
+      "evidence_ids": [
+        "ev_36"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "Ghost Dragon uses_malware Gh0st RAT",
+      "evidence_ids": [
+        "ev_4",
+        "ev_9",
+        "ev_14"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "Ghost Dragon uses_malware Ghost Dragon malware",
+      "evidence_ids": [
+        "ev_14"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "downloads",
+      "summary": "Gh0st RAT downloads operas.exe",
+      "evidence_ids": [
+        "ev_38"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Cylance SPEAR™ has identified an APT group which deploys multiple customized malware implants, targeting mainly Chinese and Russian users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Cylance determined that the ‘Ghost Dragon’ group utilized specifically tailored variants of Gh0st RAT , which the group modified from the 3.6 version of the source code released in 2008.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Newly implemented security mechanisms in the altered malware makes identification of Gh0st RAT Command and Control network traffic more difficult for both security products and researchers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "This write-up provides initial disclosure of a portion of the malware and infrastructure used by the Ghost Dragon group and covers the new security mechanisms in detail, as well as revealing how researchers were able to communicate with the custom implant by rebuilding and compiling a customized Gh0st RAT controller.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "After the packet flag, packet length and unzip length have been verified, a working connection is created between the victim and the controller.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Changes to the Gh0st RAT Protocol In an older version of the customized Gh0st RAT malware, the protocol packet flag is no longer represented by the string ‘Gh0st’.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "The Ghost Dragon group modified the source code and changed the packet flag to ‘XYTvn’, as seen in Figure 4.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "In a more recent version of the modified Gh0st RAT malware, Ghost Dragon implemented dynamic packet flags which change the first five bytes of the header in every login request with the controller.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "Connecting to the Ghost Dragon Malware After successful identification of the malware as Gh0st RAT and confirmation of the modified command and control protocol, the final step toward verification was to connect with the malware to ensure that it would parse the normal Gh0st RAT commands.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "I was able to compile a custom controller from the source code for the purposes of testing the Ghost Dragon malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Infrastructure Overlap Domain | Previous IP resolution bbs.winupdate[dot]net | 122.10.18.166 www.fhtd[dot]info | 122.10.18.166 info.winupdate[dot]net | 122.10.36.94",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "During investigation into the infrastructure used by Ghost Dragon, an anonymous FTP server was discovered on one of the IP addresses listed above, which hosted ‘info.winupdate[dot]net | 122.10.36.94’.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "Upon obtaining the files on the FTP server, an older Gh0st RAT variant was obtained with the file name ‘operas.exe’.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "Appendix A – IP and Domain Listing IP addresses: 101.55.33.39 103.232.215.144 103.246.245.147 111.68.8.130 112.125.17.103 113.10.148.161 113.10.148.205 122.10.18.166 122.10.36.94 122.10.41.85",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "122.10.83.75 122.10.85.35 122.9.247.128 122.9.247.134 122.9.247.216 122.9.247.56 123.254.111.87 142.4.103.90 174.128.255.228 175.45.192.234 202.172.32.172 202.174.130.116 203.232.28.10 209.85.84.165 209.85.84.167 31.170.179.179 58.64.187.22 60.215.128.246 64.111.220.218",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Sample: f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "Sample: 1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Figure 7: Main connection view | Connected to 6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "Sample: 1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "I used sample 6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df for testing, which was executed by f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197 during analysis on Windows XP. This sample transmitted the static five byte packet flag ‘XYTvn’.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "I ran the victim malware and changed the host’s file to point the domain to a host-only IP address. I received a connection attempt from the victim and a response from the controller returned the correct packet flag. Afterward, the keep-alive packets between the victim and controller maintained the connection, which allowed me to test the functionality of 6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df with the custom Gh0st RAT controller.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Figure 8: Remote shell | Adding admin user | Connected to 6c7f8ba75889e0021c4616fcbee86ac06cd7f5e1e355e0cbfbbb5110c08bb6df",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "administrative user while remotely connected via my custom Gh0st RAT console within the malware dropped from sample f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "A48f881f254dc8452561a8f13e2fb81933473ff22e549787f0ca67f19ba7fe67 File name: Air China 2015 April TIMETABLE .xls Malware type: Initial Infection Vector/ XLS file Network Activity Summary: Drops the downloader 71a52058f6b5cef66302c19169f67cf304507b4454cca83e2c36151da8da1d97",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "1be9c68b31247357328596a388010c9cfffadcb6e9841fb22de8b0dc2d161c42 File name: iconfig.exe Malware type: Gh0st RAT variant Network Activity Summary: bbs.winupdate[dot]net | Port 8080 Packet flag: Dynamic",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "f9a669d22866cd041e2d520c5eb093188962bea8864fdfd0c0abb2b254e9f197 File name: install.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "99ee5b764a5db1cb6b8a4f62605b5536487d9c35a28a23de8f9174659f65bcb2 File name: install.exe Malware type: Gh0st RAT variant Network Activity Summary: www.searchhappynews[dot]com | Port 80 Packet flag: Static | XYTvn",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "b803381535ac24ce7c8fdcf6155566d208dfca63fd66ec71bbc6754233e251f5 File name: ExtensionManager.exe Malware type: Gh0st RAT variant Network Activity Summary: www.fhtd[dot]info | Port 1081 Packet flag: Dynamic",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "Upon obtaining the files on the FTP server, an older Gh0st RAT variant was obtained with the file name ‘operas.exe’. This variant sends the system info to the controller in clear text for the login request.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "fb5a7cb34040b1e98b077edaf91cb59a446d8ff07263afe875cf6bd85bfb359d File name: operas.exe Malware type: Gh0st RAT variant Network Activity Summary: www.swgabeg[dot]com | Port 1080 | Clear text login request sent to controller Packet flag: Dynamic",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "101.55.33.39 103.232.215.144 103.246.245.147 111.68.8.130 112.125.17.103 113.10.148.161 113.10.148.205 122.10.18.166 122.10.36.94 122.10.41.85",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Cylance_The_Ghost_Dragon(04-22-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "122.10.83.75 122.10.85.35 122.9.247.128 122.9.247.134 122.9.247.216 122.9.247.56 123.254.111.87 142.4.103.90 174.128.255.228 175.45.192.234 202.172.32.172 202.174.130.116 203.232.28.10 209.85.84.165 209.85.84.167 31.170.179.179 58.64.187.22 60.215.128.246 64.111.220.218",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Ghost_Dragon",
+        "ent_malware_Gh0st_RAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_Ghost_Dragon",
+        "ent_malware_Gh0st_RAT",
+        "ent_malware_Ghost_Dragon_malware"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_Ghost_Dragon",
+        "ent_malware_Gh0st_RAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_38",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Gh0st_RAT",
+        "ent_file_operas.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Gh0st_RAT",
+        "ent_file_operas.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Gh0st_RAT",
+        "ent_file_iconfig.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Gh0st_RAT",
+        "ent_file_install.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Gh0st_RAT",
+        "ent_file_ExtensionManager.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Gh0st_RAT",
+        "ent_file_operas.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Ghost_Dragon",
+        "ent_malware_Gh0st_RAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Ghost_Dragon",
+        "ent_malware_Gh0st_RAT"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    }
+  ]
+}

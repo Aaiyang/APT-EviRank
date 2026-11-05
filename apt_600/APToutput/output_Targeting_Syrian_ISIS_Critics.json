@@ -1,0 +1,4223 @@
+{
+  "report_id": "Targeting_Syrian_ISIS_Critics",
+  "title": "Malware Attack Targeting Syrian ISIS Critics",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Targeting_Syrian_ISIS_Critics.pdf",
+    "file_path": "/root/APTtext/Targeting_Syrian_ISIS_Critics.pdf",
+    "source_type": "pdf",
+    "char_length": 32921,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Free_Syrian_Army",
+      "type": "ThreatActor",
+      "name": "Free Syrian Army",
+      "normalized_name": "Free Syrian Army",
+      "aliases": [
+        "FSA"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_106"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+      "type": "ThreatActor",
+      "name": "Islamic State in Iraq and Syria",
+      "normalized_name": "Islamic State in Iraq and Syria",
+      "aliases": [
+        "ISIS"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_104",
+        "ev_2",
+        "ev_6",
+        "ev_95"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_104",
+        "ev_95",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BEACON",
+      "type": "Malware",
+      "name": "BEACON",
+      "normalized_name": "BEACON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16",
+        "ev_19",
+        "ev_60",
+        "ev_98"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "family": "BEACON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_98",
+        "ev_19",
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_inbox.com",
+      "type": "Domain",
+      "name": "inbox.com",
+      "normalized_name": "inbox.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "inbox.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Syrian_ISIS_Critics",
+      "type": "Victim",
+      "name": "Syrian ISIS Critics",
+      "normalized_name": "Syrian ISIS Critics",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_FSA",
+      "type": "ThreatActor",
+      "name": "FSA",
+      "normalized_name": "FSA",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10",
+        "ev_106"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Free_Syrian_Army"
+    },
+    {
+      "id": "ent_threatactor_ISIS",
+      "type": "ThreatActor",
+      "name": "ISIS",
+      "normalized_name": "ISIS",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_104",
+        "ev_2",
+        "ev_6"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Islamic_State_in_Iraq_and_Syria"
+    },
+    {
+      "id": "ent_domain_citizenlab.org",
+      "type": "Domain",
+      "name": "citizenlab.org",
+      "normalized_name": "citizenlab.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_184",
+        "ev_185"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "citizenlab.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_184",
+      "supporting_evidence_ids": [
+        "ev_185"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_myexternalip.com",
+      "type": "Domain",
+      "name": "myexternalip.com",
+      "normalized_name": "myexternalip.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_153",
+        "ev_47"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "myexternalip.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186",
+        "ev_187"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_187"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_targetedthreats.net",
+      "type": "Domain",
+      "name": "targetedthreats.net",
+      "normalized_name": "targetedthreats.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_188"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "targetedthreats.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_188",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_tempsend.com",
+      "type": "Domain",
+      "name": "tempsend.com",
+      "normalized_name": "tempsend.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "tempsend.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_twitter.com",
+      "type": "Domain",
+      "name": "twitter.com",
+      "normalized_name": "twitter.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_189",
+        "ev_190"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "twitter.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_189",
+      "supporting_evidence_ids": [
+        "ev_190"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.birminghammail.co.uk",
+      "type": "Domain",
+      "name": "www.birminghammail.co.uk",
+      "normalized_name": "www.birminghammail.co.uk",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_191",
+        "ev_192"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.birminghammail.co.uk",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_191",
+      "supporting_evidence_ids": [
+        "ev_192"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.dailymail.co.uk",
+      "type": "Domain",
+      "name": "www.dailymail.co.uk",
+      "normalized_name": "www.dailymail.co.uk",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_192"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.dailymail.co.uk",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.eff.org",
+      "type": "Domain",
+      "name": "www.eff.org",
+      "normalized_name": "www.eff.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_185"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.eff.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_185",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.fireeye.com",
+      "type": "Domain",
+      "name": "www.fireeye.com",
+      "normalized_name": "www.fireeye.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_187"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.fireeye.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_187",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.hate-speech.org",
+      "type": "Domain",
+      "name": "www.hate-speech.org",
+      "normalized_name": "www.hate-speech.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_193",
+        "ev_194",
+        "ev_195"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.hate-speech.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_194",
+      "supporting_evidence_ids": [
+        "ev_193",
+        "ev_195"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.ibtimes.com",
+      "type": "Domain",
+      "name": "www.ibtimes.com",
+      "normalized_name": "www.ibtimes.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_195"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.ibtimes.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_195",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.raqqah-sl.com",
+      "type": "Domain",
+      "name": "www.raqqah-sl.com",
+      "normalized_name": "www.raqqah-sl.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_189",
+        "ev_190"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.raqqah-sl.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_189",
+      "supporting_evidence_ids": [
+        "ev_190"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.telegraph.co.uk",
+      "type": "Domain",
+      "name": "www.telegraph.co.uk",
+      "normalized_name": "www.telegraph.co.uk",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_196",
+        "ev_197"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.telegraph.co.uk",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_196",
+      "supporting_evidence_ids": [
+        "ev_197"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.usenix.org",
+      "type": "Domain",
+      "name": "www.usenix.org",
+      "normalized_name": "www.usenix.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_198",
+        "ev_199"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.usenix.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_198",
+      "supporting_evidence_ids": [
+        "ev_199"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.virustotal.com",
+      "type": "Domain",
+      "name": "www.virustotal.com",
+      "normalized_name": "www.virustotal.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_200",
+        "ev_201"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "www.virustotal.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_200",
+      "supporting_evidence_ids": [
+        "ev_201"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_tempsend",
+      "type": "URL",
+      "name": "http://tempsend",
+      "normalized_name": "http://tempsend",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_128",
+        "ev_129",
+        "ev_22",
+        "ev_24"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "http://tempsend",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_128",
+        "ev_24",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.birminghammail.co.uk_news_midlands-news_birmingham-hacker-junaid-hussain-syria-7291864",
+      "type": "URL",
+      "name": "http://www.birminghammail.co.uk/news/midlands-news/birmingham-hacker-junaid-hussain-syria-7291864",
+      "normalized_name": "http://www.birminghammail.co.uk/news/midlands-news/birmingham-hacker-junaid-hussain-syria-7291864",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_191",
+        "ev_192"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "http://www.birminghammail.co.uk/news/midlands-news/birmingham-hacker-junaid-hussain-syria-7291864",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_191",
+      "supporting_evidence_ids": [
+        "ev_192"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.dailymail.co.uk_news_article-2166850_Junaid-Hussain-Team-Poison-hacker-18-published-Tony-Blairs-",
+      "type": "URL",
+      "name": "http://www.dailymail.co.uk/news/article-2166850/Junaid-Hussain-Team-Poison-hacker-18-published-Tony-Blairs-",
+      "normalized_name": "http://www.dailymail.co.uk/news/article-2166850/Junaid-Hussain-Team-Poison-hacker-18-published-Tony-Blairs-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_202",
+        "ev_203"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "http://www.dailymail.co.uk/news/article-2166850/Junaid-Hussain-Team-Poison-hacker-18-published-Tony-Blairs-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_202",
+      "supporting_evidence_ids": [
+        "ev_203"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.ibtimes.com_isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382",
+      "type": "URL",
+      "name": "http://www.ibtimes.com/isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382",
+      "normalized_name": "http://www.ibtimes.com/isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_204",
+        "ev_205"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "http://www.ibtimes.com/isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_204",
+      "supporting_evidence_ids": [
+        "ev_205"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.Raqqah-sl.com",
+      "type": "URL",
+      "name": "http://www.Raqqah-sl.com",
+      "normalized_name": "http://www.Raqqah-sl.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_189",
+        "ev_190"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "http://www.Raqqah-sl.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_189",
+      "supporting_evidence_ids": [
+        "ev_190"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.telegraph.co.uk_news_worldnews_islamic-state_11291510_Syrian-activist-tell-of-brutal-torture-by-Assad-",
+      "type": "URL",
+      "name": "http://www.telegraph.co.uk/news/worldnews/islamic-state/11291510/Syrian-activist-tell-of-brutal-torture-by-Assad-",
+      "normalized_name": "http://www.telegraph.co.uk/news/worldnews/islamic-state/11291510/Syrian-activist-tell-of-brutal-torture-by-Assad-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_196",
+        "ev_197"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "http://www.telegraph.co.uk/news/worldnews/islamic-state/11291510/Syrian-activist-tell-of-brutal-torture-by-Assad-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_196",
+      "supporting_evidence_ids": [
+        "ev_197"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_citizenlab.org_2014_03_maliciously-repackaged-psiphon_",
+      "type": "URL",
+      "name": "https://citizenlab.org/2014/03/maliciously-repackaged-psiphon/",
+      "normalized_name": "https://citizenlab.org/2014/03/maliciously-repackaged-psiphon/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_184",
+        "ev_185"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://citizenlab.org/2014/03/maliciously-repackaged-psiphon/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_184",
+      "supporting_evidence_ids": [
+        "ev_185"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_securelist.com_files_2014_08_KL_report_syrian_malware.pdf",
+      "type": "URL",
+      "name": "https://securelist.com/files/2014/08/KL_report_syrian_malware.pdf",
+      "normalized_name": "https://securelist.com/files/2014/08/KL_report_syrian_malware.pdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186",
+        "ev_187"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://securelist.com/files/2014/08/KL_report_syrian_malware.pdf",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_187"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_targetedthreats.net",
+      "type": "URL",
+      "name": "https://targetedthreats.net",
+      "normalized_name": "https://targetedthreats.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_188"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://targetedthreats.net",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_188",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_twitter.com_Raqqah_sl",
+      "type": "URL",
+      "name": "https://twitter.com/Raqqah_sl",
+      "normalized_name": "https://twitter.com/Raqqah_sl",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_189",
+        "ev_190"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://twitter.com/Raqqah_sl",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_189",
+      "supporting_evidence_ids": [
+        "ev_190"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.eff.org_document_quantum-surveillance-familiar-actors-and-possible-false-flags-syrian-malware-",
+      "type": "URL",
+      "name": "https://www.eff.org/document/quantum-surveillance-familiar-actors-and-possible-false-flags-syrian-malware-",
+      "normalized_name": "https://www.eff.org/document/quantum-surveillance-familiar-actors-and-possible-false-flags-syrian-malware-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_206",
+        "ev_207"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://www.eff.org/document/quantum-surveillance-familiar-actors-and-possible-false-flags-syrian-malware-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_206",
+      "supporting_evidence_ids": [
+        "ev_207"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.fireeye.com_blog_threat-research_2014_08_connecting-the-dots-syrian-malware-team-uses-blackworm-",
+      "type": "URL",
+      "name": "https://www.fireeye.com/blog/threat-research/2014/08/connecting-the-dots-syrian-malware-team-uses-blackworm-",
+      "normalized_name": "https://www.fireeye.com/blog/threat-research/2014/08/connecting-the-dots-syrian-malware-team-uses-blackworm-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_208",
+        "ev_209"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://www.fireeye.com/blog/threat-research/2014/08/connecting-the-dots-syrian-malware-team-uses-blackworm-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_208",
+      "supporting_evidence_ids": [
+        "ev_209"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.hate-speech.org_intense-hunt-for-americas-spies_",
+      "type": "URL",
+      "name": "https://www.hate-speech.org/intense-hunt-for-americas-spies/",
+      "normalized_name": "https://www.hate-speech.org/intense-hunt-for-americas-spies/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_193",
+        "ev_194",
+        "ev_195"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://www.hate-speech.org/intense-hunt-for-americas-spies/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_194",
+      "supporting_evidence_ids": [
+        "ev_193",
+        "ev_195"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.usenix.org_system_files_conference_usenixsecurity14_sec14-paper-hardy.pdf",
+      "type": "URL",
+      "name": "https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-hardy.pdf",
+      "normalized_name": "https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-hardy.pdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_198",
+        "ev_199"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-hardy.pdf",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_198",
+      "supporting_evidence_ids": [
+        "ev_199"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.virustotal.com_en_file_d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3_analysis_",
+      "type": "URL",
+      "name": "https://www.virustotal.com/en/file/d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3/analysis/",
+      "normalized_name": "https://www.virustotal.com/en/file/d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3/analysis/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_200",
+        "ev_201"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "https://www.virustotal.com/en/file/d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3/analysis/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_200",
+      "supporting_evidence_ids": [
+        "ev_201"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3",
+      "type": "SHA256",
+      "name": "d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3",
+      "normalized_name": "d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_200",
+        "ev_201"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_200",
+      "supporting_evidence_ids": [
+        "ev_201"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0e3eb8de93297f12b56de9fc33657066",
+      "type": "MD5",
+      "name": "0e3eb8de93297f12b56de9fc33657066",
+      "normalized_name": "0e3eb8de93297f12b56de9fc33657066",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_179"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "0e3eb8de93297f12b56de9fc33657066",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_13caa1c95e6610f2d5134174e1fb4fd0",
+      "type": "MD5",
+      "name": "13caa1c95e6610f2d5134174e1fb4fd0",
+      "normalized_name": "13caa1c95e6610f2d5134174e1fb4fd0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_182"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "13caa1c95e6610f2d5134174e1fb4fd0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_182",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1d5d8c5ce3854de61b28de7ca73093f1",
+      "type": "MD5",
+      "name": "1d5d8c5ce3854de61b28de7ca73093f1",
+      "normalized_name": "1d5d8c5ce3854de61b28de7ca73093f1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_176"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "1d5d8c5ce3854de61b28de7ca73093f1",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_176",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3eb6f95c321ace0e3b101fd7e2cdd489",
+      "type": "MD5",
+      "name": "3eb6f95c321ace0e3b101fd7e2cdd489",
+      "normalized_name": "3eb6f95c321ace0e3b101fd7e2cdd489",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_180"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "3eb6f95c321ace0e3b101fd7e2cdd489",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_180",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_55039dd6ce3274dbce569473ad37918b",
+      "type": "MD5",
+      "name": "55039dd6ce3274dbce569473ad37918b",
+      "normalized_name": "55039dd6ce3274dbce569473ad37918b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_177"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "55039dd6ce3274dbce569473ad37918b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_177",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_84bbd592a212f5a84923e82621e9177d",
+      "type": "MD5",
+      "name": "84bbd592a212f5a84923e82621e9177d",
+      "normalized_name": "84bbd592a212f5a84923e82621e9177d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_181"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "84bbd592a212f5a84923e82621e9177d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_181",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9d36e8e3e557239d7006d0bb5c2df298",
+      "type": "MD5",
+      "name": "9d36e8e3e557239d7006d0bb5c2df298",
+      "normalized_name": "9d36e8e3e557239d7006d0bb5c2df298",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_175"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "9d36e8e3e557239d7006d0bb5c2df298",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_175",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_aa6bcba23cd39c2827d72d33f5104856",
+      "type": "MD5",
+      "name": "aa6bcba23cd39c2827d72d33f5104856",
+      "normalized_name": "aa6bcba23cd39c2827d72d33f5104856",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_172"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "aa6bcba23cd39c2827d72d33f5104856",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_172",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b72e6678e79cc57d33e684528b5721bd",
+      "type": "MD5",
+      "name": "b72e6678e79cc57d33e684528b5721bd",
+      "normalized_name": "b72e6678e79cc57d33e684528b5721bd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_131",
+        "ev_168"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "b72e6678e79cc57d33e684528b5721bd",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_131",
+      "supporting_evidence_ids": [
+        "ev_168"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_eda83c8e4ba7d088593f22d56cf39d9f",
+      "type": "MD5",
+      "name": "eda83c8e4ba7d088593f22d56cf39d9f",
+      "normalized_name": "eda83c8e4ba7d088593f22d56cf39d9f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_174"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "eda83c8e4ba7d088593f22d56cf39d9f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_174",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_efdd9b96ae0f43f7d738ead2e1d5430c",
+      "type": "MD5",
+      "name": "efdd9b96ae0f43f7d738ead2e1d5430c",
+      "normalized_name": "efdd9b96ae0f43f7d738ead2e1d5430c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_178"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "efdd9b96ae0f43f7d738ead2e1d5430c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_178",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f8bfb82aa92ea6a8e4e0b378781b3859",
+      "type": "MD5",
+      "name": "f8bfb82aa92ea6a8e4e0b378781b3859",
+      "normalized_name": "f8bfb82aa92ea6a8e4e0b378781b3859",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133",
+        "ev_169"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "value": "f8bfb82aa92ea6a8e4e0b378781b3859",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_169"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_AdbrRader.exe",
+      "type": "File",
+      "name": "AdbrRader.exe",
+      "normalized_name": "AdbrRader.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_139",
+        "ev_151",
+        "ev_175",
+        "ev_31"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "AdbrRader.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_175",
+      "supporting_evidence_ids": [
+        "ev_139",
+        "ev_151",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "GVKBU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_AdobeIns.exe",
+      "type": "File",
+      "name": "AdobeIns.exe",
+      "normalized_name": "AdobeIns.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_140",
+        "ev_158",
+        "ev_176",
+        "ev_31"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "AdobeIns.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_176",
+      "supporting_evidence_ids": [
+        "ev_140",
+        "ev_158",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_AdobeR1.exe",
+      "type": "File",
+      "name": "AdobeR1.exe",
+      "normalized_name": "AdobeR1.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_135",
+        "ev_137",
+        "ev_138",
+        "ev_171"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "AdobeR1.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_171",
+      "supporting_evidence_ids": [
+        "ev_135",
+        "ev_137",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "IXP000"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_drv.sys",
+      "type": "File",
+      "name": "drv.sys",
+      "normalized_name": "drv.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_122",
+        "ev_159",
+        "ev_183",
+        "ev_52"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "drv.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [
+        "ev_183",
+        "ev_159",
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_GoogleUpate.exe",
+      "type": "File",
+      "name": "GoogleUpate.exe",
+      "normalized_name": "GoogleUpate.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_141",
+        "ev_150",
+        "ev_177",
+        "ev_32"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "GoogleUpate.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_177",
+      "supporting_evidence_ids": [
+        "ev_141",
+        "ev_150",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "GVKBU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_GooglUpd.exe",
+      "type": "File",
+      "name": "GooglUpd.exe",
+      "normalized_name": "GooglUpd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_142",
+        "ev_178",
+        "ev_32"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "GooglUpd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_178",
+      "supporting_evidence_ids": [
+        "ev_142",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_nvidrv.exe",
+      "type": "File",
+      "name": "nvidrv.exe",
+      "normalized_name": "nvidrv.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_143",
+        "ev_147",
+        "ev_152",
+        "ev_179"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "nvidrv.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [
+        "ev_143",
+        "ev_147",
+        "ev_152"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "GVKBU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_nvisdvr.exe",
+      "type": "File",
+      "name": "nvisdvr.exe",
+      "normalized_name": "nvisdvr.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_144",
+        "ev_149",
+        "ev_180",
+        "ev_33"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "nvisdvr.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_180",
+      "supporting_evidence_ids": [
+        "ev_144",
+        "ev_149",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "GVKBU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_pictures.exe",
+      "type": "File",
+      "name": "pictures.exe",
+      "normalized_name": "pictures.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_137",
+        "ev_138",
+        "ev_173"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "pictures.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_173",
+      "supporting_evidence_ids": [
+        "ev_136",
+        "ev_137",
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "IXP000"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundl132.exe",
+      "type": "File",
+      "name": "rundl132.exe",
+      "normalized_name": "rundl132.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_145",
+        "ev_148",
+        "ev_153",
+        "ev_181"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "rundl132.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_181",
+      "supporting_evidence_ids": [
+        "ev_145",
+        "ev_148",
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "HTTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_slideshow.exe",
+      "type": "File",
+      "name": "slideshow.exe",
+      "normalized_name": "slideshow.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_132",
+        "ev_169",
+        "ev_24"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "slideshow.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [
+        "ev_169",
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_slideshow.zip",
+      "type": "File",
+      "name": "slideshow.zip",
+      "normalized_name": "slideshow.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_130",
+        "ev_134",
+        "ev_24",
+        "ev_26"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "slideshow.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_134",
+        "ev_24",
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svhosts.exe",
+      "type": "File",
+      "name": "svhosts.exe",
+      "normalized_name": "svhosts.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_146",
+        "ev_182",
+        "ev_34"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "svhosts.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_182",
+      "supporting_evidence_ids": [
+        "ev_146",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vg2sxoysinf.tmp",
+      "type": "File",
+      "name": "vg2sxoysinf.tmp",
+      "normalized_name": "vg2sxoysinf.tmp",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "vg2sxoysinf.tmp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vgadmysadm.tmp",
+      "type": "File",
+      "name": "vgadmysadm.tmp",
+      "normalized_name": "vgadmysadm.tmp",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_43",
+        "ev_44"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "vgadmysadm.tmp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_win32.tmp",
+      "type": "File",
+      "name": "win32.tmp",
+      "normalized_name": "win32.tmp",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_122",
+        "ev_159",
+        "ev_183",
+        "ev_45"
+      ],
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "file_name": "win32.tmp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [
+        "ev_45",
+        "ev_183",
+        "ev_159"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_FSA",
+      "tail_id": "ent_threatactor_Free_Syrian_Army",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_106"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_ISIS",
+      "tail_id": "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_104",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "communicates_with",
+      "head_id": "ent_file_drv.sys",
+      "tail_id": "ent_domain_inbox.com",
+      "head_type": "File",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "connects",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "communicates_with",
+      "head_id": "ent_file_win32.tmp",
+      "tail_id": "ent_domain_inbox.com",
+      "head_type": "File",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "connects",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "executes",
+      "head_id": "ent_file_win32.tmp",
+      "tail_id": "ent_file_vg2sxoysinf.tmp",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "executes",
+      "head_id": "ent_file_win32.tmp",
+      "tail_id": "ent_file_vgadmysadm.tmp",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "primary_evidence_id": "ev_44",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "loads",
+      "head_id": "ent_file_slideshow.zip",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_26",
+        "ev_134"
+      ],
+      "primary_evidence_id": "ev_26",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "loads",
+      "head_id": "ent_file_win32.tmp",
+      "tail_id": "ent_file_vg2sxoysinf.tmp",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "loads",
+      "head_id": "ent_file_win32.tmp",
+      "tail_id": "ent_file_vgadmysadm.tmp",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "primary_evidence_id": "ev_44",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "loads",
+      "head_id": "ent_file_win32.tmp",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_46",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_46",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "targets",
+      "head_id": "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+      "tail_id": "ent_victim_Syrian_ISIS_Critics",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        null,
+        "ev_2",
+        "ev_4",
+        "ev_6",
+        "ev_8",
+        "ev_10",
+        "ev_11",
+        "ev_12",
+        "ev_24",
+        "ev_25",
+        "ev_28",
+        "ev_137",
+        "ev_195",
+        "ev_204",
+        "ev_205"
+      ],
+      "primary_evidence_id": null,
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "win32.tmp executes vg2sxoysinf.tmp",
+      "evidence_ids": [
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "win32.tmp executes vgadmysadm.tmp",
+      "evidence_ids": [
+        "ev_44"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "slideshow.zip loads BEACON",
+      "evidence_ids": [
+        "ev_26",
+        "ev_134"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "win32.tmp loads vg2sxoysinf.tmp",
+      "evidence_ids": [
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "win32.tmp loads vgadmysadm.tmp",
+      "evidence_ids": [
+        "ev_44"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "win32.tmp loads BEACON",
+      "evidence_ids": [
+        "ev_46",
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "uses_malware",
+      "summary": "Islamic State in Iraq and Syria uses_malware BEACON",
+      "evidence_ids": [
+        "ev_6"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "command_and_control",
+      "relation_id": "rel_0003",
+      "type": "communicates_with",
+      "summary": "drv.sys communicates_with inbox.com",
+      "evidence_ids": [
+        "ev_52"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "command_and_control",
+      "relation_id": "rel_0004",
+      "type": "communicates_with",
+      "summary": "win32.tmp communicates_with inbox.com",
+      "evidence_ids": [
+        "ev_52"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s2"
+      },
+      "text": "A Syrian citizen media group critical of Islamic State of Iraq and Syria (ISIS) was recently targeted in a customized digital attack designed to unmask their location .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s4"
+      },
+      "text": "In response, ISIS forces in the city have reportedly targeted the group with house raids, kidnappings, and an alleged assassination.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s6"
+      },
+      "text": "The malware used in the attack differs substantially from campaigns linked to the Syrian regime, and the attack is focused against a group that is an active target of ISIS forces.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s8"
+      },
+      "text": "A growing number of reports suggest that ISIS is systematically targeting groups that document atrocities, or that communicate with Western media and aid organizations, sometimes under the pretext of finding “spies”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "As ISIS gained momentum, they consolidated their control over the city, edging out FSA- affiliated groups through attacks, summary executions, and kidnappings against a range of groups, including ethnic and religious minorities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "According to Syrians who experienced these searches and spoke with one of the reports’ authors, ISIS sometimes extracts data from confiscated smartphones and laptops to collect information about people and groups they are targeting, as well as to seek evidence of “un-Islamic” activities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Reports about ISIS targeting Internet cafés have grown increasingly common, and in some cases reports point to the possible use of keyloggers as well as unspecified “IP sniffers” to track behaviour in Internet cafes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "The file contained custom malware that profiled the victim’s computer and beaconed its IP address to an e-mail account under the attacker’s control.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "Analyzing the Malware The custom malware used in this attack infects a user who views the decoy “slideshow,” and beacons home with the IP address of the victim’s computer and details about his or her system each time the computer restarts.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "Narrative of Infection Accessing the link provided in the malicious e-mail sends the user to a .zip file hosted on file-sharing site tempsend.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Image 2: Tempsend screenshot The file to be downloaded is “slideshow.zip” This file contains slideshow.exe This file is a self-extracting archive with an icon intended to suggest to the victim that it is itself a slideshow.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "When run, the file opens a slideshow of Google Earth screen captures to the victim, displaying a series of locations in Syria, and highlighting an “ISIS HQ” and other images showing the alleged locations of US airstrikes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Infection and Data Collection When opened, the “slideshow.zip” file writes and executes several files:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "“AdobeR1.exe” is malicious, while “pictures.exe” is the genuine slideshow displayed to the victim.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\AdbrRader.exe C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\AdobeIns.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s7"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\GoogleUpate.exe C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\GooglUpd.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s8"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvidrv.exe C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvisdvr.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s9"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\rundl132.exe C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\svhosts.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s8"
+      },
+      "text": "AdbrRader (communicating through registry key “2”) writes the file vgadmysadm.tmp with the name of another registry key “2” with startup info.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s9"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\ vgadmysadm.tmp Next, nvidrv runs GoogleUpate , which collects system information and writes it to:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s10"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\ vg2sxoysinf.tmp Then nvidrv runs nvisdvr (registry key “4”) that collects a list of running processes, which are written to:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s11"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\v2cgplst.tmp Finally, nvidrv runs svhosts , which tests Internet connectivity by doing a DNS query for windowsupdate.microsoft.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s12"
+      },
+      "text": "Next, “ rundl132.exe ” performs an HTTP GET request to myexternalip.com and collects the external IP of the infected machine:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\vgosysaext.tmp Finally, rundl132 runs AdobeIns , which zips the contents of the win32.tmp folder.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\drv.sys\\mxtd Data Transmission Data is transmitted by e-mail to an account presumably controlled by the attacker.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s5"
+      },
+      "text": "AdobeIns connects to an account at the online e-mail provider inbox.com via smtp using hardcoded credentials.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s7"
+      },
+      "text": "SMTP traffic generated by the malware to inbox.com (with redactions) 220 [REDACTED]ESMTP Postfix EHLO [REDACTED] 250-[REDACTED] 250-PIPELINING 250-SIZE 10240000 250-VRFY 250-ETRN 250-ENHANCEDSTATUSCODES 250-8BITMIME 250 DSN",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s8"
+      },
+      "text": "MAIL FROM:< [REDACTED]@inbox.com> 250 2.1.0 Ok RCPT TO:< [REDACTED]@inbox.com> 250 2.1.5 Ok DATA 354 End data with .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s4"
+      },
+      "text": "This behaviour strongly suggests that the function of this malware is to serve as a beacon.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s8"
+      },
+      "text": "In addition, ISIS supporters have explicitly suggested that the group is under surveillance and actively hunted.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s11"
+      },
+      "text": "The malware beacons location but does not provide RAT functionality.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s17"
+      },
+      "text": "In addition, ISIS has reportedly gained the support of at least one individual with some experience with social engineering and hacking: Junaid Hussain (aka TriCk), a former member of teamp0ison hacking team.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s2"
+      },
+      "text": "It is not possible, for example, to reject the theory that some unknown group within the FSA, or other groups opposing the Assad regime are responsible.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s1"
+      },
+      "text": "Exfiltrated file (encrypted) Filename and Path C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\drv.sys\\mxtd",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "You can see a preliminary copy of the report on this linkhttp://tempsend [DOT]com/[Redacted]With all respect",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "ﻟﺘﺎﻟﻲ+ ﺑﻂ+ﻟﺮ+ ﻋﻠﻰ ﺮIﻟﻠﺘﻘﺮ ﺔ#ﻟﻤﺒﺪﺋ+ 1ﻟﻨﺴﺨ+ ﻋﻠﻰ ^ﻼ$ﻻ+ ﻤﻜﻨﻜﻢIﻣﺒﺎﺷﺮ ﺑﺸﻜﻞ http://tempsend [DOT]com/[Redacted] ﺮIﻟﺘﻘﺪ+ ﻛﻞ ﻣﻊ",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "The file to be downloaded is “slideshow.zip”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "MD5: b72e6678e79cc57d33e684528b5721bd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "This file contains slideshow.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "MD5: f8bfb82aa92ea6a8e4e0b378781b3859",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_134",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "When opened, the “slideshow.zip” file writes and executes several files:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Temp\\IXP000.TMP\\AdobeR1.exe C:\\Users\\",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "[Username]\\AppData\\Local\\Temp\\IXP000.TMP\\pictures.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "“AdobeR1.exe” is malicious, while “pictures.exe” is the genuine slideshow displayed to the victim. When the slideshow is",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "closed both AdobeR1.exe and pictures.exe are deleted.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\AdbrRader.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r7"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\AdobeIns.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r8"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\GoogleUpate.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r9"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\GooglUpd.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_143",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r10"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvidrv.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r11"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvisdvr.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r12"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\rundl132.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_146",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r13"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\svhosts.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_147",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r14"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvidrv.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_148",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "rundl132.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "GVKBU\\6 nvisdvr.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_150",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "GVKBU\\4 GoogleUpate.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "GVKBU\\3 AdbrRader.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "GVKBU\\2 nvidrv.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "Next, “ rundl132.exe ” performs an HTTP GET request to myexternalip.com and collects the external IP of the infected",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_158",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "Program “ AdobeIns.exe ” takes the files written by the other programs and zips them in an encrypted, password-",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_159",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\drv.sys\\mxtd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_168",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r2"
+      },
+      "text": "slideshow.zip b72e6678e79cc57d33e684528b5721bd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_169",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r3"
+      },
+      "text": "slideshow.exe f8bfb82aa92ea6a8e4e0b378781b3859",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_171",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r5"
+      },
+      "text": "C:\\Users\\ [Username]\\AppData\\Local\\Temp\\IXP000.TMP\\AdobeR1.exe (note: folder and file deleted after slideshow closed)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_172",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r6"
+      },
+      "text": "aa6bcba23cd39c2827d72d33f5104856",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_173",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r7"
+      },
+      "text": "C:\\Users\\ [Username]\\AppData\\Local\\Temp\\IXP000.TMP\\pictures.exe (note: folder and file deleted after slideshow closed)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_174",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r8"
+      },
+      "text": "eda83c8e4ba7d088593f22d56cf39d9f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_175",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r9"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\AdbrRader.exe 9d36e8e3e557239d7006d0bb5c2df298",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_176",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r10"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\AdobeIns.exe 1d5d8c5ce3854de61b28de7ca73093f1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_177",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r11"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\GoogleUpate.exe 55039dd6ce3274dbce569473ad37918b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_178",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r12"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\GooglUpd.exe efdd9b96ae0f43f7d738ead2e1d5430c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_179",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r13"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvidrv.exe 0e3eb8de93297f12b56de9fc33657066",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_180",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r14"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\nvisdvr.exe 3eb6f95c321ace0e3b101fd7e2cdd489",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_181",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r15"
+      },
+      "text": "C:\\Users\\ [Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\rundl132.exe 84bbd592a212f5a84923e82621e9177d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_182",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r16"
+      },
+      "text": "C:\\Users\\[Username]\\Microsoft\\Windows\\Z0xapp8T.tmp\\ svhosts.exe 13caa1c95e6610f2d5134174e1fb4fd0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_183",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule",
+        "sentence_id": "p15_r1"
+      },
+      "text": "C:\\Users\\[Username]\\AppData\\Local\\Microsoft\\Windows\\win32.tmp\\drv.sys\\mxtd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_184",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb184"
+      },
+      "text": "11 https://citizenlab.org/2014/03/maliciously-repackaged-psiphon/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_185",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb185"
+      },
+      "text": "11 https://citizenlab.org/2014/03/maliciously-repackaged-psiphon/ 12 https://www.eff.org/document/quantum-surveillance-familiar-actors-and-possib",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_186",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb186"
+      },
+      "text": "9 https://securelist.com/files/2014/08/KL_report_syrian_malware.pdf",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_187",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb187"
+      },
+      "text": "conference/usenixsecurity14/sec14-paper-hardy.pdf 9 https://securelist.com/files/2014/08/KL_report_syrian_malware.pdf 10 https://www.fireeye.com/blog/threat-research/2014/08/connec",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_188",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb188"
+      },
+      "text": "al threats against ten civil society organizations. https://targetedthreats.net",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_189",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb189"
+      },
+      "text": "5 https://twitter.com/Raqqah_sl and http://www.Raqqah-sl.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_190",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb190"
+      },
+      "text": "-of-brutal-torture-by-Assad- regime-and-Isil.html 5 https://twitter.com/Raqqah_sl and http://www.Raqqah-sl.com 6 Special thanks to Cyber Arabs for assistance with the translation 7",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_191",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb191"
+      },
+      "text": "13 http://www.birminghammail.co.uk/news/midlands-news/birmingham-hacker-junaid-hussain-syria-7291864",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_192",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb192"
+      },
+      "text": "nd-possible-false-flags-syrian-malware- campaigns 13 http://www.birminghammail.co.uk/news/midlands-news/birmingham-hacker-junaid-hussain-syria-7291864 14 http://www.dailymail.co.uk",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_193",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb193"
+      },
+      "text": "1 https://www.hate-speech.org/intense-hunt-for-americas-spies/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_194",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb194"
+      },
+      "text": "3 https://www.hate-speech.org/intense-hunt-for-americas-spies/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_195",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb195"
+      },
+      "text": "hur Foundation and the Ford Foundation. Footnotes 1 https://www.hate-speech.org/intense-hunt-for-americas-spies/ 2 http://www.ibtimes.com/isis-militants-target-high-speed-internet-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_196",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb196"
+      },
+      "text": "4 http://www.telegraph.co.uk/news/worldnews/islamic-state/11291510/Syrian-activist-tell-of-brutal-torture-by-Assad-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_197",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb197"
+      },
+      "text": "w.hate-speech.org/intense-hunt-for-americas-spies/ 4 http://www.telegraph.co.uk/news/worldnews/islamic-state/11291510/Syrian-activist-tell-of-brutal-torture-by-Assad- regime-and-Is",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_198",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb198"
+      },
+      "text": "8 https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-hardy.pdf",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_199",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb199"
+      },
+      "text": "e3bdb3966a61e3e49147cd112dc3beabe22a2c3/analysis/ 8 https://www.usenix.org/system/files/conference/usenixsecurity14/sec14-paper-hardy.pdf 9 https://securelist.com/files/2014/08/KL_",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_200",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb200"
+      },
+      "text": "https://www.virustotal.com/en/file/d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3/analysis/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_201",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb201"
+      },
+      "text": "o Cyber Arabs for assistance with the translation 7 https://www.virustotal.com/en/file/d9da10e6381cb5c97a966bab0e3bdb3966a61e3e49147cd112dc3beabe22a2c3/analysis/ 8 https://www.usen",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_202",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb202"
+      },
+      "text": "14 http://www.dailymail.co.uk/news/article-2166850/Junaid-Hussain-Team-Poison-hacker-18-published-Tony-Blairs-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_203",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb203"
+      },
+      "text": "ands-news/birmingham-hacker-junaid-hussain-syria-7291864 14 http://www.dailymail.co.uk/news/article-2166850/Junaid-Hussain-Team-Poison-hacker-18-published-Tony-Blairs- address-book",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_204",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb204"
+      },
+      "text": "2 http://www.ibtimes.com/isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382 (note that this",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_205",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb205"
+      },
+      "text": "ps://www.hate-speech.org/intense-hunt-for-americas-spies/ 2 http://www.ibtimes.com/isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382 (note that this report",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_206",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb206"
+      },
+      "text": "12 https://www.eff.org/document/quantum-surveillance-familiar-actors-and-possible-false-flags-syrian-malware-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_207",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb207"
+      },
+      "text": "//citizenlab.org/2014/03/maliciously-repackaged-psiphon/ 12 https://www.eff.org/document/quantum-surveillance-familiar-actors-and-possible-false-flags-syrian-malware- campaigns 13",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_208",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb208"
+      },
+      "text": "10 https://www.fireeye.com/blog/threat-research/2014/08/connecting-the-dots-syrian-malware-team-uses-blackworm-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_209",
+      "evidence_type": "report_text",
+      "report_id": "Targeting_Syrian_ISIS_Critics",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb209"
+      },
+      "text": "ecurelist.com/files/2014/08/KL_report_syrian_malware.pdf 10 https://www.fireeye.com/blog/threat-research/2014/08/connecting-the-dots-syrian-malware-team-uses-blackworm- for-attacks",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_victim_Syrian_ISIS_Critics",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_104",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_24",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_slideshow.exe",
+        "ent_file_slideshow.zip"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_vgadmysadm.tmp",
+        "ent_file_win32.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_vg2sxoysinf.tmp",
+        "ent_file_win32.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Free_Syrian_Army",
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_FSA",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_195",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS",
+        "ent_url_https_www.hate-speech.org_intense-hunt-for-americas-spies_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_204",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS",
+        "ent_url_http_www.ibtimes.com_isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_205",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS",
+        "ent_url_http_www.ibtimes.com_isis-militants-target-high-speed-internet-cafes-Raqqah-stronghold-1745382"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_95",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_threatactor_Islamic_State_in_Iraq_and_Syria",
+        "ent_threatactor_ISIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_106",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_threatactor_Free_Syrian_Army",
+        "ent_threatactor_FSA"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_28",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_AdobeR1.exe",
+        "ent_file_pictures.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_AdbrRader.exe",
+        "ent_file_AdobeIns.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_GoogleUpate.exe",
+        "ent_file_GooglUpd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_nvidrv.exe",
+        "ent_file_nvisdvr.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_rundl132.exe",
+        "ent_file_svhosts.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_myexternalip.com",
+        "ent_file_rundl132.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_drv.sys",
+        "ent_file_win32.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_122",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_file_drv.sys",
+        "ent_file_win32.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_137",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_AdobeR1.exe",
+        "ent_file_pictures.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_138",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_AdobeR1.exe",
+        "ent_file_pictures.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_153",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_myexternalip.com",
+        "ent_file_rundl132.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_159",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_drv.sys",
+        "ent_file_win32.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_183",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_file_drv.sys",
+        "ent_file_win32.tmp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_189",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_url_http_www.Raqqah-sl.com",
+        "ent_url_https_twitter.com_Raqqah_sl"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_190",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_url_http_www.Raqqah-sl.com",
+        "ent_url_https_twitter.com_Raqqah_sl"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

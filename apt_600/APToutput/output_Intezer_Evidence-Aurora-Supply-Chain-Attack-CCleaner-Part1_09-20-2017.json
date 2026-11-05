@@ -1,0 +1,641 @@
+{
+  "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+  "title": "Evidence Aurora Operation Still Active: Supply Chain Attack Through CCleaner",
+  "source": null,
+  "published_date": "September 19, 2017",
+  "report_metadata": {
+    "file_name": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017).pdf",
+    "file_path": "/root/APTtext/Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 5403,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT17",
+      "type": "ThreatActor",
+      "name": "APT17",
+      "normalized_name": "APT17",
+      "aliases": [
+        "Operation Aurora"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_4",
+        "ev_7",
+        "ev_8"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_7",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Still_Active",
+      "type": "Campaign",
+      "name": "Operation Still Active",
+      "normalized_name": "Operation Still Active",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Operation_Aurora",
+      "type": "ThreatActor",
+      "name": "Operation Aurora",
+      "normalized_name": "Operation Aurora",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10",
+        "ev_4",
+        "ev_7"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT17"
+    },
+    {
+      "id": "ent_domain_blog.talosintelligence.com",
+      "type": "Domain",
+      "name": "blog.talosintelligence.com",
+      "normalized_name": "blog.talosintelligence.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "blog.talosintelligence.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_intezer.com",
+      "type": "Domain",
+      "name": "intezer.com",
+      "normalized_name": "intezer.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_28",
+        "ev_29"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "intezer.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_pic.twitter.com",
+      "type": "Domain",
+      "name": "pic.twitter.com",
+      "normalized_name": "pic.twitter.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30",
+        "ev_31"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "pic.twitter.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_t.co",
+      "type": "Domain",
+      "name": "t.co",
+      "normalized_name": "t.co",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "t.co",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_216.126.225.148",
+      "type": "IPv4",
+      "name": "216.126.225.148",
+      "normalized_name": "216.126.225.148",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_25"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "216.126.225.148",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_blog.talosintelligence.com_2017_09_avast-distributes-",
+      "type": "URL",
+      "name": "http://blog.talosintelligence.com/2017/09/avast-distributes-",
+      "normalized_name": "http://blog.talosintelligence.com/2017/09/avast-distributes-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "http://blog.talosintelligence.com/2017/09/avast-distributes-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_t.co_dgWiQVd31k",
+      "type": "URL",
+      "name": "https://t.co/dgWiQVd31k",
+      "normalized_name": "https://t.co/dgWiQVd31k",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31",
+        "ev_32",
+        "ev_33"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "https://t.co/dgWiQVd31k",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_33",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_t.co_FprmtmkV64",
+      "type": "URL",
+      "name": "https://t.co/FprmtmkV64",
+      "normalized_name": "https://t.co/FprmtmkV64",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_32",
+        "ev_33"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "https://t.co/FprmtmkV64",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9",
+      "type": "SHA256",
+      "name": "6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9",
+      "normalized_name": "6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "value": "6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Operation_Aurora",
+      "tail_id": "ent_threatactor_APT17",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_4",
+        "ev_8"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "APT17, also known as Operation Aurora, is one of the most sophisticated cyber attacks ever conducted and they specialize in supply chain attacks."
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Costin Raiu, director of Global Research and Analysis Team at Kaspersky Lab, was the first to find a code connection between APT17 and the backdoor in the infected CCleaner:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "The code in question is a unique implementation of base64 only previously seen in APT17 and not in any public repository, which makes a strong case about attribution to the same threat actor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "APT17, also known as Operation Aurora, is one of the most sophisticated cyber attacks ever conducted and they specialize in supply chain attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Operation Aurora started in 2009 and to see the same threat actor still active in 2017 could possibly mean there are many other supply chain attacks by the same group that we are not aware of.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "Contacts C&C server at IP address 216.126.225.148 a.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "The infected CCleaner file that begins the analysis is from 6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "4. Contacts C&C server at IP address 216.126.225.148",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb26"
+      },
+      "text": "A technical analysis was posted by Talos here ( http://blog.talosintelligence.com/2017/09/avast-distributes-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb27"
+      },
+      "text": "f0a9 A technical analysis was posted by Talos here ( http://blog.talosintelligence.com/2017/09/avast-distributes- malware.html). The flow-graph of the malicious CCleaner is as foll",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb28"
+      },
+      "text": "intezer.com /evidence-aurora-operation-still-active-supply-chain-attack-through-ccleaner/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb29"
+      },
+      "text": "peration Still Active: Supply Chain Attack Through CCleaner intezer.com /evidence-aurora-operation-still-active-supply-chain-attack-through-ccleaner/ Recently, there have been a fe",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb30"
+      },
+      "text": "@malwrhunterteam pic.twitter.com/TxsbveFoHJ",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb31"
+      },
+      "text": "V64 https://t.co/dgWiQVd31k @TalosSecurity @malwrhunterteam pic.twitter.com/TxsbveFoHJ — Jay Rosenberg (@jaytezer) September 18, 2017 By Jay Rosenberg Jay Rosenberg is a self-taugh",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb32"
+      },
+      "text": "#ccleaner malware DLL w/ IAT fix https://t.co/FprmtmkV64 https://t.co/dgWiQVd31k @TalosSecurity",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part1(09-20-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb33"
+      },
+      "text": "you may refer to my tweet. #ccleaner malware DLL w/ IAT fix https://t.co/FprmtmkV64 https://t.co/dgWiQVd31k @TalosSecurity @malwrhunterteam pic.twitter.com/TxsbveFoHJ — Jay Rosenbe",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_8",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT17",
+        "ent_threatactor_Operation_Aurora"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT17",
+        "ent_threatactor_Operation_Aurora"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_url_https_t.co_dgWiQVd31k",
+        "ent_url_https_t.co_FprmtmkV64"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_url_https_t.co_dgWiQVd31k",
+        "ent_url_https_t.co_FprmtmkV64"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+  "title": "FIN7 Spear Phishing Campaign Targets Personnel Involved in SEC Filings",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017).pdf",
+    "file_path": "/root/APTtext/FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 5727,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_BEACON",
+      "type": "Malware",
+      "name": "BEACON",
+      "normalized_name": "BEACON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_16"
+      ],
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "family": "BEACON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_FIN7",
+      "type": "Malware",
+      "name": "FIN7",
+      "normalized_name": "FIN7",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_15",
+        "ev_20",
+        "ev_3",
+        "ev_4"
+      ],
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "family": "FIN7",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_20",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Personnel_Involved_in_SEC_Filings",
+      "type": "Victim",
+      "name": "Personnel Involved in SEC Filings",
+      "normalized_name": "Personnel Involved in SEC Filings",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Exchange_Commission",
+      "type": "ThreatActor",
+      "name": "Exchange Commission",
+      "normalized_name": "Exchange Commission",
+      "aliases": [
+        "SEC"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_10",
+        "ev_22"
+      ],
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Service",
+      "type": "ThreatActor",
+      "name": "Service",
+      "normalized_name": "Service",
+      "aliases": [
+        "FaaS"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_19",
+        "ev_22",
+        "ev_23"
+      ],
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_19",
+        "ev_22",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "In late February 2017, FireEye as a Service (FaaS) identified a spear phishing campaign that appeared to be targeting personnel involved with United States Securities and Exchange Commission (SEC) filings at various organizations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "FIN7 is a financially motivated intrusion set that selectively targets victims and uses spear phishing to distribute its malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "We have observed FIN7 attempt to compromise diverse organizations for malicious operations – usually involving the deployment of point-of-sale malware – primarily against the retail and hospitality industries.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "We also observed POWERSOURCE being used to download a second-stage PowerShell backdoor called TEXTMATE in an effort to further infect the victim machine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "In some cases, we identified a Cobalt Strike Beacon payload being delivered via POWERSOURCE.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "This particular Cobalt Strike stager payload was previously used in operations linked to FIN7.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "We observed that the same domain hosting the Cobalt Strike Beacon payload was also hosting a CARBANAK backdoor sample compiled in February 2017.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s12"
+      },
+      "text": "Implications We have not yet identified FIN7’s ultimate goal in this campaign, as we have either blocked the delivery of the malicious emails or our FaaS team detected and contained the attack early enough in the lifecycle before we observed any data targeting or theft.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s13"
+      },
+      "text": "Previous FIN7 operations deployed multiple point-of-sale malware families for the purpose of collecting and exfiltrating sensitive financial data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Community Protection Event FireEye implemented a Community Protection Event – FaaS, Mandiant, Intelligence, and Products – to secure all clients affected by this campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-FIN7-SpearPhishing-Targets-SEC-Filings(03-07-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "In this instance, an incident detected by FaaS led to the deployment of additional detections by the FireEye Labs team after FireEye Labs Advanced Reverse Engineering quickly analyzed the malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_FIN7",
+        "ent_victim_Personnel_Involved_in_SEC_Filings"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

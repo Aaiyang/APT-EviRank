@@ -1,0 +1,496 @@
+{
+  "report_id": "Crypto-DarkComet-Report",
+  "title": "It's not the end of the world: DarkComet misses by a mile",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Crypto-DarkComet-Report.pdf",
+    "file_path": "/root/APTtext/Crypto-DarkComet-Report.pdf",
+    "source_type": "pdf",
+    "char_length": 30119,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_DarkComet",
+      "type": "Malware",
+      "name": "DarkComet",
+      "normalized_name": "DarkComet",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_5",
+        "ev_6"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "family": "DarkComet",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_ip.org",
+      "type": "Domain",
+      "name": "ip.org",
+      "normalized_name": "ip.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17",
+        "ev_18"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "ip.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Performs_an_operation",
+      "type": "Campaign",
+      "name": "Performs an operation",
+      "normalized_name": "Performs an operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Crypto-DarkComet-Report",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_newrat2.no",
+      "type": "Domain",
+      "name": "newrat2.no",
+      "normalized_name": "newrat2.no",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "newrat2.no",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.contextis.com",
+      "type": "Domain",
+      "name": "www.contextis.com",
+      "normalized_name": "www.contextis.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "www.contextis.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_www.contextis.com_research_blog_darkcometrat_",
+      "type": "URL",
+      "name": "http://www.contextis.com/research/blog/darkcometrat/",
+      "normalized_name": "http://www.contextis.com/research/blog/darkcometrat/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "http://www.contextis.com/research/blog/darkcometrat/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_185CB63BA31EA7C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "type": "SHA256",
+      "name": "185CB63BA31EA7C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "normalized_name": "185CB63BA31EA7C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "185CB63BA31EA7C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_185CB63BA503B9C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "type": "SHA256",
+      "name": "185CB63BA503B9C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "normalized_name": "185CB63BA503B9C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "185CB63BA503B9C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1C638B4887FFE980B0B9AE72B1EA40A3",
+      "type": "MD5",
+      "name": "1C638B4887FFE980B0B9AE72B1EA40A3",
+      "normalized_name": "1C638B4887FFE980B0B9AE72B1EA40A3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "1C638B4887FFE980B0B9AE72B1EA40A3",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_63f2ed5d2ee50e90cda809f2ac740244",
+      "type": "MD5",
+      "name": "63f2ed5d2ee50e90cda809f2ac740244",
+      "normalized_name": "63f2ed5d2ee50e90cda809f2ac740244",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "value": "63f2ed5d2ee50e90cda809f2ac740244",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13"
+      ],
+      "report_id": "Crypto-DarkComet-Report",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "IDTYPE",
+        "SERVER",
+        "SANDBOX7",
+        "WINDOWS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Reversing the DarkComet RAT's crypto- 3/13/2012",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 31,
+        "section": "body",
+        "sentence_id": "p31_s2"
+      },
+      "text": "Due to this, DarkComet's attempt at an application layer attack is not close to a valid HTTP request per the RFCs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 31,
+        "section": "body",
+        "sentence_id": "p31_s3"
+      },
+      "text": "The second big mistake in the implementation of DarkComet's HTTP flood attack becomes apparent further down in the attack thread code, just before the (buggy) HTTP request payload is sent to the target via the send() API:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 25,
+        "section": "rule",
+        "sentence_id": "p25_r1"
+      },
+      "text": "MUTEX 1C638B4887FFE980B0B9AE72B1EA40A3 DC_MUTEX-F54S21D NETDATA 6919E62BE39D94F6ACCFAB68D5ED4BD67BA333 192.168.100.75:1604 PWD 6811E636E69E9AEFA5C6 0123456789 SID 1F55B176A69A9A Guest16",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 28,
+        "section": "rule",
+        "sentence_id": "p28_r2"
+      },
+      "text": "C&C: IDTYPE Bot: SERVER C&C: GetSIN192.10.8.64|27038511 Bot: infoesComet|192.10.8.64 / [192.1.167.30] : 1604|SANDBOX7 / Admin|27038511|29s|Windows XP Service Pack 2 [2600] 32 bit ( C:\\ )|x||US|C:\\WINDOWS\\system32\\cmd.exe|{16382783-b70c-71e4-11e0- 28f8efc0696f-10806d6172}|127.43 MiB/256.09 MiB [128.22 MiB Free]|English (United States) US / -- |10/9/2011 at 8:13:31 PM",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r1"
+      },
+      "text": "185CB63BA31EA7C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081 185CB63BA503B9C967297252432E5A7CFC96B261EB7EF4742533CEBF37A9C081 But applying the decryption routine yields the following: DDOSHTTPFLOOD192.168.100.254|5 DDOSUDPFLOOD192.168.100.254:80|5 DDOSSYNFLOOD192.168.100.254:80|5 Which corresponds to ordering an HTTP flood, a UDP flood, and a TCP flood, respectively, against target 192.168.100.254 , with each attack lasting for 5 seconds. Once the attacks are completed the DarkComet bot will respond with an encrypted status message such as the following: 1E4CAB2DA50FBBDB781F5336347B073DA9DCD936B46EB03B646DDAE366F7D5C76D3C0420A55906F524 240A0F34D3A6384150 Which decrypts to the following: BTRESULTSyn Flood|Syn task finished!|Administrator As implied above, DarkComet supports three types of DDoS attacks: HTTP flooding, UDP flooding, and TCP flooding (mis-advertised as \" SYNFLOOD \"). The UDP and TCP volumetric floods are quite unremarkable and simply consist of random gibberish blasted at a target host and port. The HTTP flood also appears to be intended as a rudimentary GET flood with a minimalist HTTP request header. However, DarkComet's HTTP flood implementation happens to have ",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb17"
+      },
+      "text": "ip.org on TCP port 1604. The RAT uses a raw TCP protocol to exchange information with its C&C; on the wire, the",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb18"
+      },
+      "text": "nnecting to a command & control (C&C) server at newrat2.no- ip.org on TCP port 1604. The RAT uses a raw TCP protocol to exchange information with its C&C; on the wire, the comms lo",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb19"
+      },
+      "text": "published an excellent analysis [http://www.contextis.com/research/blog/darkcometrat/ ] of Dark Comet in which she",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb20"
+      },
+      "text": "ylward of Contextis published an excellent analysis [http://www.contextis.com/research/blog/darkcometrat/ ] of Dark Comet in which she described the basic cryptographic mechanism u",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb21"
+      },
+      "text": "63f2ed5d2ee50e90cda809f2ac740244. It happens to be an instance of DarkComet Version 4.2; however, the",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Crypto-DarkComet-Report",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb22"
+      },
+      "text": "us on today is 462,848 bytes in size and has an MD5 hash of 63f2ed5d2ee50e90cda809f2ac740244. It happens to be an instance of DarkComet Version 4.2; however, the results presented",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ]
+}

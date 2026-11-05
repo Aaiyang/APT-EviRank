@@ -1,0 +1,845 @@
+{
+  "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+  "title": "HrServ – Previously unknown web shell used in APT attack",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023).pdf",
+    "file_path": "/root/APTtext/Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 7490,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_tool_HrServ",
+      "type": "Tool",
+      "name": "HrServ",
+      "normalized_name": "HrServ",
+      "aliases": [
+        "hrserv.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_31",
+        "ev_34",
+        "ev_46",
+        "ev_1",
+        "ev_19",
+        "ev_7"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_31",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "JKNLA"
+      ],
+      "derived_from_file_id": "ent_file_hrserv.dll",
+      "family": "HrServ",
+      "subtype": "WebShell",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_HrServ",
+      "type": "Campaign",
+      "name": "HrServ",
+      "normalized_name": "HrServ",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1",
+        "ev_19",
+        "ev_23",
+        "ev_7"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_1",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_hrserv.dll",
+      "type": "Tool",
+      "name": "hrserv.dll",
+      "normalized_name": "hrserv.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_23",
+        "ev_31",
+        "ev_34"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_tool_HrServ"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_80_FC4B97EB-2965-4A3B-8BAD-B8172DE25520_",
+      "type": "URL",
+      "name": "http://+:80/FC4B97EB-2965-4A3B-8BAD-B8172DE25520/",
+      "normalized_name": "http://+:80/FC4B97EB-2965-4A3B-8BAD-B8172DE25520/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "http://+:80/FC4B97EB-2965-4A3B-8BAD-B8172DE25520/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_https_443_owa_MSExchangeService.svc",
+      "type": "URL",
+      "name": "https://+:443/owa/MSExchangeService.svc",
+      "normalized_name": "https://+:443/owa/MSExchangeService.svc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_52"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "https://+:443/owa/MSExchangeService.svc",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_8043e6c6b5e9e316950ddb7060883de119e54f226ab7a320b743be99b9c10ec5",
+      "type": "SHA256",
+      "name": "8043e6c6b5e9e316950ddb7060883de119e54f226ab7a320b743be99b9c10ec5",
+      "normalized_name": "8043e6c6b5e9e316950ddb7060883de119e54f226ab7a320b743be99b9c10ec5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "8043e6c6b5e9e316950ddb7060883de119e54f226ab7a320b743be99b9c10ec5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_cb257e00a1082fc79debf9d1cb469bd250d8e026",
+      "type": "SHA1",
+      "name": "cb257e00a1082fc79debf9d1cb469bd250d8e026",
+      "normalized_name": "cb257e00a1082fc79debf9d1cb469bd250d8e026",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "cb257e00a1082fc79debf9d1cb469bd250d8e026",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_418657bf50ee32acc633b95bac4943c6",
+      "type": "MD5",
+      "name": "418657bf50ee32acc633b95bac4943c6",
+      "normalized_name": "418657bf50ee32acc633b95bac4943c6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_48"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "418657bf50ee32acc633b95bac4943c6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_890fe3f9c7009c23329f9a284ec2a61b",
+      "type": "MD5",
+      "name": "890fe3f9c7009c23329f9a284ec2a61b",
+      "normalized_name": "890fe3f9c7009c23329f9a284ec2a61b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "890fe3f9c7009c23329f9a284ec2a61b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b9b7f16ed28140c5fcfab026078f4e2e",
+      "type": "MD5",
+      "name": "b9b7f16ed28140c5fcfab026078f4e2e",
+      "normalized_name": "b9b7f16ed28140c5fcfab026078f4e2e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "b9b7f16ed28140c5fcfab026078f4e2e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d0fe27865ab271963e27973e81b77bae",
+      "type": "MD5",
+      "name": "d0fe27865ab271963e27973e81b77bae",
+      "normalized_name": "d0fe27865ab271963e27973e81b77bae",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "value": "d0fe27865ab271963e27973e81b77bae",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "DAILY"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_PAExec.exe",
+      "type": "File",
+      "name": "PAExec.exe",
+      "normalized_name": "PAExec.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_2",
+        "ev_32"
+      ],
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "file_name": "PAExec.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_tool_MicrosoftsUpdate",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "type": "Tool",
+      "name": "MicrosoftsUpdate",
+      "normalized_name": "MicrosoftsUpdate",
+      "aliases": [],
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "tool_name": "MicrosoftsUpdate",
+      "file_role": "task_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "type": "creates_task",
+      "head_id": "ent_file_PAExec.exe",
+      "tail_id": "ent_tool_MicrosoftsUpdate",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2",
+        "ev_32"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "creates_task",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "task_create",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "type": "loads",
+      "head_id": "ent_file_PAExec.exe",
+      "tail_id": "ent_tool_HrServ",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_2",
+        "ev_32"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "creates_task",
+      "summary": "PAExec.exe creates_task MicrosoftsUpdate",
+      "evidence_ids": [
+        "ev_2",
+        "ev_32"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "loads",
+      "summary": "PAExec.exe loads HrServ",
+      "evidence_ids": [
+        "ev_2",
+        "ev_32"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "securelist.com /hrserv-apt-web-shell/111119 Mert Degirmenci In the course of our routine investigation, we discovered a DLL file, identified as hrserv.dll, which is a previously unknown web shell exhibiting sophisticated features such as custom encoding methods for client communication and in-memory execution.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Initial infection According to our telemetry data, the PAExec.exe process initiates the creation of a scheduled task on the system named MicrosoftsUpdate (sic), which in turn is designed to execute a .BAT file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "HrServ then initiates an HTTP server utilizing the HTTP server API for its functionality.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "As a result, the registry and the temporary file are used as a communication channel between the implant and HrServ.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "Attribution The TTPs analyzed in this investigation are not associated with any known threat actors we are tracking, but there are a few things that we observed: the GET parameters used in the hrserv.dll file, which is used to mimic Google services, include “hl”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "In the course of our routine investigation, we discovered a DLL file, identified as hrserv.dll, which is a previously unknown web shell exhibiting sophisticated features such as custom encoding methods for client communication and in-memory execution. Our analysis of the sample led to the discovery of related variants compiled in 2021, indicating a potential correlation between these separate occurrences of malicious activity.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "According to our telemetry data, the PAExec.exe process initiates the creation of a scheduled task on the system named MicrosoftsUpdate (sic), which in turn is designed to execute a .BAT file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "\"schtasks\" /create /sc DAILY /tn MicrosoftsUpdate /tr \"$system32\\cmd.exe /c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r4"
+      },
+      "text": "$public\\JKNLA.bat $public\\hrserv.dll\" /ru system /f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r6"
+      },
+      "text": "MD5 418657bf50ee32acc633b95bac4943c6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r7"
+      },
+      "text": "SHA1 cb257e00a1082fc79debf9d1cb469bd250d8e026",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r8"
+      },
+      "text": "SHA256 8043e6c6b5e9e316950ddb7060883de119e54f226ab7a320b743be99b9c10ec5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "1 http://+:80/FC4B97EB-2965-4A3B-8BAD-B8172DE25520/",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "the GET parameters used in the hrserv.dll file, which is used to mimic Google services, include “hl”. This specifies the host language of the user interface. Although this parameter has no functionality within the attack vector, the assigned value “en-TW” specifies that the Google search interface should be displayed in English, but the search results should be displayed in Traditional Chinese:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "b9b7f16ed28140c5fcfab026078f4e2e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "418657bf50ee32acc633b95bac4943c6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "d0fe27865ab271963e27973e81b77bae",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "890fe3f9c7009c23329f9a284ec2a61b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb51"
+      },
+      "text": "https://+:443/owa/MSExchangeService.svc",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_HrServ-webshell-in-APT-attack(11-22-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb52"
+      },
+      "text": "URL of these older variants differs from the current one: 1 https://+:443/owa/MSExchangeService.svc These samples exhibit a distinct behavior by creating a process and retrieving i",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_tool_HrServ",
+        "ent_domain_securelist.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_PAExec.exe",
+        "ent_tool_MicrosoftsUpdate"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_PAExec.exe",
+        "ent_tool_MicrosoftsUpdate"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_tool_MicrosoftsUpdate"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

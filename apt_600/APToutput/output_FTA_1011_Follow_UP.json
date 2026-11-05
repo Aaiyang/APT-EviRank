@@ -1,0 +1,943 @@
+{
+  "report_id": "FTA 1011 Follow UP",
+  "title": "www.fidelissecurity.com Follow-Up #1 Fidelis Threat Advisory #1011",
+  "source": null,
+  "published_date": "January 31, 2014",
+  "report_metadata": {
+    "file_name": "FTA 1011 Follow UP.pdf",
+    "file_path": "/root/APTtext/FTA 1011 Follow UP.pdf",
+    "source_type": "pdf",
+    "char_length": 22669,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_netwn",
+      "type": "Malware",
+      "name": "netwn",
+      "normalized_name": "netwn",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "family": "netwn",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_ioc_md5_68aed7b1f171b928913780d5b21f7617",
+      "type": "MD5",
+      "name": "68aed7b1f171b928913780d5b21f7617",
+      "normalized_name": "68aed7b1f171b928913780d5b21f7617",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "value": "68aed7b1f171b928913780d5b21f7617",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_eb8399483b55f416e48a320d68597d72",
+      "type": "MD5",
+      "name": "eb8399483b55f416e48a320d68597d72",
+      "normalized_name": "eb8399483b55f416e48a320d68597d72",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "value": "eb8399483b55f416e48a320d68597d72",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_netsat.exe",
+      "type": "File",
+      "name": "netsat.exe",
+      "normalized_name": "netsat.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_47",
+        "ev_61",
+        "ev_78",
+        "ev_81"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "file_name": "netsat.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_78",
+        "ev_81",
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "CSIDL_WINDOWS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_setup35.exe",
+      "type": "File",
+      "name": "setup35.exe",
+      "normalized_name": "setup35.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_48",
+        "ev_82",
+        "ev_84",
+        "ev_87"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "file_name": "setup35.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_84",
+        "ev_87",
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "RECYCLED",
+        "RECYCLER"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_update.exe",
+      "type": "File",
+      "name": "update.exe",
+      "normalized_name": "update.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_48",
+        "ev_53",
+        "ev_57"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "file_name": "update.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_48",
+        "ev_53",
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "CSIDL_LOCAL_APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_winmgt.dll",
+      "type": "File",
+      "name": "winmgt.dll",
+      "normalized_name": "winmgt.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_50"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "file_name": "winmgt.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file__disk.ini",
+      "type": "File",
+      "name": "~disk.ini",
+      "normalized_name": "~disk.ini",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_28",
+        "ev_44",
+        "ev_57",
+        "ev_82"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "file_name": "~disk.ini",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_82",
+        "ev_44",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "RECYCLED",
+        "RECYCLER",
+        "CSIDL_LOCAL_APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_threatactor_Control",
+      "type": "ThreatActor",
+      "name": "Control",
+      "normalized_name": "Control",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_12",
+        "ev_3",
+        "ev_33",
+        "ev_9"
+      ],
+      "report_id": "FTA 1011 Follow UP",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_12",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "refiner_demoted"
+    },
+    {
+      "id": "ent_file_netui3.dll",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "File",
+      "name": "netui3.dll",
+      "normalized_name": "netui3.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "netui3.dll",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_disk.ini",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "File",
+      "name": "disk.ini",
+      "normalized_name": "disk.ini",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "disk.ini",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_netwn",
+      "tail_id": "ent_file_netsat.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_14",
+        "ev_61"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "executes",
+      "head_id": "ent_file_netsat.exe",
+      "tail_id": "ent_file_netui3.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "executes",
+      "head_id": "ent_file_netui3.dll",
+      "tail_id": "ent_file_winmgt.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_50",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "loads",
+      "head_id": "ent_file_netsat.exe",
+      "tail_id": "ent_file_netui3.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "FTA 1011 Follow UP",
+      "type": "loads",
+      "head_id": "ent_file_netui3.dll",
+      "tail_id": "ent_file_winmgt.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_50",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0001",
+      "type": "downloads_payload",
+      "summary": "netwn downloads_payload netsat.exe",
+      "evidence_ids": [
+        "ev_14",
+        "ev_61"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "netsat.exe executes netui3.dll",
+      "evidence_ids": [
+        "ev_12"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "netui3.dll executes winmgt.dll",
+      "evidence_ids": [
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "netsat.exe loads netui3.dll",
+      "evidence_ids": [
+        "ev_12"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "netui3.dll loads winmgt.dll",
+      "evidence_ids": [
+        "ev_50"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Continuing analysis solidified the headquarters component’s Command and Control (C2) scheme.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Netsat.exe functioned as a master application affording intruders the ability, in a selective and controlled manner, to infest removable devices with an agent application in the form of netui3.dll, aka",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "setup35.exe, aka update.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Headquarters (netsat.exe) • Running on a possibly compromised system • Logging some activity and errors to a file • Receiving commands via an encrypted file on the local system (possible C2) • Listening for drive connections • Infecting connected drives with netui3.dll/winmgt.dll (setup35.exe + Autorun.inf) • Collecting data gathered by any infected drives, ostensibly upon their return from being connected to other systems",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Headquarters (netsat.exe) Functionality – C2 Mechanism File Name: netsat.exe File Size: 43520 bytes Previous analysis results indicated netsat.exe retrieved commands from an encrypted file named netwn.drv resident in the CSIDL_WINDOWS\\msagent\\ directory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Format String Example/Explanation \"!cp cf e:%d\" Indicates error copying netwi.drv to ~disk.ini.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "This C2 scheme would seem to dictate: o Intruder remote access to the ‘master’ system o Intruder local access to the ‘master’ system o a C2 delivery/retrieval component, such as another piece of code that downloads a C2 file • Available information precludes determination of the means of exfiltration.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "Command Description cpd copies directories and contents cpr copies files with size checking der deletes files and records activity in log dir obtains a directory listing ferry writes malicious files to a hidden RECYCLED or RECYCLER directory Files: setup35.exe (renamed netui3.dll), Autorun.inf, ~disk.ini (renamed netwi.drv), act.te getres iteratively copies files from RECYCLED/RECYCLER directory on target drive, deletes from source after copy -­‐ source is assumed to be drive used to collect data from one or more systems netui3.dll (setup35.exe)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Previous reporting, ref: Fidelis Threat Advisory (FTA) #1011 dated 15 Jan 2014, introduced a malware system comprised of multiple files that reflected a means for intruders to discover and retrieve data from disparate computer systems via removable storage devices. Analysis of the system relied on the availability of two files named netsat.exe and netui3.dll. Netsat.exe functioned as a master application affording intruders the ability, in a selective and controlled manner, to infest removable devices with an agent application in the form of netui3.dll, aka",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "setup35.exe, aka update.exe. Previous reporting likened netsat.exe as a headquarters application and netui3.dll as a field unit with the following basic functionality:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "• Running on a possibly compromised system • Logging some activity and errors to a file • Receiving commands via an encrypted file on the local system (possible C2) • Listening for drive connections • Infecting connected drives with netui3.dll/winmgt.dll (setup35.exe + Autorun.inf) • Collecting data gathered by any infected drives, ostensibly upon their return from being connected to other systems",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Field Unit (netui3.dll/setup35.exe/update.exe) Functionality",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "MD5: 68aed7b1f171b928913780d5b21f7617",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "• The malware attempts to ensure errors are suppressed and not observed by a user • The malware performs specific environment checking to adapt to Windows versions from at least Windows 2000 to Windows7/Server 2008 and up • The malware terminates if it detects another iteration of itself via the Mutex “Mtx_Sp_on_PC_1_2_8” • The malware terminates if any Gateway IPs associated with the resident system are in the 10.x.x.x range • The malware copies itself to <CSIDL_LOCAL_APPDATA>\\Microsoft\\Windows\\Help\\update.exe • The malware runs update.exe with the parameters “-wu external drive letter ”, e.g., z:, with the temporary directory specified for the working directory • The malware copies a file named ~disk.ini from the infected drive to <CSIDL_LOCAL_APPDATA>\\Microsoft\\Windows\\Help\\intr • The malware checks the system date against 31 May 2013; if on or after, the malware terminates • The malware copies <CSIDL_LOCAL_APPDATA>\\Microsoft\\Windows\\Help\\intr to <CSIDL_LOCAL_APPDATA>\\Microsoft\\Windows\\Chars\\intr",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r8"
+      },
+      "text": "MD5: eb8399483b55f416e48a320d68597d72",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r9"
+      },
+      "text": "Previous analysis results indicated netsat.exe retrieved commands from an encrypted file named netwn.drv resident in the CSIDL_WINDOWS\\msagent\\ directory. The encryption was a Tiny Encryption Algorithm (TEA) implementation that used a key that was modified during encryption and decryption operations.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "downloads a C2 file • Available information precludes determination of the means of exfiltration. Netsat.exe’s data collection functionality suggested data destined for exfiltration might be collected by the ‘master’ system. This possibility suggests:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "netsat.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "writes malicious files to a hidden RECYCLED or RECYCLER directory Files: setup35.exe (renamed netui3.dll), Autorun.inf, ~disk.ini (renamed netwi.drv), act.te",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "netui3.dll (setup35.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1011 Follow UP",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "netui3.dll (setup35.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_12",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_netsat.exe",
+        "ent_file_setup35.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_setup35.exe",
+        "ent_file__disk.ini",
+        "ent_file_netui3.dll",
+        "ent_file_disk.ini"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_netsat.exe",
+        "ent_file_netui3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_82",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_setup35.exe",
+        "ent_file__disk.ini",
+        "ent_file_netui3.dll",
+        "ent_file_disk.ini"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_netsat.exe",
+        "ent_file_setup35.exe",
+        "ent_file_netui3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_netsat.exe",
+        "ent_file_netui3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_setup35.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_update.exe",
+        "ent_file__disk.ini",
+        "ent_file_disk.ini"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_84",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_setup35.exe",
+        "ent_file_netui3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_87",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_setup35.exe",
+        "ent_file_netui3.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

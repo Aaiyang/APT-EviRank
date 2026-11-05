@@ -1,0 +1,3820 @@
+{
+  "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+  "title": "‘Operation Oceansalt’ Attacks South Korea, U.S., and Canada With Source Code From Chinese Hacker Group",
+  "source": null,
+  "published_date": "October 18, 2018",
+  "report_metadata": {
+    "file_name": "McAfee_rp-operation-oceansalt(10-17-2018).pdf",
+    "file_path": "/root/APTtext/McAfee_rp-operation-oceansalt(10-17-2018).pdf",
+    "source_type": "pdf",
+    "char_length": 34629,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT1",
+      "type": "ThreatActor",
+      "name": "APT1",
+      "normalized_name": "APT1",
+      "aliases": [
+        "actions of Comment Crew"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Comment_Crew",
+      "type": "ThreatActor",
+      "name": "Comment Crew",
+      "normalized_name": "Comment Crew",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_103",
+        "ev_2",
+        "ev_4",
+        "ev_8"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_103",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Oceansalt",
+      "type": "Malware",
+      "name": "Oceansalt",
+      "normalized_name": "Oceansalt",
+      "aliases": [
+        "Upfileer",
+        "Upfileok",
+        "Seasalt"
+      ],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40",
+        "ev_66",
+        "ev_96",
+        "ev_50",
+        "ev_70",
+        "ev_72",
+        "ev_8"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [
+        "ev_96",
+        "ev_39",
+        "ev_66",
+        "ev_8",
+        "ev_50",
+        "ev_72",
+        "ev_70"
+      ],
+      "needs_review": false,
+      "family": "Oceansalt",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Oceansalt",
+      "type": "Campaign",
+      "name": "Operation Oceansalt",
+      "normalized_name": "Operation Oceansalt",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_6",
+        "ev_7"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Duri",
+      "type": "Victim",
+      "name": "Duri",
+      "normalized_name": "Duri",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_19",
+        "ev_74"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_actions_of_Comment_Crew",
+      "type": "ThreatActor",
+      "name": "actions of Comment Crew",
+      "normalized_name": "actions of Comment Crew",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT1"
+    },
+    {
+      "id": "ent_malware_Seasalt",
+      "type": "Malware",
+      "name": "Seasalt",
+      "normalized_name": "Seasalt",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_50",
+        "ev_67",
+        "ev_70",
+        "ev_8"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "family": "Seasalt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_50",
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Oceansalt"
+    },
+    {
+      "id": "ent_malware_Upfileer",
+      "type": "Malware",
+      "name": "Upfileer",
+      "normalized_name": "Upfileer",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40",
+        "ev_66"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Oceansalt"
+    },
+    {
+      "id": "ent_malware_Upfileok",
+      "type": "Malware",
+      "name": "Upfileok",
+      "normalized_name": "Upfileok",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40",
+        "ev_66"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Oceansalt"
+    },
+    {
+      "id": "ent_malware_WebC2-CSON",
+      "type": "Malware",
+      "name": "WebC2-CSON",
+      "normalized_name": "WebC2-CSON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "family": "WebC2-CSON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_WebC2-GREENCAT",
+      "type": "Malware",
+      "name": "WebC2-GREENCAT",
+      "normalized_name": "WebC2-GREENCAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "family": "WebC2-GREENCAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_new_Comment_Crew_campaign",
+      "type": "Campaign",
+      "name": "new Comment Crew campaign",
+      "normalized_name": "new Comment Crew campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_www.mcafee.com",
+      "type": "Domain",
+      "name": "www.mcafee.com",
+      "normalized_name": "www.mcafee.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "www.mcafee.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_158.69.131.78",
+      "type": "IPv4",
+      "name": "158.69.131.78",
+      "normalized_name": "158.69.131.78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_125",
+        "ev_126",
+        "ev_148",
+        "ev_154"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "158.69.131.78",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_125",
+      "supporting_evidence_ids": [
+        "ev_126",
+        "ev_148",
+        "ev_154"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_172.81.132.62",
+      "type": "IPv4",
+      "name": "172.81.132.62",
+      "normalized_name": "172.81.132.62",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_111",
+        "ev_122",
+        "ev_155",
+        "ev_44"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "172.81.132.62",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [
+        "ev_122",
+        "ev_155",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_211.104.160.196",
+      "type": "IPv4",
+      "name": "211.104.160.196",
+      "normalized_name": "211.104.160.196",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112",
+        "ev_123",
+        "ev_126",
+        "ev_157"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "211.104.160.196",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [
+        "ev_123",
+        "ev_126",
+        "ev_157"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_27.102.112.179",
+      "type": "IPv4",
+      "name": "27.102.112.179",
+      "normalized_name": "27.102.112.179",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113",
+        "ev_114",
+        "ev_139",
+        "ev_75"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "27.102.112.179",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_139",
+      "supporting_evidence_ids": [
+        "ev_75",
+        "ev_113",
+        "ev_114"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_0ae167204c841bdfd3600dddf2c9c185b17ac6d4",
+      "type": "SHA1",
+      "name": "0ae167204c841bdfd3600dddf2c9c185b17ac6d4",
+      "normalized_name": "0ae167204c841bdfd3600dddf2c9c185b17ac6d4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138",
+        "ev_171"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "0ae167204c841bdfd3600dddf2c9c185b17ac6d4",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_171"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_12a9faa96ba1be8a73e73be72ef1072096d964fb",
+      "type": "SHA1",
+      "name": "12a9faa96ba1be8a73e73be72ef1072096d964fb",
+      "normalized_name": "12a9faa96ba1be8a73e73be72ef1072096d964fb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136",
+        "ev_170"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "12a9faa96ba1be8a73e73be72ef1072096d964fb",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [
+        "ev_170"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1f70715e86a2fcc1437926ecfaeadc53ddce41c9",
+      "type": "SHA1",
+      "name": "1f70715e86a2fcc1437926ecfaeadc53ddce41c9",
+      "normalized_name": "1f70715e86a2fcc1437926ecfaeadc53ddce41c9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_134",
+        "ev_161"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "1f70715e86a2fcc1437926ecfaeadc53ddce41c9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_161"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_281a13ecb674de42f2e8fdaea5e6f46a5436c685",
+      "type": "SHA1",
+      "name": "281a13ecb674de42f2e8fdaea5e6f46a5436c685",
+      "normalized_name": "281a13ecb674de42f2e8fdaea5e6f46a5436c685",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133",
+        "ev_168"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "281a13ecb674de42f2e8fdaea5e6f46a5436c685",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_168"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_42192bb852d696d55da25b9178536de6365f0e68",
+      "type": "SHA1",
+      "name": "42192bb852d696d55da25b9178536de6365f0e68",
+      "normalized_name": "42192bb852d696d55da25b9178536de6365f0e68",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_169"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "42192bb852d696d55da25b9178536de6365f0e68",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_169",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_583879cfaf735fa446be5bfcbcc9e580bf542c8c",
+      "type": "SHA1",
+      "name": "583879cfaf735fa446be5bfcbcc9e580bf542c8c",
+      "normalized_name": "583879cfaf735fa446be5bfcbcc9e580bf542c8c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_163"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "583879cfaf735fa446be5bfcbcc9e580bf542c8c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_163",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_832d5e6ebd9808279ee3e59ba4b5b0e884b859a5",
+      "type": "SHA1",
+      "name": "832d5e6ebd9808279ee3e59ba4b5b0e884b859a5",
+      "normalized_name": "832d5e6ebd9808279ee3e59ba4b5b0e884b859a5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_159"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "832d5e6ebd9808279ee3e59ba4b5b0e884b859a5",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_159",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_9fe4bfdd258ecedb676b9de4e23b86b1695c4e1e",
+      "type": "SHA1",
+      "name": "9fe4bfdd258ecedb676b9de4e23b86b1695c4e1e",
+      "normalized_name": "9fe4bfdd258ecedb676b9de4e23b86b1695c4e1e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_167"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "9fe4bfdd258ecedb676b9de4e23b86b1695c4e1e",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_167",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_be4fbb5a4b32db20a914cad5701f5c7ba51571b7",
+      "type": "SHA1",
+      "name": "be4fbb5a4b32db20a914cad5701f5c7ba51571b7",
+      "normalized_name": "be4fbb5a4b32db20a914cad5701f5c7ba51571b7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_137",
+        "ev_160"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "be4fbb5a4b32db20a914cad5701f5c7ba51571b7",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [
+        "ev_160"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d72bc671583801c3c65ac1a96bb75c6026e06a73",
+      "type": "SHA1",
+      "name": "d72bc671583801c3c65ac1a96bb75c6026e06a73",
+      "normalized_name": "d72bc671583801c3c65ac1a96bb75c6026e06a73",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_165"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "d72bc671583801c3c65ac1a96bb75c6026e06a73",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_165",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_dd3fb2750da3e8fc889cd1611117b02d49cf17f7",
+      "type": "SHA1",
+      "name": "dd3fb2750da3e8fc889cd1611117b02d49cf17f7",
+      "normalized_name": "dd3fb2750da3e8fc889cd1611117b02d49cf17f7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_162"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "dd3fb2750da3e8fc889cd1611117b02d49cf17f7",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_162",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e5c6229825f11d5a5749d3f2fe7acbe074cba77c",
+      "type": "SHA1",
+      "name": "e5c6229825f11d5a5749d3f2fe7acbe074cba77c",
+      "normalized_name": "e5c6229825f11d5a5749d3f2fe7acbe074cba77c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_166"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "e5c6229825f11d5a5749d3f2fe7acbe074cba77c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_166",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36",
+      "type": "SHA1",
+      "name": "ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36",
+      "normalized_name": "ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_135",
+        "ev_164"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_135",
+      "supporting_evidence_ids": [
+        "ev_164"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_fc121db04067cffbed04d7403c1d222d376fa7ba",
+      "type": "SHA1",
+      "name": "fc121db04067cffbed04d7403c1d222d376fa7ba",
+      "normalized_name": "fc121db04067cffbed04d7403c1d222d376fa7ba",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_132",
+        "ev_158"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "fc121db04067cffbed04d7403c1d222d376fa7ba",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [
+        "ev_158"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0355C116C02B02C05D6E90A0B3DC107C",
+      "type": "MD5",
+      "name": "0355C116C02B02C05D6E90A0B3DC107C",
+      "normalized_name": "0355C116C02B02C05D6E90A0B3DC107C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113",
+        "ev_141"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "0355C116C02B02C05D6E90A0B3DC107C",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [
+        "ev_141"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_45C362F17C5DC8496E97D475562BEC4D",
+      "type": "MD5",
+      "name": "45C362F17C5DC8496E97D475562BEC4D",
+      "normalized_name": "45C362F17C5DC8496E97D475562BEC4D",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115",
+        "ev_143"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "45C362F17C5DC8496E97D475562BEC4D",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [
+        "ev_143"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_531dee019792a089a4589c2cce3dac95",
+      "type": "MD5",
+      "name": "531dee019792a089a4589c2cce3dac95",
+      "normalized_name": "531dee019792a089a4589c2cce3dac95",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112",
+        "ev_147"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "531dee019792a089a4589c2cce3dac95",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [
+        "ev_147"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5e0df5b28a349d46ac8cc7d9e5e61a96",
+      "type": "MD5",
+      "name": "5e0df5b28a349d46ac8cc7d9e5e61a96",
+      "normalized_name": "5e0df5b28a349d46ac8cc7d9e5e61a96",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_128"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "5e0df5b28a349d46ac8cc7d9e5e61a96",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_128",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_74A50A5705E2AF736095B6B186D38DDF",
+      "type": "MD5",
+      "name": "74A50A5705E2AF736095B6B186D38DDF",
+      "normalized_name": "74A50A5705E2AF736095B6B186D38DDF",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_114",
+        "ev_142"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "74A50A5705E2AF736095B6B186D38DDF",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [
+        "ev_142"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_76C8DA4147B08E902809D1E80D96FBB4",
+      "type": "MD5",
+      "name": "76C8DA4147B08E902809D1E80D96FBB4",
+      "normalized_name": "76C8DA4147B08E902809D1E80D96FBB4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_146"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "76C8DA4147B08E902809D1E80D96FBB4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_146"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_B2F6D9A62C63F61A6B33DC6520BFCCCD",
+      "type": "MD5",
+      "name": "B2F6D9A62C63F61A6B33DC6520BFCCCD",
+      "normalized_name": "B2F6D9A62C63F61A6B33DC6520BFCCCD",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118",
+        "ev_145"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "B2F6D9A62C63F61A6B33DC6520BFCCCD",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [
+        "ev_145"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bf4f5b4ff7ed9c7275496c07f9836028",
+      "type": "MD5",
+      "name": "bf4f5b4ff7ed9c7275496c07f9836028",
+      "normalized_name": "bf4f5b4ff7ed9c7275496c07f9836028",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_127"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "bf4f5b4ff7ed9c7275496c07f9836028",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_C1773E9CF8265693F37DF1A39E0CBBE2",
+      "type": "MD5",
+      "name": "C1773E9CF8265693F37DF1A39E0CBBE2",
+      "normalized_name": "C1773E9CF8265693F37DF1A39E0CBBE2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116",
+        "ev_140"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "C1773E9CF8265693F37DF1A39E0CBBE2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [
+        "ev_140"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_D14DD769C7F53ACEC482347F539EFDF4",
+      "type": "MD5",
+      "name": "D14DD769C7F53ACEC482347F539EFDF4",
+      "normalized_name": "D14DD769C7F53ACEC482347F539EFDF4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_117",
+        "ev_144"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "value": "D14DD769C7F53ACEC482347F539EFDF4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_117",
+      "supporting_evidence_ids": [
+        "ev_144"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_.xls_.doc_files",
+      "type": "File",
+      "name": ".xls/.doc files",
+      "normalized_name": ".xls/.doc files",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_120",
+        "ev_39"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "file_name": ".xls/.doc files",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_120",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_C_Users_Public_Videos_temp.log",
+      "type": "File",
+      "name": "C:\\Users\\Public\\Videos\\temp.log",
+      "normalized_name": "C:\\Users\\Public\\Videos\\temp.log",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "file_name": "C:\\Users\\Public\\Videos\\temp.log",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_calc.exe",
+      "type": "File",
+      "name": "calc.exe",
+      "normalized_name": "calc.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_149",
+        "ev_93"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "file_name": "calc.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_149",
+      "supporting_evidence_ids": [
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "DWORD",
+        "SW_HIDE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_java.exe",
+      "type": "File",
+      "name": "java.exe",
+      "normalized_name": "java.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_130",
+        "ev_68"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "file_name": "java.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "DOCUMEN"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_V3UI.exe",
+      "type": "File",
+      "name": "V3UI.exe",
+      "normalized_name": "V3UI.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_110"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "file_name": "V3UI.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "V3UI"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Korea",
+      "type": "Victim",
+      "name": "Korea",
+      "normalized_name": "Korea",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103",
+        "ev_36",
+        "ev_4"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_102",
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_victim_South_Korea",
+      "type": "Victim",
+      "name": "South Korea",
+      "normalized_name": "South Korea",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103",
+        "ev_36",
+        "ev_4"
+      ],
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_102",
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "cmd.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Seasalt",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Upfileer",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Upfileok",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_actions_of_Comment_Crew",
+      "tail_id": "ent_threatactor_APT1",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "downloads",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_.xls_.doc_files",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_39"
+      },
+      "head": {
+        "id": "ent_malware_Oceansalt",
+        "type": "Malware",
+        "name": "Oceansalt",
+        "normalized_name": "Oceansalt",
+        "aliases": [
+          "Upfileer",
+          "Upfileok",
+          "Seasalt"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_39",
+          "ev_40",
+          "ev_66",
+          "ev_96",
+          "ev_50",
+          "ev_70",
+          "ev_72",
+          "ev_8"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_40",
+        "supporting_evidence_ids": [
+          "ev_96",
+          "ev_39",
+          "ev_66",
+          "ev_8",
+          "ev_50",
+          "ev_72",
+          "ev_70"
+        ],
+        "needs_review": false,
+        "family": "Oceansalt",
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_.xls_.doc_files",
+        "type": "File",
+        "name": ".xls/.doc files",
+        "normalized_name": ".xls/.doc files",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_120",
+          "ev_39"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "file_name": ".xls/.doc files",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_120",
+        "supporting_evidence_ids": [
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_.xls_.doc_files",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_V3UI.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_110"
+      ],
+      "primary_evidence_id": "ev_110",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "drops",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_.xls_.doc_files",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_39"
+      },
+      "head": {
+        "id": "ent_malware_Oceansalt",
+        "type": "Malware",
+        "name": "Oceansalt",
+        "normalized_name": "Oceansalt",
+        "aliases": [
+          "Upfileer",
+          "Upfileok",
+          "Seasalt"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_39",
+          "ev_40",
+          "ev_66",
+          "ev_96",
+          "ev_50",
+          "ev_70",
+          "ev_72",
+          "ev_8"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_40",
+        "supporting_evidence_ids": [
+          "ev_96",
+          "ev_39",
+          "ev_66",
+          "ev_8",
+          "ev_50",
+          "ev_72",
+          "ev_70"
+        ],
+        "needs_review": false,
+        "family": "Oceansalt",
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_.xls_.doc_files",
+        "type": "File",
+        "name": ".xls/.doc files",
+        "normalized_name": ".xls/.doc files",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_120",
+          "ev_39"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "file_name": ".xls/.doc files",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_120",
+        "supporting_evidence_ids": [
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "drops",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_java.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_68",
+        "ev_130"
+      ],
+      "primary_evidence_id": "ev_68",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_68"
+      },
+      "head": {
+        "id": "ent_malware_Oceansalt",
+        "type": "Malware",
+        "name": "Oceansalt",
+        "normalized_name": "Oceansalt",
+        "aliases": [
+          "Upfileer",
+          "Upfileok",
+          "Seasalt"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_39",
+          "ev_40",
+          "ev_66",
+          "ev_96",
+          "ev_50",
+          "ev_70",
+          "ev_72",
+          "ev_8"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_40",
+        "supporting_evidence_ids": [
+          "ev_96",
+          "ev_39",
+          "ev_66",
+          "ev_8",
+          "ev_50",
+          "ev_72",
+          "ev_70"
+        ],
+        "needs_review": false,
+        "family": "Oceansalt",
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_java.exe",
+        "type": "File",
+        "name": "java.exe",
+        "normalized_name": "java.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_130",
+          "ev_68"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "file_name": "java.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_130",
+        "supporting_evidence_ids": [
+          "ev_68"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "family_hints": [
+          "DOCUMEN"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "executes",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_64",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "loads",
+      "head_id": "ent_file_V3UI.exe",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_110"
+      ],
+      "primary_evidence_id": "ev_110",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "loads",
+      "head_id": "ent_file_calc.exe",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_93",
+        "ev_149"
+      ],
+      "primary_evidence_id": "ev_93",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "targets",
+      "head_id": "ent_campaign_Operation_Oceansalt",
+      "tail_id": "ent_victim_Duri",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_2",
+        "ev_12",
+        "ev_17",
+        "ev_72"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Operation_Oceansalt",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "‘Operation Oceansalt’ Attacks South Korea, U.S., and Canada With Source Code From Chinese Hacker Group"
+      },
+      "head": {
+        "id": "ent_campaign_Operation_Oceansalt",
+        "type": "Campaign",
+        "name": "Operation Oceansalt",
+        "normalized_name": "Operation Oceansalt",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [
+          "ev_6",
+          "ev_7"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": "ev_6",
+        "supporting_evidence_ids": [
+          "ev_7"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Oceansalt",
+        "type": "Malware",
+        "name": "Oceansalt",
+        "normalized_name": "Oceansalt",
+        "aliases": [
+          "Upfileer",
+          "Upfileok",
+          "Seasalt"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_39",
+          "ev_40",
+          "ev_66",
+          "ev_96",
+          "ev_50",
+          "ev_70",
+          "ev_72",
+          "ev_8"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_40",
+        "supporting_evidence_ids": [
+          "ev_96",
+          "ev_39",
+          "ev_66",
+          "ev_8",
+          "ev_50",
+          "ev_72",
+          "ev_70"
+        ],
+        "needs_review": false,
+        "family": "Oceansalt",
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Comment_Crew",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_70",
+        "ev_128",
+        "ev_131",
+        "ev_72",
+        "ev_49",
+        "ev_50",
+        "ev_69",
+        "ev_71",
+        "ev_130",
+        "ev_132"
+      ],
+      "primary_evidence_id": "ev_70",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_or_event_use; headline_actor_tool",
+        "schema_version": "v5.0-event-frame",
+        "evidence_span": "The misclassified sample used a Comment Crew domain. Further investigation revealed the misclassified sample is 99% like Seasalt ( 5e0df5b28a349d46ac8cc7d9e5e61a96 ), a Comment Crew implant reported to have been used in their operations around 2010. Thus the Oceansalt actor is reusing portions of code from Seasalt to form a new implant. Based on the overall techniques, Oceansalt is unlikely to signal a rebirth of Com"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Comment_Crew",
+      "tail_id": "ent_malware_Seasalt",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_128"
+      ],
+      "primary_evidence_id": "ev_128",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The misclassified sample used a Comment Crew domain. Further investigation revealed the misclassified sample is 99% like Seasalt ( 5e0df5b28a349d46ac8cc7d9e5e61a96 ), a Comment Crew implant reported to have been used in their operations around 2010. Thus the Oceansalt actor is reusing portions of code from Seasalt to form a new implant. Based on the overall techniques, Oceansalt is unlikely to signal a rebirth of Com"
+      },
+      "head": {
+        "id": "ent_threatactor_Comment_Crew",
+        "type": "ThreatActor",
+        "name": "Comment Crew",
+        "normalized_name": "Comment Crew",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_103",
+          "ev_2",
+          "ev_4",
+          "ev_8"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_2",
+        "supporting_evidence_ids": [
+          "ev_8",
+          "ev_103",
+          "ev_4"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Seasalt",
+        "type": "Malware",
+        "name": "Seasalt",
+        "normalized_name": "Seasalt",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_50",
+          "ev_67",
+          "ev_70",
+          "ev_8"
+        ],
+        "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+        "family": "Seasalt",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_70",
+        "supporting_evidence_ids": [
+          "ev_8",
+          "ev_50",
+          "ev_67"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_malware_Oceansalt"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_Comment_Crew",
+      "tail_id": "ent_malware_Oceansalt",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_6",
+        "ev_70",
+        "ev_72",
+        "ev_131",
+        "ev_49",
+        "ev_50",
+        "ev_69",
+        "ev_71",
+        "ev_130",
+        "ev_132"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "With",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=seasalt|upfileer|upfileok",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "type": "writes_output",
+      "head_id": "ent_malware_Oceansalt",
+      "tail_id": "ent_file_.xls_.doc_files",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0006",
+      "type": "downloads_payload",
+      "summary": "Oceansalt downloads_payload .xls/.doc files",
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0007",
+      "type": "downloads_payload",
+      "summary": "Oceansalt downloads_payload V3UI.exe",
+      "evidence_ids": [
+        "ev_110"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "drops",
+      "summary": "Oceansalt drops .xls/.doc files",
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "delivery",
+      "relation_id": "rel_0009",
+      "type": "drops",
+      "summary": "Oceansalt drops java.exe",
+      "evidence_ids": [
+        "ev_68",
+        "ev_130"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "Oceansalt executes cmd.exe",
+      "evidence_ids": [
+        "ev_64"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "V3UI.exe loads Oceansalt",
+      "evidence_ids": [
+        "ev_110"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "calc.exe loads Oceansalt",
+      "evidence_ids": [
+        "ev_93",
+        "ev_149"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "uses_malware",
+      "summary": "Operation Oceansalt uses_malware Oceansalt",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "uses_malware",
+      "summary": "Comment Crew uses_malware Oceansalt",
+      "evidence_ids": [
+        "ev_70",
+        "ev_128",
+        "ev_131"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "uses_malware",
+      "summary": "Comment Crew uses_malware Seasalt",
+      "evidence_ids": [
+        "ev_128"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0017",
+      "type": "uses_tool",
+      "summary": "Comment Crew uses_tool Oceansalt",
+      "evidence_ids": [
+        "ev_6",
+        "ev_70",
+        "ev_72"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "command_and_control",
+      "relation_id": "rel_0005",
+      "type": "downloads",
+      "summary": "Oceansalt downloads .xls/.doc files",
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "collection",
+      "relation_id": "rel_0018",
+      "type": "writes_output",
+      "summary": "Oceansalt writes_output .xls/.doc files",
+      "evidence_ids": [
+        "ev_39",
+        "ev_120"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "The actions of Comment Crew, also known as APT1, were exposed in 2013 in a ground-breaking report on Chinese cyber espionage against the United States.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Until this analysis, we had observed no new activity related to Comment Crew since they were exposed, but now we find portions of their implant code appearing in new operations targeting South Korea.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Due to the lack of indications that this is a new Comment Crew campaign, it",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "‘Operation Oceansalt’ Attacks South Korea, U.S., and Canada With Source Code From Chinese Hacker Group McAfee ® Advanced Threat Research and Anti-Malware Operations teams have discovered another unknown data reconnaissance implant targeting Korean-speaking users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "We have named this threat Operation Oceansalt based on its similarity to the earlier malware Seasalt, which is related to earlier Chinese hacking operations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Oceansalt reuses a portion of code from the Seasalt implant (circa 2010) that is linked to the Chinese hacking group Comment Crew.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Based on our research, we offer a few potential scenarios that could explain the existence of Comment Crew’s code in the current actor’s malware targeting South Koreans.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "The Advanced Threat Research team concludes that we have found a new implant family created by an actor targeting Korean-speaking users and using components from Comment Crew’s source code.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "Targets During our research we discovered the initial attack vector was spear phishing, with two malicious Korean- language Microsoft Excel documents acting as downloaders of this implant.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s3"
+      },
+      "text": "Government United States Wave Five: South Korea and United States The Oceansalt implant was not limited to just one sample.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s1"
+      },
+      "text": "Download and execution capabilities ■ ■ Once the .xls/.doc files are opened in Office, embedded malicious macros contact a download server and write the Oceansalt implant to disk",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "■ ■ These malicious macros execute the Oceansalt implant on the infected endpoint The indicators of compromise from the malicious .xls downloaders:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s3"
+      },
+      "text": "■ ■ 172.81.132.62 ■ ■ 211.104.160.196 ■ ■ 27.102.112.179 ■ ■ 158.69.131.78 Our telemetry shows this campaign is operational in several countries.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s8"
+      },
+      "text": "The misclassified sample used a Comment Crew domain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s9"
+      },
+      "text": "Thus the Oceansalt actor is reusing portions of code from Seasalt to form a new implant.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 17,
+        "section": "body",
+        "sentence_id": "p17_s2"
+      },
+      "text": "Both reverse shells are based on cmd.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s2"
+      },
+      "text": "■ ■ Encoding: The Oceansalt implant uses an encoding and decoding mechanism before any data is sent to the control server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s3"
+      },
+      "text": "The Seasalt implant does not use this encoding and sends unencrypted data to the control server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s4"
+      },
+      "text": "Seasalt, on the other hand, copies itself to C:\\DOCUMEN~1\\<userid>\\java.exe and creates a registry entry to ensure infection after reboot:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s5"
+      },
+      "text": "■ ■ Multiple code matches and similarities ■ ■ Multiple functional similarities ■ ■ Identical command capabilities ■ ■ Same command and response codes issued by and sent to the control server",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s6"
+      },
+      "text": "The code used to create the reverse shell in Oceansalt is an exact match with that of Comment Crew’s Seasalt implant.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s7"
+      },
+      "text": "The mechanism for creating the reverse shell (pipe-based inter-process communication for standard I/O handles) is also seen in Comment Crew implants such as WebC2-CSON and WebC2-GREENCAT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s8"
+      },
+      "text": "Obfuscated Oceansalt Comparison with Seasalt We offer a comparative analysis of the following partially obfuscated implants against the initial Oceansalt sample and the Seasalt implant from Comment Crew.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s2"
+      },
+      "text": "■ ■ All implants were compiled during a three-day period: July 16–18 ■ ■ All implants contain debug statements (print logs) written to the log file: C:\\Users\\Public\\Videos\\temp.log",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s3"
+      },
+      "text": "− − [WinMain] − − [FraudProc] ■ ■ All implants connected to the same control server IP address: 27.102.112.179 ■ ■ Although none of the partially obfuscated implants contain any additional capabilities (as compared with the initial Oceansalt or Seasalt), some of the partially obfuscated implants are missing the reverse-shell capabilities:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 25,
+        "section": "body",
+        "sentence_id": "p25_s3"
+      },
+      "text": "<DWORD representing command number><command line to be executed> 02 00 00 00 C:\\Windows\\system32\\calc.exe The command line is executed with a hidden window (using the SW_HIDE option for WinExec()).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 25,
+        "section": "body",
+        "sentence_id": "p25_s6"
+      },
+      "text": "■ ■ If the file write is successful, Oceansalt sends the keyword “upfileok” indicating success ■ ■ If the file write fails, the implant sends the keyword “upfileer” indicating failure",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 27,
+        "section": "body",
+        "sentence_id": "p27_s1"
+      },
+      "text": "■ ■ Opens a reverse shell from the infected endpoint to the control server using Windows pipes ■ ■ This reverse shell is based on cmd.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 28,
+        "section": "body",
+        "sentence_id": "p28_s5"
+      },
+      "text": "This operation has focused on targets in South Korea and other countries with new malware that has roots in Comment Crew activity from 2010.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 28,
+        "section": "body",
+        "sentence_id": "p28_s6"
+      },
+      "text": "Our research shows that Comment Crew’s malware in part lives on in different forms employed by another advanced persistent threat group operating primarily against South Korea.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 30,
+        "section": "body",
+        "sentence_id": "p30_s1"
+      },
+      "text": "Santa Clara, CA 95054 888.847.8766 www.mcafee.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "This document contains macro code to download the implant from www.[redacted].kr/admin/data/member/1/ log.php and execute it as V3UI.exe, the name of a security product in South Korea.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "38216571e9a9364b509e52ec19fae61b 6/13/2018 172.81.132.62",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "531dee019792a089a4589c2cce3dac95 6/14/2018 211.104.160.196",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r3"
+      },
+      "text": "0355C116C02B02C05D6E90A0B3DC107C 7/16/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r4"
+      },
+      "text": "74A50A5705E2AF736095B6B186D38DDF 7/16/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r5"
+      },
+      "text": "45C362F17C5DC8496E97D475562BEC4D 7/17/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r6"
+      },
+      "text": "C1773E9CF8265693F37DF1A39E0CBBE2 7/17/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r7"
+      },
+      "text": "D14DD769C7F53ACEC482347F539EFDF4 7/17/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r8"
+      },
+      "text": "B2F6D9A62C63F61A6B33DC6520BFCCCD 7/17/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r9"
+      },
+      "text": "76C8DA4147B08E902809D1E80D96FBB4 7/17/2018 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "■ ■ Once the .xls/.doc files are opened in Office, embedded malicious macros contact a download server and write the Oceansalt implant to disk",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "■ ■ 172.81.132.62",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r2"
+      },
+      "text": "■ ■ 211.104.160.196",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r4"
+      },
+      "text": "■ ■ 158.69.131.78",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r5"
+      },
+      "text": "Our telemetry shows this campaign is operational in several countries. Address 211.104.160.196 indicates infections in Costa Rica, the United States, and the Philippines. Address 158.69.131.78 reveals additional infections in the United States and Canada.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r6"
+      },
+      "text": "Our initial investigation into earlier similar samples led us to a variant—bf4f5b4ff7ed9c7275496c07f9836028, compiled in 2010. Oceansalt uses portions of code from this sample; their overall similarity is 21%. The reused code is unique, is not considered a common library or common code, and serves reconnaissance and control.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r7"
+      },
+      "text": "The misclassified sample used a Comment Crew domain. Further investigation revealed the misclassified sample is 99% like Seasalt ( 5e0df5b28a349d46ac8cc7d9e5e61a96 ), a Comment Crew implant reported to have been used in their operations around 2010. Thus the Oceansalt actor is reusing portions of code from Seasalt to form a new implant. Based on the overall techniques, Oceansalt is unlikely to signal a rebirth of Comment Crew, raising the question of how the actor obtained the Seasalt code. Was it provided to this or another actor, or was it leaked and discovered by this actor? We have been unable to find any evidence in underground or public forums that suggest the source code of Seasalt has been leaked or made available.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r1"
+      },
+      "text": "■ ■ Persistence: Oceansalt has no persistence mechanisms to ensure continued infection over endpoint reboots. Seasalt, on the other hand, copies itself to C:\\DOCUMEN~1\\<userid>\\java.exe and creates a registry entry to ensure infection after reboot:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r2"
+      },
+      "text": "The code used to create the reverse shell in Oceansalt is an exact match with that of Comment Crew’s Seasalt implant. The mechanism for creating the reverse shell (pipe-based inter-process communication for standard I/O handles) is also seen in Comment Crew implants such as WebC2-CSON and WebC2-GREENCAT.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r3"
+      },
+      "text": "fc121db04067cffbed04d7403c1d222d376fa7ba 7/16/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r4"
+      },
+      "text": "281a13ecb674de42f2e8fdaea5e6f46a5436c685 7/17/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_134",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r5"
+      },
+      "text": "1f70715e86a2fcc1437926ecfaeadc53ddce41c9 7/17/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r6"
+      },
+      "text": "ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36 7/16/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r7"
+      },
+      "text": "12a9faa96ba1be8a73e73be72ef1072096d964fb 7/17/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r8"
+      },
+      "text": "be4fbb5a4b32db20a914cad5701f5c7ba51571b7 7/17/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r9"
+      },
+      "text": "0ae167204c841bdfd3600dddf2c9c185b17ac6d4 7/17/2018 Partially obfuscated Oceansalt",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r1"
+      },
+      "text": "■ ■ All implants connected to the same control server IP address: 27.102.112.179",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r2"
+      },
+      "text": "C1773E9CF8265693F37DF1A39E0CBBE2 No",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r3"
+      },
+      "text": "0355C116C02B02C05D6E90A0B3DC107C Yes",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r4"
+      },
+      "text": "74A50A5705E2AF736095B6B186D38DDF Yes",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_143",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r5"
+      },
+      "text": "45C362F17C5DC8496E97D475562BEC4D No",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r6"
+      },
+      "text": "D14DD769C7F53ACEC482347F539EFDF4 No",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r7"
+      },
+      "text": "B2F6D9A62C63F61A6B33DC6520BFCCCD Yes",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_146",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r8"
+      },
+      "text": "76C8DA4147B08E902809D1E80D96FBB4 Yes",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_147",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 20,
+        "section": "rule",
+        "sentence_id": "p20_r1"
+      },
+      "text": "■ ■ The Oceansalt implant 531dee019792a089a4589c2cce3dac95 (compiled June 1) contains a few key features that indicate compilation from the source code of Seasalt:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_148",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r1"
+      },
+      "text": "Oceansalt starts by trying to connect to its control server at 158.69.131.78:8080. Once connected, the implant sends the following information about the endpoint:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 25,
+        "section": "rule",
+        "sentence_id": "p25_r1"
+      },
+      "text": "<DWORD representing command number><command line to be executed> 02 00 00 00 C:\\Windows\\system32\\calc.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_154",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r2"
+      },
+      "text": "■ ■ 158.69.131.78",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r3"
+      },
+      "text": "■ ■ 172.81.132.62",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_157",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r5"
+      },
+      "text": "■ ■ 211.104.160.196",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_158",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r6"
+      },
+      "text": "■ ■ fc121db04067cffbed04d7403c1d222d376fa7ba",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_159",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r7"
+      },
+      "text": "■ ■ 832d5e6ebd9808279ee3e59ba4b5b0e884b859a5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_160",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r8"
+      },
+      "text": "■ ■ be4fbb5a4b32db20a914cad5701f5c7ba51571b7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_161",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r9"
+      },
+      "text": "■ ■ 1f70715e86a2fcc1437926ecfaeadc53ddce41c9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_162",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r10"
+      },
+      "text": "■ ■ dd3fb2750da3e8fc889cd1611117b02d49cf17f7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_163",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r11"
+      },
+      "text": "■ ■ 583879cfaf735fa446be5bfcbcc9e580bf542c8c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_164",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r12"
+      },
+      "text": "■ ■ ec9a9d431fd69e23a5b770bf03fe0fb5a21c0c36",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_165",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r13"
+      },
+      "text": "■ ■ d72bc671583801c3c65ac1a96bb75c6026e06a73",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_166",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r14"
+      },
+      "text": "■ ■ e5c6229825f11d5a5749d3f2fe7acbe074cba77c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_167",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r15"
+      },
+      "text": "■ ■ 9fe4bfdd258ecedb676b9de4e23b86b1695c4e1e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_168",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r16"
+      },
+      "text": "■ ■ 281a13ecb674de42f2e8fdaea5e6f46a5436c685",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_169",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r17"
+      },
+      "text": "■ ■ 42192bb852d696d55da25b9178536de6365f0e68",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_170",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r18"
+      },
+      "text": "■ ■ 12a9faa96ba1be8a73e73be72ef1072096d964fb",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_171",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_rp-operation-oceansalt(10-17-2018)",
+      "locator": {
+        "page": 29,
+        "section": "rule",
+        "sentence_id": "p29_r19"
+      },
+      "text": "■ ■ 0ae167204c841bdfd3600dddf2c9c185b17ac6d4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_39",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_file_.xls_.doc_files"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_128",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_threatactor_Comment_Crew",
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_96",
+      "page": 25,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Upfileer",
+        "ent_malware_Upfileok"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_campaign_Operation_Oceansalt"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_120",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_file_.xls_.doc_files"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT1",
+        "ent_threatactor_Comment_Crew",
+        "ent_threatactor_actions_of_Comment_Crew"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_70",
+      "page": 18,
+      "candidate_entity_ids": [
+        "ent_threatactor_Comment_Crew",
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_131",
+      "page": 18,
+      "candidate_entity_ids": [
+        "ent_threatactor_Comment_Crew",
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_campaign_Operation_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 18,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_75",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Comment_Crew",
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_72",
+      "page": 18,
+      "candidate_entity_ids": [
+        "ent_threatactor_Comment_Crew",
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_68",
+      "page": 18,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt",
+        "ent_file_java.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_130",
+      "page": 18,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt",
+        "ent_file_java.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_campaign_Operation_Oceansalt"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_147",
+      "page": 20,
+      "candidate_entity_ids": [
+        "ent_malware_Oceansalt",
+        "ent_malware_Seasalt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

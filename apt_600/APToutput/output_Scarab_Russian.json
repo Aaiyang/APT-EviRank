@@ -1,0 +1,287 @@
+{
+  "report_id": "Scarab_Russian",
+  "title": "Scarab attackers took aim at select Russian targets since 2012",
+  "source": null,
+  "published_date": "October 29, 2012",
+  "report_metadata": {
+    "file_name": "Scarab_Russian.pdf",
+    "file_path": "/root/APTtext/Scarab_Russian.pdf",
+    "source_type": "pdf",
+    "char_length": 8744,
+    "report_profile": "historical_narrative"
+  },
+  "entities": [
+    {
+      "id": "ent_campaign_Contributor",
+      "type": "Campaign",
+      "name": "Contributor",
+      "normalized_name": "Contributor",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Scarab_Russian",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Trojan.Scieron.B",
+      "type": "Malware",
+      "name": "Trojan.Scieron.B",
+      "normalized_name": "Trojan.Scieron.B",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_30",
+        "ev_31",
+        "ev_39",
+        "ev_7"
+      ],
+      "report_id": "Scarab_Russian",
+      "family": "Trojan.Scieron.B",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_7",
+        "ev_39",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_hidsvc.dat",
+      "type": "File",
+      "name": "hidsvc.dat",
+      "normalized_name": "hidsvc.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_44"
+      ],
+      "report_id": "Scarab_Russian",
+      "file_name": "hidsvc.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_seclog32.dll",
+      "type": "File",
+      "name": "seclog32.dll",
+      "normalized_name": "seclog32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_44"
+      ],
+      "report_id": "Scarab_Russian",
+      "file_name": "seclog32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file__2014_.doc.scr",
+      "type": "File",
+      "name": "план работы на июнь 2014 года.doc.scr",
+      "normalized_name": "план работы на июнь 2014 года.doc.scr",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Scarab_Russian",
+      "file_name": "план работы на июнь 2014 года.doc.scr",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Contributor: Yi Li A group of attackers, which we call Scarab, has been performing highly targeted attacks against particular",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "Trojan.Scieron.B on to the computer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "names Another more recent file name was “план работы на июнь 2014 года.doc.scr” which translates to the quite generic “work plan for June 2014 year.doc.src.”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "In most of the investigated incidents, Trojan.Scieron has been used to download an enhanced version of itself, which Symantec detects as Trojan.Scieron.B.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "Trojan.Scieron.B’s file names seen to date are usually seclog32.dll (back door) and hidsvc.dat (rootkit).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s12"
+      },
+      "text": "Trojan.Scieron Trojan.Scieron.B",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Scarab_Russian",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Trojan.Scieron.B’s file names seen to date are usually seclog32.dll (back door) and hidsvc.dat (rootkit).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_31",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_hidsvc.dat",
+        "ent_file_seclog32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_hidsvc.dat",
+        "ent_file_seclog32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

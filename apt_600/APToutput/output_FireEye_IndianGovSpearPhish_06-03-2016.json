@@ -1,0 +1,774 @@
+{
+  "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+  "title": "APT Group Sends Spear Phishing Emails to Indian Government Ofﬁcials",
+  "source": null,
+  "published_date": "June 03, 2016",
+  "report_metadata": {
+    "file_name": "FireEye_IndianGovSpearPhish(06-03-2016).pdf",
+    "file_path": "/root/APTtext/FireEye_IndianGovSpearPhish(06-03-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 6327,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_India",
+      "type": "ThreatActor",
+      "name": "India",
+      "normalized_name": "India",
+      "aliases": [
+        "TOI"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_12",
+        "ev_27",
+        "ev_5",
+        "ev_6"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_5",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Breach_Remote_Administration",
+      "type": "Malware",
+      "name": "Breach Remote Administration",
+      "normalized_name": "Breach Remote Administration",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13",
+        "ev_15"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Breach Remote Administration",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BreachRAT",
+      "type": "Malware",
+      "name": "BreachRAT",
+      "normalized_name": "BreachRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "family": "BreachRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_DarkComet",
+      "type": "Malware",
+      "name": "DarkComet",
+      "normalized_name": "DarkComet",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "family": "DarkComet",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_njRAT",
+      "type": "Malware",
+      "name": "njRAT",
+      "normalized_name": "njRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "family": "njRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2012-0158",
+      "type": "CVE",
+      "name": "CVE-2012-0158",
+      "normalized_name": "CVE-2012-0158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29",
+        "ev_30"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_TOI",
+      "type": "ThreatActor",
+      "name": "TOI",
+      "normalized_name": "TOI",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_12",
+        "ev_27",
+        "ev_5"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_India"
+    },
+    {
+      "id": "ent_threatactor_Transparent_Tribe",
+      "type": "ThreatActor",
+      "name": "Transparent Tribe",
+      "normalized_name": "Transparent Tribe",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [
+        "ev_3"
+      ],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_21",
+        "ev_31",
+        "ev_35"
+      ],
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_31",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "PROGRAMDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_TOI",
+      "tail_id": "ent_threatactor_India",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_India",
+      "tail_id": "ent_cve_CVE-2012-0158",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_4",
+        "ev_29",
+        "ev_9",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "aliases_seen=toi, event_exploit, evidence_exploit",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_Breach_Remote_Administration",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_11",
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_India",
+      "tail_id": "ent_malware_Breach_Remote_Administration",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_4",
+        "ev_29"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_India",
+      "tail_id": "ent_malware_DarkComet",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=toi",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_India",
+      "tail_id": "ent_malware_njRAT",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=toi",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "type": "writes_output",
+      "head_id": "ent_malware_Breach_Remote_Administration",
+      "tail_id": "ent_file_svchost.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_11",
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0002",
+      "type": "exploits",
+      "summary": "India exploits CVE-2012-0158",
+      "evidence_ids": [
+        "ev_4",
+        "ev_29",
+        "ev_9"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "svchost.exe loads Breach Remote Administration",
+      "evidence_ids": [
+        "ev_11",
+        "ev_31"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "India uses_malware Breach Remote Administration",
+      "evidence_ids": [
+        "ev_4",
+        "ev_29"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "India uses_malware DarkComet",
+      "evidence_ids": [
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "uses_malware",
+      "summary": "India uses_malware njRAT",
+      "evidence_ids": [
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "collection",
+      "relation_id": "rel_0007",
+      "type": "writes_output",
+      "summary": "Breach Remote Administration writes_output svchost.exe",
+      "evidence_ids": [
+        "ev_11",
+        "ev_31"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Proofpoint also discussed the threat actors, whom they call Transparent Tribe , in a March blog post.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Malware Delivery Method In all emails sent to these government ofﬁcials, the actor used the same attachment: a malicious Microsoft Word document that exploited the CVE-2012-0158 vulnerability to drop a malicious payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "In previous incidents involving this threat actor, we observed them using malicious documents hosted on websites about the Indian Army, instead of sending these documents directly as an email attachment.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "The email (Figure 1) pretends to be from an employee working at Times of India (TOI) and requests the recipient to open the attachment associated with the 7th Pay Commission.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Exploit Analysis Despite being an older vulnerability, many threat actors continue to leverage CVE-2012-0158 to exploit Microsoft Word.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "After decoding is complete, the shellcode proceeds to save the executable payload into %temp%\\svchost.exe and calls WinExec to execute the payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Lastly, the shellcode overwrites the malicious ﬁle with a decoy document related to the Indian defense forces pay scale / matrix (Figure 3), displays it to the user and terminates the exploited instance of Microsoft Word.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The payload is a backdoor that we call the Breach Remote Administration Tool (BreachRAT) written in C++.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "The malware name is derived from the hardcoded PDB path found in the RAT: C:\\Work\\Breach Remote Administration Tool\\Release\\Client.pdb.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "This RAT communicates with 5.189.145.248, a command and control (C2) IP address that this group has used previously with other malware, including DarkComet and NJRAT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Copying itself to the path %PROGRAMDATA%\\svchost.exe Sets the Windows Startup Registry key with the name System Update which points to the above dropped payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Conclusion As with previous spear-phishing attacks seen conducted by this group, topics related to Indian Government and Military Affairs are still being used as the lure theme in these attacks and we observed that this group is still actively expanding their toolkit.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Malware Delivery Method In all emails sent to these government ofﬁcials, the actor used the same attachment: a malicious Microsoft Word document that exploited the CVE-2012-0158 vulnerability to drop a malicious payload.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "Exploit Analysis Despite being an older vulnerability, many threat actors continue to leverage CVE-2012-0158 to exploit Microsoft Word. This exploit ﬁle made use of the same shellcode that we have observed this actor use across a number of spear phishing incidents.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "The shellcode (Figure 2) searches for and decodes the executable payload contained in memory between the beginning and ending ﬁle markers 0xBABABABA and 0xBBBBBBBB, respectively. After decoding is complete, the shellcode proceeds to save the executable payload into %temp%\\svchost.exe and calls WinExec to execute the payload. After the payload is launched, the shellcode runs the following commands to prevent Microsoft Word from showing a recovery dialog:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "FireEye_IndianGovSpearPhish(06-03-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "Copying itself to the path %PROGRAMDATA%\\svchost.exe Sets the Windows Startup Registry key with the name System Update which points to the above dropped payload.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_13",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Breach_Remote_Administration",
+        "ent_malware_BreachRAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_India",
+        "ent_threatactor_TOI"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

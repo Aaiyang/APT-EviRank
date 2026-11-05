@@ -1,0 +1,475 @@
+{
+  "report_id": "w64_regin_stage_1",
+  "title": "W64/Regin, Stage #1 Malware Analysis Report",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "w64_regin_stage_1.pdf",
+    "file_path": "/root/APTtext/w64_regin_stage_1.pdf",
+    "source_type": "pdf",
+    "char_length": 33906,
+    "report_profile": "historical_narrative"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Regin",
+      "type": "Malware",
+      "name": "Regin",
+      "normalized_name": "Regin",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_3",
+        "ev_55",
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "w64_regin_stage_1",
+      "family": "Regin",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_58",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_TLP",
+      "type": "Campaign",
+      "name": "TLP",
+      "normalized_name": "TLP",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "w64_regin_stage_1",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_f-secure.com",
+      "type": "Domain",
+      "name": "f-secure.com",
+      "normalized_name": "f-secure.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "w64_regin_stage_1",
+      "value": "f-secure.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_email_irt_f-secure.com",
+      "type": "Email",
+      "name": "irt@f-secure.com",
+      "normalized_name": "irt@f-secure.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "w64_regin_stage_1",
+      "value": "irt@f-secure.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha1_5191d7e28ffd1bc76ec7ed02d861679a77f2c239",
+      "type": "SHA1",
+      "name": "5191d7e28ffd1bc76ec7ed02d861679a77f2c239",
+      "normalized_name": "5191d7e28ffd1bc76ec7ed02d861679a77f2c239",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "w64_regin_stage_1",
+      "value": "5191d7e28ffd1bc76ec7ed02d861679a77f2c239",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_wshnetc.dll",
+      "type": "File",
+      "name": "wshnetc.dll",
+      "normalized_name": "wshnetc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_67",
+        "ev_69",
+        "ev_70"
+      ],
+      "report_id": "w64_regin_stage_1",
+      "file_name": "wshnetc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_70",
+        "ev_14",
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wshtcpip.dll",
+      "type": "File",
+      "name": "wshtcpip.dll",
+      "normalized_name": "wshtcpip.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_18",
+        "ev_65",
+        "ev_68"
+      ],
+      "report_id": "w64_regin_stage_1",
+      "file_name": "wshtcpip.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_68",
+        "ev_10",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "w64_regin_stage_1",
+      "type": "executes",
+      "head_id": "ent_malware_Regin",
+      "tail_id": "ent_file_wshtcpip.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_10",
+        "ev_65"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "Regin executes wshtcpip.dll",
+      "evidence_ids": [
+        "ev_10",
+        "ev_65"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "ABSTRACT In this document we describe the inner workings of the stage #1 of the complex malware threat by the name of Regin, specifically the version targeted at 64-bit machines running the Microsoft Windows operating system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Paolo Palumbo Senior Researcher Security Response F-Secure Labs Twitter: @paolo_3_1415926 Contact F-Secure Incident Response irt@f-secure.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "The DLL exports 16 functions, which are simply forwarders for functions exported by wshtcpip.dll, a standard component of Microsoft Windows.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "From the DLL’s export table and version information, we can see that the original name of the module is wshnetc.dll .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "Looking again at the export table, we notice that the sample exports 16 different functions, which are exactly the same that are exported by Windows’ own wshtcpip.dll .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "In this final part of the execution, we also find references to the a value of 0xFEDCBAFF; such value is just one off from the value of 0xFEDCBAFE, which was observed in samples of Regin’s 32-bit stage #1 component.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s2"
+      },
+      "text": "Our analysis of the Regin’s 64-bit stage #1 component, as detailed in this document, shows that the malware is designed to retrieve a payload from an already infected system, map it into memory and transfer control to it.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s4"
+      },
+      "text": "The similarities with the 32-bit version of Regin’s stage #1 are very strong, starting from the fact the two different versions of the malware have the same high level purpose, to the fact that they share code like the QuickPeParse subroutine and the string expansion functionalities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "SHA1: 5191d7e28ffd1bc76ec7ed02d861679a77f2c239",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "4. The DLL exports 16 functions, which are simply forwarders for functions exported by wshtcpip.dll, a standard component of Microsoft Windows. These exports will be considered again in section 4.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "From the DLL’s export table and version information, we can see that the original name of the module is wshnetc.dll . This name is strongly reminescent of the other winsock-related system libraries that can be found on a clean Windows computer, in the system folder. Moreover, a victim would not be surprised to see that the description of this particular module is Winsock 2 Helper DLL (TL/IPv4) .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "Looking again at the export table, we notice that the sample exports 16 different functions, which are exactly the same that are exported by Windows’ own wshtcpip.dll . The sample does not provide the implementation of these functions, but it simply forwards the exports to wshtcpip.dll in the remote case that someone would try using these functions. The list of symbols exported by the sample is reported in Listing 1.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "wshnetc.dll : WSHAddressToString wshnetc.dll : WSHEnumProtocols wshnetc.dll : WSHGetBroadcastSockaddr wshnetc.dll : WSHGetProviderGuid",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "w64_regin_stage_1",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "wshnetc.dll : WSHGetSockaddrType wshnetc.dll : WSHGetSocketInformation wshnetc.dll : WSHGetWSAProtocolInfo wshnetc.dll : WSHGetWildcardSockaddr wshnetc.dll : WSHGetWinsockMapping wshnetc.dll : WSHIoctl wshnetc.dll : WSHJoinLeaf wshnetc.dll : WSHNotify wshnetc.dll : WSHOpenSocket wshnetc.dll : WSHOpenSocket2 wshnetc.dll : WSHSetSocketInformation wshnetc.dll : WSHStringToAddress",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_domain_f-secure.com",
+        "ent_email_irt_f-secure.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

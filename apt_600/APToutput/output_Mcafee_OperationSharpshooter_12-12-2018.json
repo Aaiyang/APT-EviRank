@@ -1,0 +1,507 @@
+{
+  "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+  "title": "‘Operation Sharpshooter’ Targets Global Defense, Critical Infrastructure",
+  "source": null,
+  "published_date": "Dec 12, 2018",
+  "report_metadata": {
+    "file_name": "Mcafee_OperationSharpshooter(12-12-2018).pdf",
+    "file_path": "/root/APTtext/Mcafee_OperationSharpshooter(12-12-2018).pdf",
+    "source_type": "pdf",
+    "char_length": 4498,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Rising_Sun",
+      "type": "Malware",
+      "name": "Rising Sun",
+      "normalized_name": "Rising Sun",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_3",
+        "ev_7"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "family": "Rising Sun",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Sharpshooter",
+      "type": "Campaign",
+      "name": "Operation Sharpshooter",
+      "normalized_name": "Operation Sharpshooter",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_securingtomorrow.mcafee.com",
+      "type": "Domain",
+      "name": "securingtomorrow.mcafee.com",
+      "normalized_name": "securingtomorrow.mcafee.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17",
+        "ev_18"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "securingtomorrow.mcafee.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.dropbox.com",
+      "type": "Domain",
+      "name": "www.dropbox.com",
+      "normalized_name": "www.dropbox.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "www.dropbox.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_208.117.44.112_document_Business",
+      "type": "URL",
+      "name": "http://208.117.44.112/document/Business",
+      "normalized_name": "http://208.117.44.112/document/Business",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_23"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "http://208.117.44.112/document/Business",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_22",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_208.117.44.112_document_Strategic",
+      "type": "URL",
+      "name": "http://208.117.44.112/document/Strategic",
+      "normalized_name": "http://208.117.44.112/document/Strategic",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "http://208.117.44.112/document/Strategic",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.dropbox.com_s_2shp23ogs113hnd_Customer",
+      "type": "URL",
+      "name": "http://www.dropbox.com/s/2shp23ogs113hnd/Customer",
+      "normalized_name": "http://www.dropbox.com/s/2shp23ogs113hnd/Customer",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20",
+        "ev_23"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "http://www.dropbox.com/s/2shp23ogs113hnd/Customer",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_31e79093d452426247a56ca0eff860b0ecc86009",
+      "type": "SHA1",
+      "name": "31e79093d452426247a56ca0eff860b0ecc86009",
+      "normalized_name": "31e79093d452426247a56ca0eff860b0ecc86009",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "31e79093d452426247a56ca0eff860b0ecc86009",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_66776c50bcc79bbcecdbe99960e6ee39c8a31181",
+      "type": "SHA1",
+      "name": "66776c50bcc79bbcecdbe99960e6ee39c8a31181",
+      "normalized_name": "66776c50bcc79bbcecdbe99960e6ee39c8a31181",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "66776c50bcc79bbcecdbe99960e6ee39c8a31181",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_668b0df94c6d12ae86711ce24ce79dbe0ee2d463",
+      "type": "SHA1",
+      "name": "668b0df94c6d12ae86711ce24ce79dbe0ee2d463",
+      "normalized_name": "668b0df94c6d12ae86711ce24ce79dbe0ee2d463",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "668b0df94c6d12ae86711ce24ce79dbe0ee2d463",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8106a30bd35526bded384627d8eebce15da35d17",
+      "type": "SHA1",
+      "name": "8106a30bd35526bded384627d8eebce15da35d17",
+      "normalized_name": "8106a30bd35526bded384627d8eebce15da35d17",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "8106a30bd35526bded384627d8eebce15da35d17",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_9b0f22e129c73ce4c21be4122182f6dcbc351c95",
+      "type": "SHA1",
+      "name": "9b0f22e129c73ce4c21be4122182f6dcbc351c95",
+      "normalized_name": "9b0f22e129c73ce4c21be4122182f6dcbc351c95",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "value": "9b0f22e129c73ce4c21be4122182f6dcbc351c95",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_victim_Global_Defense",
+      "type": "Victim",
+      "name": "Global Defense",
+      "normalized_name": "Global Defense",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Global impact In October and November 2018, the Rising Sun implant has appeared in 87 organizations across the globe, predominantly in the United States, based on McAfee telemetry and our analysis.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Infection flow of the Rising Sun implant, which eventually sends data to the attacker’s control servers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "8106a30bd35526bded384627d8eebce15da35d17 66776c50bcc79bbcecdbe99960e6ee39c8a31181 668b0df94c6d12ae86711ce24ce79dbe0ee2d463 9b0f22e129c73ce4c21be4122182f6dcbc351c95 31e79093d452426247a56ca0eff860b0ecc86009",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb17"
+      },
+      "text": "securingtomorrow.mcafee.com/blogs/other-blogs/mcafee-labs/operation-sharpshooter-targets-global-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb18"
+      },
+      "text": "arpshooter’ Targets Global Defense, Critical Infrastructure securingtomorrow.mcafee.com/blogs/other-blogs/mcafee-labs/operation-sharpshooter-targets-global- By Ryan Sherstobitoff a",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb19"
+      },
+      "text": "hxxp://www.dropbox.com/s/2shp23ogs113hnd/Customer Service Representative.doc?",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb20"
+      },
+      "text": "112/document/Business Intelligence Administrator.doc hxxp://www.dropbox.com/s/2shp23ogs113hnd/Customer Service Representative.doc? dl=1 McAfee detection RDN/Generic Downloader.x Ri",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb21"
+      },
+      "text": "hxxp://208.117.44.112/document/Strategic Planning Manager.doc",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb22"
+      },
+      "text": "hxxp://208.117.44.112/document/Business Intelligence Administrator.doc",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Mcafee_OperationSharpshooter(12-12-2018)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb23"
+      },
+      "text": "xp://208.117.44.112/document/Strategic Planning Manager.doc hxxp://208.117.44.112/document/Business Intelligence Administrator.doc hxxp://www.dropbox.com/s/2shp23ogs113hnd/Customer",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ]
+}

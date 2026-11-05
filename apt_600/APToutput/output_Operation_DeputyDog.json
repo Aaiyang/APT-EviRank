@@ -1,0 +1,1242 @@
+{
+  "report_id": "Operation_DeputyDog",
+  "title": "Operation DeputyDog: Zero-Day (CVE-2013-3893) Attack Against Japanese Targets",
+  "source": null,
+  "published_date": "August 19, 2013",
+  "report_metadata": {
+    "file_name": "Operation_DeputyDog.pdf",
+    "file_path": "/root/APTtext/Operation_DeputyDog.pdf",
+    "source_type": "pdf",
+    "char_length": 6007,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Intelligence_cluster",
+      "type": "ThreatActor",
+      "name": "Intelligence cluster",
+      "normalized_name": "Intelligence cluster",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_DeputyDog",
+      "type": "Campaign",
+      "name": "Operation DeputyDog",
+      "normalized_name": "Operation DeputyDog",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Operation_DeputyDog",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2013-3893",
+      "type": "CVE",
+      "name": "CVE-2013-3893",
+      "normalized_name": "CVE-2013-3893",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_54"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_downloadmp3server.servemp3.com",
+      "type": "Domain",
+      "name": "downloadmp3server.servemp3.com",
+      "normalized_name": "downloadmp3server.servemp3.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_49"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "downloadmp3server.servemp3.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_ali.blankchair.com",
+      "type": "Domain",
+      "name": "ali.blankchair.com",
+      "normalized_name": "ali.blankchair.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "ali.blankchair.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_blankchair.com",
+      "type": "Domain",
+      "name": "blankchair.com",
+      "normalized_name": "blankchair.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_52"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "blankchair.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_dll.freshdns.org",
+      "type": "Domain",
+      "name": "dll.freshdns.org",
+      "normalized_name": "dll.freshdns.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "dll.freshdns.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ea.blankchair.com",
+      "type": "Domain",
+      "name": "ea.blankchair.com",
+      "normalized_name": "ea.blankchair.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57",
+        "ev_58"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "ea.blankchair.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_rt.blankchair.com",
+      "type": "Domain",
+      "name": "rt.blankchair.com",
+      "normalized_name": "rt.blankchair.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "rt.blankchair.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.yahooeast.net",
+      "type": "Domain",
+      "name": "www.yahooeast.net",
+      "normalized_name": "www.yahooeast.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_50"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "www.yahooeast.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_yahooeast.net",
+      "type": "Domain",
+      "name": "yahooeast.net",
+      "normalized_name": "yahooeast.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20",
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "yahooeast.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51",
+        "ev_19",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_110.45.158.5",
+      "type": "IPv4",
+      "name": "110.45.158.5",
+      "normalized_name": "110.45.158.5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "110.45.158.5",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_email_654_123.com",
+      "type": "Email",
+      "name": "654@123.com",
+      "normalized_name": "654@123.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20",
+        "ev_51"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "654@123.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_46fd936bada07819f61ec3790cb08e19",
+      "type": "MD5",
+      "name": "46fd936bada07819f61ec3790cb08e19",
+      "normalized_name": "46fd936bada07819f61ec3790cb08e19",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "46fd936bada07819f61ec3790cb08e19",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4d257e569539973ab0bbafee8fb87582",
+      "type": "MD5",
+      "name": "4d257e569539973ab0bbafee8fb87582",
+      "normalized_name": "4d257e569539973ab0bbafee8fb87582",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "4d257e569539973ab0bbafee8fb87582",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_58dc05118ef8b11dcb5f5c596ab772fd",
+      "type": "MD5",
+      "name": "58dc05118ef8b11dcb5f5c596ab772fd",
+      "normalized_name": "58dc05118ef8b11dcb5f5c596ab772fd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_53"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "58dc05118ef8b11dcb5f5c596ab772fd",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_645e29b7c6319295ae8b13ce8575dc1d",
+      "type": "MD5",
+      "name": "645e29b7c6319295ae8b13ce8575dc1d",
+      "normalized_name": "645e29b7c6319295ae8b13ce8575dc1d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "645e29b7c6319295ae8b13ce8575dc1d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8aba4b5184072f2a50cbc5ecfe326701",
+      "type": "MD5",
+      "name": "8aba4b5184072f2a50cbc5ecfe326701",
+      "normalized_name": "8aba4b5184072f2a50cbc5ecfe326701",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_32",
+        "ev_39"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "8aba4b5184072f2a50cbc5ecfe326701",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_39",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bd07926c72739bb7121cec8a2863ad87",
+      "type": "MD5",
+      "name": "bd07926c72739bb7121cec8a2863ad87",
+      "normalized_name": "bd07926c72739bb7121cec8a2863ad87",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "bd07926c72739bb7121cec8a2863ad87",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_dbdb1032d7bb4757d6011fb1d077856c",
+      "type": "MD5",
+      "name": "dbdb1032d7bb4757d6011fb1d077856c",
+      "normalized_name": "dbdb1032d7bb4757d6011fb1d077856c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "dbdb1032d7bb4757d6011fb1d077856c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e9c73997694a897d3c6aadb26ed34797",
+      "type": "MD5",
+      "name": "e9c73997694a897d3c6aadb26ed34797",
+      "normalized_name": "e9c73997694a897d3c6aadb26ed34797",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_47"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "value": "e9c73997694a897d3c6aadb26ed34797",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_28542CC0.dll",
+      "type": "File",
+      "name": "28542CC0.dll",
+      "normalized_name": "28542CC0.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_28",
+        "ev_30",
+        "ev_31"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "file_name": "28542CC0.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_31",
+        "ev_10",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "HKLM",
+        "SOFTWARE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_31"
+      ],
+      "report_id": "Operation_DeputyDog",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "HKLM",
+        "SOFTWARE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Japanese_Targets",
+      "type": "Victim",
+      "name": "Japanese Targets",
+      "normalized_name": "Japanese Targets",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Operation_DeputyDog",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Operation_DeputyDog",
+      "type": "executes",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_file_28542CC0.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_10",
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Operation_DeputyDog",
+      "type": "exploits",
+      "head_id": "ent_threatactor_Intelligence_cluster",
+      "tail_id": "ent_cve_CVE-2013-3893",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Operation_DeputyDog",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_file_28542CC0.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10",
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0002",
+      "type": "exploits",
+      "summary": "Intelligence cluster exploits CVE-2013-3893",
+      "evidence_ids": [
+        "ev_21"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "rundll32.exe executes 28542CC0.dll",
+      "evidence_ids": [
+        "ev_10",
+        "ev_31"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "rundll32.exe loads 28542CC0.dll",
+      "evidence_ids": [
+        "ev_10",
+        "ev_31"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Analysis based on our Dynamic Threat Intelligence cluster shows that this current campaign leveraged command and control infrastructure that is related to the infrastructure used in the attack on Bit9.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s10"
+      },
+      "text": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\28542CC0 The registry key has this value: rundll32.exe “C:\\Documents and Settings\\All Users\\Application Data\\28542CC0.dll”,Launch (180.150.228.102).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "One of these Hitkit samples connected to a command and control server at downloadmp3server[.]servemp3[.]com that resolved to 66.153.86.14.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "This same IP address also hosted www[.]yahooeast[.]net, a known malicious domain, between March 6, 2012 and April 22, 2012.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "The domain yahooeast[.]net was registered to 654@123.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "This email address was also used to register blankchair[.]com – the domain that we see was pointed to the 180.150.228.102 IP, which is the callback attack leveraging the CVE-2013-3893 zero-day vulnerability.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "FireEye has discovered a campaign leveraging the recently announced zero-day CVE-2013-3893. This",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "8aba4b5184072f2a50cbc5ecfe326701).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r4"
+      },
+      "text": "Upon execution, 8aba4b5184072f2a50cbc5ecfe326701 writes “28542CC0.dll” (MD5:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r5"
+      },
+      "text": "46fd936bada07819f61ec3790cb08e19) to this location:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r6"
+      },
+      "text": "C:\\Documents and Settings\\All Users\\Application Data\\28542CC0.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r7"
+      },
+      "text": "rundll32.exe “C:\\Documents and Settings\\All Users\\Application Data\\28542CC0.dll”,Launch",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r8"
+      },
+      "text": "The malware (8aba4b5184072f2a50cbc5ecfe326701) then connects to a host in South Korea",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": "We found that both droppers, bd07926c72739bb7121cec8a2863ad87 and",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": "8aba4b5184072f2a50cbc5ecfe326701, were compiled on 2013-08-19 at 13:21:59 UTC. As we examined",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "MD5 Compile Time (UTC) C2 Server 58dc05118ef8b11dcb5f5c596ab772fd 2013-08-19 13:21:58 180.150.228.102 4d257e569539973ab0bbafee8fb87582 2013-08-19 13:21:58 103.17.117.90 dbdb1032d7bb4757d6011fb1d077856c 2013-08-19 13:21:59 110.45.158.5 645e29b7c6319295ae8b13ce8575dc1d 2013-08-19 13:21:59 103.17.117.90 e9c73997694a897d3c6aadb26ed34797 2013-04-13 13:42:45 110.45.158.5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "Note that all of the samples, except for e9c73997694a897d3c6aadb26ed34797, were compiled on 2013-",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r7"
+      },
+      "text": "downloadmp3server[.]servemp3[.]com that resolved to 66.153.86.14. This same IP address also hosted",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r8"
+      },
+      "text": "www[.]yahooeast[.]net, a known malicious domain, between March 6, 2012 and April 22, 2012.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r9"
+      },
+      "text": "The domain yahooeast[.]net was registered to 654@123.com. This email address was also used to register",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r10"
+      },
+      "text": "blankchair[.]com – the domain that we see was pointed to the 180.150.228.102 IP, which is the callback",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r11"
+      },
+      "text": "associated with sample 58dc05118ef8b11dcb5f5c596ab772fd, and has been already correlated back to the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r12"
+      },
+      "text": "attack leveraging the CVE-2013-3893 zero-day vulnerability.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb55"
+      },
+      "text": "ali.blankchair.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb56"
+      },
+      "text": "2 rt.blankchair.com 2013-09-01 05:02:21 2013-09-01 08:25:24 ali.blankchair.com 2013-09-01 05:02:20 2013-09-01 08:25:22 dll.freshdns.org 2013-07-01 10:48:56 2013-07-09 05:00:03 Link",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb57"
+      },
+      "text": "ea.blankchair.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Operation_DeputyDog",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb58"
+      },
+      "text": "tly pointed to 180.150.228.102. Domain First Seen Last Seen ea.blankchair.com 2013-09-01 05:02:22 2013-09-01 08:25:22 rt.blankchair.com 2013-09-01 05:02:21 2013-09-01 08:25:24 ali.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_campaign_Operation_DeputyDog",
+        "ent_cve_CVE-2013-3893"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_ali.blankchair.com",
+        "ent_domain_dll.freshdns.org",
+        "ent_domain_rt.blankchair.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_28542CC0.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_28542CC0.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_ea.blankchair.com",
+        "ent_domain_rt.blankchair.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

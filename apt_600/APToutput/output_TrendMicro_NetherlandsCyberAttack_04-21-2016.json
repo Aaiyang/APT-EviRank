@@ -1,0 +1,560 @@
+{
+  "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+  "title": "Looking Into a Cyber-Attack Facilitator in the Netherlands",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "TrendMicro_NetherlandsCyberAttack(04-21-2016).pdf",
+    "file_path": "/root/APTtext/TrendMicro_NetherlandsCyberAttack(04-21-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 6224,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_DustySky",
+      "type": "ThreatActor",
+      "name": "DustySky",
+      "normalized_name": "DustySky",
+      "aliases": [
+        "the Gaza hackers"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_14",
+        "ev_3"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Pawn_Storm",
+      "type": "ThreatActor",
+      "name": "Pawn Storm",
+      "normalized_name": "Pawn Storm",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_14",
+        "ev_17",
+        "ev_18"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_17",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_United_Arab_Emirates",
+      "type": "ThreatActor",
+      "name": "United Arab Emirates",
+      "normalized_name": "United Arab Emirates",
+      "aliases": [
+        "UAE"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_13",
+        "ev_2"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_13",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Carbanak",
+      "type": "Malware",
+      "name": "Carbanak",
+      "normalized_name": "Carbanak",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "family": "Carbanak",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_the_Gaza_hackers",
+      "type": "ThreatActor",
+      "name": "the Gaza hackers",
+      "normalized_name": "the Gaza hackers",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14",
+        "ev_3"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_DustySky"
+    },
+    {
+      "id": "ent_threatactor_UAE",
+      "type": "ThreatActor",
+      "name": "UAE",
+      "normalized_name": "UAE",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10",
+        "ev_13",
+        "ev_2"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_United_Arab_Emirates"
+    },
+    {
+      "id": "ent_malware_Maxided",
+      "type": "Malware",
+      "name": "Maxided",
+      "normalized_name": "Maxided",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "family": "Maxided",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_blog.trendmicro.com",
+      "type": "Domain",
+      "name": "blog.trendmicro.com",
+      "normalized_name": "blog.trendmicro.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "value": "blog.trendmicro.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Pawn_Storm",
+      "tail_id": "ent_threatactor_DustySky",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Apart from Pawn Storm, a less sophisticated group of threat actors called DustySky is using the VPS provider."
+      },
+      "head": {
+        "id": "ent_threatactor_Pawn_Storm",
+        "type": "ThreatActor",
+        "name": "Pawn Storm",
+        "normalized_name": "Pawn Storm",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_10",
+          "ev_14",
+          "ev_17",
+          "ev_18"
+        ],
+        "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_14",
+        "supporting_evidence_ids": [
+          "ev_10",
+          "ev_17",
+          "ev_18"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_threatactor_DustySky",
+        "type": "ThreatActor",
+        "name": "DustySky",
+        "normalized_name": "DustySky",
+        "aliases": [
+          "the Gaza hackers"
+        ],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_14",
+          "ev_3"
+        ],
+        "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_3",
+        "supporting_evidence_ids": [
+          "ev_14"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_UAE",
+      "tail_id": "ent_threatactor_United_Arab_Emirates",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_13"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_the_Gaza_hackers",
+      "tail_id": "ent_threatactor_DustySky",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_3"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "Other threat actors like DustySky (also known as the Gaza hackers) are also regularly using the VPS provider to host their command-and-control (C&C) servers and to send spear phishing e-mails."
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "blog.trendmicro.com /trendlabs-security-intelligence/looking-into-a-cyber-attack-facilitator-in-the-netherlands/ A small web hosting provider with servers in the Netherlands and Romania has been a hotbed of targeted attacks and advanced persistent threats (APT) since early 2015.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "In fact, Pawn Storm and another threat actor attacked the UAE government using servers of the VPS provider through highly targeted credential phishing.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Other threat actors like DustySky (also known as the Gaza hackers) are also regularly using the VPS provider to host their command-and-control (C&C) servers and to send spear phishing e-mails.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "In 2014, it hosted a C&C server of the infamous Carbanak banking malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "Starting from last fall, border gateway protocol (BGP) routing tricks were applied to obscure the fact that Maxided was routing IP addresses via the VPS provider to computer servers in a datacenter in Amsterdam.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s10"
+      },
+      "text": "In fact Pawn Storm set up very targeted credential phishing sites against the UAE government and UAE armed forces more than once on IP addresses of the VPS provider in 2015.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Their attacks utilized C&C servers, exploit sites, spear-phishing campaigns, free Webmail phishing sites targeting high proﬁle users, and very speciﬁc credential phishing sites against Government agencies of countries like Bulgaria, Greece, Malaysia, Montenegro, Poland, Qatar, Romania, Saudi Arabia, Turkey, Ukraine, and United Arab Emirates.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Apart from Pawn Storm, a less sophisticated group of threat actors called DustySky is using the VPS provider.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "only one that attracts Pawn Storm and other APT actors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_NetherlandsCyberAttack(04-21-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Pawn Storm already found its way to the rebranded hosting company and hosted a credential phishing site targeting a state run press agency of Turkey there.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_DustySky",
+        "ent_threatactor_the_Gaza_hackers"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_United_Arab_Emirates",
+        "ent_threatactor_UAE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_DustySky",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_United_Arab_Emirates",
+        "ent_threatactor_UAE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

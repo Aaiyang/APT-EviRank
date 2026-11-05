@@ -1,0 +1,1898 @@
+{
+  "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+  "title": "Charting TA2541's Flight",
+  "source": "Mandiant",
+  "published_date": "February 9, 2022",
+  "report_metadata": {
+    "file_name": "Proofpoint_Charting-TA2541s-Flight(02-15-2022).pdf",
+    "file_path": "/root/APTtext/Proofpoint_Charting-TA2541s-Flight(02-15-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 11578,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_TA2541",
+      "type": "ThreatActor",
+      "name": "TA2541",
+      "normalized_name": "TA2541",
+      "aliases": [
+        "with the threat actor"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_13",
+        "ev_23",
+        "ev_28",
+        "ev_30"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_28",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_AsyncRAT",
+      "type": "Malware",
+      "name": "AsyncRAT",
+      "normalized_name": "AsyncRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_35",
+        "ev_47",
+        "ev_50",
+        "ev_62"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "AsyncRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_50",
+        "ev_35",
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_vjw0rm",
+      "type": "Malware",
+      "name": "vjw0rm",
+      "normalized_name": "vjw0rm",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_44",
+        "ev_62"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "vjw0rm",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_grace5321.publicvm.com",
+      "type": "Domain",
+      "name": "grace5321.publicvm.com",
+      "normalized_name": "grace5321.publicvm.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_81",
+        "ev_82"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "grace5321.publicvm.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_82",
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Compromise",
+      "type": "ThreatActor",
+      "name": "Compromise",
+      "normalized_name": "Compromise",
+      "aliases": [
+        "IOCs"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2",
+        "ev_49",
+        "ev_63"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_49",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_with_the_threat_actor",
+      "type": "ThreatActor",
+      "name": "with the threat actor",
+      "normalized_name": "with the threat actor",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_13",
+        "ev_23",
+        "ev_28"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_TA2541"
+    },
+    {
+      "id": "ent_malware_AgentTesla",
+      "type": "Malware",
+      "name": "AgentTesla",
+      "normalized_name": "AgentTesla",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "AgentTesla",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_Imminent_Monitor",
+      "type": "Malware",
+      "name": "Imminent Monitor",
+      "normalized_name": "Imminent Monitor",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_28",
+        "ev_43",
+        "ev_64"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "Imminent Monitor",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_NetWire",
+      "type": "Malware",
+      "name": "NetWire",
+      "normalized_name": "NetWire",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "NetWire",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_Parallax",
+      "type": "Malware",
+      "name": "Parallax",
+      "normalized_name": "Parallax",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "Parallax",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_Revenge_RAT",
+      "type": "Malware",
+      "name": "Revenge RAT",
+      "normalized_name": "Revenge RAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "Revenge RAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_StrRAT",
+      "type": "Malware",
+      "name": "StrRAT",
+      "normalized_name": "StrRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_44",
+        "ev_64"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "StrRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_WSH_RAT",
+      "type": "Malware",
+      "name": "WSH RAT",
+      "normalized_name": "WSH RAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "family": "WSH RAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_6001dc.ddns.net",
+      "type": "Domain",
+      "name": "6001dc.ddns.net",
+      "normalized_name": "6001dc.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_76"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "6001dc.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_akconsult.ddns.net",
+      "type": "Domain",
+      "name": "akconsult.ddns.net",
+      "normalized_name": "akconsult.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_80"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "akconsult.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_bigdips0n.publicvm.com",
+      "type": "Domain",
+      "name": "bigdips0n.publicvm.com",
+      "normalized_name": "bigdips0n.publicvm.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_75"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "bigdips0n.publicvm.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_bodmas01.zapto.org",
+      "type": "Domain",
+      "name": "bodmas01.zapto.org",
+      "normalized_name": "bodmas01.zapto.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_74"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "bodmas01.zapto.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_e29rava.ddns.net",
+      "type": "Domain",
+      "name": "e29rava.ddns.net",
+      "normalized_name": "e29rava.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_79"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "e29rava.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_h0pe.ddns.net",
+      "type": "Domain",
+      "name": "h0pe.ddns.net",
+      "normalized_name": "h0pe.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_78"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "h0pe.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_joelthomas.linkpc.net",
+      "type": "Domain",
+      "name": "joelthomas.linkpc.net",
+      "normalized_name": "joelthomas.linkpc.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63",
+        "ev_71"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "joelthomas.linkpc.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_kimjoy.ddns.net",
+      "type": "Domain",
+      "name": "kimjoy.ddns.net",
+      "normalized_name": "kimjoy.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_77"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "kimjoy.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_rick63.publicvm.com",
+      "type": "Domain",
+      "name": "rick63.publicvm.com",
+      "normalized_name": "rick63.publicvm.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63",
+        "ev_72"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "rick63.publicvm.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_tq744.publicvm.com",
+      "type": "Domain",
+      "name": "tq744.publicvm.com",
+      "normalized_name": "tq744.publicvm.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63",
+        "ev_73"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "tq744.publicvm.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ioc_sha256_4717ee69d28306254b1affa7efc0a50c481c3930025e75366ce93c99505ded96",
+      "type": "SHA256",
+      "name": "4717ee69d28306254b1affa7efc0a50c481c3930025e75366ce93c99505ded96",
+      "normalized_name": "4717ee69d28306254b1affa7efc0a50c481c3930025e75366ce93c99505ded96",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "4717ee69d28306254b1affa7efc0a50c481c3930025e75366ce93c99505ded96",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_67250d5e5cb42df505b278e53ae346e7573ba60a06c3daac7ec05f853100e61c",
+      "type": "SHA256",
+      "name": "67250d5e5cb42df505b278e53ae346e7573ba60a06c3daac7ec05f853100e61c",
+      "normalized_name": "67250d5e5cb42df505b278e53ae346e7573ba60a06c3daac7ec05f853100e61c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_85"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "67250d5e5cb42df505b278e53ae346e7573ba60a06c3daac7ec05f853100e61c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d793f37eb89310ddfc6d0337598c316db0eccda4d30e34143c768235594a169c",
+      "type": "SHA256",
+      "name": "d793f37eb89310ddfc6d0337598c316db0eccda4d30e34143c768235594a169c",
+      "normalized_name": "d793f37eb89310ddfc6d0337598c316db0eccda4d30e34143c768235594a169c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "d793f37eb89310ddfc6d0337598c316db0eccda4d30e34143c768235594a169c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ebd7809cacae62bc94dfb8077868f53d53beb0614766213d48f4385ed09c73a6",
+      "type": "SHA256",
+      "name": "ebd7809cacae62bc94dfb8077868f53d53beb0614766213d48f4385ed09c73a6",
+      "normalized_name": "ebd7809cacae62bc94dfb8077868f53d53beb0614766213d48f4385ed09c73a6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "value": "ebd7809cacae62bc94dfb8077868f53d53beb0614766213d48f4385ed09c73a6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_4Pax_Trip_Details.pdf.vbs",
+      "type": "File",
+      "name": "4Pax Trip Details.pdf.vbs",
+      "normalized_name": "4Pax Trip Details.pdf.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "4Pax Trip Details.pdf.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_charters_details.pdf.vbs",
+      "type": "File",
+      "name": "charters details.pdf.vbs",
+      "normalized_name": "charters details.pdf.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "charters details.pdf.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_HandlerUpdate64Bits.vbs",
+      "type": "File",
+      "name": "HandlerUpdate64Bits.vbs",
+      "normalized_name": "HandlerUpdate64Bits.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "HandlerUpdate64Bits.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RemoteFramework64.ps1",
+      "type": "File",
+      "name": "RemoteFramework64.ps1",
+      "normalized_name": "RemoteFramework64.ps1",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "RemoteFramework64.ps1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_schtasks.exe",
+      "type": "File",
+      "name": "schtasks.exe",
+      "normalized_name": "schtasks.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "schtasks.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_server.exe",
+      "type": "File",
+      "name": "server.exe",
+      "normalized_name": "server.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "server.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SystemFramework64Bits.vbs",
+      "type": "File",
+      "name": "SystemFramework64Bits.vbs",
+      "normalized_name": "SystemFramework64Bits.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "SystemFramework64Bits.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SystemHardDrive.vbs",
+      "type": "File",
+      "name": "SystemHardDrive.vbs",
+      "normalized_name": "SystemHardDrive.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "SystemHardDrive.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_UserInterfaceLogin.vbs",
+      "type": "File",
+      "name": "UserInterfaceLogin.vbs",
+      "normalized_name": "UserInterfaceLogin.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "UserInterfaceLogin.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_WindowsCrashReportFix.vbs",
+      "type": "File",
+      "name": "WindowsCrashReportFix.vbs",
+      "normalized_name": "WindowsCrashReportFix.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "file_name": "WindowsCrashReportFix.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_with_the_threat_actor",
+      "tail_id": "ent_threatactor_TA2541",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "type": "loads",
+      "head_id": "ent_file_RemoteFramework64.ps1",
+      "tail_id": "ent_malware_AsyncRAT",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_TA2541",
+      "tail_id": "ent_malware_AsyncRAT",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_35",
+        "ev_50",
+        "ev_62",
+        "ev_34",
+        "ev_36",
+        "ev_46",
+        "ev_47",
+        "ev_48",
+        "ev_51",
+        "ev_63"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "use",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; use_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "It is likely TA2541 will continue using AsyncRAT and vjw0rm in future campaigns and will likely use other commodity malware to support its objectives."
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_TA2541",
+      "tail_id": "ent_malware_vjw0rm",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_62",
+        "ev_43",
+        "ev_44",
+        "ev_45",
+        "ev_63"
+      ],
+      "primary_evidence_id": "ev_62",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "using",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "use_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "It is likely TA2541 will continue using AsyncRAT and vjw0rm in future campaigns and will likely use other commodity malware to support its objectives."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "loads",
+      "summary": "RemoteFramework64.ps1 loads AsyncRAT",
+      "evidence_ids": [
+        "ev_40"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "uses_malware",
+      "summary": "TA2541 uses_malware AsyncRAT",
+      "evidence_ids": [
+        "ev_35",
+        "ev_50",
+        "ev_62"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "TA2541 uses_malware vjw0rm",
+      "evidence_ids": [
+        "ev_62",
+        "ev_43",
+        "ev_44"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The threat actor consistently uses remote access trojans (RATs) that can be used to remotely control compromised machines.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s13"
+      },
+      "text": "While public reporting detailing similar threat activities exists since at least 2019, this is the first time Proofpoint is sharing comprehensive details linking public and private data under one threat activity cluster we call TA2541.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "Proofpoint can confirm the activities in these reports overlap with the threat actor tracked as TA2541.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "While TA2541 consistently uses Google Drive, and occasionally OneDrive, to host the malicious VBS files, beginning in late 2021, Proofpoint observed this group begin using DiscordApp URLs linking to a compressed file which led to either AgentTesla or Imminent Monitor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Although TA2541 typically uses URLs as part of the delivery, Proofpoint has also observed this actor leverage attachments in emails.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "The figure below depicts an example from a recent campaign where the PowerShell code is hosted on the paste.ee URL.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Typically, TA2541 will use Visual Basic Script (VBS) files to establish persistence with one of their favorite payloads, AsyncRAT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "This is accomplished by adding the VBS file in the startup directory which points to a PowerShell script.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "C:\\Users[User]\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\SystemFramework64Bits.vbs Contents of VBS file:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "Set Obj = CreateObject(\"WScript.Shell\") Obj.Run \"PowerShell -ExecutionPolicy RemoteSigned -File \" & \"C:\\Users\\ [User]\\AppData\\Local\\Temp\\RemoteFramework64.ps1\", 0",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s7"
+      },
+      "text": "Other Recent VBS File Names Observed UserInterfaceLogin.vbs HandlerUpdate64Bits.vbs",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "WindowsCrashReportFix.vbs SystemHardDrive.vbs TA2541 has also established persistence by creating scheduled tasks and adding entries in the registry.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "For instance, in November 2021 TA2541 distributed the payload Imminent Monitor using both of these methods.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "In recent campaigns, vjw0rm and STRRAT also leveraged task creation and adding entries to the registry.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s4"
+      },
+      "text": "Data: C:\\Users\\User\\AppData\\Roaming\\xubntzl.txt Malware Proofpoint has observed TA2541 using over a dozen different malware payloads since 2017.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s5"
+      },
+      "text": "The threat actor uses commodity malware available for purchase on criminal forums or available in open-source repositories.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s6"
+      },
+      "text": "Currently, TA2541 prefers AsyncRAT, but other popular RATs include NetWire, WSH RAT and Parallax.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "All the malware used by TA2541 can be used for information gathering purposes and to gain remote control of an infected machine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "At this time, Proofpoint does not know what the threat actor’s ultimate goals and objectives are once it achieves initial compromise.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "While AsyncRAT is the current malware of choice, TA2541 has varied its malware use each year since 2017.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "The threat actor will typically use just one or a handful of RATs in observed campaigns, however in 2020, Proofpoint observed TA2541 distributing over 10 different types of malware, all using the same initial infection chain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s11"
+      },
+      "text": "It is likely TA2541 will continue using AsyncRAT and vjw0rm in future campaigns and will likely use other commodity malware to support its objectives.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s12"
+      },
+      "text": "Indicators of Compromise (IOCs) C2 Domains Indicator Description Date Observed joelthomas[.]linkpc[.]net AsyncRAT C2 Domain Throughout 2021 rick63[.]publicvm[.]com AsyncRAT C2 Domain January 2022 tq744[.]publicvm[.]com AsyncRAT C2 Domain January 2022",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "bodmas01[.]zapto[.]org AsyncRAT C2 Domain January 2022 bigdips0n[.]publicvm[.]com AsyncRAT C2 Domain December 2021 6001dc[.]ddns[.]net AsyncRAT C2 Domain September 2021 kimjoy[.]ddns[.]net Revenge RAT C2 Domain March 2021 h0pe[.]ddns[.]net AsyncRAT C2 Domain April/May 2021 e29rava[.]ddns[.]net AsyncRAT C2 Domain June 2021 akconsult[.]ddns[.]net AsyncRAT C2 Domain July 2021 grace5321[.]publicvm[.]com StrRAT C2 Domain January 2022 grace5321[.]publicvm[.]com Imminent Monitor C2 Domain November 2021",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s3"
+      },
+      "text": "File Name: charters details.pdf.vbs File Name: charters details.pdf.vbs File Name: 4Pax Trip Details.pdf.vbs ET Signatures",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "schtasks.exe /Create /TN \"Updates\\BQVIiVtepLtz\" /XML C:\\Users\\ [User]\\AppData\\Local\\Temp\\tmp7CF8.tmp",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "Data: C:\\Users[User]\\AppData\\Roaming\\server\\server.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "joelthomas[.]linkpc[.]net AsyncRAT C2 Domain Throughout 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "rick63[.]publicvm[.]com AsyncRAT C2 Domain January 2022",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "tq744[.]publicvm[.]com AsyncRAT C2 Domain January 2022",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "bodmas01[.]zapto[.]org AsyncRAT C2 Domain January 2022",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "bigdips0n[.]publicvm[.]com AsyncRAT C2 Domain December 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r3"
+      },
+      "text": "6001dc[.]ddns[.]net AsyncRAT C2 Domain September 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r4"
+      },
+      "text": "kimjoy[.]ddns[.]net Revenge RAT C2 Domain March 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r5"
+      },
+      "text": "h0pe[.]ddns[.]net AsyncRAT C2 Domain April/May 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r6"
+      },
+      "text": "e29rava[.]ddns[.]net AsyncRAT C2 Domain June 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r7"
+      },
+      "text": "akconsult[.]ddns[.]net AsyncRAT C2 Domain July 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r8"
+      },
+      "text": "grace5321[.]publicvm[.]com StrRAT C2 Domain January 2022",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r9"
+      },
+      "text": "grace5321[.]publicvm[.]com Imminent Monitor C2 Domain November 2021",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r12"
+      },
+      "text": "SHA256: 67250d5e5cb42df505b278e53ae346e7573ba60a06c3daac7ec05f853100e61c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r13"
+      },
+      "text": "SHA256: ebd7809cacae62bc94dfb8077868f53d53beb0614766213d48f4385ed09c73a6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r14"
+      },
+      "text": "SHA256: 4717ee69d28306254b1affa7efc0a50c481c3930025e75366ce93c99505ded96",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Proofpoint_Charting-TA2541s-Flight(02-15-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r15"
+      },
+      "text": "SHA256: d793f37eb89310ddfc6d0337598c316db0eccda4d30e34143c768235594a169c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_62",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_TA2541",
+        "ent_malware_AsyncRAT",
+        "ent_malware_vjw0rm"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_TA2541",
+        "ent_threatactor_with_the_threat_actor"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_TA2541",
+        "ent_malware_AsyncRAT"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_threatactor_TA2541",
+        "ent_malware_AsyncRAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_threatactor_TA2541",
+        "ent_file_SystemHardDrive.vbs",
+        "ent_file_WindowsCrashReportFix.vbs"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_threatactor_TA2541",
+        "ent_malware_AsyncRAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_HandlerUpdate64Bits.vbs",
+        "ent_file_UserInterfaceLogin.vbs"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_66",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_4Pax_Trip_Details.pdf.vbs",
+        "ent_file_charters_details.pdf.vbs"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,1507 @@
+{
+  "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+  "title": "ChChes – Malware that Communicates with C&C Servers Using Cookie Headers",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017).pdf",
+    "file_path": "/root/APTtext/JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 9294,
+    "report_profile": "historical_narrative"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_ChChes",
+      "type": "Malware",
+      "name": "ChChes",
+      "normalized_name": "ChChes",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_15",
+        "ev_2",
+        "ev_8",
+        "ev_9",
+        "ev_12",
+        "ev_16"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "family": "ChChes",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_9",
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Emails",
+      "type": "Victim",
+      "name": "Emails",
+      "normalized_name": "Emails",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_ChChes",
+      "type": "Campaign",
+      "name": "ChChes",
+      "normalized_name": "ChChes",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_12",
+        "ev_16",
+        "ev_8",
+        "ev_9"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_9",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_domain_area.wthelpdesk.com",
+      "type": "Domain",
+      "name": "area.wthelpdesk.com",
+      "normalized_name": "area.wthelpdesk.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "area.wthelpdesk.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_dick.ccfchrist.com",
+      "type": "Domain",
+      "name": "dick.ccfchrist.com",
+      "normalized_name": "dick.ccfchrist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "dick.ccfchrist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_gavin.ccfchrist.com",
+      "type": "Domain",
+      "name": "gavin.ccfchrist.com",
+      "normalized_name": "gavin.ccfchrist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "gavin.ccfchrist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_hamiltion.catholicmmb.com",
+      "type": "Domain",
+      "name": "hamiltion.catholicmmb.com",
+      "normalized_name": "hamiltion.catholicmmb.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "hamiltion.catholicmmb.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_kawasaki.cloud-maste.com",
+      "type": "Domain",
+      "name": "kawasaki.cloud-maste.com",
+      "normalized_name": "kawasaki.cloud-maste.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "kawasaki.cloud-maste.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_kawasaki.unhamj.com",
+      "type": "Domain",
+      "name": "kawasaki.unhamj.com",
+      "normalized_name": "kawasaki.unhamj.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "kawasaki.unhamj.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_sakai.unhamj.com",
+      "type": "Domain",
+      "name": "sakai.unhamj.com",
+      "normalized_name": "sakai.unhamj.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "sakai.unhamj.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_scorpion.poulsenv.com",
+      "type": "Domain",
+      "name": "scorpion.poulsenv.com",
+      "normalized_name": "scorpion.poulsenv.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "scorpion.poulsenv.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_trout.belowto.com",
+      "type": "Domain",
+      "name": "trout.belowto.com",
+      "normalized_name": "trout.belowto.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "trout.belowto.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_zebra.wthelpdesk.com",
+      "type": "Domain",
+      "name": "zebra.wthelpdesk.com",
+      "normalized_name": "zebra.wthelpdesk.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "zebra.wthelpdesk.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ioc_sha256_19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b",
+      "type": "SHA256",
+      "name": "19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b",
+      "normalized_name": "19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2965c1b6ab9d1601752cb4aa26d64a444b0a535b1a190a70d5ce935be3f91699",
+      "type": "SHA256",
+      "name": "2965c1b6ab9d1601752cb4aa26d64a444b0a535b1a190a70d5ce935be3f91699",
+      "normalized_name": "2965c1b6ab9d1601752cb4aa26d64a444b0a535b1a190a70d5ce935be3f91699",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "2965c1b6ab9d1601752cb4aa26d64a444b0a535b1a190a70d5ce935be3f91699",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2c71eb5c781daa43047fa6e3d85d51a061aa1dfa41feb338e0d4139a6dfd6910",
+      "type": "SHA256",
+      "name": "2c71eb5c781daa43047fa6e3d85d51a061aa1dfa41feb338e0d4139a6dfd6910",
+      "normalized_name": "2c71eb5c781daa43047fa6e3d85d51a061aa1dfa41feb338e0d4139a6dfd6910",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "2c71eb5c781daa43047fa6e3d85d51a061aa1dfa41feb338e0d4139a6dfd6910",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_312dc69dd6ea16842d6e58cd7fd98ba4d28eefeb4fd4c4d198fac4eee76f93c3",
+      "type": "SHA256",
+      "name": "312dc69dd6ea16842d6e58cd7fd98ba4d28eefeb4fd4c4d198fac4eee76f93c3",
+      "normalized_name": "312dc69dd6ea16842d6e58cd7fd98ba4d28eefeb4fd4c4d198fac4eee76f93c3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "312dc69dd6ea16842d6e58cd7fd98ba4d28eefeb4fd4c4d198fac4eee76f93c3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_316e89d866d5c710530c2103f183d86c31e9a90d55e2ebc2dda94f112f3bdb6d",
+      "type": "SHA256",
+      "name": "316e89d866d5c710530c2103f183d86c31e9a90d55e2ebc2dda94f112f3bdb6d",
+      "normalized_name": "316e89d866d5c710530c2103f183d86c31e9a90d55e2ebc2dda94f112f3bdb6d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "316e89d866d5c710530c2103f183d86c31e9a90d55e2ebc2dda94f112f3bdb6d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3d5e3648653d74e2274bb531d1724a03c2c9941fdf14b8881143f0e34fe50f03",
+      "type": "SHA256",
+      "name": "3d5e3648653d74e2274bb531d1724a03c2c9941fdf14b8881143f0e34fe50f03",
+      "normalized_name": "3d5e3648653d74e2274bb531d1724a03c2c9941fdf14b8881143f0e34fe50f03",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "3d5e3648653d74e2274bb531d1724a03c2c9941fdf14b8881143f0e34fe50f03",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_45d804f35266b26bf63e3d616715fc593931e33aa07feba5ad6875609692efa2",
+      "type": "SHA256",
+      "name": "45d804f35266b26bf63e3d616715fc593931e33aa07feba5ad6875609692efa2",
+      "normalized_name": "45d804f35266b26bf63e3d616715fc593931e33aa07feba5ad6875609692efa2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "45d804f35266b26bf63e3d616715fc593931e33aa07feba5ad6875609692efa2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_471b7edbd3b344d3e9f18fe61535de6077ea9fd8aa694221529a2ff86b06e856",
+      "type": "SHA256",
+      "name": "471b7edbd3b344d3e9f18fe61535de6077ea9fd8aa694221529a2ff86b06e856",
+      "normalized_name": "471b7edbd3b344d3e9f18fe61535de6077ea9fd8aa694221529a2ff86b06e856",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "471b7edbd3b344d3e9f18fe61535de6077ea9fd8aa694221529a2ff86b06e856",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4ff6a97d06e2e843755be8697f3324be36e1ebeb280bb45724962ce4b6710297",
+      "type": "SHA256",
+      "name": "4ff6a97d06e2e843755be8697f3324be36e1ebeb280bb45724962ce4b6710297",
+      "normalized_name": "4ff6a97d06e2e843755be8697f3324be36e1ebeb280bb45724962ce4b6710297",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "4ff6a97d06e2e843755be8697f3324be36e1ebeb280bb45724962ce4b6710297",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5961861d2b9f50d05055814e6bfd1c6291b30719f8a4d02d4cf80c2e87753fa1",
+      "type": "SHA256",
+      "name": "5961861d2b9f50d05055814e6bfd1c6291b30719f8a4d02d4cf80c2e87753fa1",
+      "normalized_name": "5961861d2b9f50d05055814e6bfd1c6291b30719f8a4d02d4cf80c2e87753fa1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "5961861d2b9f50d05055814e6bfd1c6291b30719f8a4d02d4cf80c2e87753fa1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_646f837a9a5efbbdde474411bb48977bff37abfefaa4d04f9fb2a05a23c6d543",
+      "type": "SHA256",
+      "name": "646f837a9a5efbbdde474411bb48977bff37abfefaa4d04f9fb2a05a23c6d543",
+      "normalized_name": "646f837a9a5efbbdde474411bb48977bff37abfefaa4d04f9fb2a05a23c6d543",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "646f837a9a5efbbdde474411bb48977bff37abfefaa4d04f9fb2a05a23c6d543",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_723983883fc336cb575875e4e3ff0f19bcf05a2250a44fb7c2395e564ad35d48",
+      "type": "SHA256",
+      "name": "723983883fc336cb575875e4e3ff0f19bcf05a2250a44fb7c2395e564ad35d48",
+      "normalized_name": "723983883fc336cb575875e4e3ff0f19bcf05a2250a44fb7c2395e564ad35d48",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "723983883fc336cb575875e4e3ff0f19bcf05a2250a44fb7c2395e564ad35d48",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_75ef6ea0265d2629c920a6a1c0d1dd91d3c0eda86445c7d67ebb9b30e35a2a9f",
+      "type": "SHA256",
+      "name": "75ef6ea0265d2629c920a6a1c0d1dd91d3c0eda86445c7d67ebb9b30e35a2a9f",
+      "normalized_name": "75ef6ea0265d2629c920a6a1c0d1dd91d3c0eda86445c7d67ebb9b30e35a2a9f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "75ef6ea0265d2629c920a6a1c0d1dd91d3c0eda86445c7d67ebb9b30e35a2a9f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9a6692690c03ec33c758cb5648be1ed886ff039e6b72f1c43b23fbd9c342ce8c",
+      "type": "SHA256",
+      "name": "9a6692690c03ec33c758cb5648be1ed886ff039e6b72f1c43b23fbd9c342ce8c",
+      "normalized_name": "9a6692690c03ec33c758cb5648be1ed886ff039e6b72f1c43b23fbd9c342ce8c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "9a6692690c03ec33c758cb5648be1ed886ff039e6b72f1c43b23fbd9c342ce8c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9fbd69da93fbe0e8f57df3161db0b932d01b6593da86222fabef2be31899156d",
+      "type": "SHA256",
+      "name": "9fbd69da93fbe0e8f57df3161db0b932d01b6593da86222fabef2be31899156d",
+      "normalized_name": "9fbd69da93fbe0e8f57df3161db0b932d01b6593da86222fabef2be31899156d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "9fbd69da93fbe0e8f57df3161db0b932d01b6593da86222fabef2be31899156d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ae0dd5df608f581bbc075a88c48eedeb7ac566ff750e0a1baa7718379941db86",
+      "type": "SHA256",
+      "name": "ae0dd5df608f581bbc075a88c48eedeb7ac566ff750e0a1baa7718379941db86",
+      "normalized_name": "ae0dd5df608f581bbc075a88c48eedeb7ac566ff750e0a1baa7718379941db86",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "ae0dd5df608f581bbc075a88c48eedeb7ac566ff750e0a1baa7718379941db86",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145",
+      "type": "SHA256",
+      "name": "ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145",
+      "normalized_name": "ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bc2f07066c624663b0a6f71cb965009d4d9b480213de51809cdc454ca55f1a91",
+      "type": "SHA256",
+      "name": "bc2f07066c624663b0a6f71cb965009d4d9b480213de51809cdc454ca55f1a91",
+      "normalized_name": "bc2f07066c624663b0a6f71cb965009d4d9b480213de51809cdc454ca55f1a91",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "bc2f07066c624663b0a6f71cb965009d4d9b480213de51809cdc454ca55f1a91",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_cb0c8681a407a76f8c0fd2512197aafad8120aa62e5c871c29d1fd2a102bc628",
+      "type": "SHA256",
+      "name": "cb0c8681a407a76f8c0fd2512197aafad8120aa62e5c871c29d1fd2a102bc628",
+      "normalized_name": "cb0c8681a407a76f8c0fd2512197aafad8120aa62e5c871c29d1fd2a102bc628",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "cb0c8681a407a76f8c0fd2512197aafad8120aa62e5c871c29d1fd2a102bc628",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d26dae0d8e5c23ec35e8b9cf126cded45b8096fc07560ad1c06585357921eeed",
+      "type": "SHA256",
+      "name": "d26dae0d8e5c23ec35e8b9cf126cded45b8096fc07560ad1c06585357921eeed",
+      "normalized_name": "d26dae0d8e5c23ec35e8b9cf126cded45b8096fc07560ad1c06585357921eeed",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "d26dae0d8e5c23ec35e8b9cf126cded45b8096fc07560ad1c06585357921eeed",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e6ecb146f469d243945ad8a5451ba1129c5b190f7d50c64580dbad4b8246f88e",
+      "type": "SHA256",
+      "name": "e6ecb146f469d243945ad8a5451ba1129c5b190f7d50c64580dbad4b8246f88e",
+      "normalized_name": "e6ecb146f469d243945ad8a5451ba1129c5b190f7d50c64580dbad4b8246f88e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "e6ecb146f469d243945ad8a5451ba1129c5b190f7d50c64580dbad4b8246f88e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e88f5bf4be37e0dc90ba1a06a2d47faaeea9047fec07c17c2a76f9f7ab98acf0",
+      "type": "SHA256",
+      "name": "e88f5bf4be37e0dc90ba1a06a2d47faaeea9047fec07c17c2a76f9f7ab98acf0",
+      "normalized_name": "e88f5bf4be37e0dc90ba1a06a2d47faaeea9047fec07c17c2a76f9f7ab98acf0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "e88f5bf4be37e0dc90ba1a06a2d47faaeea9047fec07c17c2a76f9f7ab98acf0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e90064884190b14a6621c18d1f9719a37b9e5f98506e28ff0636438e3282098b",
+      "type": "SHA256",
+      "name": "e90064884190b14a6621c18d1f9719a37b9e5f98506e28ff0636438e3282098b",
+      "normalized_name": "e90064884190b14a6621c18d1f9719a37b9e5f98506e28ff0636438e3282098b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "e90064884190b14a6621c18d1f9719a37b9e5f98506e28ff0636438e3282098b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_efa0b414a831cbf724d1c67808b7483dec22a981ae670947793d114048f88057",
+      "type": "SHA256",
+      "name": "efa0b414a831cbf724d1c67808b7483dec22a981ae670947793d114048f88057",
+      "normalized_name": "efa0b414a831cbf724d1c67808b7483dec22a981ae670947793d114048f88057",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "efa0b414a831cbf724d1c67808b7483dec22a981ae670947793d114048f88057",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f45b183ef9404166173185b75f2f49f26b2e44b8b81c7caf6b1fc430f373b50b",
+      "type": "SHA256",
+      "name": "f45b183ef9404166173185b75f2f49f26b2e44b8b81c7caf6b1fc430f373b50b",
+      "normalized_name": "f45b183ef9404166173185b75f2f49f26b2e44b8b81c7caf6b1fc430f373b50b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "value": "f45b183ef9404166173185b75f2f49f26b2e44b8b81c7caf6b1fc430f373b50b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "When the recipient executes the file, the machine is infected with malware called ChChes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "ZIP files attached to Targeted Emails While some ZIP files attached to the targeted emails in this campaign contain executable files only, in some cases they also contain dummy Word documents.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Communication of ChChes ChChes is a type of malware that communicates with specific sites using HTTP to receive commands and modules.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "The following is an example of HTTP GET request that ChChes sends.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The First Request The value in the Cookie field of the HTTP request that ChChes first sends (Request 1) contains encrypted data starting with ‘A’.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s1"
+      },
+      "text": "ChChes is a relatively new kind of malware which has been seen since around October 2016.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s2"
+      },
+      "text": "As this may be continually used for targeted attacks, JPCERT/CC will keep an eye on ChChes and attack activities using the malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Appendix D: List of communication destination area.wthelpdesk.com dick.ccfchrist.com kawasaki.cloud-maste.com kawasaki.unhamj.com sakai.unhamj.com scorpion.poulsenv.com trout.belowto.com zebra.wthelpdesk.com hamiltion.catholicmmb.com gavin.ccfchrist.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "5961861d2b9f50d05055814e6bfd1c6291b30719f8a4d02d4cf80c2e87753fa1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "ae6b45a92384f6e43672e617c53a44225e2944d66c1ffb074694526386074145",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "2c71eb5c781daa43047fa6e3d85d51a061aa1dfa41feb338e0d4139a6dfd6910",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "19aa5019f3c00211182b2a80dd9675721dac7cfb31d174436d3b8ec9f97d898b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r7"
+      },
+      "text": "316e89d866d5c710530c2103f183d86c31e9a90d55e2ebc2dda94f112f3bdb6d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r8"
+      },
+      "text": "efa0b414a831cbf724d1c67808b7483dec22a981ae670947793d114048f88057",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r9"
+      },
+      "text": "e90064884190b14a6621c18d1f9719a37b9e5f98506e28ff0636438e3282098b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r10"
+      },
+      "text": "9a6692690c03ec33c758cb5648be1ed886ff039e6b72f1c43b23fbd9c342ce8c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r11"
+      },
+      "text": "bc2f07066c624663b0a6f71cb965009d4d9b480213de51809cdc454ca55f1a91",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r12"
+      },
+      "text": "e6ecb146f469d243945ad8a5451ba1129c5b190f7d50c64580dbad4b8246f88e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r13"
+      },
+      "text": "e88f5bf4be37e0dc90ba1a06a2d47faaeea9047fec07c17c2a76f9f7ab98acf0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r14"
+      },
+      "text": "d26dae0d8e5c23ec35e8b9cf126cded45b8096fc07560ad1c06585357921eeed",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r15"
+      },
+      "text": "2965c1b6ab9d1601752cb4aa26d64a444b0a535b1a190a70d5ce935be3f91699",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r16"
+      },
+      "text": "312dc69dd6ea16842d6e58cd7fd98ba4d28eefeb4fd4c4d198fac4eee76f93c3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r17"
+      },
+      "text": "4ff6a97d06e2e843755be8697f3324be36e1ebeb280bb45724962ce4b6710297",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r18"
+      },
+      "text": "45d804f35266b26bf63e3d616715fc593931e33aa07feba5ad6875609692efa2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r19"
+      },
+      "text": "cb0c8681a407a76f8c0fd2512197aafad8120aa62e5c871c29d1fd2a102bc628",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r20"
+      },
+      "text": "75ef6ea0265d2629c920a6a1c0d1dd91d3c0eda86445c7d67ebb9b30e35a2a9f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r21"
+      },
+      "text": "471b7edbd3b344d3e9f18fe61535de6077ea9fd8aa694221529a2ff86b06e856",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r22"
+      },
+      "text": "ae0dd5df608f581bbc075a88c48eedeb7ac566ff750e0a1baa7718379941db86",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r23"
+      },
+      "text": "646f837a9a5efbbdde474411bb48977bff37abfefaa4d04f9fb2a05a23c6d543",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r24"
+      },
+      "text": "3d5e3648653d74e2274bb531d1724a03c2c9941fdf14b8881143f0e34fe50f03",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r25"
+      },
+      "text": "9fbd69da93fbe0e8f57df3161db0b932d01b6593da86222fabef2be31899156d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r26"
+      },
+      "text": "723983883fc336cb575875e4e3ff0f19bcf05a2250a44fb7c2395e564ad35d48",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "JPCERT_ChChes-CampC-Cookie-Headers(02-17-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "f45b183ef9404166173185b75f2f49f26b2e44b8b81c7caf6b1fc430f373b50b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_27",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_area.wthelpdesk.com",
+        "ent_domain_dick.ccfchrist.com",
+        "ent_domain_gavin.ccfchrist.com",
+        "ent_domain_hamiltion.catholicmmb.com",
+        "ent_domain_kawasaki.cloud-maste.com",
+        "ent_domain_kawasaki.unhamj.com",
+        "ent_domain_sakai.unhamj.com",
+        "ent_domain_scorpion.poulsenv.com",
+        "ent_domain_trout.belowto.com",
+        "ent_domain_zebra.wthelpdesk.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_ChChes"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+  "title": "Sea Turtle keeps on swimming, finds new victims, DNS hijacking techniques",
+  "source": null,
+  "published_date": "April 19, 2019",
+  "report_metadata": {
+    "file_name": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019).pdf",
+    "file_path": "/root/APTtext/CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 9050,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Sea_Turtle",
+      "type": "ThreatActor",
+      "name": "Sea Turtle",
+      "normalized_name": "Sea Turtle",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10",
+        "ev_20",
+        "ev_21",
+        "ev_27"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_27",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_blog.talosintelligence.com",
+      "type": "Domain",
+      "name": "blog.talosintelligence.com",
+      "normalized_name": "blog.talosintelligence.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26",
+        "ev_9"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "blog.talosintelligence.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_government_entities",
+      "type": "Victim",
+      "name": "government entities",
+      "normalized_name": "government entities",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_29",
+        "ev_7"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Greek_government_entities",
+      "type": "Victim",
+      "name": "Greek government entities",
+      "normalized_name": "Greek government entities",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Sea_Turtle",
+      "type": "Campaign",
+      "name": "Sea Turtle",
+      "normalized_name": "Sea Turtle",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_10",
+        "ev_20",
+        "ev_21",
+        "ev_27"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_21",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Hellas",
+      "type": "ThreatActor",
+      "name": "Hellas",
+      "normalized_name": "Hellas",
+      "aliases": [
+        "ICS-Forth"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_20",
+        "ev_22",
+        "ev_30"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_22",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_DNS_hijacking_campaign",
+      "type": "Campaign",
+      "name": "DNS hijacking campaign",
+      "normalized_name": "DNS hijacking campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_ncsc.gov.uk",
+      "type": "Domain",
+      "name": "ncsc.gov.uk",
+      "normalized_name": "ncsc.gov.uk",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "ncsc.gov.uk",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_ns1.intersecdns.com",
+      "type": "Domain",
+      "name": "ns1.intersecdns.com",
+      "normalized_name": "ns1.intersecdns.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_23",
+        "ev_45",
+        "ev_47"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "ns1.intersecdns.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [
+        "ev_45",
+        "ev_23",
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_ns1.rootdnservers.com",
+      "type": "Domain",
+      "name": "ns1.rootdnservers.com",
+      "normalized_name": "ns1.rootdnservers.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_32"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "ns1.rootdnservers.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ns2.intersecdns.com",
+      "type": "Domain",
+      "name": "ns2.intersecdns.com",
+      "normalized_name": "ns2.intersecdns.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_53",
+        "ev_54",
+        "ev_55"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "ns2.intersecdns.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_52",
+        "ev_55",
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "lure_infrastructure"
+    },
+    {
+      "id": "ent_domain_ns2.rootdnservers.com",
+      "type": "Domain",
+      "name": "ns2.rootdnservers.com",
+      "normalized_name": "ns2.rootdnservers.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56",
+        "ev_57",
+        "ev_58",
+        "ev_59"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "ns2.rootdnservers.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_59",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "lure_infrastructure"
+    },
+    {
+      "id": "ent_domain_rootdnservers.com",
+      "type": "Domain",
+      "name": "rootdnservers.com",
+      "normalized_name": "rootdnservers.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_29",
+        "ev_48"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "rootdnservers.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_27",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "lure_infrastructure"
+    },
+    {
+      "id": "ent_ipv4_95.179.131.225",
+      "type": "IPv4",
+      "name": "95.179.131.225",
+      "normalized_name": "95.179.131.225",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "value": "95.179.131.225",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "type": "targets",
+      "head_id": "ent_threatactor_Sea_Turtle",
+      "tail_id": "ent_victim_government_entities",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_48",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "type": "uses_lure_infrastructure",
+      "head_id": "ent_threatactor_Sea_Turtle",
+      "tail_id": "ent_domain_rootdnservers.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Domain",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_27",
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_lure_infrastructure",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "reconnaissance",
+        "notes": "lure_or_contact",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "reconnaissance",
+      "relation_id": "rel_0002",
+      "type": "uses_lure_infrastructure",
+      "summary": "Sea Turtle uses_lure_infrastructure rootdnservers.com",
+      "evidence_ids": [
+        "ev_27",
+        "ev_48"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s1"
+      },
+      "text": "After several months of activity, the actors behind the \"Sea Turtle\" DNS hijacking campaign are not slowing down.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s7"
+      },
+      "text": "We also identified a new wave of victims, including a country code top-level domain (ccTLD) registry, which manages the DNS records for every domain uses that particular country code, that access was used to then compromise additional government entities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "blog.talosintelligence.com /2019/07/sea-turtle-keeps-on-swimming.html",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Talos now has moderate confidence that the threat actors behind Sea Turtle have been using another DNS hijacking technique.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "Whereas previously reported name server domains such as ns1[.]intersecdns[.]com were used to target multiple organizations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s11"
+      },
+      "text": "Based on Cisco telemetry, we determined that the actors behind the Sea Turtle campaign had access to the ICS-Forth network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s12"
+      },
+      "text": "Cisco telemetry confirmed that the actors behind Sea Turtle maintained access to the ICS- Forth network from an operational command and control (C2) node.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s13"
+      },
+      "text": "Our telemetry indicates that the actors maintained access in the ICS-Forth network through at least April 24, five days after the statement was publicly released.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s14"
+      },
+      "text": "Upon analysis of this operational C2 node, we determined that it was also used to access an organization in Syria that was previously redirected using the actor-controlled name server ns1[.]intersecdns[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Notably, this particular C2 node searched for both blog.talosintelligence.com and ncsc.gov.uk, presumably to view Talos' previous reports on DNS hijacking and this DNS hijacking advisory from the United Kingdom's National Cyber Security Centre.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "New actor-controlled nameserver We recently discovered a new actor-controlled nameserver, rootdnservers[.]com, that exhibited similar behavior patterns as name servers previously utilized as part of the Sea Turtle campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "The domain rootdnservers[.]com was registered on April 5, 2019 through the registrar NameCheap.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "The new actor-controlled name server rootdnservers[.]com was utilized to perform DNS hijacking against three government entities that all used .gr, the Greek ccTLD.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "It's likely that these hijackings were performed through the access the threat actors obtained in the ICS-Forth network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "Hostnames IP addresses Operational Status ns1[.]rootdnservers[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s13"
+      },
+      "text": "Date IP address April 13, 2019 95[.]179[.]131[.]225",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "This new technique once again involved modifying the target domain's name server records to point legitimate users to the actor-controlled server. In this case, the actor-controlled name server and the hijacked hostnames would both resolve to the same IP address for a short period of time, typically less than 24 hours. In both observed cases, one of the hijacked hostnames would reference an email service and the threat actors would presumably harvest user credentials. One aspect of this technique that makes it extremely difficult to track is that the actor-controlled name servers were not used across multiple targets — meaning that every entity hijacked with this technique had its own dedicated name server hostname and its own dedicated IP address. Whereas previously reported name server domains such as ns1[.]intersecdns[.]com were used to target multiple organizations.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "Cisco telemetry confirmed that the actors behind Sea Turtle maintained access to the ICS- Forth network from an operational command and control (C2) node. Our telemetry indicates that the actors maintained access in the ICS-Forth network through at least April 24, five days after the statement was publicly released. Upon analysis of this operational C2 node, we determined that it was also used to access an organization in Syria that was previously redirected using the actor-controlled name server ns1[.]intersecdns[.]com. This indicates that the same threat actors were behind both operations.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "We recently discovered a new actor-controlled nameserver, rootdnservers[.]com, that exhibited similar behavior patterns as name servers previously utilized as part of the Sea Turtle campaign. The domain rootdnservers[.]com was registered on April 5, 2019 through the registrar NameCheap. The new actor-controlled name server rootdnservers[.]com was utilized to perform DNS hijacking against three government entities that all used .gr, the Greek ccTLD. It's likely that these hijackings were performed through the access the threat actors obtained in the ICS-Forth network. Below is a table showing the three most recent actor-controlled name servers that we have associated with this activity and their current operational status.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb52"
+      },
+      "text": "ns2[.]intersecdns[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb53"
+      },
+      "text": "ns2[.]intersecdns[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb54"
+      },
+      "text": ". 45[.]32[.]100[.]62 Active ns1[.]intersecdns[.]com 95[.]179[.]150[.]101 Inactive ns2[.]intersecdns[.]com 95[.]179[.]150[.]101 Inactive New IP addresses associated with man-in-the-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb55"
+      },
+      "text": ".]intersecdns[.]com Actor-controlled nameserver February - April 2019 ns2[.]intersecdns[.]com Actor-controlled nameserver February - April 2019 95[.]179[.]150[.]101 Hosted maliciou",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb56"
+      },
+      "text": "ns2[.]rootdnservers[.]com.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb57"
+      },
+      "text": "ns2[.]rootdnservers[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb58"
+      },
+      "text": "erational Status ns1[.]rootdnservers[.]com. 45[.]32[.]100[.]62 Active ns2[.]rootdnservers[.]com. 45[.]32[.]100[.]62 Active ns1[.]intersecdns[.]com 95[.]179[.]150[.]101 Inactive ns2",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "CiscoTalos_SeaTurtle-DNS-hijacking(07-09-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb59"
+      },
+      "text": "2018 ns1[.]rootdnservers[.]com Actor-controlled nameserver April 2019 ns2[.]rootdnservers[.]com Actor-controlled nameserver April 2019 45[.]32[.]100[.]62 Hosted malicious nameserve",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_48",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sea_Turtle",
+        "ent_victim_government_entities"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_blog.talosintelligence.com",
+        "ent_domain_ncsc.gov.uk"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

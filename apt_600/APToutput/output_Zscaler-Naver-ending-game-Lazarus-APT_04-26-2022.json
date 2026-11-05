@@ -1,0 +1,4377 @@
+{
+  "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+  "title": "A \"Naver\"-ending game of Lazarus APT",
+  "source": "Zscaler",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022).pdf",
+    "file_path": "/root/APTtext/Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 13693,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_KRNIC",
+      "type": "ThreatActor",
+      "name": "KRNIC",
+      "normalized_name": "KRNIC",
+      "aliases": [
+        "Korea Internet Information Center"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Lazarus",
+      "type": "ThreatActor",
+      "name": "Lazarus",
+      "normalized_name": "Lazarus",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_17",
+        "ev_30",
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_34",
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Lazarus_Group",
+      "type": "ThreatActor",
+      "name": "Lazarus Group",
+      "normalized_name": "Lazarus Group",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_naveicoip.com",
+      "type": "Domain",
+      "name": "naveicoip.com",
+      "normalized_name": "naveicoip.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoip.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_cryptocurrency_users",
+      "type": "Victim",
+      "name": "cryptocurrency users",
+      "normalized_name": "cryptocurrency users",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Korea_Internet_Information_Center",
+      "type": "ThreatActor",
+      "name": "Korea Internet Information Center",
+      "normalized_name": "Korea Internet Information Center",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_KRNIC"
+    },
+    {
+      "id": "ent_domain_cloudcentre.xyz",
+      "type": "Domain",
+      "name": "cloudcentre.xyz",
+      "normalized_name": "cloudcentre.xyz",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "cloudcentre.xyz",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_copycatfrag.store",
+      "type": "Domain",
+      "name": "copycatfrag.store",
+      "normalized_name": "copycatfrag.store",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "copycatfrag.store",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_disneycareers.net",
+      "type": "Domain",
+      "name": "disneycareers.net",
+      "normalized_name": "disneycareers.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30",
+        "ev_61"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "disneycareers.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dl.dropboxusercontent.com",
+      "type": "Domain",
+      "name": "dl.dropboxusercontent.com",
+      "normalized_name": "dl.dropboxusercontent.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "dl.dropboxusercontent.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_125"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_gmail.com",
+      "type": "Domain",
+      "name": "gmail.com",
+      "normalized_name": "gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127",
+        "ev_128",
+        "ev_129"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "gmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [
+        "ev_126",
+        "ev_129",
+        "ev_128"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_hotmail.com",
+      "type": "Domain",
+      "name": "hotmail.com",
+      "normalized_name": "hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "hotmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_knightsfrag.store",
+      "type": "Domain",
+      "name": "knightsfrag.store",
+      "normalized_name": "knightsfrag.store",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "knightsfrag.store",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mailcustomerservice.site",
+      "type": "Domain",
+      "name": "mailcustomerservice.site",
+      "normalized_name": "mailcustomerservice.site",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "mailcustomerservice.site",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mailhelp.online",
+      "type": "Domain",
+      "name": "mailhelp.online",
+      "normalized_name": "mailhelp.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "mailhelp.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mailservicecorp.online",
+      "type": "Domain",
+      "name": "mailservicecorp.online",
+      "normalized_name": "mailservicecorp.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "mailservicecorp.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mailserviceteam.email",
+      "type": "Domain",
+      "name": "mailserviceteam.email",
+      "normalized_name": "mailserviceteam.email",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "mailserviceteam.email",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_naveicoipa.com",
+      "type": "Domain",
+      "name": "naveicoipa.com",
+      "normalized_name": "naveicoipa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipa.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipa.online",
+      "type": "Domain",
+      "name": "naveicoipa.online",
+      "normalized_name": "naveicoipa.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipa.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipb.online",
+      "type": "Domain",
+      "name": "naveicoipb.online",
+      "normalized_name": "naveicoipb.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipb.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipc.com",
+      "type": "Domain",
+      "name": "naveicoipc.com",
+      "normalized_name": "naveicoipc.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipc.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipc.online",
+      "type": "Domain",
+      "name": "naveicoipc.online",
+      "normalized_name": "naveicoipc.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipc.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipd.online",
+      "type": "Domain",
+      "name": "naveicoipd.online",
+      "normalized_name": "naveicoipd.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipd.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipe.online",
+      "type": "Domain",
+      "name": "naveicoipe.online",
+      "normalized_name": "naveicoipe.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipe.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipf.online",
+      "type": "Domain",
+      "name": "naveicoipf.online",
+      "normalized_name": "naveicoipf.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipf.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipg.online",
+      "type": "Domain",
+      "name": "naveicoipg.online",
+      "normalized_name": "naveicoipg.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipg.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoiph.online",
+      "type": "Domain",
+      "name": "naveicoiph.online",
+      "normalized_name": "naveicoiph.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoiph.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipi.online",
+      "type": "Domain",
+      "name": "naveicoipi.online",
+      "normalized_name": "naveicoipi.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipi.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicoipj.online",
+      "type": "Domain",
+      "name": "naveicoipj.online",
+      "normalized_name": "naveicoipj.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicoipj.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_naveicorp.com",
+      "type": "Domain",
+      "name": "naveicorp.com",
+      "normalized_name": "naveicorp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naveicorp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navercorp.live",
+      "type": "Domain",
+      "name": "navercorp.live",
+      "normalized_name": "navercorp.live",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navercorp.live",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navercorpservice.com",
+      "type": "Domain",
+      "name": "navercorpservice.com",
+      "normalized_name": "navercorpservice.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_28",
+        "ev_57",
+        "ev_60"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navercorpservice.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_60",
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navercscorp.com",
+      "type": "Domain",
+      "name": "navercscorp.com",
+      "normalized_name": "navercscorp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navercscorp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermailcorp.com",
+      "type": "Domain",
+      "name": "navermailcorp.com",
+      "normalized_name": "navermailcorp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermailcorp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermailmanage.com",
+      "type": "Domain",
+      "name": "navermailmanage.com",
+      "normalized_name": "navermailmanage.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermailmanage.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermailservice.com",
+      "type": "Domain",
+      "name": "navermailservice.com",
+      "normalized_name": "navermailservice.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermailservice.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermailservice.online",
+      "type": "Domain",
+      "name": "navermailservice.online",
+      "normalized_name": "navermailservice.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermailservice.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermailteam.online",
+      "type": "Domain",
+      "name": "navermailteam.online",
+      "normalized_name": "navermailteam.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermailteam.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermanage.com",
+      "type": "Domain",
+      "name": "navermanage.com",
+      "normalized_name": "navermanage.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermanage.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermanage.live",
+      "type": "Domain",
+      "name": "navermanage.live",
+      "normalized_name": "navermanage.live",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermanage.live",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermanageteam.com",
+      "type": "Domain",
+      "name": "navermanageteam.com",
+      "normalized_name": "navermanageteam.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermanageteam.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navermcorp.com",
+      "type": "Domain",
+      "name": "navermcorp.com",
+      "normalized_name": "navermcorp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navermcorp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navernidb.link",
+      "type": "Domain",
+      "name": "navernidb.link",
+      "normalized_name": "navernidb.link",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navernidb.link",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_navernidmail.com",
+      "type": "Domain",
+      "name": "navernidmail.com",
+      "normalized_name": "navernidmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "navernidmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_naversecurityservice.online",
+      "type": "Domain",
+      "name": "naversecurityservice.online",
+      "normalized_name": "naversecurityservice.online",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naversecurityservice.online",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_naversecurityteam.com",
+      "type": "Domain",
+      "name": "naversecurityteam.com",
+      "normalized_name": "naversecurityteam.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naversecurityteam.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_naverservice.host",
+      "type": "Domain",
+      "name": "naverservice.host",
+      "normalized_name": "naverservice.host",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naverservice.host",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_naverserviceteam.com",
+      "type": "Domain",
+      "name": "naverserviceteam.com",
+      "normalized_name": "naverserviceteam.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "naverserviceteam.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_noreplya.xyz",
+      "type": "Domain",
+      "name": "noreplya.xyz",
+      "normalized_name": "noreplya.xyz",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "noreplya.xyz",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_123"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_parfumeparlour.store",
+      "type": "Domain",
+      "name": "parfumeparlour.store",
+      "normalized_name": "parfumeparlour.store",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "parfumeparlour.store",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.devguardmap.org",
+      "type": "Domain",
+      "name": "www.devguardmap.org",
+      "normalized_name": "www.devguardmap.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "www.devguardmap.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ipv4_23.81.246.131",
+      "type": "IPv4",
+      "name": "23.81.246.131",
+      "normalized_name": "23.81.246.131",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_57",
+        "ev_60"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "23.81.246.131",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_60",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_https_dl.dropboxusercontent.com_s_k288s9tu2o53v41_zs_url.txt_dl_0",
+      "type": "URL",
+      "name": "https://dl.dropboxusercontent.com/s/k288s9tu2o53v41/zs_url.txt?dl=0",
+      "normalized_name": "https://dl.dropboxusercontent.com/s/k288s9tu2o53v41/zs_url.txt?dl=0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "https://dl.dropboxusercontent.com/s/k288s9tu2o53v41/zs_url.txt?dl=0",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [
+        "ev_125"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_kimkl0222_hotmail.com",
+      "type": "Email",
+      "name": "kimkl0222@hotmail.com",
+      "normalized_name": "kimkl0222@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "kimkl0222@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_laris081007_hotmail.com",
+      "type": "Email",
+      "name": "laris081007@hotmail.com",
+      "normalized_name": "laris081007@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "laris081007@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_peterstewart0326_gmail.com",
+      "type": "Email",
+      "name": "peterstewart0326@gmail.com",
+      "normalized_name": "peterstewart0326@gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127",
+        "ev_128",
+        "ev_129"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "peterstewart0326@gmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [
+        "ev_126",
+        "ev_129",
+        "ev_128"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_044e701e8d288075b0fb6cd118aa94db",
+      "type": "MD5",
+      "name": "044e701e8d288075b0fb6cd118aa94db",
+      "normalized_name": "044e701e8d288075b0fb6cd118aa94db",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "044e701e8d288075b0fb6cd118aa94db",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0c2dde41d508941cf215fe8f1f7e03a7",
+      "type": "MD5",
+      "name": "0c2dde41d508941cf215fe8f1f7e03a7",
+      "normalized_name": "0c2dde41d508941cf215fe8f1f7e03a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_117"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "0c2dde41d508941cf215fe8f1f7e03a7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_117",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0ef32b48f6ca3a1a22ab87058b3d8aa0",
+      "type": "MD5",
+      "name": "0ef32b48f6ca3a1a22ab87058b3d8aa0",
+      "normalized_name": "0ef32b48f6ca3a1a22ab87058b3d8aa0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_108"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "0ef32b48f6ca3a1a22ab87058b3d8aa0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_108",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_114f22f3dd6928bed5c779fa918a8f11",
+      "type": "MD5",
+      "name": "114f22f3dd6928bed5c779fa918a8f11",
+      "normalized_name": "114f22f3dd6928bed5c779fa918a8f11",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_122"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "114f22f3dd6928bed5c779fa918a8f11",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_122",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_137910039cb94c0301154f3d1ec9ba29",
+      "type": "MD5",
+      "name": "137910039cb94c0301154f3d1ec9ba29",
+      "normalized_name": "137910039cb94c0301154f3d1ec9ba29",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "137910039cb94c0301154f3d1ec9ba29",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1559aeb8e464759247e4588cb6a09877",
+      "type": "MD5",
+      "name": "1559aeb8e464759247e4588cb6a09877",
+      "normalized_name": "1559aeb8e464759247e4588cb6a09877",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_114"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "1559aeb8e464759247e4588cb6a09877",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_15a7125fe9e629122e1d1389062af712",
+      "type": "MD5",
+      "name": "15a7125fe9e629122e1d1389062af712",
+      "normalized_name": "15a7125fe9e629122e1d1389062af712",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "15a7125fe9e629122e1d1389062af712",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1769a818548a0b52c7be2a0a213a9384",
+      "type": "MD5",
+      "name": "1769a818548a0b52c7be2a0a213a9384",
+      "normalized_name": "1769a818548a0b52c7be2a0a213a9384",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "1769a818548a0b52c7be2a0a213a9384",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1a536709554860fcc2c147374556205d",
+      "type": "MD5",
+      "name": "1a536709554860fcc2c147374556205d",
+      "normalized_name": "1a536709554860fcc2c147374556205d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_96"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "1a536709554860fcc2c147374556205d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_96"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1fd8fef169bf48cfdcf506151264128c",
+      "type": "MD5",
+      "name": "1fd8fef169bf48cfdcf506151264128c",
+      "normalized_name": "1fd8fef169bf48cfdcf506151264128c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "1fd8fef169bf48cfdcf506151264128c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_210db61d1b11c1d233fd8a0645946074",
+      "type": "MD5",
+      "name": "210db61d1b11c1d233fd8a0645946074",
+      "normalized_name": "210db61d1b11c1d233fd8a0645946074",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_120",
+        "ev_62"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "210db61d1b11c1d233fd8a0645946074",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2677f9871cb340750e582cb677d40e81",
+      "type": "MD5",
+      "name": "2677f9871cb340750e582cb677d40e81",
+      "normalized_name": "2677f9871cb340750e582cb677d40e81",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "2677f9871cb340750e582cb677d40e81",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_37505b6ff02a679e70885ccd60c13f3b",
+      "type": "MD5",
+      "name": "37505b6ff02a679e70885ccd60c13f3b",
+      "normalized_name": "37505b6ff02a679e70885ccd60c13f3b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "37505b6ff02a679e70885ccd60c13f3b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_37b7415442ab8ca01e08b2d7bfe809e2",
+      "type": "MD5",
+      "name": "37b7415442ab8ca01e08b2d7bfe809e2",
+      "normalized_name": "37b7415442ab8ca01e08b2d7bfe809e2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "37b7415442ab8ca01e08b2d7bfe809e2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_430d944786e05042cdbe1d795ded2199",
+      "type": "MD5",
+      "name": "430d944786e05042cdbe1d795ded2199",
+      "normalized_name": "430d944786e05042cdbe1d795ded2199",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_110"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "430d944786e05042cdbe1d795ded2199",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4382384feb5ad6b574f68e431006905e",
+      "type": "MD5",
+      "name": "4382384feb5ad6b574f68e431006905e",
+      "normalized_name": "4382384feb5ad6b574f68e431006905e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "4382384feb5ad6b574f68e431006905e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_44be20c67a80af8066f9401c5bee43cb",
+      "type": "MD5",
+      "name": "44be20c67a80af8066f9401c5bee43cb",
+      "normalized_name": "44be20c67a80af8066f9401c5bee43cb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "44be20c67a80af8066f9401c5bee43cb",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4548c7f157d300ec39b1821db4daa970",
+      "type": "MD5",
+      "name": "4548c7f157d300ec39b1821db4daa970",
+      "normalized_name": "4548c7f157d300ec39b1821db4daa970",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_109"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "4548c7f157d300ec39b1821db4daa970",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_493f59b6933e59029bf3106fd4a2998d",
+      "type": "MD5",
+      "name": "493f59b6933e59029bf3106fd4a2998d",
+      "normalized_name": "493f59b6933e59029bf3106fd4a2998d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_87"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "493f59b6933e59029bf3106fd4a2998d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_556abc167348fe96abfbf5079c3ad488",
+      "type": "MD5",
+      "name": "556abc167348fe96abfbf5079c3ad488",
+      "normalized_name": "556abc167348fe96abfbf5079c3ad488",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "556abc167348fe96abfbf5079c3ad488",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6df608342938f0d30a058c48bb9d8d4d",
+      "type": "MD5",
+      "name": "6df608342938f0d30a058c48bb9d8d4d",
+      "normalized_name": "6df608342938f0d30a058c48bb9d8d4d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "6df608342938f0d30a058c48bb9d8d4d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_728b908e90930c73edeb1bf58b6a3a64",
+      "type": "MD5",
+      "name": "728b908e90930c73edeb1bf58b6a3a64",
+      "normalized_name": "728b908e90930c73edeb1bf58b6a3a64",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "728b908e90930c73edeb1bf58b6a3a64",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_783e7c3ba39daa28301b841785794d76",
+      "type": "MD5",
+      "name": "783e7c3ba39daa28301b841785794d76",
+      "normalized_name": "783e7c3ba39daa28301b841785794d76",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "783e7c3ba39daa28301b841785794d76",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_78aa7e785a96f2826ee09a1aa9ab776e",
+      "type": "MD5",
+      "name": "78aa7e785a96f2826ee09a1aa9ab776e",
+      "normalized_name": "78aa7e785a96f2826ee09a1aa9ab776e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "78aa7e785a96f2826ee09a1aa9ab776e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7b07cd6bb6b5d4ed6a2892a738fe892b",
+      "type": "MD5",
+      "name": "7b07cd6bb6b5d4ed6a2892a738fe892b",
+      "normalized_name": "7b07cd6bb6b5d4ed6a2892a738fe892b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_90"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "7b07cd6bb6b5d4ed6a2892a738fe892b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_825730d9dd22dbae7f2bd89131466415",
+      "type": "MD5",
+      "name": "825730d9dd22dbae7f2bd89131466415",
+      "normalized_name": "825730d9dd22dbae7f2bd89131466415",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "825730d9dd22dbae7f2bd89131466415",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_90f2b7845c203035f0d7096aa28dda83",
+      "type": "MD5",
+      "name": "90f2b7845c203035f0d7096aa28dda83",
+      "normalized_name": "90f2b7845c203035f0d7096aa28dda83",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "90f2b7845c203035f0d7096aa28dda83",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_96d86472ff283f6959b7a779f004dfba",
+      "type": "MD5",
+      "name": "96d86472ff283f6959b7a779f004dfba",
+      "normalized_name": "96d86472ff283f6959b7a779f004dfba",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_111"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "96d86472ff283f6959b7a779f004dfba",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9775ef6514916977d73e39a6b09029bc",
+      "type": "MD5",
+      "name": "9775ef6514916977d73e39a6b09029bc",
+      "normalized_name": "9775ef6514916977d73e39a6b09029bc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "9775ef6514916977d73e39a6b09029bc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9ad00e513364e9f44f1b6712907cba9b",
+      "type": "MD5",
+      "name": "9ad00e513364e9f44f1b6712907cba9b",
+      "normalized_name": "9ad00e513364e9f44f1b6712907cba9b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "9ad00e513364e9f44f1b6712907cba9b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a0f565f7f579f0d397a42db5a95d4ae8",
+      "type": "MD5",
+      "name": "a0f565f7f579f0d397a42db5a95d4ae8",
+      "normalized_name": "a0f565f7f579f0d397a42db5a95d4ae8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "a0f565f7f579f0d397a42db5a95d4ae8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a225b7aff737dea737cd969fb307df23",
+      "type": "MD5",
+      "name": "a225b7aff737dea737cd969fb307df23",
+      "normalized_name": "a225b7aff737dea737cd969fb307df23",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "a225b7aff737dea737cd969fb307df23",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a2aca7b66f678b85fc7b4015af21c5ee",
+      "type": "MD5",
+      "name": "a2aca7b66f678b85fc7b4015af21c5ee",
+      "normalized_name": "a2aca7b66f678b85fc7b4015af21c5ee",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "a2aca7b66f678b85fc7b4015af21c5ee",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b587851d8a42fc8c23f638bbc2eb866b",
+      "type": "MD5",
+      "name": "b587851d8a42fc8c23f638bbc2eb866b",
+      "normalized_name": "b587851d8a42fc8c23f638bbc2eb866b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_85"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "b587851d8a42fc8c23f638bbc2eb866b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bb9ee3a6504fbf6a5486af04dbbb5da5",
+      "type": "MD5",
+      "name": "bb9ee3a6504fbf6a5486af04dbbb5da5",
+      "normalized_name": "bb9ee3a6504fbf6a5486af04dbbb5da5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "bb9ee3a6504fbf6a5486af04dbbb5da5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_102",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bd416ea51f94d815b5b5b66861cbdcc5",
+      "type": "MD5",
+      "name": "bd416ea51f94d815b5b5b66861cbdcc5",
+      "normalized_name": "bd416ea51f94d815b5b5b66861cbdcc5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "bd416ea51f94d815b5b5b66861cbdcc5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bdfb5071f5374f5c0a3714464b1fa5e6",
+      "type": "MD5",
+      "name": "bdfb5071f5374f5c0a3714464b1fa5e6",
+      "normalized_name": "bdfb5071f5374f5c0a3714464b1fa5e6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "bdfb5071f5374f5c0a3714464b1fa5e6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c0b24dc8f53227ce0c64439b302ca930",
+      "type": "MD5",
+      "name": "c0b24dc8f53227ce0c64439b302ca930",
+      "normalized_name": "c0b24dc8f53227ce0c64439b302ca930",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "c0b24dc8f53227ce0c64439b302ca930",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c156572dd81c3b0072f62484e90e47a0",
+      "type": "MD5",
+      "name": "c156572dd81c3b0072f62484e90e47a0",
+      "normalized_name": "c156572dd81c3b0072f62484e90e47a0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "c156572dd81c3b0072f62484e90e47a0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c32f40f304777df7cfab428a54bb818b",
+      "type": "MD5",
+      "name": "c32f40f304777df7cfab428a54bb818b",
+      "normalized_name": "c32f40f304777df7cfab428a54bb818b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "c32f40f304777df7cfab428a54bb818b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ce00749c908de017010055a83ac0654f",
+      "type": "MD5",
+      "name": "ce00749c908de017010055a83ac0654f",
+      "normalized_name": "ce00749c908de017010055a83ac0654f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "ce00749c908de017010055a83ac0654f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d19dd02cf375d0d03f557556d5207061",
+      "type": "MD5",
+      "name": "d19dd02cf375d0d03f557556d5207061",
+      "normalized_name": "d19dd02cf375d0d03f557556d5207061",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "d19dd02cf375d0d03f557556d5207061",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d7f6b09775b8d90d79404eda715461b7",
+      "type": "MD5",
+      "name": "d7f6b09775b8d90d79404eda715461b7",
+      "normalized_name": "d7f6b09775b8d90d79404eda715461b7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "d7f6b09775b8d90d79404eda715461b7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_db0483aced77a7db130a6100aef67967",
+      "type": "MD5",
+      "name": "db0483aced77a7db130a6100aef67967",
+      "normalized_name": "db0483aced77a7db130a6100aef67967",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_100"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "db0483aced77a7db130a6100aef67967",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e25ac08833416b8c7191639b60edfa21",
+      "type": "MD5",
+      "name": "e25ac08833416b8c7191639b60edfa21",
+      "normalized_name": "e25ac08833416b8c7191639b60edfa21",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "e25ac08833416b8c7191639b60edfa21",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e2e5644e77e75e422bde075f409d882e",
+      "type": "MD5",
+      "name": "e2e5644e77e75e422bde075f409d882e",
+      "normalized_name": "e2e5644e77e75e422bde075f409d882e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "e2e5644e77e75e422bde075f409d882e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e3ffda448df223b240a20dae41e20cef",
+      "type": "MD5",
+      "name": "e3ffda448df223b240a20dae41e20cef",
+      "normalized_name": "e3ffda448df223b240a20dae41e20cef",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "e3ffda448df223b240a20dae41e20cef",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e732bc87033a935bd2d3d56c7772641b",
+      "type": "MD5",
+      "name": "e732bc87033a935bd2d3d56c7772641b",
+      "normalized_name": "e732bc87033a935bd2d3d56c7772641b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "e732bc87033a935bd2d3d56c7772641b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ecb2d07ede5a401c83a5fca8e00fa37a",
+      "type": "MD5",
+      "name": "ecb2d07ede5a401c83a5fca8e00fa37a",
+      "normalized_name": "ecb2d07ede5a401c83a5fca8e00fa37a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "value": "ecb2d07ede5a401c83a5fca8e00fa37a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_chmext.exe",
+      "type": "File",
+      "name": "chmext.exe",
+      "normalized_name": "chmext.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_38",
+        "ev_63"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "chmext.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cryptos_login.docx",
+      "type": "File",
+      "name": "cryptos_login.docx",
+      "normalized_name": "cryptos_login.docx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "cryptos_login.docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Emergency_Disaster_Subsidy_Application_Form.docx",
+      "type": "File",
+      "name": "Emergency Disaster Subsidy Application Form.docx",
+      "normalized_name": "Emergency Disaster Subsidy Application Form.docx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "Emergency Disaster Subsidy Application Form.docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_IntelRST.exe",
+      "type": "File",
+      "name": "IntelRST.exe",
+      "normalized_name": "IntelRST.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_65",
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "IntelRST.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_65",
+        "ev_67",
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_v3l4sp.exe",
+      "type": "File",
+      "name": "v3l4sp.exe",
+      "normalized_name": "v3l4sp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_40",
+        "ev_45",
+        "ev_64",
+        "ev_70"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "v3l4sp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_70",
+        "ev_40",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file__.docx",
+      "type": "File",
+      "name": "긴급재난지원금신청서양식 .docx",
+      "normalized_name": "긴급재난지원금신청서양식 .docx",
+      "aliases": [
+        "대한광산개발 ( 주 ).docx"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "긴급재난지원금신청서양식 .docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file____.docx",
+      "type": "File",
+      "name": "크립토스 _ 로그인 .docx",
+      "normalized_name": "크립토스 _ 로그인 .docx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "file_name": "크립토스 _ 로그인 .docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "cmd.exe",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_zs_url.txt",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "type": "File",
+      "name": "zs_url.txt",
+      "normalized_name": "zs_url.txt",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_125"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "zs_url.txt",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Korea_Internet_Information_Center",
+      "tail_id": "ent_threatactor_KRNIC",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "type": "executes",
+      "head_id": "ent_file_v3l4sp.exe",
+      "tail_id": "ent_file_IntelRST.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_45",
+        "ev_70"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "type": "loads",
+      "head_id": "ent_file_v3l4sp.exe",
+      "tail_id": "ent_file_IntelRST.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_45",
+        "ev_70"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "v3l4sp.exe executes IntelRST.exe",
+      "evidence_ids": [
+        "ev_45",
+        "ev_70"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "v3l4sp.exe loads IntelRST.exe",
+      "evidence_ids": [
+        "ev_45",
+        "ev_70"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "In 2022, the same threat actor started spoofing various important entities in South Korea, including KRNIC (Korea Internet Information Center), Korean security vendors such as Ahnlab , cryptocurrency exchanges such as Binance, and others.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "Lazarus Group is known to have a keen interest in attacking cryptocurrency users, asset managers, and companies.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "# Attribution to Lazarus APT According to the threat infrastructure mapping done in Prevailion blog, the IP address 23.81.246[.]131 belongs to one of the critical nodes used by the threat actor during Naver- themed phishing activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s9"
+      },
+      "text": "One of the domains linked to this IP address was navercorpservice[.]com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s11"
+      },
+      "text": "The IP address 172.93.201[.]253 was recently used to host the domain - disneycareers[.]net which was attributed to Lazarus APT in Google TAG blog.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "passive DNS data for this IP address, we can see that the domain: www.devguardmap[.]org was hosted on this IP address in Jan 2021 which was attributed to Lazarus APT as per this tweet from ESET and Google TAG blog.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "Correlating all the above data points, we reached the conclusion that the attack-chains we discovered are related to Lazarus threat actor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "At runtime, this will be dropped on the filesystem in the path: C:\\\\programdata\\\\chmtemp\\\\chmext.exe and executed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "Checks the name of all the running processes and terminates if it finds a process running with the name \"v3l4sp.exe\" .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Checks name of all the running processes and terminates if there is some process running with the name \"v3l4sp.exe\" or \"AYAgent.aye\" or \"IntelRST.exe\" 4.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "If running with administrator privileges then it executes a PowerShell command using cmd.exe to add WindowsDefender exclusion.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "긴급재난지원금신청서양식 .docx 대한광산개발 ( 주 ).docx 크립토스 _ 로그인 .docx Guide to confirmed cases and living with them (50).chm Meta Kong's Guide_190002.chm",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "Emergency Disaster Subsidy Application Form.docx Daehan Mine Development Co., Ltd.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "docx cryptos_login.docx [+] C2 domains naveicoipg[.]online naveicoipf[.]online naveicoipc[.]tech naveicoipa[.]tech naveicoipe[.]tech naveicoipd[.]tech naveicoipep[.]tech naveicoiph[.]online naveicoipg[.]tech naveicoipf[.]tech naveicoipb[.]tech naveicoipj[.]online naveicoipi[.]online naveicoipe[.]online naveicoipd[.]online naveicoipc[.]online naveicoipb[.]online naveicoipa[.]online naveicoipc[.]com naveicoipa[.]com naveicoip[.]com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "naveicoiph[.]tech naveicoip[.]tech naveicorp[.]com copycatfrag[.]store knightsfrag[.]store parfumeparlour[.]store # New domain resolutions for the IP 23.81.246[.]131 navernidb[.]link navermailteam[.]online navermailservice[.]com mailservicecorp[.]online mailhelp[.]online mailcustomerservice[.]site cloudcentre[.]xyz naverservice[.]host mailserviceteam[.]email navermcorp[.]com naverserviceteam[.]com naversecurityteam[.]com navermanageteam[.]com navermailmanage[.]com navercorpservice[.]com navermailcorp[.]com naversecurityservice[.]online navermailservice[.]online navercorp[.]live navercscorp[.]com navermanage[.]live navermanage[.]com navernidmail[.]com noreplya[.]xyz",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Figure 3 below shows that the decoy content of the document is related to Menlo Security company. This is consistent with other decoy contents used by the threat actor. For instance, in the document with MD5 hash: 1a536709554860fcc2c147374556205d, the decoy content used was related to Ahnlab - a Korea-based computer security company. This is done for the purpose of social engineering.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "According to the threat infrastructure mapping done in Prevailion blog, the IP address 23.81.246[.]131 belongs to one of the critical nodes used by the threat actor during Naver- themed phishing activity. One of the domains linked to this IP address was navercorpservice[.]com . If we check the passive DNS data for this domain, we find two other IP address resolutions: 172.93.201[.]253 in November 2021 and 45.147.231[.]213 in September 2021.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "The IP address 172.93.201[.]253 was recently used to host the domain - disneycareers[.]net which was attributed to Lazarus APT in Google TAG blog.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "For the purpose of technical analysis we will consider the attack chain starting with a Compiled HTML file having MD5 210db61d1b11c1d233fd8a0645946074.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "The CHM file contains a malicious binary embedded inside it. At runtime, this will be dropped on the filesystem in the path: C:\\\\programdata\\\\chmtemp\\\\chmext.exe and executed.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "2. Checks the name of all the running processes and terminates if it finds a process running with the name \"v3l4sp.exe\" . This process name corresponds to the security software developed by Ahnlab (a popular and frequently used security vendor in South Korea).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "3. Creates file in the path \"C:\\ProgramData\\Intel\\IntelRST.exe\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r6"
+      },
+      "text": "7. Executes IntelRST.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Data: C:\\ProgramData\\Intel\\IntelRST.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "The file IntelRST.exe dropped by the Stage-2 dropper is an ASpacked binary. On execution it performs the following operations:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "3. Checks name of all the running processes and terminates if there is some process running with the name \"v3l4sp.exe\" or \"AYAgent.aye\" or \"IntelRST.exe\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "37505b6ff02a679e70885ccd60c13f3b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "c156572dd81c3b0072f62484e90e47a0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "d7f6b09775b8d90d79404eda715461b7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "a0f565f7f579f0d397a42db5a95d4ae8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "e2e5644e77e75e422bde075f409d882e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "37b7415442ab8ca01e08b2d7bfe809e2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "d19dd02cf375d0d03f557556d5207061",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r9"
+      },
+      "text": "e3ffda448df223b240a20dae41e20cef",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "e732bc87033a935bd2d3d56c7772641b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "825730d9dd22dbae7f2bd89131466415",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "c32f40f304777df7cfab428a54bb818b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "b587851d8a42fc8c23f638bbc2eb866b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "4382384feb5ad6b574f68e431006905e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "493f59b6933e59029bf3106fd4a2998d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r7"
+      },
+      "text": "bdfb5071f5374f5c0a3714464b1fa5e6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r8"
+      },
+      "text": "1769a818548a0b52c7be2a0a213a9384",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r9"
+      },
+      "text": "7b07cd6bb6b5d4ed6a2892a738fe892b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r10"
+      },
+      "text": "9775ef6514916977d73e39a6b09029bc",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r11"
+      },
+      "text": "44be20c67a80af8066f9401c5bee43cb",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r12"
+      },
+      "text": "15a7125fe9e629122e1d1389062af712",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r13"
+      },
+      "text": "1fd8fef169bf48cfdcf506151264128c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r14"
+      },
+      "text": "9ad00e513364e9f44f1b6712907cba9b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r15"
+      },
+      "text": "1a536709554860fcc2c147374556205d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r16"
+      },
+      "text": "a2aca7b66f678b85fc7b4015af21c5ee",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r17"
+      },
+      "text": "bd416ea51f94d815b5b5b66861cbdcc5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r18"
+      },
+      "text": "ecb2d07ede5a401c83a5fca8e00fa37a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r19"
+      },
+      "text": "db0483aced77a7db130a6100aef67967",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r20"
+      },
+      "text": "c0b24dc8f53227ce0c64439b302ca930",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r21"
+      },
+      "text": "bb9ee3a6504fbf6a5486af04dbbb5da5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r22"
+      },
+      "text": "ce00749c908de017010055a83ac0654f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r23"
+      },
+      "text": "2677f9871cb340750e582cb677d40e81",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "90f2b7845c203035f0d7096aa28dda83",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "044e701e8d288075b0fb6cd118aa94db",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "556abc167348fe96abfbf5079c3ad488",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "0ef32b48f6ca3a1a22ab87058b3d8aa0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "4548c7f157d300ec39b1821db4daa970",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "430d944786e05042cdbe1d795ded2199",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r7"
+      },
+      "text": "96d86472ff283f6959b7a779f004dfba",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r8"
+      },
+      "text": "137910039cb94c0301154f3d1ec9ba29",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r9"
+      },
+      "text": "728b908e90930c73edeb1bf58b6a3a64",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r10"
+      },
+      "text": "1559aeb8e464759247e4588cb6a09877",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r11"
+      },
+      "text": "6df608342938f0d30a058c48bb9d8d4d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r12"
+      },
+      "text": "78aa7e785a96f2826ee09a1aa9ab776e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r13"
+      },
+      "text": "0c2dde41d508941cf215fe8f1f7e03a7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r14"
+      },
+      "text": "783e7c3ba39daa28301b841785794d76",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r15"
+      },
+      "text": "a225b7aff737dea737cd969fb307df23",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r16"
+      },
+      "text": "210db61d1b11c1d233fd8a0645946074",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r17"
+      },
+      "text": "e25ac08833416b8c7191639b60edfa21",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r18"
+      },
+      "text": "114f22f3dd6928bed5c779fa918a8f11",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "navernidb[.]link navermailteam[.]online navermailservice[.]com mailservicecorp[.]online mailhelp[.]online mailcustomerservice[.]site cloudcentre[.]xyz naverservice[.]host mailserviceteam[.]email navermcorp[.]com naverserviceteam[.]com naversecurityteam[.]com navermanageteam[.]com navermailmanage[.]com navercorpservice[.]com navermailcorp[.]com naversecurityservice[.]online navermailservice[.]online navercorp[.]live navercscorp[.]com navermanage[.]live navermanage[.]com navernidmail[.]com noreplya[.]xyz",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb124"
+      },
+      "text": "\"https://dl.dropboxusercontent.com/s/k288s9tu2o53v41/zs_url.txt?dl=0\".",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb125"
+      },
+      "text": "llowing sequence: 1. Send a GET request to the URL \"https://dl.dropboxusercontent.com/s/k288s9tu2o53v41/zs_url.txt?dl=0\". 2. Query the file size and send another network request to",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb126"
+      },
+      "text": "was: peterstewart0326@gmail[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb127"
+      },
+      "text": "peterstewart0326@gmail[.]com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb128"
+      },
+      "text": "this attack. One such email addresses was: peterstewart0326@gmail[.]com This same email address was recently mentioned in Prevailion's blog. It was linked to several domains which",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Zscaler-Naver-ending-game-Lazarus-APT(04-26-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb129"
+      },
+      "text": "ails # Dropbox accounts associated email addresses peterstewart0326@gmail[.]com kimkl0222@hotmail[.]com laris081007@hotmail[.]com [+] PDB path",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_17",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Lazarus",
+        "ent_threatactor_Lazarus_Group",
+        "ent_victim_cryptocurrency_users"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_KRNIC",
+        "ent_threatactor_Korea_Internet_Information_Center"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_IntelRST.exe",
+        "ent_file_v3l4sp.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file__.docx",
+        "ent_file____.docx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_70",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_IntelRST.exe",
+        "ent_file_v3l4sp.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

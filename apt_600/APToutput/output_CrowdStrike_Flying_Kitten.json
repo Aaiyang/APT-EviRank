@@ -1,0 +1,839 @@
+{
+  "report_id": "CrowdStrike_Flying_Kitten",
+  "title": "Cat Scratch Fever: CrowdStrike Tracks Newly Reported Iranian Actor as FLYING KITTEN",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "CrowdStrike_Flying_Kitten.pdf",
+    "file_path": "/root/APTtext/CrowdStrike_Flying_Kitten.pdf",
+    "source_type": "pdf",
+    "char_length": 4908,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_FLYING_KITTEN",
+      "type": "ThreatActor",
+      "name": "FLYING KITTEN",
+      "normalized_name": "FLYING KITTEN",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_11",
+        "ev_2",
+        "ev_8"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_2",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Stealer",
+      "type": "Malware",
+      "name": "Stealer",
+      "normalized_name": "Stealer",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "family": "Stealer",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Cat_Scratch_Fever",
+      "type": "Campaign",
+      "name": "Cat Scratch Fever",
+      "normalized_name": "Cat Scratch Fever",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Flying_Kitten_Targeted_Intrusion",
+      "type": "Campaign",
+      "name": "Flying Kitten Targeted Intrusion",
+      "normalized_name": "Flying Kitten Targeted Intrusion",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_FLYING_KITTEN",
+      "type": "Campaign",
+      "name": "FLYING KITTEN",
+      "normalized_name": "FLYING KITTEN",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1",
+        "ev_11",
+        "ev_2",
+        "ev_8"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_domain_aeroconf2014.org",
+      "type": "Domain",
+      "name": "aeroconf2014.org",
+      "normalized_name": "aeroconf2014.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "aeroconf2014.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_crowdstrike.com",
+      "type": "Domain",
+      "name": "crowdstrike.com",
+      "normalized_name": "crowdstrike.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "crowdstrike.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_gmail.com",
+      "type": "Domain",
+      "name": "gmail.com",
+      "normalized_name": "gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "gmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_parmanpower.com",
+      "type": "Domain",
+      "name": "parmanpower.com",
+      "normalized_name": "parmanpower.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "parmanpower.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_usa.gov.us",
+      "type": "Domain",
+      "name": "usa.gov.us",
+      "normalized_name": "usa.gov.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_7"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "usa.gov.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_intelligence_crowdstrike.com",
+      "type": "Email",
+      "name": "intelligence@crowdstrike.com",
+      "normalized_name": "intelligence@crowdstrike.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "intelligence@crowdstrike.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_keyvan.ajaxtm_gmail.com",
+      "type": "Email",
+      "name": "keyvan.ajaxtm@gmail.com",
+      "normalized_name": "keyvan.ajaxtm@gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "value": "keyvan.ajaxtm@gmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_file_IntelRapidStart.exe",
+      "type": "File",
+      "name": "IntelRapidStart.exe",
+      "normalized_name": "IntelRapidStart.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_23"
+      ],
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "file_name": "IntelRapidStart.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "type": "communicates_with",
+      "head_id": "ent_threatactor_FLYING_KITTEN",
+      "tail_id": "ent_domain_crowdstrike.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Domain",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "comm_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "If you have any questions about these signatures or want to hear more about Flying Kitten and their tradecraft, please contact: intelligence@crowdstrike.com and inquire about Falcon Intelligence, our Cyber"
+      },
+      "head": {
+        "id": "ent_threatactor_FLYING_KITTEN",
+        "type": "ThreatActor",
+        "name": "FLYING KITTEN",
+        "normalized_name": "FLYING KITTEN",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_11",
+          "ev_2",
+          "ev_8"
+        ],
+        "report_id": "CrowdStrike_Flying_Kitten",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_8",
+          "ev_2",
+          "ev_11"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_domain_crowdstrike.com",
+        "type": "Domain",
+        "name": "crowdstrike.com",
+        "normalized_name": "crowdstrike.com",
+        "aliases": [],
+        "confidence": 0.99,
+        "evidence_ids": [
+          "ev_14"
+        ],
+        "report_id": "CrowdStrike_Flying_Kitten",
+        "value": "crowdstrike.com",
+        "ioc_type": "domain",
+        "sources": [
+          "rule"
+        ],
+        "primary_evidence_id": "ev_14",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_ioc"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "type": "communicates_with",
+      "head_id": "ent_threatactor_FLYING_KITTEN",
+      "tail_id": "ent_email_intelligence_crowdstrike.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Email",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "comm_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "If you have any questions about these signatures or want to hear more about Flying Kitten and their tradecraft, please contact: intelligence@crowdstrike.com and inquire about Falcon Intelligence, our Cyber"
+      },
+      "head": {
+        "id": "ent_threatactor_FLYING_KITTEN",
+        "type": "ThreatActor",
+        "name": "FLYING KITTEN",
+        "normalized_name": "FLYING KITTEN",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_11",
+          "ev_2",
+          "ev_8"
+        ],
+        "report_id": "CrowdStrike_Flying_Kitten",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_8",
+          "ev_2",
+          "ev_11"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_email_intelligence_crowdstrike.com",
+        "type": "Email",
+        "name": "intelligence@crowdstrike.com",
+        "normalized_name": "intelligence@crowdstrike.com",
+        "aliases": [],
+        "confidence": 0.99,
+        "evidence_ids": [
+          "ev_14"
+        ],
+        "report_id": "CrowdStrike_Flying_Kitten",
+        "value": "intelligence@crowdstrike.com",
+        "ioc_type": "email",
+        "sources": [
+          "rule"
+        ],
+        "primary_evidence_id": "ev_14",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "contact_address"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "type": "uses_lure_infrastructure",
+      "head_id": "ent_threatactor_FLYING_KITTEN",
+      "tail_id": "ent_domain_gmail.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Domain",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_lure_infrastructure",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "reconnaissance",
+        "notes": "lure_or_contact, lure_contact_event",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "communicates_with",
+      "summary": "FLYING KITTEN communicates_with crowdstrike.com",
+      "evidence_ids": [
+        "ev_14"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "communicates_with",
+      "summary": "FLYING KITTEN communicates_with intelligence@crowdstrike.com",
+      "evidence_ids": [
+        "ev_14"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "reconnaissance",
+      "relation_id": "rel_0003",
+      "type": "uses_lure_infrastructure",
+      "summary": "FLYING KITTEN uses_lure_infrastructure gmail.com",
+      "evidence_ids": [
+        "ev_11"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "CrowdStrike Intelligence has also been tracking and reporting internally on this threat group since mid- January 2014 under the name FLYING KITTEN, and since that time has seen targeting of multiple U.S.- based defense contractors as well as political dissidents.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Flying Kitten Targeted Intrusion FireEye’s report notes that this adversary’s targeted intrusion activity consists of credential theft and malware delivery individually.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "The downloaded file is actually the Stealer malware that exfiltrates stolen data to an FTP server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "This website is registered via the same registrant email (info[@]usa.gov.us) and other Whois information as some of the other domains related to the activity discussed above.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "No malicious activity has been linked to this domain, however, the fact that it was registered under the same registrant email at the same time as other FLYING KITTEN domains linked to malicious activity, it is likely that the adversary is using this site for malicious purposes as well.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "The website does not appear to deliver any malware, so its most likely purpose is to act as a credential-collection mechanism much like the spoofed Institute of Electrical and Electronics Engineers (IEEE) Aerospace Conference website (aeroconf2014[.]org) the adversary used earlier this year.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "FLYING KITTEN domains is info[@]usa.gov.us, however historical records show that the domains were originally registered under the email address keyvan.ajaxtm[@]gmail.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "As FireEye’s report notes, the keyvan.ajaxtm@gmail.com email address ties back to an Iran-based entity called Ajax Security Team.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "If you have any questions about these signatures or want to hear more about Flying Kitten and their tradecraft, please contact: intelligence@crowdstrike.com and inquire about Falcon Intelligence, our Cyber",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "$exename = \"IntelRapidStart.exe\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "$confname = \"IntelRapidStart.exe.config\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb26"
+      },
+      "text": "engaged in broader targeting via the website parmanpower[.]com. This website is registered via the same",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "CrowdStrike_Flying_Kitten",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb27"
+      },
+      "text": "KITTEN is also engaged in broader targeting via the website parmanpower[.]com. This website is registered via the same registrant email (info[@]usa.gov.us) and other Whois informat",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_FLYING_KITTEN",
+        "ent_campaign_Cat_Scratch_Fever"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_FLYING_KITTEN",
+        "ent_domain_crowdstrike.com",
+        "ent_email_intelligence_crowdstrike.com"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_FLYING_KITTEN",
+        "ent_campaign_Flying_Kitten_Targeted_Intrusion"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_FLYING_KITTEN",
+        "ent_domain_usa.gov.us"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_domain_gmail.com",
+        "ent_email_keyvan.ajaxtm_gmail.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_FLYING_KITTEN"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

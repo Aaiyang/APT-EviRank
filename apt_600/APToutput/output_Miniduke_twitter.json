@@ -1,0 +1,1243 @@
+{
+  "report_id": "Miniduke_twitter",
+  "title": "Miniduke still duking it out",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Miniduke_twitter.pdf",
+    "file_path": "/root/APTtext/Miniduke_twitter.pdf",
+    "source_type": "pdf",
+    "char_length": 12165,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_MiniDuke",
+      "type": "Malware",
+      "name": "MiniDuke",
+      "normalized_name": "MiniDuke",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_2",
+        "ev_26",
+        "ev_3",
+        "ev_31"
+      ],
+      "report_id": "Miniduke_twitter",
+      "family": "MiniDuke",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_31",
+        "ev_2",
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Proposal-Cover-Sheet-English",
+      "type": "Malware",
+      "name": "Proposal-Cover-Sheet-English",
+      "normalized_name": "Proposal-Cover-Sheet-English",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Miniduke_twitter",
+      "family": "Proposal-Cover-Sheet-English",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Rundll32",
+      "type": "Malware",
+      "name": "Rundll32",
+      "normalized_name": "Rundll32",
+      "aliases": [
+        "rundll32.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_55",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Miniduke_twitter",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_56",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "DOCUME",
+        "ALLUSE",
+        "APPLIC",
+        "TEMP"
+      ],
+      "derived_from_file_id": "ent_file_rundll32.exe",
+      "family": "Rundll32",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2014-1761",
+      "type": "CVE",
+      "name": "CVE-2014-1761",
+      "normalized_name": "CVE-2014-1761",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50",
+        "ev_61"
+      ],
+      "report_id": "Miniduke_twitter",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_rundll32.exe",
+      "type": "Malware",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_53",
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Miniduke_twitter",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Rundll32"
+    },
+    {
+      "id": "ent_malware_rundll32.exe",
+      "type": "Malware",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_55",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Miniduke_twitter",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_56",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "DOCUME",
+        "ALLUSE",
+        "APPLIC",
+        "TEMP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_malware_Win32_SandyEva.G",
+      "type": "Malware",
+      "name": "Win32/SandyEva.G",
+      "normalized_name": "Win32/SandyEva.G",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Miniduke_twitter",
+      "family": "Win32/SandyEva.G",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.geoiptool.com",
+      "type": "Domain",
+      "name": "www.geoiptool.com",
+      "normalized_name": "www.geoiptool.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "www.geoiptool.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.geoiptool.com",
+      "type": "URL",
+      "name": "http://www.geoiptool.com",
+      "normalized_name": "http://www.geoiptool.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "http://www.geoiptool.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_eset_malware-research_tree_master_miniduke",
+      "type": "URL",
+      "name": "https://github.com/eset/malware-research/tree/master/miniduke",
+      "normalized_name": "https://github.com/eset/malware-research/tree/master/miniduke",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "https://github.com/eset/malware-research/tree/master/miniduke",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_58be4918df7fbf1e12de1a31d4f622e570a81b93",
+      "type": "SHA1",
+      "name": "58be4918df7fbf1e12de1a31d4f622e570a81b93",
+      "normalized_name": "58be4918df7fbf1e12de1a31d4f622e570a81b93",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "58be4918df7fbf1e12de1a31d4f622e570a81b93",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b27f6174173e71dc154413a525baddf3d6dea1fd",
+      "type": "SHA1",
+      "name": "b27f6174173e71dc154413a525baddf3d6dea1fd",
+      "normalized_name": "b27f6174173e71dc154413a525baddf3d6dea1fd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "b27f6174173e71dc154413a525baddf3d6dea1fd",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c059303cd420dc892421ba4465f09b892de93c77",
+      "type": "SHA1",
+      "name": "c059303cd420dc892421ba4465f09b892de93c77",
+      "normalized_name": "c059303cd420dc892421ba4465f09b892de93c77",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "Miniduke_twitter",
+      "value": "c059303cd420dc892421ba4465f09b892de93c77",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cryptdll.dll",
+      "type": "File",
+      "name": "cryptdll.dll",
+      "normalized_name": "cryptdll.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_58"
+      ],
+      "report_id": "Miniduke_twitter",
+      "file_name": "cryptdll.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_init.cmd",
+      "type": "File",
+      "name": "init.cmd",
+      "normalized_name": "init.cmd",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "Miniduke_twitter",
+      "file_name": "init.cmd",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_NTUSER.DAT",
+      "type": "File",
+      "name": "NTUSER.DAT",
+      "normalized_name": "NTUSER.DAT",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30",
+        "ev_59"
+      ],
+      "report_id": "Miniduke_twitter",
+      "file_name": "NTUSER.DAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "NTUSER",
+        "USERPROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_kernel32.dll",
+      "report_id": "Miniduke_twitter",
+      "type": "File",
+      "name": "kernel32.dll",
+      "normalized_name": "kernel32.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "kernel32.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Miniduke_twitter",
+      "type": "alias_of",
+      "head_id": "ent_malware_rundll32.exe",
+      "tail_id": "ent_malware_Rundll32",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_55"
+      ],
+      "primary_evidence_id": "ev_53",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Miniduke_twitter",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_MiniDuke",
+      "tail_id": "ent_file_kernel32.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "primary_evidence_id": "ev_8",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Miniduke_twitter",
+      "type": "drops",
+      "head_id": "ent_malware_MiniDuke",
+      "tail_id": "ent_file_init.cmd",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_31"
+      },
+      "head": {
+        "id": "ent_malware_MiniDuke",
+        "type": "Malware",
+        "name": "MiniDuke",
+        "normalized_name": "MiniDuke",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_2",
+          "ev_26",
+          "ev_3",
+          "ev_31"
+        ],
+        "report_id": "Miniduke_twitter",
+        "family": "MiniDuke",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_3",
+        "supporting_evidence_ids": [
+          "ev_31",
+          "ev_2",
+          "ev_26"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_init.cmd",
+        "type": "File",
+        "name": "init.cmd",
+        "normalized_name": "init.cmd",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_31"
+        ],
+        "report_id": "Miniduke_twitter",
+        "file_name": "init.cmd",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_31",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Miniduke_twitter",
+      "type": "executes",
+      "head_id": "ent_malware_MiniDuke",
+      "tail_id": "ent_file_kernel32.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Miniduke_twitter",
+      "type": "executes",
+      "head_id": "ent_malware_Rundll32",
+      "tail_id": "ent_file_cryptdll.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_29",
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Miniduke_twitter",
+      "type": "exploits",
+      "head_id": "ent_malware_MiniDuke",
+      "tail_id": "ent_cve_CVE-2014-1761",
+      "head_type": "Malware",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_47",
+        "ev_61"
+      ],
+      "primary_evidence_id": "ev_47",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0006",
+      "type": "exploits",
+      "summary": "MiniDuke exploits CVE-2014-1761",
+      "evidence_ids": [
+        "ev_47",
+        "ev_61"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "downloads_payload",
+      "summary": "MiniDuke downloads_payload kernel32.dll",
+      "evidence_ids": [
+        "ev_8"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "MiniDuke drops init.cmd",
+      "evidence_ids": [
+        "ev_31"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "MiniDuke executes kernel32.dll",
+      "evidence_ids": [
+        "ev_52"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "Rundll32 executes cryptdll.dll",
+      "evidence_ids": [
+        "ev_29",
+        "ev_58"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "This vulnerability occurred in parsing RTF files and was assigned CVE-2014-1761 , a thorough analysis of which used to deliver malware and one was particularly interesting as it contained a new variant of MiniDuke (also known as Win32/SandyEva ).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "MiniDuke was first discussed by Kaspersky in March 2013 in their paper The MiniDuke Mystery: PDF 0- day Government Spy Assembler 0x29A Micro Backdoor and shortly after in a paper by Bitdefender.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "The RTF exploit document The exploit document was named Proposal-Cover-Sheet-English.rtf and is quite bland when compared to",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "After decrypting itself and obtaining the addresses of some functions exported by kernel32.dll, it decrypts and drops the payload in the %TEMP% directory in a file named “a.l” which is subsequently loaded by calling kernel32!LoadLibraryA.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "The malware processes the downloaded file in the same way as previous samples of MiniDuke: it verifies the integrity of the file using",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "The TwitterJS module is extracted by creating a copy of the Windows DLL cryptdll.dll, injecting a block of code into it and redirecting the exported functions to this code.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "This file is then stored in an Alternate Data Stream (ADS) in NTUSER.DAT in the %USERPROFILE% folder.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "Below you can find the content of the init.cmd script used by MiniDuke to install TwitterJS module onto the system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s5"
+      },
+      "text": "We detect the RTF exploit document as Win32/Exploit.CVE-2014-1761.D and the MiniDuke components as Win32/SandyEva.G .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "vulnerability occurred in parsing RTF files and was assigned CVE-2014-1761 , a thorough analysis of which",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "kernel32.dll, it decrypts and drops the payload in the %TEMP% directory in a file named “a.l” which is",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Once MiniDuke receives control it checks that the host process is not rundll32.exe and whether the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "command: “C:\\Windows\\system32\\rundll32.exe %path_to_main_module% , export_function ” Which",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "“C:\\Windows\\system32\\rundll32.exe C:\\DOCUME~1\\ALLUSE~1\\APPLIC~1\\data.cat, IlqUenn“ .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "When the malware is loaded by rundll32.exe and the current directory isn’t %TEMP%, the malware starts",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "The TwitterJS module is extracted by creating a copy of the Windows DLL cryptdll.dll, injecting a block of",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "This file is then stored in an Alternate Data Stream (ADS) in NTUSER.DAT in the %USERPROFILE%",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "58be4918df7fbf1e12de1a31d4f622e570a81b93 RTF with Word exploit CVE-2014-1761",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "b27f6174173e71dc154413a525baddf3d6dea1fd MiniDuke main component (before config encryption)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "c059303cd420dc892421ba4465f09b892de93c77 TwitterJS javascript code",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 11,
+        "section": "rule_backfill",
+        "sentence_id": "p11_rb64"
+      },
+      "text": "https://github.com/eset/malware-research/tree/master/miniduke",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 11,
+        "section": "rule_backfill",
+        "sentence_id": "p11_rb65"
+      },
+      "text": "count lists have been moved to our Github account : https://github.com/eset/malware-research/tree/master/miniduke Author ESET Research, ESET",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb66"
+      },
+      "text": "y code of the infected host IP address obtained from http://www.geoiptool.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Miniduke_twitter",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb67"
+      },
+      "text": "y code of the infected host IP address obtained from http://www.geoiptool.com OS version information domain controller name, user name, groups a user account belongs to a list of A",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_cve_CVE-2014-1761"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_cve_CVE-2014-1761"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_file_init.cmd"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_url_https_github.com_eset_malware-research_tree_master_miniduke"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_malware_MiniDuke",
+        "ent_url_https_github.com_eset_malware-research_tree_master_miniduke"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

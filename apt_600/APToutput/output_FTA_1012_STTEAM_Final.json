@@ -1,0 +1,2849 @@
+{
+  "report_id": "FTA 1012 STTEAM Final",
+  "title": "www.fidelissecurity.com Fidelis Threat Advisory #1012",
+  "source": null,
+  "published_date": "February 23, 2014",
+  "report_metadata": {
+    "file_name": "FTA 1012 STTEAM Final.pdf",
+    "file_path": "/root/APTtext/FTA 1012 STTEAM Final.pdf",
+    "source_type": "pdf",
+    "char_length": 109810,
+    "report_profile": "historical_narrative"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_STTEAM",
+      "type": "ThreatActor",
+      "name": "STTEAM",
+      "normalized_name": "STTEAM",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_12",
+        "ev_46",
+        "ev_53"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_12",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_K-Shell",
+      "type": "Malware",
+      "name": "K-Shell",
+      "normalized_name": "K-Shell",
+      "aliases": [
+        "Aspx Shell",
+        "ZHC Shell 1.0"
+      ],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_12",
+        "ev_23",
+        "ev_59",
+        "ev_8"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_12",
+        "ev_59",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "K-Shell",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ZEHIR4",
+      "type": "Malware",
+      "name": "ZEHIR4",
+      "normalized_name": "ZEHIR4",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16",
+        "ev_43",
+        "ev_9"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "family": "ZEHIR4",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Aspx_Shell",
+      "type": "Malware",
+      "name": "Aspx Shell",
+      "normalized_name": "Aspx Shell",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_12",
+        "ev_23",
+        "ev_59"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_K-Shell"
+    },
+    {
+      "id": "ent_malware_ZHC_Shell_1.0",
+      "type": "Malware",
+      "name": "ZHC Shell 1.0",
+      "normalized_name": "ZHC Shell 1.0",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_12",
+        "ev_23",
+        "ev_59"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_K-Shell"
+    },
+    {
+      "id": "ent_domain_a6.sphotos.ak.fbcdn.net",
+      "type": "Domain",
+      "name": "a6.sphotos.ak.fbcdn.net",
+      "normalized_name": "a6.sphotos.ak.fbcdn.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103",
+        "ev_104",
+        "ev_105"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "a6.sphotos.ak.fbcdn.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_104",
+        "ev_102"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_asp.net",
+      "type": "Domain",
+      "name": "asp.net",
+      "normalized_name": "asp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106",
+        "ev_107",
+        "ev_108",
+        "ev_109"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "asp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [
+        "ev_108",
+        "ev_107",
+        "ev_106"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_hotmail.com",
+      "type": "Domain",
+      "name": "hotmail.com",
+      "normalized_name": "hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "hotmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_i.in",
+      "type": "Domain",
+      "name": "i.in",
+      "normalized_name": "i.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_110",
+        "ev_111"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "i.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_img851.imageshack.us",
+      "type": "Domain",
+      "name": "img851.imageshack.us",
+      "normalized_name": "img851.imageshack.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112",
+        "ev_113",
+        "ev_114",
+        "ev_115"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "img851.imageshack.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [
+        "ev_115",
+        "ev_114",
+        "ev_112"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_pastebin.com",
+      "type": "Domain",
+      "name": "pastebin.com",
+      "normalized_name": "pastebin.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116",
+        "ev_117"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "pastebin.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [
+        "ev_117"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.virustotal.com",
+      "type": "Domain",
+      "name": "www.virustotal.com",
+      "normalized_name": "www.virustotal.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118",
+        "ev_119",
+        "ev_120",
+        "ev_121"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "www.virustotal.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [
+        "ev_119",
+        "ev_121",
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.w3.org",
+      "type": "Domain",
+      "name": "www.w3.org",
+      "normalized_name": "www.w3.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_122",
+        "ev_123",
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "www.w3.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_125",
+      "supporting_evidence_ids": [
+        "ev_124",
+        "ev_123",
+        "ev_122"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.zone-hack.com",
+      "type": "Domain",
+      "name": "www.zone-hack.com",
+      "normalized_name": "www.zone-hack.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127",
+        "ev_128",
+        "ev_129"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "www.zone-hack.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_128",
+        "ev_127",
+        "ev_126"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_yahoo.com",
+      "type": "Domain",
+      "name": "yahoo.com",
+      "normalized_name": "yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_130",
+        "ev_131"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_131"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_zone-hack.com",
+      "type": "Domain",
+      "name": "zone-hack.com",
+      "normalized_name": "zone-hack.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127",
+        "ev_128",
+        "ev_129"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "zone-hack.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_128",
+        "ev_127",
+        "ev_126"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_zehir4.asp",
+      "type": "URL",
+      "name": "http://192.168.1.1/zehir4.asp",
+      "normalized_name": "http://192.168.1.1/zehir4.asp",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/zehir4.asp",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_zehir4.asp_",
+      "type": "URL",
+      "name": "http://192.168.1.1/zehir4.asp?",
+      "normalized_name": "http://192.168.1.1/zehir4.asp?",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/zehir4.asp?",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_zehir4.asp_mevla_1_",
+      "type": "URL",
+      "name": "http://192.168.1.1/zehir4.asp?mevla=1&",
+      "normalized_name": "http://192.168.1.1/zehir4.asp?mevla=1&",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/zehir4.asp?mevla=1&",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_ZHC_Shell_1.0.aspx",
+      "type": "URL",
+      "name": "http://192.168.1.1/ZHC_Shell_1.0.aspx",
+      "normalized_name": "http://192.168.1.1/ZHC_Shell_1.0.aspx",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/ZHC_Shell_1.0.aspx",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [
+        "ev_89",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_ZHC_Shell_1.0.aspx_",
+      "type": "URL",
+      "name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?",
+      "normalized_name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/ZHC_Shell_1.0.aspx?",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_ZHC_Shell_1.0.aspx_action_cmd4",
+      "type": "URL",
+      "name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=cmd4",
+      "normalized_name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=cmd4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=cmd4",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_ZHC_Shell_1.0.aspx_action_edit_src_c_3a_5cinetpub_5cwwwroot_5cTEST",
+      "type": "URL",
+      "name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=edit&src=c%3a%5cinetpub%5cwwwroot%5cTEST",
+      "normalized_name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=edit&src=c%3a%5cinetpub%5cwwwroot%5cTEST",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=edit&src=c%3a%5cinetpub%5cwwwroot%5cTEST",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_ZHC_Shell_1.0.aspx_action_goto_src_c_3a_5cinetpub_5cwwwroot_5c",
+      "type": "URL",
+      "name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=goto&src=c%3a%5cinetpub%5cwwwroot%5c",
+      "normalized_name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=goto&src=c%3a%5cinetpub%5cwwwroot%5c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=goto&src=c%3a%5cinetpub%5cwwwroot%5c",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_192.168.1.1_ZHC_Shell_1.0.aspx_action_new_src_c_3a_5cinetpub_5cwwwroot_5c",
+      "type": "URL",
+      "name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=new&src=c%3a%5cinetpub%5cwwwroot%5c",
+      "normalized_name": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=new&src=c%3a%5cinetpub%5cwwwroot%5c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://192.168.1.1/ZHC_Shell_1.0.aspx?action=new&src=c%3a%5cinetpub%5cwwwroot%5c",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_a6.sphotos.ak.fbcdn.net_hphotos-ak-",
+      "type": "URL",
+      "name": "http://a6.sphotos.ak.fbcdn.net/hphotos-ak-",
+      "normalized_name": "http://a6.sphotos.ak.fbcdn.net/hphotos-ak-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102",
+        "ev_104",
+        "ev_105"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://a6.sphotos.ak.fbcdn.net/hphotos-ak-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [
+        "ev_104",
+        "ev_102"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_img851.imageshack.us_img851_2304_bismillahus.jpg",
+      "type": "URL",
+      "name": "http://img851.imageshack.us/img851/2304/bismillahus.jpg",
+      "normalized_name": "http://img851.imageshack.us/img851/2304/bismillahus.jpg",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112",
+        "ev_114",
+        "ev_115"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://img851.imageshack.us/img851/2304/bismillahus.jpg",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [
+        "ev_114",
+        "ev_112"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_pastebin.com_XAG1Hnfd",
+      "type": "URL",
+      "name": "http://pastebin.com/XAG1Hnfd",
+      "normalized_name": "http://pastebin.com/XAG1Hnfd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116",
+        "ev_117"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://pastebin.com/XAG1Hnfd",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [
+        "ev_117"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_pastebin_dot_com_dRvNbLb5",
+      "type": "URL",
+      "name": "http://pastebin[dot]com/dRvNbLb5",
+      "normalized_name": "http://pastebin[dot]com/dRvNbLb5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_74",
+        "ev_75"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://pastebin[dot]com/dRvNbLb5",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_73",
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_pastebin_dot_com_eMjgsLA5",
+      "type": "URL",
+      "name": "http://pastebin[dot]com/eMjgsLA5",
+      "normalized_name": "http://pastebin[dot]com/eMjgsLA5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_74",
+        "ev_75"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://pastebin[dot]com/eMjgsLA5",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_74",
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_pastebin_dot_com_m44e60e60",
+      "type": "URL",
+      "name": "http://pastebin[dot]com/m44e60e60",
+      "normalized_name": "http://pastebin[dot]com/m44e60e60",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_74",
+        "ev_75"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://pastebin[dot]com/m44e60e60",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_73",
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_www.",
+      "type": "URL",
+      "name": "http://www.",
+      "normalized_name": "http://www.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76",
+        "ev_85",
+        "ev_89",
+        "ev_92"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://www.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_85",
+        "ev_89",
+        "ev_92"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_www.w3.org_TR_html4_loose.dtd",
+      "type": "URL",
+      "name": "http://www.w3.org/TR/html4/loose.dtd",
+      "normalized_name": "http://www.w3.org/TR/html4/loose.dtd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_122",
+        "ev_123",
+        "ev_124",
+        "ev_125"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://www.w3.org/TR/html4/loose.dtd",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_125",
+      "supporting_evidence_ids": [
+        "ev_124",
+        "ev_123",
+        "ev_122"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_www.zone-hack.com",
+      "type": "URL",
+      "name": "http://www.zone-hack.com",
+      "normalized_name": "http://www.zone-hack.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126",
+        "ev_127",
+        "ev_128",
+        "ev_129"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://www.zone-hack.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_128",
+        "ev_127",
+        "ev_126"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_www.zone-hack_dot_com_",
+      "type": "URL",
+      "name": "http://www.zone-hack[dot]com/",
+      "normalized_name": "http://www.zone-hack[dot]com/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_130",
+        "ev_131"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "http://www.zone-hack[dot]com/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_131"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_https_www.virustotal.com_en_file_b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce",
+      "type": "URL",
+      "name": "https://www.virustotal.com/en/file/b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce",
+      "normalized_name": "https://www.virustotal.com/en/file/b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118",
+        "ev_121"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "https://www.virustotal.com/en/file/b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [
+        "ev_121"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.virustotal.com_en_file_cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42",
+      "type": "URL",
+      "name": "https://www.virustotal.com/en/file/cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42",
+      "normalized_name": "https://www.virustotal.com/en/file/cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_120"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "https://www.virustotal.com/en/file/cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_email_stylish_boy6_yahoo.com",
+      "type": "Email",
+      "name": "stylish_boy6@yahoo.com",
+      "normalized_name": "stylish_boy6@yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_130",
+        "ev_131"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "stylish_boy6@yahoo.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_131"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_zehirhacker_hotmail.com",
+      "type": "Email",
+      "name": "zehirhacker@hotmail.com",
+      "normalized_name": "zehirhacker@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "zehirhacker@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha256_b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c46cee35c92ffa13d",
+      "type": "SHA256",
+      "name": "b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c46cee35c92ffa13d",
+      "normalized_name": "b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c46cee35c92ffa13d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c46cee35c92ffa13d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d4248f7e42",
+      "type": "SHA256",
+      "name": "cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d4248f7e42",
+      "normalized_name": "cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d4248f7e42",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d4248f7e42",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1d9b78b5b14b821139541cc0deb4cbbd994ce157",
+      "type": "SHA1",
+      "name": "1d9b78b5b14b821139541cc0deb4cbbd994ce157",
+      "normalized_name": "1d9b78b5b14b821139541cc0deb4cbbd994ce157",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "1d9b78b5b14b821139541cc0deb4cbbd994ce157",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_917f80730fcd158a5203c37a289bd7542670dd50",
+      "type": "SHA1",
+      "name": "917f80730fcd158a5203c37a289bd7542670dd50",
+      "normalized_name": "917f80730fcd158a5203c37a289bd7542670dd50",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "917f80730fcd158a5203c37a289bd7542670dd50",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5b496a61363d304532bcf52ee21f5d55",
+      "type": "MD5",
+      "name": "5b496a61363d304532bcf52ee21f5d55",
+      "normalized_name": "5b496a61363d304532bcf52ee21f5d55",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "5b496a61363d304532bcf52ee21f5d55",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_99c056056df9104fc547d9d274bbc8a2",
+      "type": "MD5",
+      "name": "99c056056df9104fc547d9d274bbc8a2",
+      "normalized_name": "99c056056df9104fc547d9d274bbc8a2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78",
+        "ev_79"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "value": "99c056056df9104fc547d9d274bbc8a2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_TEST_FILE.txt",
+      "type": "File",
+      "name": "TEST_FILE.txt",
+      "normalized_name": "TEST_FILE.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_55",
+        "ev_56",
+        "ev_58"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "file_name": "TEST_FILE.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_58",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "TEST_FILE",
+        "STTEAM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ZHC_Shell_1.0.aspx",
+      "type": "File",
+      "name": "ZHC_Shell_1.0.aspx",
+      "normalized_name": "ZHC_Shell_1.0.aspx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_90",
+        "ev_91",
+        "ev_93"
+      ],
+      "report_id": "FTA 1012 STTEAM Final",
+      "file_name": "ZHC_Shell_1.0.aspx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_90",
+        "ev_91",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "HTTP",
+        "MSIE",
+        "NET4",
+        "REMOVED_BY_ANALYST"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "alias_of",
+      "head_id": "ent_malware_Aspx_Shell",
+      "tail_id": "ent_malware_K-Shell",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12",
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "alias_of",
+      "head_id": "ent_malware_ZHC_Shell_1.0",
+      "tail_id": "ent_malware_K-Shell",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12",
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "executes",
+      "head_id": "ent_malware_K-Shell",
+      "tail_id": "ent_file_ZHC_Shell_1.0.aspx",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_26",
+        "ev_90"
+      ],
+      "primary_evidence_id": "ev_26",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "loads",
+      "head_id": "ent_file_ZHC_Shell_1.0.aspx",
+      "tail_id": "ent_malware_K-Shell",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "primary_evidence_id": "ev_93",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_STTEAM",
+      "tail_id": "ent_malware_Aspx_Shell",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_12"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Threat Overview The “Zehir ASP Shell” and “K-Shell/ZHC Shell 1.0/Aspx Shell” backdoors used by the “STTEAM” are powerful scripts that will pose a critical threat to the victim network."
+      },
+      "head": {
+        "id": "ent_threatactor_STTEAM",
+        "type": "ThreatActor",
+        "name": "STTEAM",
+        "normalized_name": "STTEAM",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_12",
+          "ev_46",
+          "ev_53"
+        ],
+        "report_id": "FTA 1012 STTEAM Final",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_53",
+          "ev_12",
+          "ev_46"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Aspx_Shell",
+        "type": "Malware",
+        "name": "Aspx Shell",
+        "normalized_name": "Aspx Shell",
+        "aliases": [],
+        "confidence": 0.8300000000000001,
+        "evidence_ids": [
+          "ev_12",
+          "ev_23",
+          "ev_59"
+        ],
+        "report_id": "FTA 1012 STTEAM Final",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_malware_K-Shell"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_STTEAM",
+      "tail_id": "ent_malware_K-Shell",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_12",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; headline_actor_tool",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "Threat Overview The “Zehir ASP Shell” and “K-Shell/ZHC Shell 1.0/Aspx Shell” backdoors used by the “STTEAM” are powerful scripts that will pose a critical threat to the victim network."
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "FTA 1012 STTEAM Final",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_STTEAM",
+      "tail_id": "ent_malware_K-Shell",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_12",
+        "ev_66",
+        "ev_11",
+        "ev_13",
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=aspx shell|zhc shell 1.0",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "K-Shell executes ZHC_Shell_1.0.aspx",
+      "evidence_ids": [
+        "ev_26",
+        "ev_90"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "ZHC_Shell_1.0.aspx loads K-Shell",
+      "evidence_ids": [
+        "ev_93"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "STTEAM uses_malware Aspx Shell",
+      "evidence_ids": [
+        "ev_12"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "uses_malware",
+      "summary": "STTEAM uses_malware K-Shell",
+      "evidence_ids": [
+        "ev_12",
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "uses_tool",
+      "summary": "STTEAM uses_tool K-Shell",
+      "evidence_ids": [
+        "ev_12",
+        "ev_66",
+        "ev_11"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s1"
+      },
+      "text": "In the past week, we have observed an increase attack activity against the Oil & Gas industry in the Middle East by a group of threat actors using the following handle: “ STTEAM ”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "One of these ASP Shell Backdoors contains words in Turkish and appears to have been developed by someone going by the following handle: zehir (zehirhacker@hotmail.com)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "The other ASP Shell Backdoor appears to be known as “ K-Shell/ ZHC Shell 1.0 / Aspx Shell ” and developed by two persons going by the handles of:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "XXx_Death_xXX and ZHC This backdoor contains most of the same features in the “Zehir4” backdoor, but it adds functionality to add a user to the system, add a user to the administrator’s group, disable the windows firewall, enable RDP, delete IIS logs, and start the netcat utility as a reverse backdoor shell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "This document will provide information about these two ASP Shell Backdoors used by the threat actors in a recent incident.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Threat Overview The “Zehir ASP Shell” and “K-Shell/ZHC Shell 1.0/Aspx Shell” backdoors used by the “STTEAM” are powerful scripts that will pose a critical threat to the victim network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "We will start this section by providing information about the “Zehir ASP Shell” and “K-Shell/ZHC Shell 1.0/Aspx Shell” backdoors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "+1800.652.4020 Filename zehir4.asp ssdeep 1536:A/iE9zi3StXe2KkfZA1Me8phDFVGu22x5fZ0:qzI+XrO1MTphDFVGu2kR0 Size 50.2 KB (51405 bytes)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Now, we will provide information about the “ K-Shell/ZHC Shell 1.0/Aspx Shell ” backdoor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Filename ZHC_Shell_1.0.aspx ssdeep Size 36.9 KB (37770 bytes) Type Java Magic ASCII Java program text, with very long lines",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s6"
+      },
+      "text": "ASP Shell Backdoor: ZEHIR4.ASP - Backdoor script first accessed",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s1"
+      },
+      "text": "A file named “TEST_FILE.txt” is open for edit",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s1"
+      },
+      "text": "When the following data is added to the “TEST_FILE.txt” file opened for edit: “Hacked by STTEAM”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 40,
+        "section": "body",
+        "sentence_id": "p40_s1"
+      },
+      "text": "+1800.652.4020 - “Add User To Administrators Group” option selected Command: “net localgroup Administrators STTEAM /add”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 48,
+        "section": "body",
+        "sentence_id": "p48_s1"
+      },
+      "text": "“Edit” option selected to modify the contents of a file Filename: TEST_FILE.TXT Data added: “Hacked by STTEAM!”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 53,
+        "section": "body",
+        "sentence_id": "p53_s1"
+      },
+      "text": "“File Downloaded” from Victim system into the attacker’s system Filename: “TEST_FILE.txt”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 54,
+        "section": "body",
+        "sentence_id": "p54_s2"
+      },
+      "text": "“Del” option selected to delete a file Filename: TEST_FILE.txt",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 56,
+        "section": "body",
+        "sentence_id": "p56_s1"
+      },
+      "text": "Reminder for network defenders The “ K-Shell / ZHC Shell 1.0 / Aspx Shell ” backdoor links two images.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "The “Zehir ASP Shell” and “K-Shell/ZHC Shell 1.0/Aspx Shell” backdoors used by the “STTEAM” are powerful scripts that will pose a critical threat to the victim network.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "We will start this section by providing information about the “Zehir ASP Shell” and “K-Shell/ZHC Shell 1.0/Aspx Shell” backdoors. The next section (Indicators & Mitigation Strategies) will provide network traffic indicators.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "MD5 5b496a61363d304532bcf52ee21f5d55",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "SHA-1 1d9b78b5b14b821139541cc0deb4cbbd994ce157",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "SHA-256 b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c46cee35c92ffa13d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "- Posted on 16-SEP-2013 hxxp://pastebin[dot]com/eMjgsLA5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r7"
+      },
+      "text": "- Posted on: 28-JAN-2011 hxxp://pastebin[dot]com/dRvNbLb5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r8"
+      },
+      "text": "- Posted on: 5-FEB-2010 hxxp://pastebin[dot]com/m44e60e60",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r9"
+      },
+      "text": "- hxxp://www. turkhackteam[dot]net",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "The \" K-Shell/ZHC Shell 1.0/Aspx Shell \" ASP Shell backdoor (MD5: 99c056056df9104fc547d9d274bbc8a2) lets the attacker:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "MD5 99c056056df9104fc547d9d274bbc8a2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "SHA-1 917f80730fcd158a5203c37a289bd7542670dd50",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "SHA-256 cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d4248f7e42",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "- Window displayed when the “Command Line” option is selected and the following is type: “dir c:\\inetpub\\wwwroot\\”: (This window allows the attacker to obtain a reverse shell like capability)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 20,
+        "section": "rule",
+        "sentence_id": "p20_r1"
+      },
+      "text": "+1800.652.4020 Accept-Language: en-us Content-Type: application/x-www-form-urlencoded Accept-Encoding: gzip, deflate User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET4.0C) Host: 192.168.1.1 Content-Length: 175 Connection: Keep-Alive Cache-Control: no-cache Cookie: ASPSESSIONIDCSDRBCRC=OJOLKHLBCKEJIMJFNOHPPGKM",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r1"
+      },
+      "text": "K-Shell/ZHC Shell 1.0/Aspx Shell Backdoor: ZHC_Shell_1.0.aspx",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r1"
+      },
+      "text": "GET /ZHC_Shell_1.0.aspx? action=sqlrootkit HTTP/1.1 Accept: */* Referer: http://192.168.1.1/ZHC_Shell_1.0.aspx Accept-Language: en-us Accept-Encoding: gzip, deflate User-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 2.0.50727; .NET CLR 3.0.04506.648; .NET CLR 3.5.21022; .NET4.0C)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 33,
+        "section": "rule",
+        "sentence_id": "p33_r1"
+      },
+      "text": "- “Command Line” option selected Command type: “dir c:\\inetpub\\wwwroot\\”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 37,
+        "section": "rule",
+        "sentence_id": "p37_r1"
+      },
+      "text": "+1800.652.4020 <center><p> [ System information ]</ p><br/> <table width=\"80%\" border=\"1\" align=\"center\"> <tr> <td colspan=\"2\"><span class=\"style3\"><b>Web Server Information</b></span></td> </tr> <tr> <td width=\"40%\">Server IP</td> <td width=\"60%\">192.168.1.1</td> </tr> <tr> <td height=\"73\">Machine Name</td> <td>REMOVED_BY_ANALYST</td> </tr> <tr> <td>Network Name</td> <td> REMOVED_BY_ANALYST </td> </tr> <tr> <td>User Name in this Process</td> <td>ASPNET</td> </tr> <tr> <td>OS Version</td> <td>Microsoft Windows NT 5.1.2600 Service Pack 2</td> </tr> <tr> <td>Started Time</td> <td>4 Hours</td> </tr> <tr> <td>System Time</td> <td>2/24/2014 2:54:43 PM</td> </tr> <tr> <td>IIS Version</td> <td>Microsoft-IIS/5.1</td> </tr> <tr> <td>HTTPS</td> <td>off</td> </tr> <tr> <td>PATH_INFO</td> <td>/ZHC_Shell_1.0.aspx</td> </tr> <tr> <td>PATH_TRANSLATED</td> <td>c:\\inetpub\\wwwroot\\ZHC_Shell_1.0.aspx</td> <tr> <td>SERVER_PORT</td> <td>80</td> </tr> <tr> <td>SeesionID</td> <td>2n0ffa45celc1uac4wopi1bl</td> </tr> <tr>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb102"
+      },
+      "text": "background-image: url(\"http://a6.sphotos.ak.fbcdn.net/hphotos-ak-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb103"
+      },
+      "text": "Host: a6.sphotos.ak.fbcdn.net",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb104"
+      },
+      "text": "background-image: url(\"http://a6.sphotos.ak.fbcdn.net/hphotos-ak-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 35,
+        "section": "rule_backfill",
+        "sentence_id": "p35_rb105"
+      },
+      "text": "background-image: url(\"http://a6.sphotos.ak.fbcdn.net/hphotos-ak-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb106"
+      },
+      "text": "X-Powered-By: ASP.NET",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb107"
+      },
+      "text": "X-Powered-By: ASP.NET",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb108"
+      },
+      "text": "X-Powered-By: ASP.NET",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 17,
+        "section": "rule_backfill",
+        "sentence_id": "p17_rb109"
+      },
+      "text": "X-Powered-By: ASP.NET",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 17,
+        "section": "rule_backfill",
+        "sentence_id": "p17_rb110"
+      },
+      "text": "align=center><tr><td align=center><font size=2>SQL Server i.in connection string",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 17,
+        "section": "rule_backfill",
+        "sentence_id": "p17_rb111"
+      },
+      "text": "0 align=center><tr><td align=center><font size=2>SQL Server i.in connection string giriniz</td></tr><tr><td align=center><input type=hidden value='7' name=status><input type=hidden",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb112"
+      },
+      "text": "src=\"http://img851.imageshack.us/img851/2304/bismillahus.jpg\" /><br />",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb113"
+      },
+      "text": "Host: img851.imageshack.us",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb114"
+      },
+      "text": "src=\"http://img851.imageshack.us/img851/2304/bismillahus.jpg\" /><br />",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 26,
+        "section": "rule_backfill",
+        "sentence_id": "p26_rb115"
+      },
+      "text": "src=\"http://img851.imageshack.us/img851/2304/bismillahus.jpg\" /><br />",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb116"
+      },
+      "text": "hxxp://pastebin.com/XAG1Hnfd",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb117"
+      },
+      "text": "was also found in Pastebin: - Posted on 17-MAR-2013 hxxp://pastebin.com/XAG1Hnfd The following is going to be a set of screenshots of the backdoor interface. Through these screensh",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb118"
+      },
+      "text": "https://www.virustotal.com/en/file/b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb119"
+      },
+      "text": "https://www.virustotal.com/en/file/cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb120"
+      },
+      "text": "the interface The script was found in Virustotal: - https://www.virustotal.com/en/file/cc608a7103d320eff5e02a220b309df948df60efd177c9a670f186d42 48f7e42/analysis/1392942504/ Filena",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb121"
+      },
+      "text": ", copy, etc.) The script was found in Virustotal: - https://www.virustotal.com/en/file/b57bf397984545f419045391b56dcaf7b0bed8b6ee331b5c44ce e35c92ffa13d/analysis/ Copyright © 2014",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb122"
+      },
+      "text": "\"http://www.w3.org/TR/html4/loose.dtd\">",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb123"
+      },
+      "text": "\"http://www.w3.org/TR/html4/loose.dtd\">",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 26,
+        "section": "rule_backfill",
+        "sentence_id": "p26_rb124"
+      },
+      "text": "\"http://www.w3.org/TR/html4/loose.dtd\">",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 28,
+        "section": "rule_backfill",
+        "sentence_id": "p28_rb125"
+      },
+      "text": "\"http://www.w3.org/TR/html4/loose.dtd\">",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb126"
+      },
+      "text": "By XXx_Death_xXX Of <a href=\"http://www.zone-hack.com\" target=\"_blank\" title=\"Welcome to",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 26,
+        "section": "rule_backfill",
+        "sentence_id": "p26_rb127"
+      },
+      "text": "By XXx_Death_xXX Of <a href=\"http://www.zone-hack.com\" target=\"_blank\" title=\"Welcome to",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 28,
+        "section": "rule_backfill",
+        "sentence_id": "p28_rb128"
+      },
+      "text": "By XXx_Death_xXX Of <a href=\"http://www.zone-hack.com\" target=\"_blank\" title=\"Welcome to",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 31,
+        "section": "rule_backfill",
+        "sentence_id": "p31_rb129"
+      },
+      "text": "By XXx_Death_xXX Of <a href=\"http://www.zone-hack.com\" target=\"_blank\" title=\"Welcome to",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb130"
+      },
+      "text": "(stylish_boy6@yahoo.com / ZCompany Hacking Crew • hxxp://www.zone-hack[dot]com/)",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "FTA 1012 STTEAM Final",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb131"
+      },
+      "text": "oing by the handles of: XXx_Death_xXX and ZHC (stylish_boy6@yahoo.com / ZCompany Hacking Crew • hxxp://www.zone-hack[dot]com/) This backdoor contains most of the same features in t",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_12",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_STTEAM",
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_66",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_STTEAM",
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell",
+        "ent_malware_ZHC_Shell_1.0"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 56,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell",
+        "ent_malware_ZHC_Shell_1.0"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_90",
+      "page": 21,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell",
+        "ent_file_ZHC_Shell_1.0.aspx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_78",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_K-Shell",
+        "ent_malware_Aspx_Shell"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_threatactor_STTEAM",
+        "ent_file_TEST_FILE.txt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 48,
+      "candidate_entity_ids": [
+        "ent_threatactor_STTEAM",
+        "ent_file_TEST_FILE.txt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_domain_hotmail.com",
+        "ent_email_zehirhacker_hotmail.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_130",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_domain_yahoo.com",
+        "ent_email_stylish_boy6_yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_131",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_domain_yahoo.com",
+        "ent_email_stylish_boy6_yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

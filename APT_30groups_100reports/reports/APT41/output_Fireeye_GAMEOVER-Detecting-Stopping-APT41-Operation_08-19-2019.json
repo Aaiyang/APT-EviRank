@@ -1,0 +1,1619 @@
+{
+  "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+  "title": "GAME OVER: Detecting and Stopping an APT41 Operation",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019).pdf",
+    "file_path": "/root/APTtext/Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 8787,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT41",
+      "type": "ThreatActor",
+      "name": "APT41",
+      "normalized_name": "APT41",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_18",
+        "ev_2",
+        "ev_5"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_1",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_GAME",
+      "type": "Malware",
+      "name": "GAME",
+      "normalized_name": "GAME",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "family": "GAME",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Ins64",
+      "type": "Malware",
+      "name": "Ins64",
+      "normalized_name": "Ins64",
+      "aliases": [
+        "Ins64.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_42",
+        "ev_43",
+        "ev_44"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_14",
+        "ev_42",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "HIGHNOON",
+        "PASSIVE"
+      ],
+      "derived_from_file_id": "ent_file_Ins64.exe",
+      "family": "Ins64",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_OVER",
+      "type": "Malware",
+      "name": "OVER",
+      "normalized_name": "OVER",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "family": "OVER",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_China_Chopper",
+      "type": "Tool",
+      "name": "China Chopper",
+      "normalized_name": "China Chopper",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_20",
+        "ev_32"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_32"
+      ],
+      "needs_review": false,
+      "tool_name": "China Chopper",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_GAME_OVER",
+      "type": "Campaign",
+      "name": "GAME OVER",
+      "normalized_name": "GAME OVER",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2019-3396",
+      "type": "CVE",
+      "name": "CVE-2019-3396",
+      "normalized_name": "CVE-2019-3396",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Ins64.exe",
+      "type": "Malware",
+      "name": "Ins64.exe",
+      "normalized_name": "Ins64.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_14",
+        "ev_42",
+        "ev_43"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Ins64"
+    },
+    {
+      "id": "ent_malware_Ins64.exe",
+      "type": "Malware",
+      "name": "Ins64.exe",
+      "normalized_name": "Ins64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_42",
+        "ev_43",
+        "ev_44"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "file_name": "Ins64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_14",
+        "ev_42",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "HIGHNOON",
+        "PASSIVE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_51e06382a88eb09639e1bc3565b444a6",
+      "type": "MD5",
+      "name": "51e06382a88eb09639e1bc3565b444a6",
+      "normalized_name": "51e06382a88eb09639e1bc3565b444a6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_54"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "value": "51e06382a88eb09639e1bc3565b444a6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_846cdb921841ac671c86350d494abf9c",
+      "type": "MD5",
+      "name": "846cdb921841ac671c86350d494abf9c",
+      "normalized_name": "846cdb921841ac671c86350d494abf9c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_56"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "value": "846cdb921841ac671c86350d494abf9c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_84d6e4ba1f4268e50810dacc7bbc3935",
+      "type": "MD5",
+      "name": "84d6e4ba1f4268e50810dacc7bbc3935",
+      "normalized_name": "84d6e4ba1f4268e50810dacc7bbc3935",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "value": "84d6e4ba1f4268e50810dacc7bbc3935",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a919b4454679ef60b39c82bd686ed141",
+      "type": "MD5",
+      "name": "a919b4454679ef60b39c82bd686ed141",
+      "normalized_name": "a919b4454679ef60b39c82bd686ed141",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "value": "a919b4454679ef60b39c82bd686ed141",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e42555b218248d1a2ba92c1532ef6786",
+      "type": "MD5",
+      "name": "e42555b218248d1a2ba92c1532ef6786",
+      "normalized_name": "e42555b218248d1a2ba92c1532ef6786",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_55"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "value": "e42555b218248d1a2ba92c1532ef6786",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_64.dat",
+      "type": "File",
+      "name": "64.dat",
+      "normalized_name": "64.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_42",
+        "ev_44",
+        "ev_54"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "file_name": "64.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_42",
+        "ev_44",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_c64.exe",
+      "type": "File",
+      "name": "c64.exe",
+      "normalized_name": "c64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_48",
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "file_name": "c64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_48",
+        "ev_49",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_F64.dat",
+      "type": "File",
+      "name": "F64.dat",
+      "normalized_name": "F64.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_48",
+        "ev_49",
+        "ev_50"
+      ],
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "file_name": "F64.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_48",
+        "ev_49",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_certutil.exe",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "File",
+      "name": "certutil.exe",
+      "normalized_name": "certutil.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "certutil.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Ins64.exe",
+      "tail_id": "ent_malware_Ins64",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_14",
+        "ev_42",
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; llm_sentence",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "Ins64.exe"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "downloads",
+      "head_id": "ent_tool_China_Chopper",
+      "tail_id": "ent_file_certutil.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "primary_evidence_id": "ev_41",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_41"
+      },
+      "head": {
+        "id": "ent_tool_China_Chopper",
+        "type": "Tool",
+        "name": "China Chopper",
+        "normalized_name": "China Chopper",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_20",
+          "ev_32"
+        ],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_20",
+        "supporting_evidence_ids": [
+          "ev_32"
+        ],
+        "needs_review": false,
+        "tool_name": "China Chopper",
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_certutil.exe",
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "type": "File",
+        "name": "certutil.exe",
+        "normalized_name": "certutil.exe",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_41"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "certutil.exe",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "drops",
+      "head_id": "ent_tool_China_Chopper",
+      "tail_id": "ent_file_certutil.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "primary_evidence_id": "ev_41",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_41"
+      },
+      "head": {
+        "id": "ent_tool_China_Chopper",
+        "type": "Tool",
+        "name": "China Chopper",
+        "normalized_name": "China Chopper",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_20",
+          "ev_32"
+        ],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_20",
+        "supporting_evidence_ids": [
+          "ev_32"
+        ],
+        "needs_review": false,
+        "tool_name": "China Chopper",
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_certutil.exe",
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "type": "File",
+        "name": "certutil.exe",
+        "normalized_name": "certutil.exe",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_41"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "certutil.exe",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "loads",
+      "head_id": "ent_file_c64.exe",
+      "tail_id": "ent_malware_GAME",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_28",
+        "ev_48",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_GAME_OVER",
+      "tail_id": "ent_malware_GAME",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_campaign_GAME_OVER",
+        "type": "Campaign",
+        "name": "GAME OVER",
+        "normalized_name": "GAME OVER",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": null,
+        "supporting_evidence_ids": [],
+        "needs_review": true,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_GAME",
+        "type": "Malware",
+        "name": "GAME",
+        "normalized_name": "GAME",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "family": "GAME",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_GAME_OVER",
+      "tail_id": "ent_malware_OVER",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_campaign_GAME_OVER",
+        "type": "Campaign",
+        "name": "GAME OVER",
+        "normalized_name": "GAME OVER",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": null,
+        "supporting_evidence_ids": [],
+        "needs_review": true,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_OVER",
+        "type": "Malware",
+        "name": "OVER",
+        "normalized_name": "OVER",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "family": "OVER",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_GAME",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_threatactor_APT41",
+        "type": "ThreatActor",
+        "name": "APT41",
+        "normalized_name": "APT41",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_18",
+          "ev_2",
+          "ev_5"
+        ],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_2",
+        "supporting_evidence_ids": [
+          "ev_5",
+          "ev_1",
+          "ev_18"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_GAME",
+        "type": "Malware",
+        "name": "GAME",
+        "normalized_name": "GAME",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "family": "GAME",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_Ins64",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_43",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; report_use_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_43"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_OVER",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_threatactor_APT41",
+        "type": "ThreatActor",
+        "name": "APT41",
+        "normalized_name": "APT41",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_18",
+          "ev_2",
+          "ev_5"
+        ],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_2",
+        "supporting_evidence_ids": [
+          "ev_5",
+          "ev_1",
+          "ev_18"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_OVER",
+        "type": "Malware",
+        "name": "OVER",
+        "normalized_name": "OVER",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+        "family": "OVER",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_tool_China_Chopper",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_20",
+        "ev_19",
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "relies on",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "China Chopper drops certutil.exe",
+      "evidence_ids": [
+        "ev_41"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "c64.exe loads GAME",
+      "evidence_ids": [
+        "ev_28",
+        "ev_48",
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "GAME OVER uses_malware GAME",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "uses_malware",
+      "summary": "GAME OVER uses_malware OVER",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware GAME",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware Ins64",
+      "evidence_ids": [
+        "ev_43"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware OVER",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "uses_tool",
+      "summary": "APT41 uses_tool China Chopper",
+      "evidence_ids": [
+        "ev_20",
+        "ev_19",
+        "ev_21"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "downloads",
+      "summary": "China Chopper downloads certutil.exe",
+      "evidence_ids": [
+        "ev_41"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "In August 2019, FireEye released the “Double Dragon” report on our newest graduated threat group, APT41.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "A China-nexus dual espionage and financially-focused group, APT41 targets industries such as gaming, healthcare, high-tech, higher education, telecommunications, and travel services.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "Our knowledge of this group’s targets and activities are rooted in our Incident Response and Managed Defense services, where we encounter actors like APT41 on a regular basis.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "The file Ins64.exe was used to deploy the HIGHNOON backdoor on the system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "(An exploration of passive backdoors and more analysis of the HIGHNOON malware family can be found in our full APT41 report).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "Within the next 35 minutes, the attackers utilized both the test.jsp web shell and the HIGHNOON backdoor to issue commands to the system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s9"
+      },
+      "text": "As China Chopper relies on HTTP requests, attacker traffic to and from this web shell was easily observed via network",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Movement of 64.dat and Ins64.exe to C:\\Program Files\\Atlassian\\Confluence Performing a directory listing of C:\\Program Files\\Atlassian\\Confluence Performing a directory listing of C:\\Users",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "With the correct password provided, c64.exe loaded the decrypted and decompressed shellcode into memory and harvested credentials.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Detecting the Techniques FireEye detects this activity across our platform, including detection for certutil usage, HIGHNOON, and China Chopper.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Figure 1: Snippet of PCAP showing attacker attempting CVE-2019-3396 vulnerability",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Figure 2: Snippet of HTTP POST requests exploiting CVE-2019-3396",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "The HTTP POST requests in Figure 2, which originated from the IP address 67.229.97[.]229, performed system reconnaissance and utilized Windows certutil.exe to download a file located at hxxp[:]//67.229.97[.]229/pass_sqzr.jsp and save it as test.jsp (MD5: 84d6e4ba1f4268e50810dacc7bbc3935). The file test.jsp was ultimately identified to be a variant of a China Chopper webshell.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "64.dat (MD5: 51e06382a88eb09639e1bc3565b444a6) Ins64.exe (MD5: e42555b218248d1a2ba92c1532ef6786)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "Both files were hosted at the same IP address utilized by the attacker, 67[.]229[.]97[.]229. The file Ins64.exe was used to deploy the HIGHNOON backdoor on the system. HIGHNOON is a backdoor that consists of multiple components, including a loader, dynamic-link library (DLL), and a rootkit. When loaded, the DLL may deploy one of two embedded drivers to conceal network traffic and communicate with its command and control server to download and launch memory-resident DLL plugins. This particular variant of HIGHNOON is tracked as HIGHNOON.PASSIVE by FireEye. (An exploration of passive backdoors and more analysis of the HIGHNOON malware family can be found in our full APT41 report).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Movement of 64.dat and Ins64.exe to C:\\Program Files\\Atlassian\\Confluence Performing a directory listing of C:\\Program Files\\Atlassian\\Confluence Performing a directory listing of C:\\Users",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "c64.exe (MD5: 846cdb921841ac671c86350d494abf9c) F64.data (MD5: a919b4454679ef60b39c82bd686ed141)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "Upon placing c64.exe and F64.data on the system, the attacker ran the command",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "c64.exe f64.data \"9839D7F1A0 -m”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "This specific command provided a password of “9839D7F1A0” to decrypt the contents of F64.data, and a switch of “-m”, indicating the attacker wanted to replicate the functionality of Mimikatz. With the correct password provided, c64.exe loaded the decrypted and decompressed shellcode into memory and harvested credentials.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "File 64.dat 51e06382a88eb09639e1bc3565b444a6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "File Ins64.exe e42555b218248d1a2ba92c1532ef6786",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "File c64.exe 846cdb921841ac671c86350d494abf9c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb58"
+      },
+      "text": "hxxps[:]//github[.]com/Yt1g3r/CVE-2019-3396_EXP/blob/master/cmd.vm. This publicly-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_GAMEOVER-Detecting-Stopping-APT41-Operation(08-19-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb59"
+      },
+      "text": "re 2, the attacker utilized a template located at hxxps[:]//github[.]com/Yt1g3r/CVE-2019-3396_EXP/blob/master/cmd.vm. This publicly- available template provided a vehicle for the a",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_43",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_Ins64",
+        "ent_malware_Ins64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_GAME",
+        "ent_malware_OVER",
+        "ent_campaign_GAME_OVER"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ins64",
+        "ent_malware_Ins64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_tool_China_Chopper",
+        "ent_file_certutil.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Ins64",
+        "ent_malware_Ins64.exe",
+        "ent_file_64.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Ins64",
+        "ent_malware_Ins64.exe",
+        "ent_file_64.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Ins64",
+        "ent_malware_Ins64.exe",
+        "ent_file_64.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Ins64",
+        "ent_malware_Ins64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

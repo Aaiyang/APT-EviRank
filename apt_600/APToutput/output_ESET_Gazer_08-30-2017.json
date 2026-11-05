@@ -1,0 +1,4426 @@
+{
+  "report_id": "ESET_Gazer(08-30-2017)",
+  "title": "Gazing at Gazer",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "ESET_Gazer(08-30-2017).pdf",
+    "file_path": "/root/APTtext/ESET_Gazer(08-30-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 49855,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Explorer",
+      "type": "Malware",
+      "name": "Explorer",
+      "normalized_name": "Explorer",
+      "aliases": [
+        "explorer.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105",
+        "ev_91",
+        "ev_92"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_91",
+        "ev_92"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "DATE",
+        "DLL_PROCESS_ATTACH",
+        "STORAGE",
+        "CRYPTO"
+      ],
+      "derived_from_file_id": "ent_file_explorer.exe",
+      "family": "Explorer",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_GAZER",
+      "type": "Malware",
+      "name": "GAZER",
+      "normalized_name": "GAZER",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27",
+        "ev_23",
+        "ev_66",
+        "ev_79",
+        "ev_86"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_66",
+        "ev_79",
+        "ev_86"
+      ],
+      "needs_review": false,
+      "family": "GAZER",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_pipe",
+      "type": "Malware",
+      "name": "pipe",
+      "normalized_name": "pipe",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_36",
+        "ev_38",
+        "ev_64",
+        "ev_76"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "pipe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_76",
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Safari",
+      "type": "Malware",
+      "name": "Safari",
+      "normalized_name": "Safari",
+      "aliases": [
+        "safari.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_90"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_safari.exe",
+      "family": "Safari",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Turla_APT_group",
+      "type": "Malware",
+      "name": "Turla APT group",
+      "normalized_name": "Turla APT group",
+      "aliases": [
+        "MAKERSMARK"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_11",
+        "ev_17",
+        "ev_18",
+        "ev_22"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_11",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Turla APT group",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_daybreakhealthcare.co.uk",
+      "type": "Domain",
+      "name": "daybreakhealthcare.co.uk",
+      "normalized_name": "daybreakhealthcare.co.uk",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_230",
+        "ev_231"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "daybreakhealthcare.co.uk",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_230",
+      "supporting_evidence_ids": [
+        "ev_231"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Carbon",
+      "type": "Malware",
+      "name": "Carbon",
+      "normalized_name": "Carbon",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_24"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "Carbon",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_explorer.exe",
+      "type": "Malware",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105",
+        "ev_91"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Explorer"
+    },
+    {
+      "id": "ent_malware_explorer.exe",
+      "type": "Malware",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105",
+        "ev_91",
+        "ev_92"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "explorer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_91",
+        "ev_92"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "DATE",
+        "DLL_PROCESS_ATTACH",
+        "STORAGE",
+        "CRYPTO"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_malware_GAZER_ORCHESTRATOR",
+      "type": "Malware",
+      "name": "GAZER ORCHESTRATOR",
+      "normalized_name": "GAZER ORCHESTRATOR",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "GAZER ORCHESTRATOR",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_Kazuar",
+      "type": "Malware",
+      "name": "Kazuar",
+      "normalized_name": "Kazuar",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_24"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "Kazuar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_Kopiluak",
+      "type": "Malware",
+      "name": "Kopiluak",
+      "normalized_name": "Kopiluak",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "Kopiluak",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_MAKERSMARK",
+      "type": "Malware",
+      "name": "MAKERSMARK",
+      "normalized_name": "MAKERSMARK",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_11",
+        "ev_17",
+        "ev_18"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Turla_APT_group"
+    },
+    {
+      "id": "ent_file_safari.exe",
+      "type": "File",
+      "name": "safari.exe",
+      "normalized_name": "safari.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_90"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "safari.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_safari.exe",
+      "type": "Malware",
+      "name": "safari.exe",
+      "normalized_name": "safari.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_25",
+        "ev_90"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Safari"
+    },
+    {
+      "id": "ent_malware_Skipper",
+      "type": "Malware",
+      "name": "Skipper",
+      "normalized_name": "Skipper",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_6",
+        "ev_9"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "Skipper",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_malware_Turla",
+      "type": "Malware",
+      "name": "Turla",
+      "normalized_name": "Turla",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_2",
+        "ev_6",
+        "ev_7"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "family": "Turla",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_7",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_ales.ball-mill.es",
+      "type": "Domain",
+      "name": "ales.ball-mill.es",
+      "normalized_name": "ales.ball-mill.es",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_226",
+        "ev_227"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "ales.ball-mill.es",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_226",
+      "supporting_evidence_ids": [
+        "ev_227"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_chagiocaxuanson.esy.es",
+      "type": "Domain",
+      "name": "chagiocaxuanson.esy.es",
+      "normalized_name": "chagiocaxuanson.esy.es",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_228",
+        "ev_229"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "chagiocaxuanson.esy.es",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_228",
+      "supporting_evidence_ids": [
+        "ev_229"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_eset.com",
+      "type": "Domain",
+      "name": "eset.com",
+      "normalized_name": "eset.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "eset.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_giadinhvabe.net",
+      "type": "Domain",
+      "name": "giadinhvabe.net",
+      "normalized_name": "giadinhvabe.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_232",
+        "ev_233"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "giadinhvabe.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_232",
+      "supporting_evidence_ids": [
+        "ev_233"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hotnews.16mb.com",
+      "type": "Domain",
+      "name": "hotnews.16mb.com",
+      "normalized_name": "hotnews.16mb.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_234",
+        "ev_235"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "hotnews.16mb.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_234",
+      "supporting_evidence_ids": [
+        "ev_235"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_kennynguyen.esy.es",
+      "type": "Domain",
+      "name": "kennynguyen.esy.es",
+      "normalized_name": "kennynguyen.esy.es",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_236",
+        "ev_237"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "kennynguyen.esy.es",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_236",
+      "supporting_evidence_ids": [
+        "ev_237"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_outletpiumini.springwaterfeatures.com",
+      "type": "Domain",
+      "name": "outletpiumini.springwaterfeatures.com",
+      "normalized_name": "outletpiumini.springwaterfeatures.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_238",
+        "ev_239"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "outletpiumini.springwaterfeatures.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_238",
+      "supporting_evidence_ids": [
+        "ev_239"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_shinestars-lifestyle.com",
+      "type": "Domain",
+      "name": "shinestars-lifestyle.com",
+      "normalized_name": "shinestars-lifestyle.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_240",
+        "ev_241"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "shinestars-lifestyle.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_240",
+      "supporting_evidence_ids": [
+        "ev_241"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_soligro.com",
+      "type": "Domain",
+      "name": "soligro.com",
+      "normalized_name": "soligro.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_233"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "soligro.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_233",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_sonneteck.com",
+      "type": "Domain",
+      "name": "sonneteck.com",
+      "normalized_name": "sonneteck.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_242",
+        "ev_243"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "sonneteck.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_242",
+      "supporting_evidence_ids": [
+        "ev_243"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_tekfordummies.com",
+      "type": "Domain",
+      "name": "tekfordummies.com",
+      "normalized_name": "tekfordummies.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_233"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "tekfordummies.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_233",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_turla.cc",
+      "type": "Domain",
+      "name": "turla.cc",
+      "normalized_name": "turla.cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_244",
+        "ev_245",
+        "ev_246",
+        "ev_247"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "turla.cc",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_246",
+      "supporting_evidence_ids": [
+        "ev_245",
+        "ev_244",
+        "ev_247"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_turla.cf",
+      "type": "Domain",
+      "name": "turla.cf",
+      "normalized_name": "turla.cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_248",
+        "ev_249",
+        "ev_250",
+        "ev_251"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "turla.cf",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_249",
+      "supporting_evidence_ids": [
+        "ev_248",
+        "ev_251",
+        "ev_250"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ultimatecomsup.biz",
+      "type": "Domain",
+      "name": "ultimatecomsup.biz",
+      "normalized_name": "ultimatecomsup.biz",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_250"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "ultimatecomsup.biz",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_250",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_weandcats.com",
+      "type": "Domain",
+      "name": "weandcats.com",
+      "normalized_name": "weandcats.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_252",
+        "ev_253"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "weandcats.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_252",
+      "supporting_evidence_ids": [
+        "ev_253"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.aviasiya.com",
+      "type": "Domain",
+      "name": "www.aviasiya.com",
+      "normalized_name": "www.aviasiya.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_241"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "www.aviasiya.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_241",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_zerogov.com",
+      "type": "Domain",
+      "name": "zerogov.com",
+      "normalized_name": "zerogov.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_239"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "zerogov.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_239",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_threatintel_eset.com",
+      "type": "Email",
+      "name": "threatintel@eset.com",
+      "normalized_name": "threatintel@eset.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "threatintel@eset.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_029aa51549d0b9222db49a53d2604d79ad1c1e59",
+      "type": "SHA1",
+      "name": "029aa51549d0b9222db49a53d2604d79ad1c1e59",
+      "normalized_name": "029aa51549d0b9222db49a53d2604d79ad1c1e59",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_159"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "029aa51549d0b9222db49a53d2604d79ad1c1e59",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_159",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_0f97f599fab7f8057424340c246d3a836c141782",
+      "type": "SHA1",
+      "name": "0f97f599fab7f8057424340c246d3a836c141782",
+      "normalized_name": "0f97f599fab7f8057424340c246d3a836c141782",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_178"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "0f97f599fab7f8057424340c246d3a836c141782",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_178",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_11b35320fb1cf21d2e57770d8d8b237eb4330eaa",
+      "type": "SHA1",
+      "name": "11b35320fb1cf21d2e57770d8d8b237eb4330eaa",
+      "normalized_name": "11b35320fb1cf21d2e57770d8d8b237eb4330eaa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_207"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "11b35320fb1cf21d2e57770d8d8b237eb4330eaa",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_207",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_22542a3245d52b7bcdb3eaef5b8b2693f451f497",
+      "type": "SHA1",
+      "name": "22542a3245d52b7bcdb3eaef5b8b2693f451f497",
+      "normalized_name": "22542a3245d52b7bcdb3eaef5b8b2693f451f497",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_139"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "22542a3245d52b7bcdb3eaef5b8b2693f451f497",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_139",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_228da957a9ed661e17e00efba8e923fd17fae054",
+      "type": "SHA1",
+      "name": "228da957a9ed661e17e00efba8e923fd17fae054",
+      "normalized_name": "228da957a9ed661e17e00efba8e923fd17fae054",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_174"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "228da957a9ed661e17e00efba8e923fd17fae054",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_174",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_23f1e3be3175d49e7b262cd88cfd517694dcba18",
+      "type": "SHA1",
+      "name": "23f1e3be3175d49e7b262cd88cfd517694dcba18",
+      "normalized_name": "23f1e3be3175d49e7b262cd88cfd517694dcba18",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_203"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "23f1e3be3175d49e7b262cd88cfd517694dcba18",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_203",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_267f144d771b4e2832798485108decd505cb824a",
+      "type": "SHA1",
+      "name": "267f144d771b4e2832798485108decd505cb824a",
+      "normalized_name": "267f144d771b4e2832798485108decd505cb824a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_130"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "267f144d771b4e2832798485108decd505cb824a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_27fa78de705ebaa4b11c4b5fe7277f91906b3f92",
+      "type": "SHA1",
+      "name": "27fa78de705ebaa4b11c4b5fe7277f91906b3f92",
+      "normalized_name": "27fa78de705ebaa4b11c4b5fe7277f91906b3f92",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_114"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "27fa78de705ebaa4b11c4b5fe7277f91906b3f92",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_295d142a7bdced124fdcc8edfe49b9f3acceab8a",
+      "type": "SHA1",
+      "name": "295d142a7bdced124fdcc8edfe49b9f3acceab8a",
+      "normalized_name": "295d142a7bdced124fdcc8edfe49b9f3acceab8a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_176"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "295d142a7bdced124fdcc8edfe49b9f3acceab8a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_176",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_2b9faa8b0fcadac710c7b2b93d492ff1028b5291",
+      "type": "SHA1",
+      "name": "2b9faa8b0fcadac710c7b2b93d492ff1028b5291",
+      "normalized_name": "2b9faa8b0fcadac710c7b2b93d492ff1028b5291",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "2b9faa8b0fcadac710c7b2b93d492ff1028b5291",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_35f205367e2e5f8a121925bbae6ff07626b526a7",
+      "type": "SHA1",
+      "name": "35f205367e2e5f8a121925bbae6ff07626b526a7",
+      "normalized_name": "35f205367e2e5f8a121925bbae6ff07626b526a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "35f205367e2e5f8a121925bbae6ff07626b526a7",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_37ff6841419adc51eeb8756660b2fb46f3eb24ed",
+      "type": "SHA1",
+      "name": "37ff6841419adc51eeb8756660b2fb46f3eb24ed",
+      "normalized_name": "37ff6841419adc51eeb8756660b2fb46f3eb24ed",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_192"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "37ff6841419adc51eeb8756660b2fb46f3eb24ed",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_3944253f6b7019eed496fad756f4651be0e282b4",
+      "type": "SHA1",
+      "name": "3944253f6b7019eed496fad756f4651be0e282b4",
+      "normalized_name": "3944253f6b7019eed496fad756f4651be0e282b4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_171"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "3944253f6b7019eed496fad756f4651be0e282b4",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_171",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_411ef895fe8dd4e040e8bf4048f4327f917e5724",
+      "type": "SHA1",
+      "name": "411ef895fe8dd4e040e8bf4048f4327f917e5724",
+      "normalized_name": "411ef895fe8dd4e040e8bf4048f4327f917e5724",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_216"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "411ef895fe8dd4e040e8bf4048f4327f917e5724",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_216",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4701828dee543b994ed2578b9e0d3991f22bd827",
+      "type": "SHA1",
+      "name": "4701828dee543b994ed2578b9e0d3991f22bd827",
+      "normalized_name": "4701828dee543b994ed2578b9e0d3991f22bd827",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_182"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "4701828dee543b994ed2578b9e0d3991f22bd827",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_182",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_475c59744accb09724dae610763b7284646ab63f",
+      "type": "SHA1",
+      "name": "475c59744accb09724dae610763b7284646ab63f",
+      "normalized_name": "475c59744accb09724dae610763b7284646ab63f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "475c59744accb09724dae610763b7284646ab63f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4b6ef62d5d59f2fe7f245dd3042dc7b83e3cc923",
+      "type": "SHA1",
+      "name": "4b6ef62d5d59f2fe7f245dd3042dc7b83e3cc923",
+      "normalized_name": "4b6ef62d5d59f2fe7f245dd3042dc7b83e3cc923",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_220"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "4b6ef62d5d59f2fe7f245dd3042dc7b83e3cc923",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_220",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_522e5f02c06ad215c9d0c23c5a6a523d34ae4e91",
+      "type": "SHA1",
+      "name": "522e5f02c06ad215c9d0c23c5a6a523d34ae4e91",
+      "normalized_name": "522e5f02c06ad215c9d0c23c5a6a523d34ae4e91",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_124"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "522e5f02c06ad215c9d0c23c5a6a523d34ae4e91",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_124",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_52f6d09cccdbc38d66c184521e7ccf6b28c4b4d9",
+      "type": "SHA1",
+      "name": "52f6d09cccdbc38d66c184521e7ccf6b28c4b4d9",
+      "normalized_name": "52f6d09cccdbc38d66c184521e7ccf6b28c4b4d9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_133"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "52f6d09cccdbc38d66c184521e7ccf6b28c4b4d9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_5838a51426ca6095b1c92b87e1be22276c21a044",
+      "type": "SHA1",
+      "name": "5838a51426ca6095b1c92b87e1be22276c21a044",
+      "normalized_name": "5838a51426ca6095b1c92b87e1be22276c21a044",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_168"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "5838a51426ca6095b1c92b87e1be22276c21a044",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_168",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_63c534630c2ce0070ad203f9704f1526e83ae586",
+      "type": "SHA1",
+      "name": "63c534630c2ce0070ad203f9704f1526e83ae586",
+      "normalized_name": "63c534630c2ce0070ad203f9704f1526e83ae586",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_202"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "63c534630c2ce0070ad203f9704f1526e83ae586",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_202",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6dec3438d212b67356200bbac5ec7fa41c716d86",
+      "type": "SHA1",
+      "name": "6dec3438d212b67356200bbac5ec7fa41c716d86",
+      "normalized_name": "6dec3438d212b67356200bbac5ec7fa41c716d86",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_148"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "6dec3438d212b67356200bbac5ec7fa41c716d86",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_148",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6fd611667ba19691958b5b72673b9b802edd7ff8",
+      "type": "SHA1",
+      "name": "6fd611667ba19691958b5b72673b9b802edd7ff8",
+      "normalized_name": "6fd611667ba19691958b5b72673b9b802edd7ff8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_184"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "6fd611667ba19691958b5b72673b9b802edd7ff8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_184",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_75831df9cbcfd7bf812511148d2a0f117324a75f",
+      "type": "SHA1",
+      "name": "75831df9cbcfd7bf812511148d2a0f117324a75f",
+      "normalized_name": "75831df9cbcfd7bf812511148d2a0f117324a75f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_188"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "75831df9cbcfd7bf812511148d2a0f117324a75f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_188",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_795c6ee27b147ff0a05c0477f70477e315916e0e",
+      "type": "SHA1",
+      "name": "795c6ee27b147ff0a05c0477f70477e315916e0e",
+      "normalized_name": "795c6ee27b147ff0a05c0477f70477e315916e0e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_196"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "795c6ee27b147ff0a05c0477f70477e315916e0e",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_196",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7a6f1486269abdc1d658db618dc3c6f2ac85a4a7",
+      "type": "SHA1",
+      "name": "7a6f1486269abdc1d658db618dc3c6f2ac85a4a7",
+      "normalized_name": "7a6f1486269abdc1d658db618dc3c6f2ac85a4a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_205"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "7a6f1486269abdc1d658db618dc3c6f2ac85a4a7",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_205",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7ced96b08d7593e28fee616eccbc6338896517cf",
+      "type": "SHA1",
+      "name": "7ced96b08d7593e28fee616eccbc6338896517cf",
+      "normalized_name": "7ced96b08d7593e28fee616eccbc6338896517cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_200"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "7ced96b08d7593e28fee616eccbc6338896517cf",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_200",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7f54f9f2a6909062988ae87c1337f3cf38d68d35",
+      "type": "SHA1",
+      "name": "7f54f9f2a6909062988ae87c1337f3cf38d68d35",
+      "normalized_name": "7f54f9f2a6909062988ae87c1337f3cf38d68d35",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_221"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "7f54f9f2a6909062988ae87c1337f3cf38d68d35",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_221",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7fac4fc130637afab31c56ce0a01e555d5dea40d",
+      "type": "SHA1",
+      "name": "7fac4fc130637afab31c56ce0a01e555d5dea40d",
+      "normalized_name": "7fac4fc130637afab31c56ce0a01e555d5dea40d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_165"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "7fac4fc130637afab31c56ce0a01e555d5dea40d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_165",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8184ad9d6bbd03e99a397f8e925fa66cfbe5cf1b",
+      "type": "SHA1",
+      "name": "8184ad9d6bbd03e99a397f8e925fa66cfbe5cf1b",
+      "normalized_name": "8184ad9d6bbd03e99a397f8e925fa66cfbe5cf1b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_198"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "8184ad9d6bbd03e99a397f8e925fa66cfbe5cf1b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_198",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_950f0b0c7701835c5fbdb6c5698a04b8afe068e6",
+      "type": "SHA1",
+      "name": "950f0b0c7701835c5fbdb6c5698a04b8afe068e6",
+      "normalized_name": "950f0b0c7701835c5fbdb6c5698a04b8afe068e6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_211"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "950f0b0c7701835c5fbdb6c5698a04b8afe068e6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_211",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_9e6de3577b463451b7afce24ab646ef62ad6c2bd",
+      "type": "SHA1",
+      "name": "9e6de3577b463451b7afce24ab646ef62ad6c2bd",
+      "normalized_name": "9e6de3577b463451b7afce24ab646ef62ad6c2bd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_194"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "9e6de3577b463451b7afce24ab646ef62ad6c2bd",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_194",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_9ff4f59ca26388c37d0b1f0e0b22322d926e294a",
+      "type": "SHA1",
+      "name": "9ff4f59ca26388c37d0b1f0e0b22322d926e294a",
+      "normalized_name": "9ff4f59ca26388c37d0b1f0e0b22322d926e294a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_155"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "9ff4f59ca26388c37d0b1f0e0b22322d926e294a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a5eec8c6aadf784994bf68d9d937bb7af3684d5c",
+      "type": "SHA1",
+      "name": "a5eec8c6aadf784994bf68d9d937bb7af3684d5c",
+      "normalized_name": "a5eec8c6aadf784994bf68d9d937bb7af3684d5c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_213"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "a5eec8c6aadf784994bf68d9d937bb7af3684d5c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_213",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab",
+      "type": "SHA1",
+      "name": "b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab",
+      "normalized_name": "b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b548863df838069455a76d2a63327434c02d0d9d",
+      "type": "SHA1",
+      "name": "b548863df838069455a76d2a63327434c02d0d9d",
+      "normalized_name": "b548863df838069455a76d2a63327434c02d0d9d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_151"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "b548863df838069455a76d2a63327434c02d0d9d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_151",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_bae3ae65c32838fb52a0f5ad2cde8659d2bff9f3",
+      "type": "SHA1",
+      "name": "bae3ae65c32838fb52a0f5ad2cde8659d2bff9f3",
+      "normalized_name": "bae3ae65c32838fb52a0f5ad2cde8659d2bff9f3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_190"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "bae3ae65c32838fb52a0f5ad2cde8659d2bff9f3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_190",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c1288df9022bcd2c0a217b1536dfa83928768d06",
+      "type": "SHA1",
+      "name": "c1288df9022bcd2c0a217b1536dfa83928768d06",
+      "normalized_name": "c1288df9022bcd2c0a217b1536dfa83928768d06",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_219"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "c1288df9022bcd2c0a217b1536dfa83928768d06",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_219",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c380038a57ffb8c064851b898f630312fabcbba7",
+      "type": "SHA1",
+      "name": "c380038a57ffb8c064851b898f630312fabcbba7",
+      "normalized_name": "c380038a57ffb8c064851b898f630312fabcbba7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_127"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "c380038a57ffb8c064851b898f630312fabcbba7",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c3e6511377dfe85a34e19b33575870dda8884c3c",
+      "type": "SHA1",
+      "name": "c3e6511377dfe85a34e19b33575870dda8884c3c",
+      "normalized_name": "c3e6511377dfe85a34e19b33575870dda8884c3c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "c3e6511377dfe85a34e19b33575870dda8884c3c",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_cecc70f2b2d50269191336219a8f893d45f5e979",
+      "type": "SHA1",
+      "name": "cecc70f2b2d50269191336219a8f893d45f5e979",
+      "normalized_name": "cecc70f2b2d50269191336219a8f893d45f5e979",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_162"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "cecc70f2b2d50269191336219a8f893d45f5e979",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_162",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_dbb185e493a0fdc959763533d86d73f986409f1b",
+      "type": "SHA1",
+      "name": "dbb185e493a0fdc959763533d86d73f986409f1b",
+      "normalized_name": "dbb185e493a0fdc959763533d86d73f986409f1b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_180"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "dbb185e493a0fdc959763533d86d73f986409f1b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_180",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e05ab6978c17724b7c874f44f8a6cbfb1c56418d",
+      "type": "SHA1",
+      "name": "e05ab6978c17724b7c874f44f8a6cbfb1c56418d",
+      "normalized_name": "e05ab6978c17724b7c874f44f8a6cbfb1c56418d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_145"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "e05ab6978c17724b7c874f44f8a6cbfb1c56418d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_145",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e40bb5beec5678537e8fe537f872b2ad6b77e08a",
+      "type": "SHA1",
+      "name": "e40bb5beec5678537e8fe537f872b2ad6b77e08a",
+      "normalized_name": "e40bb5beec5678537e8fe537f872b2ad6b77e08a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "e40bb5beec5678537e8fe537f872b2ad6b77e08a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e8a2bad87027f2bf3ecae477f805de13fccc0181",
+      "type": "SHA1",
+      "name": "e8a2bad87027f2bf3ecae477f805de13fccc0181",
+      "normalized_name": "e8a2bad87027f2bf3ecae477f805de13fccc0181",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_209"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "e8a2bad87027f2bf3ecae477f805de13fccc0181",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_209",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_fcabeb735c51e2b8eb6fb07bda8b95401d069bd8",
+      "type": "SHA1",
+      "name": "fcabeb735c51e2b8eb6fb07bda8b95401d069bd8",
+      "normalized_name": "fcabeb735c51e2b8eb6fb07bda8b95401d069bd8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "value": "fcabeb735c51e2b8eb6fb07bda8b95401d069bd8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_adobeup.exe",
+      "type": "File",
+      "name": "adobeup.exe",
+      "normalized_name": "adobeup.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_98",
+        "ev_99"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "adobeup.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [
+        "ev_99",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_AdobeUpdater.exe",
+      "type": "File",
+      "name": "AdobeUpdater.exe",
+      "normalized_name": "AdobeUpdater.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_111",
+        "ev_89"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "AdobeUpdater.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_111"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "HOMEPATH",
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ntuser.dat",
+      "type": "File",
+      "name": "ntuser.dat",
+      "normalized_name": "ntuser.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_110"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "ntuser.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "TEMP",
+        "KB943729",
+        "CVRG72B5",
+        "CVRG1A6B"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_refox.exe",
+      "type": "File",
+      "name": "refox.exe",
+      "normalized_name": "refox.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "refox.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "GAZER",
+        "ORCHESTRATOR"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_SCRNSAVE.exe",
+      "type": "File",
+      "name": "SCRNSAVE.exe",
+      "normalized_name": "SCRNSAVE.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_41",
+        "ev_97"
+      ],
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "file_name": "SCRNSAVE.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_41"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "SCRNSAVE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "cmd.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_MAKERSMARK",
+      "tail_id": "ent_malware_Turla_APT_group",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_explorer.exe",
+      "tail_id": "ent_malware_Explorer",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105"
+      ],
+      "primary_evidence_id": "ev_103",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_safari.exe",
+      "tail_id": "ent_malware_Safari",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_90"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_Safari",
+      "tail_id": "ent_file_safari.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_25"
+      },
+      "head": {
+        "id": "ent_malware_Safari",
+        "type": "Malware",
+        "name": "Safari",
+        "normalized_name": "Safari",
+        "aliases": [
+          "safari.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_90"
+        ],
+        "report_id": "ESET_Gazer(08-30-2017)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_90",
+        "supporting_evidence_ids": [
+          "ev_25"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_safari.exe",
+        "family": "Safari",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_safari.exe",
+        "type": "File",
+        "name": "safari.exe",
+        "normalized_name": "safari.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_90"
+        ],
+        "report_id": "ESET_Gazer(08-30-2017)",
+        "file_name": "safari.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_90",
+        "supporting_evidence_ids": [
+          "ev_25"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "executes",
+      "head_id": "ent_file_refox.exe",
+      "tail_id": "ent_malware_GAZER",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Explorer",
+      "tail_id": "ent_file_SCRNSAVE.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "primary_evidence_id": "ev_97",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_GAZER",
+      "tail_id": "ent_malware_Explorer",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "type": "loads",
+      "head_id": "ent_file_refox.exe",
+      "tail_id": "ent_malware_GAZER",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "Safari drops safari.exe",
+      "evidence_ids": [
+        "ev_25"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "refox.exe executes GAZER",
+      "evidence_ids": [
+        "ev_28"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "Explorer executes SCRNSAVE.exe",
+      "evidence_ids": [
+        "ev_97"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "GAZER executes Explorer",
+      "evidence_ids": [
+        "ev_27"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "refox.exe loads GAZER",
+      "evidence_ids": [
+        "ev_28"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Gazing at Gazer Turla’s new second stage backdoor August 2017",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s2"
+      },
+      "text": "The witnessed techniques, tactics and procedures (TTPs) are in-line with what we usuallysee in Turla’s operation: a first stage backdoor, such as Skipper , likely delivered through spearphishingfollowed by the appearance on the compromised system of a second stage backdoor, Gazerin this case.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Although we could not find irrefutable evidence that this backdoor is truly another tool in Turla’s arsenal, several clues lead us to believe that this is indeed the case.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s5"
+      },
+      "text": "Skipper, which has been linked to Turla in the past, was found alongside Gazer in most cases we investigated.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s6"
+      },
+      "text": "Finally, there are many similarities between Gazer and other second stage backdoors used by the Turla group such as Carbon and Kazuar .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "executive_summary",
+        "sentence_id": "p5_s7"
+      },
+      "text": "As usual, the Turla APT group makes an extra effort to avoid detection by wiping files securely, changing the strings and randomizing what could be simple markers through the different backdoor versions.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s13"
+      },
+      "text": "Recently, the Turla APT group has seen extensive news coverage surrounding its campaigns, something we haven’t seen for a long time.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s14"
+      },
+      "text": "The codename for Turla APT group in this presentation is MAKERSMARK.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "This is also a common tactic for the Turla APT group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "Another interesting linkage is that one of the C&C servers embedded in a Gazer sample was known to be used in a JScript backdoor documented by Kaspersky as Kopiluak .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s5"
+      },
+      "text": "Last but not least, these three malware families (Gazer, Carbon and Kazuar) have a similar list of processes that may be employed as a target to inject the module used to communicate with the C&C server embedded in the binary.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s6"
+      },
+      "text": "The resource containing this list can change from one sample to another, it is likely tailored to what is installed on the system (for example, on some samples, the process name “safari.exe” can appear on the list).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "C&C server May forward task GAZER LOADER rsrc 101 “explorer.exe” rsrc 102 Orchestrator GAZER ORCHESTRATOR rsrc 101 [...] running within “explorer.exe” rsrc 102 Comm module",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "GAZER ORCHESTRATOR running within “ﬁrefox.exe” (for example) Injected into process indicated in rsrc 101 Send task’s result",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "\\\\\\\\.\\\\pipe\\\\Winsock2\\\\CatalogChangeListener-9313-a If the current user’s SID cannot be retrieved, the named pipe \\\\\\\\.\\\\pipe\\\\\\Winsock2\\\\ CatalogChangeListener-FFFE-D will be used by default.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "The loader sends binary data through the named pipe to the orchestrator.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "• SCRNSAVE.exe with the malware executable path • ScreenSaveActive is set to “1”: enable the screensaver • ScreenSaverIsSecure is set to “0”: specifies that the screensaver is not password-protected",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s7"
+      },
+      "text": "%APPDATA%\\Adobe\\adobeup.exe Adobe Acrobat Reader Updater.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "5: LinkAutorun This persistence method modifies existing LNK files to execute the malware through cmd.exe .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "Class Name LTNamedPipe TNPTransport Communication Module The communication module is used to retrieve tasks from the C&C server and to dispatch them to the orchestrator.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s3"
+      },
+      "text": "Communication Initialization If a proxy server exists, it is retrieved and used by Gazer to make the HTTP requests.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s6"
+      },
+      "text": "Messages between components A global named pipe is used for the communication between the different components.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s1"
+      },
+      "text": "• Wipe Gazer’s original loader file, clean persistency and set up a copy of the loader and its persistency according to one of the resources (check persistency part for details).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 20,
+        "section": "body",
+        "sentence_id": "p20_s5"
+      },
+      "text": "In conclusion, Gazer is a very sophisticated piece of malware that has been used against different targets in several countries around the world.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 20,
+        "section": "body",
+        "sentence_id": "p20_s7"
+      },
+      "text": "For any inquiries, or to make sample submissions related to the subject, contact us at: threatintel@eset.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "body",
+        "sentence_id": "p21_s1"
+      },
+      "text": "IoCs Filenames • %HOMEPATH%\\AppData\\Local\\Adobe\\AdobeUpdater.exe Registry keys • HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ScreenSaver",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Last but not least, these three malware families (Gazer, Carbon and Kazuar) have a similar list of processes that may be employed as a target to inject the module used to communicate with the C&C server embedded in the binary. The resource containing this list can change from one sample to another, it is likely tailored to what is installed on the system (for example, on some samples, the process name “safari.exe” can appear on the list).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "rsrc 101 “explorer.exe”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "running within “explorer.exe”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "• SCRNSAVE.exe with the malware executable path",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "%APPDATA%\\Adobe\\adobeup.exe Adobe Acrobat Reader Updater. This task was generated by Adobe Systems, Inc to keep your Adobe Software up-to-data. \\Adobe\\AcrobatReader.Adobe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "• Executable: “ %APPDATA%\\Adobe\\adobeup.exe ”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "|10:29:56:197| [1556] |10:29:56:197| [1557] ******************[...]**************** |10:29:56:197| [1558] DATE: 25.05.2017 |10:29:56:197| [1559] PID=900 TID=2324 Heaps=32 C:\\Windows\\Explorer.EXE |10:29:56:197| [1565] DLL_PROCESS_ATTACH |10:29:56:197| [1574] 4164 |10:29:58:197| [0137] ==================[...]================ |10:29:58:197| [0138] Current thread = 2080 |10:29:58:197| [0183] Heap aff0000 [34] |10:29:58:197| [0189] ### PE STORAGE ### |10:29:58:197| [0215] ### PE CRYPTO ### |10:29:58:197| [0246] ### EXTERNAL STORAGE ### |10:29:58:197| [1688] Ok |10:29:58:197| [0279] Path = \\HKCU\\Software\\Microsoft\\ Windows\\CurrentVersion\\Explorer\\ScreenSaver |10:29:58:197| [0190] \\HKCU\\Software\\Microsoft\\Windows\\ CurrentVersion\\Explorer\\ScreenSaver |10:29:58:197| [0338] ---FAILED |10:29:58:197| [0346] Initializing standart reg storage... |10:29:58:197| [0190] Software\\Microsoft\\Windows\\ CurrentVersion\\Explorer\\ScreenSaver |10:29:58:197| [2605] Storage is empty! |10:29:58:197| [0392] ### EXTERNAL CRYPTO ### |10:29:59:666| [1688] Ok |10:29:59:713| [1473] Ok |10:29:59:760| [1688] Ok |10:29:59:775| [1473] Ok |10:29:59:775| [1688] Ok |10:29:59:775| [1473] Ok |10:29:59:791| [1688] Ok |10:29:59",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r1"
+      },
+      "text": "This library is injected into a process which can legitimately communicate over the Internet. The injection library is the same as the one found in the loader to inject the orchestrator into “ explorer.exe ”.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r1"
+      },
+      "text": "• %TEMP%\\KB943729.log • %TEMP%\\CVRG72B5.tmp.cvr • %TEMP%\\CVRG1A6B.tmp.cvr • %TEMP%\\CVRG38D9.tmp.cvr • %TEMP%\\~DF1E06.tmp • %HOMEPATH%\\ntuser.dat.LOG3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r2"
+      },
+      "text": "• %HOMEPATH%\\AppData\\Local\\Adobe\\AdobeUpdater.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r2"
+      },
+      "text": "27fa78de705ebaa4b11c4b5fe7277f91906b3f92 Gazer wiper x32 07/04/2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r3"
+      },
+      "text": "35f205367e2e5f8a121925bbae6ff07626b526a7 Gazer loader x32 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r6"
+      },
+      "text": "b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab Gazer loader x32 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r9"
+      },
+      "text": "e40bb5beec5678537e8fe537f872b2ad6b77e08a Gazer loader x32 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r12"
+      },
+      "text": "522e5f02c06ad215c9d0c23c5a6a523d34ae4e91 Gazer loader x64 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r15"
+      },
+      "text": "c380038a57ffb8c064851b898f630312fabcbba7 Gazer loader x64 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r18"
+      },
+      "text": "267f144d771b4e2832798485108decd505cb824a Gazer loader x64 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r21"
+      },
+      "text": "52f6d09cccdbc38d66c184521e7ccf6b28c4b4d9 Gazer loader x32 04/10/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r24"
+      },
+      "text": "475c59744accb09724dae610763b7284646ab63f Gazer loader x32 04/10/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r27"
+      },
+      "text": "22542a3245d52b7bcdb3eaef5b8b2693f451f497 Gazer loader x32 04/10/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r30"
+      },
+      "text": "2b9faa8b0fcadac710c7b2b93d492ff1028b5291 Gazer loader x64 04/10/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r33"
+      },
+      "text": "e05ab6978c17724b7c874f44f8a6cbfb1c56418d Gazer loader x64 04/10/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_148",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r36"
+      },
+      "text": "6dec3438d212b67356200bbac5ec7fa41c716d86 Gazer loader x64 04/10/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r39"
+      },
+      "text": "b548863df838069455a76d2a63327434c02d0d9d Gazer loader x64 09/01/2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r40"
+      },
+      "text": "c3e6511377dfe85a34e19b33575870dda8884c3c Gazer loader x64 06/02/2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule",
+        "sentence_id": "p22_r43"
+      },
+      "text": "9ff4f59ca26388c37d0b1f0e0b22322d926e294a Gazer loader x64 16/02/2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_159",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r2"
+      },
+      "text": "029aa51549d0b9222db49a53d2604d79ad1c1e59 Gazer loader x64 18/02/2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_162",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r5"
+      },
+      "text": "cecc70f2b2d50269191336219a8f893d45f5e979 Gazer loader x64 01/01/2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_165",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r8"
+      },
+      "text": "7fac4fc130637afab31c56ce0a01e555d5dea40d Gazer loader x64 11/06/2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_168",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r11"
+      },
+      "text": "5838a51426ca6095b1c92b87e1be22276c21a044 Gazer loader x32 19/06/2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_171",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r14"
+      },
+      "text": "3944253f6b7019eed496fad756f4651be0e282b4 Gazer loader x64 19/06/2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_174",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r17"
+      },
+      "text": "228da957a9ed661e17e00efba8e923fd17fae054 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_176",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r19"
+      },
+      "text": "295d142a7bdced124fdcc8edfe49b9f3acceab8a Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_178",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r21"
+      },
+      "text": "0f97f599fab7f8057424340c246d3a836c141782 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_180",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r23"
+      },
+      "text": "dbb185e493a0fdc959763533d86d73f986409f1b Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_182",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r25"
+      },
+      "text": "4701828dee543b994ed2578b9e0d3991f22bd827 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_184",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r27"
+      },
+      "text": "6fd611667ba19691958b5b72673b9b802edd7ff8 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_186",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r29"
+      },
+      "text": "fcabeb735c51e2b8eb6fb07bda8b95401d069bd8 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_188",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r31"
+      },
+      "text": "75831df9cbcfd7bf812511148d2a0f117324a75f Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_190",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r33"
+      },
+      "text": "bae3ae65c32838fb52a0f5ad2cde8659d2bff9f3 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_192",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r35"
+      },
+      "text": "37ff6841419adc51eeb8756660b2fb46f3eb24ed Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_194",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r37"
+      },
+      "text": "9e6de3577b463451b7afce24ab646ef62ad6c2bd Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_196",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r39"
+      },
+      "text": "795c6ee27b147ff0a05c0477f70477e315916e0e Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_198",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r41"
+      },
+      "text": "8184ad9d6bbd03e99a397f8e925fa66cfbe5cf1b Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_200",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r43"
+      },
+      "text": "7ced96b08d7593e28fee616eccbc6338896517cf Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_202",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r45"
+      },
+      "text": "63c534630c2ce0070ad203f9704f1526e83ae586 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_203",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule",
+        "sentence_id": "p23_r46"
+      },
+      "text": "23f1e3be3175d49e7b262cd88cfd517694dcba18 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_205",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r2"
+      },
+      "text": "7a6f1486269abdc1d658db618dc3c6f2ac85a4a7 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_207",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r4"
+      },
+      "text": "11b35320fb1cf21d2e57770d8d8b237eb4330eaa Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_209",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r6"
+      },
+      "text": "e8a2bad87027f2bf3ecae477f805de13fccc0181 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_211",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r8"
+      },
+      "text": "950f0b0c7701835c5fbdb6c5698a04b8afe068e6 Gazer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_213",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r10"
+      },
+      "text": "a5eec8c6aadf784994bf68d9d937bb7af3684d5c Gazer comm x64 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_216",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r13"
+      },
+      "text": "411ef895fe8dd4e040e8bf4048f4327f917e5724 Gazer comm x32 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_219",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r16"
+      },
+      "text": "c1288df9022bcd2c0a217b1536dfa83928768d06 Gazer comm x32 06/02/2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_220",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r17"
+      },
+      "text": "4b6ef62d5d59f2fe7f245dd3042dc7b83e3cc923 Gazer comm x32 11/06/2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_221",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r18"
+      },
+      "text": "7f54f9f2a6909062988ae87c1337f3cf38d68d35 Gazer wiper x32 05/02/2002",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_226",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb226"
+      },
+      "text": "• ales.ball-mill.es/ckfinder/core/connector/php/php4/CommandHandler/CommandHandler.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_227",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb227"
+      },
+      "text": "/paypal-donations/src/PaypalDonations/SimpleSubsribe. php • ales.ball-mill.es/ckfinder/core/connector/php/php4/CommandHandler/CommandHandler.php • dyskurs.com.ua/wp-admin/includes/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_228",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb228"
+      },
+      "text": "• chagiocaxuanson.esy.es/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_229",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb229"
+      },
+      "text": "gin-fw/licence/templates/panel/ activation/activation.php • chagiocaxuanson.esy.es/wp-content/plugins/nextgen-gallery/products/photocrati_nextgen/modules/ ngglegacy/admin/templates",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_230",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb230"
+      },
+      "text": "• daybreakhealthcare.co.uk/wp-includes/themees.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_231",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb231"
+      },
+      "text": "t\\Windows NT\\CurrentVersion\\Explorer\\ScreenSaver C&C URLs • daybreakhealthcare.co.uk/wp-includes/themees.php • simplecreative.design/wp-content/plugins/calculated-fields-form/singl",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_232",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb232"
+      },
+      "text": "• giadinhvabe.net/wp-content/themes/viettemp/out/css/class.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_233",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb233"
+      },
+      "text": "san-kloud/admin.php • soligro.com/wp-includes/pomo/db.php • giadinhvabe.net/wp-content/themes/viettemp/out/css/class.php • tekfordummies.com/wp-content/plugins/social-auto-poster/i",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_234",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb234"
+      },
+      "text": "• hotnews.16mb.com/wp-content/themes/twentysixteen/template-parts/content-header.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_235",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb235"
+      },
+      "text": "mplates/manage_gallery/gallery_preview_page_field.old.php • hotnews.16mb.com/wp-content/themes/twentysixteen/template-parts/content-header.php • zszinhyosz.pe.hu/wp-content/themes/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_236",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb236"
+      },
+      "text": "• kennynguyen.esy.es/wp-content/plugins/wp-statistics/vendor/maxmind-db/reader/tests/MaxMind/Db/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_237",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb237"
+      },
+      "text": "al-auto-poster/includes/libraries/delicious/Delicious.php • kennynguyen.esy.es/wp-content/plugins/wp-statistics/vendor/maxmind-db/reader/tests/MaxMind/Db/ test/Reader/BuildTest.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_238",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb238"
+      },
+      "text": "• outletpiumini.springwaterfeatures.com/wp-includes/pomo/settings.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_239",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb239"
+      },
+      "text": "ulated-fields-form/single.php • 169.255.137.203/rss_0.php • outletpiumini.springwaterfeatures.com/wp-includes/pomo/settings.php • zerogov.com/wp-content/plugins.deactivate/paypal-d",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_240",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb240"
+      },
+      "text": "• shinestars-lifestyle.com/old_shinstar/includes/old/front_footer.old.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_241",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb241"
+      },
+      "text": "hp • 217.171.86.137/config.php • 217.171.86.137/rss_0.php • shinestars-lifestyle.com/old_shinstar/includes/old/front_footer.old.php • www.aviasiya.com/murad.by/life/wp-content/plug",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_242",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb242"
+      },
+      "text": "• sonneteck.com/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/licence/templates/panel/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_243",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb243"
+      },
+      "text": "ind-db/reader/tests/MaxMind/Db/ test/Reader/BuildTest.php • sonneteck.com/wp-content/plugins/yith-woocommerce-wishlist/plugin-fw/licence/templates/panel/ activation/activation.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_244",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb244"
+      },
+      "text": "Win32/Turla.CC",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_245",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb245"
+      },
+      "text": "Win32/Turla.CC",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_246",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb246"
+      },
+      "text": "Win32/Turla.CC",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_247",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 22,
+        "section": "rule_backfill",
+        "sentence_id": "p22_rb247"
+      },
+      "text": "min@solidloop.org valid from 14/10/2015 to 14/10/2016 Win32/Turla.CC b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab Gazer loader x32 05/02/2002 17:36:10 admin@solidloop.org valid from 14",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_248",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb248"
+      },
+      "text": "Win32/Turla.CF",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_249",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb249"
+      },
+      "text": "Win32/Turla.CF",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_250",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 23,
+        "section": "rule_backfill",
+        "sentence_id": "p23_rb250"
+      },
+      "text": "ltimatecomsup.biz valid from 16/12/2015 to 16/12/2017 Win32/Turla.CF 3944253f6b7019eed496fad756f4651be0e282b4 Gazer loader x64 19/06/2017 01:30:00 admin@ ultimatecomsup.biz valid f",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_251",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 24,
+        "section": "rule_backfill",
+        "sentence_id": "p24_rb251"
+      },
+      "text": "Gazer orchestrator x32 19/06/2017 01:28:21 not signed Win32/Turla.CF 950f0b0c7701835c5fbdb6c5698a04b8afe068e6 Gazer orchestrator x64 19/06/2017 01:29:46 not signed Win64/Turla.AD a",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_252",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb252"
+      },
+      "text": "• weandcats.com/wp-content/plugins/broken-link-checker/modules/checkers/http-module.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_253",
+      "evidence_type": "report_text",
+      "report_id": "ESET_Gazer(08-30-2017)",
+      "locator": {
+        "page": 21,
+        "section": "rule_backfill",
+        "sentence_id": "p21_rb253"
+      },
+      "text": "ntent/themes/twentyfourteen/page-templates/full-hight.php • weandcats.com/wp-content/plugins/broken-link-checker/modules/checkers/http-module.php Mutexes {531511FA-190D-5D85-8A4A-2",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_90",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_GAZER",
+        "ent_malware_Safari",
+        "ent_file_safari.exe",
+        "ent_malware_safari.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_105",
+      "page": 16,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer",
+        "ent_malware_explorer.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_88",
+      "page": 20,
+      "candidate_entity_ids": [
+        "ent_domain_eset.com",
+        "ent_email_threatintel_eset.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer",
+        "ent_malware_GAZER",
+        "ent_malware_explorer.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Safari",
+        "ent_file_safari.exe",
+        "ent_malware_safari.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_18",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Turla_APT_group",
+        "ent_malware_MAKERSMARK"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_91",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer",
+        "ent_malware_explorer.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_92",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer",
+        "ent_malware_explorer.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_28",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_GAZER",
+        "ent_file_refox.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_89",
+      "page": 21,
+      "candidate_entity_ids": [
+        "ent_malware_Explorer",
+        "ent_file_AdobeUpdater.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_250",
+      "page": 23,
+      "candidate_entity_ids": [
+        "ent_malware_GAZER",
+        "ent_domain_ultimatecomsup.biz"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

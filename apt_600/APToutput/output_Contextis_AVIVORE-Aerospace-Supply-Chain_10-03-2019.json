@@ -1,0 +1,350 @@
+{
+  "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+  "title": "AVIVORE – Hunting Global Aerospace through the Supply Chain",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019).pdf",
+    "file_path": "/root/APTtext/Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 7943,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT10",
+      "type": "ThreatActor",
+      "name": "APT10",
+      "normalized_name": "APT10",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_AVIVORE",
+      "type": "ThreatActor",
+      "name": "AVIVORE",
+      "normalized_name": "AVIVORE",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_13",
+        "ev_14",
+        "ev_17",
+        "ev_7",
+        "ev_5",
+        "ev_6"
+      ],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_7",
+        "ev_17",
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_PlugX",
+      "type": "Malware",
+      "name": "PlugX",
+      "normalized_name": "PlugX",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "family": "PlugX",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_AVIVORE",
+      "type": "Malware",
+      "name": "AVIVORE",
+      "normalized_name": "AVIVORE",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "family": "AVIVORE",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_campaign_AVIVORE",
+      "type": "Campaign",
+      "name": "AVIVORE",
+      "normalized_name": "AVIVORE",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_13",
+        "ev_5",
+        "ev_6",
+        "ev_7"
+      ],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_6",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_JSSD",
+      "type": "ThreatActor",
+      "name": "JSSD",
+      "normalized_name": "JSSD",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_contextis.com",
+      "type": "Domain",
+      "name": "contextis.com",
+      "normalized_name": "contextis.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27"
+      ],
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "value": "contextis.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Recent reporting into incidents affecting Aerospace and Defence Primes has speculated that either APT10 or JSSD (Jiangsu Province Ministry of State Security) may be responsible for this activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Capable and Adaptable Infrastructure and Tooling AVIVORE made extensive use of infrastructure providing interconnectivity between victims; affected Secondaries are often suppliers to multiple Primes and frequently maintain direct network connectivity via Virtual Private Networks (VPNs) or other remote and collaborative working solutions.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "AVIVORE exploited this relationship to bypass the (generally well- defended) perimeters of the Primes, evading critical controls and taking advantage of the challenges many organisations face in cross-boundary coordination.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "This technique, referred to as \"Island Hopping\", allowed AVIVORE to chain activity across multiple business units (with local IT and security teams operating independently) or geographical locales within victim environments.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Multiple instances of the PlugX Remote Access Trojan were discovered on compromised hosts.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "Although direct interaction with these implants was not observed during the investigation period, Context assess with low- moderate confidence that they may be associated to the AVIVORE intrusions.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "Evidence indicated that some of the implants were patched in-memory, with modified configuration blocks injected post-execution to provide new C2 domains during times AVIVORE operators were active inside victim environments.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s10"
+      },
+      "text": "Although defence against advanced nation-state level actors can be challenging, Context recommend the following mitigations to disrupt future AVIVORE activity:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb26"
+      },
+      "text": "contextis.com/en/blog/avivore",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Contextis_AVIVORE-Aerospace-Supply-Chain(10-03-2019)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb27"
+      },
+      "text": "AVIVORE – Hunting Global Aerospace through the Supply Chain contextis.com/en/blog/avivore Until now, most prominent supply chain intrusions have been \"vertical\"; initial victims ar",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ]
+}

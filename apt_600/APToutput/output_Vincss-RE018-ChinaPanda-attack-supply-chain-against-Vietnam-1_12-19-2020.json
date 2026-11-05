@@ -1,0 +1,1507 @@
+{
+  "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+  "title": "[RE018-1] Analyzing new malware of China Panda hacker group used to attack supply chain against Vietnam Government Certification Authority - Part 1",
+  "source": "ESET",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020).pdf",
+    "file_path": "/root/APTtext/Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020).pdf",
+    "source_type": "pdf",
+    "char_length": 18886,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_eToken",
+      "type": "Malware",
+      "name": "eToken",
+      "normalized_name": "eToken",
+      "aliases": [
+        "eToken.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_4",
+        "ev_75",
+        "ev_76",
+        "ev_79"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_75",
+        "ev_4",
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_eToken.exe",
+      "family": "eToken",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_RE018",
+      "type": "Malware",
+      "name": "RE018",
+      "normalized_name": "RE018",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "family": "RE018",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_SignSight",
+      "type": "Campaign",
+      "name": "Operation SignSight",
+      "normalized_name": "Operation SignSight",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Vietnam_Government_Certification_Authority",
+      "type": "Victim",
+      "name": "Vietnam Government Certification Authority",
+      "normalized_name": "Vietnam Government Certification Authority",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_tool_eToken.exe",
+      "type": "Tool",
+      "name": "eToken.exe",
+      "normalized_name": "eToken.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_4",
+        "ev_75",
+        "ev_76"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_eToken"
+    },
+    {
+      "id": "ent_malware_MFC",
+      "type": "Malware",
+      "name": "MFC",
+      "normalized_name": "MFC",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_40",
+        "ev_45",
+        "ev_46",
+        "ev_47"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_40",
+        "ev_45",
+        "ev_47"
+      ],
+      "needs_review": false,
+      "family": "MFC",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_blog.vincss.net",
+      "type": "Domain",
+      "name": "blog.vincss.net",
+      "normalized_name": "blog.vincss.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "blog.vincss.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_6C1DB6C3D32C921858A4272E8CC7D78280B46BAD20A1DE23833CBE2956EEBF75",
+      "type": "SHA256",
+      "name": "6C1DB6C3D32C921858A4272E8CC7D78280B46BAD20A1DE23833CBE2956EEBF75",
+      "normalized_name": "6C1DB6C3D32C921858A4272E8CC7D78280B46BAD20A1DE23833CBE2956EEBF75",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_109"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "6C1DB6C3D32C921858A4272E8CC7D78280B46BAD20A1DE23833CBE2956EEBF75",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_97A5FE1D2174E9D34CEE8C1D6751BF01F99D8F40B1AE0BCE205B8F2F0483225C",
+      "type": "SHA256",
+      "name": "97A5FE1D2174E9D34CEE8C1D6751BF01F99D8F40B1AE0BCE205B8F2F0483225C",
+      "normalized_name": "97A5FE1D2174E9D34CEE8C1D6751BF01F99D8F40B1AE0BCE205B8F2F0483225C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "97A5FE1D2174E9D34CEE8C1D6751BF01F99D8F40B1AE0BCE205B8F2F0483225C",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_F659B269FBE4128588F7A2FA4D6022CC74E508D28EEE05C5AFF26CC23B7BD1A5",
+      "type": "SHA256",
+      "name": "F659B269FBE4128588F7A2FA4D6022CC74E508D28EEE05C5AFF26CC23B7BD1A5",
+      "normalized_name": "F659B269FBE4128588F7A2FA4D6022CC74E508D28EEE05C5AFF26CC23B7BD1A5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "F659B269FBE4128588F7A2FA4D6022CC74E508D28EEE05C5AFF26CC23B7BD1A5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_43CE409C21CAD2EF41C9E1725CA12CEA",
+      "type": "MD5",
+      "name": "43CE409C21CAD2EF41C9E1725CA12CEA",
+      "normalized_name": "43CE409C21CAD2EF41C9E1725CA12CEA",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_109"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "43CE409C21CAD2EF41C9E1725CA12CEA",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_109",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_830DD354A31EF40856978616F35BD6B7",
+      "type": "MD5",
+      "name": "830DD354A31EF40856978616F35BD6B7",
+      "normalized_name": "830DD354A31EF40856978616F35BD6B7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_91"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "830DD354A31EF40856978616F35BD6B7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_91",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_C11E25278417F985CC968C1E361A0FB0",
+      "type": "MD5",
+      "name": "C11E25278417F985CC968C1E361A0FB0",
+      "normalized_name": "C11E25278417F985CC968C1E361A0FB0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_107"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "value": "C11E25278417F985CC968C1E361A0FB0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_107",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_dbghelp.dll",
+      "type": "File",
+      "name": "dbghelp.dll",
+      "normalized_name": "dbghelp.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_93"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "dbghelp.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_eTOKCSP.dll",
+      "type": "File",
+      "name": "eTOKCSP.dll",
+      "normalized_name": "eTOKCSP.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_78"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "eTOKCSP.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_eTOKCSP64.dll",
+      "type": "File",
+      "name": "eTOKCSP64.dll",
+      "normalized_name": "eTOKCSP64.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_78"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "eTOKCSP64.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_MFC42.dll",
+      "type": "File",
+      "name": "MFC42.dll",
+      "normalized_name": "MFC42.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_47",
+        "ev_92",
+        "ev_95",
+        "ev_97"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "MFC42.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_47",
+        "ev_92",
+        "ev_95"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MFC42"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mfco42d.dll",
+      "type": "File",
+      "name": "mfco42d.dll",
+      "normalized_name": "mfco42d.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_47",
+        "ev_97"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "mfco42d.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_netapi32.dll",
+      "type": "File",
+      "name": "netapi32.dll",
+      "normalized_name": "netapi32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105",
+        "ev_108",
+        "ev_62"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "netapi32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_108",
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RegistereToken.exe",
+      "type": "File",
+      "name": "RegistereToken.exe",
+      "normalized_name": "RegistereToken.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_78",
+        "ev_80",
+        "ev_81",
+        "ev_84"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "RegistereToken.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_81",
+        "ev_84"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "GUID",
+        "PE64"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_smanager_ssl.dll",
+      "type": "File",
+      "name": "smanager_ssl.dll",
+      "normalized_name": "smanager_ssl.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_103",
+        "ev_105",
+        "ev_108",
+        "ev_62"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "smanager_ssl.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_103",
+      "supporting_evidence_ids": [
+        "ev_105",
+        "ev_108",
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_VVSup.exe",
+      "type": "File",
+      "name": "VVSup.exe",
+      "normalized_name": "VVSup.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_41",
+        "ev_42",
+        "ev_94",
+        "ev_95"
+      ],
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "file_name": "VVSup.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [
+        "ev_95",
+        "ev_41",
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MFC42"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mfc42d.dll",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "type": "File",
+      "name": "mfc42d.dll",
+      "normalized_name": "mfc42d.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_97"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "mfc42d.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_eToken",
+      "tail_id": "ent_file_RegistereToken.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "primary_evidence_id": "ev_80",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_80"
+      },
+      "head": {
+        "id": "ent_malware_eToken",
+        "type": "Malware",
+        "name": "eToken",
+        "normalized_name": "eToken",
+        "aliases": [
+          "eToken.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_4",
+          "ev_75",
+          "ev_76",
+          "ev_79"
+        ],
+        "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_76",
+        "supporting_evidence_ids": [
+          "ev_75",
+          "ev_4",
+          "ev_79"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_eToken.exe",
+        "family": "eToken",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_RegistereToken.exe",
+        "type": "File",
+        "name": "RegistereToken.exe",
+        "normalized_name": "RegistereToken.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_78",
+          "ev_80",
+          "ev_81",
+          "ev_84"
+        ],
+        "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+        "file_name": "RegistereToken.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_78",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81",
+          "ev_84"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "GUID",
+          "PE64"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "type": "executes",
+      "head_id": "ent_malware_eToken",
+      "tail_id": "ent_file_RegistereToken.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_28",
+        "ev_80"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "type": "loads",
+      "head_id": "ent_file_RegistereToken.exe",
+      "tail_id": "ent_malware_RE018",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_33",
+        "ev_85"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "type": "targets",
+      "head_id": "ent_campaign_Operation_SignSight",
+      "tail_id": "ent_victim_Vietnam_Government_Certification_Authority",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        null,
+        "ev_1",
+        "ev_4",
+        "ev_75"
+      ],
+      "primary_evidence_id": null,
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "eToken executes RegistereToken.exe",
+      "evidence_ids": [
+        "ev_28",
+        "ev_80"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "RegistereToken.exe loads RE018",
+      "evidence_ids": [
+        "ev_33",
+        "ev_85"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "downloads",
+      "summary": "eToken downloads RegistereToken.exe",
+      "evidence_ids": [
+        "ev_80"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "blog.vincss.net /2020/12/re018-1-analyzing-new-malware-of-china-panda-hacker-group-used-to-attack-supply-chain- against-vietnam-government-certification-authority.html",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "On the event that a hacker group believed to be from Russia attacked and exploited the software supply chain to target a series of major US agencies, along with discovery that the keyword eToken.exe belongs to the software that is quite popularly used in agencies, organizations and businesses in Vietnam, we have used eToken.exe and SafeNet as keywords for searching on VirusTotal and Google.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "We checked each file and determined that the files were clean, leaving only three suspicious files: RegistereToken.exe , eTOKCSP.dll and eTOKCSP64.dll .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "Check the Data1.cab file and the MSI log text file, eToken.exe and RegistereToken.exe are in Data1.cab file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "RegistereToken.exe 's pseudo code only calls the WinExec API to execute the passed in argument:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Link with a special library: dbghelp.dll .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Checking the resource section of the file, we determined that this is a Dialog application, created by MFC Wizard of Visual Studio 6.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "The project name is VVSup , which means the .exe file when built out would be VVSup.exe .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "Static code analysis eToken.exe ( VVSup.exe ) is built with dynamic link DLL mode with MFC42.dll , so the .exe file will be small and the functions of the MFC42 libirary will be easily identified via the name import of the DLL.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "The analysis will show how to define classes, recreate the code of this malware, and share experience in applying when analyzing malwares/files using MFC.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "About the relationship chart of the classes of MFC (Hierarchy Chart), you can see at this link.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s4"
+      },
+      "text": "Three important dlls file to diffing/compare with MFC malware, for example in this sample eToken , are mfc42.dll , mfc42d.dll , mfco42d.dll .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s1"
+      },
+      "text": "The smanager_ssl.dll file ( netapi32.dll ) will be analyzed in the next post because it is relatively complex.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "On the event that a hacker group believed to be from Russia attacked and exploited the software supply chain to target a series of major US agencies, along with discovery that the keyword eToken.exe belongs to the software that is quite popularly used in agencies, organizations and businesses in Vietnam, we have used eToken.exe and SafeNet as keywords for searching on VirusTotal and Google. As a result, we uncovered information about two remarkable installation files (1, 2) that have been uploaded to VirusTotal since August 2020 :",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "With the help of sigcheck tool in Micorsoft's SysInternals Suite , with the test parameters is signed, hash, scan all PE files, scan the hash on VirusTotal, the output is csv file. Then sorting by unsigned file, resulting from VirusTotal, we discovered that eToken.exe is the file was implanted by the hacker.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Since this application is built with Visual C ++ of Visual Studio 2005 which is old version, and uses the Qt4 library, some of the dll files of this installer are also unsigned. We checked each file and determined that the files were clean, leaving only three suspicious files: RegistereToken.exe , eTOKCSP.dll and eTOKCSP64.dll .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "So eToken.exe file is a malware that hackers have added to the installation of the software suite. To find out how eToken.exe is executed, we analyze the installation file: msi file ( Microsoft Windows Installer file ): gca01-client-v2-x64-8.3.msi",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "Extracting the msi file to raw format before installing, we obtained two .cab files ( Microsoft Cabinet file ): Data1.cab and Cabs.w1.cab . This is anomaly because a normal msi file has only one main .cab file. Check the Data1.cab file and the MSI log text file, eToken.exe and RegistereToken.exe are in Data1.cab file. And both .exe files have no GUID ID info:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "Continue checking the features: DriverFeature , and two files eToken.exe and RegistereToken.exe msi file with Microsoft's Orca tool ( a specialized tool for analyze and modify msi files ). Through a search, the hacker has added a custom action: RegisterToken (without \" e \" before Token) to the msi file and added that CustomAction at the end of InstallExecuteSequence . RegistereToken.exe will be called with the parameter is eToken.exe :",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "Analyzing the RegistereToken.exe file, we see that this file was built on \"Wednesday, 22.07.2020 07:40:31 UTC\" , ie 07/22/2020, 2h40m31s PM GMT +7, PE64 , using VC ++ 2013 :",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "RegistereToken.exe 's pseudo code only calls the WinExec API to execute the passed in argument:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "Size: 192 KB (196,608 bytes) MD5: 830DD354A31EF40856978616F35BD6B7 SHA256: 97A5FE1D2174E9D34CEE8C1D6751BF01F99D8F40B1AE0BCE205B8F2F0483225C",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "Build with VC ++ 6 of Microsoft Visual Studio, Service Pack 6. Build at: 26/04/2020 - 15:12:58 UTC Checksum is correct, file has not been modified PE Header. Linking with MFC42.dll library, Microsoft Foundation Class v4.2 library of Microsoft, is a library supporting GUI programming on Windows, always included in Visual Studio suite.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "Link with a special library: dbghelp.dll . Use the MakeSureDirectoryPathExist API function. See more here.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "Checking the resource section of the file, we determined that this is a Dialog application, created by MFC Wizard of Visual Studio 6. The project name is VVSup , which means the .exe file when built out would be VVSup.exe .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "eToken.exe ( VVSup.exe ) is built with dynamic link DLL mode with MFC42.dll , so the .exe file will be small and the functions of the MFC42 libirary will be easily identified via the name import of the DLL. The name mangling rule of Microsoft VC ++ compiler reflects the class name, function name, parameter name, call type... of functions. IDA helps us to define the functions import by ordinal of MFC42.dll using the file mfc42.ids and mfc42.idt included with IDA.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "Three important dlls file to diffing/compare with MFC malware, for example in this sample eToken , are mfc42.dll , mfc42d.dll , mfco42d.dll . You can find and download the correct debug symbol file ( .pdb ) of the dlls you have. The most important one is mfc42d.dll ( debug build ), since its .pdb will contain full information about the types, enumes, classes, and vtables of the MFC classes. We export local types from mfc42d.dll to .h file, then import into our idb database. IDA's Parse C ++ has an error, unable to parse the \" <> \" template syntax, so we find and replace pairs of \" < \" and \" > \" to \" _ \" in .h files.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r3"
+      },
+      "text": "The smanager_ssl.dll file ( netapi32.dll ) will be analyzed in the next post because it is relatively complex.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r2"
+      },
+      "text": "The content of smanager_ssl.dll* ( netapi32.dll** ) is original and after being updated from g_CCInfo structure via:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 27,
+        "section": "rule",
+        "sentence_id": "p27_r2"
+      },
+      "text": "MD5: C11E25278417F985CC968C1E361A0FB0 SHA256: F659B269FBE4128588F7A2FA4D6022CC74E508D28EEE05C5AFF26CC23B7BD1A5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 27,
+        "section": "rule",
+        "sentence_id": "p27_r3"
+      },
+      "text": "netapi32.dll (ie smanager_ssl.dll has updated CCInfo):",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "Vincss-RE018-ChinaPanda-attack-supply-chain-against-Vietnam-1(12-19-2020)",
+      "locator": {
+        "page": 27,
+        "section": "rule",
+        "sentence_id": "p27_r4"
+      },
+      "text": "MD5: 43CE409C21CAD2EF41C9E1725CA12CEA SHA256: 6C1DB6C3D32C921858A4272E8CC7D78280B46BAD20A1DE23833CBE2956EEBF75",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_RE018",
+        "ent_victim_Vietnam_Government_Certification_Authority"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_97",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_MFC42.dll",
+        "ent_file_mfco42d.dll",
+        "ent_file_mfc42d.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_95",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_MFC42.dll",
+        "ent_file_VVSup.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_78",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_eTOKCSP.dll",
+        "ent_file_eTOKCSP64.dll",
+        "ent_file_RegistereToken.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_RE018",
+        "ent_domain_blog.vincss.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_MFC42.dll",
+        "ent_file_mfco42d.dll",
+        "ent_file_mfc42d.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_MFC42.dll",
+        "ent_file_VVSup.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_eTOKCSP.dll",
+        "ent_file_eTOKCSP64.dll",
+        "ent_file_RegistereToken.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_28",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_RegistereToken.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_80",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_RegistereToken.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_81",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_eToken",
+        "ent_file_RegistereToken.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_62",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_file_netapi32.dll",
+        "ent_file_smanager_ssl.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_103",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_file_netapi32.dll",
+        "ent_file_smanager_ssl.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_105",
+      "page": 24,
+      "candidate_entity_ids": [
+        "ent_file_netapi32.dll",
+        "ent_file_smanager_ssl.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_108",
+      "page": 27,
+      "candidate_entity_ids": [
+        "ent_file_netapi32.dll",
+        "ent_file_smanager_ssl.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

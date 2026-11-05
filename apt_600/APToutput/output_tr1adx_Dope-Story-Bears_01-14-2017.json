@@ -1,0 +1,390 @@
+{
+  "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+  "title": "tr1adx.net /intel/TIB-00004.html tr1adx Intelligence Bulletin (TIB) 00004: A Pretty Dope Story About Bears: Early Indicators of Continued World Anti-Doping Agency (WADA) Targeting [Published: January 14, 2017] Search through SIEM/Log Analysis tools for traces of connections to and from these domains or IP addresses, as well as proactively create alerting rules in SIEM or IDS/IPS.",
+  "source": null,
+  "published_date": "January 14, 2017",
+  "report_metadata": {
+    "file_name": "tr1adx_Dope-Story-Bears(01-14-2017).pdf",
+    "file_path": "/root/APTtext/tr1adx_Dope-Story-Bears(01-14-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 2966,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT28",
+      "type": "ThreatActor",
+      "name": "APT28",
+      "normalized_name": "APT28",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_3"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_WADA",
+      "type": "Victim",
+      "name": "WADA",
+      "normalized_name": "WADA",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2",
+        "ev_3"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_detailing_the_APT28_campaign",
+      "type": "Campaign",
+      "name": "detailing the APT28 campaign",
+      "normalized_name": "detailing the APT28 campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_ama.org",
+      "type": "Domain",
+      "name": "ama.org",
+      "normalized_name": "ama.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6",
+        "ev_7"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "value": "ama.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dopingagency.com",
+      "type": "Domain",
+      "name": "dopingagency.com",
+      "normalized_name": "dopingagency.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "value": "dopingagency.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mail.dopingagency.com",
+      "type": "Domain",
+      "name": "mail.dopingagency.com",
+      "normalized_name": "mail.dopingagency.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "value": "mail.dopingagency.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mail.worlddopingagency.com",
+      "type": "Domain",
+      "name": "mail.worlddopingagency.com",
+      "normalized_name": "mail.worlddopingagency.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "value": "mail.worlddopingagency.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_worlddopingagency.com",
+      "type": "Domain",
+      "name": "worlddopingagency.com",
+      "normalized_name": "worlddopingagency.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "value": "worlddopingagency.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "type": "targets",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_victim_WADA",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s1"
+      },
+      "text": "The tr1adx team identified what we believe to be a new campaign, which we assess to be attributed to the Russian Nation State Threat Actor APT28 (a.k.a.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s2"
+      },
+      "text": "In September 2016, WADA confirmed they were the victim of a successful breach, which occurred over the summer of 2016, and purportedly attributed to APT28, as was reported in WADA's press release on the attack .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s3"
+      },
+      "text": "For those interested, ThreatConnect published an informative write up on this breach, entitled \" Russian Cyber Operations On Steroids \", detailing the APT28 campaign targeting WADA.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "mail[.]worlddopingagency[.]com (40.112.145.124)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "mail[.]dopingagency[.]com (40.112.145.124)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb6"
+      },
+      "text": "ama.org",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "tr1adx_Dope-Story-Bears(01-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb7"
+      },
+      "text": "7- 01-14 Active World Anti- Doping Agency (WADA) Canada wada- ama.org Identified 1 related indicator: mail[.]worlddopingagency[.]com (40.112.145.124) dopingagency[.]com 2017- 01-14",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_victim_WADA"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_victim_WADA",
+        "ent_domain_ama.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_victim_WADA"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

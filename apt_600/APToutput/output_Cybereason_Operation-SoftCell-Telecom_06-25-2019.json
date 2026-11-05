@@ -1,0 +1,2347 @@
+{
+  "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+  "title": "Operation Soft Cell: A Worldwide Campaign Against Telecommunications Providers",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Cybereason_Operation-SoftCell-Telecom(06-25-2019).pdf",
+    "file_path": "/root/APTtext/Cybereason_Operation-SoftCell-Telecom(06-25-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 30794,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT1",
+      "type": "ThreatActor",
+      "name": "APT1",
+      "normalized_name": "APT1",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_139",
+        "ev_140",
+        "ev_46"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_140",
+        "ev_139",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Portqry",
+      "type": "Tool",
+      "name": "Portqry",
+      "normalized_name": "Portqry",
+      "aliases": [
+        "portqry.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_156",
+        "ev_56"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_156",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_portqry.exe",
+      "tool_name": "Portqry",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_RunHelp",
+      "type": "Tool",
+      "name": "RunHelp",
+      "normalized_name": "RunHelp",
+      "aliases": [
+        "RunHelp.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_154",
+        "ev_52"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "PIVY"
+      ],
+      "derived_from_file_id": "ent_file_RunHelp.exe",
+      "tool_name": "RunHelp",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Cloud_Hopper",
+      "type": "Campaign",
+      "name": "Operation Cloud Hopper",
+      "normalized_name": "Operation Cloud Hopper",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_CDRs",
+      "type": "ThreatActor",
+      "name": "CDRs",
+      "normalized_name": "CDRs",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Call_Detail_Records"
+    },
+    {
+      "id": "ent_threatactor_DragonOK",
+      "type": "ThreatActor",
+      "name": "DragonOK",
+      "normalized_name": "DragonOK",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_139",
+        "ev_46",
+        "ev_66"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_139",
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_hTran",
+      "type": "ThreatActor",
+      "name": "hTran",
+      "normalized_name": "hTran",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_56",
+        "ev_57",
+        "ev_64",
+        "ev_66"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_66",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Mimikatz",
+      "type": "ThreatActor",
+      "name": "Mimikatz",
+      "normalized_name": "Mimikatz",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_28",
+        "ev_29",
+        "ev_88",
+        "ev_89"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_88",
+        "ev_89",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_PlugX",
+      "type": "Malware",
+      "name": "PlugX",
+      "normalized_name": "PlugX",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_86"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "family": "PlugX",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_China_Chopper",
+      "type": "Tool",
+      "name": "China Chopper",
+      "normalized_name": "China Chopper",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_18",
+        "ev_19",
+        "ev_22",
+        "ev_40"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_19",
+        "ev_40",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "tool_name": "China Chopper",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_portqry.exe",
+      "type": "File",
+      "name": "portqry.exe",
+      "normalized_name": "portqry.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_156",
+        "ev_56"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "portqry.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_156",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_portqry.exe",
+      "type": "ThreatActor",
+      "name": "portqry.exe",
+      "normalized_name": "portqry.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_156",
+        "ev_56"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Portqry"
+    },
+    {
+      "id": "ent_file_RunHelp.exe",
+      "type": "File",
+      "name": "RunHelp.exe",
+      "normalized_name": "RunHelp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_154",
+        "ev_52"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "RunHelp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "PIVY"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_RunHelp.exe",
+      "type": "Tool",
+      "name": "RunHelp.exe",
+      "normalized_name": "RunHelp.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_154",
+        "ev_52"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_RunHelp"
+    },
+    {
+      "id": "ent_campaign_Operation_Soft_Cell",
+      "type": "Campaign",
+      "name": "Operation Soft Cell",
+      "normalized_name": "Operation Soft Cell",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_136",
+        "ev_137",
+        "ev_3"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [
+        "ev_137",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_maybemimi.exe",
+      "type": "File",
+      "name": "maybemimi.exe",
+      "normalized_name": "maybemimi.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_150",
+        "ev_151",
+        "ev_31",
+        "ev_33"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "maybemimi.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [
+        "ev_151",
+        "ev_31",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "NTLM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_net.exe",
+      "type": "File",
+      "name": "net.exe",
+      "normalized_name": "net.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_159",
+        "ev_85"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "net.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_159",
+      "supporting_evidence_ids": [
+        "ev_85"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rar.exe",
+      "type": "File",
+      "name": "rar.exe",
+      "normalized_name": "rar.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_157",
+        "ev_62"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "rar.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_157",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_REDACTED_.csv",
+      "type": "File",
+      "name": "REDACTED].csv",
+      "normalized_name": "REDACTED].csv",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_157",
+        "ev_62"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "REDACTED].csv",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_157",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_REDACTED_.rar",
+      "type": "File",
+      "name": "REDACTED].rar",
+      "normalized_name": "REDACTED].rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_157",
+        "ev_62"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "REDACTED].rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_157",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_REDACTED_.temp",
+      "type": "File",
+      "name": "REDACTED].temp",
+      "normalized_name": "REDACTED].temp",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_157",
+        "ev_62"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "REDACTED].temp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_157",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Reg.exe",
+      "type": "File",
+      "name": "Reg.exe",
+      "normalized_name": "Reg.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_153",
+        "ev_36"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "Reg.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ssMUIDLL.dll",
+      "type": "File",
+      "name": "ssMUIDLL.dll",
+      "normalized_name": "ssMUIDLL.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_155",
+        "ev_53"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "ssMUIDLL.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "file_role": "abused_legitimate_file",
+      "historical_aliases": [],
+      "related_families": [],
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "PIVY",
+        "NSIS"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_w3wp.exe",
+      "type": "File",
+      "name": "w3wp.exe",
+      "normalized_name": "w3wp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_149",
+        "ev_18"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "file_name": "w3wp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_149",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Telecommunications_Providers",
+      "type": "Victim",
+      "name": "Telecommunications Providers",
+      "normalized_name": "Telecommunications Providers",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1",
+        "ev_102",
+        "ev_115",
+        "ev_3"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_102",
+        "ev_115",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "cmd.exe",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_threatactor_APT10",
+      "type": "ThreatActor",
+      "name": "APT10",
+      "normalized_name": "APT10",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_13",
+        "ev_139",
+        "ev_140"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_140",
+        "ev_139",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_APT27",
+      "type": "ThreatActor",
+      "name": "APT27",
+      "normalized_name": "APT27",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_139",
+        "ev_66"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_139",
+      "supporting_evidence_ids": [
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_APT3",
+      "type": "ThreatActor",
+      "name": "APT3",
+      "normalized_name": "APT3",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_Call_Detail_Records",
+      "type": "ThreatActor",
+      "name": "Call Detail Records",
+      "normalized_name": "Call Detail Records",
+      "aliases": [
+        "CDRs"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_PoisonIvy",
+      "type": "ThreatActor",
+      "name": "PoisonIvy",
+      "normalized_name": "PoisonIvy",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_45",
+        "ev_49"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_TTP-",
+      "type": "ThreatActor",
+      "name": "TTP-",
+      "normalized_name": "TTP-",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_90"
+      ],
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_CDRs",
+      "tail_id": "ent_threatactor_Call_Detail_Records",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_portqry.exe",
+      "tail_id": "ent_tool_Portqry",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_156",
+        "ev_56"
+      ],
+      "primary_evidence_id": "ev_156",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "alias_of",
+      "head_id": "ent_tool_RunHelp.exe",
+      "tail_id": "ent_tool_RunHelp",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_154",
+        "ev_52"
+      ],
+      "primary_evidence_id": "ev_154",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "drops",
+      "head_id": "ent_tool_Portqry",
+      "tail_id": "ent_file_cmd.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_56",
+        "ev_156"
+      ],
+      "primary_evidence_id": "ev_56",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_56"
+      },
+      "head": {
+        "id": "ent_tool_Portqry",
+        "type": "Tool",
+        "name": "Portqry",
+        "normalized_name": "Portqry",
+        "aliases": [
+          "portqry.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_156",
+          "ev_56"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_156",
+        "supporting_evidence_ids": [
+          "ev_56"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_portqry.exe",
+        "tool_name": "Portqry",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_cmd.exe",
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "type": "File",
+        "name": "cmd.exe",
+        "normalized_name": "cmd.exe",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_56"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "cmd.exe",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "drops",
+      "head_id": "ent_tool_Portqry",
+      "tail_id": "ent_file_portqry.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_56",
+        "ev_156"
+      ],
+      "primary_evidence_id": "ev_56",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_56"
+      },
+      "head": {
+        "id": "ent_tool_Portqry",
+        "type": "Tool",
+        "name": "Portqry",
+        "normalized_name": "Portqry",
+        "aliases": [
+          "portqry.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_156",
+          "ev_56"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_156",
+        "supporting_evidence_ids": [
+          "ev_56"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_portqry.exe",
+        "tool_name": "Portqry",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_portqry.exe",
+        "type": "File",
+        "name": "portqry.exe",
+        "normalized_name": "portqry.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_156",
+          "ev_56"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "file_name": "portqry.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_156",
+        "supporting_evidence_ids": [
+          "ev_56"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "drops",
+      "head_id": "ent_tool_RunHelp",
+      "tail_id": "ent_file_RunHelp.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_52",
+        "ev_154"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_52"
+      },
+      "head": {
+        "id": "ent_tool_RunHelp",
+        "type": "Tool",
+        "name": "RunHelp",
+        "normalized_name": "RunHelp",
+        "aliases": [
+          "RunHelp.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_154",
+          "ev_52"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_154",
+        "supporting_evidence_ids": [
+          "ev_52"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "PIVY"
+        ],
+        "derived_from_file_id": "ent_file_RunHelp.exe",
+        "tool_name": "RunHelp",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_RunHelp.exe",
+        "type": "File",
+        "name": "RunHelp.exe",
+        "normalized_name": "RunHelp.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_154",
+          "ev_52"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "file_name": "RunHelp.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_154",
+        "supporting_evidence_ids": [
+          "ev_52"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "family_hints": [
+          "PIVY"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "loads",
+      "head_id": "ent_file_RunHelp.exe",
+      "tail_id": "ent_tool_RunHelp.exe",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "primary_evidence_id": "ev_154",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The strain of PIVY in this attack used a DLL side-loading technique to stealthily load itself into memory. To accomplish this, it exploited a trusted and signed application. The PIVY payload was dropped along with the trusted and signed Samsung tool ( RunHelp.exe ) in the following manner:"
+      },
+      "head": {
+        "id": "ent_file_RunHelp.exe",
+        "type": "File",
+        "name": "RunHelp.exe",
+        "normalized_name": "RunHelp.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_154",
+          "ev_52"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "file_name": "RunHelp.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_154",
+        "supporting_evidence_ids": [
+          "ev_52"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "family_hints": [
+          "PIVY"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      },
+      "tail": {
+        "id": "ent_tool_RunHelp.exe",
+        "type": "Tool",
+        "name": "RunHelp.exe",
+        "normalized_name": "RunHelp.exe",
+        "aliases": [],
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ev_154",
+          "ev_52"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_tool_RunHelp"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "loads",
+      "head_id": "ent_file_ssMUIDLL.dll",
+      "tail_id": "ent_tool_Portqry",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_53",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "loads",
+      "head_id": "ent_tool_RunHelp",
+      "tail_id": "ent_file_RunHelp.exe",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "primary_evidence_id": "ev_154",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The strain of PIVY in this attack used a DLL side-loading technique to stealthily load itself into memory. To accomplish this, it exploited a trusted and signed application. The PIVY payload was dropped along with the trusted and signed Samsung tool ( RunHelp.exe ) in the following manner:"
+      },
+      "head": {
+        "id": "ent_tool_RunHelp",
+        "type": "Tool",
+        "name": "RunHelp",
+        "normalized_name": "RunHelp",
+        "aliases": [
+          "RunHelp.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_154",
+          "ev_52"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_154",
+        "supporting_evidence_ids": [
+          "ev_52"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "PIVY"
+        ],
+        "derived_from_file_id": "ent_file_RunHelp.exe",
+        "tool_name": "RunHelp",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_RunHelp.exe",
+        "type": "File",
+        "name": "RunHelp.exe",
+        "normalized_name": "RunHelp.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_154",
+          "ev_52"
+        ],
+        "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+        "file_name": "RunHelp.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_154",
+        "supporting_evidence_ids": [
+          "ev_52"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "family_hints": [
+          "PIVY"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_APT1",
+      "tail_id": "ent_tool_Portqry",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "primary_evidence_id": "ev_84",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "Portqry drops cmd.exe",
+      "evidence_ids": [
+        "ev_56",
+        "ev_156"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0005",
+      "type": "drops",
+      "summary": "Portqry drops portqry.exe",
+      "evidence_ids": [
+        "ev_56",
+        "ev_156"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0006",
+      "type": "drops",
+      "summary": "RunHelp drops RunHelp.exe",
+      "evidence_ids": [
+        "ev_52",
+        "ev_154"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "RunHelp.exe loads RunHelp.exe",
+      "evidence_ids": [
+        "ev_154"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "ssMUIDLL.dll loads Portqry",
+      "evidence_ids": [
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "RunHelp loads RunHelp.exe",
+      "evidence_ids": [
+        "ev_154"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "uses_tool",
+      "summary": "APT1 uses_tool Portqry",
+      "evidence_ids": [
+        "ev_84"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s1"
+      },
+      "text": "In 2018, the Cybereason Nocturnus team identified an advanced, persistent attack targeting global telecommunications providers carried out by a threat actor using tools and techniques commonly associated with Chinese-affiliated threat actors, such as APT10.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Based on the data available to us, Operation Soft Cell has been active since at least 2012, though some evidence suggests even earlier activity by the threat actor against telecommunications providers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "The threat actor was attempting to steal all data stored in the active directory, compromising every single username and password in the organization, along with other personally identifiable information, billing data, call detail records, credentials, email servers, geo-location of users, and more.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "The tools and techniques used throughout these attacks are consistent with several Chinese threat actors, such as APT10, a threat actor believed to operate on behalf of the Chinese Ministry of State Security (MSS).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Initial Compromise: the Modified China Chopper Web Shell The initial indicator of the attack was a malicious web shell that was detected on an IIS server, coming out of the w3wp.exe process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "An investigation of the web shell, later classified as a modified version of the China Chopper web shell, uncovered several attack phases and TTPs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "China Chopper is a web shell first discovered in 2012 that is commonly used by malicious Chinese actors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Nbtscan has been used by APT10 in Operation Cloud Hopper to search for services of interest across the IT estate and footprint endpoints of interest.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Modified Mimikatz Following the reconnaissance phase, the threat actor attempted to dump credentials stored on the compromised machines.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "The most common credential stealing tool used by the threat actor was a modified mimikatz that dumps NTLM hashes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "We renamed this sample to maybemimi.exe .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Reverse engineering shows the similarity between maybemimi.exe and mimikatz.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "Reg.exe is being spawned from a shell process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s7"
+      },
+      "text": "The following example demonstrates how the threat actor moved laterally from the first machine, compromised by the modified version of the China Chopper web shell, to other machines inside the network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s5"
+      },
+      "text": "PoisonIvy A second method the threat actor used to maintain access across the compromised assets was through the deployment of the PoisonIvy RAT (PIVY).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s6"
+      },
+      "text": "This infamous RAT has been associated with many different Chinese threat actors, including APT10, APT1, and DragonOK.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "Courtesy of Sam Bowne - samsclass.info We assume the threat actor used PoisonIvy for keylogging and other surveillance features, as they had that functionality available to them as shown in the screenshot above.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s4"
+      },
+      "text": "The PIVY payload was dropped along with the trusted and signed Samsung tool ( RunHelp.exe ) in the following manner: 1.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s5"
+      },
+      "text": "Once executed, the installer script within the NSIS package extracted the Samsung tool and added a fake DLL with the same name as a legitimate DLL ( ssMUIDLL.dll) , which is required by the application.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s3"
+      },
+      "text": "From these web shells, they launched reconnaissance commands, stole data, and dropped additional tools including portqry.exe, renamed cmd.exe, winrar, and the notorious hTran.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s4"
+      },
+      "text": "Data Exfiltration The threat actor exfiltrated stolen data using multiple different channels including web shells and hTran.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s5"
+      },
+      "text": "rar.exe a -k -r -s -m1 -[password] [REDACTED].rar [REDACTED].temp rar.exe a -k -r -s -m1 -[password] [REDACTED].rar [REDACTED].csv rar a -r -[password] [REDACTED].rar sam system ntds.dit",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s7"
+      },
+      "text": "In order to exfiltrate data from a network segment not connected to the Internet, the threat actor deployed a modified version of hTran.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s9"
+      },
+      "text": "There have been numerous reports of hTran being used by different Chinese threat actors, including: APT3, APT27 and DragonOK.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s9"
+      },
+      "text": "The threat actor made sure that each payload had a unique hash, and some payloads were packed using different types of packers, both known and custom.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s1"
+      },
+      "text": "Multiple Windows built-in tools were used for various tasks, including whoami, net.exe, ipconfig, netstat, portqry, and more.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s2"
+      },
+      "text": "PlugX was used in some of the instances that we're aware of.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s4"
+      },
+      "text": "A modified version of Mimikatz was used to dump credentials stored on the compromised machines.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s5"
+      },
+      "text": "A PowerShell-based Mimikatz was also used to dump credentials stored on the compromised machines.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 19,
+        "section": "body",
+        "sentence_id": "p19_s6"
+      },
+      "text": "Step 4: Creating a TTP-based Behavioral Profile One of the key components of threat hunting is to create a TTP-based behavioral profile of the threat actor in question.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 21,
+        "section": "body",
+        "sentence_id": "p21_s1"
+      },
+      "text": "Hostname1 is the hostname that was used for the C2 server targeting the telecommunications providers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 22,
+        "section": "body",
+        "sentence_id": "p22_s7"
+      },
+      "text": "These domains were actually related to different telecommunications providers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 26,
+        "section": "body",
+        "sentence_id": "p26_s2"
+      },
+      "text": "When it comes to attributing Operation Soft Cell, we are unable to achieve 100% certainty with regard to the identity of the threat actor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 26,
+        "section": "body",
+        "sentence_id": "p26_s3"
+      },
+      "text": "The threat actor behind Operation Soft Cell is likely state-sponsored.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 26,
+        "section": "body",
+        "sentence_id": "p26_s5"
+      },
+      "text": "After following the above attribution model and carefully reviewing the data, we are able to narrow down the suspect list to three known APT groups, all of which are known to be linked to China- APT10, APT27, and DragonOK.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 26,
+        "section": "body",
+        "sentence_id": "p26_s6"
+      },
+      "text": "Having found multiple similarities to previous attacks, it is our estimation that the threat actor behind these attacks is likely linked to APT10, or at the very least, to a threat actor that shares tools, techniques, motive and infrastructural preferences with those of APT10.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "The initial indicator of the attack was a malicious web shell that was detected on an IIS server, coming out of the w3wp.exe process. An investigation of the web shell, later classified as a modified version of the China Chopper web shell, uncovered several attack phases and TTPs. The threat actor was able to leverage the web shell to run reconnaissance commands, steal credentials, and deploy other tools.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_150",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "Following the reconnaissance phase, the threat actor attempted to dump credentials stored on the compromised machines. The most common credential stealing tool used by the threat actor was a modified mimikatz that dumps NTLM hashes. This version of mimikatz did not require any command line arguments, most likely in an attempt to avoid detection based on command-line auditing. The dumped hashes were used to authenticate to other machines via pass the hash. We renamed this sample to maybemimi.exe .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "Reverse engineering shows the similarity between maybemimi.exe and mimikatz.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "Reg.exe is being spawned from a shell process.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_154",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "The strain of PIVY in this attack used a DLL side-loading technique to stealthily load itself into memory. To accomplish this, it exploited a trusted and signed application. The PIVY payload was dropped along with the trusted and signed Samsung tool ( RunHelp.exe ) in the following manner:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "tool and added a fake DLL with the same name as a legitimate DLL ( ssMUIDLL.dll) , which is required by the application. 3. The DLL contains a PIVY stager, which is then loaded by the Samsung tool. 4. After the fake DLL was loaded by the Samsung tool, it decrypted a blob payload in the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_156",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "In later stages of the attack, the threat actor deployed two other custom-built web shells. From these web shells, they launched reconnaissance commands, stole data, and dropped additional tools including portqry.exe, renamed cmd.exe, winrar, and the notorious hTran.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_157",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "rar.exe a -k -r -s -m1 -[password] [REDACTED].rar [REDACTED].temp rar.exe a -k -r -s -m1 -[password] [REDACTED].rar [REDACTED].csv rar a -r -[password] [REDACTED].rar sam system ntds.dit",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_159",
+      "evidence_type": "report_text",
+      "report_id": "Cybereason_Operation-SoftCell-Telecom(06-25-2019)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r1"
+      },
+      "text": "A modified version of Nbtscan was used to identify available NetBIOS name servers locally or over the network. Multiple Windows built-in tools were used for various tasks, including whoami, net.exe, ipconfig, netstat, portqry, and more. WMI and PowerShell commands were used for various tasks. 3. RAT",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_154",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_tool_RunHelp",
+        "ent_file_RunHelp.exe",
+        "ent_tool_RunHelp.exe"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_159",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_tool_Portqry",
+        "ent_file_net.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_156",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_tool_Portqry",
+        "ent_file_portqry.exe",
+        "ent_threatactor_portqry.exe",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_tool_Portqry",
+        "ent_file_portqry.exe",
+        "ent_threatactor_portqry.exe",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_tool_RunHelp",
+        "ent_file_RunHelp.exe",
+        "ent_tool_RunHelp.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_85",
+      "page": 19,
+      "candidate_entity_ids": [
+        "ent_tool_Portqry",
+        "ent_file_net.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_62",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_file_rar.exe",
+        "ent_file_REDACTED_.csv",
+        "ent_file_REDACTED_.rar",
+        "ent_file_REDACTED_.temp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_157",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_file_rar.exe",
+        "ent_file_REDACTED_.csv",
+        "ent_file_REDACTED_.rar",
+        "ent_file_REDACTED_.temp"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

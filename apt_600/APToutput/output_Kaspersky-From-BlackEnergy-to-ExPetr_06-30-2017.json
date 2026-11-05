@@ -1,0 +1,1065 @@
+{
+  "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+  "title": "A gut feeling of old acquaintances, new tools, and a common battleground",
+  "source": "ESET",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017).pdf",
+    "file_path": "/root/APTtext/Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 9164,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_TeleBots",
+      "type": "ThreatActor",
+      "name": "TeleBots",
+      "normalized_name": "TeleBots",
+      "aliases": [
+        "BlackEnergy"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_4",
+        "ev_5",
+        "ev_7"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_1",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ExPetr",
+      "type": "Malware",
+      "name": "ExPetr",
+      "normalized_name": "ExPetr",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_17",
+        "ev_3",
+        "ev_4"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "family": "ExPetr",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_1",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [
+        "Petya"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_KillDisk",
+      "type": "Malware",
+      "name": "KillDisk",
+      "normalized_name": "KillDisk",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "family": "KillDisk",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Wannacry",
+      "type": "Malware",
+      "name": "Wannacry",
+      "normalized_name": "Wannacry",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_21"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "family": "Wannacry",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_BlackEnergy",
+      "type": "ThreatActor",
+      "name": "BlackEnergy",
+      "normalized_name": "BlackEnergy",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_17",
+        "ev_4",
+        "ev_5"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_1",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_TeleBots"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+      "type": "SHA256",
+      "name": "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+      "normalized_name": "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80",
+      "type": "SHA256",
+      "name": "11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80",
+      "normalized_name": "11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_368d5c536832b843c6de2513baf7b11bcafea1647c65df7b6f2648840fa50f75",
+      "type": "SHA256",
+      "name": "368d5c536832b843c6de2513baf7b11bcafea1647c65df7b6f2648840fa50f75",
+      "normalized_name": "368d5c536832b843c6de2513baf7b11bcafea1647c65df7b6f2648840fa50f75",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "368d5c536832b843c6de2513baf7b11bcafea1647c65df7b6f2648840fa50f75",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6",
+      "type": "SHA256",
+      "name": "5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6",
+      "normalized_name": "5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_A6a167e214acd34b4084237ba7f6476d2e999849281aa5b1b3f92138c7d91c7a",
+      "type": "SHA256",
+      "name": "A6a167e214acd34b4084237ba7f6476d2e999849281aa5b1b3f92138c7d91c7a",
+      "normalized_name": "A6a167e214acd34b4084237ba7f6476d2e999849281aa5b1b3f92138c7d91c7a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "A6a167e214acd34b4084237ba7f6476d2e999849281aa5b1b3f92138c7d91c7a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_Edbc90c217eebabb7a9b618163716f430098202e904ddc16ce9db994c6509310",
+      "type": "SHA256",
+      "name": "Edbc90c217eebabb7a9b618163716f430098202e904ddc16ce9db994c6509310",
+      "normalized_name": "Edbc90c217eebabb7a9b618163716f430098202e904ddc16ce9db994c6509310",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "Edbc90c217eebabb7a9b618163716f430098202e904ddc16ce9db994c6509310",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_F52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95",
+      "type": "SHA256",
+      "name": "F52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95",
+      "normalized_name": "F52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "F52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_F9f3374d89baf1878854f1700c8d5a2e5cf40de36071d97c6b9ff6b55d837fca",
+      "type": "SHA256",
+      "name": "F9f3374d89baf1878854f1700c8d5a2e5cf40de36071d97c6b9ff6b55d837fca",
+      "normalized_name": "F9f3374d89baf1878854f1700c8d5a2e5cf40de36071d97c6b9ff6b55d837fca",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "value": "F9f3374d89baf1878854f1700c8d5a2e5cf40de36071d97c6b9ff6b55d837fca",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_shutdown.exe",
+      "type": "File",
+      "name": "shutdown.exe",
+      "normalized_name": "shutdown.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "file_name": "shutdown.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_threatactor_BlackEnergy_APT",
+      "type": "ThreatActor",
+      "name": "BlackEnergy APT",
+      "normalized_name": "BlackEnergy APT",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_Lazarus",
+      "type": "ThreatActor",
+      "name": "Lazarus",
+      "normalized_name": "Lazarus",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2",
+        "ev_21"
+      ],
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_BlackEnergy",
+      "tail_id": "ent_threatactor_TeleBots",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_ExPetr",
+      "tail_id": "ent_file_shutdown.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_TeleBots",
+      "tail_id": "ent_malware_ExPetr",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_4",
+        "ev_1",
+        "ev_6",
+        "ev_10",
+        "ev_43",
+        "ev_44",
+        "ev_5",
+        "ev_7",
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, aliases_seen=blackenergy, headline_or_event_use; report_use_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_4"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_TeleBots",
+      "tail_id": "ent_malware_KillDisk",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_4",
+        "ev_5"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=blackenergy; report_use_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_4"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_TeleBots",
+      "tail_id": "ent_malware_Wannacry",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_1",
+        "ev_44"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "aliases_seen=blackenergy",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "ExPetr executes shutdown.exe",
+      "evidence_ids": [
+        "ev_28"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "uses_malware",
+      "summary": "TeleBots uses_malware ExPetr",
+      "evidence_ids": [
+        "ev_4",
+        "ev_1",
+        "ev_6"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "TeleBots uses_malware KillDisk",
+      "evidence_ids": [
+        "ev_4",
+        "ev_5"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "TeleBots uses_malware Wannacry",
+      "evidence_ids": [
+        "ev_1",
+        "ev_44"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "securelist.com /from-blackenergy-to-expetr/78937/ As in the case of Wannacry, attribution is very difficult and finding links with previously known malware is challenging.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "In the case of Wannacry, Google’s Neel Mehta was able to identify a code fragment which became the most important clue in the story, and was later confirmed by further evidence, showing Wannacry as a pet project of the Lazarus group .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "To date, nobody has been able to find any significant code sharing between ExPetr/Petya and older malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Analyzing the Similarities At the beginning of the ExPetr outbreak, one of our team members pointed to the fact that the specific list of extensions used by ExPetr is very similar to the one used by BlackEnergy’s KillDisk ransomware from 2015 and 2016 ( Anton Cherepanov from ESET made the same observation on Twitter).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The BlackEnergy APT is a sophisticated threat actor that is known to have used at least one zero day, coupled with destructive tools, and code geared towards attacking ICS systems.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "Going back to the hunt for similarities, here’s how the targeted extensions lists looks in ExPetr and a version of a wiper used by the BE APT group in 2015:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "ExPetr 2015 BlackEnergy wiper sample 3ds, .7z, .accdb, .ai, .asp, .aspx, .avhd, .back, .bak, .c, .cfg, .conf, .cpp, .cs, .ctl, .dbf, .disk, .djvu, .doc, .docx, .dwg, .eml, .fdb, .gz, .h, .hdd, .kdbx, .mail, .mdb, .msg, .nrg, .ora, .ost, .ova, .ovf, .pdf, .php, .pmf, .ppt, .pptx, .pst, .pvi, .py, .pyc, .rar, .rtf, .sln, .sql, .tar, .vbox, .vbs, .vcb, .vdi, .vfd, .vmc, .vmdk, .vmsd, .vmx, .vsdx, .vsv, .work, .xls",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Together, we tried to build a list of features that we could use to make a YARA rule to detect both ExPetr and BlackEnergy wipers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "When run on our extensive (read: very big) malware collection, the YARA rule above fires on BlackEnergy and ExPetr samples only .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "Looking back at other high profile cases, such as the Bangladesh Bank Heist or Wannacry, there were few facts linking them to the Lazarus group .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "//shutdown.exe /r /f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "When run on our extensive (read: very big) malware collection, the YARA rule above fires on BlackEnergy and ExPetr samples only . Unsurprisingly, when used alone, each string can generate false positives or catch other unrelated malware. However, when combined together in this fashion, they become very precise . The technique of grouping generic or popular strings together into unique combinations is one of the most effective methods for writing powerful Yara rules.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r5"
+      },
+      "text": "This low confidence but persistent hunch is what motivates us to ask other researchers around the world to join us in investigating these similarities and attempt to discover more facts about the origin of ExPetr/Petya. Looking back at other high profile cases, such as the Bangladesh Bank Heist or Wannacry, there were few facts linking them to the Lazarus group . In time, more evidence appeared and allowed us, and others, to link them together with high confidence. Further research can be crucial to connecting the dots, or, disproving these theories.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r7"
+      },
+      "text": "027cc450ef5f8c5f653329641ec1fed91f694e0d229928963b30f6b0d7d3a745",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r8"
+      },
+      "text": "11b7b8a7965b52ebb213b023b6772dd2c76c66893fc96a18a9a33c8cf125af80",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "5d2b1abc7c35de73375dd54a4ec5f0b060ca80a1831dac46ad411b4fe4eac4c6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "F52869474834be5a6b5df7f8f0c46cbc7e9b22fa5cb30bee0f363ec6eb056b95",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "368d5c536832b843c6de2513baf7b11bcafea1647c65df7b6f2648840fa50f75",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "A6a167e214acd34b4084237ba7f6476d2e999849281aa5b1b3f92138c7d91c7a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "Edbc90c217eebabb7a9b618163716f430098202e904ddc16ce9db994c6509310",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky-From-BlackEnergy-to-ExPetr(06-30-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "F9f3374d89baf1878854f1700c8d5a2e5cf40de36071d97c6b9ff6b55d837fca",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_malware_ExPetr",
+        "ent_malware_KillDisk",
+        "ent_threatactor_BlackEnergy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_malware_ExPetr",
+        "ent_threatactor_BlackEnergy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_43",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_malware_ExPetr",
+        "ent_threatactor_BlackEnergy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_threatactor_BlackEnergy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_malware_ExPetr",
+        "ent_malware_Wannacry",
+        "ent_threatactor_BlackEnergy",
+        "ent_domain_securelist.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_malware_ExPetr",
+        "ent_threatactor_BlackEnergy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_TeleBots",
+        "ent_malware_ExPetr",
+        "ent_threatactor_BlackEnergy"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_ExPetr",
+        "ent_malware_Wannacry"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

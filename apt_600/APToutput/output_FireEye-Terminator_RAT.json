@@ -1,0 +1,1397 @@
+{
+  "report_id": "FireEye-Terminator_RAT",
+  "title": "Evasive Tactics: Terminator RAT",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "FireEye-Terminator_RAT.pdf",
+    "file_path": "/root/APTtext/FireEye-Terminator_RAT.pdf",
+    "source_type": "pdf",
+    "char_length": 8085,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_DW20",
+      "type": "Malware",
+      "name": "DW20",
+      "normalized_name": "DW20",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_18",
+        "ev_5",
+        "ev_7"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "family": "DW20",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_18",
+        "ev_7",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_HELO-STX-1",
+      "type": "Malware",
+      "name": "HELO-STX-1",
+      "normalized_name": "HELO-STX-1",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "family": "HELO-STX-1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_WinData",
+      "type": "Malware",
+      "name": "WinData",
+      "normalized_name": "WinData",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_32",
+        "ev_35"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "family": "WinData",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Evasive_Tactics",
+      "type": "Campaign",
+      "name": "Evasive Tactics",
+      "normalized_name": "Evasive Tactics",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "FireEye-Terminator_RAT",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2012-0158",
+      "type": "CVE",
+      "name": "CVE-2012-0158",
+      "normalized_name": "CVE-2012-0158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_57",
+        "ev_60"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_57",
+        "ev_60"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_liumingzhen.zapto.org",
+      "type": "Domain",
+      "name": "liumingzhen.zapto.org",
+      "normalized_name": "liumingzhen.zapto.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_27",
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "liumingzhen.zapto.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_34",
+        "ev_27",
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_catlovers.25u.com",
+      "type": "Domain",
+      "name": "catlovers.25u.com",
+      "normalized_name": "catlovers.25u.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29",
+        "ev_58"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "catlovers.25u.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_liumingzhen.myftp.org",
+      "type": "Domain",
+      "name": "liumingzhen.myftp.org",
+      "normalized_name": "liumingzhen.myftp.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_27"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "liumingzhen.myftp.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ipv4_123.51.208.142",
+      "type": "IPv4",
+      "name": "123.51.208.142",
+      "normalized_name": "123.51.208.142",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29",
+        "ev_58"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "123.51.208.142",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_123.51.208.69",
+      "type": "IPv4",
+      "name": "123.51.208.69",
+      "normalized_name": "123.51.208.69",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "123.51.208.69",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_01da7213940a74c292d09ebe17f1bd01",
+      "type": "MD5",
+      "name": "01da7213940a74c292d09ebe17f1bd01",
+      "normalized_name": "01da7213940a74c292d09ebe17f1bd01",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "01da7213940a74c292d09ebe17f1bd01",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_50d5e73ff8a0693ed2ee2d320af3b304",
+      "type": "MD5",
+      "name": "50d5e73ff8a0693ed2ee2d320af3b304",
+      "normalized_name": "50d5e73ff8a0693ed2ee2d320af3b304",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "50d5e73ff8a0693ed2ee2d320af3b304",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7B18E1F0CE0CB7EEA990859EF6DB810C",
+      "type": "MD5",
+      "name": "7B18E1F0CE0CB7EEA990859EF6DB810C",
+      "normalized_name": "7B18E1F0CE0CB7EEA990859EF6DB810C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "7B18E1F0CE0CB7EEA990859EF6DB810C",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_93F51B957DA86BDE1B82934E73B10D9D",
+      "type": "MD5",
+      "name": "93F51B957DA86BDE1B82934E73B10D9D",
+      "normalized_name": "93F51B957DA86BDE1B82934E73B10D9D",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "93F51B957DA86BDE1B82934E73B10D9D",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a130b2e578d82409021b3c9ceda657b7",
+      "type": "MD5",
+      "name": "a130b2e578d82409021b3c9ceda657b7",
+      "normalized_name": "a130b2e578d82409021b3c9ceda657b7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_56"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "a130b2e578d82409021b3c9ceda657b7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bfc96694731f3cf39bcad6e0716c5746",
+      "type": "MD5",
+      "name": "bfc96694731f3cf39bcad6e0716c5746",
+      "normalized_name": "bfc96694731f3cf39bcad6e0716c5746",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "value": "bfc96694731f3cf39bcad6e0716c5746",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_DW20.exe",
+      "type": "File",
+      "name": "DW20.exe",
+      "normalized_name": "DW20.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44",
+        "ev_48",
+        "ev_49",
+        "ev_52"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "file_name": "DW20.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_44",
+        "ev_48",
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "DW20"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_sss.exe",
+      "type": "File",
+      "name": "sss.exe",
+      "normalized_name": "sss.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15",
+        "ev_50",
+        "ev_51",
+        "ev_53"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "file_name": "sss.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_50",
+        "ev_15",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost_.exe",
+      "type": "File",
+      "name": "svchost_.exe",
+      "normalized_name": "svchost_.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15",
+        "ev_46",
+        "ev_47",
+        "ev_50"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "file_name": "svchost_.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_47",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_WinData.DLL",
+      "type": "File",
+      "name": "WinData.DLL",
+      "normalized_name": "WinData.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_61"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "file_name": "WinData.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "HELO-STX-1"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file__.doc",
+      "type": "File",
+      "name": "幹 !.doc",
+      "normalized_name": "幹 !.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_36",
+        "ev_62"
+      ],
+      "report_id": "FireEye-Terminator_RAT",
+      "file_name": "幹 !.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "FireEye-Terminator_RAT",
+      "type": "communicates_with",
+      "head_id": "ent_malware_HELO-STX-1",
+      "tail_id": "ent_domain_liumingzhen.zapto.org",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "FireEye-Terminator_RAT",
+      "type": "drops",
+      "head_id": "ent_malware_DW20",
+      "tail_id": "ent_file_DW20.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "primary_evidence_id": "ev_49",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_49"
+      },
+      "head": {
+        "id": "ent_malware_DW20",
+        "type": "Malware",
+        "name": "DW20",
+        "normalized_name": "DW20",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_14",
+          "ev_18",
+          "ev_5",
+          "ev_7"
+        ],
+        "report_id": "FireEye-Terminator_RAT",
+        "family": "DW20",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_14",
+        "supporting_evidence_ids": [
+          "ev_18",
+          "ev_7",
+          "ev_5"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DW20.exe",
+        "type": "File",
+        "name": "DW20.exe",
+        "normalized_name": "DW20.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_44",
+          "ev_48",
+          "ev_49",
+          "ev_52"
+        ],
+        "report_id": "FireEye-Terminator_RAT",
+        "file_name": "DW20.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_49",
+        "supporting_evidence_ids": [
+          "ev_44",
+          "ev_48",
+          "ev_52"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "DW20"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "FireEye-Terminator_RAT",
+      "type": "exploits",
+      "head_id": "ent_campaign_Evasive_Tactics",
+      "tail_id": "ent_cve_CVE-2012-0158",
+      "head_type": "Campaign",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_43",
+        "ev_57"
+      ],
+      "primary_evidence_id": "ev_43",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0003",
+      "type": "exploits",
+      "summary": "Evasive Tactics exploits CVE-2012-0158",
+      "evidence_ids": [
+        "ev_43",
+        "ev_57"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "drops",
+      "summary": "DW20 drops DW20.exe",
+      "evidence_ids": [
+        "ev_49"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "communicates_with",
+      "summary": "HELO-STX-1 communicates_with liumingzhen.zapto.org",
+      "evidence_ids": [
+        "ev_35"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "As shown in Figure 1, the adversary sends a malicious Word document, “103.doc” (md5: malware installer named “DW20.exe”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "It evades sandbox by terminating and removing itself (DW20.exe) after installing.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "DW20.exe was found to be the installation executable file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "It will first create its working folders configurations and executable files (svchost_.exe and sss.exe) and the latter is used to store the shortcut link files.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "After installation, DW20.exe deletes and terminates itself.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "The two malicious domains found were “liumingzhen.zapto.org” and “liumingzhen.myftp.org”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "This particular sample is configured to one of two command and control servers: liumingzhen.zapto.org / 123.51.208.69 liumingzhen.myftp.org / 123.51.208.69",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "catlovers.25u.com / 123.51.208.142 The command and control servers for both samples resolved to IP addresses in the same class C network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "vulnerability in Microsoft Office (CVE-2012-0158), however, the payload in this case was a different malware family known as WinData.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "server, liumingzhen.zapto.org, but the callback is quite different:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "XYZ /WinData.DLL?HELO-STX-1*1[IP Address]*[Computer Name]*0605[MAC:[Mac Address]]$ In a separate case where liumingzhen.zapto.org has been used as the command and control server, the payload was neither WinData nor Terminator RAT, but another type of malware known as",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "The sample we analyzed in August 2012 for this case was “ 幹 !.doc” (md5:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "a130b2e578d82409021b3c9ceda657b7), that exploits CVE-2012-0158, which subsequently drops a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "malware installer named “DW20.exe”. This particular malware is interesting because of the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r5"
+      },
+      "text": "The RAT (svchost_.exe) will collaborate with its relay (sss.exe) to communicate with the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r6"
+      },
+      "text": "of svchost_.exe to 40MB.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "1. DW20.exe (MD5: 7B18E1F0CE0CB7EEA990859EF6DB810C)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "DW20.exe was found to be the installation executable file. It will first create its working folders",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "configurations and executable files (svchost_.exe and sss.exe) and the latter is used to store the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "The executable file “sss.exe” was found to be the decrypted form of the resource named 140 with",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "After installation, DW20.exe deletes and terminates itself. The malwares will only run after reboot.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "2. sss.exe (MD5: 93F51B957DA86BDE1B82934E73B10D9D)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "The Terminator sample we analyzed, “103.doc” (md5: a130b2e578d82409021b3c9ceda657b7) was",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "The sample we analyzed (md5: 50d5e73ff8a0693ed2ee2d320af3b304) exploits CVE-2012-0158",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "catlovers.25u.com / 123.51.208.142",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "The malicious attachment “ 標案資料 .doc” (md5: bfc96694731f3cf39bcad6e0716c5746) exploited a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "vulnerability in Microsoft Office (CVE-2012-0158), however, the payload in this case was a different",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "XYZ /WinData.DLL?HELO-STX-1*1[IP Address]*[Computer Name]*0605[MAC:[Mac Address]]$",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "Protux. The sample we analyzed in August 2012 for this case was “ 幹 !.doc” (md5:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "FireEye-Terminator_RAT",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "01da7213940a74c292d09ebe17f1bd01).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_35",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_HELO-STX-1",
+        "ent_malware_WinData",
+        "ent_domain_liumingzhen.zapto.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_WinData",
+        "ent_cve_CVE-2012-0158"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_15",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_sss.exe",
+        "ent_file_svchost_.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_liumingzhen.zapto.org",
+        "ent_domain_liumingzhen.myftp.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_sss.exe",
+        "ent_file_svchost_.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_sss.exe",
+        "ent_file_svchost_.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_HELO-STX-1",
+        "ent_malware_WinData"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_18",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_DW20",
+        "ent_file_DW20.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_domain_liumingzhen.zapto.org",
+        "ent_domain_liumingzhen.myftp.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

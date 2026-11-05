@@ -1,0 +1,132 @@
+{
+  "report_id": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022)",
+  "title": "VajraEleph from South Asia - Cyber espionage against Pakistani military personnel revealed",
+  "source": null,
+  "published_date": "2022-03-30",
+  "report_metadata": {
+    "file_name": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022).pdf",
+    "file_path": "/root/APTtext/QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 18196,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_victim_Pakistani_military_personnel",
+      "type": "Victim",
+      "name": "Pakistani military personnel",
+      "normalized_name": "Pakistani military personnel",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Pakistani_military_personnel_revealed",
+      "type": "Victim",
+      "name": "Pakistani military personnel revealed",
+      "normalized_name": "Pakistani military personnel revealed",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_mp.weixin.qq.com",
+      "type": "Domain",
+      "name": "mp.weixin.qq.com",
+      "normalized_name": "mp.weixin.qq.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022)",
+      "value": "mp.weixin.qq.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "mp.weixin.qq.com /s/B0ElRhbqLzs-wGQh79fTww",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "QAX_VajraEleph-Cyber-espionage-against-Pakistani-military(03-30-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Attack target _ The King Kong Elephant Group has obvious intentions to steal military intelligence , mainly targeting Pakistani military personnel , affecting dozens of military personnel who have been involved in several units .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_victim_Pakistani_military_personnel",
+        "ent_victim_Pakistani_military_personnel_revealed"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

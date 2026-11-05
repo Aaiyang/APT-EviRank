@@ -1,0 +1,563 @@
+{
+  "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+  "title": "Feike Hacquebord (Senior Threat Researcher) Update on Pawn Storm: New Targets and Politically Motivated Campaigns",
+  "source": null,
+  "published_date": "January 12, 2018",
+  "report_metadata": {
+    "file_name": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018).pdf",
+    "file_path": "/root/APTtext/TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018).pdf",
+    "source_type": "pdf",
+    "char_length": 7685,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_ADFS",
+      "type": "ThreatActor",
+      "name": "ADFS",
+      "normalized_name": "ADFS",
+      "aliases": [
+        "Active Directory Federation Services"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_15",
+        "ev_17",
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_C_Major",
+      "type": "ThreatActor",
+      "name": "C Major",
+      "normalized_name": "C Major",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27",
+        "ev_28",
+        "ev_29"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_26",
+        "ev_28",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Pawn_Storm",
+      "type": "ThreatActor",
+      "name": "Pawn Storm",
+      "normalized_name": "Pawn Storm",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_13",
+        "ev_3",
+        "ev_6"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_3",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Active_Directory_Federation_Services",
+      "type": "ThreatActor",
+      "name": "Active Directory Federation Services",
+      "normalized_name": "Active Directory Federation Services",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_15",
+        "ev_17",
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_ADFS"
+    },
+    {
+      "id": "ent_domain_adfs-senate.email",
+      "type": "Domain",
+      "name": "adfs-senate.email",
+      "normalized_name": "adfs-senate.email",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "adfs-senate.email",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_adfs.senate.qov.info",
+      "type": "Domain",
+      "name": "adfs.senate.qov.info",
+      "normalized_name": "adfs.senate.qov.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "adfs.senate.qov.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_biathlovvorld.com",
+      "type": "Domain",
+      "name": "biathlovvorld.com",
+      "normalized_name": "biathlovvorld.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "biathlovvorld.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_chmail.ir.udelivered.tk",
+      "type": "Domain",
+      "name": "chmail.ir.udelivered.tk",
+      "normalized_name": "chmail.ir.udelivered.tk",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "chmail.ir.udelivered.tk",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_fil-luge.com",
+      "type": "Domain",
+      "name": "fil-luge.com",
+      "normalized_name": "fil-luge.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "fil-luge.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_fisski.ca",
+      "type": "Domain",
+      "name": "fisski.ca",
+      "normalized_name": "fisski.ca",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "fisski.ca",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_iihf.eu",
+      "type": "Domain",
+      "name": "iihf.eu",
+      "normalized_name": "iihf.eu",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "iihf.eu",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mail-ibu.eu",
+      "type": "Domain",
+      "name": "mail-ibu.eu",
+      "normalized_name": "mail-ibu.eu",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "mail-ibu.eu",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_webmail-ibsf.org",
+      "type": "Domain",
+      "name": "webmail-ibsf.org",
+      "normalized_name": "webmail-ibsf.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "value": "webmail-ibsf.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Active_Directory_Federation_Services",
+      "tail_id": "ent_threatactor_ADFS",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15",
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_15",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "blog.trendmicro.com /trendlabs-security-intelligence/update-pawn-storm-new-targets-politically-motivated-campaigns/ In the second half of 2017 Pawn Storm, an extremely active espionage actor group, didn’t shy away from continuing their brazen attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Pawn Storm has a large toolset full of social engineering tricks, malware and exploits, and therefore doesn’t need much innovation apart from occasionally using their own zero-days and quickly abusing software vulnerabilities shortly after a security patch is released.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "We can often closely relate current and old Pawn Storm campaigns using data that spans more than four years, possibly because the actors in the group follow a script when setting up an attack.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "Political targets In the week of the 2017 presidential elections in Iran, Pawn Storm set up a phishing site targeting chmail.ir webmail users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "Beginning in June 2017, phishing sites were set up mimicking the ADFS (Active Directory Federation Services) of the U.S.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s9"
+      },
+      "text": "Senate is not reachable on the open internet, however phishing of users’ credentials on an ADFS server that is behind a firewall still makes sense.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "In 2016, we published a report on C Major, an espionage group that primarily targets the Indian military.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "By digging deeper into C Major’s activities, we found that this actor group not only attacks the Indian military, but also has dedicated botnets for compromised targets in Iranian universities, Afghanistan, and Pakistan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "Recently, we have witnessed C Major also showing some interest in compromising military and diplomatic targets in the West.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s9"
+      },
+      "text": "It is only a matter of time before actors like C Major begin attempting to influence public opinion in foreign countries, as well.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "TrendMicro_Update-PawnStorm-Politically-Motivated-Campaigns(01-12-2018)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s11"
+      },
+      "text": "Indicators of Compromise (IoCs): adfs[.]senate[.]group adfs-senate[.]email adfs-senate[.]services adfs.senate[.]qov[.]info chmail.ir[.]udelivered[.]tk webmail-ibsf[.]org fil-luge[.]com biathlovvorld[.]com mail-ibu[.]eu fisski[.]ca iihf[.]eu",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_15",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_ADFS",
+        "ent_threatactor_Active_Directory_Federation_Services"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

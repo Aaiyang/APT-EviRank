@@ -1,0 +1,2363 @@
+{
+  "report_id": "Project_Cobra_Analysis",
+  "title": "Analysis of Project Cobra",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Project_Cobra_Analysis.pdf",
+    "file_path": "/root/APTtext/Project_Cobra_Analysis.pdf",
+    "source_type": "pdf",
+    "char_length": 19296,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_CAST-128",
+      "type": "Malware",
+      "name": "CAST-128",
+      "normalized_name": "CAST-128",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "family": "CAST-128",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_pipes",
+      "type": "Malware",
+      "name": "pipes",
+      "normalized_name": "pipes",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_44",
+        "ev_49"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "family": "pipes",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Tavdig",
+      "type": "Malware",
+      "name": "Tavdig",
+      "normalized_name": "Tavdig",
+      "aliases": [
+        "Epic Backdoor",
+        "Wipbot"
+      ],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_6",
+        "ev_64"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "family": "Tavdig",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Uroburos",
+      "type": "Malware",
+      "name": "Uroburos",
+      "normalized_name": "Uroburos",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_2",
+        "ev_39",
+        "ev_57"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "family": "Uroburos",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_2",
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Wipbot",
+      "type": "Malware",
+      "name": "Wipbot",
+      "normalized_name": "Wipbot",
+      "aliases": [
+        "Symantec"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Wipbot",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Carbon_System",
+      "type": "Tool",
+      "name": "Carbon System",
+      "normalized_name": "Carbon System",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_3",
+        "ev_65",
+        "ev_66"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_66",
+        "ev_65",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Carbon System",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_The_Epic_Turla_Operation",
+      "type": "Campaign",
+      "name": "The Epic Turla Operation",
+      "normalized_name": "The Epic Turla Operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Project_Cobra_Analysis",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Backdoor.TurlaCarbon.A",
+      "type": "Malware",
+      "name": "Backdoor.TurlaCarbon.A",
+      "normalized_name": "Backdoor.TurlaCarbon.A",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_27",
+        "ev_29",
+        "ev_57"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "family": "Backdoor.TurlaCarbon.A",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_29",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_Epic_Backdoor",
+      "type": "Malware",
+      "name": "Epic Backdoor",
+      "normalized_name": "Epic Backdoor",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_6",
+        "ev_64"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Tavdig"
+    },
+    {
+      "id": "ent_malware_Symantec",
+      "type": "Malware",
+      "name": "Symantec",
+      "normalized_name": "Symantec",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Wipbot"
+    },
+    {
+      "id": "ent_malware_Win32.Trojan.Cobra.B",
+      "type": "Malware",
+      "name": "Win32.Trojan.Cobra.B",
+      "normalized_name": "Win32.Trojan.Cobra.B",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_27",
+        "ev_30",
+        "ev_57"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "family": "Win32.Trojan.Cobra.B",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_30",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_ModuleStart",
+      "type": "Tool",
+      "name": "ModuleStart",
+      "normalized_name": "ModuleStart",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "tool_name": "ModuleStart",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_61paris.fr",
+      "type": "Domain",
+      "name": "61paris.fr",
+      "normalized_name": "61paris.fr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "61paris.fr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_115",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_jucheafrica.com",
+      "type": "Domain",
+      "name": "jucheafrica.com",
+      "normalized_name": "jucheafrica.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_123",
+        "ev_124"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "jucheafrica.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_123",
+      "supporting_evidence_ids": [
+        "ev_124"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_tazohor.com",
+      "type": "Domain",
+      "name": "tazohor.com",
+      "normalized_name": "tazohor.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_125",
+        "ev_126",
+        "ev_127",
+        "ev_128"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "tazohor.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_125",
+      "supporting_evidence_ids": [
+        "ev_126",
+        "ev_128",
+        "ev_127"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.bing.com",
+      "type": "Domain",
+      "name": "www.bing.com",
+      "normalized_name": "www.bing.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_129",
+        "ev_130"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "www.bing.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [
+        "ev_130"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.yahoo.com",
+      "type": "Domain",
+      "name": "www.yahoo.com",
+      "normalized_name": "www.yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_130"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "www.yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_url_http_s_s_",
+      "type": "URL",
+      "name": "http://%s/%s?",
+      "normalized_name": "http://%s/%s?",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_120",
+        "ev_24"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "http://%s/%s?",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_120"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_554450c1ecb925693fedbb9e56702646",
+      "type": "MD5",
+      "name": "554450c1ecb925693fedbb9e56702646",
+      "normalized_name": "554450c1ecb925693fedbb9e56702646",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_118"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "554450c1ecb925693fedbb9e56702646",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_118",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_cb1b68d9971c2353c2d6a8119c49b51f",
+      "type": "MD5",
+      "name": "cb1b68d9971c2353c2d6a8119c49b51f",
+      "normalized_name": "cb1b68d9971c2353c2d6a8119c49b51f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "cb1b68d9971c2353c2d6a8119c49b51f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e6d1dcc6c2601e592f2b03f35b06fa8f",
+      "type": "MD5",
+      "name": "e6d1dcc6c2601e592f2b03f35b06fa8f",
+      "normalized_name": "e6d1dcc6c2601e592f2b03f35b06fa8f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "value": "e6d1dcc6c2601e592f2b03f35b06fa8f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_adobeupdater.exe",
+      "type": "File",
+      "name": "adobeupdater.exe",
+      "normalized_name": "adobeupdater.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "adobeupdater.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_CARBON.dll",
+      "type": "File",
+      "name": "CARBON.dll",
+      "normalized_name": "CARBON.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_58"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "CARBON.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "CARBON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_carbon_system.dll",
+      "type": "File",
+      "name": "carbon_system.dll",
+      "normalized_name": "carbon_system.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_32",
+        "ev_82"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "carbon_system.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_firefox.exe",
+      "type": "File",
+      "name": "firefox.exe",
+      "normalized_name": "firefox.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_88",
+        "ev_93"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "firefox.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_88",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_iexplore.exe",
+      "type": "File",
+      "name": "iexplore.exe",
+      "normalized_name": "iexplore.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_110",
+        "ev_88",
+        "ev_93",
+        "ev_99"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "iexplore.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_110",
+      "supporting_evidence_ids": [
+        "ev_99",
+        "ev_88",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ipvpn.dll",
+      "type": "File",
+      "name": "ipvpn.dll",
+      "normalized_name": "ipvpn.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_18",
+        "ev_73",
+        "ev_76"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "ipvpn.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_76",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_kmsvc.dll",
+      "type": "File",
+      "name": "kmsvc.dll",
+      "normalized_name": "kmsvc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_73",
+        "ev_78"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "kmsvc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_78"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_miniport.dat",
+      "type": "File",
+      "name": "miniport.dat",
+      "normalized_name": "miniport.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_38",
+        "ev_72",
+        "ev_84",
+        "ev_85"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "miniport.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_85",
+      "supporting_evidence_ids": [
+        "ev_38",
+        "ev_72",
+        "ev_84"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mozilla.exe",
+      "type": "File",
+      "name": "mozilla.exe",
+      "normalized_name": "mozilla.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "mozilla.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msimghlp.dll",
+      "type": "File",
+      "name": "msimghlp.dll",
+      "normalized_name": "msimghlp.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15",
+        "ev_74"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "msimghlp.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msimn.exe",
+      "type": "File",
+      "name": "msimn.exe",
+      "normalized_name": "msimn.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_88",
+        "ev_93"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "msimn.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_88",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msximl.dll",
+      "type": "File",
+      "name": "msximl.dll",
+      "normalized_name": "msximl.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_107",
+        "ev_52",
+        "ev_92",
+        "ev_96"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "msximl.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [
+        "ev_52",
+        "ev_107",
+        "ev_96"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_netscape.exe",
+      "type": "File",
+      "name": "netscape.exe",
+      "normalized_name": "netscape.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "netscape.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_outlook.exe",
+      "type": "File",
+      "name": "outlook.exe",
+      "normalized_name": "outlook.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_88",
+        "ev_93"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "outlook.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_88",
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_qavsrc.dat",
+      "type": "File",
+      "name": "qavsrc.dat",
+      "normalized_name": "qavsrc.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "qavsrc.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_srsvc.dll",
+      "type": "File",
+      "name": "srsvc.dll",
+      "normalized_name": "srsvc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_19",
+        "ev_73",
+        "ev_77"
+      ],
+      "report_id": "Project_Cobra_Analysis",
+      "file_name": "srsvc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_77",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_opera.exe",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "File",
+      "name": "opera.exe",
+      "normalized_name": "opera.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "opera.exe",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_chrome.exe",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "File",
+      "name": "chrome.exe",
+      "normalized_name": "chrome.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "chrome.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "alias_of",
+      "head_id": "ent_malware_Epic_Backdoor",
+      "tail_id": "ent_malware_Tavdig",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "This framework is generally downloaded and dropped by a reconnaissance malware for example Tavdig, aka Wipbot (Symantec) or also Epic Backdoor (Kaspersky)."
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "alias_of",
+      "head_id": "ent_malware_Symantec",
+      "tail_id": "ent_malware_Tavdig",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "This framework is generally downloaded and dropped by a reconnaissance malware for example Tavdig, aka Wipbot (Symantec) or also Epic Backdoor (Kaspersky)."
+      },
+      "head": {
+        "id": "ent_malware_Symantec",
+        "type": "Malware",
+        "name": "Symantec",
+        "normalized_name": "Symantec",
+        "aliases": [],
+        "confidence": 0.85,
+        "evidence_ids": [
+          "ev_6"
+        ],
+        "report_id": "Project_Cobra_Analysis",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_malware_Wipbot"
+      },
+      "tail": {
+        "id": "ent_malware_Tavdig",
+        "type": "Malware",
+        "name": "Tavdig",
+        "normalized_name": "Tavdig",
+        "aliases": [
+          "Epic Backdoor",
+          "Wipbot"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_6",
+          "ev_64"
+        ],
+        "report_id": "Project_Cobra_Analysis",
+        "family": "Tavdig",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_6",
+        "supporting_evidence_ids": [
+          "ev_64"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "alias_of",
+      "head_id": "ent_malware_Symantec",
+      "tail_id": "ent_malware_Wipbot",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "alias_of",
+      "head_id": "ent_malware_Tavdig",
+      "tail_id": "ent_malware_Wipbot",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "This framework is generally downloaded and dropped by a reconnaissance malware for example Tavdig, aka Wipbot (Symantec) or also Epic Backdoor (Kaspersky)."
+      },
+      "head": {
+        "id": "ent_malware_Tavdig",
+        "type": "Malware",
+        "name": "Tavdig",
+        "normalized_name": "Tavdig",
+        "aliases": [
+          "Epic Backdoor",
+          "Wipbot"
+        ],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_6",
+          "ev_64"
+        ],
+        "report_id": "Project_Cobra_Analysis",
+        "family": "Tavdig",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_6",
+        "supporting_evidence_ids": [
+          "ev_64"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Wipbot",
+        "type": "Malware",
+        "name": "Wipbot",
+        "normalized_name": "Wipbot",
+        "aliases": [
+          "Symantec"
+        ],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_6"
+        ],
+        "report_id": "Project_Cobra_Analysis",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_6",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family": "Wipbot",
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Project_Cobra_Analysis",
+      "type": "alias_of",
+      "head_id": "ent_malware_Wipbot",
+      "tail_id": "ent_malware_Tavdig",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_6",
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Snake/Turla) and Agent.BTZ.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "We estimate that Carbon System was developed after Agent.BTZ and before Uroburos.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "This framework is generally downloaded and dropped by a reconnaissance malware for example Tavdig, aka Wipbot (Symantec) or also Epic Backdoor (Kaspersky).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Due to these characteristics, the experts of the G DATA SecurityLabs decided to publish an analysis of the solutions detect this file as Backdoor.TurlaCarbon.A (Engine A) and Win32.Trojan.Cobra.B (Engine B).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "We can find the compilation path in a file embedded in the Looking at this, we can easily identify that “Carbon System” is a part of the “Cobra” project.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "This library is registered as a service; stage 2: the file name is msimghlp.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "File Name Service Name Display Name Description (Copy&Paste from the binary) ipvpn.dll ipvpn Virtual Private Network Routing Service",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Enforcement technologies that use virtual networks may not function properly without this service srsvc.dll srservice",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "To be able to find the random installation path, the dropper modifies a legitimate .inf file (also chosen randomly) in %SystemRoot%\\inf\\ to add the following information to the end of the file:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Stage 1: loader MD5: 43e896ede6fe025ee90f7f27c6d376a4G DATA security solutions detect this as Backdoor.TurlaCarbon.A (Engine A) and Win32.Trojan.Cobra.A (Engine B).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Stage 2: the orchestrator Version: 3.71 G DATA security solutions detect this threat as Backdoor.TurlaCarbon.A (Engine A) and",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "Win32.Trojan.Cobra.B (Engine B).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "The internal name of the library is carbon_system.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "Configuration file The configuration file (miniport.dat) is used by the second and the third stage.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "The file is encrypted with the CAST-128 algorithm , the same algorithm that has been used by Uroburos to encrypt the file systems.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s4"
+      },
+      "text": "The process name where stage 3 will be injected (iproc); Communication via named pipes The orchestrator creates two named pipes in order to communicate with stage 3 or to receive messages from an external machine:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "A fifth thread is used to create and read the data sent to the named pipes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "For the orchestrator a module is a library file with a specific export called ModuleStart().",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s5"
+      },
+      "text": "Finally a seventh thread is used to inject stage 3 (msximl.dll) into the browsers and email clients.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s6"
+      },
+      "text": "The list of the targeted processes is stored in the configuration file: iproc = iexplore.exe,outlook.exe,msimn.exe,firefox.exe,opera.exe,chrome.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "Version: 3.62 This threat is detected by G DATA security solutions as Backdoor.TurlaCarbon.A (Engine A) and Win32.Trojan.Cobra.B (Engine B).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s3"
+      },
+      "text": "The internal name of the library is CARBON.dll.The purpose of this stage is to communicate to the outside via web requests.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "The malware uses the same technique as Tavdig does to receive orders.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s2"
+      },
+      "text": "Conclusion This analysis shows us that the actors behind Uroburos, Agent.BTZ and the Carbon System are skilled and still active.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s1"
+      },
+      "text": "configuration of the named pipe name; Carbon System is a real extensible framework with a plugin management.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "framework dropped by the file with the md5: cb1b68d9971c2353c2d6a8119c49b51f. G DATA security",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "miniport.dat: configuration file;",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "stage 1: the file name is randomly chosen from ipvpn.dll,srsvc.dll or kmsvc.dll. This library is",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "stage 2: the file name is msimghlp.dll. It’s the orchestrator of the malware (called “system” by the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "ipvpn.dll ipvpn",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "srsvc.dll srservice",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "kmsvc.dll hkmsvc",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Md5: e6d1dcc6c2601e592f2b03f35b06fa8f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "carbon_system.dll.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "%randompath%\\qavsrc.dat: log file",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "%randompath%\\miniport.dat: configuration file",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "The configuration file (miniport.dat) is used by the second and the third stage. The file is encrypted with",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "iproc = iexplore.exe,outlook.exe,msimn.exe,firefox.exe,opera.exe,chrome.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "ex = #,netscape.exe,mozilla.exe,adobeupdater.exe,chrome.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "Finally a seventh thread is used to inject stage 3 (msximl.dll) into the browsers and email clients. The list",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "iproc = iexplore.exe,outlook.exe,msimn.exe,firefox.exe,opera.exe,chrome.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "US\\msximl.dll|",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r6"
+      },
+      "text": "Explorer\\iexplore.exe\" :2204|",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_107",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r14"
+      },
+      "text": "US\\msximl.dll|",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r17"
+      },
+      "text": "Explorer\\iexplore.exe\" :2196|",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r22"
+      },
+      "text": "30/12/14|08:41:40|acce6511-ba11-fa11-f0047d1|u|W|-1|0|61paris.fr:/|nrt|",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "Md5: 554450c1ecb925693fedbb9e56702646",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "Stage 3 is called “user” by the authors. The internal name of the library is CARBON.dll.The purpose of this",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_120",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "The malware can also generate POST requests. Here is an example of the pattern:POST hxxp://%s/%s?",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb123"
+      },
+      "text": "address3 = jucheafrica.com:80:/wp-includes/class-wp-edit.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb124"
+      },
+      "text": "azohor.com:80:/wp-includes/feed-rss-comments.php address3 = jucheafrica.com:80:/wp-includes/class-wp-edit.php address4 = 61paris.fr:80:/wp-includes/ms-set.php [CW_INET_RESULTS] qua",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb125"
+      },
+      "text": "address2 = tazohor.com:80:/wp-includes/feed-rss-comments.php",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb126"
+      },
+      "text": "30/12/14|08:41:39|acce6511-ba11-fa11-f0047d1|u|W|-1|0|tazohor.com:/|nrt|",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb127"
+      },
+      "text": "nect| 30/12/14|08:41:39|acce6511-ba11-fa11-f0047d1|u|W|-1|0|tazohor.com:/|nrt| 30/12/14|08:41:40|acce6511-ba11-fa11-f0047d1|u|W|-1|0|61paris.fr:/|nrt| 30/12/14|08:41:40|acce6511-ba",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb128"
+      },
+      "text": "= soheylistore.ir:80:/modules/mod_feed/feed.php address2 = tazohor.com:80:/wp-includes/feed-rss-comments.php address3 = jucheafrica.com:80:/wp-includes/class-wp-edit.php address4 =",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb129"
+      },
+      "text": "www.bing.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "Project_Cobra_Analysis",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb130"
+      },
+      "text": "on is available by contacting: www.google.com www.yahoo.com www.bing.com update.microsoft.com windowsupdate.microsoft.com microsoft.com In case the connection does not work, the fo",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Tavdig",
+        "ent_malware_Wipbot",
+        "ent_malware_Epic_Backdoor",
+        "ent_malware_Symantec"
+      ],
+      "rule_relation_count": 3,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_CAST-128",
+        "ent_malware_Uroburos"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_firefox.exe",
+        "ent_file_iexplore.exe",
+        "ent_file_msimn.exe",
+        "ent_file_outlook.exe",
+        "ent_file_opera.exe",
+        "ent_file_chrome.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_88",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_firefox.exe",
+        "ent_file_iexplore.exe",
+        "ent_file_msimn.exe",
+        "ent_file_outlook.exe",
+        "ent_file_opera.exe",
+        "ent_file_chrome.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_93",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_firefox.exe",
+        "ent_file_iexplore.exe",
+        "ent_file_msimn.exe",
+        "ent_file_outlook.exe",
+        "ent_file_opera.exe",
+        "ent_file_chrome.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_89",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_adobeupdater.exe",
+        "ent_file_mozilla.exe",
+        "ent_file_netscape.exe",
+        "ent_file_chrome.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Uroburos",
+        "ent_tool_Carbon_System"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_malware_Uroburos",
+        "ent_tool_Carbon_System"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_ipvpn.dll",
+        "ent_file_srsvc.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_124",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_61paris.fr",
+        "ent_domain_jucheafrica.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_127",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_domain_61paris.fr",
+        "ent_domain_tazohor.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_128",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_jucheafrica.com",
+        "ent_domain_tazohor.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_130",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_domain_www.bing.com",
+        "ent_domain_www.yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 9,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_74",
+      "page": 2,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_119",
+      "page": 11,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

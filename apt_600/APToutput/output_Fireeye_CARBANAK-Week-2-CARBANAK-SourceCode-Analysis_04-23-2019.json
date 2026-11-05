@@ -1,0 +1,722 @@
+{
+  "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+  "title": "CARBANAK Week Part Two: Continuing the CARBANAK Source Code Analysis",
+  "source": null,
+  "published_date": "April 23, 2019",
+  "report_metadata": {
+    "file_name": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019).pdf",
+    "file_path": "/root/APTtext/Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 13460,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_CARBANAK",
+      "type": "Malware",
+      "name": "CARBANAK",
+      "normalized_name": "CARBANAK",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "family": "CARBANAK",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Carberp",
+      "type": "Malware",
+      "name": "Carberp",
+      "normalized_name": "Carberp",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_3"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "family": "Carberp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_FIN7",
+      "type": "Malware",
+      "name": "FIN7",
+      "normalized_name": "FIN7",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_22",
+        "ev_25",
+        "ev_27"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "family": "FIN7",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_IPs",
+      "type": "ThreatActor",
+      "name": "IPs",
+      "normalized_name": "IPs",
+      "aliases": [
+        "Table 4"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_17",
+        "ev_18",
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_18",
+        "ev_19",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Cobalt_Strike",
+      "type": "Tool",
+      "name": "Cobalt Strike",
+      "normalized_name": "Cobalt Strike",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Cobalt Strike",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_aaa.stage.4463714.news.meteonovosti.info",
+      "type": "Domain",
+      "name": "aaa.stage.4463714.news.meteonovosti.info",
+      "normalized_name": "aaa.stage.4463714.news.meteonovosti.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "aaa.stage.4463714.news.meteonovosti.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_aaaabbbbccccc.org",
+      "type": "Domain",
+      "name": "aaaabbbbccccc.org",
+      "normalized_name": "aaaabbbbccccc.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "aaaabbbbccccc.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_akamai-technologies.org",
+      "type": "Domain",
+      "name": "akamai-technologies.org",
+      "normalized_name": "akamai-technologies.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "akamai-technologies.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_comixed.org",
+      "type": "Domain",
+      "name": "comixed.org",
+      "normalized_name": "comixed.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "comixed.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hhklhlkhkjhjkjk.org",
+      "type": "Domain",
+      "name": "hhklhlkhkjhjkjk.org",
+      "normalized_name": "hhklhlkhkjhjkjk.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "hhklhlkhkjhjkjk.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_qwqreererwere.com",
+      "type": "Domain",
+      "name": "qwqreererwere.com",
+      "normalized_name": "qwqreererwere.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "qwqreererwere.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_stats10-google.com",
+      "type": "Domain",
+      "name": "stats10-google.com",
+      "normalized_name": "stats10-google.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "value": "stats10-google.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_file_lsass.exe",
+      "type": "File",
+      "name": "lsass.exe",
+      "normalized_name": "lsass.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_37"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "file_name": "lsass.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "EUDC",
+        "CARBANAK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_NDProxy.sys",
+      "type": "File",
+      "name": "NDProxy.sys",
+      "normalized_name": "NDProxy.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_34"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "file_name": "NDProxy.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Win32k.sys",
+      "type": "File",
+      "name": "Win32k.sys",
+      "normalized_name": "Win32k.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_12",
+        "ev_36"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "file_name": "Win32k.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "EUDC"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The evasion mirrors a technique used in Carberp that replaces remote heap allocation and a call to CreateRemoteThread with memory mapping and queueing of an asynchronous procedure call via QueueUserAPC.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "NDProxy 2013- 5065 NDProxy.sys exploit originally authored by secniu UACBypass UAC bypass by DLL hijacking found in Carberp",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "Win32k.sys exploit derived from code that can be found online BlackEnergy2 AppCompat shim-based UAC bypass EUDC 2010- 4398",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "UAC bypass by EUDC exploitation The CARBANAK source code also contains code copied wholesale from Mimikatz including the sekurlsa module for dumping passwords from lsass.exe and Terminal Services patching code to allow multiple remote desktop protocol connections.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Removable: False Protected: False Here is a pivot shared by @mrdavi51 demonstrating how this self-signed certificate is still hosted on several IPs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Did you know the public cert in part two — mrdavi5 (@mrdavi51) April 24, 2019 FireEye has observed the certificate most recently being served on the following IPs (Table 4):",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Several of these IPs have been observed hosting Cobalt Strike BEACON payloads and METERPRETER listeners.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "Virtual Private Server (VPS) IPs may change hands frequently and additional malicious activity hosted on these IPs, even in close time proximity, may not be associated with the same users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s1"
+      },
+      "text": "Network Based Indicators The source code and binaries contained multiple Network-Based Indicators (NBIs) having significant overlap with CARBANAK backdoor activity and FIN7 operations previously observed and documented by FireEye.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s3"
+      },
+      "text": "NBI Status Threat Group Association comixed[.]org Commented out Earlier CARBANAK activity 194.146.180[.]40 Commented out",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s4"
+      },
+      "text": "Earlier CARBANAK activity aaaabbbbccccc[.]org Active stats10-google[.]com Commented out FIN7 192.168.0[.]100:700 Active 80.84.49[.]50:443 Commented out 52.11.125[.]44:443 Commented out 85.25.84[.]223 Commented out qwqreererwere[.]com Active",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "akamai-technologies[.]org Commented out Earlier CARBANAK activity 192.168.0[.]100:700 Active 37.1.212[.]100:700 Commented out 188.138.98[.]105:710 Commented out",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s2"
+      },
+      "text": "Earlier CARBANAK activity hhklhlkhkjhjkjk[.]org Compiled 192.168.0[.]100:700 Compiled aaa.stage.4463714.news.meteonovosti[.]info Compiled DNS infrastructure overlap with later FIN7 associated POWERSOURCE activity 193.203.48[.]23:800 Active Earlier CARBANAK activity",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "NDProxy.sys exploit originally authored by secniu",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "Win32k.sys exploit derived from code that can be found online",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-2-CARBANAK-SourceCode-Analysis(04-23-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "The CARBANAK source code also contains code copied wholesale from Mimikatz including the sekurlsa module for dumping passwords from lsass.exe and Terminal Services patching code to allow multiple remote desktop protocol connections.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_10",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Carberp",
+        "ent_file_NDProxy.sys"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_malware_FIN7"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_malware_FIN7"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_malware_FIN7"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_file_lsass.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_file_lsass.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "report_id": "OperationClandestineWolf",
+  "title": "Activity Overview In the last several weeks, APT3 actors launched a large-scale phishing campaign against organizations in the following industries:",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "OperationClandestineWolf.pdf",
+    "file_path": "/root/APTtext/OperationClandestineWolf.pdf",
+    "source_type": "pdf",
+    "char_length": 8840,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT3",
+      "type": "ThreatActor",
+      "name": "APT3",
+      "normalized_name": "APT3",
+      "aliases": [
+        "UPS"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_28",
+        "ev_9"
+      ],
+      "report_id": "OperationClandestineWolf",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_28",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_organizations_in_the_following_industries",
+      "type": "Victim",
+      "name": "organizations in the following industries",
+      "normalized_name": "organizations in the following industries",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "OperationClandestineWolf",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_UPS",
+      "type": "ThreatActor",
+      "name": "UPS",
+      "normalized_name": "UPS",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_28"
+      ],
+      "report_id": "OperationClandestineWolf",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT3"
+    },
+    {
+      "id": "ent_campaign_Operation_Clandestine_Fox",
+      "type": "Campaign",
+      "name": "Operation Clandestine Fox",
+      "normalized_name": "Operation Clandestine Fox",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "OperationClandestineWolf",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [
+        "ev_1"
+      ],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "historical_context"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "OperationClandestineWolf",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_UPS",
+      "tail_id": "ent_threatactor_APT3",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "APT3 The China-based threat group FireEye tracks as APT3, aka UPS, is responsible for this exploit and the activity identified in our previous blog post, Operation Clandestine Fox ."
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "OperationClandestineWolf",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "APT3 The China-based threat group FireEye tracks as APT3, aka UPS, is responsible for this exploit and the activity identified in our previous blog post, Operation Clandestine Fox .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "OperationClandestineWolf",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "This group is one of the more sophisticated threat groups that FireEye Threat Intelligence tracks, and they have a history of introducing new browser-based zero-day exploits (e.g., Internet Explorer, Firefox, and Adobe Flash Player).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "OperationClandestineWolf",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Attack Vector The phishing emails used by APT3 during this campaign were extremely generic in nature, almost appearing to be spam.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "OperationClandestineWolf",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Conclusion Once APT3 has access to a target network, they work quickly and they are extremely proficient at enumerating and moving laterally to maintain their access.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT3",
+        "ent_threatactor_UPS"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT3",
+        "ent_victim_organizations_in_the_following_industries"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

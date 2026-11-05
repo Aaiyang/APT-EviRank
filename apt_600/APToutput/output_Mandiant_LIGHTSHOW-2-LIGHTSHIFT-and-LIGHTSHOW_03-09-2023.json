@@ -1,0 +1,805 @@
+{
+  "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+  "title": "Stealing the LIGHTSHOW (Part Two) — LIGHTSHIFT and LIGHTSHOW",
+  "source": "Mandiant",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023).pdf",
+    "file_path": "/root/APTtext/Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 9494,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_UNC2970",
+      "type": "ThreatActor",
+      "name": "UNC2970",
+      "normalized_name": "UNC2970",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_18",
+        "ev_26",
+        "ev_8"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_8",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_LIGHTSHIFT",
+      "type": "Malware",
+      "name": "LIGHTSHIFT",
+      "normalized_name": "LIGHTSHIFT",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "family": "LIGHTSHIFT",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_LIGHTSHOW",
+      "type": "Malware",
+      "name": "LIGHTSHOW",
+      "normalized_name": "LIGHTSHOW",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "family": "LIGHTSHOW",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2022-42455",
+      "type": "CVE",
+      "name": "CVE-2022-42455",
+      "normalized_name": "CVE-2022-42455",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_ioc_sha256_175eed7a4c6de9c3156c7ae16ae85c554959ec350f1c8aaa6dfe8c7e99de3347",
+      "type": "SHA256",
+      "name": "175eed7a4c6de9c3156c7ae16ae85c554959ec350f1c8aaa6dfe8c7e99de3347",
+      "normalized_name": "175eed7a4c6de9c3156c7ae16ae85c554959ec350f1c8aaa6dfe8c7e99de3347",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "175eed7a4c6de9c3156c7ae16ae85c554959ec350f1c8aaa6dfe8c7e99de3347",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ce501fd5c96223fb17d3fed0da310ea121ad83c463849059418639d211933aa4",
+      "type": "SHA256",
+      "name": "ce501fd5c96223fb17d3fed0da310ea121ad83c463849059418639d211933aa4",
+      "normalized_name": "ce501fd5c96223fb17d3fed0da310ea121ad83c463849059418639d211933aa4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "ce501fd5c96223fb17d3fed0da310ea121ad83c463849059418639d211933aa4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ee5057da3e38b934dae15644c6eb24507fb5a187630c75725075b24a70065452",
+      "type": "SHA256",
+      "name": "ee5057da3e38b934dae15644c6eb24507fb5a187630c75725075b24a70065452",
+      "normalized_name": "ee5057da3e38b934dae15644c6eb24507fb5a187630c75725075b24a70065452",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "ee5057da3e38b934dae15644c6eb24507fb5a187630c75725075b24a70065452",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7e6e2ed880c7ab115fca68136051f9ce",
+      "type": "MD5",
+      "name": "7e6e2ed880c7ab115fca68136051f9ce",
+      "normalized_name": "7e6e2ed880c7ab115fca68136051f9ce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "7e6e2ed880c7ab115fca68136051f9ce",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9176f177bd88686c6beb29d8bb05f20c",
+      "type": "MD5",
+      "name": "9176f177bd88686c6beb29d8bb05f20c",
+      "normalized_name": "9176f177bd88686c6beb29d8bb05f20c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "9176f177bd88686c6beb29d8bb05f20c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ad452d161782290ad5004b2c9497074f",
+      "type": "MD5",
+      "name": "ad452d161782290ad5004b2c9497074f",
+      "normalized_name": "ad452d161782290ad5004b2c9497074f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "ad452d161782290ad5004b2c9497074f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_def6f91614cb47888f03658b28a1bda6",
+      "type": "MD5",
+      "name": "def6f91614cb47888f03658b28a1bda6",
+      "normalized_name": "def6f91614cb47888f03658b28a1bda6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "value": "def6f91614cb47888f03658b28a1bda6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_SB_SMBUS_SDK.dll",
+      "type": "File",
+      "name": "SB_SMBUS_SDK.dll",
+      "normalized_name": "SB_SMBUS_SDK.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_33",
+        "ev_35",
+        "ev_7"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "file_name": "SB_SMBUS_SDK.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_35",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "LIGHTSHOW"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file__SB_SMBUS_SDK.dll",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "type": "File",
+      "name": "_SB_SMBUS_SDK.dll",
+      "normalized_name": "_SB_SMBUS_SDK.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "_SB_SMBUS_SDK.dll",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_threatactor_Lazarus_Group",
+      "type": "ThreatActor",
+      "name": "Lazarus Group",
+      "normalized_name": "Lazarus Group",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    },
+    {
+      "id": "ent_threatactor_UNC3944",
+      "type": "ThreatActor",
+      "name": "UNC3944",
+      "normalized_name": "UNC3944",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "related_actor_observation",
+      "demotion_reason": "background_actor_without_operational_relation"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "type": "loads",
+      "head_id": "ent_file__SB_SMBUS_SDK.dll",
+      "tail_id": "ent_malware_LIGHTSHOW",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_UNC2970",
+      "tail_id": "ent_malware_LIGHTSHOW",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_8",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_8",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; headline_actor_tool",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "LIGHTSHOW is a utility that was used by UNC2970 to manipulate kernel data-structures and represents an advancement in DPRK’s capabilities to evade detection. To accomplish this, LIGHTSHOW drops a legitimate version of a driver with known vulnerabilities, with a SHA256 hash of"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "loads",
+      "summary": "_SB_SMBUS_SDK.dll loads LIGHTSHOW",
+      "evidence_ids": [
+        "ev_33"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "uses_malware",
+      "summary": "UNC2970 uses_malware LIGHTSHOW",
+      "evidence_ids": [
+        "ev_8",
+        "ev_30"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "In part one on North Korea's UNC2970, we covered UNC2970’s tactics, techniques and procedures (TTPs) and tooling that they used over the course of multiple intrusions.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "<random>_SB_SMBUS_SDK.dll and drivers were created on disk.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "LIGHTSHOW is a utility that was used by UNC2970 to manipulate kernel data-structures and represents an advancement in DPRK’s capabilities to evade detection.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "This technique has been utilized by adversaries ranging from financial actors, such as UNC3944, to espionage actors like UNC2970, which shows its usefulness during intrusion operations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "AHNLab recently released a report on activity tracked as Lazarus Group that focused largely on the use of BYOVD.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Throughout several incidents we responded to in 2022 that involved UNC2970, we observed them utilizing a small set of vulnerable drivers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s9"
+      },
+      "text": "The continued targeting of security researchers by UNC2970 also provides an interesting way that the group can potentially continue to expand their toolset to gain an upper hand with BYOVD.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "<random>_SB_SMBUS_SDK.dll and drivers were created on disk.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "LIGHTSHOW is a utility that was used by UNC2970 to manipulate kernel data-structures and represents an advancement in DPRK’s capabilities to evade detection. To accomplish this, LIGHTSHOW drops a legitimate version of a driver with known vulnerabilities, with a SHA256 hash of",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "175eed7a4c6de9c3156c7ae16ae85c554959ec350f1c8aaa6dfe8c7e99de3347 to",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "<service name> is the same as the chosen filename without appended mgr . It then creates a registry key with the value name ImagePath , which points to the path of the driver . The sample then loads the driver using NtLoadDriver . LIGHTSHOW drops and loads a dummy DLL %temp%\\<random>_SB_SMBUS_SDK.dll to register itself to the driver as a legitimate caller.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "<random\\>_SB_SMBUS_SDK.dll .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "def6f91614cb47888f03658b28a1bda6 XOR’d LIGHTSHIFT",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "Mandiant has worked to detect and mitigate BYOVD techniques for a number of years and has worked closely with industry allies to report vulnerabilities when discovered. During research being carried out on UNC2970 we discovered a vulnerable driver that the actor had access to, but did not know was vulnerable - essentially making it a 0day in the wild but not being actively exploited. This was verified through our Offensive Task Force who subsequently carried out a notification to the affected organization and reported the vulnerability to MITRE, which was assigned CVE-2022-42455.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "9176f177bd88686c6beb29d8bb05f20c LIGHTSHIFT",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "ad452d161782290ad5004b2c9497074f LIGHTSHOW",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "7e6e2ed880c7ab115fca68136051f9ce ENE Driver",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "sha256 = \"ce501fd5c96223fb17d3fed0da310ea121ad83c463849059418639d211933aa4\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_LIGHTSHOW-2-LIGHTSHIFT-and-LIGHTSHOW(03-09-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "md5 = \"ee5057da3e38b934dae15644c6eb24507fb5a187630c75725075b24a70065452\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_33",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_LIGHTSHOW",
+        "ent_file__SB_SMBUS_SDK.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_UNC2970",
+        "ent_malware_LIGHTSHOW"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_LIGHTSHIFT",
+        "ent_malware_LIGHTSHOW"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 4,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_UNC2970",
+        "ent_malware_LIGHTSHOW"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_UNC2970",
+        "ent_cve_CVE-2022-42455"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

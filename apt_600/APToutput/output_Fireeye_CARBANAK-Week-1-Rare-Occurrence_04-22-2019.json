@@ -1,0 +1,456 @@
+{
+  "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+  "title": "CARBANAK Week Part One: A Rare Occurrence",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019).pdf",
+    "file_path": "/root/APTtext/Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 14104,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_FIN7",
+      "type": "ThreatActor",
+      "name": "FIN7",
+      "normalized_name": "FIN7",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_3",
+        "ev_4"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_CARBANAK",
+      "type": "Malware",
+      "name": "CARBANAK",
+      "normalized_name": "CARBANAK",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "family": "CARBANAK",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_pipe-based",
+      "type": "Malware",
+      "name": "pipe-based",
+      "normalized_name": "pipe-based",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "family": "pipe-based",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Control",
+      "type": "ThreatActor",
+      "name": "Control",
+      "normalized_name": "Control",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_18",
+        "ev_20",
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_18",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_botcmd.exe",
+      "type": "File",
+      "name": "botcmd.exe",
+      "normalized_name": "botcmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_28",
+        "ev_58"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "file_name": "botcmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "CARBANAK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_osk.exe",
+      "type": "File",
+      "name": "osk.exe",
+      "normalized_name": "osk.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_57"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "file_name": "osk.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_FIN7",
+      "tail_id": "ent_malware_CARBANAK",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "In 2017, Tom Bennett and Barry Vengerik published Behind the CARBANAK Backdoor, which was the product of a deep and broad analysis of CARBANAK samples and FIN7 activity across several years."
+      },
+      "head": {
+        "id": "ent_threatactor_FIN7",
+        "type": "ThreatActor",
+        "name": "FIN7",
+        "normalized_name": "FIN7",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_3",
+          "ev_4"
+        ],
+        "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_3",
+        "supporting_evidence_ids": [
+          "ev_4"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_CARBANAK",
+        "type": "Malware",
+        "name": "CARBANAK",
+        "normalized_name": "CARBANAK",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+        "family": "CARBANAK",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "uses_malware",
+      "summary": "FIN7 uses_malware CARBANAK",
+      "evidence_ids": [
+        "ev_4"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "It was used to perpetrate millions of dollars in financial crimes, largely by the group we track as FIN7.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "In 2017, Tom Bennett and Barry Vengerik published Behind the CARBANAK Backdoor, which was the product of a deep and broad analysis of CARBANAK samples and FIN7 activity across several years.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "I added Russian language input to an analysis VM and used Microsoft’s on-screen keyboard (osk.exe) to navigate the Cyrillic keyboard layout and look up definitions.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Figure 4 shows a Command and Control (C2) user interface for CARBANAK that I translated.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Down the Rabbit Hole: When Having Source Code Does Not Help In simpler backdoors, a single function evaluates the command ID received from the C2 server and dispatches control to the correct function to carry out the command.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s5"
+      },
+      "text": "CARBANAK’s named pipe-based tasking component is flexible enough to control both inherent command handlers and plugins.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "In fact, not only did we write such a client to aid in analysis and testing, but such a client, named botcmd.exe, was also present in the source dump.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s7"
+      },
+      "text": "Even so, CARBANAK’s tasking component (for handling commands sent by the C2 server) serves as a counter-example.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s8"
+      },
+      "text": "Depending on the C2 protocol used and the command being processed, control flow may take divergent paths through different functions only to converge again",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "I spent several hours on Russian language learning websites to study the pronunciation of Cyrillic characters and Russian words. Then, I looked up the top 600+ words and created a small dictionary. I added Russian language input to an analysis VM and used Microsoft’s on-screen keyboard (osk.exe) to navigate the Cyrillic keyboard layout and look up definitions.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-1-Rare-Occurrence(04-22-2019)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "the possibility of a local client to dispatch commands to CARBANAK without the use of a network. In fact, not only did we write such a client to aid in analysis and testing, but such a client, named botcmd.exe, was also present in the source dump.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_58",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_file_botcmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_FIN7",
+        "ent_malware_CARBANAK"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_malware_pipe-based"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

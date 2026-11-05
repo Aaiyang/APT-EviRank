@@ -1,0 +1,1781 @@
+{
+  "report_id": "The Naikon APT - Securelist",
+  "title": "APT CYBER ESPIONAGE SOCIAL ENGINEERING TARGETED ATTACKS Our recent report, “ The Chronicles of the Hellsing APT: the APT, describing it as “One of the most active APTs in Asia,",
+  "source": null,
+  "published_date": "May 14, 2015",
+  "report_metadata": {
+    "file_name": "The Naikon APT - Securelist.pdf",
+    "file_path": "/root/APTtext/The Naikon APT - Securelist.pdf",
+    "source_type": "pdf",
+    "char_length": 12961,
+    "report_profile": "historical_narrative"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT30",
+      "type": "ThreatActor",
+      "name": "APT30",
+      "normalized_name": "APT30",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Naikon",
+      "type": "ThreatActor",
+      "name": "Naikon",
+      "normalized_name": "Naikon",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11",
+        "ev_28",
+        "ev_30",
+        "ev_34",
+        "ev_31",
+        "ev_33"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_34",
+        "ev_11",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2012-0158",
+      "type": "CVE",
+      "name": "CVE-2012-0158",
+      "normalized_name": "CVE-2012-0158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Naikon",
+      "type": "Campaign",
+      "name": "Naikon",
+      "normalized_name": "Naikon",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_28",
+        "ev_30",
+        "ev_31",
+        "ev_33"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [
+        "ev_30",
+        "ev_31",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_XSControl",
+      "type": "Malware",
+      "name": "XSControl",
+      "normalized_name": "XSControl",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "family": "XSControl",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_admin0805.gnway.net",
+      "type": "Domain",
+      "name": "admin0805.gnway.net",
+      "normalized_name": "admin0805.gnway.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "admin0805.gnway.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_baomoi.coyo.eu",
+      "type": "Domain",
+      "name": "baomoi.coyo.eu",
+      "normalized_name": "baomoi.coyo.eu",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "baomoi.coyo.eu",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_baomoi.vicp.cc",
+      "type": "Domain",
+      "name": "baomoi.vicp.cc",
+      "normalized_name": "baomoi.vicp.cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "baomoi.vicp.cc",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_bkav.imshop.in",
+      "type": "Domain",
+      "name": "bkav.imshop.in",
+      "normalized_name": "bkav.imshop.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "bkav.imshop.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_cipta.kevins.pw",
+      "type": "Domain",
+      "name": "cipta.kevins.pw",
+      "normalized_name": "cipta.kevins.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "cipta.kevins.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_dd.googleoffice.in",
+      "type": "Domain",
+      "name": "dd.googleoffice.in",
+      "normalized_name": "dd.googleoffice.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "dd.googleoffice.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_downloadwindow.imwork.net",
+      "type": "Domain",
+      "name": "downloadwindow.imwork.net",
+      "normalized_name": "downloadwindow.imwork.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "downloadwindow.imwork.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_downloadwindows.imwork.net",
+      "type": "Domain",
+      "name": "downloadwindows.imwork.net",
+      "normalized_name": "downloadwindows.imwork.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "downloadwindows.imwork.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_frankhere.oicp.net",
+      "type": "Domain",
+      "name": "frankhere.oicp.net",
+      "normalized_name": "frankhere.oicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "frankhere.oicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_free.googlenow.in",
+      "type": "Domain",
+      "name": "free.googlenow.in",
+      "normalized_name": "free.googlenow.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "free.googlenow.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_googlemm.vicp.net",
+      "type": "Domain",
+      "name": "googlemm.vicp.net",
+      "normalized_name": "googlemm.vicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "googlemm.vicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_gov.yahoomail.pw",
+      "type": "Domain",
+      "name": "gov.yahoomail.pw",
+      "normalized_name": "gov.yahoomail.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "gov.yahoomail.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_greensky27.vicp.net",
+      "type": "Domain",
+      "name": "greensky27.vicp.net",
+      "normalized_name": "greensky27.vicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "greensky27.vicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_htkg009.gicp.net",
+      "type": "Domain",
+      "name": "htkg009.gicp.net",
+      "normalized_name": "htkg009.gicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "htkg009.gicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_kyawthumyin.xicp.net",
+      "type": "Domain",
+      "name": "kyawthumyin.xicp.net",
+      "normalized_name": "kyawthumyin.xicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "kyawthumyin.xicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_laotel08.vicp.net",
+      "type": "Domain",
+      "name": "laotel08.vicp.net",
+      "normalized_name": "laotel08.vicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "laotel08.vicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_linda.googlenow.in",
+      "type": "Domain",
+      "name": "linda.googlenow.in",
+      "normalized_name": "linda.googlenow.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "linda.googlenow.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_lovethai.vicp.net",
+      "type": "Domain",
+      "name": "lovethai.vicp.net",
+      "normalized_name": "lovethai.vicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_24"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "lovethai.vicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_macstore.vicp.cc",
+      "type": "Domain",
+      "name": "macstore.vicp.cc",
+      "normalized_name": "macstore.vicp.cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "macstore.vicp.cc",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_mlfjcjssl.gicp.net",
+      "type": "Domain",
+      "name": "mlfjcjssl.gicp.net",
+      "normalized_name": "mlfjcjssl.gicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "mlfjcjssl.gicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_moziliafirefox.wicp.net",
+      "type": "Domain",
+      "name": "moziliafirefox.wicp.net",
+      "normalized_name": "moziliafirefox.wicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "moziliafirefox.wicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_myanmartech.vicp.net",
+      "type": "Domain",
+      "name": "myanmartech.vicp.net",
+      "normalized_name": "myanmartech.vicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "myanmartech.vicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_net.googlereader.pw",
+      "type": "Domain",
+      "name": "net.googlereader.pw",
+      "normalized_name": "net.googlereader.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "net.googlereader.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_o.wm.ggpw.pw",
+      "type": "Domain",
+      "name": "o.wm.ggpw.pw",
+      "normalized_name": "o.wm.ggpw.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "o.wm.ggpw.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_oooppp.findmy.pw",
+      "type": "Domain",
+      "name": "oooppp.findmy.pw",
+      "normalized_name": "oooppp.findmy.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "oooppp.findmy.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_oraydns.googlesec.pw",
+      "type": "Domain",
+      "name": "oraydns.googlesec.pw",
+      "normalized_name": "oraydns.googlesec.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "oraydns.googlesec.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_peacesyou.imwork.net",
+      "type": "Domain",
+      "name": "peacesyou.imwork.net",
+      "normalized_name": "peacesyou.imwork.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "peacesyou.imwork.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_phi.yahoomail.pw",
+      "type": "Domain",
+      "name": "phi.yahoomail.pw",
+      "normalized_name": "phi.yahoomail.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "phi.yahoomail.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_pp.googledata.pw",
+      "type": "Domain",
+      "name": "pp.googledata.pw",
+      "normalized_name": "pp.googledata.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "pp.googledata.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_sayakyaw.xicp.net",
+      "type": "Domain",
+      "name": "sayakyaw.xicp.net",
+      "normalized_name": "sayakyaw.xicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "sayakyaw.xicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_telcom.dhtu.info",
+      "type": "Domain",
+      "name": "telcom.dhtu.info",
+      "normalized_name": "telcom.dhtu.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "telcom.dhtu.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_test-user123.vicp.cc",
+      "type": "Domain",
+      "name": "test-user123.vicp.cc",
+      "normalized_name": "test-user123.vicp.cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "test-user123.vicp.cc",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_ubaoyouxiang.gicp.net",
+      "type": "Domain",
+      "name": "ubaoyouxiang.gicp.net",
+      "normalized_name": "ubaoyouxiang.gicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "ubaoyouxiang.gicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_us.googlereader.pw",
+      "type": "Domain",
+      "name": "us.googlereader.pw",
+      "normalized_name": "us.googlereader.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_23"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "us.googlereader.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_vietkey.xicp.net",
+      "type": "Domain",
+      "name": "vietkey.xicp.net",
+      "normalized_name": "vietkey.xicp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "vietkey.xicp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_vietlex.gnway.net",
+      "type": "Domain",
+      "name": "vietlex.gnway.net",
+      "normalized_name": "vietlex.gnway.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23",
+        "ev_24"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "vietlex.gnway.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.ttxvn.net",
+      "type": "Domain",
+      "name": "www.ttxvn.net",
+      "normalized_name": "www.ttxvn.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "www.ttxvn.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_xl.findmy.pw",
+      "type": "Domain",
+      "name": "xl.findmy.pw",
+      "normalized_name": "xl.findmy.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "xl.findmy.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_xl.kevins.pw",
+      "type": "Domain",
+      "name": "xl.kevins.pw",
+      "normalized_name": "xl.kevins.pw",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "xl.kevins.pw",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_yahoo.goodns.in",
+      "type": "Domain",
+      "name": "yahoo.goodns.in",
+      "normalized_name": "yahoo.goodns.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_23"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "yahoo.goodns.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ioc_md5_172fd9cce78de38d8cbcad605e3d6675",
+      "type": "MD5",
+      "name": "172fd9cce78de38d8cbcad605e3d6675",
+      "normalized_name": "172fd9cce78de38d8cbcad605e3d6675",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "172fd9cce78de38d8cbcad605e3d6675",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_93e84075bef7a11832d9c5aa70135dc6",
+      "type": "MD5",
+      "name": "93e84075bef7a11832d9c5aa70135dc6",
+      "normalized_name": "93e84075bef7a11832d9c5aa70135dc6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "93e84075bef7a11832d9c5aa70135dc6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b4a8dc9eb26e727eafb6c8477963829c",
+      "type": "MD5",
+      "name": "b4a8dc9eb26e727eafb6c8477963829c",
+      "normalized_name": "b4a8dc9eb26e727eafb6c8477963829c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "b4a8dc9eb26e727eafb6c8477963829c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d085ba82824c1e61e93e113a705b8e9a",
+      "type": "MD5",
+      "name": "d085ba82824c1e61e93e113a705b8e9a",
+      "normalized_name": "d085ba82824c1e61e93e113a705b8e9a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "d085ba82824c1e61e93e113a705b8e9a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d74a7e7a4de0da503472f1f051b68745",
+      "type": "MD5",
+      "name": "d74a7e7a4de0da503472f1f051b68745",
+      "normalized_name": "d74a7e7a4de0da503472f1f051b68745",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "The Naikon APT - Securelist",
+      "value": "d74a7e7a4de0da503472f1f051b68745",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "recently revealed to be APT30 , but we haven’t discovered any exact matches.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "The Naikon tool of choice generates a special, small, encrypted file which is 8,000 bytes in size, containing code to be injected into the browser along with configuration data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "ID Jakarta linda.googlenow.in ID Jakarta admin0805.gnway.net ID Jakarta free.googlenow.in ID frankhere.oicp.net ID Bandung frankhere.oicp.net",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "ID Bandung telcom.dhtu.info ID Jakarta laotel08.vicp.net JP Tokyo greensky27.vicp.net KH googlemm.vicp.net KH Phnom Penh googlemm.vicp.net",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "MM peacesyou.imwork.net MM sayakyaw.xicp.net MM ubaoyouxiang.gicp.net MM Yangon htkg009.gicp.net MM kyawthumyin.xicp.net",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "MM myanmartech.vicp.net MM test-user123.vicp.cc MY us.googlereader.pw MY net.googlereader.pw MY lovethai.vicp.net MY yahoo.goodns.in",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "MY Putrajaya xl.findmy.pw MY Putrajaya xl.kevins.pw PH Caloocan oraydns.googlesec.pw PH Caloocan gov.yahoomail.pw PH pp.googledata.pw",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "PH xl.findmy.pw PH mlfjcjssl.gicp.net PH o.wm.ggpw.pw PH oooppp.findmy.pw PH cipta.kevins.pw PH phi.yahoomail.pw SG Singapore xl.findmy.pw",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "SG Singapore dd.googleoffice.in VN Hanoi moziliafirefox.wicp.net VN Hanoi bkav.imshop.in VN Hanoi baomoi.coyo.eu VN Dong Ket macstore.vicp.cc",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s5"
+      },
+      "text": "VN Hanoi downloadwindows.imwork.net VN Hanoi vietkey.xicp.net VN Hanoi baomoi.vicp.cc VN Hanoi downloadwindow.imwork.net",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s6"
+      },
+      "text": "VN Binh Duong www.ttxvn.net VN Binh Duong vietlex.gnway.net VN Hanoi www.ttxvn.net VN Hanoi us.googlereader.pw VN Hanoi yahoo.goodns.in",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s7"
+      },
+      "text": "VN Hanoi lovethai.vicp.net VN Hanoi vietlex.gnway.net",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "XSControl is written in .NET with the use of DevExpress:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s1"
+      },
+      "text": "Now let’s do an overview of one Naikon campaign, focusing on country “X”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s3"
+      },
+      "text": "Below is a partial list of organizations affected by Naikon’s “operator X’s” espionage campaign in country X.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s4"
+      },
+      "text": "It was during operator X’s network monitoring that the attackers placed Naikon proxies within the countries’ borders, to cloak and support real-time outbound connections and data exfiltration from high-profile victim organizations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s6"
+      },
+      "text": "Naikon distribute tools such as these across multiple systems in order to regain control if it is lost accidentally and to maintain persistence.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "Naikon APT to register similar-looking email addresses and to spear-phish targets with attachments, links to sites serving malware, and links to google drive.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "standard Word document, but is in fact an CVE-2012-0158",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "d085ba82824c1e61e93e113a705b8e9a 118272",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "b4a8dc9eb26e727eafb6c8477963829c 140800",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "172fd9cce78de38d8cbcad605e3d6675 118784",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "d74a7e7a4de0da503472f1f051b68745 190464",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "The Naikon APT - Securelist",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "93e84075bef7a11832d9c5aa70135dc6 154624",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_18",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_lovethai.vicp.net",
+        "ent_domain_myanmartech.vicp.net",
+        "ent_domain_net.googlereader.pw",
+        "ent_domain_test-user123.vicp.cc",
+        "ent_domain_us.googlereader.pw",
+        "ent_domain_yahoo.goodns.in"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_cipta.kevins.pw",
+        "ent_domain_mlfjcjssl.gicp.net",
+        "ent_domain_o.wm.ggpw.pw",
+        "ent_domain_oooppp.findmy.pw",
+        "ent_domain_phi.yahoomail.pw",
+        "ent_domain_xl.findmy.pw"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_htkg009.gicp.net",
+        "ent_domain_kyawthumyin.xicp.net",
+        "ent_domain_peacesyou.imwork.net",
+        "ent_domain_sayakyaw.xicp.net",
+        "ent_domain_ubaoyouxiang.gicp.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_19",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_gov.yahoomail.pw",
+        "ent_domain_oraydns.googlesec.pw",
+        "ent_domain_pp.googledata.pw",
+        "ent_domain_xl.findmy.pw",
+        "ent_domain_xl.kevins.pw"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_baomoi.coyo.eu",
+        "ent_domain_bkav.imshop.in",
+        "ent_domain_dd.googleoffice.in",
+        "ent_domain_macstore.vicp.cc",
+        "ent_domain_moziliafirefox.wicp.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_15",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_admin0805.gnway.net",
+        "ent_domain_frankhere.oicp.net",
+        "ent_domain_free.googlenow.in",
+        "ent_domain_linda.googlenow.in"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_googlemm.vicp.net",
+        "ent_domain_greensky27.vicp.net",
+        "ent_domain_laotel08.vicp.net",
+        "ent_domain_telcom.dhtu.info"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_baomoi.vicp.cc",
+        "ent_domain_downloadwindow.imwork.net",
+        "ent_domain_downloadwindows.imwork.net",
+        "ent_domain_vietkey.xicp.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_us.googlereader.pw",
+        "ent_domain_vietlex.gnway.net",
+        "ent_domain_www.ttxvn.net",
+        "ent_domain_yahoo.goodns.in"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_24",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_lovethai.vicp.net",
+        "ent_domain_vietlex.gnway.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

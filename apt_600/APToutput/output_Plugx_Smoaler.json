@@ -1,0 +1,2561 @@
+{
+  "report_id": "Plugx_Smoaler",
+  "title": "The PlugX malware revisited:",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Plugx_Smoaler.pdf",
+    "file_path": "/root/APTtext/Plugx_Smoaler.pdf",
+    "source_type": "pdf",
+    "char_length": 13677,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_droppers",
+      "type": "Malware",
+      "name": "droppers",
+      "normalized_name": "droppers",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "family": "droppers",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_IEXPLORE",
+      "type": "Malware",
+      "name": "IEXPLORE",
+      "normalized_name": "IEXPLORE",
+      "aliases": [
+        "IEXPLORE.EXE"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44",
+        "ev_73"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "IEXPLORE"
+      ],
+      "derived_from_file_id": "ent_file_IEXPLORE.EXE",
+      "family": "IEXPLORE",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_persistence",
+      "type": "Malware",
+      "name": "persistence",
+      "normalized_name": "persistence",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "family": "persistence",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_PlugX",
+      "type": "Malware",
+      "name": "PlugX",
+      "normalized_name": "PlugX",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_23",
+        "ev_26",
+        "ev_28"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "family": "PlugX",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_28",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Smoaler",
+      "type": "Malware",
+      "name": "Smoaler",
+      "normalized_name": "Smoaler",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_31",
+        "ev_36",
+        "ev_43",
+        "ev_54"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "family": "Smoaler",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_43",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_tool_Rundll32",
+      "type": "Tool",
+      "name": "Rundll32",
+      "normalized_name": "Rundll32",
+      "aliases": [
+        "rundll32.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_43",
+        "ev_72"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_rundll32.exe",
+      "tool_name": "Rundll32",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2012-0158",
+      "type": "CVE",
+      "name": "CVE-2012-0158",
+      "normalized_name": "CVE-2012-0158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_anti-anti-virus",
+      "type": "Malware",
+      "name": "anti-anti-virus",
+      "normalized_name": "anti-anti-virus",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "family": "anti-anti-virus",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_file_IEXPLORE.EXE",
+      "type": "File",
+      "name": "IEXPLORE.EXE",
+      "normalized_name": "IEXPLORE.EXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44",
+        "ev_73"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "IEXPLORE.EXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "IEXPLORE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_IEXPLORE.EXE",
+      "type": "Malware",
+      "name": "IEXPLORE.EXE",
+      "normalized_name": "IEXPLORE.EXE",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_44",
+        "ev_73"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_IEXPLORE"
+    },
+    {
+      "id": "ent_file_rundll32.exe",
+      "type": "File",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_43",
+        "ev_72"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_rundll32.exe",
+      "type": "Tool",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_43",
+        "ev_72"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Rundll32"
+    },
+    {
+      "id": "ent_domain_dtl.dnsd.me",
+      "type": "Domain",
+      "name": "dtl.dnsd.me",
+      "normalized_name": "dtl.dnsd.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "dtl.dnsd.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dtl.eauto.com",
+      "type": "Domain",
+      "name": "dtl.eauto.com",
+      "normalized_name": "dtl.eauto.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "dtl.eauto.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dtl6.moo.com",
+      "type": "Domain",
+      "name": "dtl6.moo.com",
+      "normalized_name": "dtl6.moo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "dtl6.moo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_nakedsecurity.sophos.com",
+      "type": "Domain",
+      "name": "nakedsecurity.sophos.com",
+      "normalized_name": "nakedsecurity.sophos.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75",
+        "ev_76",
+        "ev_77"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "nakedsecurity.sophos.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_75",
+        "ev_77"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_podcasts.sophos.com",
+      "type": "Domain",
+      "name": "podcasts.sophos.com",
+      "normalized_name": "podcasts.sophos.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "podcasts.sophos.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.cve.mitre.org",
+      "type": "Domain",
+      "name": "www.cve.mitre.org",
+      "normalized_name": "www.cve.mitre.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "www.cve.mitre.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.sophos.com",
+      "type": "Domain",
+      "name": "www.sophos.com",
+      "normalized_name": "www.sophos.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80",
+        "ev_81",
+        "ev_82"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "www.sophos.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_82",
+        "ev_81",
+        "ev_80"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_nakedsecurity.sophos.com_",
+      "type": "URL",
+      "name": "http://nakedsecurity.sophos.com/",
+      "normalized_name": "http://nakedsecurity.sophos.com/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75",
+        "ev_76",
+        "ev_77"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "http://nakedsecurity.sophos.com/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_75",
+        "ev_77"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_nakedsecurity.sophos.com_inside-the-plugx-malware",
+      "type": "URL",
+      "name": "http://nakedsecurity.sophos.com/inside-the-plugx-malware",
+      "normalized_name": "http://nakedsecurity.sophos.com/inside-the-plugx-malware",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75",
+        "ev_77"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "http://nakedsecurity.sophos.com/inside-the-plugx-malware",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_77"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_podcasts.sophos.com_",
+      "type": "URL",
+      "name": "http://podcasts.sophos.com/",
+      "normalized_name": "http://podcasts.sophos.com/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "http://podcasts.sophos.com/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.cve.mitre.org_cgi-bin_cvename.cgi_name_CVE-2012-0158",
+      "type": "URL",
+      "name": "http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0158",
+      "normalized_name": "http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0158",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_www.sophos.com_why-sophos_our-people_technical-papers.aspx",
+      "type": "URL",
+      "name": "http://www.sophos.com/why-sophos/our-people/technical-papers.aspx",
+      "normalized_name": "http://www.sophos.com/why-sophos/our-people/technical-papers.aspx",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "http://www.sophos.com/why-sophos/our-people/technical-papers.aspx",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_56e8c76cd88996da9b88901520f72ebb743e55ff",
+      "type": "SHA1",
+      "name": "56e8c76cd88996da9b88901520f72ebb743e55ff",
+      "normalized_name": "56e8c76cd88996da9b88901520f72ebb743e55ff",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "56e8c76cd88996da9b88901520f72ebb743e55ff",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a99b73b56fe94375ec46e51903f815d86afbd78d",
+      "type": "SHA1",
+      "name": "a99b73b56fe94375ec46e51903f815d86afbd78d",
+      "normalized_name": "a99b73b56fe94375ec46e51903f815d86afbd78d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "a99b73b56fe94375ec46e51903f815d86afbd78d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b2f854e9987bce5d110349a354588568ab49726b",
+      "type": "SHA1",
+      "name": "b2f854e9987bce5d110349a354588568ab49726b",
+      "normalized_name": "b2f854e9987bce5d110349a354588568ab49726b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "b2f854e9987bce5d110349a354588568ab49726b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b84a133cf02eaa7b8a8096e997bda28fc482cf78",
+      "type": "SHA1",
+      "name": "b84a133cf02eaa7b8a8096e997bda28fc482cf78",
+      "normalized_name": "b84a133cf02eaa7b8a8096e997bda28fc482cf78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "b84a133cf02eaa7b8a8096e997bda28fc482cf78",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c093d4cd2390617da58bd412c9219e013de503a3",
+      "type": "SHA1",
+      "name": "c093d4cd2390617da58bd412c9219e013de503a3",
+      "normalized_name": "c093d4cd2390617da58bd412c9219e013de503a3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "value": "c093d4cd2390617da58bd412c9219e013de503a3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_7n5HjV.dll",
+      "type": "File",
+      "name": "7n5HjV.dll",
+      "normalized_name": "7n5HjV.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_71"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "7n5HjV.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RANDOM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_AvastSvc.exe",
+      "type": "File",
+      "name": "AvastSvc.exe",
+      "normalized_name": "AvastSvc.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "AvastSvc.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_avp.exe",
+      "type": "File",
+      "name": "avp.exe",
+      "normalized_name": "avp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "avp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_B6go3s_One.dll",
+      "type": "File",
+      "name": "B6go3s_One.dll",
+      "normalized_name": "B6go3s_One.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_71"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "B6go3s_One.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RANDOM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Backgrounder_on_His_Holiness_the_Karmapa.docx",
+      "type": "File",
+      "name": "Backgrounder on His Holiness the Karmapa.docx",
+      "normalized_name": "Backgrounder on His Holiness the Karmapa.docx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "Backgrounder on His Holiness the Karmapa.docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TIBATIAN",
+        "PROBLEM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_DW20.DLL",
+      "type": "File",
+      "name": "DW20.DLL",
+      "normalized_name": "DW20.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_31",
+        "ev_61",
+        "ev_62"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "DW20.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_25",
+        "ev_31",
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "TEMP",
+        "DW20"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Filenames_Selected_quotes_from_the_book.docx",
+      "type": "File",
+      "name": "Filenames Selected quotes from the book.docx",
+      "normalized_name": "Filenames Selected quotes from the book.docx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "Filenames Selected quotes from the book.docx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TIBATIAN",
+        "PROBLEM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_fsdfwd.exe",
+      "type": "File",
+      "name": "fsdfwd.exe",
+      "normalized_name": "fsdfwd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "fsdfwd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Press_Release_-_Heart_is_Noble_book_launch.doc",
+      "type": "File",
+      "name": "Press Release - Heart is Noble book launch.doc",
+      "normalized_name": "Press Release - Heart is Noble book launch.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "Press Release - Heart is Noble book launch.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TIBATIAN",
+        "PROBLEM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_TIBATIAN_PROBLEM.doc",
+      "type": "File",
+      "name": "TIBATIAN PROBLEM.doc",
+      "normalized_name": "TIBATIAN PROBLEM.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "TIBATIAN PROBLEM.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TIBATIAN",
+        "PROBLEM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_uiWatchDog.exe",
+      "type": "File",
+      "name": "uiWatchDog.exe",
+      "normalized_name": "uiWatchDog.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "uiWatchDog.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vsserv.exe",
+      "type": "File",
+      "name": "vsserv.exe",
+      "normalized_name": "vsserv.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "vsserv.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Why_Tibet_Matters_Now_Oct_1_final_version.doc",
+      "type": "File",
+      "name": "Why Tibet Matters Now Oct 1 final version.doc",
+      "normalized_name": "Why Tibet Matters Now Oct 1 final version.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Plugx_Smoaler",
+      "file_name": "Why Tibet Matters Now Oct 1 final version.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TIBATIAN",
+        "PROBLEM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Plugx_Smoaler",
+      "type": "alias_of",
+      "head_id": "ent_malware_IEXPLORE.EXE",
+      "tail_id": "ent_malware_IEXPLORE",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_44",
+        "ev_73"
+      ],
+      "primary_evidence_id": "ev_44",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Plugx_Smoaler",
+      "type": "alias_of",
+      "head_id": "ent_tool_rundll32.exe",
+      "tail_id": "ent_tool_Rundll32",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_72"
+      ],
+      "primary_evidence_id": "ev_43",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Plugx_Smoaler",
+      "type": "drops",
+      "head_id": "ent_malware_PlugX",
+      "tail_id": "ent_file_DW20.DLL",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "primary_evidence_id": "ev_26",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_26"
+      },
+      "head": {
+        "id": "ent_malware_PlugX",
+        "type": "Malware",
+        "name": "PlugX",
+        "normalized_name": "PlugX",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_1",
+          "ev_23",
+          "ev_26",
+          "ev_28"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "family": "PlugX",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_26",
+        "supporting_evidence_ids": [
+          "ev_23",
+          "ev_28",
+          "ev_1"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DW20.DLL",
+        "type": "File",
+        "name": "DW20.DLL",
+        "normalized_name": "DW20.DLL",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_31",
+          "ev_61",
+          "ev_62"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "file_name": "DW20.DLL",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_61",
+        "supporting_evidence_ids": [
+          "ev_25",
+          "ev_31",
+          "ev_62"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "family_hints": [
+          "TEMP",
+          "DW20"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Plugx_Smoaler",
+      "type": "drops",
+      "head_id": "ent_malware_Smoaler",
+      "tail_id": "ent_file_DW20.DLL",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "drop_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The intermediate infector Filename Random temporary name (deleted after use) Sophos detection Mal/Smoaler-A The temporary file dropped by DW20.DLL contains a compressed DLL (dynamic link library: a special sort of program file) stored in its resources."
+      },
+      "head": {
+        "id": "ent_malware_Smoaler",
+        "type": "Malware",
+        "name": "Smoaler",
+        "normalized_name": "Smoaler",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_31",
+          "ev_36",
+          "ev_43",
+          "ev_54"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "family": "Smoaler",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_54",
+        "supporting_evidence_ids": [
+          "ev_36",
+          "ev_43",
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_DW20.DLL",
+        "type": "File",
+        "name": "DW20.DLL",
+        "normalized_name": "DW20.DLL",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_31",
+          "ev_61",
+          "ev_62"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "file_name": "DW20.DLL",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_61",
+        "supporting_evidence_ids": [
+          "ev_25",
+          "ev_31",
+          "ev_62"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "family_hints": [
+          "TEMP",
+          "DW20"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Plugx_Smoaler",
+      "type": "executes",
+      "head_id": "ent_file_Filenames_Selected_quotes_from_the_book.docx",
+      "tail_id": "ent_file_Press_Release_-_Heart_is_Noble_book_launch.doc",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Plugx_Smoaler",
+      "type": "executes",
+      "head_id": "ent_file_vsserv.exe",
+      "tail_id": "ent_file_fsdfwd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "primary_evidence_id": "ev_46",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Plugx_Smoaler",
+      "type": "exploits",
+      "head_id": "ent_malware_PlugX",
+      "tail_id": "ent_cve_CVE-2012-0158",
+      "head_type": "Malware",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_15",
+        "ev_56"
+      ],
+      "primary_evidence_id": "ev_15",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Plugx_Smoaler",
+      "type": "loads",
+      "head_id": "ent_file_Filenames_Selected_quotes_from_the_book.docx",
+      "tail_id": "ent_file_Press_Release_-_Heart_is_Noble_book_launch.doc",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_17",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Plugx_Smoaler",
+      "type": "loads",
+      "head_id": "ent_file_vsserv.exe",
+      "tail_id": "ent_file_fsdfwd.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ],
+      "primary_evidence_id": "ev_46",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Plugx_Smoaler",
+      "type": "uses_tool",
+      "head_id": "ent_malware_Smoaler",
+      "tail_id": "ent_tool_Rundll32",
+      "head_type": "Malware",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_43",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "use_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Note that Smoaler is launched using the Windows utility rundll32.exe , because DLLs cannot execute on their own."
+      },
+      "head": {
+        "id": "ent_malware_Smoaler",
+        "type": "Malware",
+        "name": "Smoaler",
+        "normalized_name": "Smoaler",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_31",
+          "ev_36",
+          "ev_43",
+          "ev_54"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "family": "Smoaler",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_54",
+        "supporting_evidence_ids": [
+          "ev_36",
+          "ev_43",
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_tool_Rundll32",
+        "type": "Tool",
+        "name": "Rundll32",
+        "normalized_name": "Rundll32",
+        "aliases": [
+          "rundll32.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_43",
+          "ev_72"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_72",
+        "supporting_evidence_ids": [
+          "ev_43"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_rundll32.exe",
+        "tool_name": "Rundll32",
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Plugx_Smoaler",
+      "type": "uses_tool",
+      "head_id": "ent_malware_Smoaler",
+      "tail_id": "ent_tool_rundll32.exe",
+      "head_type": "Malware",
+      "tail_type": "Tool",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_43",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_tool",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "use_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Note that Smoaler is launched using the Windows utility rundll32.exe , because DLLs cannot execute on their own."
+      },
+      "head": {
+        "id": "ent_malware_Smoaler",
+        "type": "Malware",
+        "name": "Smoaler",
+        "normalized_name": "Smoaler",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_31",
+          "ev_36",
+          "ev_43",
+          "ev_54"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "family": "Smoaler",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_54",
+        "supporting_evidence_ids": [
+          "ev_36",
+          "ev_43",
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_tool_rundll32.exe",
+        "type": "Tool",
+        "name": "rundll32.exe",
+        "normalized_name": "rundll32.exe",
+        "aliases": [],
+        "confidence": 0.84,
+        "evidence_ids": [
+          "ev_43",
+          "ev_72"
+        ],
+        "report_id": "Plugx_Smoaler",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "alias_mention",
+        "alias_for": "ent_tool_Rundll32"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Plugx_Smoaler",
+      "type": "writes_output",
+      "head_id": "ent_malware_Smoaler",
+      "tail_id": "ent_file_DW20.DLL",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "event_write_output",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0007",
+      "type": "exploits",
+      "summary": "PlugX exploits CVE-2012-0158",
+      "evidence_ids": [
+        "ev_15",
+        "ev_56"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "PlugX drops DW20.DLL",
+      "evidence_ids": [
+        "ev_26"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "Smoaler drops DW20.DLL",
+      "evidence_ids": [
+        "ev_31"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "Filenames Selected quotes from the book.docx executes Press Release - Heart is Noble book launch.doc",
+      "evidence_ids": [
+        "ev_17"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "vsserv.exe executes fsdfwd.exe",
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "Filenames Selected quotes from the book.docx loads Press Release - Heart is Noble book launch.doc",
+      "evidence_ids": [
+        "ev_17"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "vsserv.exe loads fsdfwd.exe",
+      "evidence_ids": [
+        "ev_46",
+        "ev_74"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "uses_tool",
+      "summary": "Smoaler uses_tool Rundll32",
+      "evidence_ids": [
+        "ev_43"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "uses_tool",
+      "summary": "Smoaler uses_tool rundll32.exe",
+      "evidence_ids": [
+        "ev_43"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "collection",
+      "relation_id": "rel_0012",
+      "type": "writes_output",
+      "summary": "Smoaler writes_output DW20.DLL",
+      "evidence_ids": [
+        "ev_31"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "introducing “Smoaler” July 2013 In a recent SophosLabs article about the PlugX malware family [A], we concluded with these words:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "• Initial malware modules, also called droppers , are malware components, often delivered or activated by shellcode, used to deliver the full malware, or payload, that the attacker wants to install.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "We assume that the attackers chose RTF because its text structure makes it easier to manipulate to create a working exploit for the CVE-2012-0158 vulnerability.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Filenames Selected quotes from the book.docx Press Release - Heart is Noble book launch.doc TIBATIAN PROBLEM.doc [sic] Backgrounder on His Holiness the Karmapa.docx Why Tibet Matters Now Oct 1 final version.doc",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "The shellcode The executable code that kicks off infection is the same as was used in PlugX, being byte-for byte identical (see Fig 3) to the shellcode from PlugX 6.0 [A].",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "The shellcode decompresses an embedded PE file, writes it into the %TEMP% folder with the name DW20.DLL (this mimics the filename used by the Dr.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "First-stage dropper Filename DW20.DLL Sophos detections Troj/Plugx-I Troj/Plugx-K The first-stage payload created by the shellcode contains another program file embedded as data.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "There are two main sorts of dropper, detected by Sophos as Troj/Plugx-I and Troj/Plugx-K.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "The intermediate infector Filename Random temporary name (deleted after use) Sophos detection Mal/Smoaler-A The temporary file dropped by DW20.DLL contains a compressed DLL (dynamic link library: a special sort of program file) stored in its resources.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Main malware component Filename Randomly-generated name Sophos detection Troj/Smoaler-A The DLL dropped by the intermediate infector is the principal component of Smoaler.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "B6go3s_One.dll or 7n5HjV.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "This provides what is known as persistence , meaning that the malware is automatically re-loaded every time the victim reboots or logs on.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "Note that Smoaler is launched using the Windows utility rundll32.exe , because DLLs cannot execute on their own.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "When connecting to its C&C servers, Smoaler injects itself into the process IEXPLORE.EXE .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s8"
+      },
+      "text": "While running, however, Smoaler keeps a lookout for processes called vsserv.exe , fsdfwd.exe , AvastSvc.exe , uiWatchDog.exe , and avp.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "These processes belong to various security products, so this is a malware precaution often jocularly called anti-anti-virus , intended to avoid suspicious activity that might attract the attention of security software.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "The domain names it uses are already known from earlier Tibet-related malware attacks: dtl.dnsd.me , dtl.eauto.com and dtl6.moo.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s8"
+      },
+      "text": "Prevention is better than cure Malware like Smoaler is a strong reminder of why proactivity and prevention are better than cure: once you are infected, it can be hard to go back and unravel what happened, because of the tricks that the malware uses along the way.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "• Smoaler relies on the same vulnerability , CVE-2012-0158 . [B]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "We assume that the attackers chose RTF because its text structure makes it easier to manipulate to create a working exploit for the CVE-2012-0158 vulnerability.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "56e8c76cd88996da9b88901520f72ebb743e55ff a99b73b56fe94375ec46e51903f815d86afbd78d b2f854e9987bce5d110349a354588568ab49726b c093d4cd2390617da58bd412c9219e013de503a3 b84a133cf02eaa7b8a8096e997bda28fc482cf78",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "The shellcode decompresses an embedded PE file, writes it into the %TEMP% folder with the name DW20.DLL (this mimics the filename used by the Dr. Watson utility",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "Filename DW20.DLL",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "(The %RANDOM% part of the name is variable, e.g. B6go3s_One.dll or 7n5HjV.dll. )",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "Note that Smoaler is launched using the Windows utility rundll32.exe , because DLLs cannot execute on their own. They require a host program inside which to run.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "When connecting to its C&C servers, Smoaler injects itself into the process IEXPLORE.EXE . This is a common trick used by malware to make its traffic appear",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "While running, however, Smoaler keeps a lookout for processes called vsserv.exe , fsdfwd.exe , AvastSvc.exe , uiWatchDog.exe , and avp.exe. It avoids injecting",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb75"
+      },
+      "text": "[A] http://nakedsecurity.sophos.com/inside-the-plugx-malware",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb76"
+      },
+      "text": "http://nakedsecurity.sophos.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb77"
+      },
+      "text": "“Smoaler” Gabor Szappanos, SophosLabs References [A] http://nakedsecurity.sophos.com/inside-the-plugx-malware [B] http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0158 Fo",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb78"
+      },
+      "text": "http://podcasts.sophos.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb79"
+      },
+      "text": "http://www.sophos.com/why-sophos/our-people/technical-papers.aspx",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb80"
+      },
+      "text": "© 2013 Sophos Ltd. All rights reserved. Visit www.sophos.com/legal for more information. 1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb81"
+      },
+      "text": "© 2013 Sophos Ltd. All rights reserved. Visit www.sophos.com/legal for more information. 2",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Plugx_Smoaler",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb82"
+      },
+      "text": "© 2013 Sophos Ltd. All rights reserved. Visit www.sophos.com/legal for more information. 3",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_48",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_dtl.dnsd.me",
+        "ent_domain_dtl.eauto.com",
+        "ent_domain_dtl6.moo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Smoaler",
+        "ent_file_DW20.DLL"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_IEXPLORE",
+        "ent_malware_Smoaler",
+        "ent_file_IEXPLORE.EXE",
+        "ent_malware_IEXPLORE.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_43",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Smoaler",
+        "ent_tool_Rundll32",
+        "ent_file_rundll32.exe",
+        "ent_tool_rundll32.exe"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_72",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Smoaler",
+        "ent_tool_Rundll32",
+        "ent_file_rundll32.exe",
+        "ent_tool_rundll32.exe"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_PlugX",
+        "ent_malware_Smoaler"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_droppers"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_77",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_PlugX",
+        "ent_malware_Smoaler",
+        "ent_cve_CVE-2012-0158",
+        "ent_url_http_nakedsecurity.sophos.com_inside-the-plugx-malware",
+        "ent_url_http_www.cve.mitre.org_cgi-bin_cvename.cgi_name_CVE-2012-0158"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Smoaler",
+        "ent_file_AvastSvc.exe",
+        "ent_file_fsdfwd.exe",
+        "ent_file_uiWatchDog.exe",
+        "ent_file_vsserv.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_74",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Smoaler",
+        "ent_file_AvastSvc.exe",
+        "ent_file_fsdfwd.exe",
+        "ent_file_uiWatchDog.exe",
+        "ent_file_vsserv.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_Backgrounder_on_His_Holiness_the_Karmapa.docx",
+        "ent_file_Filenames_Selected_quotes_from_the_book.docx",
+        "ent_file_Press_Release_-_Heart_is_Noble_book_launch.doc",
+        "ent_file_TIBATIAN_PROBLEM.doc",
+        "ent_file_Why_Tibet_Matters_Now_Oct_1_final_version.doc"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_IEXPLORE",
+        "ent_malware_Smoaler",
+        "ent_file_IEXPLORE.EXE",
+        "ent_malware_IEXPLORE.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Smoaler",
+        "ent_cve_CVE-2012-0158"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_PlugX",
+        "ent_file_DW20.DLL"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_75",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_PlugX",
+        "ent_url_http_nakedsecurity.sophos.com_inside-the-plugx-malware"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 8,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

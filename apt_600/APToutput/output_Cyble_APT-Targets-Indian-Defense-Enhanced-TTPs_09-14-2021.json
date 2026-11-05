@@ -1,0 +1,1360 @@
+{
+  "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+  "title": "APT Group Targets Indian Defense Officials Through",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021).pdf",
+    "file_path": "/root/APTtext/Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021).pdf",
+    "source_type": "pdf",
+    "char_length": 11010,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_CSD_AppLaunch",
+      "type": "Malware",
+      "name": "CSD_AppLaunch",
+      "normalized_name": "CSD_AppLaunch",
+      "aliases": [
+        "CSD_AppLaunch.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_48",
+        "ev_53",
+        "ev_67"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_48",
+        "ev_53",
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA-256"
+      ],
+      "derived_from_file_id": "ent_file_CSD_AppLaunch.exe",
+      "family": "CSD_AppLaunch",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Compromise",
+      "type": "ThreatActor",
+      "name": "Compromise",
+      "normalized_name": "Compromise",
+      "aliases": [
+        "IoCs"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_39",
+        "ev_43"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_CSD_AppLaunch.exe",
+      "type": "Malware",
+      "name": "CSD_AppLaunch.exe",
+      "normalized_name": "CSD_AppLaunch.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_46",
+        "ev_48",
+        "ev_53"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_CSD_AppLaunch"
+    },
+    {
+      "id": "ent_malware_CSD_AppLaunch.exe",
+      "type": "Malware",
+      "name": "CSD_AppLaunch.exe",
+      "normalized_name": "CSD_AppLaunch.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_48",
+        "ev_53",
+        "ev_67"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "file_name": "CSD_AppLaunch.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_48",
+        "ev_53",
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "SHA-256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_domain_secure256.net",
+      "type": "Domain",
+      "name": "secure256.net",
+      "normalized_name": "secure256.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "value": "secure256.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_secure256.net_",
+      "type": "URL",
+      "name": "http://secure256.net/",
+      "normalized_name": "http://secure256.net/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "value": "http://secure256.net/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_technique_T1033",
+      "type": "Technique",
+      "name": "T1033",
+      "normalized_name": "T1033",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1033",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1057",
+      "type": "Technique",
+      "name": "T1057",
+      "normalized_name": "T1057",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1057",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1082",
+      "type": "Technique",
+      "name": "T1082",
+      "normalized_name": "T1082",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1082",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1095",
+      "type": "Technique",
+      "name": "T1095",
+      "normalized_name": "T1095",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_43",
+        "ev_65"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1095",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1124",
+      "type": "Technique",
+      "name": "T1124",
+      "normalized_name": "T1124",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1124",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1204",
+      "type": "Technique",
+      "name": "T1204",
+      "normalized_name": "T1204",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_41",
+        "ev_62"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1204",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1547",
+      "type": "Technique",
+      "name": "T1547",
+      "normalized_name": "T1547",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_41",
+        "ev_63"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1547",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1571",
+      "type": "Technique",
+      "name": "T1571",
+      "normalized_name": "T1571",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "technique_id": "T1571",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_ioc_sha256_124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce",
+      "type": "SHA256",
+      "name": "124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce",
+      "normalized_name": "124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66",
+        "ev_73"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "value": "124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836",
+      "type": "SHA256",
+      "name": "5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836",
+      "normalized_name": "5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_83",
+        "ev_84"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "value": "5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [
+        "ev_84"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34",
+      "type": "SHA256",
+      "name": "84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34",
+      "normalized_name": "84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67",
+        "ev_72"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "value": "84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_AFD_CSD_APP.vhdx",
+      "type": "File",
+      "name": "AFD CSD APP.vhdx",
+      "normalized_name": "AFD CSD APP.vhdx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_11"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "file_name": "AFD CSD APP.vhdx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_CSD_Application.exe",
+      "type": "File",
+      "name": "CSD_Application.exe",
+      "normalized_name": "CSD_Application.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "file_name": "CSD_Application.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_IntelWifi.exe",
+      "type": "File",
+      "name": "IntelWifi.exe",
+      "normalized_name": "IntelWifi.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_50",
+        "ev_52",
+        "ev_53"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "file_name": "IntelWifi.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_50",
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vmnx.dll",
+      "type": "File",
+      "name": "vmnx.dll",
+      "normalized_name": "vmnx.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_56"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "file_name": "vmnx.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_vmvcx.dll",
+      "type": "File",
+      "name": "vmvcx.dll",
+      "normalized_name": "vmvcx.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_28",
+        "ev_57"
+      ],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "file_name": "vmvcx.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "PXXX-XXXXXXXXXXXX"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Indian_Defense_Officials",
+      "type": "Victim",
+      "name": "Indian Defense Officials",
+      "normalized_name": "Indian Defense Officials",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "type": "alias_of",
+      "head_id": "ent_malware_CSD_AppLaunch.exe",
+      "tail_id": "ent_malware_CSD_AppLaunch",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_46",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "type": "executes",
+      "head_id": "ent_file_IntelWifi.exe",
+      "tail_id": "ent_malware_CSD_AppLaunch",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_22",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "type": "executes",
+      "head_id": "ent_malware_CSD_AppLaunch",
+      "tail_id": "ent_file_IntelWifi.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "primary_evidence_id": "ev_18",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "type": "loads",
+      "head_id": "ent_file_AFD_CSD_APP.vhdx",
+      "tail_id": "ent_malware_CSD_AppLaunch",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "type": "loads",
+      "head_id": "ent_file_IntelWifi.exe",
+      "tail_id": "ent_malware_CSD_AppLaunch",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_22",
+        "ev_53",
+        "ev_59"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "IntelWifi.exe executes CSD_AppLaunch",
+      "evidence_ids": [
+        "ev_22",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "CSD_AppLaunch executes IntelWifi.exe",
+      "evidence_ids": [
+        "ev_18"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "AFD CSD APP.vhdx loads CSD_AppLaunch",
+      "evidence_ids": [
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "IntelWifi.exe loads CSD_AppLaunch",
+      "evidence_ids": [
+        "ev_22",
+        "ev_53",
+        "ev_59"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s10"
+      },
+      "text": "Cyble Research started analysis with the malware file name AFD CSD APP.vhdx ; the sample had an extension.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s11"
+      },
+      "text": "After double-clicking on the AFD CSD APP.vhdx we observed it creating a mount in the Operating System (OS) with the name",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "IntelWifi.exe malicious binary in C:\\\\ProgramData\\\\Intel Wifi as shown in the code below.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "After this step, it sleeps for 6 seconds and then uses the Move function to rename the music.mp3 file to IntelWifi.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "It then sleeps for five more seconds and then executes IntelWifi.exe binary and delete CSD_AppLaunch.exe (first stager) binary as shown in the figure below.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "Further, it calls CheckDirectory() method to create \\\\Intel Wifi directory and vmnx.dll file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Methods Description CreateID() Create vmvcx.dll file and Generate Victim ID based on processor detail and P-Followed by random number and write the ID is vmvcx.dll file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Use the shared IOCs to monitor and block the malware infection.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "MITRE ATT&CK® Techniques Tactic Technique ID Technique Name **Execution ** T1204 User Execution Persistence T1547 Boot or Logon Autostart Execution",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "Discovery T1057 T1124 T1033 T1082 Process Discovery System Time Discovery System Owner/User Discovery System Information Discovery",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s5"
+      },
+      "text": "Command and Control T1095 T1571 Non-Application Layer Protocol Non-Standard Port Indicators of Compromise (IoCs):",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "“ CSD App “. After opening the mounted drive, we got the malicious malware file which is CSD_AppLaunch.exe .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Code Analysis (CSD_AppLaunch.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "IntelWifi.exe malicious binary in C:\\\\ProgramData\\\\Intel Wifi as shown in the code below.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "After this step, it sleeps for 6 seconds and then uses the Move function to rename the music.mp3 file to IntelWifi.exe. It then",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "sleeps for five more seconds and then executes IntelWifi.exe binary and delete CSD_AppLaunch.exe (first stager) binary as",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "directory and vmnx.dll file. Finally, it calls the Form1 module to execute the malicious codes.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "CreateID() Create vmvcx.dll file and Generate Victim ID based on processor detail and P-Followed by random number and write the ID is vmvcx.dll file. E.g., PXXX-XXXXXXXXXXXX",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "value file:///C:\\ProgramData\\Intel Wifi\\IntelWifi.exe executes whenever the Windows machine starts. This is done for the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "**Execution ** T1204 User Execution",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "Persistence T1547 Boot or Logon Autostart Execution",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r6"
+      },
+      "text": "Command and Control T1095",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r7"
+      },
+      "text": "124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce SHA-256 IntelWifi.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r8"
+      },
+      "text": "84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34 SHA-256 CSD_AppLaunch.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r9"
+      },
+      "text": "http://secure256[.]net/ URL Second Stager URL",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r12"
+      },
+      "text": "description= \"Coverage for CSD_Application.exe & IntelWifi.exe\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r13"
+      },
+      "text": "csd_application_hash= \"84841490ea2b637494257e9fe23922e5f827190ae3e4c32134cadb81319ebc34",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r14"
+      },
+      "text": "intelwifi_hash= \"124023c0cf0524a73dabd6e5bb3f7d61d42dfd3867d699c59770846aae1231ce\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb83"
+      },
+      "text": "5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Cyble_APT-Targets-Indian-Defense-Enhanced-TTPs(09-14-2021)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb84"
+      },
+      "text": "5f827190ae3e4c32134cadb81319ebc34 SHA-256 CSD_AppLaunch.exe 5e645eb1a828cef61f70ecbd651dba5433e250b4724e1408702ac13d2b6ab836 SHA-256 AFD CSD APP.vhdx http://secure256[.]net/ URL Se",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_22",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CSD_AppLaunch",
+        "ent_malware_CSD_AppLaunch.exe",
+        "ent_file_IntelWifi.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CSD_AppLaunch",
+        "ent_malware_CSD_AppLaunch.exe",
+        "ent_file_IntelWifi.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_84",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_CSD_AppLaunch",
+        "ent_malware_CSD_AppLaunch.exe",
+        "ent_file_AFD_CSD_APP.vhdx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_CSD_AppLaunch",
+        "ent_malware_CSD_AppLaunch.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_CSD_AppLaunch",
+        "ent_malware_CSD_AppLaunch.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_CSD_AppLaunch",
+        "ent_malware_CSD_AppLaunch.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_71",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_file_CSD_Application.exe",
+        "ent_file_IntelWifi.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

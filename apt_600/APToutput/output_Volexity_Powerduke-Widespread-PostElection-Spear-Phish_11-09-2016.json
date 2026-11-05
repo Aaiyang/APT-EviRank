@@ -1,0 +1,3795 @@
+{
+  "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+  "title": "PowerDuke: Widespread Post-Election Spear Phishing Campaigns Targeting Think Tanks and NGOs",
+  "source": "Volexity",
+  "published_date": "November 9, 2016",
+  "report_metadata": {
+    "file_name": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016).pdf",
+    "file_path": "/root/APTtext/Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 18617,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT29",
+      "type": "ThreatActor",
+      "name": "APT29",
+      "normalized_name": "APT29",
+      "aliases": [
+        "to as The Dukes",
+        "Cozy Bear"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Dukes",
+      "type": "ThreatActor",
+      "name": "Dukes",
+      "normalized_name": "Dukes",
+      "aliases": [
+        "Cozy Bear"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_3",
+        "ev_45",
+        "ev_52",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_56",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_PowerDuke",
+      "type": "Malware",
+      "name": "PowerDuke",
+      "normalized_name": "PowerDuke",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_15",
+        "ev_19",
+        "ev_45",
+        "ev_51",
+        "ev_16"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "family": "PowerDuke",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_19",
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Rundll32",
+      "type": "Malware",
+      "name": "Rundll32",
+      "normalized_name": "Rundll32",
+      "aliases": [
+        "rundll32.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67",
+        "ev_74",
+        "ev_82"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_66",
+        "ev_67",
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "APPDATA",
+        "HKCU"
+      ],
+      "derived_from_file_id": "ent_file_rundll32.exe",
+      "family": "Rundll32",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Dukes",
+      "type": "Campaign",
+      "name": "Dukes",
+      "normalized_name": "Dukes",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_45",
+        "ev_52",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_45",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_campaign_PowerDuke",
+      "type": "Campaign",
+      "name": "PowerDuke",
+      "normalized_name": "PowerDuke",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_16",
+        "ev_19",
+        "ev_45",
+        "ev_51"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_16",
+        "ev_45",
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Cozy_Bear",
+      "type": "ThreatActor",
+      "name": "Cozy Bear",
+      "normalized_name": "Cozy Bear",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_3",
+        "ev_45",
+        "ev_52"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Dukes"
+    },
+    {
+      "id": "ent_threatactor_to_as_The_Dukes",
+      "type": "ThreatActor",
+      "name": "to as The Dukes",
+      "normalized_name": "to as The Dukes",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT29"
+    },
+    {
+      "id": "ent_malware_rundll32.exe",
+      "type": "Malware",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67",
+        "ev_74"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Rundll32"
+    },
+    {
+      "id": "ent_malware_rundll32.exe",
+      "type": "Malware",
+      "name": "rundll32.exe",
+      "normalized_name": "rundll32.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67",
+        "ev_74",
+        "ev_82"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "rundll32.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_66",
+        "ev_67",
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "SHA1",
+        "APPDATA",
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_domain_aeronetpr.com",
+      "type": "Domain",
+      "name": "aeronetpr.com",
+      "normalized_name": "aeronetpr.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_88",
+        "ev_89"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "aeronetpr.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_89"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_bellsouth.net",
+      "type": "Domain",
+      "name": "bellsouth.net",
+      "normalized_name": "bellsouth.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "bellsouth.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_bursabil.com.tr",
+      "type": "Domain",
+      "name": "bursabil.com.tr",
+      "normalized_name": "bursabil.com.tr",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_90",
+        "ev_91"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "bursabil.com.tr",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_90",
+      "supporting_evidence_ids": [
+        "ev_91"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_efax.pfdregistry.net",
+      "type": "Domain",
+      "name": "efax.pfdregistry.net",
+      "normalized_name": "efax.pfdregistry.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54",
+        "ev_79"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "efax.pfdregistry.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_efax.pfdresearch.org",
+      "type": "Domain",
+      "name": "efax.pfdresearch.org",
+      "normalized_name": "efax.pfdresearch.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_69"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "efax.pfdresearch.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_efax.pfdweek.com",
+      "type": "Domain",
+      "name": "efax.pfdweek.com",
+      "normalized_name": "efax.pfdweek.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_63"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "efax.pfdweek.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ekg.kopdat.hu",
+      "type": "Domain",
+      "name": "ekg.kopdat.hu",
+      "normalized_name": "ekg.kopdat.hu",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "ekg.kopdat.hu",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_gmail.com",
+      "type": "Domain",
+      "name": "gmail.com",
+      "normalized_name": "gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23",
+        "ev_29"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "gmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_najatel.com.br",
+      "type": "Domain",
+      "name": "najatel.com.br",
+      "normalized_name": "najatel.com.br",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "najatel.com.br",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_pfdregistry.net",
+      "type": "Domain",
+      "name": "pfdregistry.net",
+      "normalized_name": "pfdregistry.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_54",
+        "ev_79",
+        "ev_80"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "pfdregistry.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_79",
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_pfdresearch.org",
+      "type": "Domain",
+      "name": "pfdresearch.org",
+      "normalized_name": "pfdresearch.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_53",
+        "ev_69",
+        "ev_71"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "pfdresearch.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_33",
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_pfdweek.com",
+      "type": "Domain",
+      "name": "pfdweek.com",
+      "normalized_name": "pfdweek.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_55",
+        "ev_63",
+        "ev_64"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "pfdweek.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_25",
+        "ev_63",
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_telenet.be",
+      "type": "Domain",
+      "name": "telenet.be",
+      "normalized_name": "telenet.be",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "telenet.be",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_efax.pfdregistry.net_eFax_37486.ZIP",
+      "type": "URL",
+      "name": "http://efax.pfdregistry.net/eFax/37486.ZIP",
+      "normalized_name": "http://efax.pfdregistry.net/eFax/37486.ZIP",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54",
+        "ev_79"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "http://efax.pfdregistry.net/eFax/37486.ZIP",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_efax.pfdresearch.org_eFax_RWP_16-038_Norris.ZIP",
+      "type": "URL",
+      "name": "http://efax.pfdresearch.org/eFax/RWP_16-038_Norris.ZIP",
+      "normalized_name": "http://efax.pfdresearch.org/eFax/RWP_16-038_Norris.ZIP",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_69"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "http://efax.pfdresearch.org/eFax/RWP_16-038_Norris.ZIP",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_efax.pfdweek.com_eFax_message0236.ZIP",
+      "type": "URL",
+      "name": "http://efax.pfdweek.com/eFax/message0236.ZIP",
+      "normalized_name": "http://efax.pfdweek.com/eFax/message0236.ZIP",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_63"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "http://efax.pfdweek.com/eFax/message0236.ZIP",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_industry.faxsolution_gmail.com",
+      "type": "Email",
+      "name": "industry.faxsolution@gmail.com",
+      "normalized_name": "industry.faxsolution@gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "industry.faxsolution@gmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_securefaxsolution_gmail.com",
+      "type": "Email",
+      "name": "securefaxsolution@gmail.com",
+      "normalized_name": "securefaxsolution@gmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "securefaxsolution@gmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha1_0b9dccfcb2cc8bced343b9d930e475f1d0e5d966",
+      "type": "SHA1",
+      "name": "0b9dccfcb2cc8bced343b9d930e475f1d0e5d966",
+      "normalized_name": "0b9dccfcb2cc8bced343b9d930e475f1d0e5d966",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "0b9dccfcb2cc8bced343b9d930e475f1d0e5d966",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1067ddd5615518e0cbac7389a024b32f119a3229",
+      "type": "SHA1",
+      "name": "1067ddd5615518e0cbac7389a024b32f119a3229",
+      "normalized_name": "1067ddd5615518e0cbac7389a024b32f119a3229",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "1067ddd5615518e0cbac7389a024b32f119a3229",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_11523d859e9a818c2628d7954502cbdb5eeb2199",
+      "type": "SHA1",
+      "name": "11523d859e9a818c2628d7954502cbdb5eeb2199",
+      "normalized_name": "11523d859e9a818c2628d7954502cbdb5eeb2199",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "11523d859e9a818c2628d7954502cbdb5eeb2199",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4bcbf078a78ba0e842f78963ba9dd71240ab6a6d",
+      "type": "SHA1",
+      "name": "4bcbf078a78ba0e842f78963ba9dd71240ab6a6d",
+      "normalized_name": "4bcbf078a78ba0e842f78963ba9dd71240ab6a6d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "4bcbf078a78ba0e842f78963ba9dd71240ab6a6d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_52d62213c66a603e33dab326bf4fa29d6ac681c4",
+      "type": "SHA1",
+      "name": "52d62213c66a603e33dab326bf4fa29d6ac681c4",
+      "normalized_name": "52d62213c66a603e33dab326bf4fa29d6ac681c4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92",
+        "ev_93"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "52d62213c66a603e33dab326bf4fa29d6ac681c4",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_5cc807f80f14bc4a1d6036865e50d576200dfd2e",
+      "type": "SHA1",
+      "name": "5cc807f80f14bc4a1d6036865e50d576200dfd2e",
+      "normalized_name": "5cc807f80f14bc4a1d6036865e50d576200dfd2e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "5cc807f80f14bc4a1d6036865e50d576200dfd2e",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_5f105801a1abb398dadc756480713f9bd7a4aa73",
+      "type": "SHA1",
+      "name": "5f105801a1abb398dadc756480713f9bd7a4aa73",
+      "normalized_name": "5f105801a1abb398dadc756480713f9bd7a4aa73",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_94",
+        "ev_95"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "5f105801a1abb398dadc756480713f9bd7a4aa73",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [
+        "ev_95"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a76c02c067eae26d78f4b494274dfa6aedc6fa7a",
+      "type": "SHA1",
+      "name": "a76c02c067eae26d78f4b494274dfa6aedc6fa7a",
+      "normalized_name": "a76c02c067eae26d78f4b494274dfa6aedc6fa7a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_96",
+        "ev_97"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "a76c02c067eae26d78f4b494274dfa6aedc6fa7a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_96",
+      "supporting_evidence_ids": [
+        "ev_97"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a7c43d7895ecef2b6306fb00972c321060753361",
+      "type": "SHA1",
+      "name": "a7c43d7895ecef2b6306fb00972c321060753361",
+      "normalized_name": "a7c43d7895ecef2b6306fb00972c321060753361",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_98",
+        "ev_99"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "a7c43d7895ecef2b6306fb00972c321060753361",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [
+        "ev_99"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ab32c09c46e0c9dbc576fefee68e5a2f57e0482e",
+      "type": "SHA1",
+      "name": "ab32c09c46e0c9dbc576fefee68e5a2f57e0482e",
+      "normalized_name": "ab32c09c46e0c9dbc576fefee68e5a2f57e0482e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "ab32c09c46e0c9dbc576fefee68e5a2f57e0482e",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b5684384c8028f0324ed7119f6abf379f2789970",
+      "type": "SHA1",
+      "name": "b5684384c8028f0324ed7119f6abf379f2789970",
+      "normalized_name": "b5684384c8028f0324ed7119f6abf379f2789970",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_100",
+        "ev_101"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "b5684384c8028f0324ed7119f6abf379f2789970",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_100",
+      "supporting_evidence_ids": [
+        "ev_101"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d5dcf445830c54af145c0dfeaebf28f8ec780eb5",
+      "type": "SHA1",
+      "name": "d5dcf445830c54af145c0dfeaebf28f8ec780eb5",
+      "normalized_name": "d5dcf445830c54af145c0dfeaebf28f8ec780eb5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "d5dcf445830c54af145c0dfeaebf28f8ec780eb5",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_dd766876b3be5022bfb062f454f878abfbc670b8",
+      "type": "SHA1",
+      "name": "dd766876b3be5022bfb062f454f878abfbc670b8",
+      "normalized_name": "dd766876b3be5022bfb062f454f878abfbc670b8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "dd766876b3be5022bfb062f454f878abfbc670b8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ee09bec09388338134d47fa993d5e0f86efe5bd4",
+      "type": "SHA1",
+      "name": "ee09bec09388338134d47fa993d5e0f86efe5bd4",
+      "normalized_name": "ee09bec09388338134d47fa993d5e0f86efe5bd4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "ee09bec09388338134d47fa993d5e0f86efe5bd4",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_28b95a2c399e60ee535c32e73860fbea",
+      "type": "MD5",
+      "name": "28b95a2c399e60ee535c32e73860fbea",
+      "normalized_name": "28b95a2c399e60ee535c32e73860fbea",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "28b95a2c399e60ee535c32e73860fbea",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3335f0461e5472803f4b19b706eaf4b5",
+      "type": "MD5",
+      "name": "3335f0461e5472803f4b19b706eaf4b5",
+      "normalized_name": "3335f0461e5472803f4b19b706eaf4b5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "3335f0461e5472803f4b19b706eaf4b5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4e1dec16d58ba5f4196f6a76a0bca75c",
+      "type": "MD5",
+      "name": "4e1dec16d58ba5f4196f6a76a0bca75c",
+      "normalized_name": "4e1dec16d58ba5f4196f6a76a0bca75c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_99"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "4e1dec16d58ba5f4196f6a76a0bca75c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_99",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_57c627d68e156676d08bfc0829b94331",
+      "type": "MD5",
+      "name": "57c627d68e156676d08bfc0829b94331",
+      "normalized_name": "57c627d68e156676d08bfc0829b94331",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_82"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "57c627d68e156676d08bfc0829b94331",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7b9b51cb44cd6a7af1cd28faeeda04a7",
+      "type": "MD5",
+      "name": "7b9b51cb44cd6a7af1cd28faeeda04a7",
+      "normalized_name": "7b9b51cb44cd6a7af1cd28faeeda04a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "7b9b51cb44cd6a7af1cd28faeeda04a7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_102",
+      "supporting_evidence_ids": [
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8b3050a95e3ce00424b85f6e9cc3ccec",
+      "type": "MD5",
+      "name": "8b3050a95e3ce00424b85f6e9cc3ccec",
+      "normalized_name": "8b3050a95e3ce00424b85f6e9cc3ccec",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "8b3050a95e3ce00424b85f6e9cc3ccec",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9f420779c90e118a0b5fd904380878a1",
+      "type": "MD5",
+      "name": "9f420779c90e118a0b5fd904380878a1",
+      "normalized_name": "9f420779c90e118a0b5fd904380878a1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "9f420779c90e118a0b5fd904380878a1",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a8e700492e113f73558131d94bc9ae2f",
+      "type": "MD5",
+      "name": "a8e700492e113f73558131d94bc9ae2f",
+      "normalized_name": "a8e700492e113f73558131d94bc9ae2f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "a8e700492e113f73558131d94bc9ae2f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ad6723f61e10aefd9688b29b474a9323",
+      "type": "MD5",
+      "name": "ad6723f61e10aefd9688b29b474a9323",
+      "normalized_name": "ad6723f61e10aefd9688b29b474a9323",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "ad6723f61e10aefd9688b29b474a9323",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b774f39d31c32da0f6a5fb5d0e6d2892",
+      "type": "MD5",
+      "name": "b774f39d31c32da0f6a5fb5d0e6d2892",
+      "normalized_name": "b774f39d31c32da0f6a5fb5d0e6d2892",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_78"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "b774f39d31c32da0f6a5fb5d0e6d2892",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_bea0a6f069bd547db685698bc9f9d25a",
+      "type": "MD5",
+      "name": "bea0a6f069bd547db685698bc9f9d25a",
+      "normalized_name": "bea0a6f069bd547db685698bc9f9d25a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "bea0a6f069bd547db685698bc9f9d25a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c272aebc661c54cc960ba9a4a3578952",
+      "type": "MD5",
+      "name": "c272aebc661c54cc960ba9a4a3578952",
+      "normalized_name": "c272aebc661c54cc960ba9a4a3578952",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_93"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "c272aebc661c54cc960ba9a4a3578952",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_93",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_cbf96820dc74a50a91b2b8b94376682a",
+      "type": "MD5",
+      "name": "cbf96820dc74a50a91b2b8b94376682a",
+      "normalized_name": "cbf96820dc74a50a91b2b8b94376682a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "cbf96820dc74a50a91b2b8b94376682a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ead48f15ebc088384a4bd6190c2343fa",
+      "type": "MD5",
+      "name": "ead48f15ebc088384a4bd6190c2343fa",
+      "normalized_name": "ead48f15ebc088384a4bd6190c2343fa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "ead48f15ebc088384a4bd6190c2343fa",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f713d5df826c6051e65f995e57d6817d",
+      "type": "MD5",
+      "name": "f713d5df826c6051e65f995e57d6817d",
+      "normalized_name": "f713d5df826c6051e65f995e57d6817d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_105"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "f713d5df826c6051e65f995e57d6817d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_105"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f79caf27a99c091e6c1775b306993341",
+      "type": "MD5",
+      "name": "f79caf27a99c091e6c1775b306993341",
+      "normalized_name": "f79caf27a99c091e6c1775b306993341",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "value": "f79caf27a99c091e6c1775b306993341",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_37486.ZIP",
+      "type": "File",
+      "name": "37486.ZIP",
+      "normalized_name": "37486.ZIP",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_79",
+        "ev_81"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "37486.ZIP",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_fywhx.dll",
+      "type": "File",
+      "name": "fywhx.dll",
+      "normalized_name": "fywhx.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "fywhx.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "SHA1",
+        "APPDATA",
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_impku.dat",
+      "type": "File",
+      "name": "impku.dat",
+      "normalized_name": "impku.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_75",
+        "ev_76",
+        "ev_78"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "impku.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_78",
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "SHA1",
+        "APPDATA",
+        "HKCU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_message0236.ZIP",
+      "type": "File",
+      "name": "message0236.ZIP",
+      "normalized_name": "message0236.ZIP",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_63",
+        "ev_65"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "message0236.ZIP",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "SHA1"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RWP16-038_Norris.exe",
+      "type": "File",
+      "name": "RWP16-038_Norris.exe",
+      "normalized_name": "RWP16-038_Norris.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_70",
+        "ev_73"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "RWP16-038_Norris.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_70",
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "RWP16-",
+        "SHA1"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RWP_16-038_Norris.ZIP",
+      "type": "File",
+      "name": "RWP_16-038_Norris.ZIP",
+      "normalized_name": "RWP_16-038_Norris.ZIP",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_69",
+        "ev_72"
+      ],
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "file_name": "RWP_16-038_Norris.ZIP",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RWP_16-",
+        "SHA1",
+        "RWP16"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "cmd.exe",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_PowrProf.dll",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "File",
+      "name": "PowrProf.dll",
+      "normalized_name": "PowrProf.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "PowrProf.dll",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_rundll32.exe",
+      "tail_id": "ent_malware_Rundll32",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66",
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_66",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Cozy_Bear",
+      "tail_id": "ent_threatactor_APT29",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; alias_head",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "” Volexity believes a group it refers to as The Dukes (also known as APT29 or Cozy Bear) is responsible for post-election attack activity."
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Cozy_Bear",
+      "tail_id": "ent_threatactor_Dukes",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_to_as_The_Dukes",
+      "tail_id": "ent_threatactor_APT29",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "controls_account",
+      "head_id": "ent_threatactor_Dukes",
+      "tail_id": "ent_domain_gmail.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Domain",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_23",
+        "ev_29"
+      ],
+      "primary_evidence_id": "ev_23",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "controls_account",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "actor_account_control",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "controls_account",
+      "head_id": "ent_threatactor_Dukes",
+      "tail_id": "ent_email_industry.faxsolution_gmail.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Email",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_23",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "controls_account",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "actor_account_control",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "controls_account",
+      "head_id": "ent_threatactor_Dukes",
+      "tail_id": "ent_email_securefaxsolution_gmail.com",
+      "head_type": "ThreatActor",
+      "tail_type": "Email",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "controls_account",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "actor_account_control",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_PowerDuke",
+      "tail_id": "ent_file_fywhx.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_67",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "llm_sentence",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "fywhx.dll File size: 10752 bytes MD5 hash: ad6723f61e10aefd9688b29b474a9323 SHA1 hash: dd766876b3be5022bfb062f454f878abfbc670b8 Notes: PowerDuke backdoor ﬁle dropped to “%APPDATA\\Roaming\\HP\\” with persistence via HKCU Run Key “ToolboxFX” (rundll32.exe %APPDATA\\Roaming\\HP\\fywhx.dll #2)"
+      },
+      "head": {
+        "id": "ent_malware_PowerDuke",
+        "type": "Malware",
+        "name": "PowerDuke",
+        "normalized_name": "PowerDuke",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_15",
+          "ev_19",
+          "ev_45",
+          "ev_51",
+          "ev_16"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "family": "PowerDuke",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_45",
+        "supporting_evidence_ids": [
+          "ev_15",
+          "ev_19",
+          "ev_51"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_fywhx.dll",
+        "type": "File",
+        "name": "fywhx.dll",
+        "normalized_name": "fywhx.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_67",
+          "ev_68"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "file_name": "fywhx.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_67",
+        "supporting_evidence_ids": [
+          "ev_68"
+        ],
+        "needs_review": false,
+        "file_role": "malicious_component",
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "APPDATA",
+          "HKCU"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_PowerDuke",
+      "tail_id": "ent_file_impku.dat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "primary_evidence_id": "ev_76",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_76"
+      },
+      "head": {
+        "id": "ent_malware_PowerDuke",
+        "type": "Malware",
+        "name": "PowerDuke",
+        "normalized_name": "PowerDuke",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_15",
+          "ev_19",
+          "ev_45",
+          "ev_51",
+          "ev_16"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "family": "PowerDuke",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_45",
+        "supporting_evidence_ids": [
+          "ev_15",
+          "ev_19",
+          "ev_51"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_impku.dat",
+        "type": "File",
+        "name": "impku.dat",
+        "normalized_name": "impku.dat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_75",
+          "ev_76",
+          "ev_78"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "file_name": "impku.dat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_76",
+        "supporting_evidence_ids": [
+          "ev_78",
+          "ev_75"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "config_or_data",
+        "family_hints": [
+          "SHA1",
+          "APPDATA",
+          "HKCU"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_Rundll32",
+      "tail_id": "ent_file_fywhx.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_67",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_67"
+      },
+      "head": {
+        "id": "ent_malware_Rundll32",
+        "type": "Malware",
+        "name": "Rundll32",
+        "normalized_name": "Rundll32",
+        "aliases": [
+          "rundll32.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_66",
+          "ev_67",
+          "ev_74",
+          "ev_82"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_82",
+        "supporting_evidence_ids": [
+          "ev_66",
+          "ev_67",
+          "ev_74"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "APPDATA",
+          "HKCU"
+        ],
+        "derived_from_file_id": "ent_file_rundll32.exe",
+        "family": "Rundll32",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_fywhx.dll",
+        "type": "File",
+        "name": "fywhx.dll",
+        "normalized_name": "fywhx.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_67",
+          "ev_68"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "file_name": "fywhx.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_67",
+        "supporting_evidence_ids": [
+          "ev_68"
+        ],
+        "needs_review": false,
+        "file_role": "malicious_component",
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "APPDATA",
+          "HKCU"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_Rundll32",
+      "tail_id": "ent_file_impku.dat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "primary_evidence_id": "ev_76",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_76"
+      },
+      "head": {
+        "id": "ent_malware_Rundll32",
+        "type": "Malware",
+        "name": "Rundll32",
+        "normalized_name": "Rundll32",
+        "aliases": [
+          "rundll32.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_66",
+          "ev_67",
+          "ev_74",
+          "ev_82"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_82",
+        "supporting_evidence_ids": [
+          "ev_66",
+          "ev_67",
+          "ev_74"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "SHA1",
+          "APPDATA",
+          "HKCU"
+        ],
+        "derived_from_file_id": "ent_file_rundll32.exe",
+        "family": "Rundll32",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_impku.dat",
+        "type": "File",
+        "name": "impku.dat",
+        "normalized_name": "impku.dat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_75",
+          "ev_76",
+          "ev_78"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "file_name": "impku.dat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_76",
+        "supporting_evidence_ids": [
+          "ev_78",
+          "ev_75"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "config_or_data",
+        "family_hints": [
+          "SHA1",
+          "APPDATA",
+          "HKCU"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "executes",
+      "head_id": "ent_file_fywhx.dll",
+      "tail_id": "ent_malware_PowerDuke",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_67",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "executes",
+      "head_id": "ent_file_impku.dat",
+      "tail_id": "ent_malware_PowerDuke",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "primary_evidence_id": "ev_76",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "executes",
+      "head_id": "ent_malware_PowerDuke",
+      "tail_id": "ent_file_impku.dat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "primary_evidence_id": "ev_75",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "executes",
+      "head_id": "ent_malware_PowerDuke",
+      "tail_id": "ent_malware_Rundll32",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_66",
+        "ev_74",
+        "ev_82"
+      ],
+      "primary_evidence_id": "ev_66",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "loads",
+      "head_id": "ent_file_fywhx.dll",
+      "tail_id": "ent_malware_PowerDuke",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_67",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "loads",
+      "head_id": "ent_file_impku.dat",
+      "tail_id": "ent_malware_PowerDuke",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "primary_evidence_id": "ev_76",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Dukes",
+      "tail_id": "ent_malware_PowerDuke",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The PowerDuke Backdoor The PowerDuke backdoor boasts a pretty extensive list of features that allow the Dukes to examine and control a system."
+      },
+      "head": {
+        "id": "ent_threatactor_Dukes",
+        "type": "ThreatActor",
+        "name": "Dukes",
+        "normalized_name": "Dukes",
+        "aliases": [
+          "Cozy Bear"
+        ],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_3",
+          "ev_45",
+          "ev_52",
+          "ev_56",
+          "ev_57"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_52",
+        "supporting_evidence_ids": [
+          "ev_3",
+          "ev_56",
+          "ev_45"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_PowerDuke",
+        "type": "Malware",
+        "name": "PowerDuke",
+        "normalized_name": "PowerDuke",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_15",
+          "ev_19",
+          "ev_45",
+          "ev_51",
+          "ev_16"
+        ],
+        "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+        "family": "PowerDuke",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_45",
+        "supporting_evidence_ids": [
+          "ev_15",
+          "ev_19",
+          "ev_51"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "drops",
+      "summary": "PowerDuke drops fywhx.dll",
+      "evidence_ids": [
+        "ev_67"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0009",
+      "type": "drops",
+      "summary": "PowerDuke drops impku.dat",
+      "evidence_ids": [
+        "ev_76"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0010",
+      "type": "drops",
+      "summary": "Rundll32 drops fywhx.dll",
+      "evidence_ids": [
+        "ev_67"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "delivery",
+      "relation_id": "rel_0011",
+      "type": "drops",
+      "summary": "Rundll32 drops impku.dat",
+      "evidence_ids": [
+        "ev_76"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "executes",
+      "summary": "fywhx.dll executes PowerDuke",
+      "evidence_ids": [
+        "ev_67"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "executes",
+      "summary": "impku.dat executes PowerDuke",
+      "evidence_ids": [
+        "ev_76"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "executes",
+      "summary": "PowerDuke executes impku.dat",
+      "evidence_ids": [
+        "ev_75"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "executes",
+      "summary": "PowerDuke executes Rundll32",
+      "evidence_ids": [
+        "ev_66",
+        "ev_74",
+        "ev_82"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "loads",
+      "summary": "fywhx.dll loads PowerDuke",
+      "evidence_ids": [
+        "ev_67"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0017",
+      "type": "loads",
+      "summary": "impku.dat loads PowerDuke",
+      "evidence_ids": [
+        "ev_76"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0018",
+      "type": "uses_malware",
+      "summary": "Dukes uses_malware PowerDuke",
+      "evidence_ids": [
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "command_and_control",
+      "relation_id": "rel_0005",
+      "type": "controls_account",
+      "summary": "Dukes controls_account gmail.com",
+      "evidence_ids": [
+        "ev_23",
+        "ev_29"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "command_and_control",
+      "relation_id": "rel_0006",
+      "type": "controls_account",
+      "summary": "Dukes controls_account industry.faxsolution@gmail.com",
+      "evidence_ids": [
+        "ev_23"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "command_and_control",
+      "relation_id": "rel_0007",
+      "type": "controls_account",
+      "summary": "Dukes controls_account securefaxsolution@gmail.com",
+      "evidence_ids": [
+        "ev_29"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "” Volexity believes a group it refers to as The Dukes (also known as APT29 or Cozy Bear) is responsible for post-election attack activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s7"
+      },
+      "text": "Volexity has dubbed this backdoor PowerDuke .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Similar attack campaigns using documents with macros dropping PowerDuke were further observed through October, where Universities, and not think tanks appear to have been the primary targets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s11"
+      },
+      "text": "The PowerDuke malware, ﬁrst seen in August 2016, was once again used in these most recent attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s15"
+      },
+      "text": "The e-mail message was sent from the attacker controlled e-mail account industry.faxsolution@gmail.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Note that pfdweek[.]com appears to be under the control of the attackers but may be a hijacked domain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "The e-mail message was sent from the attacker controlled e-mail account securefaxsolution@gmail.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "RWP16-038_Norris.exe Note that pfdresearch[.]org appears to be under the control of the attackers but may be a hijacked domain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "Note that pfdregistry[.]net appears to be under the control of the attackers but may be a hijacked domain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "The PowerDuke Backdoor The PowerDuke backdoor boasts a pretty extensive list of features that allow the Dukes to examine and control a system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s2"
+      },
+      "text": "# runs cmd.exe /c and gets the output via Named Pipe and sends the data back siduser gets the current user’s SID via GetTokenInformation and",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s1"
+      },
+      "text": "fputp upload ﬁle power reboot or shutdown (via previously loaded PowrProf.dll) cdt change to temporary directory reqdelay sleep for speciﬁed time",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s2"
+      },
+      "text": "Volexity has not fully examined the PowerDuke instances from these campaigns but has noted the malware appears to support the following additional commands not described above: sidcomp buzy exit copy detectav mkdir software shlist shinfo shdel shadd setpng conn setsrv",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s3"
+      },
+      "text": "Network Indicators Below are network indicators associated with download URLs for the aforementioned Dukes attack campaigns.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "Hostname IP Address ASN Information efax.pfdresearch.org 81.82.196.162 6848 | 81.82.0.0/15 | TELENET | BE | telenet.be | Telenet Operaties N.V.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s2"
+      },
+      "text": "efax.pfdregistry.net 65.15.88.243 7018 | 65.15.64.0/19 | ATT-INTERNET4 | US | bellsouth.net | Bellsouth.net Inc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s3"
+      },
+      "text": "efax.pfdweek.com 84.206.44.194 31581 | 84.206.0.0/16 | KOPINT | HU | ekg.kopdat.hu | National Infocommunications Service Company Limited by Shares",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s4"
+      },
+      "text": "Below are network indicators associated with command and control servers for the aforementioned Dukes attack campaigns.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s5"
+      },
+      "text": "Conclusion The Dukes continue to launch well-crafted and clever attack campaigns.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "hxxp://efax.pfdweek[.]com/eFax/message0236.ZIP",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "Note that pfdweek[.]com appears to be under the control of the attackers but may be a hijacked domain.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "Filename: message0236.ZIP File size: 643843 bytes MD5 hash: bea0a6f069bd547db685698bc9f9d25a SHA1 hash: ee09bec09388338134d47fa993d5e0f86efe5bd4",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Filename: kxwn.lock File size: 10752 bytes MD5 hash: 28b95a2c399e60ee535c32e73860fbea SHA1 hash: bf4ce67b6e745e26fcf3a2d41938a9dﬀ1395076 Notes: Primary PowerDuke backdoor (DLL) loader (leverages kxwn.lock:schemas) dropped to “%APPDATA\\Roaming\\Microsoft\\” with persistence via HKCU Run Key “WebCache” (rundll32.exe %APPDATA\\Roaming\\Microsoft\\kxwn.lock , #2). Connects directly to 173.243.80.6:443 for command and control.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Filename: fywhx.dll File size: 10752 bytes MD5 hash: ad6723f61e10aefd9688b29b474a9323 SHA1 hash: dd766876b3be5022bfb062f454f878abfbc670b8 Notes: PowerDuke backdoor ﬁle dropped to “%APPDATA\\Roaming\\HP\\” with persistence via HKCU Run Key “ToolboxFX” (rundll32.exe %APPDATA\\Roaming\\HP\\fywhx.dll #2). Connects directly to 185.132.124.43:443 for command and control.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Filename: fywhx.dll:schemas File size: 608854 bytes MD5 hash: 8c53ee9137a7d540fcﬀ0d523f7d0822 SHA1 hash: ab32c09c46e0c9dbc576fefee68e5a2f57e0482e Notes: Alternate data stream (ADS) PNG ﬁle with the PowerDuke backdoor component hidden and encrypted within using Tiny Encryption Algorithm (TEA).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "hxxp://efax.pfdresearch[.]org/eFax/RWP_16-038_Norris.ZIP",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "RWP16-038_Norris.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "Note that pfdresearch[.]org appears to be under the control of the attackers but may be a hijacked domain.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "Filename: RWP_16-038_Norris.ZIP File size: 854996 bytes MD5 hash: 8b3050a95e3ce00424b85f6e9cc3ccec SHA1 hash: d5dcf445830c54af145c0dfeaebf28f8ec780eb5 Notes: Password protected ZIP ﬁle with malicious executable inside (RWP16- 038_Norris.exe).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r5"
+      },
+      "text": "Filename: RWP16-038_Norris.exe File size: 1144832 bytes MD5 hash: 3335f0461e5472803f4b19b706eaf4b5 SHA1 hash: 5cc807f80f14bc4a1d6036865e50d576200dfd2e Notes: Dropper for PowerDuke backdoor and clean decoy document",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "Filename: gwV46iIc.idx File size: 10752 bytes MD5 hash: ae997d2047705ﬀ46a0c228f7b5d7052 SHA1 hash: 1067ddd5615518e0cbac7389a024b32f119a3229 Notes: Primary PowerDuke backdoor (DLL) loader (leverages gwV46iIc.idx:schemas) dropped to “%APPDATA\\Roaming\\Apple\\” with persistence via HKCU Run Key “ConnectionCenter” (rundll32.exe %APPDATA\\Roaming\\Apple\\gwV46iIc.idx, #2). Connects directly to 185.124.86.121:443 for command and control.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "Filename: harvard-iop-fall-2016-poll.doc File size: 2808832 bytes MD5 hash: ead48f15ebc088384a4bd6190c2343fa SHA1 hash: 0b9dccfcb2cc8bced343b9d930e475f1d0e5d966 Notes: Document containing malicious macro that drops impku.dat and impku.dat:shemas.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "Filename: impku.dat File size: 10752 bytes MD5 hash: 9f420779c90e118a0b5fd904380878a1 SHA1 hash: 11523d859e9a818c2628d7954502cbdb5eeb2199 Notes: PowerDuke backdoor ﬁle dropped to “%APPDATA\\Roaming\\Dell\\” with persistence via HKCU Run Key “Communicator” (rundll32.exe %APPDATA\\Roaming\\Dell\\impku.idat, #2). Connects directly to",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "Filename: impku.dat:schemas File size: 608854 bytes MD5 hash: b774f39d31c32da0f6a5fb5d0e6d2892 SHA1 hash: ae3ﬀ39c2a7266132e0af016a48b97d565463d90 Notes: Alternate data stream (ADS) PNG ﬁle with the PowerDuke backdoor component hidden and encrypted within using Tiny Encryption Algorithm (TEA).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "hxxp://efax.pfdregistry[.]net/eFax/37486.ZIP",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r2"
+      },
+      "text": "Note that pfdregistry[.]net appears to be under the control of the attackers but may be a hijacked domain.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r3"
+      },
+      "text": "Filename: 37486.ZIP File size: 580688 bytes MD5 hash: f79caf27a99c091e6c1775b306993341",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "Filename: hqwhbr.lck File size: 10752 bytes MD5 hash: 57c627d68e156676d08bfc0829b94331 SHA1 hash: 4bcbf078a78ba0e842f78963ba9dd71240ab6a6d Notes: PowerDuke backdoor ﬁle dropped to “%APPDATA\\Roaming\\Skype\\” with persistence via HKCU Run Key “IAStorIcon” (rundll32.exe %APPDATA\\Roaming\\Apple\\hqwhbr.lck, #2). Connects directly to 177.10.96.30:443 for command and control.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb88"
+      },
+      "text": "aeronetpr.com | Aeronet Wireless",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb89"
+      },
+      "text": ".243.80.6 14979 | 173.243.80.0/24 | AERONET-WIRELESS | PR | aeronetpr.com | Aeronet Wireless 177.10.96.30 262848 | 177.10.96.0/21 | Naja | BR | najatel.com.br | Naja Telecomunicaco",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb90"
+      },
+      "text": "60721 | 185.26.144.0/24 | BURSABIL | TR | bursabil.com.tr | Bursabil",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 16,
+        "section": "rule_backfill",
+        "sentence_id": "p16_rb91"
+      },
+      "text": "– 185.26.144.109 60721 | 185.26.144.0/24 | BURSABIL | TR | bursabil.com.tr | Bursabil Konfeksiyon Tekstil Bilisim Teknoloji insaat Sanayi ve Ticaret Limited Sirketi 173.243.80.6 14",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb92"
+      },
+      "text": "SHA1 hash: 52d62213c66a603e33dab326bf4fa29d6ac681c4",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb93"
+      },
+      "text": "bytes MD5 hash: c272aebc661c54cc960ba9a4a3578952 SHA1 hash: 52d62213c66a603e33dab326bf4fa29d6ac681c4 Notes: Microsoft shortcut ﬁle with embedded PowerShell, PowerDuke backdoor (hqw",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb94"
+      },
+      "text": "SHA1 hash: 5f105801a1abb398dadc756480713f9bd7a4aa73",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb95"
+      },
+      "text": "bytes MD5 hash: cbf96820dc74a50a91b2b8b94376682a SHA1 hash: 5f105801a1abb398dadc756480713f9bd7a4aa73 Notes: Alternate data stream (ADS) PNG ﬁle with the PowerDuke backdoor componen",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb96"
+      },
+      "text": "SHA1 hash: a76c02c067eae26d78f4b494274dfa6aedc6fa7a",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb97"
+      },
+      "text": "SHA1 hash: a76c02c067eae26d78f4b494274dfa6aedc6fa7a Notes: Password protected ZIP ﬁle containing malicious Microsoft shortcut ﬁle 37486-the- shocking-truth-about-election-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb98"
+      },
+      "text": "SHA1 hash: a7c43d7895ecef2b6306fb00972c321060753361",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb99"
+      },
+      "text": "bytes MD5 hash: 4e1dec16d58ba5f4196f6a76a0bca75c SHA1 hash: a7c43d7895ecef2b6306fb00972c321060753361 Notes: Alternate data stream (ADS) PNG ﬁle with the PowerDuke backdoor componen",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb100"
+      },
+      "text": "SHA1 hash: b5684384c8028f0324ed7119f6abf379f2789970",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb101"
+      },
+      "text": "bytes MD5 hash: a8e700492e113f73558131d94bc9ae2f SHA1 hash: b5684384c8028f0324ed7119f6abf379f2789970 Notes: Document containing malicious macro that drops Filename: fywhx.dll File",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb102"
+      },
+      "text": "MD5 hash: 7b9b51cb44cd6a7af1cd28faeeda04a7",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb103"
+      },
+      "text": "ame: gwV46iIc.idx:schemas File size: 580968 bytes MD5 hash: 7b9b51cb44cd6a7af1cd28faeeda04a7 SHA1 hash: e3bd7bdfe0026cf4ee39fd75a771eac52ﬀea095 Notes: Alternate data stream (ADS) P",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb104"
+      },
+      "text": "MD5 hash: f713d5df826c6051e65f995e57d6817d",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_105",
+      "evidence_type": "report_text",
+      "report_id": "Volexity_Powerduke-Widespread-PostElection-Spear-Phish(11-09-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb105"
+      },
+      "text": "igging-in-america.rtf.lnk File size: 661782 bytes MD5 hash: f713d5df826c6051e65f995e57d6817d SHA1 hash: 68ce4c0324f03976247ﬀ48803a7d988f9f9f43f Notes: Microsoft shortcut ﬁle with e",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_66",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_74",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe",
+        "ent_file_fywhx.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_82",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_76",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_malware_Rundll32",
+        "ent_malware_rundll32.exe",
+        "ent_file_impku.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT29",
+        "ent_threatactor_Dukes",
+        "ent_threatactor_Cozy_Bear",
+        "ent_threatactor_to_as_The_Dukes"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_68",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_file_fywhx.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_78",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_file_impku.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_threatactor_Dukes",
+        "ent_malware_PowerDuke"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_PowerDuke",
+        "ent_file_RWP16-038_Norris.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 16,
+      "candidate_entity_ids": [
+        "ent_domain_efax.pfdresearch.org",
+        "ent_domain_telenet.be"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_54",
+      "page": 16,
+      "candidate_entity_ids": [
+        "ent_domain_bellsouth.net",
+        "ent_domain_efax.pfdregistry.net"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 16,
+      "candidate_entity_ids": [
+        "ent_domain_efax.pfdweek.com",
+        "ent_domain_ekg.kopdat.hu"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_89",
+      "page": 16,
+      "candidate_entity_ids": [
+        "ent_domain_aeronetpr.com",
+        "ent_domain_najatel.com.br"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_domain_gmail.com",
+        "ent_email_industry.faxsolution_gmail.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_29",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_domain_gmail.com",
+        "ent_email_securefaxsolution_gmail.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,932 @@
+{
+  "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+  "title": "ATTACKS OF THE LAZARUS CYBERCRIMINAL GROUP ATTENDED TO ORGANIZATIONS IN RUSSIA",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "SecureSoft_Lazarus_Russia(02-20-2019).pdf",
+    "file_path": "/root/APTtext/SecureSoft_Lazarus_Russia(02-20-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 4896,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_lazarus",
+      "type": "ThreatActor",
+      "name": "lazarus",
+      "normalized_name": "lazarus",
+      "aliases": [
+        "Hidden Cobra"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_4",
+        "ev_5"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_1",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Russia",
+      "type": "Victim",
+      "name": "Russia",
+      "normalized_name": "Russia",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_19",
+        "ev_2",
+        "ev_4"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Russia_uses_malicious_Office_docume",
+      "type": "Victim",
+      "name": "Russia uses malicious Office docume",
+      "normalized_name": "Russia uses malicious Office docume",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Lazarus",
+      "type": "Campaign",
+      "name": "Lazarus",
+      "normalized_name": "Lazarus",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_4",
+        "ev_5"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Andariel",
+      "type": "ThreatActor",
+      "name": "Andariel",
+      "normalized_name": "Andariel",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Hidden_Cobra",
+      "type": "ThreatActor",
+      "name": "Hidden Cobra",
+      "normalized_name": "Hidden Cobra",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_4"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_lazarus"
+    },
+    {
+      "id": "ent_domain_securesoftcorp.com",
+      "type": "Domain",
+      "name": "securesoftcorp.com",
+      "normalized_name": "securesoftcorp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "securesoftcorp.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_securitysummitperu.com",
+      "type": "Domain",
+      "name": "securitysummitperu.com",
+      "normalized_name": "securitysummitperu.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "securitysummitperu.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_reports_securesoftcorp.com",
+      "type": "Email",
+      "name": "reports@securesoftcorp.com",
+      "normalized_name": "reports@securesoftcorp.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "reports@securesoftcorp.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha256_1c4745c82fdcb9d05e210eff346d7bee2f087357b17bfcf7c2038c854f0dee61",
+      "type": "SHA256",
+      "name": "1c4745c82fdcb9d05e210eff346d7bee2f087357b17bfcf7c2038c854f0dee61",
+      "normalized_name": "1c4745c82fdcb9d05e210eff346d7bee2f087357b17bfcf7c2038c854f0dee61",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "1c4745c82fdcb9d05e210eff346d7bee2f087357b17bfcf7c2038c854f0dee61",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_49a23160ba2af4fba0186512783482918b07a32b0e809de0336ba723636ae3b6",
+      "type": "SHA256",
+      "name": "49a23160ba2af4fba0186512783482918b07a32b0e809de0336ba723636ae3b6",
+      "normalized_name": "49a23160ba2af4fba0186512783482918b07a32b0e809de0336ba723636ae3b6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "49a23160ba2af4fba0186512783482918b07a32b0e809de0336ba723636ae3b6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8e099261929b1b09e9d637e8d054d5909b945b4157f29337977eb7f5fb835e5d",
+      "type": "SHA256",
+      "name": "8e099261929b1b09e9d637e8d054d5909b945b4157f29337977eb7f5fb835e5d",
+      "normalized_name": "8e099261929b1b09e9d637e8d054d5909b945b4157f29337977eb7f5fb835e5d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "8e099261929b1b09e9d637e8d054d5909b945b4157f29337977eb7f5fb835e5d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9894f6993cae186981ecb034899353a04f1a9b009bdf265cecda9595b725ee20",
+      "type": "SHA256",
+      "name": "9894f6993cae186981ecb034899353a04f1a9b009bdf265cecda9595b725ee20",
+      "normalized_name": "9894f6993cae186981ecb034899353a04f1a9b009bdf265cecda9595b725ee20",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "9894f6993cae186981ecb034899353a04f1a9b009bdf265cecda9595b725ee20",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e23900b00ffd67cd8dfa3283d9ced691566df6d63d1d46c95b22569b49011f09",
+      "type": "SHA256",
+      "name": "e23900b00ffd67cd8dfa3283d9ced691566df6d63d1d46c95b22569b49011f09",
+      "normalized_name": "e23900b00ffd67cd8dfa3283d9ced691566df6d63d1d46c95b22569b49011f09",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "e23900b00ffd67cd8dfa3283d9ced691566df6d63d1d46c95b22569b49011f09",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f4bdf0f967330f9704b01cc962137a70596822b8319d3b35404eafc9c6d2efe7",
+      "type": "SHA256",
+      "name": "f4bdf0f967330f9704b01cc962137a70596822b8319d3b35404eafc9c6d2efe7",
+      "normalized_name": "f4bdf0f967330f9704b01cc962137a70596822b8319d3b35404eafc9c6d2efe7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "f4bdf0f967330f9704b01cc962137a70596822b8319d3b35404eafc9c6d2efe7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_22d53ada23b2625265cdbddc8a599ee0",
+      "type": "MD5",
+      "name": "22d53ada23b2625265cdbddc8a599ee0",
+      "normalized_name": "22d53ada23b2625265cdbddc8a599ee0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "22d53ada23b2625265cdbddc8a599ee0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2b68360b0d4e26d2b5f7698fe324b87d",
+      "type": "MD5",
+      "name": "2b68360b0d4e26d2b5f7698fe324b87d",
+      "normalized_name": "2b68360b0d4e26d2b5f7698fe324b87d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "2b68360b0d4e26d2b5f7698fe324b87d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_704d491c155aad996f16377a35732cb4",
+      "type": "MD5",
+      "name": "704d491c155aad996f16377a35732cb4",
+      "normalized_name": "704d491c155aad996f16377a35732cb4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "704d491c155aad996f16377a35732cb4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7646d1fa1de852bb99c621f5e9927221",
+      "type": "MD5",
+      "name": "7646d1fa1de852bb99c621f5e9927221",
+      "normalized_name": "7646d1fa1de852bb99c621f5e9927221",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "7646d1fa1de852bb99c621f5e9927221",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a7be38e8f84c5ad9cce30d009dc31d32",
+      "type": "MD5",
+      "name": "a7be38e8f84c5ad9cce30d009dc31d32",
+      "normalized_name": "a7be38e8f84c5ad9cce30d009dc31d32",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "a7be38e8f84c5ad9cce30d009dc31d32",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_dc3fff0873c3e8e853f6c5e01aa94fcf",
+      "type": "MD5",
+      "name": "dc3fff0873c3e8e853f6c5e01aa94fcf",
+      "normalized_name": "dc3fff0873c3e8e853f6c5e01aa94fcf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "value": "dc3fff0873c3e8e853f6c5e01aa94fcf",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_expand.exe",
+      "type": "File",
+      "name": "expand.exe",
+      "normalized_name": "expand.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_9"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "file_name": "expand.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "KEYMARBLE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_NDA_USA.pdf",
+      "type": "File",
+      "name": "NDA_USA.pdf",
+      "normalized_name": "NDA_USA.pdf",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "file_name": "NDA_USA.pdf",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "NDA_USA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Hidden_Cobra",
+      "tail_id": "ent_threatactor_lazarus",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "type": "targets",
+      "head_id": "ent_threatactor_lazarus",
+      "tail_id": "ent_victim_Russia",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "20 de febrero de 2019 securitysummitperu.com /articulos/se-identifico-ataques-del-grupo-cibercriminal-lazarus-dirigidos-a- organizaciones-en-rusia",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Security investigators have concluded that the North Korean state-sponsored cybercriminal group, Lazarus, would be conducting suspicious activities targeting companies based in Russia.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Affected Services • Microsoft Windows Operating Systems Technical details The Lazarus campaign targeting Russia uses malicious Office documents delivered as ZIP files, along with a PDF document called NDA_USA.pdf that contains a StarForce Technologies agreement, which is a Russian software company that provides copy protection software.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The security community believes that Lazarus is divided into at least two subdivisions: the first called Andariel, which focuses on attacking the government and organizations of South Korea, and the second, Bluenoroff, whose main focus is monetization and campaigning.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "The VBS script downloads a CAB file from the server in the download zone, extracts the embedded EXE file (KEYMARBLE) with the Windows “expand.exe” utility and finally executes it.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "Source 2: North Korean APT Lazarus Targets Russian Entities with KEYMARBLE Backdoor",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "If you have any questions, do not hesitate to contact us: reports@securesoftcorp.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "3. The VBS script downloads a CAB file from the server in the download zone, extracts the embedded EXE file (KEYMARBLE) with the Windows “expand.exe” utility and finally executes it.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "MD5 : dc3fff0873c3e8e853f6c5e01aa94fcf SHA256 : 1c4745c82fdcb9d05e210eff346d7bee2f087357b17bfcf7c2038c854f0dee61",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "MD5 : 704d491c155aad996f16377a35732cb4 SHA256 : e23900b00ffd67cd8dfa3283d9ced691566df6d63d1d46c95b22569b49011f09",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "MD5 : 2b68360b0d4e26d2b5f7698fe324b87d SHA256 : 49a23160ba2af4fba0186512783482918b07a32b0e809de0336ba723636ae3b6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "MD5 : a7be38e8f84c5ad9cce30d009dc31d32 SHA256 : f4bdf0f967330f9704b01cc962137a70596822b8319d3b35404eafc9c6d2efe7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "MD5 : 7646d1fa1de852bb99c621f5e9927221 SHA256 : 9894f6993cae186981ecb034899353a04f1a9b009bdf265cecda9595b725ee20",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "SecureSoft_Lazarus_Russia(02-20-2019)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "MD5 : 22d53ada23b2625265cdbddc8a599ee0 SHA256 : 8e099261929b1b09e9d637e8d054d5909b945b4157f29337977eb7f5fb835e5d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_lazarus",
+        "ent_victim_Russia"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_lazarus",
+        "ent_victim_Russia",
+        "ent_file_NDA_USA.pdf"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_lazarus",
+        "ent_victim_Russia"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_domain_securesoftcorp.com",
+        "ent_email_reports_securesoftcorp.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_lazarus"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

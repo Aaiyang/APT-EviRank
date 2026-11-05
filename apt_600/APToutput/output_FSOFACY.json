@@ -1,0 +1,2488 @@
+{
+  "report_id": "FSOFACY",
+  "title": "APT28 Targets Financial markets:",
+  "source": null,
+  "published_date": "May 10, 2015",
+  "report_metadata": {
+    "file_name": "FSOFACY.pdf",
+    "file_path": "/root/APTtext/FSOFACY.pdf",
+    "source_type": "pdf",
+    "char_length": 22815,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Sofacy",
+      "type": "ThreatActor",
+      "name": "Sofacy",
+      "normalized_name": "Sofacy",
+      "aliases": [
+        "APT-28",
+        "Sednit",
+        "Sourface"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_5",
+        "ev_70"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_27",
+        "ev_14"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_carbon2u.com",
+      "type": "Domain",
+      "name": "carbon2u.com",
+      "normalized_name": "carbon2u.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "FSOFACY",
+      "value": "carbon2u.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Commerzbank",
+      "type": "Victim",
+      "name": "Commerzbank",
+      "normalized_name": "Commerzbank",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_United_Bank_for_Africa",
+      "type": "Victim",
+      "name": "United Bank for Africa",
+      "normalized_name": "United Bank for Africa",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_APT-28",
+      "type": "ThreatActor",
+      "name": "APT-28",
+      "normalized_name": "APT-28",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_5"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Sofacy"
+    },
+    {
+      "id": "ent_threatactor_Sednit",
+      "type": "ThreatActor",
+      "name": "Sednit",
+      "normalized_name": "Sednit",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_5"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Sofacy"
+    },
+    {
+      "id": "ent_threatactor_Sourface",
+      "type": "ThreatActor",
+      "name": "Sourface",
+      "normalized_name": "Sourface",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_5"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Sofacy"
+    },
+    {
+      "id": "ent_threatactor_Toronto_Dominion",
+      "type": "ThreatActor",
+      "name": "Toronto Dominion",
+      "normalized_name": "Toronto Dominion",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_SHA1",
+      "type": "Malware",
+      "name": "SHA1",
+      "normalized_name": "SHA1",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "FSOFACY",
+      "family": "SHA1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_domain_americ.com",
+      "type": "Domain",
+      "name": "americ.com",
+      "normalized_name": "americ.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "FSOFACY",
+      "value": "americ.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_aspnix.com",
+      "type": "Domain",
+      "name": "aspnix.com",
+      "normalized_name": "aspnix.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77",
+        "ev_78"
+      ],
+      "report_id": "FSOFACY",
+      "value": "aspnix.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_78"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_b-of-americ.com",
+      "type": "Domain",
+      "name": "b-of-americ.com",
+      "normalized_name": "b-of-americ.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "b-of-americ.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_bbcnewsweek.com",
+      "type": "Domain",
+      "name": "bbcnewsweek.com",
+      "normalized_name": "bbcnewsweek.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "bbcnewsweek.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_bulkbreakers.com",
+      "type": "Domain",
+      "name": "bulkbreakers.com",
+      "normalized_name": "bulkbreakers.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "FSOFACY",
+      "value": "bulkbreakers.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cbibuae.com",
+      "type": "Domain",
+      "name": "cbibuae.com",
+      "normalized_name": "cbibuae.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cbibuae.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cbiuae.com",
+      "type": "Domain",
+      "name": "cbiuae.com",
+      "normalized_name": "cbiuae.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cbiuae.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cbiuaebank.com",
+      "type": "Domain",
+      "name": "cbiuaebank.com",
+      "normalized_name": "cbiuaebank.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cbiuaebank.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cbiuaebn.com",
+      "type": "Domain",
+      "name": "cbiuaebn.com",
+      "normalized_name": "cbiuaebn.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cbiuaebn.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cbiuaeonline.com",
+      "type": "Domain",
+      "name": "cbiuaeonline.com",
+      "normalized_name": "cbiuaeonline.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cbiuaeonline.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cibuaeonline.com",
+      "type": "Domain",
+      "name": "cibuaeonline.com",
+      "normalized_name": "cibuaeonline.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cibuaeonline.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_80"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_cibuaeonlinebn.com",
+      "type": "Domain",
+      "name": "cibuaeonlinebn.com",
+      "normalized_name": "cibuaeonlinebn.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "FSOFACY",
+      "value": "cibuaeonlinebn.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_fbonlinelottery.com",
+      "type": "Domain",
+      "name": "fbonlinelottery.com",
+      "normalized_name": "fbonlinelottery.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "fbonlinelottery.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_fubnt.com",
+      "type": "Domain",
+      "name": "fubnt.com",
+      "normalized_name": "fubnt.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "fubnt.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_globeshippers.biz",
+      "type": "Domain",
+      "name": "globeshippers.biz",
+      "normalized_name": "globeshippers.biz",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "globeshippers.biz",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_globeshippers.net",
+      "type": "Domain",
+      "name": "globeshippers.net",
+      "normalized_name": "globeshippers.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "globeshippers.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_googlesetting.com",
+      "type": "Domain",
+      "name": "googlesetting.com",
+      "normalized_name": "googlesetting.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "googlesetting.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_gsandsc.com",
+      "type": "Domain",
+      "name": "gsandsc.com",
+      "normalized_name": "gsandsc.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "gsandsc.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_gshippers.com",
+      "type": "Domain",
+      "name": "gshippers.com",
+      "normalized_name": "gshippers.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "gshippers.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hesselawchambers.com",
+      "type": "Domain",
+      "name": "hesselawchambers.com",
+      "normalized_name": "hesselawchambers.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "hesselawchambers.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hostzeal.com",
+      "type": "Domain",
+      "name": "hostzeal.com",
+      "normalized_name": "hostzeal.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "FSOFACY",
+      "value": "hostzeal.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_kwqx.us",
+      "type": "Domain",
+      "name": "kwqx.us",
+      "normalized_name": "kwqx.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "kwqx.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_largefarm.net",
+      "type": "Domain",
+      "name": "largefarm.net",
+      "normalized_name": "largefarm.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "largefarm.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_middle-eastreview.org",
+      "type": "Domain",
+      "name": "middle-eastreview.org",
+      "normalized_name": "middle-eastreview.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "middle-eastreview.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_nvhserver.com",
+      "type": "Domain",
+      "name": "nvhserver.com",
+      "normalized_name": "nvhserver.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "FSOFACY",
+      "value": "nvhserver.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ok2host.com",
+      "type": "Domain",
+      "name": "ok2host.com",
+      "normalized_name": "ok2host.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "FSOFACY",
+      "value": "ok2host.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_osce-military.org",
+      "type": "Domain",
+      "name": "osce-military.org",
+      "normalized_name": "osce-military.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "osce-military.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_qov.hu.com",
+      "type": "Domain",
+      "name": "qov.hu.com",
+      "normalized_name": "qov.hu.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "qov.hu.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_regionsbnk.info",
+      "type": "Domain",
+      "name": "regionsbnk.info",
+      "normalized_name": "regionsbnk.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "regionsbnk.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_royalbsuk.com",
+      "type": "Domain",
+      "name": "royalbsuk.com",
+      "normalized_name": "royalbsuk.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "royalbsuk.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_seatreasures.org",
+      "type": "Domain",
+      "name": "seatreasures.org",
+      "normalized_name": "seatreasures.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "seatreasures.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_settings-yahoo.com",
+      "type": "Domain",
+      "name": "settings-yahoo.com",
+      "normalized_name": "settings-yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "settings-yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_site4now.net",
+      "type": "Domain",
+      "name": "site4now.net",
+      "normalized_name": "site4now.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "FSOFACY",
+      "value": "site4now.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ssandsc.com",
+      "type": "Domain",
+      "name": "ssandsc.com",
+      "normalized_name": "ssandsc.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "ssandsc.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_t-d-canadatrust.com",
+      "type": "Domain",
+      "name": "t-d-canadatrust.com",
+      "normalized_name": "t-d-canadatrust.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "t-d-canadatrust.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_techcruncln.com",
+      "type": "Domain",
+      "name": "techcruncln.com",
+      "normalized_name": "techcruncln.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "techcruncln.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_techielawfirms.com",
+      "type": "Domain",
+      "name": "techielawfirms.com",
+      "normalized_name": "techielawfirms.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "techielawfirms.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_togounoffice.com",
+      "type": "Domain",
+      "name": "togounoffice.com",
+      "normalized_name": "togounoffice.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "togounoffice.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_ubagroupsgh.com",
+      "type": "Domain",
+      "name": "ubagroupsgh.com",
+      "normalized_name": "ubagroupsgh.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "ubagroupsgh.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_un-unicef.org",
+      "type": "Domain",
+      "name": "un-unicef.org",
+      "normalized_name": "un-unicef.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "un-unicef.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_unicomba.com",
+      "type": "Domain",
+      "name": "unicomba.com",
+      "normalized_name": "unicomba.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "unicomba.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_unitednat.org",
+      "type": "Domain",
+      "name": "unitednat.org",
+      "normalized_name": "unitednat.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "unitednat.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_universalcoba.com",
+      "type": "Domain",
+      "name": "universalcoba.com",
+      "normalized_name": "universalcoba.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "universalcoba.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.bloomberg.com",
+      "type": "Domain",
+      "name": "www.bloomberg.com",
+      "normalized_name": "www.bloomberg.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81",
+        "ev_82",
+        "ev_83"
+      ],
+      "report_id": "FSOFACY",
+      "value": "www.bloomberg.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_81",
+        "ev_83"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.newsweek.com",
+      "type": "Domain",
+      "name": "www.newsweek.com",
+      "normalized_name": "www.newsweek.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84",
+        "ev_85"
+      ],
+      "report_id": "FSOFACY",
+      "value": "www.newsweek.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [
+        "ev_85"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.theguardian.com",
+      "type": "Domain",
+      "name": "www.theguardian.com",
+      "normalized_name": "www.theguardian.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86",
+        "ev_87"
+      ],
+      "report_id": "FSOFACY",
+      "value": "www.theguardian.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [
+        "ev_87"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_yovtube.co",
+      "type": "Domain",
+      "name": "yovtube.co",
+      "normalized_name": "yovtube.co",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "FSOFACY",
+      "value": "yovtube.co",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_176.31.112.10",
+      "type": "IPv4",
+      "name": "176.31.112.10",
+      "normalized_name": "176.31.112.10",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68",
+        "ev_76"
+      ],
+      "report_id": "FSOFACY",
+      "value": "176.31.112.10",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_76"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_www.bloomberg.com_politics_articles_2014-10-30_security-firms-tie-russian-government-",
+      "type": "URL",
+      "name": "http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-",
+      "normalized_name": "http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81",
+        "ev_82",
+        "ev_83"
+      ],
+      "report_id": "FSOFACY",
+      "value": "http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_81",
+        "ev_83"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.bloomberg.com_politics_articles_2014-10-30_security-firms-tie-russian-government-to-",
+      "type": "URL",
+      "name": "http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-to-",
+      "normalized_name": "http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-to-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81",
+        "ev_83"
+      ],
+      "report_id": "FSOFACY",
+      "value": "http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-to-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_83"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.newsweek.com_2015_05_15_russias-greatest-weapon-may-be-its-hackers-328864.html",
+      "type": "URL",
+      "name": "http://www.newsweek.com/2015/05/15/russias-greatest-weapon-may-be-its-hackers-328864.html",
+      "normalized_name": "http://www.newsweek.com/2015/05/15/russias-greatest-weapon-may-be-its-hackers-328864.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84",
+        "ev_85"
+      ],
+      "report_id": "FSOFACY",
+      "value": "http://www.newsweek.com/2015/05/15/russias-greatest-weapon-may-be-its-hackers-328864.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [
+        "ev_85"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.theguardian.com_world_2014_apr_24_vladimir-putin-web-breakup-internet-cia",
+      "type": "URL",
+      "name": "http://www.theguardian.com/world/2014/apr/24/vladimir-putin-web-breakup-internet-cia",
+      "normalized_name": "http://www.theguardian.com/world/2014/apr/24/vladimir-putin-web-breakup-internet-cia",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_86",
+        "ev_87"
+      ],
+      "report_id": "FSOFACY",
+      "value": "http://www.theguardian.com/world/2014/apr/24/vladimir-putin-web-breakup-internet-cia",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_86",
+      "supporting_evidence_ids": [
+        "ev_87"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_0450aaf8ed309ca6baf303837701b5b23aac6f05",
+      "type": "SHA1",
+      "name": "0450aaf8ed309ca6baf303837701b5b23aac6f05",
+      "normalized_name": "0450aaf8ed309ca6baf303837701b5b23aac6f05",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "FSOFACY",
+      "value": "0450aaf8ed309ca6baf303837701b5b23aac6f05",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a351842ee01374d66bae35354ffe72f0b1b8a40b",
+      "type": "SHA1",
+      "name": "a351842ee01374d66bae35354ffe72f0b1b8a40b",
+      "normalized_name": "a351842ee01374d66bae35354ffe72f0b1b8a40b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "FSOFACY",
+      "value": "a351842ee01374d66bae35354ffe72f0b1b8a40b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_bb909d9c27a509bf97cdc85268556ff5a6d2550a",
+      "type": "SHA1",
+      "name": "bb909d9c27a509bf97cdc85268556ff5a6d2550a",
+      "normalized_name": "bb909d9c27a509bf97cdc85268556ff5a6d2550a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "FSOFACY",
+      "value": "bb909d9c27a509bf97cdc85268556ff5a6d2550a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_f325970fd24bb088f1befdae5788152329e26bf3",
+      "type": "SHA1",
+      "name": "f325970fd24bb088f1befdae5788152329e26bf3",
+      "normalized_name": "f325970fd24bb088f1befdae5788152329e26bf3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "FSOFACY",
+      "value": "f325970fd24bb088f1befdae5788152329e26bf3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_victim_Regions_Bank",
+      "type": "Victim",
+      "name": "Regions Bank",
+      "normalized_name": "Regions Bank",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_victim_United_Nations",
+      "type": "Victim",
+      "name": "United Nations",
+      "normalized_name": "United Nations",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "FSOFACY",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "FSOFACY",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_APT-28",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "FSOFACY",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Sednit",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "FSOFACY",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Sourface",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "FSOFACY",
+      "type": "targets",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_victim_Commerzbank",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_52",
+        "ev_12",
+        "ev_13",
+        "ev_14",
+        "ev_48",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "FSOFACY",
+      "type": "targets",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_victim_United_Bank_for_Africa",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_52",
+        "ev_12",
+        "ev_13",
+        "ev_14",
+        "ev_48",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_52",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Sofacy, Sednit, Sourface, APT-28, and a host of other names are all used to describe this particularly prolific and superbly talented group of Russian hackers, which has strongly suspected ties to Russian intelligence services.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "NATO, defense industry corporations, and government domains of states opposed to Russia on various issues have all been, at times, victims of Sofacy.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "At other times large banks and private corporations have been hit hard by Sofacy exploits, at a cost of hundreds of millions to the victims.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s8"
+      },
+      "text": "Sofacy’s choice of targets has historically been an interesting mixture that has fueled an ongoing debate over whether the group is criminal in nature, or actually an agent of a nation-state.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "Evidence of intrusion within client networks pointed to a specific server, CARBON2U.COM, that had been previously linked to malicious activity and identified by other security firms as part of the infrastructure utilized by the Sofacy group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "COM, appeared to be a fake version of CBIUAE.COM, the actual domain of the website of Commercial Bank International of the United Arab Emirates.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "COM, they observed as the apparent fake domains they were monitoring migrated to other servers; first to SITE4NOW.NET and later to OK2HOST.COM.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s5"
+      },
+      "text": "With the exception of CBIUAEONLINE.COM, there are numerous consistencies amongst the tactics employed by the hackers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s10"
+      },
+      "text": "DOMAIN: CBIBUAE.COM • Created: 2014-06-14 • Nameserver: nvhserver.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "Also identified during this analysis, was the prepositioning of a domain targeting the financial institution B-OF- AMERIC.COM, created in April 2015.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "One of these name servers, BULKBREAKERS.COM, contains several other international financial institutions.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "One of those domains, T-D-CANADATRUST.COM, was updated on 23 March 2015, and appears to be targeting Toronto Dominion (TD) Canada Trust.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s7"
+      },
+      "text": "Among the apparent targets of other domains similarly created or updated in 2015 are: the United Nations, United Nations Children’s Fund, United Bank for Africa, Regions Bank, and possibly Commerzbank.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s13"
+      },
+      "text": "The same person was ostensibly responsible for registering the two most recent domains (CBIUAEBN.COM and CBIUAEBANK.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s8"
+      },
+      "text": "However, it is possible, that the Sofacy group could utilize this server as a vector to deliver malicious code to the banking victims in an attempt to obtain access to the network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s10"
+      },
+      "text": "Malware SHA1 Hash Command and Control (C2) Server: 176.31.112.10",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Interesting samples of over 250 identified malicious domains*: b-of-americ.com osce-military.org bbcnewsweek.com qov.hu.com settings-yahoo.com yovtube.co googlesetting.com cbiuaebn.com cbiuaebank.com techcruncln.com un-unicef.org royalbsuk.com kwqx.us middle-eastreview.org unitednat.org fbonlinelottery.com fubnt.com globeshippers.biz globeshippers.net gsandsc.com gshippers.com hesselawchambers.com largefarm.net regionsbnk.info seatreasures.org ssandsc.com t-d-canadatrust.com techielawfirms.com togounoffice.com ubagroupsgh.com un-unicef.org unicomba.com universalcoba.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "*Some domains may have been previously reported as associated with the Sofacy Group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "0450aaf8ed309ca6baf303837701b5b23aac6f05",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "bb909d9c27a509bf97cdc85268556ff5a6d2550a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "f325970fd24bb088f1befdae5788152329e26bf3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "a351842ee01374d66bae35354ffe72f0b1b8a40b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "176.31.112.10",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb77"
+      },
+      "text": "•Nameserver:aspnix.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb78"
+      },
+      "text": "COM • Created: 2014-06-24 • Updated: 2014-07-03 •Nameserver:aspnix.com (suspended-domain) DOMAIN: ROYALBSUK.COM • Created: 2014-07-02 • Updated: 2014-07-06 • Nameserver: (suspended",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb79"
+      },
+      "text": "DOMAIN: CIBUAEONLINE.COM",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb80"
+      },
+      "text": "o distinct subgroups, each of which utilized unique DOMAIN: CIBUAEONLINE.COM • Created: 2014-11-27 • Updated: 2014-01-27 • Nameserver: hostzeal.com DOMAIN: CIBUAEONLINEBN.COM • Cre",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb81"
+      },
+      "text": "ii http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-to-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb82"
+      },
+      "text": "iv http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb83"
+      },
+      "text": "as-greatest-weapon-may-be-its-hackers-328864.html ii http://www.bloomberg.com/politics/articles/2014-10-30/security-firms-tie-russian-government-to- utilities-hacks iii http://www.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb84"
+      },
+      "text": "i http://www.newsweek.com/2015/05/15/russias-greatest-weapon-may-be-its-hackers-328864.html",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb85"
+      },
+      "text": "APT-28 10root9b.com May 10, 2015 Footnotes: i http://www.newsweek.com/2015/05/15/russias-greatest-weapon-may-be-its-hackers-328864.html ii http://www.bloomberg.com/politics/article",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_86",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb86"
+      },
+      "text": "iii http://www.theguardian.com/world/2014/apr/24/vladimir-putin-web-breakup-internet-cia",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "FSOFACY",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb87"
+      },
+      "text": "firms-tie-russian-government-to- utilities-hacks iii http://www.theguardian.com/world/2014/apr/24/vladimir-putin-web-breakup-internet-cia iv http://www.bloomberg.com/politics/artic",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_5",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_APT-28",
+        "ent_threatactor_Sednit",
+        "ent_threatactor_Sourface"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_69",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_b-of-americ.com",
+        "ent_domain_bbcnewsweek.com",
+        "ent_domain_cbiuaebank.com",
+        "ent_domain_cbiuaebn.com",
+        "ent_domain_fbonlinelottery.com",
+        "ent_domain_fubnt.com",
+        "ent_domain_globeshippers.biz",
+        "ent_domain_globeshippers.net",
+        "ent_domain_googlesetting.com",
+        "ent_domain_gsandsc.com",
+        "ent_domain_gshippers.com",
+        "ent_domain_hesselawchambers.com",
+        "ent_domain_kwqx.us",
+        "ent_domain_largefarm.net",
+        "ent_domain_middle-eastreview.org",
+        "ent_domain_osce-military.org",
+        "ent_domain_qov.hu.com",
+        "ent_domain_regionsbnk.info",
+        "ent_domain_royalbsuk.com",
+        "ent_domain_seatreasures.org",
+        "ent_domain_settings-yahoo.com",
+        "ent_domain_ssandsc.com",
+        "ent_domain_t-d-canadatrust.com",
+        "ent_domain_techcruncln.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_85",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_APT-28",
+        "ent_url_http_www.newsweek.com_2015_05_15_russias-greatest-weapon-may-be-its-hackers-328864.html"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_80",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_cibuaeonline.com",
+        "ent_domain_cibuaeonlinebn.com",
+        "ent_domain_hostzeal.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_domain_carbon2u.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_domain_cbibuae.com",
+        "ent_domain_nvhserver.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_78",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_domain_aspnix.com",
+        "ent_domain_royalbsuk.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_victim_Commerzbank",
+        "ent_victim_United_Bank_for_Africa"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

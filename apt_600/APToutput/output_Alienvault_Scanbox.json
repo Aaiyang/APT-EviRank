@@ -1,0 +1,170 @@
+{
+  "report_id": "Alienvault_Scanbox",
+  "title": "Scanbox: A Reconnaissance Framework Used with Watering Hole Attacks",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Alienvault_Scanbox.pdf",
+    "file_path": "/root/APTtext/Alienvault_Scanbox.pdf",
+    "source_type": "pdf",
+    "char_length": 2779,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_campaign_Scanbox",
+      "type": "Campaign",
+      "name": "Scanbox",
+      "normalized_name": "Scanbox",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_3",
+        "ev_7"
+      ],
+      "report_id": "Alienvault_Scanbox",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_js.webmailgoogle.com",
+      "type": "Domain",
+      "name": "js.webmailgoogle.com",
+      "normalized_name": "js.webmailgoogle.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "report_id": "Alienvault_Scanbox",
+      "value": "js.webmailgoogle.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mail.webmailgoogle.com",
+      "type": "Domain",
+      "name": "mail.webmailgoogle.com",
+      "normalized_name": "mail.webmailgoogle.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "report_id": "Alienvault_Scanbox",
+      "value": "mail.webmailgoogle.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_122.10.9.109",
+      "type": "IPv4",
+      "name": "122.10.9.109",
+      "normalized_name": "122.10.9.109",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_7",
+        "ev_8"
+      ],
+      "report_id": "Alienvault_Scanbox",
+      "value": "122.10.9.109",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Alienvault_Scanbox",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "This Javascript file is a framework for reconnaissance that the attackers call \"Scanbox\" and includes some of the techniques we described in a previous blog post: Attackers abusing",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Alienvault_Scanbox",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "We have also seen several Metasploit-produced exploits that target different versions of Java in the same IP address that hosts the Scanbox framework (122.10.9[.]109).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Alienvault_Scanbox",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "We recommend you look for this type of activity against the following machines in your network: mail[.]webmailgoogle.com js[.]webmailgoogle.com 122[.]10.9.109",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ]
+}

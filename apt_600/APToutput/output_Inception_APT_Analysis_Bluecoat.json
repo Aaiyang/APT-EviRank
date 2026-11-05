@@ -1,0 +1,499 @@
+{
+  "report_id": "Inception_APT_Analysis_Bluecoat",
+  "title": "Reversing the Inception APT malware",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Inception_APT_Analysis_Bluecoat.pdf",
+    "file_path": "/root/APTtext/Inception_APT_Analysis_Bluecoat.pdf",
+    "source_type": "pdf",
+    "char_length": 5688,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_campaign_Exploit",
+      "type": "Campaign",
+      "name": "Exploit",
+      "normalized_name": "Exploit",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2012-0158",
+      "type": "CVE",
+      "name": "CVE-2012-0158",
+      "normalized_name": "CVE-2012-0158",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_MD5",
+      "type": "Campaign",
+      "name": "MD5",
+      "normalized_name": "MD5",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_domain_www.bluecoat.com",
+      "type": "Domain",
+      "name": "www.bluecoat.com",
+      "normalized_name": "www.bluecoat.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "value": "www.bluecoat.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.bluecoat.com_security-blog_2014-12-09_blue-coat-exposes-_E2_80_9C-",
+      "type": "URL",
+      "name": "https://www.bluecoat.com/security-blog/2014-12-09/blue-coat-exposes-%E2%80%9C-",
+      "normalized_name": "https://www.bluecoat.com/security-blog/2014-12-09/blue-coat-exposes-%E2%80%9C-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_39"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "value": "https://www.bluecoat.com/security-blog/2014-12-09/blue-coat-exposes-%E2%80%9C-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_4a4874fa5217a8523bf4d1954efb26ef",
+      "type": "MD5",
+      "name": "4a4874fa5217a8523bf4d1954efb26ef",
+      "normalized_name": "4a4874fa5217a8523bf4d1954efb26ef",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "value": "4a4874fa5217a8523bf4d1954efb26ef",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_dropped.dll",
+      "type": "File",
+      "name": "dropped.dll",
+      "normalized_name": "dropped.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_34"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "file_name": "dropped.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ew_Rg.vbs",
+      "type": "File",
+      "name": "ew_Rg.vbs",
+      "normalized_name": "ew_Rg.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "file_name": "ew_Rg.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wmiprvse.dll",
+      "type": "File",
+      "name": "wmiprvse.dll",
+      "normalized_name": "wmiprvse.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_24",
+        "ev_35",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "file_name": "wmiprvse.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_37",
+        "ev_24"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "type": "exploits",
+      "head_id": "ent_campaign_Exploit",
+      "tail_id": "ent_cve_CVE-2012-0158",
+      "head_type": "Campaign",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_1",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "Exploit",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit; exploit_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "RTF file Analysis Exploit: CVE-2012-0158 As we can see in following screen shot, this is a RTF [Rich Text Format] file."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0001",
+      "type": "exploits",
+      "summary": "Exploit exploits CVE-2012-0158",
+      "evidence_ids": [
+        "ev_1",
+        "ev_30"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "RTF file Analysis Exploit: CVE-2012-0158 As we can see in following screen shot, this is a RTF [Rich Text Format] file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "In the first loop it decrypts and in the second loop it swaps the low and high bytes of the first 0x100 16-bit words, after which it writes the file to a file named “Temp/ew_Rg.vbs”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Following function writes byte by byte to the dropped.dll file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "Finally, the following code executes the “regsvr32” command to run the wmiprvse.dll in silent mode and sets the run key in registry.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "MD5: 4a4874fa5217a8523bf4d1954efb26ef",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "Exploit: CVE-2012-0158",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "Following function writes byte by byte to the dropped.dll file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "Finally, the following code executes the “regsvr32” command to run the wmiprvse.dll in silent mode and",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "Payload “wmiprvse.dll” file Analysis",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "This first level of deobfuscation in wmiprvse.dll takes around 3-4 minutes to finish. Then it allocates",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb38"
+      },
+      "text": "https://www.bluecoat.com/security-blog/2014-12-09/blue-coat-exposes-%E2%80%9C-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Inception_APT_Analysis_Bluecoat",
+      "locator": {
+        "page": 12,
+        "section": "rule_backfill",
+        "sentence_id": "p12_rb39"
+      },
+      "text": "exfiltrate system and user information. Reference: https://www.bluecoat.com/security-blog/2014-12-09/blue-coat-exposes-%E2%80%9C- inception-framework%E2%80%9D-very-sophisticated-la",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_campaign_Exploit",
+        "ent_cve_CVE-2012-0158"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_campaign_Exploit",
+        "ent_cve_CVE-2012-0158"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    }
+  ]
+}

@@ -1,0 +1,1365 @@
+{
+  "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+  "title": "Analysis of activities of suspected APT-C-36 (Blind Eagle) organization launching Amadey botnet Trojan",
+  "source": null,
+  "published_date": "2023-10-31",
+  "report_metadata": {
+    "file_name": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023).pdf",
+    "file_path": "/root/APTtext/CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 6668,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Amadey_botnet_Trojan",
+      "type": "Malware",
+      "name": "Amadey botnet Trojan",
+      "normalized_name": "Amadey botnet Trojan",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_12",
+        "ev_2",
+        "ev_5",
+        "ev_8"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "family": "Amadey botnet Trojan",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_12",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_APT-C-36",
+      "type": "Malware",
+      "name": "APT-C-36",
+      "normalized_name": "APT-C-36",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_2",
+        "ev_22",
+        "ev_23",
+        "ev_8"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "family": "APT-C-36",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_23",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_AsyncRAT",
+      "type": "Malware",
+      "name": "AsyncRAT",
+      "normalized_name": "AsyncRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "family": "AsyncRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_net_dll",
+      "type": "Malware",
+      "name": "net_dll",
+      "normalized_name": "net_dll",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_11",
+        "ev_8"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "family": "net_dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_autgerman.autgerman.com",
+      "type": "Domain",
+      "name": "autgerman.autgerman.com",
+      "normalized_name": "autgerman.autgerman.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "autgerman.autgerman.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_mp.weixin.qq.com",
+      "type": "Domain",
+      "name": "mp.weixin.qq.com",
+      "normalized_name": "mp.weixin.qq.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "mp.weixin.qq.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_subirfact.com",
+      "type": "Domain",
+      "name": "subirfact.com",
+      "normalized_name": "subirfact.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "subirfact.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_213.226.123.14_8bmeVwqx_index.php",
+      "type": "URL",
+      "name": "http://213.226.123.14/8bmeVwqx/index.php",
+      "normalized_name": "http://213.226.123.14/8bmeVwqx/index.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "http://213.226.123.14/8bmeVwqx/index.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_213.226.123.14_8bmeVwqx_index.php_scr_1",
+      "type": "URL",
+      "name": "http://213.226.123.14/8bmeVwqx/index.php?scr=1",
+      "normalized_name": "http://213.226.123.14/8bmeVwqx/index.php?scr=1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "http://213.226.123.14/8bmeVwqx/index.php?scr=1",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_clip.dll",
+      "type": "URL",
+      "name": "http://213.226.123.14/8bmeVwqx/Plugins/clip.dll",
+      "normalized_name": "http://213.226.123.14/8bmeVwqx/Plugins/clip.dll",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "http://213.226.123.14/8bmeVwqx/Plugins/clip.dll",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_clip64.dll",
+      "type": "URL",
+      "name": "http://213.226.123.14/8bmeVwqx/Plugins/clip64.dll",
+      "normalized_name": "http://213.226.123.14/8bmeVwqx/Plugins/clip64.dll",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "http://213.226.123.14/8bmeVwqx/Plugins/clip64.dll",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_cred.dll",
+      "type": "URL",
+      "name": "http://213.226.123.14/8bmeVwqx/Plugins/cred.dll",
+      "normalized_name": "http://213.226.123.14/8bmeVwqx/Plugins/cred.dll",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "http://213.226.123.14/8bmeVwqx/Plugins/cred.dll",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_cred64.dll",
+      "type": "URL",
+      "name": "http://213.226.123.14/8bmeVwqx/Plugins/cred64.dll",
+      "normalized_name": "http://213.226.123.14/8bmeVwqx/Plugins/cred64.dll",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "http://213.226.123.14/8bmeVwqx/Plugins/cred64.dll",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_subirfact.com_onLyofFicED.bat",
+      "type": "URL",
+      "name": "https://subirfact.com/onLyofFicED.bat",
+      "normalized_name": "https://subirfact.com/onLyofFicED.bat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "https://subirfact.com/onLyofFicED.bat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_05B99BEE0D8BA95F5CCB1D356939DAA8",
+      "type": "MD5",
+      "name": "05B99BEE0D8BA95F5CCB1D356939DAA8",
+      "normalized_name": "05B99BEE0D8BA95F5CCB1D356939DAA8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "05B99BEE0D8BA95F5CCB1D356939DAA8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_20561F6497492900567CBF08A20AFCCA",
+      "type": "MD5",
+      "name": "20561F6497492900567CBF08A20AFCCA",
+      "normalized_name": "20561F6497492900567CBF08A20AFCCA",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "20561F6497492900567CBF08A20AFCCA",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_303ACDC5A695A27A91FEA715AE8FDFB8",
+      "type": "MD5",
+      "name": "303ACDC5A695A27A91FEA715AE8FDFB8",
+      "normalized_name": "303ACDC5A695A27A91FEA715AE8FDFB8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "303ACDC5A695A27A91FEA715AE8FDFB8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_42DD207E642CEC5A12839257DF892CA9",
+      "type": "MD5",
+      "name": "42DD207E642CEC5A12839257DF892CA9",
+      "normalized_name": "42DD207E642CEC5A12839257DF892CA9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "42DD207E642CEC5A12839257DF892CA9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_461A67CE40F4A12863244EFEEF5EBC26",
+      "type": "MD5",
+      "name": "461A67CE40F4A12863244EFEEF5EBC26",
+      "normalized_name": "461A67CE40F4A12863244EFEEF5EBC26",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_26",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "461A67CE40F4A12863244EFEEF5EBC26",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5590C7E442E8D2BC857813C008CE4A6C",
+      "type": "MD5",
+      "name": "5590C7E442E8D2BC857813C008CE4A6C",
+      "normalized_name": "5590C7E442E8D2BC857813C008CE4A6C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "5590C7E442E8D2BC857813C008CE4A6C",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_57A169A5A3CA09A0EDE3FEDC50E6D222",
+      "type": "MD5",
+      "name": "57A169A5A3CA09A0EDE3FEDC50E6D222",
+      "normalized_name": "57A169A5A3CA09A0EDE3FEDC50E6D222",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "57A169A5A3CA09A0EDE3FEDC50E6D222",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_64E6B811153C4452837E187A10D54665",
+      "type": "MD5",
+      "name": "64E6B811153C4452837E187A10D54665",
+      "normalized_name": "64E6B811153C4452837E187A10D54665",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "64E6B811153C4452837E187A10D54665",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c1eeb77920357a53e271091f85618bd9",
+      "type": "MD5",
+      "name": "c1eeb77920357a53e271091f85618bd9",
+      "normalized_name": "c1eeb77920357a53e271091f85618bd9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "c1eeb77920357a53e271091f85618bd9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_C92A9FA4306F7912D3AF58C2A75682FD",
+      "type": "MD5",
+      "name": "C92A9FA4306F7912D3AF58C2A75682FD",
+      "normalized_name": "C92A9FA4306F7912D3AF58C2A75682FD",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "C92A9FA4306F7912D3AF58C2A75682FD",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_FDD66DC414647B87AA1688610337133B",
+      "type": "MD5",
+      "name": "FDD66DC414647B87AA1688610337133B",
+      "normalized_name": "FDD66DC414647B87AA1688610337133B",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "FDD66DC414647B87AA1688610337133B",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_FECB399CAE4861440DF73EAA7110F52C",
+      "type": "MD5",
+      "name": "FECB399CAE4861440DF73EAA7110F52C",
+      "normalized_name": "FECB399CAE4861440DF73EAA7110F52C",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "value": "FECB399CAE4861440DF73EAA7110F52C",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_clip.dll",
+      "type": "File",
+      "name": "clip.dll",
+      "normalized_name": "clip.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "file_name": "clip.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_14",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_clip64.dll",
+      "type": "File",
+      "name": "clip64.dll",
+      "normalized_name": "clip64.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "file_name": "clip64.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cred.dll",
+      "type": "File",
+      "name": "cred.dll",
+      "normalized_name": "cred.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "file_name": "cred.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_14",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cred64.dll",
+      "type": "File",
+      "name": "cred64.dll",
+      "normalized_name": "cred64.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "file_name": "cred64.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_onLyofFicED.bat",
+      "type": "File",
+      "name": "onLyofFicED.bat",
+      "normalized_name": "onLyofFicED.bat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27",
+        "ev_30"
+      ],
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "file_name": "onLyofFicED.bat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_14",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "type": "executes",
+      "head_id": "ent_file_cred.dll",
+      "tail_id": "ent_file_clip.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "type": "executes",
+      "head_id": "ent_malware_net_dll",
+      "tail_id": "ent_malware_AsyncRAT",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "type": "loads",
+      "head_id": "ent_file_cred.dll",
+      "tail_id": "ent_file_clip.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_14",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "type": "loads",
+      "head_id": "ent_malware_net_dll",
+      "tail_id": "ent_malware_APT-C-36",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "primary_evidence_id": "ev_8",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "type": "loads",
+      "head_id": "ent_malware_net_dll",
+      "tail_id": "ent_malware_AsyncRAT",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "cred.dll executes clip.dll",
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "net_dll executes AsyncRAT",
+      "evidence_ids": [
+        "ev_11"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "cred.dll loads clip.dll",
+      "evidence_ids": [
+        "ev_14",
+        "ev_27"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "net_dll loads APT-C-36",
+      "evidence_ids": [
+        "ev_8"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "net_dll loads AsyncRAT",
+      "evidence_ids": [
+        "ev_11"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "mp.weixin.qq.com /s/-7U1-NTP0EdVOtptzbHUsg 1.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Analysis of attack activities In daily hunting activities, we discovered that the APT-C-36 organization recently attempted to add the Amadey botnet Trojan to its usual PDF spear phishing attack flow.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The attack flow of the Amadey botnet Trojan was used in this campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "One of the two payloads is net_dll for reflection loading, which can be seen frequently used by APT-C-36 in previous attacks; the other is the Amadey botnet Trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "The processed net_dll payload data is loaded reflectively by calling its KoAOkX.MXuuJb.WwQTZc method.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "In the second stage, after net_dll is run, the AsyncRAT Trojan is injected into the system process to run.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Amadey The base64 encoded data downloaded by the Powershell script code from another third- party platform is the Amadey botnet Trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "After running the distributed Amadey, it will download three files: cred.dll, clip.dll, and onLyofFicED.bat.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "The bait PDF file used in this spear phishing incident, the malicious code obfuscation method used, and the subsequent payload are consistent with those used by APT-C-36 in previous activities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "During the continuous tracking of APT-C-36, we found that the organization continues to launch attacks in Ecuador and other regions, and constantly tries to add new Trojan tools to its arsenal to improve its attack capabilities.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "42DD207E642CEC5A12839257DF892CA9 461A67CE40F4A12863244EFEEF5EBC26 FDD66DC414647B87AA1688610337133B 5590C7E442E8D2BC857813C008CE4A6C 303ACDC5A695A27A91FEA715AE8FDFB8 FECB399CAE4861440DF73EAA7110F52C C92A9FA4306F7912D3AF58C2A75682FD 57A169A5A3CA09A0EDE3FEDC50E6D222 05B99BEE0D8BA95F5CCB1D356939DAA8 64E6B811153C4452837E187A10D54665 c1eeb77920357a53e271091f85618bd9 360 Advanced Threat Research Institute is the core capability support department of 360 Digital Security Group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "MD5 461A67CE40F4A12863244EFEEF5EBC26",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "After running the distributed Amadey, it will download three files: cred.dll, clip.dll, and onLyofFicED.bat. The dll file is Amadey’s information collection component and is used to steal user privacy data such as browser accounts. The bat file is to Malicious scripts executed. During the file request process, Amadey will send specific fields to the CC server based on the current computer information.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "Appendix IOC 20561F6497492900567CBF08A20AFCCA",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "42DD207E642CEC5A12839257DF892CA9 461A67CE40F4A12863244EFEEF5EBC26 FDD66DC414647B87AA1688610337133B 5590C7E442E8D2BC857813C008CE4A6C 303ACDC5A695A27A91FEA715AE8FDFB8 FECB399CAE4861440DF73EAA7110F52C C92A9FA4306F7912D3AF58C2A75682FD 57A169A5A3CA09A0EDE3FEDC50E6D222 05B99BEE0D8BA95F5CCB1D356939DAA8 64E6B811153C4452837E187A10D54665 c1eeb77920357a53e271091f85618bd9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "CoreSec360_APT-C-36-BlindEagle-Amadey-botnet(10-31-2023)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "autgerman.autgerman.com http://213.226.123.14/8bmeVwqx/Plugins/cred.dll http://213.226.123.14/8bmeVwqx/Plugins/clip64.dll http://213.226.123.14/8bmeVwqx/index.php http://213.226.123.14/8bmeVwqx/Plugins/cred64.dll http://213.226.123.14/8bmeVwqx/Plugins/clip.dll http://213.226.123.14/8bmeVwqx/index.php?scr=1 https://subirfact.com/onLyofFicED.bat 360 Advanced Threat Research Institute",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_Amadey_botnet_Trojan",
+        "ent_malware_APT-C-36"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_clip.dll",
+        "ent_file_cred.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_APT-C-36",
+        "ent_malware_net_dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_14",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_clip.dll",
+        "ent_file_cred.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_domain_autgerman.autgerman.com",
+        "ent_url_http_213.226.123.14_8bmeVwqx_index.php",
+        "ent_url_http_213.226.123.14_8bmeVwqx_index.php_scr_1",
+        "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_clip.dll",
+        "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_clip64.dll",
+        "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_cred.dll",
+        "ent_url_http_213.226.123.14_8bmeVwqx_Plugins_cred64.dll",
+        "ent_url_https_subirfact.com_onLyofFicED.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Amadey_botnet_Trojan",
+        "ent_malware_APT-C-36"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_AsyncRAT",
+        "ent_malware_net_dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+  "title": "APT41: A Dual Espionage and Cyber Crime Operation",
+  "source": "ESET",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019).pdf",
+    "file_path": "/root/APTtext/Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 8034,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT41",
+      "type": "ThreatActor",
+      "name": "APT41",
+      "normalized_name": "APT41",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_12",
+        "ev_21",
+        "ev_4"
+      ],
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_12",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Winnti",
+      "type": "ThreatActor",
+      "name": "Winnti",
+      "normalized_name": "Winnti",
+      "aliases": [
+        "Clearsky",
+        "Kaspersky"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_victim_hotel_s_reservatio",
+      "type": "Victim",
+      "name": "hotel's reservatio",
+      "normalized_name": "hotel's reservatio",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Today, FireEye Intelligence is releasing a comprehensive report detailing APT41, a prolific Chinese cyber threat group that carries out state-sponsored espionage activity in parallel with financially motivated operations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "The full published report covers historical and ongoing activity attributed to APT41, the evolution of the group’s tactics, techniques, and procedures (TTPs), information on the individual actors, an overview of their malware toolset, and how these identifiers overlap with other known Chinese espionage operators.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "APT41 partially coincides with public reporting on groups including BARIUM (Microsoft) and Winnti (Kaspersky, ESET, Clearsky).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s12"
+      },
+      "text": "The group’s financially motivated activity has primarily focused on the video game industry, where APT41 has manipulated virtual currencies and even attempted to deploy ransomware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Dual-Espionage-Cyber-Crime-WebPage(08-07-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Probable Chinese Espionage Contractors Two identified personas using the monikers “Zhang Xuguang” and “Wolfzhi” linked to APT41 operations have also been identified in Chinese-language forums.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ]
+}

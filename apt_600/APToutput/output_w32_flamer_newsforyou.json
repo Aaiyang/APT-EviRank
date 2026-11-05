@@ -1,0 +1,1030 @@
+{
+  "report_id": "w32_flamer_newsforyou",
+  "title": "Security Response Have I Got Newsforyou: Analysis of Flamer C&C Server",
+  "source": null,
+  "published_date": "May 18, 2012",
+  "report_metadata": {
+    "file_name": "w32_flamer_newsforyou.pdf",
+    "file_path": "/root/APTtext/w32_flamer_newsforyou.pdf",
+    "source_type": "pdf",
+    "char_length": 35092,
+    "report_profile": "historical_narrative"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Newsforyou",
+      "type": "ThreatActor",
+      "name": "Newsforyou",
+      "normalized_name": "Newsforyou",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_22",
+        "ev_29",
+        "ev_35",
+        "ev_56"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_29",
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_OldProtocol",
+      "type": "ThreatActor",
+      "name": "OldProtocol",
+      "normalized_name": "OldProtocol",
+      "aliases": [
+        "Flamer"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_50",
+        "ev_51",
+        "ev_74",
+        "ev_82"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51",
+        "ev_74",
+        "ev_82"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_Flamer_operation",
+      "type": "Campaign",
+      "name": "Flamer operation",
+      "normalized_name": "Flamer operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_dnslocation.info",
+      "type": "Domain",
+      "name": "dnslocation.info",
+      "normalized_name": "dnslocation.info",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "dnslocation.info",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_logwiper.sh",
+      "type": "Domain",
+      "name": "logwiper.sh",
+      "normalized_name": "logwiper.sh",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_152",
+        "ev_153",
+        "ev_154"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "logwiper.sh",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [
+        "ev_152",
+        "ev_154"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_symantec.com",
+      "type": "Domain",
+      "name": "symantec.com",
+      "normalized_name": "symantec.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "symantec.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_www.symantec.com",
+      "type": "Domain",
+      "name": "www.symantec.com",
+      "normalized_name": "www.symantec.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "www.symantec.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ipv4_1.4.11.4.",
+      "type": "IPv4",
+      "name": "1.4.11.4.",
+      "normalized_name": "1.4.11.4.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_145"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "1.4.11.4.",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_145",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_flamer-highly-sophisticated-and-discreet-threat-targets-middle-east",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/flamer-highly-sophisticated-and-discreet-threat-targets-middle-east",
+      "normalized_name": "http://symantec.com/connect/blogs/flamer-highly-sophisticated-and-discreet-threat-targets-middle-east",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/flamer-highly-sophisticated-and-discreet-threat-targets-middle-east",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_flamer-recipe-bluetoothache",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/flamer-recipe-bluetoothache",
+      "normalized_name": "http://symantec.com/connect/blogs/flamer-recipe-bluetoothache",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/flamer-recipe-bluetoothache",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_flamer-urgent-suicide",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/flamer-urgent-suicide",
+      "normalized_name": "http://symantec.com/connect/blogs/flamer-urgent-suicide",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/flamer-urgent-suicide",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_painting-picture-w32flamer",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/painting-picture-w32flamer",
+      "normalized_name": "http://symantec.com/connect/blogs/painting-picture-w32flamer",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/painting-picture-w32flamer",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_w32flamer-enormous-data-collection",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/w32flamer-enormous-data-collection",
+      "normalized_name": "http://symantec.com/connect/blogs/w32flamer-enormous-data-collection",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/w32flamer-enormous-data-collection",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_w32flamer-leveraging-microsoft-digital-certificates",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/w32flamer-leveraging-microsoft-digital-certificates",
+      "normalized_name": "http://symantec.com/connect/blogs/w32flamer-leveraging-microsoft-digital-certificates",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/w32flamer-leveraging-microsoft-digital-certificates",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_w32flamer-microsoft-windows-update-man-middle",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/w32flamer-microsoft-windows-update-man-middle",
+      "normalized_name": "http://symantec.com/connect/blogs/w32flamer-microsoft-windows-update-man-middle",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/w32flamer-microsoft-windows-update-man-middle",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_http_symantec.com_connect_blogs_w32flamer-spreading-mechanism-tricks-and-exploits",
+      "type": "URL",
+      "name": "http://symantec.com/connect/blogs/w32flamer-spreading-mechanism-tricks-and-exploits",
+      "normalized_name": "http://symantec.com/connect/blogs/w32flamer-spreading-mechanism-tricks-and-exploits",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_89",
+        "ev_90"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "http://symantec.com/connect/blogs/w32flamer-spreading-mechanism-tricks-and-exploits",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_90"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_27934e96d90d06818674b98bec7230fa",
+      "type": "MD5",
+      "name": "27934e96d90d06818674b98bec7230fa",
+      "normalized_name": "27934e96d90d06818674b98bec7230fa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_140",
+        "ev_144"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "27934e96d90d06818674b98bec7230fa",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_140",
+      "supporting_evidence_ids": [
+        "ev_144"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_59c5452fb2ba21091513ccdc1e0ec7fd",
+      "type": "MD5",
+      "name": "59c5452fb2ba21091513ccdc1e0ec7fd",
+      "normalized_name": "59c5452fb2ba21091513ccdc1e0ec7fd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_142"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "value": "59c5452fb2ba21091513ccdc1e0ec7fd",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_142",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_._Delete.php",
+      "type": "File",
+      "name": "./Delete.php",
+      "normalized_name": "./Delete.php",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "file_name": "./Delete.php",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_._RequestHandler.php",
+      "type": "File",
+      "name": "./RequestHandler.php",
+      "normalized_name": "./RequestHandler.php",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "file_name": "./RequestHandler.php",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_browse32.ocx",
+      "type": "File",
+      "name": "browse32.ocx",
+      "normalized_name": "browse32.ocx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "file_name": "browse32.ocx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_LogWiper_fixed.txt",
+      "type": "File",
+      "name": "LogWiper_fixed.txt",
+      "normalized_name": "LogWiper_fixed.txt",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_38"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "file_name": "LogWiper_fixed.txt",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "BASH"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Middle_East",
+      "type": "Victim",
+      "name": "Middle East",
+      "normalized_name": "Middle East",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1",
+        "ev_5"
+      ],
+      "report_id": "w32_flamer_newsforyou",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "W32.Flamer is a sophisticated cyber espionage tool that targeted the Middle East.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "However, the attackers were not thorough enough, as files revealing the entire history of the servers’ setup were available and a limited set of encrypted records in the database revealed that compromised clients had been connecting from the Middle East.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "/etc/cron.newsforyou UnloadChecker.php, which is executed every two minutes, retrieves data uploaded from the compromised computer and places it in a tar archive.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Stress testing the application Simulator This application consists of a set of Python scripts, which are used to stress test the Newsforyou application.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "A point of interest here is the presence of dnslocation.info as part of the HTTP request header the script builds in a file named Connection.py.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s7"
+      },
+      "text": "./LogWiper_fixed.txt Script which disables logging and securely deletes specific log files ./RequestHandler.php Used in the Newsforyou Web application",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s8"
+      },
+      "text": "./Delete.php PHP script which delete files and entries in the MySQL database",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Disabling logging LogWiper_fixed.txt This .txt file is renamed to a .sh BASH script and run to disable logging services, to securely delete any prior log files created, and to disable logging in two particular applications required by the attackers: Apache and SSH.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "*Used by W32.Flamer **PROTOCOL_OLD with custom encryption over HTTP Specific requests handled by the application are:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "The possibility that multiple Trojans, or at least evolutions of W32.Flamer, are at work here is backed up by the fact that four different IDs are used internally to identify them:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s5"
+      },
+      "text": "Based on timestamps seen on the first server in the /newsforyou/bak directory we determined that the operators downloaded the stolen data on four separate dates in May.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s2"
+      },
+      "text": "On the second server the Flamer operation is in full flow and huge volumes of files are being created on the system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s3"
+      },
+      "text": "This is the browse32.ocx Flamer module, the sole purpose of which is to remove all known traces of the Flamer malware from the compromised client.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s1"
+      },
+      "text": "The session_log data contained three separate HTTP_HOST values, indicating multiple Flamer C&C server URLs were used to access this server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 18,
+        "section": "body",
+        "sentence_id": "p18_s9"
+      },
+      "text": "This investigation simply provides a snapshot in time of the Flamer attack campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 20,
+        "section": "body",
+        "sentence_id": "p20_s1"
+      },
+      "text": "More information is available at www.symantec.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 20,
+        "section": "body",
+        "sentence_id": "p20_s2"
+      },
+      "text": "Symantec Corporation World Headquarters 350 Ellis Street Mountain View, CA 94043 USA +1 (650) 527-8000 www.symantec.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_140",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r2"
+      },
+      "text": "Username: username Password Hash: 27934e96d90d06818674b98bec7230fa",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r4"
+      },
+      "text": "0xfccd97e2513089e74ba707bbf4c1b0e5 59c5452fb2ba21091513ccdc1e0ec7fd 204,024 bytes",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 17,
+        "section": "rule",
+        "sentence_id": "p17_r1"
+      },
+      "text": "cp_hash 8 27934e96d90d06818674b98bec7230fa",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_145",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 17,
+        "section": "rule",
+        "sentence_id": "p17_r2"
+      },
+      "text": "version 1.4.11.4.1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb152"
+      },
+      "text": "cp /home/[USERNAME]/LogWiper_fixed.txt /LogWiper.sh",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb153"
+      },
+      "text": "sh /LogWiper.sh",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_154",
+      "evidence_type": "report_text",
+      "report_id": "w32_flamer_newsforyou",
+      "locator": {
+        "page": 4,
+        "section": "rule_backfill",
+        "sentence_id": "p4_rb154"
+      },
+      "text": "ten on TCP port 443 cp /home/[USERNAME]/LogWiper_fixed.txt /LogWiper.sh Prepares log wiper file as BASH script sh /LogWiper.sh Wipes logs and disables logging services mkdir /var/w",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_35",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_threatactor_Newsforyou",
+        "ent_file_._RequestHandler.php"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+{
+  "report_id": "PawnStorm_iOS",
+  "title": "Pawn Storm Update: iOS Espionage App Found",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "PawnStorm_iOS.pdf",
+    "file_path": "/root/APTtext/PawnStorm_iOS.pdf",
+    "source_type": "pdf",
+    "char_length": 5559,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_MadCap",
+      "type": "Malware",
+      "name": "MadCap",
+      "normalized_name": "MadCap",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "family": "MadCap",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_XAgent",
+      "type": "Malware",
+      "name": "XAgent",
+      "normalized_name": "XAgent",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_16",
+        "ev_6"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "family": "XAgent",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Pawn_Storm",
+      "type": "Campaign",
+      "name": "Operation Pawn Storm",
+      "normalized_name": "Operation Pawn Storm",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Pawn_Storm_Update",
+      "type": "Campaign",
+      "name": "Pawn Storm Update",
+      "normalized_name": "Pawn Storm Update",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "PawnStorm_iOS",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Pawn_Storm",
+      "type": "ThreatActor",
+      "name": "Pawn Storm",
+      "normalized_name": "Pawn Storm",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_22"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_Background_of_Operation",
+      "type": "Campaign",
+      "name": "Background of Operation",
+      "normalized_name": "Background of Operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "PawnStorm_iOS",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_url_https_www.",
+      "type": "URL",
+      "name": "https://www.",
+      "normalized_name": "https://www.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_24"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "value": "https://www.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_05298a48e4ca6d9778b32259c8ae74527be33815",
+      "type": "SHA1",
+      "name": "05298a48e4ca6d9778b32259c8ae74527be33815",
+      "normalized_name": "05298a48e4ca6d9778b32259c8ae74527be33815",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "value": "05298a48e4ca6d9778b32259c8ae74527be33815",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_176e92e7cfc0e57be83e901c36ba17b255ba0b1b",
+      "type": "SHA1",
+      "name": "176e92e7cfc0e57be83e901c36ba17b255ba0b1b",
+      "normalized_name": "176e92e7cfc0e57be83e901c36ba17b255ba0b1b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "value": "176e92e7cfc0e57be83e901c36ba17b255ba0b1b",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_30e4decd68808cb607c2aba4aa69fb5fdb598c64",
+      "type": "SHA1",
+      "name": "30e4decd68808cb607c2aba4aa69fb5fdb598c64",
+      "normalized_name": "30e4decd68808cb607c2aba4aa69fb5fdb598c64",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "PawnStorm_iOS",
+      "value": "30e4decd68808cb607c2aba4aa69fb5fdb598c64",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PawnStorm_iOS",
+      "type": "related_family",
+      "head_id": "ent_malware_MadCap",
+      "tail_id": "ent_malware_XAgent",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "related_family",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "family_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Analysis of “MadCap” “Madcap” is similar to the XAgent malware, but the former is focused on recording audio."
+      },
+      "head": {
+        "id": "ent_malware_MadCap",
+        "type": "Malware",
+        "name": "MadCap",
+        "normalized_name": "MadCap",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_16"
+        ],
+        "report_id": "PawnStorm_iOS",
+        "family": "MadCap",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_16",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_XAgent",
+        "type": "Malware",
+        "name": "XAgent",
+        "normalized_name": "XAgent",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_16",
+          "ev_6"
+        ],
+        "report_id": "PawnStorm_iOS",
+        "family": "XAgent",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_16",
+        "supporting_evidence_ids": [
+          "ev_6"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "The actors of Pawn Storm tend to first move a lot of pawns in the hopes they come close to their actual, high profile targets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "Analysis of XAgent The XAgent app is fully functional malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Analysis of “MadCap” “Madcap” is similar to the XAgent malware, but the former is focused on recording audio.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "The link will lead to https://www.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "To learn more about this campaign, you may refer to our report, Operation Pawn Storm Using Decoys to Evade Detection .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "installed simply by clicking on a link, such as in the picture below. The link will lead to https://www.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "05298a48e4ca6d9778b32259c8ae74527be33815",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "176e92e7cfc0e57be83e901c36ba17b255ba0b1b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "PawnStorm_iOS",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "30e4decd68808cb607c2aba4aa69fb5fdb598c64",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_16",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_MadCap",
+        "ent_malware_XAgent"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    }
+  ]
+}

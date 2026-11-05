@@ -1,0 +1,2244 @@
+{
+  "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+  "title": "Uri Terror attack & Kashmir Protest Themed spear phishing emails targeting Indian Embassies and Indian Ministry of external affairs",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017).pdf",
+    "file_path": "/root/APTtext/Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 14148,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_njRAT",
+      "type": "Malware",
+      "name": "njRAT",
+      "normalized_name": "njRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_19",
+        "ev_21",
+        "ev_22",
+        "ev_39"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "family": "njRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Officeupdate",
+      "type": "Malware",
+      "name": "Officeupdate",
+      "normalized_name": "Officeupdate",
+      "aliases": [
+        "officeupdate.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23",
+        "ev_50",
+        "ev_53"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_20",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_officeupdate.exe",
+      "family": "Officeupdate",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_khanji.ddns.net",
+      "type": "Domain",
+      "name": "khanji.ddns.net",
+      "normalized_name": "khanji.ddns.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31",
+        "ev_36",
+        "ev_55",
+        "ev_56"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "khanji.ddns.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_31",
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Googleupdate",
+      "type": "Malware",
+      "name": "Googleupdate",
+      "normalized_name": "Googleupdate",
+      "aliases": [
+        "googleupdate.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53",
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_25",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_googleupdate.exe",
+      "family": "Googleupdate",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_officeupdate.exe",
+      "type": "Malware",
+      "name": "officeupdate.exe",
+      "normalized_name": "officeupdate.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23",
+        "ev_50"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Officeupdate"
+    },
+    {
+      "id": "ent_malware_officeupdate.exe",
+      "type": "Malware",
+      "name": "officeupdate.exe",
+      "normalized_name": "officeupdate.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23",
+        "ev_50",
+        "ev_53"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "file_name": "officeupdate.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_20",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_malware_WIN-T9UN4HIIHEC",
+      "type": "Malware",
+      "name": "WIN-T9UN4HIIHEC",
+      "normalized_name": "WIN-T9UN4HIIHEC",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_28",
+        "ev_30"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "family": "WIN-T9UN4HIIHEC",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_cysinfo.com",
+      "type": "Domain",
+      "name": "cysinfo.com",
+      "normalized_name": "cysinfo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63",
+        "ev_64"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "cysinfo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_pastebin.com",
+      "type": "Domain",
+      "name": "pastebin.com",
+      "normalized_name": "pastebin.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65",
+        "ev_66",
+        "ev_67"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "pastebin.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_65",
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_threatgeek.typepad.com",
+      "type": "Domain",
+      "name": "threatgeek.typepad.com",
+      "normalized_name": "threatgeek.typepad.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "threatgeek.typepad.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.eff.org",
+      "type": "Domain",
+      "name": "www.eff.org",
+      "normalized_name": "www.eff.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "www.eff.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.symantec.com",
+      "type": "Domain",
+      "name": "www.symantec.com",
+      "normalized_name": "www.symantec.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70",
+        "ev_71"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "www.symantec.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ipv4_45.42.243.20",
+      "type": "IPv4",
+      "name": "45.42.243.20",
+      "normalized_name": "45.42.243.20",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61",
+        "ev_62"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "45.42.243.20",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_62"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_pastebin.com_raw_5j4hc8gT",
+      "type": "URL",
+      "name": "http://pastebin.com/raw/5j4hc8gT",
+      "normalized_name": "http://pastebin.com/raw/5j4hc8gT",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65",
+        "ev_67"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "http://pastebin.com/raw/5j4hc8gT",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_pastebin.com_raw_6bwniBtB",
+      "type": "URL",
+      "name": "http://pastebin.com/raw/6bwniBtB",
+      "normalized_name": "http://pastebin.com/raw/6bwniBtB",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "http://pastebin.com/raw/6bwniBtB",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_threatgeek.typepad.com_files_fta-1009_njrat-uncovered-1.pdf",
+      "type": "URL",
+      "name": "http://threatgeek.typepad.com/files/fta-1009—njrat-uncovered-1.pdf",
+      "normalized_name": "http://threatgeek.typepad.com/files/fta-1009—njrat-uncovered-1.pdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "http://threatgeek.typepad.com/files/fta-1009—njrat-uncovered-1.pdf",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.eff.org_files_2013_12_28_quantum_of_surveillance4d.pdf",
+      "type": "URL",
+      "name": "https://www.eff.org/files/2013/12/28/quantum_of_surveillance4d.pdf",
+      "normalized_name": "https://www.eff.org/files/2013/12/28/quantum_of_surveillance4d.pdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72",
+        "ev_73"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "https://www.eff.org/files/2013/12/28/quantum_of_surveillance4d.pdf",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_73"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.symantec.com_connect_blogs_simple-njrat-fuels-nascent-middle-east-cybercrime-scene",
+      "type": "URL",
+      "name": "https://www.symantec.com/connect/blogs/simple-njrat-fuels-nascent-middle-east-cybercrime-scene",
+      "normalized_name": "https://www.symantec.com/connect/blogs/simple-njrat-fuels-nascent-middle-east-cybercrime-scene",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70",
+        "ev_71"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "https://www.symantec.com/connect/blogs/simple-njrat-fuels-nascent-middle-east-cybercrime-scene",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_url_https_www.zscaler.com_blogs_research_njrat-h-worm-variant-infections-continue-rise",
+      "type": "URL",
+      "name": "https://www.zscaler.com/blogs/research/njrat-h-worm-variant-infections-continue-rise",
+      "normalized_name": "https://www.zscaler.com/blogs/research/njrat-h-worm-variant-infections-continue-rise",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74",
+        "ev_75"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "https://www.zscaler.com/blogs/research/njrat-h-worm-variant-infections-continue-rise",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_028caf3b1f5174ae092ecf435c1fccc2",
+      "type": "MD5",
+      "name": "028caf3b1f5174ae092ecf435c1fccc2",
+      "normalized_name": "028caf3b1f5174ae092ecf435c1fccc2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "028caf3b1f5174ae092ecf435c1fccc2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_14b9d54f07f3facf1240c5ba89aa2410",
+      "type": "MD5",
+      "name": "14b9d54f07f3facf1240c5ba89aa2410",
+      "normalized_name": "14b9d54f07f3facf1240c5ba89aa2410",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "14b9d54f07f3facf1240c5ba89aa2410",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2b0bd7e43c1f98f9db804011a54c11d6",
+      "type": "MD5",
+      "name": "2b0bd7e43c1f98f9db804011a54c11d6",
+      "normalized_name": "2b0bd7e43c1f98f9db804011a54c11d6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "2b0bd7e43c1f98f9db804011a54c11d6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_63698ddbdff5be7d5a7ba7f31d0d592c",
+      "type": "MD5",
+      "name": "63698ddbdff5be7d5a7ba7f31d0d592c",
+      "normalized_name": "63698ddbdff5be7d5a7ba7f31d0d592c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "63698ddbdff5be7d5a7ba7f31d0d592c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7732d5349a0cfa1c3e4bcfa0c06949e4",
+      "type": "MD5",
+      "name": "7732d5349a0cfa1c3e4bcfa0c06949e4",
+      "normalized_name": "7732d5349a0cfa1c3e4bcfa0c06949e4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "7732d5349a0cfa1c3e4bcfa0c06949e4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_784b6e13f195236304e1c172dcdab51f",
+      "type": "MD5",
+      "name": "784b6e13f195236304e1c172dcdab51f",
+      "normalized_name": "784b6e13f195236304e1c172dcdab51f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "784b6e13f195236304e1c172dcdab51f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7ad6aaa107a7616a3dbe8e3babf5d310",
+      "type": "MD5",
+      "name": "7ad6aaa107a7616a3dbe8e3babf5d310",
+      "normalized_name": "7ad6aaa107a7616a3dbe8e3babf5d310",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "7ad6aaa107a7616a3dbe8e3babf5d310",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7c4e60685203b229a41ae65eba1a0e10",
+      "type": "MD5",
+      "name": "7c4e60685203b229a41ae65eba1a0e10",
+      "normalized_name": "7c4e60685203b229a41ae65eba1a0e10",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "7c4e60685203b229a41ae65eba1a0e10",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8199667bad5559ee8f04fd6b1a587a75",
+      "type": "MD5",
+      "name": "8199667bad5559ee8f04fd6b1a587a75",
+      "normalized_name": "8199667bad5559ee8f04fd6b1a587a75",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "8199667bad5559ee8f04fd6b1a587a75",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_84d9d0524e14d9ab5f88bbce6d2d2582",
+      "type": "MD5",
+      "name": "84d9d0524e14d9ab5f88bbce6d2d2582",
+      "normalized_name": "84d9d0524e14d9ab5f88bbce6d2d2582",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "84d9d0524e14d9ab5f88bbce6d2d2582",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9909f8558209449348a817f297429a48",
+      "type": "MD5",
+      "name": "9909f8558209449348a817f297429a48",
+      "normalized_name": "9909f8558209449348a817f297429a48",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "9909f8558209449348a817f297429a48",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9a51db9889d4fd6d02bdb35bd13fb07e",
+      "type": "MD5",
+      "name": "9a51db9889d4fd6d02bdb35bd13fb07e",
+      "normalized_name": "9a51db9889d4fd6d02bdb35bd13fb07e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "9a51db9889d4fd6d02bdb35bd13fb07e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b0f0350a5c2480d8419d14ec3445b765",
+      "type": "MD5",
+      "name": "b0f0350a5c2480d8419d14ec3445b765",
+      "normalized_name": "b0f0350a5c2480d8419d14ec3445b765",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "b0f0350a5c2480d8419d14ec3445b765",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e2112439121f8ba9164668f54ca1c6af",
+      "type": "MD5",
+      "name": "e2112439121f8ba9164668f54ca1c6af",
+      "normalized_name": "e2112439121f8ba9164668f54ca1c6af",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_59"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "e2112439121f8ba9164668f54ca1c6af",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_feec4b571756e8c015c884cb5441166b",
+      "type": "MD5",
+      "name": "feec4b571756e8c015c884cb5441166b",
+      "normalized_name": "feec4b571756e8c015c884cb5441166b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "value": "feec4b571756e8c015c884cb5441166b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_googleupdate.exe",
+      "type": "File",
+      "name": "googleupdate.exe",
+      "normalized_name": "googleupdate.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53",
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "file_name": "googleupdate.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_25",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_malib.dll",
+      "type": "File",
+      "name": "malib.dll",
+      "normalized_name": "malib.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53",
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "file_name": "malib.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_25",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msccvs.dll",
+      "type": "File",
+      "name": "msccvs.dll",
+      "normalized_name": "msccvs.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53",
+        "ev_58"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "file_name": "msccvs.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_25",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Uri_Terror_Report.doc",
+      "type": "File",
+      "name": "Uri Terror Report.doc",
+      "normalized_name": "Uri Terror Report.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_13",
+        "ev_8",
+        "ev_9"
+      ],
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "file_name": "Uri Terror Report.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [
+        "ev_8",
+        "ev_11",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_officeupdate.exe",
+      "tail_id": "ent_malware_Officeupdate",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20",
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "downloads",
+      "head_id": "ent_malware_njRAT",
+      "tail_id": "ent_malware_officeupdate.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "primary_evidence_id": "ev_51",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "download",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_Officeupdate",
+      "tail_id": "ent_file_googleupdate.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "drop_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Once the dropped file ( officeupdate.exe ) is executed the malware drops additional files ( googleupdate.exe, malib.dll and msccvs.dll ) into the %AllUsersProfile%\\Google directory and then executes the dropped googleupdate.exe"
+      },
+      "head": {
+        "id": "ent_malware_Officeupdate",
+        "type": "Malware",
+        "name": "Officeupdate",
+        "normalized_name": "Officeupdate",
+        "aliases": [
+          "officeupdate.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_20",
+          "ev_23",
+          "ev_50",
+          "ev_53"
+        ],
+        "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_50",
+        "supporting_evidence_ids": [
+          "ev_53",
+          "ev_20",
+          "ev_23"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_officeupdate.exe",
+        "family": "Officeupdate",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_googleupdate.exe",
+        "type": "File",
+        "name": "googleupdate.exe",
+        "normalized_name": "googleupdate.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_53",
+          "ev_58"
+        ],
+        "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+        "file_name": "googleupdate.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_53",
+        "supporting_evidence_ids": [
+          "ev_25",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_Officeupdate",
+      "tail_id": "ent_file_malib.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "drop_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Once the dropped file ( officeupdate.exe ) is executed the malware drops additional files ( googleupdate.exe, malib.dll and msccvs.dll ) into the %AllUsersProfile%\\Google directory and then executes the dropped googleupdate.exe"
+      },
+      "head": {
+        "id": "ent_malware_Officeupdate",
+        "type": "Malware",
+        "name": "Officeupdate",
+        "normalized_name": "Officeupdate",
+        "aliases": [
+          "officeupdate.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_20",
+          "ev_23",
+          "ev_50",
+          "ev_53"
+        ],
+        "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_50",
+        "supporting_evidence_ids": [
+          "ev_53",
+          "ev_20",
+          "ev_23"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_officeupdate.exe",
+        "family": "Officeupdate",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_malib.dll",
+        "type": "File",
+        "name": "malib.dll",
+        "normalized_name": "malib.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_53",
+          "ev_58"
+        ],
+        "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+        "file_name": "malib.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_53",
+        "supporting_evidence_ids": [
+          "ev_25",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "drops",
+      "head_id": "ent_malware_Officeupdate",
+      "tail_id": "ent_file_msccvs.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53",
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_25"
+      },
+      "head": {
+        "id": "ent_malware_Officeupdate",
+        "type": "Malware",
+        "name": "Officeupdate",
+        "normalized_name": "Officeupdate",
+        "aliases": [
+          "officeupdate.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_20",
+          "ev_23",
+          "ev_50",
+          "ev_53"
+        ],
+        "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_50",
+        "supporting_evidence_ids": [
+          "ev_53",
+          "ev_20",
+          "ev_23"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "derived_from_file_id": "ent_file_officeupdate.exe",
+        "family": "Officeupdate",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_msccvs.dll",
+        "type": "File",
+        "name": "msccvs.dll",
+        "normalized_name": "msccvs.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_25",
+          "ev_53",
+          "ev_58"
+        ],
+        "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+        "file_name": "msccvs.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_53",
+        "supporting_evidence_ids": [
+          "ev_25",
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "executes",
+      "head_id": "ent_file_googleupdate.exe",
+      "tail_id": "ent_file_malib.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "loads",
+      "head_id": "ent_file_googleupdate.exe",
+      "tail_id": "ent_file_malib.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "type": "loads",
+      "head_id": "ent_file_googleupdate.exe",
+      "tail_id": "ent_malware_Officeupdate",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_25",
+        "ev_53"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "Officeupdate drops googleupdate.exe",
+      "evidence_ids": [
+        "ev_25"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "Officeupdate drops malib.dll",
+      "evidence_ids": [
+        "ev_25"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0005",
+      "type": "drops",
+      "summary": "Officeupdate drops msccvs.dll",
+      "evidence_ids": [
+        "ev_25",
+        "ev_53",
+        "ev_58"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "googleupdate.exe executes malib.dll",
+      "evidence_ids": [
+        "ev_25",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "googleupdate.exe loads malib.dll",
+      "evidence_ids": [
+        "ev_25",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "googleupdate.exe loads Officeupdate",
+      "evidence_ids": [
+        "ev_25",
+        "ev_53"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "downloads",
+      "summary": "njRAT downloads officeupdate.exe",
+      "evidence_ids": [
+        "ev_51"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "When the victim opens the attached word document it prompts the user to enable macro content and both the documents ( Uri Terror Report.doc and mha-report.doc ) displayed the same content and contained a Show Document button as shown below",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "In case of both the documents ( Uri Terror Report.doc and mha-report.doc ) the malicious macro code was heavily obfuscated(used obscure variable/function names to make analysis harder) and did not contain any auto execute functions .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "Reverse engineering both the word documents ( Uri Terror Report.doc & mha- report.doc ) exhibited similar behaviour except the minor difference mentioned below.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "In case of Uri Terror Report.doc the malicious activity triggered when the document was either closed or when the show document button was clicked, when any of these event occurs a malicious obfuscated function ( chugnnarabashkoim() ) gets called as shown below.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "The dropped file was determined as modified version of njRAT trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "The dropped file ( officeupdate.exe ) is then executed by the macro code using the PowerShell script.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "njRAT is a Remote Access Tool (RAT) used mostly by the actor groups in the middle east.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s7"
+      },
+      "text": "Once infected njRAT communicates to the attacker and allows the attacker to log keystrokes, upload/download files, access victims web camera, audio recording, steal credentials, view victims desktop, open reverse shell etc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Analysis of the Dropped Executable (officeupdate.exe) The dropped file was analyzed in an isolated environment (without actually allowing it to connect to the c2 server).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "Once the dropped file ( officeupdate.exe ) is executed the malware drops additional files ( googleupdate.exe, malib.dll and msccvs.dll ) into the %AllUsersProfile%\\Google directory and then executes the dropped googleupdate.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Below is the description of the strings passed in the C2 communication WIN-T9UN4HIIHEC -> is the hostname of the infected system Administrator -> is the username 16-12-04 -> is the infection date No -> Indicates that the system has no camera",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "1302_E63C5C8F -> is the botID_volume-serial-number Process Hacker [WIN-T9UN4HIIHEC\\Administrator]+ -> Reports open window, In my case I was using a tool called Process Hacker, The information on the open window lets the attacker know what tools are running on the system or if analysis tools are used to inspect the malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "C2 Domain Information This section contains the details of the C2 domain (khanji[.]ddns[.]net).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "The C2 domain (khanji[.]ddns[.]net) was also found to be associated with multiple malware samples in the past, Some of these malware samples made connection to pastebin urls upon execution, which is similar to the behavior mentioned previously.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "This same keyword was also found in the njRAT C2 communication used in this attack as shown below.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "Related Malware Samples associated with C2 (khanji[.]ddns[.]net): 028caf3b1f5174ae092ecf435c1fccc2 7732d5349a0cfa1c3e4bcfa0c06949e4 9909f8558209449348a817f297429a48 63698ddbdff5be7d5a7ba7f31d0d592c 7c4e60685203b229a41ae65eba1a0e10 e2112439121f8ba9164668f54ca1c6af 784b6e13f195236304e1c172dcdab51f b0f0350a5c2480d8419d14ec3445b765 9a51db9889d4fd6d02bdb35bd13fb07e 8199667bad5559ee8f04fd6b1a587a75 7ad6aaa107a7616a3dbe8e3babf5d310",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "The dropped file was determined as modified version of njRAT trojan. The dropped file ( officeupdate.exe ) is then executed by the macro code using the PowerShell script.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "njRAT is a Remote Access Tool (RAT) used mostly by the actor groups in the middle east. Once infected njRAT communicates to the attacker and allows the attacker to log keystrokes, upload/download files, access victims web camera, audio recording, steal credentials, view victims desktop, open reverse shell etc. The njRAT attacker control",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Once the dropped file ( officeupdate.exe ) is executed the malware drops additional files ( googleupdate.exe, malib.dll and msccvs.dll ) into the %AllUsersProfile%\\Google directory and then executes the dropped googleupdate.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "This section contains the details of the C2 domain (khanji[.]ddns[.]net). Attackers used the DynamicDNS to host the C2 server, this allows the attacker to quickly change the IP address in real time if the malware C2 server infrastructure is unavailable. The C2 domain was associated with multiple IP addresses in past as shown below",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "The C2 domain (khanji[.]ddns[.]net) was also found to be associated with multiple malware samples in the past, Some of these malware samples made connection to pastebin urls upon execution, which is similar to the behavior mentioned previously.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "Dropped Malware Samples: 14b9d54f07f3facf1240c5ba89aa2410 (googleupdate.exe) 2b0bd7e43c1f98f9db804011a54c11d6 (malib.dll) feec4b571756e8c015c884cb5441166b (msccvs.dll) 84d9d0524e14d9ab5f88bbce6d2d2582 (officeupdate.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "Related Malware Samples associated with C2 (khanji[.]ddns[.]net): 028caf3b1f5174ae092ecf435c1fccc2 7732d5349a0cfa1c3e4bcfa0c06949e4 9909f8558209449348a817f297429a48 63698ddbdff5be7d5a7ba7f31d0d592c 7c4e60685203b229a41ae65eba1a0e10 e2112439121f8ba9164668f54ca1c6af 784b6e13f195236304e1c172dcdab51f b0f0350a5c2480d8419d14ec3445b765 9a51db9889d4fd6d02bdb35bd13fb07e 8199667bad5559ee8f04fd6b1a587a75 7ad6aaa107a7616a3dbe8e3babf5d310",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb61"
+      },
+      "text": "45[.]42[.]243[.]20",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb62"
+      },
+      "text": "2[.]191[.]90[.]92 175[.]107[.]7[.]69 39[.]47[.]84[.]127 192[.]169[.]136[.]121 155[.]254[.]225[.]24 203[.]31[.]216[.]214 45[.]42[.]243[.]20 Pastebin URL’s Hosting Malicious Payload:",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb63"
+      },
+      "text": "cysinfo.com/uri-terror-attack-spear-phishing-emails-targeting-indian-embassies-and-indian-mea/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb64"
+      },
+      "text": "ng Indian Embassies and Indian Ministry of external affairs cysinfo.com/uri-terror-attack-spear-phishing-emails-targeting-indian-embassies-and-indian-mea/ In my previous blog I pos",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb65"
+      },
+      "text": "hxxp://pastebin.com/raw/5j4hc8gT",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb66"
+      },
+      "text": "hxxp://pastebin.com/raw/6bwniBtB",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 13,
+        "section": "rule_backfill",
+        "sentence_id": "p13_rb67"
+      },
+      "text": ".]254[.]225[.]24 203[.]31[.]216[.]214 45[.]42[.]243[.]20 Pastebin URL’s Hosting Malicious Payload: hxxp://pastebin.com/raw/5j4hc8gT hxxp://pastebin.com/raw/6bwniB",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb68"
+      },
+      "text": "http://threatgeek.typepad.com/files/fta-1009—njrat-uncovered-1.pdf",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb69"
+      },
+      "text": "search/njrat-h-worm-variant-infections-continue-rise http://threatgeek.typepad.com/files/fta-1009—njrat-uncovered-1.pdf https://www.eff.org/files/2013/12/28/quantum_of_surveillance",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb70"
+      },
+      "text": "https://www.symantec.com/connect/blogs/simple-njrat-fuels-nascent-middle-east-cybercrime-scene",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb71"
+      },
+      "text": ".org/files/2013/12/28/quantum_of_surveillance4d.pdf https://www.symantec.com/connect/blogs/simple-njrat-fuels-nascent-middle-east-cybercrime-scene Follow us on Twitter: @monnappa22",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb72"
+      },
+      "text": "https://www.eff.org/files/2013/12/28/quantum_of_surveillance4d.pdf",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb73"
+      },
+      "text": "threatgeek.typepad.com/files/fta-1009—njrat-uncovered-1.pdf https://www.eff.org/files/2013/12/28/quantum_of_surveillance4d.pdf https://www.symantec.com/connect/blogs/simple-njrat-f",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb74"
+      },
+      "text": "https://www.zscaler.com/blogs/research/njrat-h-worm-variant-infections-continue-rise",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo-Uri-KashmirProtest-Phishing-targeting-Indian-Embassies(01-19-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb75"
+      },
+      "text": "ted documents associated with this cyber attack. References https://www.zscaler.com/blogs/research/njrat-h-worm-variant-infections-continue-rise http://threatgeek.typepad.com/files",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_23",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Officeupdate",
+        "ent_malware_officeupdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_25",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Officeupdate",
+        "ent_malware_officeupdate.exe",
+        "ent_file_googleupdate.exe",
+        "ent_file_malib.dll",
+        "ent_file_msccvs.dll"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Officeupdate",
+        "ent_malware_officeupdate.exe",
+        "ent_file_googleupdate.exe",
+        "ent_file_malib.dll",
+        "ent_file_msccvs.dll"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_njRAT",
+        "ent_malware_Officeupdate",
+        "ent_malware_officeupdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_Officeupdate",
+        "ent_malware_officeupdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 8,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_malware_Officeupdate",
+        "ent_malware_officeupdate.exe",
+        "ent_file_googleupdate.exe",
+        "ent_file_malib.dll",
+        "ent_file_msccvs.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_Uri_Terror_Report.doc"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,2919 @@
+{
+  "report_id": "Tibet_Lurk",
+  "title": "The Citizen Lab Research Brief Number 10 – July 2012 Advanced Social Engineering for the Distribution of LURK Malware  The payload of each of these targeted malware attacks is the LURK malware, a remote access trojan that is a variant of Gh0stRAT.",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Tibet_Lurk.pdf",
+    "file_path": "/root/APTtext/Tibet_Lurk.pdf",
+    "source_type": "pdf",
+    "char_length": 19334,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Agent-XAT",
+      "type": "ThreatActor",
+      "name": "Agent-XAT",
+      "normalized_name": "Agent-XAT",
+      "aliases": [
+        "Sophos"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_TPC",
+      "type": "ThreatActor",
+      "name": "TPC",
+      "normalized_name": "TPC",
+      "aliases": [
+        "Trend Micro"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Droeshi",
+      "type": "Malware",
+      "name": "Droeshi",
+      "normalized_name": "Droeshi",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13",
+        "ev_16",
+        "ev_39",
+        "ev_41"
+      ],
+      "report_id": "Tibet_Lurk",
+      "family": "Droeshi",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_16",
+        "ev_41",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_IconConfigEt",
+      "type": "Malware",
+      "name": "IconConfigEt",
+      "normalized_name": "IconConfigEt",
+      "aliases": [
+        "IconConfigEt.DAT"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_80",
+        "ev_82"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "CREATELINK"
+      ],
+      "derived_from_file_id": "ent_file_IconConfigEt.DAT",
+      "family": "IconConfigEt",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Iexplore",
+      "type": "Malware",
+      "name": "Iexplore",
+      "normalized_name": "Iexplore",
+      "aliases": [
+        "iexplore.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80",
+        "ev_81"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_81"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "LURK",
+        "CREATELINK"
+      ],
+      "derived_from_file_id": "ent_file_iexplore.exe",
+      "family": "Iexplore",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_dnsd.me",
+      "type": "Domain",
+      "name": "dnsd.me",
+      "normalized_name": "dnsd.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_4",
+        "ev_60",
+        "ev_71"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "dnsd.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_71",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Sophos",
+      "type": "ThreatActor",
+      "name": "Sophos",
+      "normalized_name": "Sophos",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Agent-XAT"
+    },
+    {
+      "id": "ent_threatactor_Trend_Micro",
+      "type": "ThreatActor",
+      "name": "Trend Micro",
+      "normalized_name": "Trend Micro",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_TPC"
+    },
+    {
+      "id": "ent_malware_EIDHR_action_plan",
+      "type": "Malware",
+      "name": "EIDHR_action_plan",
+      "normalized_name": "EIDHR_action_plan",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_17",
+        "ev_39"
+      ],
+      "report_id": "Tibet_Lurk",
+      "family": "EIDHR_action_plan",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_IconConfigEt.DAT",
+      "type": "File",
+      "name": "IconConfigEt.DAT",
+      "normalized_name": "IconConfigEt.DAT",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_45",
+        "ev_80",
+        "ev_82"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "IconConfigEt.DAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_82",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "CREATELINK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_IconConfigEt.DAT",
+      "type": "Malware",
+      "name": "IconConfigEt.DAT",
+      "normalized_name": "IconConfigEt.DAT",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_45",
+        "ev_80",
+        "ev_82"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_IconConfigEt"
+    },
+    {
+      "id": "ent_file_iexplore.exe",
+      "type": "File",
+      "name": "iexplore.exe",
+      "normalized_name": "iexplore.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80",
+        "ev_81"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "iexplore.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_81"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "LURK",
+        "CREATELINK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_iexplore.exe",
+      "type": "Malware",
+      "name": "iexplore.exe",
+      "normalized_name": "iexplore.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80",
+        "ev_81"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Iexplore"
+    },
+    {
+      "id": "ent_campaign_Campaign_name",
+      "type": "Campaign",
+      "name": "Campaign name",
+      "normalized_name": "Campaign name",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_45",
+        "ev_46",
+        "ev_58",
+        "ev_62"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_62",
+        "ev_45",
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_citizenlab.org",
+      "type": "Domain",
+      "name": "citizenlab.org",
+      "normalized_name": "citizenlab.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "citizenlab.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dtl.dnsd.me",
+      "type": "Domain",
+      "name": "dtl.dnsd.me",
+      "normalized_name": "dtl.dnsd.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_59",
+        "ev_71"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "dtl.dnsd.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_71",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_dtl.eatuo.com",
+      "type": "Domain",
+      "name": "dtl.eatuo.com",
+      "normalized_name": "dtl.eatuo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_59",
+        "ev_66",
+        "ev_71"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "dtl.eatuo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_71",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_eatuo.com",
+      "type": "Domain",
+      "name": "eatuo.com",
+      "normalized_name": "eatuo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_60",
+        "ev_66",
+        "ev_71"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "eatuo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_66",
+        "ev_3",
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_gmx.com",
+      "type": "Domain",
+      "name": "gmx.com",
+      "normalized_name": "gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15",
+        "ev_27",
+        "ev_28"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "gmx.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_yahoo.com",
+      "type": "Domain",
+      "name": "yahoo.com",
+      "normalized_name": "yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_email_abarbour_gmx.com",
+      "type": "Email",
+      "name": "abarbour@gmx.com",
+      "normalized_name": "abarbour@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "abarbour@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_agnes9_gmx.com",
+      "type": "Email",
+      "name": "agnes9@gmx.com",
+      "normalized_name": "agnes9@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "agnes9@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_c100tibet_board_gmx.com",
+      "type": "Email",
+      "name": "c100tibet_board@gmx.com",
+      "normalized_name": "c100tibet_board@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "c100tibet_board@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_eabliz_gmx.com",
+      "type": "Email",
+      "name": "eabliz@gmx.com",
+      "normalized_name": "eabliz@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "eabliz@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_hientr_gmx.com",
+      "type": "Email",
+      "name": "hientr@gmx.com",
+      "normalized_name": "hientr@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "hientr@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_ijoni_futbollisti_gmx.com",
+      "type": "Email",
+      "name": "ijoni_futbollisti@gmx.com",
+      "normalized_name": "ijoni_futbollisti@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "ijoni_futbollisti@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_jigme1_gmx.com",
+      "type": "Email",
+      "name": "jigme1@gmx.com",
+      "normalized_name": "jigme1@gmx.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "jigme1@gmx.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_0fe550a5d1187d38984c505ef7741638",
+      "type": "MD5",
+      "name": "0fe550a5d1187d38984c505ef7741638",
+      "normalized_name": "0fe550a5d1187d38984c505ef7741638",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "0fe550a5d1187d38984c505ef7741638",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_16160a6a9b905c69cb8e92c319212980",
+      "type": "MD5",
+      "name": "16160a6a9b905c69cb8e92c319212980",
+      "normalized_name": "16160a6a9b905c69cb8e92c319212980",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "16160a6a9b905c69cb8e92c319212980",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1c22ee3326affee30c3fa65f0b8413d5",
+      "type": "MD5",
+      "name": "1c22ee3326affee30c3fa65f0b8413d5",
+      "normalized_name": "1c22ee3326affee30c3fa65f0b8413d5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "1c22ee3326affee30c3fa65f0b8413d5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_58f6922dedb0d43c4478a4f38ad08620",
+      "type": "MD5",
+      "name": "58f6922dedb0d43c4478a4f38ad08620",
+      "normalized_name": "58f6922dedb0d43c4478a4f38ad08620",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "58f6922dedb0d43c4478a4f38ad08620",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_971f99af0f9df674a79507ed7b3010fb",
+      "type": "MD5",
+      "name": "971f99af0f9df674a79507ed7b3010fb",
+      "normalized_name": "971f99af0f9df674a79507ed7b3010fb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "971f99af0f9df674a79507ed7b3010fb",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f2a0787388dd6373336b3f23f204524a",
+      "type": "MD5",
+      "name": "f2a0787388dd6373336b3f23f204524a",
+      "normalized_name": "f2a0787388dd6373336b3f23f204524a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "report_id": "Tibet_Lurk",
+      "value": "f2a0787388dd6373336b3f23f204524a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_CREATELINK.EXE",
+      "type": "File",
+      "name": "CREATELINK.EXE",
+      "normalized_name": "CREATELINK.EXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "CREATELINK.EXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "CREATELINK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Dharamsala_August_2012_Full_program.xls",
+      "type": "File",
+      "name": "Dharamsala August 2012 Full program.xls",
+      "normalized_name": "Dharamsala August 2012 Full program.xls",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_39",
+        "ev_79"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "Dharamsala August 2012 Full program.xls",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_79",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "LURK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Droeshi_final.doc",
+      "type": "File",
+      "name": "Droeshi final.doc",
+      "normalized_name": "Droeshi final.doc",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_39",
+        "ev_41",
+        "ev_79"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "Droeshi final.doc",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_13",
+        "ev_41",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "LURK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_EIDHR_action_plan.xlsx",
+      "type": "File",
+      "name": "EIDHR_action_plan.xlsx",
+      "normalized_name": "EIDHR_action_plan.xlsx",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17",
+        "ev_39",
+        "ev_79"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "EIDHR_action_plan.xlsx",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_79",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "LURK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_IconCacheEt.DAT",
+      "type": "File",
+      "name": "IconCacheEt.DAT",
+      "normalized_name": "IconCacheEt.DAT",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_80"
+      ],
+      "report_id": "Tibet_Lurk",
+      "file_name": "IconCacheEt.DAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "CREATELINK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Tibeta",
+      "type": "Victim",
+      "name": "Tibeta",
+      "normalized_name": "Tibeta",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1",
+        "ev_11",
+        "ev_66",
+        "ev_7"
+      ],
+      "report_id": "Tibet_Lurk",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_7",
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Tibet_Lurk",
+      "type": "alias_of",
+      "head_id": "ent_malware_IconConfigEt.DAT",
+      "tail_id": "ent_malware_IconConfigEt",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45",
+        "ev_80"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Tibet_Lurk",
+      "type": "alias_of",
+      "head_id": "ent_malware_iexplore.exe",
+      "tail_id": "ent_malware_Iexplore",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79",
+        "ev_80"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Tibet_Lurk",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Sophos",
+      "tail_id": "ent_threatactor_Agent-XAT",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "primary_evidence_id": "ev_64",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Tibet_Lurk",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Trend_Micro",
+      "tail_id": "ent_threatactor_TPC",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "primary_evidence_id": "ev_64",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Tibet_Lurk",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_domain_dnsd.me",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Tibet_Lurk",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_domain_yahoo.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_comm_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_11"
+      },
+      "head": {
+        "id": "ent_malware_Droeshi",
+        "type": "Malware",
+        "name": "Droeshi",
+        "normalized_name": "Droeshi",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_13",
+          "ev_16",
+          "ev_39",
+          "ev_41"
+        ],
+        "report_id": "Tibet_Lurk",
+        "family": "Droeshi",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_13",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_domain_yahoo.com",
+        "type": "Domain",
+        "name": "yahoo.com",
+        "normalized_name": "yahoo.com",
+        "aliases": [],
+        "confidence": 0.99,
+        "evidence_ids": [
+          "ev_11"
+        ],
+        "report_id": "Tibet_Lurk",
+        "value": "yahoo.com",
+        "ioc_type": "domain",
+        "sources": [
+          "rule"
+        ],
+        "primary_evidence_id": "ev_11",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "service_endpoint"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Tibet_Lurk",
+      "type": "controls_account",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_domain_yahoo.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "controls_account",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "payload_account_control",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_file_Dharamsala_August_2012_Full_program.xls",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Droeshi",
+        "type": "Malware",
+        "name": "Droeshi",
+        "normalized_name": "Droeshi",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_13",
+          "ev_16",
+          "ev_39",
+          "ev_41"
+        ],
+        "report_id": "Tibet_Lurk",
+        "family": "Droeshi",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_13",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_Dharamsala_August_2012_Full_program.xls",
+        "type": "File",
+        "name": "Dharamsala August 2012 Full program.xls",
+        "normalized_name": "Dharamsala August 2012 Full program.xls",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_33",
+          "ev_39",
+          "ev_79"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "Dharamsala August 2012 Full program.xls",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_33",
+        "supporting_evidence_ids": [
+          "ev_79",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "family_hints": [
+          "LURK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_file_Droeshi_final.doc",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_13",
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_13"
+      },
+      "head": {
+        "id": "ent_malware_Droeshi",
+        "type": "Malware",
+        "name": "Droeshi",
+        "normalized_name": "Droeshi",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_13",
+          "ev_16",
+          "ev_39",
+          "ev_41"
+        ],
+        "report_id": "Tibet_Lurk",
+        "family": "Droeshi",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_13",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_Droeshi_final.doc",
+        "type": "File",
+        "name": "Droeshi final.doc",
+        "normalized_name": "Droeshi final.doc",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_39",
+          "ev_41",
+          "ev_79"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "Droeshi final.doc",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_13",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "LURK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_file_EIDHR_action_plan.xlsx",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Droeshi",
+        "type": "Malware",
+        "name": "Droeshi",
+        "normalized_name": "Droeshi",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_13",
+          "ev_16",
+          "ev_39",
+          "ev_41"
+        ],
+        "report_id": "Tibet_Lurk",
+        "family": "Droeshi",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_13",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_EIDHR_action_plan.xlsx",
+        "type": "File",
+        "name": "EIDHR_action_plan.xlsx",
+        "normalized_name": "EIDHR_action_plan.xlsx",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_17",
+          "ev_39",
+          "ev_79"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "EIDHR_action_plan.xlsx",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_17",
+        "supporting_evidence_ids": [
+          "ev_79",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "family_hints": [
+          "LURK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_file_iexplore.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Droeshi",
+        "type": "Malware",
+        "name": "Droeshi",
+        "normalized_name": "Droeshi",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_13",
+          "ev_16",
+          "ev_39",
+          "ev_41"
+        ],
+        "report_id": "Tibet_Lurk",
+        "family": "Droeshi",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_13",
+        "supporting_evidence_ids": [
+          "ev_16",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_iexplore.exe",
+        "type": "File",
+        "name": "iexplore.exe",
+        "normalized_name": "iexplore.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_79",
+          "ev_80",
+          "ev_81"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "iexplore.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "LURK",
+          "CREATELINK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Iexplore",
+      "tail_id": "ent_file_Dharamsala_August_2012_Full_program.xls",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Iexplore",
+        "type": "Malware",
+        "name": "Iexplore",
+        "normalized_name": "Iexplore",
+        "aliases": [
+          "iexplore.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_79",
+          "ev_80",
+          "ev_81"
+        ],
+        "report_id": "Tibet_Lurk",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "LURK",
+          "CREATELINK"
+        ],
+        "derived_from_file_id": "ent_file_iexplore.exe",
+        "family": "Iexplore",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_Dharamsala_August_2012_Full_program.xls",
+        "type": "File",
+        "name": "Dharamsala August 2012 Full program.xls",
+        "normalized_name": "Dharamsala August 2012 Full program.xls",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_33",
+          "ev_39",
+          "ev_79"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "Dharamsala August 2012 Full program.xls",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_33",
+        "supporting_evidence_ids": [
+          "ev_79",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "family_hints": [
+          "LURK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Iexplore",
+      "tail_id": "ent_file_Droeshi_final.doc",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Iexplore",
+        "type": "Malware",
+        "name": "Iexplore",
+        "normalized_name": "Iexplore",
+        "aliases": [
+          "iexplore.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_79",
+          "ev_80",
+          "ev_81"
+        ],
+        "report_id": "Tibet_Lurk",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "LURK",
+          "CREATELINK"
+        ],
+        "derived_from_file_id": "ent_file_iexplore.exe",
+        "family": "Iexplore",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_Droeshi_final.doc",
+        "type": "File",
+        "name": "Droeshi final.doc",
+        "normalized_name": "Droeshi final.doc",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_39",
+          "ev_41",
+          "ev_79"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "Droeshi final.doc",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_13",
+          "ev_41",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "LURK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Iexplore",
+      "tail_id": "ent_file_EIDHR_action_plan.xlsx",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Iexplore",
+        "type": "Malware",
+        "name": "Iexplore",
+        "normalized_name": "Iexplore",
+        "aliases": [
+          "iexplore.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_79",
+          "ev_80",
+          "ev_81"
+        ],
+        "report_id": "Tibet_Lurk",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "LURK",
+          "CREATELINK"
+        ],
+        "derived_from_file_id": "ent_file_iexplore.exe",
+        "family": "Iexplore",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_EIDHR_action_plan.xlsx",
+        "type": "File",
+        "name": "EIDHR_action_plan.xlsx",
+        "normalized_name": "EIDHR_action_plan.xlsx",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_17",
+          "ev_39",
+          "ev_79"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "EIDHR_action_plan.xlsx",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_17",
+        "supporting_evidence_ids": [
+          "ev_79",
+          "ev_39"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "family_hints": [
+          "LURK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Tibet_Lurk",
+      "type": "drops",
+      "head_id": "ent_malware_Iexplore",
+      "tail_id": "ent_file_iexplore.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_79",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_79",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_79"
+      },
+      "head": {
+        "id": "ent_malware_Iexplore",
+        "type": "Malware",
+        "name": "Iexplore",
+        "normalized_name": "Iexplore",
+        "aliases": [
+          "iexplore.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_79",
+          "ev_80",
+          "ev_81"
+        ],
+        "report_id": "Tibet_Lurk",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "LURK",
+          "CREATELINK"
+        ],
+        "derived_from_file_id": "ent_file_iexplore.exe",
+        "family": "Iexplore",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_iexplore.exe",
+        "type": "File",
+        "name": "iexplore.exe",
+        "normalized_name": "iexplore.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_79",
+          "ev_80",
+          "ev_81"
+        ],
+        "report_id": "Tibet_Lurk",
+        "file_name": "iexplore.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_79",
+        "supporting_evidence_ids": [
+          "ev_80",
+          "ev_81"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "LURK",
+          "CREATELINK"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Tibet_Lurk",
+      "type": "uses_service_api",
+      "head_id": "ent_malware_Droeshi",
+      "tail_id": "ent_domain_yahoo.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_11"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_service_api",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_service_comm, c2_service_api",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "drops",
+      "summary": "Droeshi drops Dharamsala August 2012 Full program.xls",
+      "evidence_ids": [
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0009",
+      "type": "drops",
+      "summary": "Droeshi drops Droeshi final.doc",
+      "evidence_ids": [
+        "ev_13",
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0010",
+      "type": "drops",
+      "summary": "Droeshi drops EIDHR_action_plan.xlsx",
+      "evidence_ids": [
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "delivery",
+      "relation_id": "rel_0011",
+      "type": "drops",
+      "summary": "Droeshi drops iexplore.exe",
+      "evidence_ids": [
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "delivery",
+      "relation_id": "rel_0012",
+      "type": "drops",
+      "summary": "Iexplore drops Dharamsala August 2012 Full program.xls",
+      "evidence_ids": [
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "delivery",
+      "relation_id": "rel_0013",
+      "type": "drops",
+      "summary": "Iexplore drops Droeshi final.doc",
+      "evidence_ids": [
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "delivery",
+      "relation_id": "rel_0014",
+      "type": "drops",
+      "summary": "Iexplore drops EIDHR_action_plan.xlsx",
+      "evidence_ids": [
+        "ev_79"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "delivery",
+      "relation_id": "rel_0015",
+      "type": "drops",
+      "summary": "Iexplore drops iexplore.exe",
+      "evidence_ids": [
+        "ev_79",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "command_and_control",
+      "relation_id": "rel_0005",
+      "type": "communicates_with",
+      "summary": "Droeshi communicates_with dnsd.me",
+      "evidence_ids": [
+        "ev_3"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "command_and_control",
+      "relation_id": "rel_0006",
+      "type": "communicates_with",
+      "summary": "Droeshi communicates_with yahoo.com",
+      "evidence_ids": [
+        "ev_11"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "command_and_control",
+      "relation_id": "rel_0007",
+      "type": "controls_account",
+      "summary": "Droeshi controls_account yahoo.com",
+      "evidence_ids": [
+        "ev_11"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "command_and_control",
+      "relation_id": "rel_0016",
+      "type": "uses_service_api",
+      "summary": "Droeshi uses_service_api yahoo.com",
+      "evidence_ids": [
+        "ev_11"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s1"
+      },
+      "text": " Social engineering techniques observed in recent targeted malware attacks against Tibetan organizations appear to repurpose authentic, privately-held, sensitive content of Tibetan groups — in contrast to typical malware attacks that rely on simpler social engineering methods, such as referencing themes of interest to the organization or copying publicly available legitimate content.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s3"
+      },
+      "text": " Once active, the malware delivered through each of these targeted attacks connects to the same command-and-control server: dtl.dnsd.me:63 (184.105.64.183), which if inaccessible uses a backup domain, dtl.eatuo.com:63.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Both dnsd.me and eatuo.com are dynamic DNS providers, and eatuo.com has the same domain registration information as the well-known Chinese provider 3322.net.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "The level of authenticity of the social engineering used in these emails, however, has increased over time, with the most recent emails repurposing sensitive content of Tibetan groups that was most likely privately held and/or inaccessible to the general public.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "“Droeshi” The first email, which was only sent to one email address of which we are aware, was sent on May 24, 2012 from what appears to be a compromised yahoo.com email account associated with a Tibetan activist, from the IP address 209.234.204.31 (likely a compromised server):",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "1 The attachment is a Word document named Droeshi final.doc — when opened and supplied with the password, it crashes Word and drops its malicious payload (described in more detail below).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "Although the emails are identical and were sent from the same IP address (65.166.97.211), the actual email addresses used to send each message differ: eabliz@gmx.com and hientr@gmx.com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "This email also attached a single Word document, July6thFinal.doc, that exhibits similar behaviour to the Droeshi document but drops a slightly different malicious executable.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "This email had five attachments: four benign .docx files, as well as a malicious Excel file named EIDHR_action_plan.xlsx.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Different gmx.com addresses were used to send each message: c100tibet_board@gmx.com and ijoni_futbollisti@gmx.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "The other three instances of this email had the subject “ The concept notes ” and were sent by yet more unique gmx.com addresses: abarbour@gmx.com, jigme1@gmx.com and agnes9@gmx.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "The attached Excel file, Dharamsala August 2012 Full program.xls, is similar to the malicious attachment in “ The concept notes ” email, but it drops a different clean file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s10"
+      },
+      "text": "Droeshi final.doc – 58f6922dedb0d43c4478a4f38ad08620 July6thFinal.doc – f2a0787388dd6373336b3f23f204524a EIDHR_action_plan.xlsx – 0fe550a5d1187d38984c505ef7741638 Dharamsala August 2012 Full program.xls – 971f99af0f9df674a79507ed7b3010fb",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "All of the files except for the first (Droeshi final.doc) have the same malware files embedded.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "IconConfigEt.DAT is the trojan’s configuration file, storing the C2 server addresses and ports, as well as a campaign name identifier.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "The file is mostly encrypted, with the campaign name stored in the clear.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s11"
+      },
+      "text": "Section [MMM], key M: Campaign name",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "In the configuration files we have looked at for this run, the primary server is dtl.dnsd.me:63, and the secondary server is dtl.eatuo.com:63.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "Both dnsd.me and eatuo.com are dynamic DNS providers, and eatuo.com has the same domain registration information as the well-known Chinese provider 3322.org.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s4"
+      },
+      "text": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\DbxUpdateET\\ f a value is not found, it is set with the campaign name read from the configuration file key M.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s6"
+      },
+      "text": "LURK is also known as Troj~Agent-XAT (Sophos), TROJ_MDROP.TPB and TROJ_MDROP.TPC (Trend Micro), and can also be picked up by more general antivirus detection such as Generic PWS.y (McAfee).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s1"
+      },
+      "text": "the sample analyzed by Sophos, the campaign ID is “IE_0day” — not immediately related to attacks on the Tibetan community.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "Many more samples within this family exist with reports online — look for “DbxUpdateET” (where the campaign ID is stored in the registry) or the dropped files “IconCacheEt” and “IconConfigEt.” Another Tibetan-themed example using the dtl.eatuo.com domain was reported by ZenLab on March 26, 2012.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s7"
+      },
+      "text": " DNS lookup of the C2 domains: dtl.dnsd.me, dtl.eatuo.com  Traffic to the C2 IP: 184.105.64.183 — this includes traffic over port 53, which is normally DNS",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s3"
+      },
+      "text": " Citizen Lab encourages civil society organizations and individuals working on human rights issues that have encountered these types of targeted malware attacks to contact us at hrthreats[AT]citizenlab.org.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "Infection In each of the four cases, the document exploit drops the LURK trojan: %Temp%\\iexplore.exe Two different versions of the trojan were seen between the four cases. While they all use the same filenames, n one case, the MD5 of the trojan is different: i July6thFinal.doc, EIDHR_action_plan.xlsx, Dharamsala August 2012 Full program.xls: 16160a6a9b905c69cb8e92c319212980 Droeshi final.doc: 1c22ee3326affee30c3fa65f0b8413d5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "%AppData%\\Application Data\\Help\\CREATELINK.EXE %AppData%\\Help\\IconCacheEt.DAT %AppData%\\Help\\IconConfigEt.DAT %AppData\\\\Help\\iexplore.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "%Temp%\\set.xls For persistence, the trojan also creates the following link in the Startup folder, pointing at the iexplore.exe inary in %AppData%: b C:\\Documents and Settings\\user\\Start Menu\\Programs\\Startup\\iexplore.lnk",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Tibet_Lurk",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "IconConfigEt.DAT is the trojan’s configuration file, storing the C2 server addresses and ports, as well as a campaign name identifier. The file is mostly encrypted, with the campaign name stored in the clear. The configuration options are read from the main executable using GetPrivateProfileStringW(), a function for pre- registry configuration storage. This function is for backwards compatibility with pre-registry 16-bit Windows applications, and is not commonly used in modern applications.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_79",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Droeshi",
+        "ent_malware_Iexplore",
+        "ent_file_iexplore.exe",
+        "ent_malware_iexplore.exe",
+        "ent_file_Dharamsala_August_2012_Full_program.xls",
+        "ent_file_Droeshi_final.doc",
+        "ent_file_EIDHR_action_plan.xlsx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_82",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_IconConfigEt",
+        "ent_file_IconConfigEt.DAT",
+        "ent_malware_IconConfigEt.DAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_66",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_malware_IconConfigEt",
+        "ent_domain_dtl.eatuo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_domain_dtl.dnsd.me",
+        "ent_domain_dtl.eatuo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_71",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_domain_dtl.dnsd.me",
+        "ent_domain_dtl.eatuo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_threatactor_Agent-XAT",
+        "ent_threatactor_TPC",
+        "ent_threatactor_Sophos",
+        "ent_threatactor_Trend_Micro"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_IconConfigEt",
+        "ent_file_IconConfigEt.DAT",
+        "ent_malware_IconConfigEt.DAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_15",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_domain_gmx.com",
+        "ent_email_eabliz_gmx.com",
+        "ent_email_hientr_gmx.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_threatactor_Agent-XAT",
+        "ent_threatactor_Sophos"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Droeshi",
+        "ent_file_Droeshi_final.doc"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_domain_gmx.com",
+        "ent_email_c100tibet_board_gmx.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_80",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_IconConfigEt",
+        "ent_malware_Iexplore",
+        "ent_file_IconConfigEt.DAT",
+        "ent_malware_IconConfigEt.DAT",
+        "ent_file_iexplore.exe",
+        "ent_malware_iexplore.exe",
+        "ent_file_CREATELINK.EXE",
+        "ent_file_IconCacheEt.DAT"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_Droeshi",
+        "ent_file_Dharamsala_August_2012_Full_program.xls",
+        "ent_file_Droeshi_final.doc",
+        "ent_file_EIDHR_action_plan.xlsx"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_81",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_Iexplore",
+        "ent_file_iexplore.exe",
+        "ent_malware_iexplore.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_28",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_domain_gmx.com",
+        "ent_email_abarbour_gmx.com",
+        "ent_email_jigme1_gmx.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Droeshi",
+        "ent_domain_yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Droeshi",
+        "ent_file_Droeshi_final.doc"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_domain_dnsd.me",
+        "ent_domain_eatuo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_domain_dtl.dnsd.me",
+        "ent_domain_dtl.eatuo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_60",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_domain_dnsd.me",
+        "ent_domain_eatuo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

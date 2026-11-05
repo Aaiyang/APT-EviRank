@@ -1,0 +1,1118 @@
+{
+  "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+  "title": "Malware Actors Using NIC Cyber Security Themed Spear Phishing to Target Indian Government Organizations",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016).pdf",
+    "file_path": "/root/APTtext/Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 7959,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_MS015-0012",
+      "type": "Malware",
+      "name": "MS015-0012",
+      "normalized_name": "MS015-0012",
+      "aliases": [
+        "MS015-0012.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_34"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "MS015-0012",
+        "WINWORD"
+      ],
+      "derived_from_file_id": "ent_file_MS015-0012.exe",
+      "family": "MS015-0012",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_WScript",
+      "type": "Malware",
+      "name": "WScript",
+      "normalized_name": "WScript",
+      "aliases": [
+        "WScript.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_30"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "WINWORD"
+      ],
+      "derived_from_file_id": "ent_file_WScript.exe",
+      "family": "WScript",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_webmail.duia.in",
+      "type": "Domain",
+      "name": "webmail.duia.in",
+      "normalized_name": "webmail.duia.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_32"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "webmail.duia.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_NIC",
+      "type": "ThreatActor",
+      "name": "NIC",
+      "normalized_name": "NIC",
+      "aliases": [
+        "National Informatics Centre"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2",
+        "ev_22",
+        "ev_25",
+        "ev_3"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_25",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_MS015-0012.exe",
+      "type": "File",
+      "name": "MS015-0012.exe",
+      "normalized_name": "MS015-0012.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_34"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "file_name": "MS015-0012.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "MS015-0012",
+        "WINWORD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_MS015-0012.exe",
+      "type": "Malware",
+      "name": "MS015-0012.exe",
+      "normalized_name": "MS015-0012.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_31",
+        "ev_34"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_MS015-0012"
+    },
+    {
+      "id": "ent_file_WScript.exe",
+      "type": "File",
+      "name": "WScript.exe",
+      "normalized_name": "WScript.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_30"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "file_name": "WScript.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "WINWORD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_WScript.exe",
+      "type": "Malware",
+      "name": "WScript.exe",
+      "normalized_name": "WScript.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_13",
+        "ev_30"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_WScript"
+    },
+    {
+      "id": "ent_domain_cysinfo.com",
+      "type": "Domain",
+      "name": "cysinfo.com",
+      "normalized_name": "cysinfo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "cysinfo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_meity.gov.in",
+      "type": "Domain",
+      "name": "meity.gov.in",
+      "normalized_name": "meity.gov.in",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_38"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "meity.gov.in",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_185.100.86.174",
+      "type": "IPv4",
+      "name": "185.100.86.174",
+      "normalized_name": "185.100.86.174",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35",
+        "ev_36"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "185.100.86.174",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_meity.gov.in_sites_upload__les_dit_les_Plan_Report_on_Cyber_Security.pdf",
+      "type": "URL",
+      "name": "http://meity.gov.in/sites/upload_ﬁles/dit/ﬁles/Plan_Report_on_Cyber_Security.pdf",
+      "normalized_name": "http://meity.gov.in/sites/upload_ﬁles/dit/ﬁles/Plan_Report_on_Cyber_Security.pdf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_38"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "http://meity.gov.in/sites/upload_ﬁles/dit/ﬁles/Plan_Report_on_Cyber_Security.pdf",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_webmail.duia.in_webmail.php",
+      "type": "URL",
+      "name": "https://webmail.duia.in/webmail.php",
+      "normalized_name": "https://webmail.duia.in/webmail.php",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_32"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "https://webmail.duia.in/webmail.php",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_https_webmail.duia.in_webmail.php.",
+      "type": "URL",
+      "name": "https://webmail.duia.in/webmail.php.",
+      "normalized_name": "https://webmail.duia.in/webmail.php.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_32"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "https://webmail.duia.in/webmail.php.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ioc_md5_4dc28faeb77550174b936d9ba97d4679",
+      "type": "MD5",
+      "name": "4dc28faeb77550174b936d9ba97d4679",
+      "normalized_name": "4dc28faeb77550174b936d9ba97d4679",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "value": "4dc28faeb77550174b936d9ba97d4679",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_WINWORD.exe",
+      "type": "File",
+      "name": "WINWORD.exe",
+      "normalized_name": "WINWORD.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_29",
+        "ev_34"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "file_name": "WINWORD.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "WINWORD",
+        "MS015-0012"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Indian_Government_Organizations",
+      "type": "Victim",
+      "name": "Indian Government Organizations",
+      "normalized_name": "Indian Government Organizations",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [
+        "ev_2"
+      ],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_MS015-0012.exe",
+      "tail_id": "ent_malware_MS015-0012",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31",
+        "ev_34"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_WScript.exe",
+      "tail_id": "ent_malware_WScript",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "type": "downloads",
+      "head_id": "ent_malware_MS015-0012",
+      "tail_id": "ent_file_MS015-0012.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_31"
+      },
+      "head": {
+        "id": "ent_malware_MS015-0012",
+        "type": "Malware",
+        "name": "MS015-0012",
+        "normalized_name": "MS015-0012",
+        "aliases": [
+          "MS015-0012.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_31",
+          "ev_34"
+        ],
+        "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_34",
+        "supporting_evidence_ids": [
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "MS015-0012",
+          "WINWORD"
+        ],
+        "derived_from_file_id": "ent_file_MS015-0012.exe",
+        "family": "MS015-0012",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_MS015-0012.exe",
+        "type": "File",
+        "name": "MS015-0012.exe",
+        "normalized_name": "MS015-0012.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_31",
+          "ev_34"
+        ],
+        "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+        "file_name": "MS015-0012.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_34",
+        "supporting_evidence_ids": [
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "MS015-0012",
+          "WINWORD"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_MS015-0012",
+      "tail_id": "ent_file_MS015-0012.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "primary_evidence_id": "ev_31",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_31"
+      },
+      "head": {
+        "id": "ent_malware_MS015-0012",
+        "type": "Malware",
+        "name": "MS015-0012",
+        "normalized_name": "MS015-0012",
+        "aliases": [
+          "MS015-0012.exe"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_31",
+          "ev_34"
+        ],
+        "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_34",
+        "supporting_evidence_ids": [
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "MS015-0012",
+          "WINWORD"
+        ],
+        "derived_from_file_id": "ent_file_MS015-0012.exe",
+        "family": "MS015-0012",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_MS015-0012.exe",
+        "type": "File",
+        "name": "MS015-0012.exe",
+        "normalized_name": "MS015-0012.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_31",
+          "ev_34"
+        ],
+        "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+        "file_name": "MS015-0012.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_34",
+        "supporting_evidence_ids": [
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "indicator_artifact",
+        "family_hints": [
+          "MS015-0012",
+          "WINWORD"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "drops",
+      "summary": "MS015-0012 drops MS015-0012.exe",
+      "evidence_ids": [
+        "ev_31"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "command_and_control",
+      "relation_id": "rel_0003",
+      "type": "downloads",
+      "summary": "MS015-0012 downloads MS015-0012.exe",
+      "evidence_ids": [
+        "ev_31"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "1 month ago cysinfo.com /malware-actors-using-nic-cyber-security-themed-spear-phishing-target-indian-government- organizations/",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "This blog post describes an attack campaign where NIC ( National Informatics Centre ) Cyber Security themed spear phishing email was used to possibly target Indian government organizations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "In order to infect the victims, the attackers distributed spear-phishing email, which purports to have been sent from NIC’s Incident response team, the attackers spoofed an email id that is associated with Indian Ministry of Defence to send out email to the victims.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "The malware uses WScript.exe to execute the VB scripts.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "C2 Domain Information This section contains details of the C2 domain (webmail[.]duia[.]in).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Conclusion Attackers in this case made every attempt to launch a clever attack campaign by spooﬁng email address of Ministry of Defence, they also tried to trick the users to believe the email was sent from NIC’s incident response team.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "We have already reported this attack campaign and shared the associated indicators with the Indian CERT and NIC’s Incident response team.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "The macro code ﬁrst calls multiple functions to decode the executable content and then it drops the malicious executable (WINWORD.exe) in the Startup directory and then executes the dropped ﬁle as shown in the below screen shots.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Analysis of the Dropped Executable (WINWORD.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "The dropped ﬁle was analyzed in an isolated environment (without actually allowing it to connect to the c2 server). This section contains the behavioral analysis of the dropped executable (WINWORD.exe).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "The malware when executed creates additional ﬁles on the ﬁle system, It downloads these ﬁles by contacting the C2 server and saves it on the disk. Since the malware was not allowed to contact the C2 server its not clear about the functionality of these ﬁles. The below screen shots show WINWORD.exe creating an exectuable, VB script and VBE ﬁles. The malware uses WScript.exe to execute the VB scripts.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Malware uses similar network communication pattern to download additional ﬁles (vbs, vbe, cmd, sc, ext, a3x etc). Once downloaded these ﬁles are saved in either “%LocalAppData%\\Temp\\WindowsUpdates” folder or in “%Temp%\\WindowsUpdates” folder. During analysis it was determined that the malware used these ﬁlenames (MS015-0012.exe, MS015-0012.vbs, MS015-0012.vbe etc.) to reside in these directories. Below screen shots shows some of the network communication made by the malware to download ﬁles.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "This section contains details of the C2 domain (webmail[.]duia[.]in). Attackers used the DynamicDNS hostname",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "Dropped Malware Sample: 4dc28faeb77550174b936d9ba97d4679 (WINWORD.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "Host Indicators: Filenames in the “%Temp%\\WindowsUpdates” folder: MS015-0012.exe, MS015-0012.vbs, MS015-0012.vbe Filename WINWORD.exe in the Startup directory",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb35"
+      },
+      "text": "185[.]100[.]86[.]174",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb36"
+      },
+      "text": "ail[.]duia[.]in hxxps://webmail[.]duia[.]in/webmail.php 95[.]23[.]26[.]28 185[.]100[.]86[.]174 Host Indicators: Filenames in the “%Temp%\\WindowsUpdates” folder: MS015-0012.exe, MS0",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb37"
+      },
+      "text": "downloaded from (http://meity.gov.in/sites/upload_ﬁles/dit/ﬁles/Plan_Report_on_Cyber_Security.pdf). The word",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Cysinfo_NIC-CyberSecurity-Themed-Spear-Phishing-Target-India(11-30-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb38"
+      },
+      "text": "document which attackers might have downloaded from (http://meity.gov.in/sites/upload_ﬁles/dit/ﬁles/Plan_Report_on_Cyber_Security.pdf). The word document attached in the email cont",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_31",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_MS015-0012",
+        "ent_file_MS015-0012.exe",
+        "ent_malware_MS015-0012.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_WScript",
+        "ent_file_WScript.exe",
+        "ent_malware_WScript.exe",
+        "ent_file_WINWORD.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_WScript",
+        "ent_file_WScript.exe",
+        "ent_malware_WScript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_MS015-0012",
+        "ent_file_MS015-0012.exe",
+        "ent_malware_MS015-0012.exe",
+        "ent_file_WINWORD.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_MS015-0012",
+        "ent_file_MS015-0012.exe",
+        "ent_malware_MS015-0012.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

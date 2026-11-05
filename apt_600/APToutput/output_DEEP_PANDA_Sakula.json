@@ -1,0 +1,1420 @@
+{
+  "report_id": "DEEP_PANDA_Sakula",
+  "title": "I am Ironman: DEEP PANDA Uses Sakula Malware to Target Organizations in Multiple Sectors",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "DEEP_PANDA_Sakula.pdf",
+    "file_path": "/root/APTtext/DEEP_PANDA_Sakula.pdf",
+    "source_type": "pdf",
+    "char_length": 5897,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Derusbi",
+      "type": "Malware",
+      "name": "Derusbi",
+      "normalized_name": "Derusbi",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_19",
+        "ev_23"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "family": "Derusbi",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_PlugX",
+      "type": "Malware",
+      "name": "PlugX",
+      "normalized_name": "PlugX",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "family": "PlugX",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Sakula",
+      "type": "Malware",
+      "name": "Sakula",
+      "normalized_name": "Sakula",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_14",
+        "ev_24",
+        "ev_5",
+        "ev_6"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "family": "Sakula",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_14",
+        "ev_5",
+        "ev_24"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2014-0322",
+      "type": "CVE",
+      "name": "CVE-2014-0322",
+      "normalized_name": "CVE-2014-0322",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35",
+        "ev_36"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_foundationssl.com",
+      "type": "Domain",
+      "name": "foundationssl.com",
+      "normalized_name": "foundationssl.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_21",
+        "ev_33",
+        "ev_34"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "foundationssl.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_34",
+        "ev_19",
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Organizations_in_Multiple_Sectors",
+      "type": "Victim",
+      "name": "Organizations in Multiple Sectors",
+      "normalized_name": "Organizations in Multiple Sectors",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "DEEP_PANDA_Sakula",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_DEEP_PANDA",
+      "type": "Campaign",
+      "name": "DEEP PANDA",
+      "normalized_name": "DEEP PANDA",
+      "aliases": [
+        "DEEP PANDA campaign"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17",
+        "ev_19",
+        "ev_20"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_19",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_DEEP_PANDA",
+      "type": "ThreatActor",
+      "name": "DEEP PANDA",
+      "normalized_name": "DEEP PANDA",
+      "aliases": [
+        "DEEP PANDA campaign"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_16",
+        "ev_17",
+        "ev_20",
+        "ev_23",
+        "ev_19"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_16",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_23",
+        "ev_17"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Strategic_Web_Compromise",
+      "type": "ThreatActor",
+      "name": "Strategic Web Compromise",
+      "normalized_name": "Strategic Web Compromise",
+      "aliases": [
+        "SWC"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_21",
+        "ev_23"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Scanbox",
+      "type": "Tool",
+      "name": "Scanbox",
+      "normalized_name": "Scanbox",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_18",
+        "ev_21"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_21"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Scanbox",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_crowdstrike.com",
+      "type": "Domain",
+      "name": "crowdstrike.com",
+      "normalized_name": "crowdstrike.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "crowdstrike.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mster.com",
+      "type": "Domain",
+      "name": "mster.com",
+      "normalized_name": "mster.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15",
+        "ev_31"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "mster.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_news.foundationssl.com",
+      "type": "Domain",
+      "name": "news.foundationssl.com",
+      "normalized_name": "news.foundationssl.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "news.foundationssl.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_vpn.foundationssl.com",
+      "type": "Domain",
+      "name": "vpn.foundationssl.com",
+      "normalized_name": "vpn.foundationssl.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19",
+        "ev_33"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "vpn.foundationssl.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_19"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_www.crowdstrike.com",
+      "type": "Domain",
+      "name": "www.crowdstrike.com",
+      "normalized_name": "www.crowdstrike.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_38"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "www.crowdstrike.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_yahoo.com",
+      "type": "Domain",
+      "name": "yahoo.com",
+      "normalized_name": "yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_url_http_www.crowdstrike.com_blog_french-connection-french-aerospace-focused-cve-2014-0322-attack-",
+      "type": "URL",
+      "name": "http://www.crowdstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack-",
+      "normalized_name": "http://www.crowdstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack-",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_38"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "http://www.crowdstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack-",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_sales_crowdstrike.com",
+      "type": "Email",
+      "name": "sales@crowdstrike.com",
+      "normalized_name": "sales@crowdstrike.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "sales@crowdstrike.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_wendellom_yahoo.com",
+      "type": "Email",
+      "name": "wendellom@yahoo.com",
+      "normalized_name": "wendellom@yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "wendellom@yahoo.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_0c2674c3a97c53082187d930efb645c2",
+      "type": "MD5",
+      "name": "0c2674c3a97c53082187d930efb645c2",
+      "normalized_name": "0c2674c3a97c53082187d930efb645c2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "0c2674c3a97c53082187d930efb645c2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ae6f33f6cdc25dc4bda24b2bccff79fe",
+      "type": "MD5",
+      "name": "ae6f33f6cdc25dc4bda24b2bccff79fe",
+      "normalized_name": "ae6f33f6cdc25dc4bda24b2bccff79fe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "ae6f33f6cdc25dc4bda24b2bccff79fe",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d00b3169f45e74bb22a1cd684341b14a",
+      "type": "MD5",
+      "name": "d00b3169f45e74bb22a1cd684341b14a",
+      "normalized_name": "d00b3169f45e74bb22a1cd684341b14a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "value": "d00b3169f45e74bb22a1cd684341b14a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_MediaSoft.exe",
+      "type": "File",
+      "name": "MediaSoft.exe",
+      "normalized_name": "MediaSoft.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "file_name": "MediaSoft.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_26",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "file_role": "indicator_artifact",
+      "is_likely_legitimate": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msi.dll",
+      "type": "File",
+      "name": "msi.dll",
+      "normalized_name": "msi.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "DEEP_PANDA_Sakula",
+      "file_name": "msi.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Derusbi",
+      "tail_id": "ent_domain_foundationssl.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_23",
+        "ev_19"
+      ],
+      "primary_evidence_id": "ev_23",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "contact",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Sakula",
+      "tail_id": "ent_domain_crowdstrike.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "primary_evidence_id": "ev_24",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_comm_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_24"
+      },
+      "head": {
+        "id": "ent_malware_Sakula",
+        "type": "Malware",
+        "name": "Sakula",
+        "normalized_name": "Sakula",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_14",
+          "ev_24",
+          "ev_5",
+          "ev_6"
+        ],
+        "report_id": "DEEP_PANDA_Sakula",
+        "family": "Sakula",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_6",
+        "supporting_evidence_ids": [
+          "ev_14",
+          "ev_5",
+          "ev_24"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_domain_crowdstrike.com",
+        "type": "Domain",
+        "name": "crowdstrike.com",
+        "normalized_name": "crowdstrike.com",
+        "aliases": [],
+        "confidence": 0.99,
+        "evidence_ids": [
+          "ev_24"
+        ],
+        "report_id": "DEEP_PANDA_Sakula",
+        "value": "crowdstrike.com",
+        "ioc_type": "domain",
+        "sources": [
+          "rule"
+        ],
+        "primary_evidence_id": "ev_24",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_ioc"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Sakula",
+      "tail_id": "ent_domain_foundationssl.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_23",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "contact",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Sakula",
+      "tail_id": "ent_email_sales_crowdstrike.com",
+      "head_type": "Malware",
+      "tail_type": "Email",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "primary_evidence_id": "ev_24",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm; report_comm_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_24"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "communicates_with",
+      "head_id": "ent_malware_Sakula",
+      "tail_id": "ent_email_wendellom_yahoo.com",
+      "head_type": "Malware",
+      "tail_type": "Email",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "primary_evidence_id": "ev_15",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm, c2_event",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "loads",
+      "head_id": "ent_file_msi.dll",
+      "tail_id": "ent_malware_Sakula",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "loads",
+      "head_id": "ent_malware_Sakula",
+      "tail_id": "ent_malware_PlugX",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_6",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "DEEP_PANDA_Sakula",
+      "type": "uses_service_api",
+      "head_id": "ent_malware_Sakula",
+      "tail_id": "ent_domain_yahoo.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "primary_evidence_id": "ev_15",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_service_api",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "c2_service_api",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "msi.dll loads Sakula",
+      "evidence_ids": [
+        "ev_27"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "Sakula loads PlugX",
+      "evidence_ids": [
+        "ev_6"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "communicates_with",
+      "summary": "Derusbi communicates_with foundationssl.com",
+      "evidence_ids": [
+        "ev_23",
+        "ev_19"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "communicates_with",
+      "summary": "Sakula communicates_with crowdstrike.com",
+      "evidence_ids": [
+        "ev_24"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "command_and_control",
+      "relation_id": "rel_0003",
+      "type": "communicates_with",
+      "summary": "Sakula communicates_with foundationssl.com",
+      "evidence_ids": [
+        "ev_23"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "command_and_control",
+      "relation_id": "rel_0004",
+      "type": "communicates_with",
+      "summary": "Sakula communicates_with sales@crowdstrike.com",
+      "evidence_ids": [
+        "ev_24"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "command_and_control",
+      "relation_id": "rel_0005",
+      "type": "communicates_with",
+      "summary": "Sakula communicates_with wendellom@yahoo.com",
+      "evidence_ids": [
+        "ev_15"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "command_and_control",
+      "relation_id": "rel_0008",
+      "type": "uses_service_api",
+      "summary": "Sakula uses_service_api yahoo.com",
+      "evidence_ids": [
+        "ev_15"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The downloaded plugin file included a variant of Sakula malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "The Sakula malware in this campaign utilized the Dynamic Link Library (DLL) side-loading technique most commonly associated with PlugX activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "It dropped the side-loaded Sakula malware just like in the other incidents; however, in this instance, the Sakula payload was signed with a certificate assigned to a different organization, Career Credit Co., Ltd.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "The malware used the domain www[.]xha- mster[.]com for C2 which was created in mid-September and is registered with the email address wendellom@yahoo.com and registrant name “tonyy starke” (hence the name, Ironman-related title for this blog).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "Below is a chart showing the relevant relationships to this DEEP PANDA campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "The bottom of the chart shows an infrastructure connection between an IP address (198.200.45.112) used this campaign and also used in recently observed DEEP PANDA activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "Association with Recent Scanbox Activity In September 2014, CrowdStrike Intelligence identified a malicious file signed with the DTOPTOOLZ Co.,",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Analysis of this file revealed it to be Derusbi malware (a favorite RAT of DEEP PANDA) that used the domain vpn[.]foundationssl[.]com for its C2.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "At the time of discovery, CrowdStrike did not attribute the file to DEEP PANDA based on the malware alone, but the use of the DTOPTOOLZ certificate to sign a malware variant known to be heavily used by this adversary makes it likely that this signed",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "In a recent public report from PWC , another foundationssl[.]com domain was linked to activity involving the Strategic Web Compromise (SWC) framework more commonly known as Scanbox.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "In that operation, the Scanbox code was placed on the website of a U.S.-based think tank and utilized the malicious domain, news[.]foundationssl[.]com .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s7"
+      },
+      "text": "The use of the two foundationssl[.]com subdomains suggests that the same adversary (in this case DEEP PANDA) was responsible for the signed Derusbi malware file and the think tank SWC activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "CrowdStrike tracks, please contact: sales@crowdstrike.com [1] In February 2014, CrowdStrike publicly reported on a campaign that leveraged Sakula malware shares-similarities-2012/index.html ); however, the Tactics, Techniques, and Procedures (TTPs) between that campaign and this recent one are different, suggesting two distinct adversaries are using the Sakula malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "legitimate executable named MediaSoft.exe (MD5 hash: d00b3169f45e74bb22a1cd684341b14a) loaded a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "file named msi.dll (MD5 hash: ae6f33f6cdc25dc4bda24b2bccff79fe), which, in turn, was used to load the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "Sakula executable (MD5 hash: 0c2674c3a97c53082187d930efb645c2). This final executable was also",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "mster[.]com for C2 which was created in mid-September and is registered with the email address",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "that used the domain vpn[.]foundationssl[.]com for its C2. At the time of discovery, CrowdStrike did not",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "In a recent public report from PWC , another foundationssl[.]com domain was linked to activity involving",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb35"
+      },
+      "text": "dstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb36"
+      },
+      "text": "dstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack- shares-similarities-2012/index.html); however, the Tactics, Techniques, and Procedures (TTPs) betw",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb37"
+      },
+      "text": "(http://www.crowdstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "DEEP_PANDA_Sakula",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb38"
+      },
+      "text": "eported on a campaign that leveraged Sakula malware (http://www.crowdstrike.com/blog/french-connection-french-aerospace-focused-cve-2014-0322-attack- shares-similarities-2012/index",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_15",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_domain_yahoo.com",
+        "ent_email_wendellom_yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_24",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Sakula",
+        "ent_domain_crowdstrike.com",
+        "ent_email_sales_crowdstrike.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_Sakula",
+        "ent_victim_Organizations_in_Multiple_Sectors"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_38",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_Sakula",
+        "ent_cve_CVE-2014-0322",
+        "ent_url_http_www.crowdstrike.com_blog_french-connection-french-aerospace-focused-cve-2014-0322-attack-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_PlugX",
+        "ent_malware_Sakula"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2014-0322",
+        "ent_url_http_www.crowdstrike.com_blog_french-connection-french-aerospace-focused-cve-2014-0322-attack-"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

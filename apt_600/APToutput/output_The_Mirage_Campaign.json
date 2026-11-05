@@ -1,0 +1,3278 @@
+{
+  "report_id": "The_Mirage_Campaign",
+  "title": "The Mirage Campaign",
+  "source": "Secureworks",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "The_Mirage_Campaign.pdf",
+    "file_path": "/root/APTtext/The_Mirage_Campaign.pdf",
+    "source_type": "pdf",
+    "char_length": 16784,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_HUC",
+      "type": "ThreatActor",
+      "name": "HUC",
+      "normalized_name": "HUC",
+      "aliases": [
+        "Honker Union of China"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Lingbo",
+      "type": "Malware",
+      "name": "Lingbo",
+      "normalized_name": "Lingbo",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "family": "Lingbo",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_adobesuit.com",
+      "type": "Domain",
+      "name": "adobesuit.com",
+      "normalized_name": "adobesuit.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "adobesuit.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Honker_Union_of_China",
+      "type": "ThreatActor",
+      "name": "Honker Union of China",
+      "normalized_name": "Honker Union of China",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_HUC"
+    },
+    {
+      "id": "ent_threatactor_MirageFox",
+      "type": "ThreatActor",
+      "name": "MirageFox",
+      "normalized_name": "MirageFox",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_HTran",
+      "type": "Tool",
+      "name": "HTran",
+      "normalized_name": "HTran",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_43",
+        "ev_45",
+        "ev_55",
+        "ev_57"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_57",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "HTran",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_antivirusbar.org",
+      "type": "Domain",
+      "name": "antivirusbar.org",
+      "normalized_name": "antivirusbar.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "antivirusbar.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_asia-online.us",
+      "type": "Domain",
+      "name": "asia-online.us",
+      "normalized_name": "asia-online.us",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_54"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "asia-online.us",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dyndns.com",
+      "type": "Domain",
+      "name": "dyndns.com",
+      "normalized_name": "dyndns.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "dyndns.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_dyndns.org",
+      "type": "Domain",
+      "name": "dyndns.org",
+      "normalized_name": "dyndns.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "dyndns.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_echosky.biz",
+      "type": "Domain",
+      "name": "echosky.biz",
+      "normalized_name": "echosky.biz",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_54"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "echosky.biz",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hoo.com",
+      "type": "Domain",
+      "name": "hoo.com",
+      "normalized_name": "hoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "hoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_hotmail.com",
+      "type": "Domain",
+      "name": "hotmail.com",
+      "normalized_name": "hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_56"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "hotmail.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_domain_india-videoer.com",
+      "type": "Domain",
+      "name": "india-videoer.com",
+      "normalized_name": "india-videoer.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_54"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "india-videoer.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_54"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_yahoo.com",
+      "type": "Domain",
+      "name": "yahoo.com",
+      "normalized_name": "yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48",
+        "ev_50",
+        "ev_51",
+        "ev_57"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "yahoo.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_50",
+        "ev_51",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_email_dnsjacks_yahoo.com",
+      "type": "Email",
+      "name": "dnsjacks@yahoo.com",
+      "normalized_name": "dnsjacks@yahoo.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48",
+        "ev_50",
+        "ev_51",
+        "ev_57"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "dnsjacks@yahoo.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_50",
+        "ev_51",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_email_jeno_1980_hotmail.com",
+      "type": "Email",
+      "name": "jeno_1980@hotmail.com",
+      "normalized_name": "jeno_1980@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "jeno_1980@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_king_hotmail.com",
+      "type": "Email",
+      "name": "king@hotmail.com",
+      "normalized_name": "king@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49",
+        "ev_56"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "king@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_56"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_king_public_hotmail.com",
+      "type": "Email",
+      "name": "king_public@hotmail.com",
+      "normalized_name": "king_public@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "king_public@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_kings_hotmail.com",
+      "type": "Email",
+      "name": "kings@hotmail.com",
+      "normalized_name": "kings@hotmail.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "kings@hotmail.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_md5_00b9619613bc82f5fe117c2ca394a328",
+      "type": "MD5",
+      "name": "00b9619613bc82f5fe117c2ca394a328",
+      "normalized_name": "00b9619613bc82f5fe117c2ca394a328",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "00b9619613bc82f5fe117c2ca394a328",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_02d77cdaa808ded64d09eea732a586cc",
+      "type": "MD5",
+      "name": "02d77cdaa808ded64d09eea732a586cc",
+      "normalized_name": "02d77cdaa808ded64d09eea732a586cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "02d77cdaa808ded64d09eea732a586cc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_05a02e08cce99d3821574d8612f757fd",
+      "type": "MD5",
+      "name": "05a02e08cce99d3821574d8612f757fd",
+      "normalized_name": "05a02e08cce99d3821574d8612f757fd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "05a02e08cce99d3821574d8612f757fd",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_070ef82a0bded089b6f996a392ca7b9a",
+      "type": "MD5",
+      "name": "070ef82a0bded089b6f996a392ca7b9a",
+      "normalized_name": "070ef82a0bded089b6f996a392ca7b9a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "070ef82a0bded089b6f996a392ca7b9a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_072877b961e31e8792a296c63b9c7b56",
+      "type": "MD5",
+      "name": "072877b961e31e8792a296c63b9c7b56",
+      "normalized_name": "072877b961e31e8792a296c63b9c7b56",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "072877b961e31e8792a296c63b9c7b56",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_075df4723073ff08cd3e90d2b1f11722",
+      "type": "MD5",
+      "name": "075df4723073ff08cd3e90d2b1f11722",
+      "normalized_name": "075df4723073ff08cd3e90d2b1f11722",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "075df4723073ff08cd3e90d2b1f11722",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0f93d28964b440c241ca126a7f94dae2",
+      "type": "MD5",
+      "name": "0f93d28964b440c241ca126a7f94dae2",
+      "normalized_name": "0f93d28964b440c241ca126a7f94dae2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "0f93d28964b440c241ca126a7f94dae2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0fce05e2cea6bd9c217373f2ab962d82",
+      "type": "MD5",
+      "name": "0fce05e2cea6bd9c217373f2ab962d82",
+      "normalized_name": "0fce05e2cea6bd9c217373f2ab962d82",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "0fce05e2cea6bd9c217373f2ab962d82",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1045e26819ff782015202838e2c609f7",
+      "type": "MD5",
+      "name": "1045e26819ff782015202838e2c609f7",
+      "normalized_name": "1045e26819ff782015202838e2c609f7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "1045e26819ff782015202838e2c609f7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_11b76423f450ba610f073e7522eeb56b",
+      "type": "MD5",
+      "name": "11b76423f450ba610f073e7522eeb56b",
+      "normalized_name": "11b76423f450ba610f073e7522eeb56b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "11b76423f450ba610f073e7522eeb56b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_18a5c6e92b962bc6512486db94bb17a7",
+      "type": "MD5",
+      "name": "18a5c6e92b962bc6512486db94bb17a7",
+      "normalized_name": "18a5c6e92b962bc6512486db94bb17a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "18a5c6e92b962bc6512486db94bb17a7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1a8bc862ceaa7e05189345065145842a",
+      "type": "MD5",
+      "name": "1a8bc862ceaa7e05189345065145842a",
+      "normalized_name": "1a8bc862ceaa7e05189345065145842a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "1a8bc862ceaa7e05189345065145842a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1b918c8a40dc4a66430cfec7dabeb7f3",
+      "type": "MD5",
+      "name": "1b918c8a40dc4a66430cfec7dabeb7f3",
+      "normalized_name": "1b918c8a40dc4a66430cfec7dabeb7f3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "1b918c8a40dc4a66430cfec7dabeb7f3",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1f9894e730c0f5ba085baae409aa963a",
+      "type": "MD5",
+      "name": "1f9894e730c0f5ba085baae409aa963a",
+      "normalized_name": "1f9894e730c0f5ba085baae409aa963a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "1f9894e730c0f5ba085baae409aa963a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2219bef789ff73efc0a01f87be03188d",
+      "type": "MD5",
+      "name": "2219bef789ff73efc0a01f87be03188d",
+      "normalized_name": "2219bef789ff73efc0a01f87be03188d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "2219bef789ff73efc0a01f87be03188d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_240627a306f32483378e44ff13e12169",
+      "type": "MD5",
+      "name": "240627a306f32483378e44ff13e12169",
+      "normalized_name": "240627a306f32483378e44ff13e12169",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "240627a306f32483378e44ff13e12169",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_286f7b377f5d0ca3505ed1ba6601c947",
+      "type": "MD5",
+      "name": "286f7b377f5d0ca3505ed1ba6601c947",
+      "normalized_name": "286f7b377f5d0ca3505ed1ba6601c947",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "286f7b377f5d0ca3505ed1ba6601c947",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_32b33321290ac8011aa218da554b8fa5",
+      "type": "MD5",
+      "name": "32b33321290ac8011aa218da554b8fa5",
+      "normalized_name": "32b33321290ac8011aa218da554b8fa5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "32b33321290ac8011aa218da554b8fa5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_346aa61b5739e616482a1bc8bb548871",
+      "type": "MD5",
+      "name": "346aa61b5739e616482a1bc8bb548871",
+      "normalized_name": "346aa61b5739e616482a1bc8bb548871",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "346aa61b5739e616482a1bc8bb548871",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3be6fea2bf35c3c3be860622c68ff369",
+      "type": "MD5",
+      "name": "3be6fea2bf35c3c3be860622c68ff369",
+      "normalized_name": "3be6fea2bf35c3c3be860622c68ff369",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "3be6fea2bf35c3c3be860622c68ff369",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3bfa7b806ff540cc1c264ec75048fbc4",
+      "type": "MD5",
+      "name": "3bfa7b806ff540cc1c264ec75048fbc4",
+      "normalized_name": "3bfa7b806ff540cc1c264ec75048fbc4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "3bfa7b806ff540cc1c264ec75048fbc4",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3d10e68dec16b1a4bf949e3e403f2dda",
+      "type": "MD5",
+      "name": "3d10e68dec16b1a4bf949e3e403f2dda",
+      "normalized_name": "3d10e68dec16b1a4bf949e3e403f2dda",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "3d10e68dec16b1a4bf949e3e403f2dda",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_407c291cd5c73da680fa9af9ec017fff",
+      "type": "MD5",
+      "name": "407c291cd5c73da680fa9af9ec017fff",
+      "normalized_name": "407c291cd5c73da680fa9af9ec017fff",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "407c291cd5c73da680fa9af9ec017fff",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_418fb9ba2a61bccab3e54ebe0698c4b6",
+      "type": "MD5",
+      "name": "418fb9ba2a61bccab3e54ebe0698c4b6",
+      "normalized_name": "418fb9ba2a61bccab3e54ebe0698c4b6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "418fb9ba2a61bccab3e54ebe0698c4b6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_422f1ffe7e5bda7062f005be92fba36e",
+      "type": "MD5",
+      "name": "422f1ffe7e5bda7062f005be92fba36e",
+      "normalized_name": "422f1ffe7e5bda7062f005be92fba36e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "422f1ffe7e5bda7062f005be92fba36e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4b9723a4060838114e53d1df3fa2537a",
+      "type": "MD5",
+      "name": "4b9723a4060838114e53d1df3fa2537a",
+      "normalized_name": "4b9723a4060838114e53d1df3fa2537a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "4b9723a4060838114e53d1df3fa2537a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_4d74a83e2f623f17e17eb95736dc587b",
+      "type": "MD5",
+      "name": "4d74a83e2f623f17e17eb95736dc587b",
+      "normalized_name": "4d74a83e2f623f17e17eb95736dc587b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "4d74a83e2f623f17e17eb95736dc587b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5069057b799636c012eec38147fb96e6",
+      "type": "MD5",
+      "name": "5069057b799636c012eec38147fb96e6",
+      "normalized_name": "5069057b799636c012eec38147fb96e6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5069057b799636c012eec38147fb96e6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5326e4fe9fd10e37d46e81c0f6bbf29a",
+      "type": "MD5",
+      "name": "5326e4fe9fd10e37d46e81c0f6bbf29a",
+      "normalized_name": "5326e4fe9fd10e37d46e81c0f6bbf29a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5326e4fe9fd10e37d46e81c0f6bbf29a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_54d37fb1f624c798f0b400b4f50f3635",
+      "type": "MD5",
+      "name": "54d37fb1f624c798f0b400b4f50f3635",
+      "normalized_name": "54d37fb1f624c798f0b400b4f50f3635",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "54d37fb1f624c798f0b400b4f50f3635",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5640beb540bef2e97ec4366713d533b8",
+      "type": "MD5",
+      "name": "5640beb540bef2e97ec4366713d533b8",
+      "normalized_name": "5640beb540bef2e97ec4366713d533b8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5640beb540bef2e97ec4366713d533b8",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_590e68aaaa5c2353b7288f64cc87d9bb",
+      "type": "MD5",
+      "name": "590e68aaaa5c2353b7288f64cc87d9bb",
+      "normalized_name": "590e68aaaa5c2353b7288f64cc87d9bb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "590e68aaaa5c2353b7288f64cc87d9bb",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5c371a6dfb45f188fe8e6da4fee9300d",
+      "type": "MD5",
+      "name": "5c371a6dfb45f188fe8e6da4fee9300d",
+      "normalized_name": "5c371a6dfb45f188fe8e6da4fee9300d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5c371a6dfb45f188fe8e6da4fee9300d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5efd0d7f52890291599c8562e8ea92db",
+      "type": "MD5",
+      "name": "5efd0d7f52890291599c8562e8ea92db",
+      "normalized_name": "5efd0d7f52890291599c8562e8ea92db",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5efd0d7f52890291599c8562e8ea92db",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5f2a4d865e6e94f7f15571faab5128d6",
+      "type": "MD5",
+      "name": "5f2a4d865e6e94f7f15571faab5128d6",
+      "normalized_name": "5f2a4d865e6e94f7f15571faab5128d6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5f2a4d865e6e94f7f15571faab5128d6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5fa26f410d0133f4152ea78df3978c22",
+      "type": "MD5",
+      "name": "5fa26f410d0133f4152ea78df3978c22",
+      "normalized_name": "5fa26f410d0133f4152ea78df3978c22",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "5fa26f410d0133f4152ea78df3978c22",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_65445b138d80954cc912a6e43fe5b66d",
+      "type": "MD5",
+      "name": "65445b138d80954cc912a6e43fe5b66d",
+      "normalized_name": "65445b138d80954cc912a6e43fe5b66d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "65445b138d80954cc912a6e43fe5b66d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6794cc6f5e463ee7432b9e718d8c1b8e",
+      "type": "MD5",
+      "name": "6794cc6f5e463ee7432b9e718d8c1b8e",
+      "normalized_name": "6794cc6f5e463ee7432b9e718d8c1b8e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "6794cc6f5e463ee7432b9e718d8c1b8e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_685805936d8744225f8c11965202de8e",
+      "type": "MD5",
+      "name": "685805936d8744225f8c11965202de8e",
+      "normalized_name": "685805936d8744225f8c11965202de8e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "685805936d8744225f8c11965202de8e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6ed270da7450945a3a5a05eda8312732",
+      "type": "MD5",
+      "name": "6ed270da7450945a3a5a05eda8312732",
+      "normalized_name": "6ed270da7450945a3a5a05eda8312732",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "6ed270da7450945a3a5a05eda8312732",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7349c7908a672de885fdf9f9cc4547b5",
+      "type": "MD5",
+      "name": "7349c7908a672de885fdf9f9cc4547b5",
+      "normalized_name": "7349c7908a672de885fdf9f9cc4547b5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "7349c7908a672de885fdf9f9cc4547b5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7ad79f9a0efde6f4673585e400f29f18",
+      "type": "MD5",
+      "name": "7ad79f9a0efde6f4673585e400f29f18",
+      "normalized_name": "7ad79f9a0efde6f4673585e400f29f18",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "7ad79f9a0efde6f4673585e400f29f18",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7adb0f22468c10901bd280b2d8a154b0",
+      "type": "MD5",
+      "name": "7adb0f22468c10901bd280b2d8a154b0",
+      "normalized_name": "7adb0f22468c10901bd280b2d8a154b0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "7adb0f22468c10901bd280b2d8a154b0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7fda0451e4d320cc34efcaaabedd6824",
+      "type": "MD5",
+      "name": "7fda0451e4d320cc34efcaaabedd6824",
+      "normalized_name": "7fda0451e4d320cc34efcaaabedd6824",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "7fda0451e4d320cc34efcaaabedd6824",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_80e978d0eea713812f1dd6b4e9b7daf2",
+      "type": "MD5",
+      "name": "80e978d0eea713812f1dd6b4e9b7daf2",
+      "normalized_name": "80e978d0eea713812f1dd6b4e9b7daf2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "80e978d0eea713812f1dd6b4e9b7daf2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_84fc624f9f5f8de6980497058db1e8e1",
+      "type": "MD5",
+      "name": "84fc624f9f5f8de6980497058db1e8e1",
+      "normalized_name": "84fc624f9f5f8de6980497058db1e8e1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "84fc624f9f5f8de6980497058db1e8e1",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_85ef19fab3951d4dd56e42b5a9ccdeea",
+      "type": "MD5",
+      "name": "85ef19fab3951d4dd56e42b5a9ccdeea",
+      "normalized_name": "85ef19fab3951d4dd56e42b5a9ccdeea",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "85ef19fab3951d4dd56e42b5a9ccdeea",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_875877eedcd9f2d60bf63937fe22073d",
+      "type": "MD5",
+      "name": "875877eedcd9f2d60bf63937fe22073d",
+      "normalized_name": "875877eedcd9f2d60bf63937fe22073d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "875877eedcd9f2d60bf63937fe22073d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8caf2a96e4d7bb83156c260ccc8f47e7",
+      "type": "MD5",
+      "name": "8caf2a96e4d7bb83156c260ccc8f47e7",
+      "normalized_name": "8caf2a96e4d7bb83156c260ccc8f47e7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "8caf2a96e4d7bb83156c260ccc8f47e7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_921c724ccb04b9f672b294ffff83ce7b",
+      "type": "MD5",
+      "name": "921c724ccb04b9f672b294ffff83ce7b",
+      "normalized_name": "921c724ccb04b9f672b294ffff83ce7b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "921c724ccb04b9f672b294ffff83ce7b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_964eec615f977b05bc87943ce0942cf9",
+      "type": "MD5",
+      "name": "964eec615f977b05bc87943ce0942cf9",
+      "normalized_name": "964eec615f977b05bc87943ce0942cf9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "964eec615f977b05bc87943ce0942cf9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9ff3a9ef192453ecec26cf567c579bff",
+      "type": "MD5",
+      "name": "9ff3a9ef192453ecec26cf567c579bff",
+      "normalized_name": "9ff3a9ef192453ecec26cf567c579bff",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "9ff3a9ef192453ecec26cf567c579bff",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a1083968b78c081135268b6e4e12b1e5",
+      "type": "MD5",
+      "name": "a1083968b78c081135268b6e4e12b1e5",
+      "normalized_name": "a1083968b78c081135268b6e4e12b1e5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "a1083968b78c081135268b6e4e12b1e5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a4a1670c537861f7d5b0db115a7aa5fa",
+      "type": "MD5",
+      "name": "a4a1670c537861f7d5b0db115a7aa5fa",
+      "normalized_name": "a4a1670c537861f7d5b0db115a7aa5fa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "a4a1670c537861f7d5b0db115a7aa5fa",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a4b9bfc5aa5e37cc613112b9a9dcdb3e",
+      "type": "MD5",
+      "name": "a4b9bfc5aa5e37cc613112b9a9dcdb3e",
+      "normalized_name": "a4b9bfc5aa5e37cc613112b9a9dcdb3e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "a4b9bfc5aa5e37cc613112b9a9dcdb3e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a4ff66224a0967763e1d079c99482577",
+      "type": "MD5",
+      "name": "a4ff66224a0967763e1d079c99482577",
+      "normalized_name": "a4ff66224a0967763e1d079c99482577",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "a4ff66224a0967763e1d079c99482577",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a748ff9663b2d39a35e4c073b73cd7f6",
+      "type": "MD5",
+      "name": "a748ff9663b2d39a35e4c073b73cd7f6",
+      "normalized_name": "a748ff9663b2d39a35e4c073b73cd7f6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "a748ff9663b2d39a35e4c073b73cd7f6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_aaa9aae486ee7342d29a0a2f9b0ca205",
+      "type": "MD5",
+      "name": "aaa9aae486ee7342d29a0a2f9b0ca205",
+      "normalized_name": "aaa9aae486ee7342d29a0a2f9b0ca205",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "aaa9aae486ee7342d29a0a2f9b0ca205",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_abac650ab39c0dd074310710081d715d",
+      "type": "MD5",
+      "name": "abac650ab39c0dd074310710081d715d",
+      "normalized_name": "abac650ab39c0dd074310710081d715d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "abac650ab39c0dd074310710081d715d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ad2dda9241cd6c0e879ab665d77ce13c",
+      "type": "MD5",
+      "name": "ad2dda9241cd6c0e879ab665d77ce13c",
+      "normalized_name": "ad2dda9241cd6c0e879ab665d77ce13c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "ad2dda9241cd6c0e879ab665d77ce13c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b2e821828df59c734c1cc379ef7f3122",
+      "type": "MD5",
+      "name": "b2e821828df59c734c1cc379ef7f3122",
+      "normalized_name": "b2e821828df59c734c1cc379ef7f3122",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "b2e821828df59c734c1cc379ef7f3122",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c2661e45ec2198b04b29ec3fd1e120b2",
+      "type": "MD5",
+      "name": "c2661e45ec2198b04b29ec3fd1e120b2",
+      "normalized_name": "c2661e45ec2198b04b29ec3fd1e120b2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "c2661e45ec2198b04b29ec3fd1e120b2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c72d7794dc7f2eda6b44b934fe8fff1c",
+      "type": "MD5",
+      "name": "c72d7794dc7f2eda6b44b934fe8fff1c",
+      "normalized_name": "c72d7794dc7f2eda6b44b934fe8fff1c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "c72d7794dc7f2eda6b44b934fe8fff1c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c9e49c504d5ca953c858d29b7a2acb9d",
+      "type": "MD5",
+      "name": "c9e49c504d5ca953c858d29b7a2acb9d",
+      "normalized_name": "c9e49c504d5ca953c858d29b7a2acb9d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "c9e49c504d5ca953c858d29b7a2acb9d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ccf34d2ba81de856af8167e73d0c8b69",
+      "type": "MD5",
+      "name": "ccf34d2ba81de856af8167e73d0c8b69",
+      "normalized_name": "ccf34d2ba81de856af8167e73d0c8b69",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "ccf34d2ba81de856af8167e73d0c8b69",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ce1cdc9c95a6808945f54164b2e4d9d2",
+      "type": "MD5",
+      "name": "ce1cdc9c95a6808945f54164b2e4d9d2",
+      "normalized_name": "ce1cdc9c95a6808945f54164b2e4d9d2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_3",
+        "ev_65",
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "ce1cdc9c95a6808945f54164b2e4d9d2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_d60cfe03bce8647cce723991e2cd2f8c",
+      "type": "MD5",
+      "name": "d60cfe03bce8647cce723991e2cd2f8c",
+      "normalized_name": "d60cfe03bce8647cce723991e2cd2f8c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "d60cfe03bce8647cce723991e2cd2f8c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e04e5eb4aefeb326246d7f41d1b50759",
+      "type": "MD5",
+      "name": "e04e5eb4aefeb326246d7f41d1b50759",
+      "normalized_name": "e04e5eb4aefeb326246d7f41d1b50759",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "e04e5eb4aefeb326246d7f41d1b50759",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e29ab99be392bb7012f516a2dbfdc00c",
+      "type": "MD5",
+      "name": "e29ab99be392bb7012f516a2dbfdc00c",
+      "normalized_name": "e29ab99be392bb7012f516a2dbfdc00c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "e29ab99be392bb7012f516a2dbfdc00c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e7d5ac11903c0217a999a79bc87182d2",
+      "type": "MD5",
+      "name": "e7d5ac11903c0217a999a79bc87182d2",
+      "normalized_name": "e7d5ac11903c0217a999a79bc87182d2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "e7d5ac11903c0217a999a79bc87182d2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_eacd03ee55ea7d22b45762c82ae1c0e5",
+      "type": "MD5",
+      "name": "eacd03ee55ea7d22b45762c82ae1c0e5",
+      "normalized_name": "eacd03ee55ea7d22b45762c82ae1c0e5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "eacd03ee55ea7d22b45762c82ae1c0e5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_eacd14ce8414911546cb027a8cb2fecd",
+      "type": "MD5",
+      "name": "eacd14ce8414911546cb027a8cb2fecd",
+      "normalized_name": "eacd14ce8414911546cb027a8cb2fecd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "eacd14ce8414911546cb027a8cb2fecd",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_eb1aa241b4a482ac44b27ce38eabccb7",
+      "type": "MD5",
+      "name": "eb1aa241b4a482ac44b27ce38eabccb7",
+      "normalized_name": "eb1aa241b4a482ac44b27ce38eabccb7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_73"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "eb1aa241b4a482ac44b27ce38eabccb7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_ebe7699033424b9ef444364bd23ba665",
+      "type": "MD5",
+      "name": "ebe7699033424b9ef444364bd23ba665",
+      "normalized_name": "ebe7699033424b9ef444364bd23ba665",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "ebe7699033424b9ef444364bd23ba665",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f0b93bf7273cbeaed69ed55b5169daf7",
+      "type": "MD5",
+      "name": "f0b93bf7273cbeaed69ed55b5169daf7",
+      "normalized_name": "f0b93bf7273cbeaed69ed55b5169daf7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "f0b93bf7273cbeaed69ed55b5169daf7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f41896e9f77855842380fd9ed795bc64",
+      "type": "MD5",
+      "name": "f41896e9f77855842380fd9ed795bc64",
+      "normalized_name": "f41896e9f77855842380fd9ed795bc64",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "f41896e9f77855842380fd9ed795bc64",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f4a6114fce22eb18b0ccf19cfa68ddba",
+      "type": "MD5",
+      "name": "f4a6114fce22eb18b0ccf19cfa68ddba",
+      "normalized_name": "f4a6114fce22eb18b0ccf19cfa68ddba",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "f4a6114fce22eb18b0ccf19cfa68ddba",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f51fbafc652e10a9ce13795d4cb2d449",
+      "type": "MD5",
+      "name": "f51fbafc652e10a9ce13795d4cb2d449",
+      "normalized_name": "f51fbafc652e10a9ce13795d4cb2d449",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "f51fbafc652e10a9ce13795d4cb2d449",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fb17ffc7495880a7c19df0ebe5c97ad7",
+      "type": "MD5",
+      "name": "fb17ffc7495880a7c19df0ebe5c97ad7",
+      "normalized_name": "fb17ffc7495880a7c19df0ebe5c97ad7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "fb17ffc7495880a7c19df0ebe5c97ad7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_fdb949112cc72c68fc7c1ea0c65344bc",
+      "type": "MD5",
+      "name": "fdb949112cc72c68fc7c1ea0c65344bc",
+      "normalized_name": "fdb949112cc72c68fc7c1ea0c65344bc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_72"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "value": "fdb949112cc72c68fc7c1ea0c65344bc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_64"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_csrss.exe",
+      "type": "File",
+      "name": "csrss.exe",
+      "normalized_name": "csrss.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_67",
+        "ev_8"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "file_name": "csrss.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ernel32.dll",
+      "type": "File",
+      "name": "ernel32.dll",
+      "normalized_name": "ernel32.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_67",
+        "ev_8"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "file_name": "ernel32.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_MSN.exe",
+      "type": "File",
+      "name": "MSN.exe",
+      "normalized_name": "MSN.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_67",
+        "ev_8"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "file_name": "MSN.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Reader_SL.exe",
+      "type": "File",
+      "name": "Reader_SL.exe",
+      "normalized_name": "Reader_SL.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_67",
+        "ev_8"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "file_name": "Reader_SL.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_67",
+        "ev_8"
+      ],
+      "report_id": "The_Mirage_Campaign",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [
+        "ev_67"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "The_Mirage_Campaign",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Honker_Union_of_China",
+      "tail_id": "ent_threatactor_HUC",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "In one example, CTU researchers observed an executable file (MD5 hash ce1cdc9c95a6808945f54164b2e4d9d2) that upon execution drops a copy of Mirage and opens an embedded PDF of a news story titled \" Yemeni Women can participate in politics just like men, says President Saleh \" that was posted on the Yemen Observer's website.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "CTU researchers have observed the following filenames created after execution: svchost.exe ernel32.dll thumb.db csrss.exe Reader_SL.exe MSN.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "One such malware family is Lingbo, which uses a similar encoding algorithm but does not contain some of the major characteristics of Mirage.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "CTU researchers also noted that the original name of the trojan used in the path is MirageFox, which is likely the name used by the threat actors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "dDNS providers (e.g., Dyndns.com) allow anyone to register for a free third-level domain (e.g., Checkip.- dyndns.org) and require only a valid email address, which is kept private.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "When investigating the DNS addresses of the C2 servers, CTU researchers identified several IP addresses of hosting companies based in the United States that are running HTran.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "In the CTU research team's 2011 analysis of HTran, the software's author was identified as a member of the Chinese hacker group HUC, the Honker Union of China.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s9"
+      },
+      "text": "C2 domain name Owner name Owner email Adobesuit.com nie min dnsjacks@yahoo.com antivirusbar.org white jacks dnsjacks@yahoo.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s10"
+      },
+      "text": "Echosky.biz tawnya grilth jeno_1980@hotmail.com India-videoer.com india videoer king@hotmail.com Asia-online.us bkpathak king_public@hotmail.com / kings@hotmail.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s11"
+      },
+      "text": "CTU researchers correlated 86% of the IP addresses the dDNS domains used in the phone-home request to IP addresses of subdomains belonging to domains owned by dnsjacks@yahoo.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "searchers correlated 10% to IP ranges that resolved to subdomains owned by dnsjacks@yahoo.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "Using historical DNS records, CTU researchers were able to map each of the dDNS domains to a subdomain of a domain owned by dnsjacks@ya- hoo.com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "In the samples CTU researchers analyzed, the other domains associated with the phone- home activity are asia-online.us, india-videoer.com and Echosky.biz.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "The CTU research team previously flagged these domains in the HTran investigation and later in the Sin Digoo analysis .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "The analysis of the Sin Digoo affair indicated that jeno_1980@hotmail.- com and king@hotmail.com were connected.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "From the data the CTU research team has collected, indications point to dnsjacks@yahoo.com being either another alias or an asso- ciate of the actor referenced in the HTran and Sin Digoo analyses.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "e29ab99be392bb7012f516a2dbfdc00c 8caf2a96e4d7bb83156c260ccc8f47e7 a4ff66224a0967763e1d079c99482577 f0b93bf7273cbeaed69ed55b5169daf7 3be6fea2bf35c3c3be860622c68ff369 5fa26f410d0133f4152ea78df3978c22 3d10e68dec16b1a4bf949e3e403f2dda 5c371a6dfb45f188fe8e6da4fee9300d 9ff3a9ef192453ecec26cf567c579bff 65445b138d80954cc912a6e43fe5b66d 685805936d8744225f8c11965202de8e 80e978d0eea713812f1dd6b4e9b7daf2 921c724ccb04b9f672b294ffff83ce7b 072877b961e31e8792a296c63b9c7b56 1a8bc862ceaa7e05189345065145842a 6794cc6f5e463ee7432b9e718d8c1b8e fdb949112cc72c68fc7c1ea0c65344bc f4a6114fce22eb18b0ccf19cfa68ddba 1045e26819ff782015202838e2c609f7 5640beb540bef2e97ec4366713d533b8 0f93d28964b440c241ca126a7f94dae2 075df4723073ff08cd3e90d2b1f11722 240627a306f32483378e44ff13e12169 5f2a4d865e6e94f7f15571faab5128d6 3bfa7b806ff540cc1c264ec75048fbc4 05a02e08cce99d3821574d8612f757fd d60cfe03bce8647cce723991e2cd2f8c 6ed270da7450945a3a5a05eda8312732 a1083968b78c081135268b6e4e12b1e5 0fce05e2cea6bd9c217373f2ab962d82 85ef19fab3951d4dd56e42b5a9ccdeea 422f1ffe7e5bda7062f005be92fba36e 346aa61b5739e616482a1bc8bb548871 c2661e45ec2198b04b29ec3fd1e120b2 e04e5eb4aefeb326246d7f41d1b50759 eb1aa241b4a482ac44b27ce38eabccb7 418fb9ba2a61",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "CTU researchers have identified several files that drop and execute a copy of Mirage onto a target system. These \"droppers\" are designed to look and behave like PDF docu- ments. However, the droppers are stand-alone executable files that open an embedded PDF file and execute the Mirage trojan. In one example, CTU researchers observed an executable file (MD5 hash ce1cdc9c95a6808945f54164b2e4d9d2) that upon execution drops a copy of Mirage and opens an embedded PDF of a news story titled \" Yemeni Women can participate in politics just like men, says President Saleh \" that was posted on the Yemen Observer's website.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "svchost.exe ernel32.dll thumb.db csrss.exe Reader_SL.exe MSN.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "5efd0d7f52890291599c8562e8ea92db eacd03ee55ea7d22b45762c82ae1c0e5 ce1cdc9c95a6808945f54164b2e4d9d2 5326e4fe9fd10e37d46e81c0f6bbf29a b2e821828df59c734c1cc379ef7f3122 875877eedcd9f2d60bf63937fe22073d 02d77cdaa808ded64d09eea732a586cc 18a5c6e92b962bc6512486db94bb17a7 32b33321290ac8011aa218da554b8fa5 f41896e9f77855842380fd9ed795bc64 407c291cd5c73da680fa9af9ec017fff 7adb0f22468c10901bd280b2d8a154b0 abac650ab39c0dd074310710081d715d c9e49c504d5ca953c858d29b7a2acb9d aaa9aae486ee7342d29a0a2f9b0ca205 7ad79f9a0efde6f4673585e400f29f18",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "f51fbafc652e10a9ce13795d4cb2d449 a748ff9663b2d39a35e4c073b73cd7f6 e7d5ac11903c0217a999a79bc87182d2 1b918c8a40dc4a66430cfec7dabeb7f3 c72d7794dc7f2eda6b44b934fe8fff1c ad2dda9241cd6c0e879ab665d77ce13c ccf34d2ba81de856af8167e73d0c8b69 ebe7699033424b9ef444364bd23ba665 7349c7908a672de885fdf9f9cc4547b5 eacd14ce8414911546cb027a8cb2fecd 4b9723a4060838114e53d1df3fa2537a 070ef82a0bded089b6f996a392ca7b9a 286f7b377f5d0ca3505ed1ba6601c947 4d74a83e2f623f17e17eb95736dc587b a4b9bfc5aa5e37cc613112b9a9dcdb3e fb17ffc7495880a7c19df0ebe5c97ad7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "e29ab99be392bb7012f516a2dbfdc00c 8caf2a96e4d7bb83156c260ccc8f47e7 a4ff66224a0967763e1d079c99482577 f0b93bf7273cbeaed69ed55b5169daf7 3be6fea2bf35c3c3be860622c68ff369 5fa26f410d0133f4152ea78df3978c22 3d10e68dec16b1a4bf949e3e403f2dda 5c371a6dfb45f188fe8e6da4fee9300d 9ff3a9ef192453ecec26cf567c579bff 65445b138d80954cc912a6e43fe5b66d 685805936d8744225f8c11965202de8e 80e978d0eea713812f1dd6b4e9b7daf2 921c724ccb04b9f672b294ffff83ce7b 072877b961e31e8792a296c63b9c7b56 1a8bc862ceaa7e05189345065145842a 6794cc6f5e463ee7432b9e718d8c1b8e fdb949112cc72c68fc7c1ea0c65344bc f4a6114fce22eb18b0ccf19cfa68ddba 1045e26819ff782015202838e2c609f7 5640beb540bef2e97ec4366713d533b8 0f93d28964b440c241ca126a7f94dae2 075df4723073ff08cd3e90d2b1f11722 240627a306f32483378e44ff13e12169 5f2a4d865e6e94f7f15571faab5128d6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "The_Mirage_Campaign",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "3bfa7b806ff540cc1c264ec75048fbc4 05a02e08cce99d3821574d8612f757fd d60cfe03bce8647cce723991e2cd2f8c 6ed270da7450945a3a5a05eda8312732 a1083968b78c081135268b6e4e12b1e5 0fce05e2cea6bd9c217373f2ab962d82 85ef19fab3951d4dd56e42b5a9ccdeea 422f1ffe7e5bda7062f005be92fba36e 346aa61b5739e616482a1bc8bb548871 c2661e45ec2198b04b29ec3fd1e120b2 e04e5eb4aefeb326246d7f41d1b50759 eb1aa241b4a482ac44b27ce38eabccb7 418fb9ba2a61bccab3e54ebe0698c4b6 590e68aaaa5c2353b7288f64cc87d9bb 1f9894e730c0f5ba085baae409aa963a 11b76423f450ba610f073e7522eeb56b 54d37fb1f624c798f0b400b4f50f3635 7fda0451e4d320cc34efcaaabedd6824 84fc624f9f5f8de6980497058db1e8e1 964eec615f977b05bc87943ce0942cf9 5069057b799636c012eec38147fb96e6 a4a1670c537861f7d5b0db115a7aa5fa 00b9619613bc82f5fe117c2ca394a328 2219bef789ff73efc0a01f87be03188d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_48",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_adobesuit.com",
+        "ent_domain_antivirusbar.org",
+        "ent_domain_yahoo.com",
+        "ent_email_dnsjacks_yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_56",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_hotmail.com",
+        "ent_email_king_hotmail.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_yahoo.com",
+        "ent_email_dnsjacks_yahoo.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_49",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_asia-online.us",
+        "ent_domain_echosky.biz",
+        "ent_domain_hotmail.com",
+        "ent_domain_india-videoer.com",
+        "ent_email_jeno_1980_hotmail.com",
+        "ent_email_king_hotmail.com",
+        "ent_email_king_public_hotmail.com",
+        "ent_email_kings_hotmail.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_8",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_csrss.exe",
+        "ent_file_ernel32.dll",
+        "ent_file_MSN.exe",
+        "ent_file_Reader_SL.exe",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_csrss.exe",
+        "ent_file_ernel32.dll",
+        "ent_file_MSN.exe",
+        "ent_file_Reader_SL.exe",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_domain_dyndns.com",
+        "ent_domain_dyndns.org"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_54",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_domain_asia-online.us",
+        "ent_domain_india-videoer.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

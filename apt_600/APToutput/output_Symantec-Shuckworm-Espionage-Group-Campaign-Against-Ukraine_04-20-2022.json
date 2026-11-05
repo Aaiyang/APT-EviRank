@@ -1,0 +1,843 @@
+{
+  "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+  "title": "Shuckworm: Espionage Group Continues Intense Campaign Against Ukraine",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022).pdf",
+    "file_path": "/root/APTtext/Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 5818,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_tool_Shuckworm",
+      "type": "Tool",
+      "name": "Shuckworm",
+      "normalized_name": "Shuckworm",
+      "aliases": [
+        "Armageddon",
+        "Gamaredon"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_26",
+        "ev_27",
+        "ev_28"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_26",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Ukrai",
+      "type": "Victim",
+      "name": "Ukrai",
+      "normalized_name": "Ukrai",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1",
+        "ev_28",
+        "ev_29"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Ukraine",
+      "type": "Victim",
+      "name": "Ukraine",
+      "normalized_name": "Ukraine",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Shuckworm",
+      "type": "Campaign",
+      "name": "Shuckworm",
+      "normalized_name": "Shuckworm",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1",
+        "ev_26",
+        "ev_27",
+        "ev_28"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_26",
+        "ev_27",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Armageddon",
+      "type": "ThreatActor",
+      "name": "Armageddon",
+      "normalized_name": "Armageddon",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_26",
+        "ev_27"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Shuckworm"
+    },
+    {
+      "id": "ent_threatactor_Gamaredon",
+      "type": "ThreatActor",
+      "name": "Gamaredon",
+      "normalized_name": "Gamaredon",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_1",
+        "ev_26",
+        "ev_27"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_tool_Shuckworm"
+    },
+    {
+      "id": "ent_malware_Backdoor.Pterodo.B",
+      "type": "Malware",
+      "name": "Backdoor.Pterodo.B",
+      "normalized_name": "Backdoor.Pterodo.B",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13",
+        "ev_19",
+        "ev_24",
+        "ev_9"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "family": "Backdoor.Pterodo.B",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [
+        "ev_19",
+        "ev_24",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_corolain.ru",
+      "type": "Domain",
+      "name": "corolain.ru",
+      "normalized_name": "corolain.ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "value": "corolain.ru",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_declined.delivered.maizuko.ru",
+      "type": "Domain",
+      "name": "declined.delivered.maizuko.ru",
+      "normalized_name": "declined.delivered.maizuko.ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "value": "declined.delivered.maizuko.ru",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_symantec-enterprise-blogs.security.com",
+      "type": "Domain",
+      "name": "symantec-enterprise-blogs.security.com",
+      "normalized_name": "symantec-enterprise-blogs.security.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "value": "symantec-enterprise-blogs.security.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_file_shtasks.exe",
+      "type": "File",
+      "name": "shtasks.exe",
+      "normalized_name": "shtasks.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30",
+        "ev_7"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "file_name": "shtasks.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_USERPROFILE_abide.wav",
+      "type": "File",
+      "name": "USERPROFILE]\\abide.wav",
+      "normalized_name": "USERPROFILE]\\abide.wav",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "file_name": "USERPROFILE]\\abide.wav",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "USERPROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_USERPROFILE_atwuzxsjiobk.ql",
+      "type": "File",
+      "name": "USERPROFILE]\\atwuzxsjiobk.ql",
+      "normalized_name": "USERPROFILE]\\atwuzxsjiobk.ql",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "file_name": "USERPROFILE]\\atwuzxsjiobk.ql",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "USERPROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wscript.exe",
+      "type": "File",
+      "name": "wscript.exe",
+      "normalized_name": "wscript.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_32"
+      ],
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "file_name": "wscript.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "SCHTASKS",
+        "CREATE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Armageddon",
+      "tail_id": "ent_tool_Shuckworm",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_26"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Gamaredon",
+      "tail_id": "ent_tool_Shuckworm",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_26"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "type": "executes",
+      "head_id": "ent_file_USERPROFILE_atwuzxsjiobk.ql",
+      "tail_id": "ent_file_USERPROFILE_abide.wav",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "type": "loads",
+      "head_id": "ent_file_USERPROFILE_atwuzxsjiobk.ql",
+      "tail_id": "ent_file_USERPROFILE_abide.wav",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "type": "loads",
+      "head_id": "ent_file_USERPROFILE_atwuzxsjiobk.ql",
+      "tail_id": "ent_tool_Shuckworm",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "USERPROFILE]\\atwuzxsjiobk.ql executes USERPROFILE]\\abide.wav",
+      "evidence_ids": [
+        "ev_21"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "USERPROFILE]\\atwuzxsjiobk.ql loads USERPROFILE]\\abide.wav",
+      "evidence_ids": [
+        "ev_21"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "USERPROFILE]\\atwuzxsjiobk.ql loads Shuckworm",
+      "evidence_ids": [
+        "ev_21"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "symantec-enterprise-blogs.security.com /blogs/threat-intelligence/shuckworm-intense-campaign-ukraine The Russian-linked Shuckworm espionage group (aka Gamaredon, Armageddon) is continuing to mount an intense cyber campaign against organizations in Ukraine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "They will drop a VBScript file, use Scheduled Tasks (shtasks.exe) to maintain persistence, and download additional code from a C&C server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Backdoor.Pterodo.B This variant is a modified self-extracting archive, containing obfuscated VBScripts in resources that can be unpacked by 7-Zip.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s4"
+      },
+      "text": "Backdoor.Pterodo.C This variant is also designed to drop VBScripts on the infected computer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s9"
+      },
+      "text": "Offsprint.gif will download a PowerShell script from a random subdomain of corolain.ru and execute it:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s10"
+      },
+      "text": "Backdoor.Pterodo.D This variant is another VBScript dropper.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s12"
+      },
+      "text": "[USERPROFILE]\\atwuzxsjiobk.ql [USERPROFILE]\\abide.wav It executes them with the following command:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "The second script has two layers of obfuscation, but in the end it downloads the final payload from the domain declined.delivered.maizuko[.]ru and executes it.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Backdoor.Pterodo.E The final variant is functionally very similar to variants B and C, engaging in API hammering before extracting two VBScript files to the user’s home directory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "UltraVNC has previously been used by Shuckworm in multiple attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "In addition to this, Shuckworm has also been observed using Process Explorer, a Microsoft Sysinternals tool designed to provide information about which handles and DLL processes have opened or loaded.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s6"
+      },
+      "text": "Persistent threat While Shuckworm is not the most tactically sophisticated espionage group, it compensates for this in its focus and persistence in relentlessly targeting Ukrainian organizations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s7"
+      },
+      "text": "While Shuckworm appears to be largely focused on intelligence gathering, its attacks could also potentially be a precursor to more serious intrusions, if the access it acquires to Ukrainian organizations is turned over to other Russian-sponsored actors.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Symantec’s Threat Hunter Team, part of Broadcom Software, has found four distinct variants of Pterodo being used in recent attacks. All of them are Visual Basic Script (VBS) droppers with similar functionality. They will drop a VBScript file, use Scheduled Tasks (shtasks.exe) to maintain persistence, and download additional code from a C&C server. All of the embedded VBScripts were very similar to one another and used similar obfuscation techniques.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "CreateObject(\"Shell.Application\").ShellExecute \"SCHTASKS\", \"/CREATE /sc minute /mo 10 /tn \" + \"\"\"UDPSync\"\" /tr \"\"wscript.exe \"\"\" + hailJPT + \"\"\"\" & \" jewels //b joking //e VBScript joyful \"\" /F \", \"\" , \"\" , 0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Symantec-Shuckworm-Espionage-Group-Campaign-Against-Ukraine(04-20-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "CreateObject(\"Shell.Application\").ShellExecute \"SCHTASKS\", \"/CREATE /sc minute /mo 10 /tn \" + \"\"\"SyncPlayer\"\" /tr \"\"wscript.exe \"\"\" + enormouslyAKeIXNE + \"\"\"\" + \" jewels //b joking //e VBScript joyful \"\" /F \", \"\" , \"\" , 0",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_tool_Shuckworm",
+        "ent_victim_Ukraine"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_tool_Shuckworm",
+        "ent_victim_Ukraine",
+        "ent_threatactor_Armageddon",
+        "ent_threatactor_Gamaredon",
+        "ent_domain_symantec-enterprise-blogs.security.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_USERPROFILE_abide.wav",
+        "ent_file_USERPROFILE_atwuzxsjiobk.ql"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

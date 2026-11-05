@@ -1,0 +1,1609 @@
+{
+  "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+  "title": "BlackOasis APT and new targeted attacks leveraging zero- day exploit",
+  "source": null,
+  "published_date": "October 10, 2017",
+  "report_metadata": {
+    "file_name": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017).pdf",
+    "file_path": "/root/APTtext/Kaspersky_BlackOasis-APT-zero-day(10-16-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 9369,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_BlackOasis",
+      "type": "ThreatActor",
+      "name": "BlackOasis",
+      "normalized_name": "BlackOasis",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_11",
+        "ev_14",
+        "ev_32",
+        "ev_34"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_11",
+        "ev_14",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_FinFisher",
+      "type": "Malware",
+      "name": "FinFisher",
+      "normalized_name": "FinFisher",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "family": "FinFisher",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2015-5119",
+      "type": "CVE",
+      "name": "CVE-2015-5119",
+      "normalized_name": "CVE-2015-5119",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45",
+        "ev_46"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [
+        "ev_46"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2016-0984",
+      "type": "CVE",
+      "name": "CVE-2016-0984",
+      "normalized_name": "CVE-2016-0984",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45",
+        "ev_47"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2016-4117",
+      "type": "CVE",
+      "name": "CVE-2016-4117",
+      "normalized_name": "CVE-2016-4117",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_44",
+        "ev_48"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_44",
+        "ev_48"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2017-11292",
+      "type": "CVE",
+      "name": "CVE-2017-11292",
+      "normalized_name": "CVE-2017-11292",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_50",
+        "ev_51",
+        "ev_61"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_50",
+        "ev_51",
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2017-8759",
+      "type": "CVE",
+      "name": "CVE-2017-8759",
+      "normalized_name": "CVE-2017-8759",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_49"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_BlackOasis",
+      "type": "Malware",
+      "name": "BlackOasis",
+      "normalized_name": "BlackOasis",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "family": "BlackOasis",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_domain_helpx.adobe.com",
+      "type": "Domain",
+      "name": "helpx.adobe.com",
+      "normalized_name": "helpx.adobe.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "helpx.adobe.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_kaspersky.com",
+      "type": "Domain",
+      "name": "kaspersky.com",
+      "normalized_name": "kaspersky.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "kaspersky.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_securelist.com",
+      "type": "Domain",
+      "name": "securelist.com",
+      "normalized_name": "securelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "securelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ipv4_89.45.67.107",
+      "type": "IPv4",
+      "name": "89.45.67.107",
+      "normalized_name": "89.45.67.107",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_53",
+        "ev_63"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "89.45.67.107",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_89.45.67.107_rss_5uzosoff0u.iaf.",
+      "type": "URL",
+      "name": "http://89.45.67.107/rss/5uzosoff0u.iaf.",
+      "normalized_name": "http://89.45.67.107/rss/5uzosoff0u.iaf.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_53",
+        "ev_63"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "http://89.45.67.107/rss/5uzosoff0u.iaf.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_53",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_89.45.67.107_rss_mo.exe",
+      "type": "URL",
+      "name": "http://89.45.67.107/rss/mo.exe",
+      "normalized_name": "http://89.45.67.107/rss/mo.exe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_53",
+        "ev_63"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "http://89.45.67.107/rss/mo.exe",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_52",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_helpx.adobe.com_security_products_flash-player_apsb17-32.html",
+      "type": "URL",
+      "name": "https://helpx.adobe.com/security/products/flash-player/apsb17-32.html",
+      "normalized_name": "https://helpx.adobe.com/security/products/flash-player/apsb17-32.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "https://helpx.adobe.com/security/products/flash-player/apsb17-32.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_email_intelreports_kaspersky.com",
+      "type": "Email",
+      "name": "intelreports@kaspersky.com",
+      "normalized_name": "intelreports@kaspersky.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "intelreports@kaspersky.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_4a49135d2ecc07085a8b7c5925a36c0a",
+      "type": "MD5",
+      "name": "4a49135d2ecc07085a8b7c5925a36c0a",
+      "normalized_name": "4a49135d2ecc07085a8b7c5925a36c0a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_23",
+        "ev_55",
+        "ev_63"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "value": "4a49135d2ecc07085a8b7c5925a36c0a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_AdapterTroubleshooter.exe",
+      "type": "File",
+      "name": "AdapterTroubleshooter.exe",
+      "normalized_name": "AdapterTroubleshooter.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27",
+        "ev_56",
+        "ev_60"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "file_name": "AdapterTroubleshooter.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_56",
+        "ev_26",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_d3d9.dll",
+      "type": "File",
+      "name": "d3d9.dll",
+      "normalized_name": "d3d9.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_59",
+        "ev_60"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "file_name": "d3d9.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_59",
+        "ev_27",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mo.exe",
+      "type": "File",
+      "name": "mo.exe",
+      "normalized_name": "mo.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_53",
+        "ev_54",
+        "ev_55"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "file_name": "mo.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_54",
+        "ev_55",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_msvcr90.dll",
+      "type": "File",
+      "name": "msvcr90.dll",
+      "normalized_name": "msvcr90.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27",
+        "ev_58"
+      ],
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "file_name": "msvcr90.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_BlackOasis",
+      "tail_id": "ent_cve_CVE-2015-5119",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "title_exploit; report_exploit_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_45"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_BlackOasis",
+      "tail_id": "ent_cve_CVE-2016-0984",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "title_exploit; report_exploit_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_45"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_BlackOasis",
+      "tail_id": "ent_cve_CVE-2016-4117",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_9",
+        "ev_44",
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_9",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit; report_exploit_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_43"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_BlackOasis",
+      "tail_id": "ent_cve_CVE-2017-11292",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_4",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploit",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "report_exploit_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_42"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_BlackOasis",
+      "tail_id": "ent_cve_CVE-2017-8759",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_4",
+        "ev_42"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploit",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "event_exploit, evidence_exploit; exploit_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Analysis of the payload allowed us to confidently link this attack to an actor we track as “BlackOasis”. We are also highly confident that BlackOasis was also responsible for another zero day exploit (CVE-2017-8759) discovered by FireEye in September 2017. The FinSpy payload used in the current attacks (CVE-2017-11292) shares the same command and control (C2) server as the payload used with CVE-2017-8759 uncovered by"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "loads",
+      "head_id": "ent_file_d3d9.dll",
+      "tail_id": "ent_file_AdapterTroubleshooter.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "C:\\ProgramData\\ManagerApp\\msvcr90.dll C:\\ProgramData\\ManagerApp\\d3d9.dll The “AdapterTroubleshooter.exe” file is a legitimate binary which is leveraged to use the famous DLL search order hijacking technique."
+      },
+      "head": {
+        "id": "ent_file_d3d9.dll",
+        "type": "File",
+        "name": "d3d9.dll",
+        "normalized_name": "d3d9.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_27",
+          "ev_28",
+          "ev_59",
+          "ev_60"
+        ],
+        "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+        "file_name": "d3d9.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_59",
+          "ev_27",
+          "ev_28"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_AdapterTroubleshooter.exe",
+        "type": "File",
+        "name": "AdapterTroubleshooter.exe",
+        "normalized_name": "AdapterTroubleshooter.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_26",
+          "ev_27",
+          "ev_56",
+          "ev_60"
+        ],
+        "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+        "file_name": "AdapterTroubleshooter.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_56",
+          "ev_26",
+          "ev_27"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "type": "loads",
+      "head_id": "ent_file_msvcr90.dll",
+      "tail_id": "ent_file_d3d9.dll",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "C:\\ProgramData\\ManagerApp\\msvcr90.dll C:\\ProgramData\\ManagerApp\\d3d9.dll The “AdapterTroubleshooter.exe” file is a legitimate binary which is leveraged to use the famous DLL search order hijacking technique."
+      },
+      "head": {
+        "id": "ent_file_msvcr90.dll",
+        "type": "File",
+        "name": "msvcr90.dll",
+        "normalized_name": "msvcr90.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_27",
+          "ev_58"
+        ],
+        "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+        "file_name": "msvcr90.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_58"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_d3d9.dll",
+        "type": "File",
+        "name": "d3d9.dll",
+        "normalized_name": "d3d9.dll",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_27",
+          "ev_28",
+          "ev_59",
+          "ev_60"
+        ],
+        "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+        "file_name": "d3d9.dll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_60",
+        "supporting_evidence_ids": [
+          "ev_59",
+          "ev_27",
+          "ev_28"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "abused_legitimate_file",
+        "is_likely_legitimate": true,
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0001",
+      "type": "exploits",
+      "summary": "BlackOasis exploits CVE-2015-5119",
+      "evidence_ids": [
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "initial_access",
+      "relation_id": "rel_0002",
+      "type": "exploits",
+      "summary": "BlackOasis exploits CVE-2016-0984",
+      "evidence_ids": [
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "initial_access",
+      "relation_id": "rel_0003",
+      "type": "exploits",
+      "summary": "BlackOasis exploits CVE-2016-4117",
+      "evidence_ids": [
+        "ev_9",
+        "ev_44",
+        "ev_43"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "initial_access",
+      "relation_id": "rel_0004",
+      "type": "exploits",
+      "summary": "BlackOasis exploits CVE-2017-11292",
+      "evidence_ids": [
+        "ev_4",
+        "ev_42"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "initial_access",
+      "relation_id": "rel_0005",
+      "type": "exploits",
+      "summary": "BlackOasis exploits CVE-2017-8759",
+      "evidence_ids": [
+        "ev_4",
+        "ev_42"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "d3d9.dll loads AdapterTroubleshooter.exe",
+      "evidence_ids": [
+        "ev_27"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "msvcr90.dll loads d3d9.dll",
+      "evidence_ids": [
+        "ev_27"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "securelist.com /blackoasis-apt-and-new-targeted-attacks-leveraging-zero-day-exploit/82732/ Kaspersky Lab has always worked closely with vendors to protect users.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "We are also highly confident that BlackOasis was also responsible for another zero day exploit (CVE-2017-8759) discovered by FireEye in September 2017.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "The sample, in the form of an RTF document, exploited CVE-2016-4117 to download and",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Leveraging data from Kaspersky Security Network, we identified two other similar exploit chains used by BlackOasis in June 2015 which were zero days at the time.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Since the discovery of BlackOasis’ exploitation network, we’ve been tracking this threat actor with the purpose of better understanding their operations and targeting and have seen a couple dozen new attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "Payload – mo.exe As mentioned earlier, the “mo.exe” payload (MD5: 4a49135d2ecc07085a8b7c5925a36c0a) is the newest version of Gamma International’s FinSpy malware, typically sold to nation states and other law enforcement agencies to use in lawful surveillance operations.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "C:\\ProgramData\\ManagerApp\\AdapterTroubleshooter.exe C:\\ProgramData\\ManagerApp\\15b937.cab C:\\ProgramData\\ManagerApp\\install.cab",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "C:\\ProgramData\\ManagerApp\\msvcr90.dll C:\\ProgramData\\ManagerApp\\d3d9.dll The “AdapterTroubleshooter.exe” file is a legitimate binary which is leveraged to use the famous DLL search order hijacking technique.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s4"
+      },
+      "text": "The “d3d9.dll” file is malicious and is loaded into memory by the legit binary upon execution.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s4"
+      },
+      "text": "These IPs and other previous samples tie closely to the BlackOasis APT cluster of FinSpy activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s6"
+      },
+      "text": "Victims of BlackOasis have been observed in the following countries: Russia, Iraq, Afghanistan, Nigeria, Libya, Jordan, Tunisia, Saudi Arabia, Iran, Netherlands, Bahrain, United Kingdom and Angola.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s7"
+      },
+      "text": "We believe the number of attacks relying on FinFisher software, supported by zero day exploits such as the ones described here will continue to grow.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "Contact: intelreports@kaspersky.com",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Analysis of the payload allowed us to confidently link this attack to an actor we track as “BlackOasis”. We are also highly confident that BlackOasis was also responsible for another zero day exploit (CVE-2017-8759) discovered by FireEye in September 2017. The FinSpy payload used in the current attacks (CVE-2017-11292) shares the same command and control (C2) server as the payload used with CVE-2017-8759 uncovered by FireEye.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "We first became aware of BlackOasis’ activities in May 2016, while investigating another Adobe Flash zero day. On May 10, 2016, Adobe warned of a vulnerability (CVE-2016-4117) affecting Flash Player 21.0.0.226 and earlier versions for Windows, Macintosh, Linux, and Chrome OS. The vulnerability was actively being exploited in the wild.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "Kaspersky Lab was able to identify a sample exploiting this vulnerability that was uploaded to a multi scanner system on May 8, 2016. The sample, in the form of an RTF document, exploited CVE-2016-4117 to download and",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Leveraging data from Kaspersky Security Network, we identified two other similar exploit chains used by BlackOasis in June 2015 which were zero days at the time. Those include CVE-2015-5119 and CVE-2016-0984, which were patched in July 2015 and February 2016 respectively. These exploit chains also delivered FinSpy installation packages.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "CVE-2015-5119 – June 2015",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "CVE-2016-0984 – June 2015",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "CVE-2016-4117 – May 2016",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "CVE-2017-8759 – Sept 2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r5"
+      },
+      "text": "CVE-2017-11292 – Oct 2017",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "Attacks Leveraging CVE-2017-11292",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "The main purpose of the initial shellcode is to download second stage shellcode from hxxp://89.45.67[.]107/rss/5uzosoff0u.iaf.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "1. Download the final payload (FinSpy) from hxxp://89.45.67[.]107/rss/mo.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Payload – mo.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "As mentioned earlier, the “mo.exe” payload (MD5: 4a49135d2ecc07085a8b7c5925a36c0a) is the newest version of Gamma International’s FinSpy malware, typically sold to nation states and other law enforcement agencies to use in lawful surveillance operations. This newer variant has made it especially difficult for researchers to analyze the malware due to many added anti-analysis techniques, to include a custom packer and virtual machine to execute code.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "C:\\ProgramData\\ManagerApp\\AdapterTroubleshooter.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "C:\\ProgramData\\ManagerApp\\msvcr90.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "C:\\ProgramData\\ManagerApp\\d3d9.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "The “AdapterTroubleshooter.exe” file is a legitimate binary which is leveraged to use the famous DLL search order hijacking technique. The “d3d9.dll” file is malicious and is loaded into memory by the legit binary upon execution. Once loaded, the DLL will then inject FinSpy into the Winlogon process.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "For CVE-2017-11292 and other similar vulnerabilities, one can use the killbit for Flash within their organizations to disable it in any applications that respect it. Unfortunately, doing this system-wide is not easily done, as Flash objects can be loaded in applications that potentially do not follow the killbit. Additionally, this may break any other necessary resources that rely on Flash and of course, it will not protect against exploits for other third party software.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "4a49135d2ecc07085a8b7c5925a36c0a 89.45.67[.]107",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb64"
+      },
+      "text": "1. Adobe Bulletin https://helpx.adobe.com/security/products/flash-player/apsb17-32.html",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Kaspersky_BlackOasis-APT-zero-day(10-16-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule_backfill",
+        "sentence_id": "p10_rb65"
+      },
+      "text": "ch this vulnerability. References 1. Adobe Bulletin https://helpx.adobe.com/security/products/flash-player/apsb17-32.html Indicators of compromise 4a49135d2ecc07085a8b7c5925a36c0a",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_42",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_BlackOasis",
+        "ent_cve_CVE-2017-11292",
+        "ent_cve_CVE-2017-8759"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_BlackOasis",
+        "ent_cve_CVE-2015-5119",
+        "ent_cve_CVE-2016-0984"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_60",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_AdapterTroubleshooter.exe",
+        "ent_file_d3d9.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_AdapterTroubleshooter.exe",
+        "ent_file_d3d9.dll",
+        "ent_file_msvcr90.dll"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_BlackOasis",
+        "ent_cve_CVE-2017-8759"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_43",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_BlackOasis",
+        "ent_cve_CVE-2016-4117"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_BlackOasis",
+        "ent_domain_securelist.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_domain_kaspersky.com",
+        "ent_email_intelreports_kaspersky.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

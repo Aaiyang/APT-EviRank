@@ -1,0 +1,2107 @@
+{
+  "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+  "title": "Houdini’s Magic Reappearance",
+  "source": "Unit 42",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016).pdf",
+    "file_path": "/root/APTtext/PaloAlto_Houdinis-Magic-Reappearance(10-25-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 12051,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_FILE_DATA",
+      "type": "Malware",
+      "name": "FILE_DATA",
+      "normalized_name": "FILE_DATA",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_26",
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "family": "FILE_DATA",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_26",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Hworm",
+      "type": "Malware",
+      "name": "Hworm",
+      "normalized_name": "Hworm",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_18",
+        "ev_21",
+        "ev_49",
+        "ev_41",
+        "ev_43",
+        "ev_51"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "family": "Hworm",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_18",
+        "ev_21",
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_LOADER_DATA",
+      "type": "Malware",
+      "name": "LOADER_DATA",
+      "normalized_name": "LOADER_DATA",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_26",
+        "ev_36"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "family": "LOADER_DATA",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_26"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_samah.sytes.net",
+      "type": "Domain",
+      "name": "samah.sytes.net",
+      "normalized_name": "samah.sytes.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "samah.sytes.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Hworm",
+      "type": "Campaign",
+      "name": "Hworm",
+      "normalized_name": "Hworm",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_41",
+        "ev_43",
+        "ev_49",
+        "ev_51"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [
+        "ev_41",
+        "ev_43",
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_DynamicWrapperX",
+      "type": "Tool",
+      "name": "DynamicWrapperX",
+      "normalized_name": "DynamicWrapperX",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_26",
+        "ev_27",
+        "ev_33",
+        "ev_35"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_33",
+        "ev_26",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "tool_name": "DynamicWrapperX",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_dev-point.com",
+      "type": "Domain",
+      "name": "dev-point.com",
+      "normalized_name": "dev-point.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "dev-point.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_researchcenter.paloaltonetworks.com",
+      "type": "Domain",
+      "name": "researchcenter.paloaltonetworks.com",
+      "normalized_name": "researchcenter.paloaltonetworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72",
+        "ev_73"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "researchcenter.paloaltonetworks.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_73"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_start.loginto.me",
+      "type": "Domain",
+      "name": "start.loginto.me",
+      "normalized_name": "start.loginto.me",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "start.loginto.me",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_ipv4_136.243.104.200",
+      "type": "IPv4",
+      "name": "136.243.104.200",
+      "normalized_name": "136.243.104.200",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "136.243.104.200",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_0672e47513aefcbc3f7a9bd50849acf507a5454bc8c36580304105479c58772a",
+      "type": "SHA256",
+      "name": "0672e47513aefcbc3f7a9bd50849acf507a5454bc8c36580304105479c58772a",
+      "normalized_name": "0672e47513aefcbc3f7a9bd50849acf507a5454bc8c36580304105479c58772a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "0672e47513aefcbc3f7a9bd50849acf507a5454bc8c36580304105479c58772a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_106934ff7f6f93a371a4561fff23d69e6783512c38126fbd427ed4a886ca6e65",
+      "type": "SHA256",
+      "name": "106934ff7f6f93a371a4561fff23d69e6783512c38126fbd427ed4a886ca6e65",
+      "normalized_name": "106934ff7f6f93a371a4561fff23d69e6783512c38126fbd427ed4a886ca6e65",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "106934ff7f6f93a371a4561fff23d69e6783512c38126fbd427ed4a886ca6e65",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1f45e5eca8f8882481b13fd4a67ffa88a1aa4d6e875a9c2e1fbf0b80e92d9588",
+      "type": "SHA256",
+      "name": "1f45e5eca8f8882481b13fd4a67ffa88a1aa4d6e875a9c2e1fbf0b80e92d9588",
+      "normalized_name": "1f45e5eca8f8882481b13fd4a67ffa88a1aa4d6e875a9c2e1fbf0b80e92d9588",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "1f45e5eca8f8882481b13fd4a67ffa88a1aa4d6e875a9c2e1fbf0b80e92d9588",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_386057a265619c43ef245857b66241a66822061ce9bd047556c4f3f1d262ef36",
+      "type": "SHA256",
+      "name": "386057a265619c43ef245857b66241a66822061ce9bd047556c4f3f1d262ef36",
+      "normalized_name": "386057a265619c43ef245857b66241a66822061ce9bd047556c4f3f1d262ef36",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "386057a265619c43ef245857b66241a66822061ce9bd047556c4f3f1d262ef36",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3d287cce7fe1caa5c033a4e6b94680c90a25cb3866837266130ba0fd8fab562c",
+      "type": "SHA256",
+      "name": "3d287cce7fe1caa5c033a4e6b94680c90a25cb3866837266130ba0fd8fab562c",
+      "normalized_name": "3d287cce7fe1caa5c033a4e6b94680c90a25cb3866837266130ba0fd8fab562c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "3d287cce7fe1caa5c033a4e6b94680c90a25cb3866837266130ba0fd8fab562c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3d3db84b6ad760540f638713e3f6a8daf8a226bd045351bcc72c6d22a7df8b3a",
+      "type": "SHA256",
+      "name": "3d3db84b6ad760540f638713e3f6a8daf8a226bd045351bcc72c6d22a7df8b3a",
+      "normalized_name": "3d3db84b6ad760540f638713e3f6a8daf8a226bd045351bcc72c6d22a7df8b3a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "3d3db84b6ad760540f638713e3f6a8daf8a226bd045351bcc72c6d22a7df8b3a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_444b82caf3c17ea74034c984aeca0f5b2e6547af88a0fb15953f2d5b80e3b448",
+      "type": "SHA256",
+      "name": "444b82caf3c17ea74034c984aeca0f5b2e6547af88a0fb15953f2d5b80e3b448",
+      "normalized_name": "444b82caf3c17ea74034c984aeca0f5b2e6547af88a0fb15953f2d5b80e3b448",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "444b82caf3c17ea74034c984aeca0f5b2e6547af88a0fb15953f2d5b80e3b448",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_44b52baf2ecef2f928a13b17ba3a5552c32ca4a640e6421b8bc35ef5a113801b",
+      "type": "SHA256",
+      "name": "44b52baf2ecef2f928a13b17ba3a5552c32ca4a640e6421b8bc35ef5a113801b",
+      "normalized_name": "44b52baf2ecef2f928a13b17ba3a5552c32ca4a640e6421b8bc35ef5a113801b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "44b52baf2ecef2f928a13b17ba3a5552c32ca4a640e6421b8bc35ef5a113801b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5e42e61340942fc0c46a6668a7f54adbbb4792b01c819bcd3047e855116ae16f",
+      "type": "SHA256",
+      "name": "5e42e61340942fc0c46a6668a7f54adbbb4792b01c819bcd3047e855116ae16f",
+      "normalized_name": "5e42e61340942fc0c46a6668a7f54adbbb4792b01c819bcd3047e855116ae16f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "5e42e61340942fc0c46a6668a7f54adbbb4792b01c819bcd3047e855116ae16f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_70c55fef53fd4bdeb135ed68a7eead45e8d4ba7d17e0fd907e9770b2793b60ed",
+      "type": "SHA256",
+      "name": "70c55fef53fd4bdeb135ed68a7eead45e8d4ba7d17e0fd907e9770b2793b60ed",
+      "normalized_name": "70c55fef53fd4bdeb135ed68a7eead45e8d4ba7d17e0fd907e9770b2793b60ed",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "70c55fef53fd4bdeb135ed68a7eead45e8d4ba7d17e0fd907e9770b2793b60ed",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_773716bc2d313e17326471289a0b552f90086a2687fa958ef8cdb611cbc9a8c9",
+      "type": "SHA256",
+      "name": "773716bc2d313e17326471289a0b552f90086a2687fa958ef8cdb611cbc9a8c9",
+      "normalized_name": "773716bc2d313e17326471289a0b552f90086a2687fa958ef8cdb611cbc9a8c9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "773716bc2d313e17326471289a0b552f90086a2687fa958ef8cdb611cbc9a8c9",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_774501f3c88ebdd409ec318d08af2350ec37fdbc11f32681f855e215e75440d7",
+      "type": "SHA256",
+      "name": "774501f3c88ebdd409ec318d08af2350ec37fdbc11f32681f855e215e75440d7",
+      "normalized_name": "774501f3c88ebdd409ec318d08af2350ec37fdbc11f32681f855e215e75440d7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "774501f3c88ebdd409ec318d08af2350ec37fdbc11f32681f855e215e75440d7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7916ca6ae6fdbfb45448f6dcff374d072d988d11aa15247a88167bf973ee2c0d",
+      "type": "SHA256",
+      "name": "7916ca6ae6fdbfb45448f6dcff374d072d988d11aa15247a88167bf973ee2c0d",
+      "normalized_name": "7916ca6ae6fdbfb45448f6dcff374d072d988d11aa15247a88167bf973ee2c0d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "7916ca6ae6fdbfb45448f6dcff374d072d988d11aa15247a88167bf973ee2c0d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_8428857b0c7dfe43cf2182dd585dfdfd845697a11c31e91d909dc400222b4f78",
+      "type": "SHA256",
+      "name": "8428857b0c7dfe43cf2182dd585dfdfd845697a11c31e91d909dc400222b4f78",
+      "normalized_name": "8428857b0c7dfe43cf2182dd585dfdfd845697a11c31e91d909dc400222b4f78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "8428857b0c7dfe43cf2182dd585dfdfd845697a11c31e91d909dc400222b4f78",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_947d264a413f3353c43dafa0fd918bec75e8752a953b50843bc8134286d6f93f",
+      "type": "SHA256",
+      "name": "947d264a413f3353c43dafa0fd918bec75e8752a953b50843bc8134286d6f93f",
+      "normalized_name": "947d264a413f3353c43dafa0fd918bec75e8752a953b50843bc8134286d6f93f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "947d264a413f3353c43dafa0fd918bec75e8752a953b50843bc8134286d6f93f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9af85e46344dadf1467c71d66865c7af98a23151025e7d8993bd9afc5150ad7d",
+      "type": "SHA256",
+      "name": "9af85e46344dadf1467c71d66865c7af98a23151025e7d8993bd9afc5150ad7d",
+      "normalized_name": "9af85e46344dadf1467c71d66865c7af98a23151025e7d8993bd9afc5150ad7d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "9af85e46344dadf1467c71d66865c7af98a23151025e7d8993bd9afc5150ad7d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9ddf2f2e6ac7da61c04c03f3f27af12cb85e096746f120235724a4ed93fac5aa",
+      "type": "SHA256",
+      "name": "9ddf2f2e6ac7da61c04c03f3f27af12cb85e096746f120235724a4ed93fac5aa",
+      "normalized_name": "9ddf2f2e6ac7da61c04c03f3f27af12cb85e096746f120235724a4ed93fac5aa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "9ddf2f2e6ac7da61c04c03f3f27af12cb85e096746f120235724a4ed93fac5aa",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a4c71f862757e3535b305a14ff9f268e6cf196b2e54b426f25fa65bf658a9242",
+      "type": "SHA256",
+      "name": "a4c71f862757e3535b305a14ff9f268e6cf196b2e54b426f25fa65bf658a9242",
+      "normalized_name": "a4c71f862757e3535b305a14ff9f268e6cf196b2e54b426f25fa65bf658a9242",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56",
+        "ev_68"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "a4c71f862757e3535b305a14ff9f268e6cf196b2e54b426f25fa65bf658a9242",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_68"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a65fd78951590833904bd27783b1032b7cc575220a12c6d6f44cb09061999af3",
+      "type": "SHA256",
+      "name": "a65fd78951590833904bd27783b1032b7cc575220a12c6d6f44cb09061999af3",
+      "normalized_name": "a65fd78951590833904bd27783b1032b7cc575220a12c6d6f44cb09061999af3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "a65fd78951590833904bd27783b1032b7cc575220a12c6d6f44cb09061999af3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ba739f3f415efe005fbed6fcfcb1e6d3b3ae64e9a8d2b0566ab913f73530887c",
+      "type": "SHA256",
+      "name": "ba739f3f415efe005fbed6fcfcb1e6d3b3ae64e9a8d2b0566ab913f73530887c",
+      "normalized_name": "ba739f3f415efe005fbed6fcfcb1e6d3b3ae64e9a8d2b0566ab913f73530887c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "ba739f3f415efe005fbed6fcfcb1e6d3b3ae64e9a8d2b0566ab913f73530887c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bd5d64234e1ac87955f1d86ee1af34bd8fd11e8edf3a449181234bb62816acab",
+      "type": "SHA256",
+      "name": "bd5d64234e1ac87955f1d86ee1af34bd8fd11e8edf3a449181234bb62816acab",
+      "normalized_name": "bd5d64234e1ac87955f1d86ee1af34bd8fd11e8edf3a449181234bb62816acab",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "bd5d64234e1ac87955f1d86ee1af34bd8fd11e8edf3a449181234bb62816acab",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c66b9e8aaa2ac4ce5b53b45ebb661ba7946f5b82e75865ae9e98510caff911a7",
+      "type": "SHA256",
+      "name": "c66b9e8aaa2ac4ce5b53b45ebb661ba7946f5b82e75865ae9e98510caff911a7",
+      "normalized_name": "c66b9e8aaa2ac4ce5b53b45ebb661ba7946f5b82e75865ae9e98510caff911a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "c66b9e8aaa2ac4ce5b53b45ebb661ba7946f5b82e75865ae9e98510caff911a7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d69e0456ddb11b979bf303b8bb9f87322bd2a9542dd9d9f716100c40bd6decd1",
+      "type": "SHA256",
+      "name": "d69e0456ddb11b979bf303b8bb9f87322bd2a9542dd9d9f716100c40bd6decd1",
+      "normalized_name": "d69e0456ddb11b979bf303b8bb9f87322bd2a9542dd9d9f716100c40bd6decd1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "d69e0456ddb11b979bf303b8bb9f87322bd2a9542dd9d9f716100c40bd6decd1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e0db0982c437c40ceb67970e0a776e9448f428e919200b5f7a0566c58680070c",
+      "type": "SHA256",
+      "name": "e0db0982c437c40ceb67970e0a776e9448f428e919200b5f7a0566c58680070c",
+      "normalized_name": "e0db0982c437c40ceb67970e0a776e9448f428e919200b5f7a0566c58680070c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "e0db0982c437c40ceb67970e0a776e9448f428e919200b5f7a0566c58680070c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fec925721b6563fec32d7a4cf8df777c647f0e24454fa783569f65cdadff9e03",
+      "type": "SHA256",
+      "name": "fec925721b6563fec32d7a4cf8df777c647f0e24454fa783569f65cdadff9e03",
+      "normalized_name": "fec925721b6563fec32d7a4cf8df777c647f0e24454fa783569f65cdadff9e03",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "fec925721b6563fec32d7a4cf8df777c647f0e24454fa783569f65cdadff9e03",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fffda1e2d794a5645f973900083a88ef38c3d20a89c5e59ca21412806db28197",
+      "type": "SHA256",
+      "name": "fffda1e2d794a5645f973900083a88ef38c3d20a89c5e59ca21412806db28197",
+      "normalized_name": "fffda1e2d794a5645f973900083a88ef38c3d20a89c5e59ca21412806db28197",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_71"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "value": "fffda1e2d794a5645f973900083a88ef38c3d20a89c5e59ca21412806db28197",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_53"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_Meeting.exe",
+      "type": "File",
+      "name": "Meeting.exe",
+      "normalized_name": "Meeting.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_55",
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "Meeting.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_myhworm.exe",
+      "type": "File",
+      "name": "myhworm.exe",
+      "normalized_name": "myhworm.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_57"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "myhworm.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_RECYCLE.BIN",
+      "type": "File",
+      "name": "RECYCLE.BIN",
+      "normalized_name": "RECYCLE.BIN",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "RECYCLE.BIN",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "RECYCLE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_rtp.exe",
+      "type": "File",
+      "name": "rtp.exe",
+      "normalized_name": "rtp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "rtp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_server.exe",
+      "type": "File",
+      "name": "server.exe",
+      "normalized_name": "server.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_42",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "server.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_38",
+        "ev_57",
+        "ev_61"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_61",
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "FILE_DATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wrom.exe",
+      "type": "File",
+      "name": "wrom.exe",
+      "normalized_name": "wrom.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_42",
+        "ev_65"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "wrom.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Wscript.exe",
+      "type": "File",
+      "name": "Wscript.exe",
+      "normalized_name": "Wscript.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59",
+        "ev_63",
+        "ev_64"
+      ],
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "file_name": "Wscript.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_63",
+        "ev_64",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "HKCU",
+        "RECYCLE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "executes",
+      "head_id": "ent_file_rtp.exe",
+      "tail_id": "ent_file_Wscript.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "executes",
+      "head_id": "ent_malware_Hworm",
+      "tail_id": "ent_file_myhworm.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "loads",
+      "head_id": "ent_file_myhworm.exe",
+      "tail_id": "ent_file_svchost.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_29",
+        "ev_57"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain, load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "loads",
+      "head_id": "ent_file_myhworm.exe",
+      "tail_id": "ent_malware_Hworm",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_29",
+        "ev_57"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "loads",
+      "head_id": "ent_file_rtp.exe",
+      "tail_id": "ent_file_Wscript.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "loads",
+      "head_id": "ent_file_rtp.exe",
+      "tail_id": "ent_malware_Hworm",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "type": "loads",
+      "head_id": "ent_malware_LOADER_DATA",
+      "tail_id": "ent_malware_FILE_DATA",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_26",
+        "ev_36"
+      ],
+      "primary_evidence_id": "ev_26",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "rtp.exe executes Wscript.exe",
+      "evidence_ids": [
+        "ev_63"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "Hworm executes myhworm.exe",
+      "evidence_ids": [
+        "ev_29"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "myhworm.exe loads svchost.exe",
+      "evidence_ids": [
+        "ev_29",
+        "ev_57"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "myhworm.exe loads Hworm",
+      "evidence_ids": [
+        "ev_29",
+        "ev_57"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "rtp.exe loads Wscript.exe",
+      "evidence_ids": [
+        "ev_63"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "rtp.exe loads Hworm",
+      "evidence_ids": [
+        "ev_63"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "LOADER_DATA loads FILE_DATA",
+      "evidence_ids": [
+        "ev_26",
+        "ev_36"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "Mohamed Dahlan Abu Dhabi Meeting.exe اﻟﺨﻤﺮ ﯾﺸﺮب اردوﻏﺎن اﻟﺜﻘﯿﻞ اﻟﻌﯿﺎر ﻣﻦ ﻓﻀﯿﺤﺔ.exe اﻟﻤﺴﻠﻤﯿﻦ اﻻﺧﻮان ﺻﻔﻮف ﻓﻲ داﺧﻠﯿﺔ ﺻﺮاﻋﺎت.exe ﻛﻤﺎل ﻣﺤﻤﺪ اﻟﺪﻛﺘﻮر اﻏﺘﯿﺎل ﻋﻤﻠﯿﺔ.scr",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s10"
+      },
+      "text": "دﺣﻼن وﯾﺘﻮﻋﺪ اﻟﺨﻠﯿﺞ دول ﯾﻬﺪد اﷲ ﻋﺒﺪ اﻟﻤﻠﻚ.exe اﻟﻬﻮاء ﻋﻠﻰ ﻣﻮاﻃﻨﯿﻦ ﯾﻬﯿﻦ ﺳﻌﻮدي اﻣﯿﺮ ﺑﺎﻟﻔﯿﺪﯾﻮ.scr When executed each SFX file opens a decoy document, video, or URL, and eventually executes an Hworm payload in the background.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "Some previous versions of the Hworm implant would embed data in the headers of HTTP requests or POST bodies as a method of command and control.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "During the investigation of this malware a forum post on dev-point[.]com, an Arabic speaking technology and security forum, by a user with the handle “Houdini”, outlined plans for a rewrite of a backdoor in Delphi.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "The first file is DynamicWrapperX (DCOM_DATA), the second file is the RunPE shellcode (LOADER_DATA), and the third file is the file which gets injected into host process (FILE_DATA).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s7"
+      },
+      "text": "DynamicWrapperX provides access to all Windows APIs from a Visual Basic Script providing a wide range of functionality to this VBS script.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "In the above example, the script will use the registry as a startup method, it will drop itself into the system’s %appdata% directory using the filename myhworm.exe and it will inject itself into svchost.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s6"
+      },
+      "text": "The script then drops DynamicWrapperX in the configured installation directory with file extension “.bin”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "Next, the script will load the registered object: 1 “set DCOM = CreateObject(\"DYNAMICWRAPPERX\")” It registers /load VirtualAlloc and CallWindowProcW as functions which can be directly called in the script using “dcom.VirtualAlloc <arguments>”.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "Using VirtualAlloc it will allocate new memory and copy RunPE shellcode (LOADER_DATA, loader.hex) and the to- be-injected binary (FILE_DATA) into memory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "Using CallWindowProcW the script will jump to the RunPE shellcode and the shellcode will inject the file (FILE_DATA) into the host process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "The host process is by default svchost.exe but for .NET files injection can occur into the file: 1 %windir%\\Microsoft.Net\\Framework\\v2.0.50727\\msbuild.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "In some versions of the Delphi Hworm implants discovered (unpacked beta versions) the settings are stored in the resource section RCData\\“CONFIG” and are in clear text (Figure 9).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s1"
+      },
+      "text": "We have seen “wrom.exe” and “server.exe” used as the name in the export table (Figure 11).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "The Hworm implants use a connect-back communication.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "the malware, lead us to believe the beta builder is a version of Hworm which was created somewhere between the HTTP version and the version used in the above outlined attack.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s3"
+      },
+      "text": "The above attack is only one such campaign Unit 42 has discovered using the Delphi versions of Hworm.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s4"
+      },
+      "text": "Delivery Files 70c55fef53fd4bdeb135ed68a7eead45e8d4ba7d17e0fd907e9770b2793b60ed 9af85e46344dadf1467c71d66865c7af98a23151025e7d8993bd9afc5150ad7d 773716bc2d313e17326471289a0b552f90086a2687fa958ef8cdb611cbc9a8c9 e0db0982c437c40ceb67970e0a776e9448f428e919200b5f7a0566c58680070c 1f45e5eca8f8882481b13fd4a67ffa88a1aa4d6e875a9c2e1fbf0b80e92d9588 5e42e61340942fc0c46a6668a7f54adbbb4792b01c819bcd3047e855116ae16f fec925721b6563fec32d7a4cf8df777c647f0e24454fa783569f65cdadff9e03 106934ff7f6f93a371a4561fff23d69e6783512c38126fbd427ed4a886ca6e65 ba739f3f415efe005fbed6fcfcb1e6d3b3ae64e9a8d2b0566ab913f73530887c 0672e47513aefcbc3f7a9bd50849acf507a5454bc8c36580304105479c58772a",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s5"
+      },
+      "text": "Decoy files 7916ca6ae6fdbfb45448f6dcff374d072d988d11aa15247a88167bf973ee2c0d 947d264a413f3353c43dafa0fd918bec75e8752a953b50843bc8134286d6f93f 9ddf2f2e6ac7da61c04c03f3f27af12cb85e096746f120235724a4ed93fac5aa 3d287cce7fe1caa5c033a4e6b94680c90a25cb3866837266130ba0fd8fab562c 444b82caf3c17ea74034c984aeca0f5b2e6547af88a0fb15953f2d5b80e3b448 3d3db84b6ad760540f638713e3f6a8daf8a226bd045351bcc72c6d22a7df8b3a fffda1e2d794a5645f973900083a88ef38c3d20a89c5e59ca21412806db28197",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s6"
+      },
+      "text": "Command and Control Network Locations start.loginto[.]me samah.sytes[.]net 52.42.161[.]75 78.47.96[.]17 136.243.104[.]200",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Mohamed Dahlan Abu Dhabi Meeting.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "Around October 2015, a password protected beta version of the builder used to create Delphi Hworm implants (a4c71f862757e3535b305a14ff9f268e6cf196b2e54b426f25fa65bf658a9242) was uploaded to VirusTotal. Unfortunately, the builder used to create the samples outlined in the above attack was not located. Unit 42 believes the samples used in the above attack are a version which were released after the beta.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "In the above example, the script will use the registry as a startup method, it will drop itself into the system’s %appdata% directory using the filename myhworm.exe and it will inject itself into svchost.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Registry Run in HKCU Path: HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run EntryData Wscript.exe //b //e:vbscript /b Specifies batch mode, which does not display alerts, scripting errors, or input prompts. /e Specifies the engine that is used to run the script. Define startup directory Startup task (not implemented yet)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "1 %windir%\\syswow64\\wscript.exe /b /e:vbscript <filepath>",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "Using CallWindowProcW the script will jump to the RunPE shellcode and the shellcode will inject the file (FILE_DATA) into the host process. The host process is by default svchost.exe but for .NET files injection can occur into the file:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "Some versions also have an unfinished PE spreader in the resource section (a65fd78951590833904bd27783b1032b7cc575220a12c6d6f44cb09061999af3). The spreader will terminate all running processes named “sm?rtp.exe” and execute a VBS file using wscript.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "1 “wscript.exe /e:vbscript <current directory>\\$RECYCLE.BIN\\u vbs name here”.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "The server exports some unused functions (they all just have RET instruction). We have seen “wrom.exe” and “server.exe” used as the name in the export table (Figure 11).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "Delphi Hworm Beta Builder a4c71f862757e3535b305a14ff9f268e6cf196b2e54b426f25fa65bf658a9242",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r2"
+      },
+      "text": "Delivery Files 70c55fef53fd4bdeb135ed68a7eead45e8d4ba7d17e0fd907e9770b2793b60ed 9af85e46344dadf1467c71d66865c7af98a23151025e7d8993bd9afc5150ad7d 773716bc2d313e17326471289a0b552f90086a2687fa958ef8cdb611cbc9a8c9 e0db0982c437c40ceb67970e0a776e9448f428e919200b5f7a0566c58680070c 1f45e5eca8f8882481b13fd4a67ffa88a1aa4d6e875a9c2e1fbf0b80e92d9588 5e42e61340942fc0c46a6668a7f54adbbb4792b01c819bcd3047e855116ae16f fec925721b6563fec32d7a4cf8df777c647f0e24454fa783569f65cdadff9e03 106934ff7f6f93a371a4561fff23d69e6783512c38126fbd427ed4a886ca6e65 ba739f3f415efe005fbed6fcfcb1e6d3b3ae64e9a8d2b0566ab913f73530887c 0672e47513aefcbc3f7a9bd50849acf507a5454bc8c36580304105479c58772a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r3"
+      },
+      "text": "Payloads 386057a265619c43ef245857b66241a66822061ce9bd047556c4f3f1d262ef36 44b52baf2ecef2f928a13b17ba3a5552c32ca4a640e6421b8bc35ef5a113801b 8428857b0c7dfe43cf2182dd585dfdfd845697a11c31e91d909dc400222b4f78 d69e0456ddb11b979bf303b8bb9f87322bd2a9542dd9d9f716100c40bd6decd1 bd5d64234e1ac87955f1d86ee1af34bd8fd11e8edf3a449181234bb62816acab 774501f3c88ebdd409ec318d08af2350ec37fdbc11f32681f855e215e75440d7 c66b9e8aaa2ac4ce5b53b45ebb661ba7946f5b82e75865ae9e98510caff911a7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r4"
+      },
+      "text": "Decoy files 7916ca6ae6fdbfb45448f6dcff374d072d988d11aa15247a88167bf973ee2c0d 947d264a413f3353c43dafa0fd918bec75e8752a953b50843bc8134286d6f93f 9ddf2f2e6ac7da61c04c03f3f27af12cb85e096746f120235724a4ed93fac5aa 3d287cce7fe1caa5c033a4e6b94680c90a25cb3866837266130ba0fd8fab562c 444b82caf3c17ea74034c984aeca0f5b2e6547af88a0fb15953f2d5b80e3b448 3d3db84b6ad760540f638713e3f6a8daf8a226bd045351bcc72c6d22a7df8b3a fffda1e2d794a5645f973900083a88ef38c3d20a89c5e59ca21412806db28197",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb72"
+      },
+      "text": "researchcenter.paloaltonetworks.com /2016/10/unit42-houdinis-magic-reappearance/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Houdinis-Magic-Reappearance(10-25-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb73"
+      },
+      "text": "Houdini’s Magic Reappearance researchcenter.paloaltonetworks.com /2016/10/unit42-houdinis-magic-reappearance/ By Anthony Kasza and Esmid Idrizovic Unit 42 has observed a new versio",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_35",
+      "page": 7,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_FILE_DATA",
+        "ent_malware_LOADER_DATA"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_61",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_malware_FILE_DATA",
+        "ent_file_svchost.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_file_server.exe",
+        "ent_file_wrom.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_63",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_rtp.exe",
+        "ent_file_Wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_65",
+      "page": 12,
+      "candidate_entity_ids": [
+        "ent_file_server.exe",
+        "ent_file_wrom.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_FILE_DATA",
+        "ent_malware_LOADER_DATA"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_64",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_file_RECYCLE.BIN",
+        "ent_file_Wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

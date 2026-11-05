@@ -1,0 +1,233 @@
+{
+  "report_id": "P2P_PlugX_Analysis",
+  "title": "Analysis of a Recent PlugX Variant - “P2P PlugX”",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "P2P_PlugX_Analysis.pdf",
+    "file_path": "/root/APTtext/P2P_PlugX_Analysis.pdf",
+    "source_type": "pdf",
+    "char_length": 6874,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [],
+  "observations": [
+    {
+      "id": "ent_threatactor_P2P",
+      "type": "ThreatActor",
+      "name": "P2P",
+      "normalized_name": "P2P",
+      "aliases": [
+        "IP Protocol Number 255"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_17",
+        "ev_20",
+        "ev_26",
+        "ev_7"
+      ],
+      "report_id": "P2P_PlugX_Analysis",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_26",
+        "ev_7"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_ioc_sha256_0ff134057a8b2e31b148fedfdd185f5b1a512149499a8c5c0915cf10b10a613e",
+      "type": "SHA256",
+      "name": "0ff134057a8b2e31b148fedfdd185f5b1a512149499a8c5c0915cf10b10a613e",
+      "normalized_name": "0ff134057a8b2e31b148fedfdd185f5b1a512149499a8c5c0915cf10b10a613e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "P2P_PlugX_Analysis",
+      "value": "0ff134057a8b2e31b148fedfdd185f5b1a512149499a8c5c0915cf10b10a613e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_93c85a8dd0becc4e396eea2dc15c0010ff58d2b873d44fd7e45711a27cfe613b",
+      "type": "SHA256",
+      "name": "93c85a8dd0becc4e396eea2dc15c0010ff58d2b873d44fd7e45711a27cfe613b",
+      "normalized_name": "93c85a8dd0becc4e396eea2dc15c0010ff58d2b873d44fd7e45711a27cfe613b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "P2P_PlugX_Analysis",
+      "value": "93c85a8dd0becc4e396eea2dc15c0010ff58d2b873d44fd7e45711a27cfe613b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bc65e2859f243ff45b12cd184bfed7b809f74e67e5bb61bc92ed94058d3d2515",
+      "type": "SHA256",
+      "name": "bc65e2859f243ff45b12cd184bfed7b809f74e67e5bb61bc92ed94058d3d2515",
+      "normalized_name": "bc65e2859f243ff45b12cd184bfed7b809f74e67e5bb61bc92ed94058d3d2515",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "P2P_PlugX_Analysis",
+      "value": "bc65e2859f243ff45b12cd184bfed7b809f74e67e5bb61bc92ed94058d3d2515",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "Communication with more C&C servers – up to 16 - P2P communication between infected nodes - MAC address check - PlugX runs if the MAC address of an infected host coincides with configuration information in itself (If not specified in the configuration, PlugX runs on any host).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "P2P PlugX uses to communicate by P2P Configuration No.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "But in cases which JPCERT/CC ha ｓ observed, P2P PlugX only uses either TCP/1357 or UDP/1357 for P2P communication.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Shusei Tomonaga (For any inquiry or incident report regarding PlugX, please contact info[at]jpcert.or.jp) Appendix A: Entire Configuration of P2P PlugX 0x0000 20 Not used 0x0014 4 Flag if remove own DLL from list of modules 0x0018 4 Flag enable/disable key logger 0x001c 12 Not used",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "bc65e2859f243ff45b12cd184bfed7b809f74e67e5bb61bc92ed94058d3d2515",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "93c85a8dd0becc4e396eea2dc15c0010ff58d2b873d44fd7e45711a27cfe613b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "P2P_PlugX_Analysis",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "0ff134057a8b2e31b148fedfdd185f5b1a512149499a8c5c0915cf10b10a613e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ]
+}

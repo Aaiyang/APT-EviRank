@@ -1,0 +1,1591 @@
+{
+  "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+  "title": "MuddyWater eN-Able spear-phishing with new TTPs",
+  "source": null,
+  "published_date": "November 1, 2023",
+  "report_metadata": {
+    "file_name": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023).pdf",
+    "file_path": "/root/APTtext/Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 5946,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_tool_Diagnostic",
+      "type": "Tool",
+      "name": "Diagnostic",
+      "normalized_name": "Diagnostic",
+      "aliases": [
+        "Diagnostic.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_25",
+        "ev_27",
+        "ev_37"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_27",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_Diagnostic.exe",
+      "tool_name": "Diagnostic",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_ws.onehub.com",
+      "type": "Domain",
+      "name": "ws.onehub.com",
+      "normalized_name": "ws.onehub.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "ws.onehub.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_MuddyWater",
+      "type": "ThreatActor",
+      "name": "MuddyWater",
+      "normalized_name": "MuddyWater",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_16",
+        "ev_19",
+        "ev_20",
+        "ev_3"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_16",
+        "ev_19",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_PhonyC2",
+      "type": "Malware",
+      "name": "PhonyC2",
+      "normalized_name": "PhonyC2",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "family": "PhonyC2",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_Diagnostic.exe",
+      "type": "Tool",
+      "name": "Diagnostic.exe",
+      "normalized_name": "Diagnostic.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_10",
+        "ev_25",
+        "ev_27"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_tool_Diagnostic"
+    },
+    {
+      "id": "ent_tool_Diagnostic.exe",
+      "type": "Tool",
+      "name": "Diagnostic.exe",
+      "normalized_name": "Diagnostic.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_25",
+        "ev_27",
+        "ev_37"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "file_name": "Diagnostic.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_27",
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_tool_MuddyC2Go",
+      "type": "Tool",
+      "name": "MuddyC2Go",
+      "normalized_name": "MuddyC2Go",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "MuddyC2Go",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_a.storyblok.com",
+      "type": "Domain",
+      "name": "a.storyblok.com",
+      "normalized_name": "a.storyblok.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_43",
+        "ev_44",
+        "ev_45",
+        "ev_47"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "a.storyblok.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [
+        "ev_44",
+        "ev_45",
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_deepinstinct.com",
+      "type": "Domain",
+      "name": "deepinstinct.com",
+      "normalized_name": "deepinstinct.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "deepinstinct.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48",
+        "ev_49"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_deepinstinct_Israel-Cyber-Warfare-Threat-Actors",
+      "type": "URL",
+      "name": "https://github.com/deepinstinct/Israel-Cyber-Warfare-Threat-Actors",
+      "normalized_name": "https://github.com/deepinstinct/Israel-Cyber-Warfare-Threat-Actors",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48",
+        "ev_49"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "https://github.com/deepinstinct/Israel-Cyber-Warfare-Threat-Actors",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_04afff1465a223a806774104b652a4f0",
+      "type": "MD5",
+      "name": "04afff1465a223a806774104b652a4f0",
+      "normalized_name": "04afff1465a223a806774104b652a4f0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "04afff1465a223a806774104b652a4f0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_065f0871b6025b8e61f35a188bca1d5c",
+      "type": "MD5",
+      "name": "065f0871b6025b8e61f35a188bca1d5c",
+      "normalized_name": "065f0871b6025b8e61f35a188bca1d5c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "065f0871b6025b8e61f35a188bca1d5c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_146cc3a1a68be349e70b79f9115c496b",
+      "type": "MD5",
+      "name": "146cc3a1a68be349e70b79f9115c496b",
+      "normalized_name": "146cc3a1a68be349e70b79f9115c496b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "146cc3a1a68be349e70b79f9115c496b",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_16923d827a440161217fb66a04e8b40a",
+      "type": "MD5",
+      "name": "16923d827a440161217fb66a04e8b40a",
+      "normalized_name": "16923d827a440161217fb66a04e8b40a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_30"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "16923d827a440161217fb66a04e8b40a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_1f0b9aed4b2c8d958a9b396852a62c9d",
+      "type": "MD5",
+      "name": "1f0b9aed4b2c8d958a9b396852a62c9d",
+      "normalized_name": "1f0b9aed4b2c8d958a9b396852a62c9d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "1f0b9aed4b2c8d958a9b396852a62c9d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_2e09e53135376258a03b7d793706b70f",
+      "type": "MD5",
+      "name": "2e09e53135376258a03b7d793706b70f",
+      "normalized_name": "2e09e53135376258a03b7d793706b70f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "2e09e53135376258a03b7d793706b70f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_37c3f5b3c814e2c014abc1210e8e69a2",
+      "type": "MD5",
+      "name": "37c3f5b3c814e2c014abc1210e8e69a2",
+      "normalized_name": "37c3f5b3c814e2c014abc1210e8e69a2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "37c3f5b3c814e2c014abc1210e8e69a2",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_39eea24572c14910b67242a16e24b768",
+      "type": "MD5",
+      "name": "39eea24572c14910b67242a16e24b768",
+      "normalized_name": "39eea24572c14910b67242a16e24b768",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_32"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "39eea24572c14910b67242a16e24b768",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6167f03c8b2734c20eb02d406d3ba651",
+      "type": "MD5",
+      "name": "6167f03c8b2734c20eb02d406d3ba651",
+      "normalized_name": "6167f03c8b2734c20eb02d406d3ba651",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "6167f03c8b2734c20eb02d406d3ba651",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7568062ad4b22963f3930205d1a14df7",
+      "type": "MD5",
+      "name": "7568062ad4b22963f3930205d1a14df7",
+      "normalized_name": "7568062ad4b22963f3930205d1a14df7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "7568062ad4b22963f3930205d1a14df7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8d2199fa11c6a8d95c1c2b4add70373a",
+      "type": "MD5",
+      "name": "8d2199fa11c6a8d95c1c2b4add70373a",
+      "normalized_name": "8d2199fa11c6a8d95c1c2b4add70373a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "8d2199fa11c6a8d95c1c2b4add70373a",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_952cc4e278051e349e870aa80babc755",
+      "type": "MD5",
+      "name": "952cc4e278051e349e870aa80babc755",
+      "normalized_name": "952cc4e278051e349e870aa80babc755",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "952cc4e278051e349e870aa80babc755",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_dd247ccd7cc3a13e1c72bb01cf3a816d",
+      "type": "MD5",
+      "name": "dd247ccd7cc3a13e1c72bb01cf3a816d",
+      "normalized_name": "dd247ccd7cc3a13e1c72bb01cf3a816d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "dd247ccd7cc3a13e1c72bb01cf3a816d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e8f3ecc0456fcbbb029b1c27dc1faad0",
+      "type": "MD5",
+      "name": "e8f3ecc0456fcbbb029b1c27dc1faad0",
+      "normalized_name": "e8f3ecc0456fcbbb029b1c27dc1faad0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "value": "e8f3ecc0456fcbbb029b1c27dc1faad0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_attachments.zip",
+      "type": "File",
+      "name": "attachments.zip",
+      "normalized_name": "attachments.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_41",
+        "ev_42",
+        "ev_47"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "file_name": "attachments.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_41",
+      "supporting_evidence_ids": [
+        "ev_42",
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_defense-video.zip",
+      "type": "File",
+      "name": "defense-video.zip",
+      "normalized_name": "defense-video.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_24",
+        "ev_36",
+        "ev_40",
+        "ev_6"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "file_name": "defense-video.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_6",
+        "ev_36",
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_form.zip",
+      "type": "File",
+      "name": "form.zip",
+      "normalized_name": "form.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_43"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "file_name": "form.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_43",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_questionnaire.zip",
+      "type": "File",
+      "name": "questionnaire.zip",
+      "normalized_name": "questionnaire.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44",
+        "ev_45"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "file_name": "questionnaire.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Windows.Diagnostic.Document.EXE",
+      "type": "File",
+      "name": "Windows.Diagnostic.Document.EXE",
+      "normalized_name": "Windows.Diagnostic.Document.EXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12",
+        "ev_25",
+        "ev_26"
+      ],
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "file_name": "Windows.Diagnostic.Document.EXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_26",
+        "ev_11",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "type": "alias_of",
+      "head_id": "ent_tool_Diagnostic.exe",
+      "tail_id": "ent_tool_Diagnostic",
+      "head_type": "Tool",
+      "tail_type": "Tool",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "type": "executes",
+      "head_id": "ent_file_Windows.Diagnostic.Document.EXE",
+      "tail_id": "ent_tool_Diagnostic",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_11",
+        "ev_12",
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "type": "executes",
+      "head_id": "ent_tool_Diagnostic",
+      "tail_id": "ent_file_defense-video.zip",
+      "head_type": "Tool",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "type": "loads",
+      "head_id": "ent_file_Windows.Diagnostic.Document.EXE",
+      "tail_id": "ent_tool_Diagnostic",
+      "head_type": "File",
+      "tail_type": "Tool",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_11",
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_11",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "Windows.Diagnostic.Document.EXE executes Diagnostic",
+      "evidence_ids": [
+        "ev_11",
+        "ev_12",
+        "ev_25"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "Diagnostic executes defense-video.zip",
+      "evidence_ids": [
+        "ev_36"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "loads",
+      "summary": "Windows.Diagnostic.Document.EXE loads Diagnostic",
+      "evidence_ids": [
+        "ev_11",
+        "ev_25"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "deepinstinct.com /blog/muddywater-en-able-spear-phishing-with-new-ttps Announcing Deep Instinct Prevention for Storage for cloud storage and NAS environments",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Before launching the new campaign during the Israel-Hamas war, MuddyWater reused previously known remote administration tools, utilizing a new file-sharing service called “Storyblok.”",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "The content of the email lures the victim into downloading an archive hosted at “a.storyblok[.]com” In this analysis, we examine the “defense-video.zip” file.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "The file “Diagnostic.exe” has been used in both archives Deep Instinct observed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "The purpose of this file is to execute another executable called “Windows.Diagnostic.Document.EXE,” which is located in the hidden directory named “.end” under a “Windows.Diagnostic.Document” hidden directory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "The file named “Windows.Diagnostic.Document.EXE” is a signed, legitimate installer for “Advanced Monitoring Agent.” In addition to executing the remote administration tool, “Diagnostic.exe” also opens a new Windows Explorer window of the hidden “Document” folder.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "In this campaign, MuddyWater employs updated TTPs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "MuddyWater has used PhonyC2 in the past.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "However, Deep Instinct recently observed MuddyWater using a new C2 framework named MuddyC2Go – a detailed blog will be published soon, stay tuned.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "MD5 Description Network IP or URL Description ws.onehub[.]com/files/7f9dxtt6 URL to Archive of Atera Agent 146.70.149[.]61 MuddyWater’s SimpleHelp server 146.70.124[.]102 Suspected MuddyWater’s SimpleHelp server 37.120.237[.]204 Suspected MuddyWater’s SimpleHelp server 37.120.237[.]248 Suspected MuddyWater’s SimpleHelp server",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "In this analysis, we examine the “defense-video.zip” file.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "The file “Diagnostic.exe” has been used in both archives Deep Instinct observed. The purpose of this file is to execute another executable called “Windows.Diagnostic.Document.EXE,” which is located in the hidden directory named “.end” under a “Windows.Diagnostic.Document” hidden directory.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "The file named “Windows.Diagnostic.Document.EXE” is a signed, legitimate installer for “Advanced Monitoring Agent.”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r3"
+      },
+      "text": "In addition to executing the remote administration tool, “Diagnostic.exe” also opens a new Windows Explorer window of the hidden “Document” folder. This is done to fool the victim that opened the LNK file into thinking that it was indeed a folder.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "37c3f5b3c814e2c014abc1210e8e69a2 Archive containing Atera Agent",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "16923d827a440161217fb66a04e8b40a Atera Agent Installer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "7568062ad4b22963f3930205d1a14df7 Archive containing Atera Agent",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "39eea24572c14910b67242a16e24b768 Archive containing Atera Agent",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "2e09e53135376258a03b7d793706b70f Atera Agent Installer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r7"
+      },
+      "text": "1f0b9aed4b2c8d958a9b396852a62c9d Archive containing SimpleHelp",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "065f0871b6025b8e61f35a188bca1d5c SimpleHelp Installer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "146cc3a1a68be349e70b79f9115c496b defense-video.zip",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r10"
+      },
+      "text": "8d2199fa11c6a8d95c1c2b4add70373a Diagnostic.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r11"
+      },
+      "text": "04afff1465a223a806774104b652a4f0 Advanced Monitoring Agent Installer",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "6167f03c8b2734c20eb02d406d3ba651 Decoy Document (defense-video.zip)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "e8f3ecc0456fcbbb029b1c27dc1faad0 attachments.zip",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "952cc4e278051e349e870aa80babc755 Decoy Document (attachments.zip)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "a.storyblok[.]com/f/253959/x/b92ea48421/form.zip URL to Archive of Atera Agent",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "a.storyblok[.]com/f/255988/x/5e0186f61d/questionnaire.zip URL to Archive of Atera Agent",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "a.storyblok[.]com/f/259791/x/94f59e378f/questionnaire.zip URL to Archive of SimpleHelp",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "a.storyblok[.]com/f/259791/x/91e2f5fa2f/attachments.zip URL to Archive of Advanced Monitoring Agent",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb48"
+      },
+      "text": "https://github.com/deepinstinct/Israel-Cyber-Warfare-Threat-Actors",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 7,
+        "section": "rule_backfill",
+        "sentence_id": "p7_rb49"
+      },
+      "text": "garding MuddyWater can be found in our GitHub page: https://github.com/deepinstinct/Israel-Cyber-Warfare-Threat-Actors",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb50"
+      },
+      "text": "dd247ccd7cc3a13e1c72bb01cf3a816d",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Deepinstinct_MuddyWater-spearphishing-new-TTPs(11-01-2023)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb51"
+      },
+      "text": "nstaller 146cc3a1a68be349e70b79f9115c496b defense-video.zip dd247ccd7cc3a13e1c72bb01cf3a816d Attachments.lnk 8d2199fa11c6a8d95c1c2b4add70373a Diagnostic.exe 04afff1465a223a80677410",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_25",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_tool_Diagnostic.exe",
+        "ent_file_Windows.Diagnostic.Document.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_tool_Diagnostic.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_tool_Diagnostic.exe",
+        "ent_file_Windows.Diagnostic.Document.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_tool_Diagnostic.exe",
+        "ent_file_defense-video.zip"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_tool_Diagnostic.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_37",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_tool_Diagnostic.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_file_Windows.Diagnostic.Document.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_26",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_tool_Diagnostic",
+        "ent_file_Windows.Diagnostic.Document.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 2,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

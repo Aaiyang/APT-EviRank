@@ -1,0 +1,94 @@
+{
+  "report_id": "Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019)",
+  "title": "CARBANAK Week Part Four: The CARBANAK Desktop Video Player",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019).pdf",
+    "file_path": "/root/APTtext/Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 6688,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Carbanak",
+      "type": "Malware",
+      "name": "Carbanak",
+      "normalized_name": "Carbanak",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_16",
+        "ev_4"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019)",
+      "family": "Carbanak",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_16",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "About the Video Player The CARBANAK backdoor is capable of recording video of the victim’s desktop.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "The C2 server wraps video stream data received from a CARBANAK bot in a custom video file format that the video player understands, and writes these video files to a location on disk based on a convention assumed by the video player.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-4-CARBANAK-Desktop-Video-Player(04-25-2019)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "It is worth highlighting that much of what we discussed in CARBANAK Week was originally covered in our FireEye’s Cyber Defense Summit 2018 presentation titled “Hello, Carbanak!”, which is freely available to watch online (a must-see for malware and lederhosen enthusiasts alike).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "report_id": "Op_Clandestine_Fox",
+  "title": "New Zero-Day Exploit targeting Internet Explorer Versions 9 through 11 Identified in Targeted Attacks",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Op_Clandestine_Fox.pdf",
+    "file_path": "/root/APTtext/Op_Clandestine_Fox.pdf",
+    "source_type": "pdf",
+    "char_length": 6414,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Pirpi",
+      "type": "Malware",
+      "name": "Pirpi",
+      "normalized_name": "Pirpi",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_23",
+        "ev_24"
+      ],
+      "report_id": "Op_Clandestine_Fox",
+      "family": "Pirpi",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Clandestine_Fox",
+      "type": "Campaign",
+      "name": "Operation Clandestine Fox",
+      "normalized_name": "Operation Clandestine Fox",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "Op_Clandestine_Fox",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2010-3962",
+      "type": "CVE",
+      "name": "CVE-2010-3962",
+      "normalized_name": "CVE-2010-3962",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Op_Clandestine_Fox",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_victim_Internet_Explorer_Versions",
+      "type": "Victim",
+      "name": "Internet Explorer Versions",
+      "normalized_name": "Internet Explorer Versions",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Op_Clandestine_Fox",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Op_Clandestine_Fox",
+      "type": "exploits",
+      "head_id": "ent_campaign_Operation_Clandestine_Fox",
+      "tail_id": "ent_cve_CVE-2010-3962",
+      "head_type": "Campaign",
+      "tail_type": "CVE",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "title_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0001",
+      "type": "exploits",
+      "summary": "Operation Clandestine Fox exploits CVE-2010-3962",
+      "evidence_ids": [
+        "ev_33"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Op_Clandestine_Fox",
+      "locator": {
+        "page": 1,
+        "section": "executive_summary",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Threat actors are actively using this exploit in an ongoing campaign which we have named “Operation Clandestine Fox.” However, for many reasons, we will not provide campaign details.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Op_Clandestine_Fox",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "They have a number of backdoors including one known as Pirpi that we previously discussed here .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Op_Clandestine_Fox",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s7"
+      },
+      "text": "CVE-2010-3962, then a 0-day exploit in Internet Explorer 6, 7, and 8 dropped the Pirpi payload discussed in this previous case.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Op_Clandestine_Fox",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "discussed here . CVE-2010-3962, then a 0-day exploit in Internet Explorer 6, 7, and 8 dropped the Pirpi",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_24",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Pirpi",
+        "ent_cve_CVE-2010-3962"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Pirpi",
+        "ent_cve_CVE-2010-3962"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

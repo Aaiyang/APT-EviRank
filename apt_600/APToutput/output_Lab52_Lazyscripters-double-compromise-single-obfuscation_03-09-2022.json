@@ -1,0 +1,1131 @@
+{
+  "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+  "title": "Very very lazy Lazyscripter’s scripts: double compromise in a single obfuscation",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022).pdf",
+    "file_path": "/root/APTtext/Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 12133,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_LazyScripter",
+      "type": "ThreatActor",
+      "name": "LazyScripter",
+      "normalized_name": "LazyScripter",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2",
+        "ev_20",
+        "ev_44",
+        "ev_45"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [
+        "ev_20",
+        "ev_44",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_H-_Worm",
+      "type": "Malware",
+      "name": "H- Worm",
+      "normalized_name": "H- Worm",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "family": "H- Worm",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_njRAT",
+      "type": "Malware",
+      "name": "njRAT",
+      "normalized_name": "njRAT",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_38",
+        "ev_39",
+        "ev_4"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "family": "njRAT",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_sytes.net",
+      "type": "Domain",
+      "name": "sytes.net",
+      "normalized_name": "sytes.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "sytes.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_H-worm",
+      "type": "Malware",
+      "name": "H-worm",
+      "normalized_name": "H-worm",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_30",
+        "ev_36",
+        "ev_37",
+        "ev_45"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "family": "H-worm",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [
+        "ev_36",
+        "ev_45",
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_campaign_LazyScripter_s_H-Worm_campaign",
+      "type": "Campaign",
+      "name": "LazyScripter's H-Worm campaign",
+      "normalized_name": "LazyScripter's H-Worm campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_ignorelist.com",
+      "type": "Domain",
+      "name": "ignorelist.com",
+      "normalized_name": "ignorelist.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "ignorelist.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_157.245._250.76_MORE_20INFORMATION_20ON_20OFFERS.zip",
+      "type": "URL",
+      "name": "http://157.245.]250.76/MORE%20INFORMATION%20ON%20OFFERS.zip",
+      "normalized_name": "http://157.245.]250.76/MORE%20INFORMATION%20ON%20OFFERS.zip",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "http://157.245.]250.76/MORE%20INFORMATION%20ON%20OFFERS.zip",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_185.81._157.186_NDA_199.png",
+      "type": "URL",
+      "name": "http://185.81.]157.186/NDA/199.png",
+      "normalized_name": "http://185.81.]157.186/NDA/199.png",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "http://185.81.]157.186/NDA/199.png",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_0fc8d0c3b6ab22533153b7296e597312fc8cf02e2ea92de226d93c09eaf8e579",
+      "type": "SHA256",
+      "name": "0fc8d0c3b6ab22533153b7296e597312fc8cf02e2ea92de226d93c09eaf8e579",
+      "normalized_name": "0fc8d0c3b6ab22533153b7296e597312fc8cf02e2ea92de226d93c09eaf8e579",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "0fc8d0c3b6ab22533153b7296e597312fc8cf02e2ea92de226d93c09eaf8e579",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42",
+      "type": "SHA256",
+      "name": "23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42",
+      "normalized_name": "23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5803ded992498b5bd5045095ca1eab33be8a4f9d785fdfc8b231127edf049e72",
+      "type": "SHA256",
+      "name": "5803ded992498b5bd5045095ca1eab33be8a4f9d785fdfc8b231127edf049e72",
+      "normalized_name": "5803ded992498b5bd5045095ca1eab33be8a4f9d785fdfc8b231127edf049e72",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "5803ded992498b5bd5045095ca1eab33be8a4f9d785fdfc8b231127edf049e72",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_77afef33c249d4d7bb076079eff1cca2aef272c84720e7f258435728be3bf049",
+      "type": "SHA256",
+      "name": "77afef33c249d4d7bb076079eff1cca2aef272c84720e7f258435728be3bf049",
+      "normalized_name": "77afef33c249d4d7bb076079eff1cca2aef272c84720e7f258435728be3bf049",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "77afef33c249d4d7bb076079eff1cca2aef272c84720e7f258435728be3bf049",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_82f6c8b52103272fcfb27ac71bd4bff76ee970dd16e5cdf3d0cfb75d10aa0609",
+      "type": "SHA256",
+      "name": "82f6c8b52103272fcfb27ac71bd4bff76ee970dd16e5cdf3d0cfb75d10aa0609",
+      "normalized_name": "82f6c8b52103272fcfb27ac71bd4bff76ee970dd16e5cdf3d0cfb75d10aa0609",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "82f6c8b52103272fcfb27ac71bd4bff76ee970dd16e5cdf3d0cfb75d10aa0609",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c685897eb3f32ced2b6e404e424ca01d0bc8c88b83da067fbef7e7fe889cffad",
+      "type": "SHA256",
+      "name": "c685897eb3f32ced2b6e404e424ca01d0bc8c88b83da067fbef7e7fe889cffad",
+      "normalized_name": "c685897eb3f32ced2b6e404e424ca01d0bc8c88b83da067fbef7e7fe889cffad",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "c685897eb3f32ced2b6e404e424ca01d0bc8c88b83da067fbef7e7fe889cffad",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f5359df2aaa02fbfae540934f3e8f8a2ab362f7ee92dda536846afb67cea1b02",
+      "type": "SHA256",
+      "name": "f5359df2aaa02fbfae540934f3e8f8a2ab362f7ee92dda536846afb67cea1b02",
+      "normalized_name": "f5359df2aaa02fbfae540934f3e8f8a2ab362f7ee92dda536846afb67cea1b02",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "value": "f5359df2aaa02fbfae540934f3e8f8a2ab362f7ee92dda536846afb67cea1b02",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_20OFFERS.zip",
+      "type": "File",
+      "name": "20OFFERS.zip",
+      "normalized_name": "20OFFERS.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "file_name": "20OFFERS.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MORE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_CONDITIONS.js",
+      "type": "File",
+      "name": "CONDITIONS.js",
+      "normalized_name": "CONDITIONS.js",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "file_name": "CONDITIONS.js",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "LIST",
+        "AVAILABLE",
+        "JOBS",
+        "SALARY"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_JOB_NOTICE.pdf",
+      "type": "File",
+      "name": "JOB NOTICE.pdf",
+      "normalized_name": "JOB NOTICE.pdf",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "file_name": "JOB NOTICE.pdf",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "NOTICE",
+        "UNWTO"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_JOBS.js",
+      "type": "File",
+      "name": "JOBS.js",
+      "normalized_name": "JOBS.js",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_17"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "file_name": "JOBS.js",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "LIST",
+        "AVAILABLE",
+        "JOBS",
+        "SALARY"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_tk.vbs",
+      "type": "File",
+      "name": "tk.vbs",
+      "normalized_name": "tk.vbs",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_18",
+        "ev_35",
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "file_name": "tk.vbs",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_18",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_50",
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wscript.exe",
+      "type": "File",
+      "name": "wscript.exe",
+      "normalized_name": "wscript.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_50",
+        "ev_51"
+      ],
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "file_name": "wscript.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_LazyScripter",
+      "tail_id": "ent_malware_njRAT",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_39",
+        "ev_40",
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "using",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Additionally, after the analysis of the samples, we discovered the usage of a free and popular online obfuscating tool for scripts, which would inject their own downloader for a njRAT sample within LazyScripter’s malware."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "uses_malware",
+      "summary": "LazyScripter uses_malware njRAT",
+      "evidence_ids": [
+        "ev_39",
+        "ev_40",
+        "ev_4"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "During this investigation we could identify the threat actor behind these attacks as LazyScripter, an emerging APT group pointed by MalwareBytes in February 2021.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Additionally, after the analysis of the samples, we discovered the usage of a free and popular online obfuscating tool for scripts, which would inject their own downloader for a njRAT sample within LazyScripter’s malware.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "PDF document from spear phishing After the analysis of the first pdf document that ended up in our hands (“JOB NOTICE.pdf” – UNWTO) we did not observed embedded code, or any malicious behavior.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "LIST OF AVAILABLE JOBS.js SALARY AND HIRING CONDITIONS.js This highly obfuscated JavaScript has the only purpose of dropping a second VBS script, which will be placed in the following paths:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "C:\\Users\\*\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\tk.vbs C:\\Users\\*\\AppData\\Roaming\\tk.vbs For those samples where the VBS script was not dropped in the startup folder, the following persistence mechanism would be established using the registry keys:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "At this point we could find an attribution according to different reports, since the domain stub.]ignorelist.]com had been used by the group referred as LazyScripter in their previous campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "After deobfuscating the VBS script we could identify the malware sample as Houdini’s H- Worm , but preceded by an interesting line, still slightly obfuscated.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "This script will be the one which implements the RAT identified as H-worm after a complex nested obfuscation, prepended with a confusing extra line.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "tk.vbs deobfuscated Now, we could know that this VBS script acted as some sort of loader for the final stage artifact, which was fully implemented in the aforementioned last line, supposed to be a commented line in VBS.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "Before analyzing this extra suspicious code, which we could corroborate it was not part of the known source code for H-Worm, the obvious thought was that these lines were added by the LazyScripter criminals and that they were placing dates in the script for their own reasons.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "After the analysis of the snippets, we observed that the samples would compare the current date with the hardcoded date, and if the hardcoded day arrived or passed, it would execute a specific function appended at the end of H-Worm’s code.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "This function would only drop the previously described .lnk file and set the mentioned registry key values so as to download a sample of njRAT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s4"
+      },
+      "text": "Even though the author of H-Worm, known as “Houdini” had been connected to the development of njRAT, we knew this wasn’t part of the known implementation for H-Worm, and still looked odd as a TTP from the same infection campaign.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s5"
+      },
+      "text": "Trying to make sense out of it, we had the brainwave of using the information we had about this parallel behavior and make a quick check: We previously found out that they might have been using hackfree.]org as an online obfuscation service for VBS script, so we created our own dummy VBS script and submitted it to hackfree for obfuscation.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s2"
+      },
+      "text": "Finally, back to the tracked threat actor, we could distinguish between LazyScripter’s indicators of compromise, and HackFree’s IOCs, resulting in the following diagram for this LazyScripter campaign main infrastructure and infection chain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 12,
+        "section": "body",
+        "sentence_id": "p12_s3"
+      },
+      "text": "LazyScripter’s H-Worm campaign’s main infrastructure IOCs",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "45.91.92.112:449 C2 185.81.157.186 C2 192.64.119.125 C2 157.245.250.76 C2 66.29.130.204 C2 147.182.192.241 C2 103.73.64.115 C2 stub.]ignorelist.com C2 Domain securessl.]fit C2 Domain gowaymevps.]xyz C2 Domain milla.publicvm.]com C2 Domain internetexploraldon.]sytes.net C2 Domain jbizgsvhzj22evqon9ezz8bmbupp1s6cprmriam1.duckdns.]org C2 Domain saqicpcgflrlgxgoxxzkbfrjuisbkozeqrmthrzo.duckdns.]org C2 Domain u1153246fov.ha004.t.justns.]ru C2 Domain",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Details: wscript.exe //B “C:\\Users\\Lucas\\AppData\\Roaming\\tk.vbs”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "Details: wscript.exe //B “C:\\Users\\Lucas\\AppData\\Roaming\\tk.vbs”",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "0fc8d0c3b6ab22533153b7296e597312fc8cf02e2ea92de226d93c09eaf8e579 SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r2"
+      },
+      "text": "77afef33c249d4d7bb076079eff1cca2aef272c84720e7f258435728be3bf049 SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r3"
+      },
+      "text": "82f6c8b52103272fcfb27ac71bd4bff76ee970dd16e5cdf3d0cfb75d10aa0609 SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r4"
+      },
+      "text": "5803ded992498b5bd5045095ca1eab33be8a4f9d785fdfc8b231127edf049e72 SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r5"
+      },
+      "text": "f5359df2aaa02fbfae540934f3e8f8a2ab362f7ee92dda536846afb67cea1b02 SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r6"
+      },
+      "text": "c685897eb3f32ced2b6e404e424ca01d0bc8c88b83da067fbef7e7fe889cffad SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r7"
+      },
+      "text": "23ea10f4b1a73a4e8b13466fff8983110216779d2d3cefe1fc151c6bb65c3b42 SHA256",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r15"
+      },
+      "text": "http://185.81.]157.186/NDA/199.png URI",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Lab52_Lazyscripters-double-compromise-single-obfuscation(03-09-2022)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r16"
+      },
+      "text": "http://157.245.]250.76/MORE%20INFORMATION%20ON%20OFFERS.zip URI",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_46",
+      "page": 13,
+      "candidate_entity_ids": [
+        "ent_domain_sytes.net",
+        "ent_domain_ignorelist.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_LazyScripter",
+        "ent_malware_njRAT"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_17",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_CONDITIONS.js",
+        "ent_file_JOBS.js"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_50",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_tk.vbs",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_file_tk.vbs",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

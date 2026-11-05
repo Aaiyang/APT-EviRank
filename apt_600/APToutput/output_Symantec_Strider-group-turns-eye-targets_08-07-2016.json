@@ -1,0 +1,840 @@
+{
+  "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+  "title": "Strider: Cyberespionage group turns eye of Sauron on targets",
+  "source": null,
+  "published_date": "August 6, 2016",
+  "report_metadata": {
+    "file_name": "Symantec_Strider-group-turns-eye-targets(08-07-2016).pdf",
+    "file_path": "/root/APTtext/Symantec_Strider-group-turns-eye-targets(08-07-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 5760,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Strider",
+      "type": "ThreatActor",
+      "name": "Strider",
+      "normalized_name": "Strider",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_12",
+        "ev_2",
+        "ev_4",
+        "ev_10"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Flamer",
+      "type": "Malware",
+      "name": "Flamer",
+      "normalized_name": "Flamer",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_23",
+        "ev_4",
+        "ev_5"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "family": "Flamer",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_23",
+      "supporting_evidence_ids": [
+        "ev_5",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_MSAOSSPC",
+      "type": "Malware",
+      "name": "MSAOSSPC",
+      "normalized_name": "MSAOSSPC",
+      "aliases": [
+        "MSAOSSPC.DLL"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_25"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "MSAOSSPC"
+      ],
+      "derived_from_file_id": "ent_file_MSAOSSPC.DLL",
+      "family": "MSAOSSPC",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Remsec",
+      "type": "Malware",
+      "name": "Remsec",
+      "normalized_name": "Remsec",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_1",
+        "ev_22",
+        "ev_23",
+        "ev_3"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "family": "Remsec",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [
+        "ev_23",
+        "ev_1",
+        "ev_3"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_Strider",
+      "type": "Campaign",
+      "name": "Strider",
+      "normalized_name": "Strider",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1",
+        "ev_10",
+        "ev_12",
+        "ev_2"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_2",
+        "ev_12"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_file_MSAOSSPC.DLL",
+      "type": "File",
+      "name": "MSAOSSPC.DLL",
+      "normalized_name": "MSAOSSPC.DLL",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_13",
+        "ev_25"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "file_name": "MSAOSSPC.DLL",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_25",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "MSAOSSPC"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_MSAOSSPC.DLL",
+      "type": "Malware",
+      "name": "MSAOSSPC.DLL",
+      "normalized_name": "MSAOSSPC.DLL",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_13",
+        "ev_25"
+      ],
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_MSAOSSPC"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_MSAOSSPC.DLL",
+      "tail_id": "ent_malware_MSAOSSPC",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_MSAOSSPC",
+      "tail_id": "ent_file_MSAOSSPC.DLL",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_25"
+      },
+      "head": {
+        "id": "ent_malware_MSAOSSPC",
+        "type": "Malware",
+        "name": "MSAOSSPC",
+        "normalized_name": "MSAOSSPC",
+        "aliases": [
+          "MSAOSSPC.DLL"
+        ],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_25"
+        ],
+        "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+        "sources": [
+          "derived",
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_25",
+        "supporting_evidence_ids": [
+          "ev_13"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "MSAOSSPC"
+        ],
+        "derived_from_file_id": "ent_file_MSAOSSPC.DLL",
+        "family": "MSAOSSPC",
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_MSAOSSPC.DLL",
+        "type": "File",
+        "name": "MSAOSSPC.DLL",
+        "normalized_name": "MSAOSSPC.DLL",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_25"
+        ],
+        "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+        "file_name": "MSAOSSPC.DLL",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_25",
+        "supporting_evidence_ids": [
+          "ev_13"
+        ],
+        "needs_review": false,
+        "file_role": "malicious_component",
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "MSAOSSPC"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_Remsec",
+      "tail_id": "ent_file_MSAOSSPC.DLL",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_25"
+      },
+      "head": {
+        "id": "ent_malware_Remsec",
+        "type": "Malware",
+        "name": "Remsec",
+        "normalized_name": "Remsec",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_1",
+          "ev_22",
+          "ev_23",
+          "ev_3"
+        ],
+        "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+        "family": "Remsec",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_22",
+        "supporting_evidence_ids": [
+          "ev_23",
+          "ev_1",
+          "ev_3"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file_MSAOSSPC.DLL",
+        "type": "File",
+        "name": "MSAOSSPC.DLL",
+        "normalized_name": "MSAOSSPC.DLL",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_13",
+          "ev_25"
+        ],
+        "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+        "file_name": "MSAOSSPC.DLL",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_25",
+        "supporting_evidence_ids": [
+          "ev_13"
+        ],
+        "needs_review": false,
+        "file_role": "malicious_component",
+        "historical_aliases": [],
+        "related_families": [],
+        "family_hints": [
+          "MSAOSSPC"
+        ],
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "conflict_demoted"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Strider",
+      "tail_id": "ent_malware_Flamer",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_4",
+        "ev_24",
+        "ev_3",
+        "ev_5",
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "Strider’s attacks have tentative links with a previously uncovered group, Flamer. The use of Lua modules, which we’ll discuss later, is a technique that has previously been used by Flamer. One of Strider’s targets had also previously been infected by Regin."
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Strider",
+      "tail_id": "ent_malware_Remsec",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_1",
+        "ev_3",
+        "ev_10",
+        "ev_2",
+        "ev_4",
+        "ev_9"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "event_use, headline_or_event_use; use_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "symantec.com /connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets Symantec Official Blog Low-profile group uses Remsec malware to spy on targets in Russia, China, and Europe."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "drops",
+      "summary": "MSAOSSPC drops MSAOSSPC.DLL",
+      "evidence_ids": [
+        "ev_25"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "drops",
+      "summary": "Remsec drops MSAOSSPC.DLL",
+      "evidence_ids": [
+        "ev_25"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "Strider uses_malware Flamer",
+      "evidence_ids": [
+        "ev_4",
+        "ev_24",
+        "ev_3"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "Strider uses_malware Remsec",
+      "evidence_ids": [
+        "ev_1",
+        "ev_3",
+        "ev_10"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "symantec.com /connect/blogs/strider-cyberespionage-group-turns-eye-sauron-targets Symantec Official Blog Low-profile group uses Remsec malware to spy on targets in Russia, China, and Europe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Created 07 Aug 2016 : 简体中文 , 日本語 A previously unknown group called Strider has been conducting cyberespionage-style attacks against selected targets in Russia, China, Sweden, and Belgium.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "The group uses an advanced piece of malware known as Remsec (Backdoor.Remsec) to conduct its attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Strider’s attacks have tentative links with a previously uncovered group, Flamer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "The use of Lua modules, which we’ll discuss later, is a technique that has previously been used by Flamer.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "The group has maintained a low profile until now and its targets have been mainly organizations and individuals that would be of interest to a nation state’s intelligence services.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "The group’s targets include a number of organizations and individuals located in Russia, an airline in China, an organization in Sweden, and an embassy in Belgium.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Stealthy back door The Remsec malware used by Strider has a modular design.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "This also makes the malware more difficult to detect and indicates that the Strider group are technically competent attackers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Loader: Named MSAOSSPC.DLL, this module is responsible for loading files from disk and executing them.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "Protection Symantec and Norton products detect this threat as Backdoor.Remsec.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "Tags: Products, Endpoint Protection, Security Response, Backdoor.Remsec, Belgium, China, Cyberespionage, Flamer, LOTR, Malware, Russia, Strider, Sweden Subscriptions (0)",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "Strider’s attacks have tentative links with a previously uncovered group, Flamer. The use of Lua modules, which we’ll discuss later, is a technique that has previously been used by Flamer. One of Strider’s targets had also previously been infected by Regin.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Strider-group-turns-eye-targets(08-07-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "Loader: Named MSAOSSPC.DLL, this module is responsible for loading files from disk and executing them. The files on disk contain the payload in an executable blob format. The loader also logs data. Executable blobs and data are encrypted and decrypted with a repeating key of 0xBAADF00D. The loader maintains persistence by being implemented as a fake Security Support Provider. Lua modules: Several examples of Remsec use modules written in the Lua programming language. Remsec uses a Lua interpreter to run Lua modules which perform various functions. These Lua modules are stored in the same executable blob format as the loader. Lua modules include:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_25",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_MSAOSSPC",
+        "ent_malware_Remsec",
+        "ent_file_MSAOSSPC.DLL",
+        "ent_malware_MSAOSSPC.DLL"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Strider",
+        "ent_malware_Remsec"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_24",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Strider",
+        "ent_malware_Flamer"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_Strider",
+        "ent_malware_Remsec"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_threatactor_Strider",
+        "ent_malware_Flamer",
+        "ent_malware_Remsec"
+      ],
+      "rule_relation_count": 2,
+      "llm_relation_count": 2
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_MSAOSSPC",
+        "ent_file_MSAOSSPC.DLL",
+        "ent_malware_MSAOSSPC.DLL"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Strider",
+        "ent_malware_Flamer"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Strider"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

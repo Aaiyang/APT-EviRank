@@ -1,0 +1,1728 @@
+{
+  "report_id": "Grabit",
+  "title": "Grabit and the RATs Not so long ago, Kaspersky clients in the United States approached Kaspersky researchers with a request to investigate a new type of malicious software that they were able to recover from their organizations’",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Grabit.pdf",
+    "file_path": "/root/APTtext/Grabit.pdf",
+    "source_type": "pdf",
+    "char_length": 8338,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_DarkComet",
+      "type": "ThreatActor",
+      "name": "DarkComet",
+      "normalized_name": "DarkComet",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_AudioEndpointBuilder",
+      "type": "Malware",
+      "name": "AudioEndpointBuilder",
+      "normalized_name": "AudioEndpointBuilder",
+      "aliases": [
+        "AudioEndpointBuilder.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_46"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_AudioEndpointBuilder.exe",
+      "family": "AudioEndpointBuilder",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_AutoOpen",
+      "type": "Malware",
+      "name": "AutoOpen",
+      "normalized_name": "AutoOpen",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "Grabit",
+      "family": "AutoOpen",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_BrokerInfrastructure",
+      "type": "Malware",
+      "name": "BrokerInfrastructure",
+      "normalized_name": "BrokerInfrastructure",
+      "aliases": [
+        "BrokerInfrastructure.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_47"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_BrokerInfrastructure.exe",
+      "family": "BrokerInfrastructure",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_RATs",
+      "type": "Malware",
+      "name": "RATs",
+      "normalized_name": "RATs",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Grabit",
+      "family": "RATs",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_WindowsUpdate",
+      "type": "Malware",
+      "name": "WindowsUpdate",
+      "normalized_name": "WindowsUpdate",
+      "aliases": [
+        "WindowsUpdate.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_48"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_WindowsUpdate.exe",
+      "family": "WindowsUpdate",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_AudioEndpointBuilder.exe",
+      "type": "File",
+      "name": "AudioEndpointBuilder.exe",
+      "normalized_name": "AudioEndpointBuilder.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_46"
+      ],
+      "report_id": "Grabit",
+      "file_name": "AudioEndpointBuilder.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_AudioEndpointBuilder.exe",
+      "type": "Malware",
+      "name": "AudioEndpointBuilder.exe",
+      "normalized_name": "AudioEndpointBuilder.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_37",
+        "ev_46"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_AudioEndpointBuilder"
+    },
+    {
+      "id": "ent_file_BrokerInfrastructure.exe",
+      "type": "File",
+      "name": "BrokerInfrastructure.exe",
+      "normalized_name": "BrokerInfrastructure.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_47"
+      ],
+      "report_id": "Grabit",
+      "file_name": "BrokerInfrastructure.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_BrokerInfrastructure.exe",
+      "type": "Malware",
+      "name": "BrokerInfrastructure.exe",
+      "normalized_name": "BrokerInfrastructure.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_37",
+        "ev_47"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_BrokerInfrastructure"
+    },
+    {
+      "id": "ent_file_WindowsUpdate.exe",
+      "type": "File",
+      "name": "WindowsUpdate.exe",
+      "normalized_name": "WindowsUpdate.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_37",
+        "ev_48"
+      ],
+      "report_id": "Grabit",
+      "file_name": "WindowsUpdate.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_WindowsUpdate.exe",
+      "type": "Malware",
+      "name": "WindowsUpdate.exe",
+      "normalized_name": "WindowsUpdate.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_37",
+        "ev_48"
+      ],
+      "report_id": "Grabit",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_WindowsUpdate"
+    },
+    {
+      "id": "ent_ipv4_112.209.76.184",
+      "type": "IPv4",
+      "name": "112.209.76.184",
+      "normalized_name": "112.209.76.184",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_74"
+      ],
+      "report_id": "Grabit",
+      "value": "112.209.76.184",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_128.90.15.98",
+      "type": "IPv4",
+      "name": "128.90.15.98",
+      "normalized_name": "128.90.15.98",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_66"
+      ],
+      "report_id": "Grabit",
+      "value": "128.90.15.98",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_185.28.21.32",
+      "type": "IPv4",
+      "name": "185.28.21.32",
+      "normalized_name": "185.28.21.32",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_73"
+      ],
+      "report_id": "Grabit",
+      "value": "185.28.21.32",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_185.28.21.35",
+      "type": "IPv4",
+      "name": "185.28.21.35",
+      "normalized_name": "185.28.21.35",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_72"
+      ],
+      "report_id": "Grabit",
+      "value": "185.28.21.35",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_185.77.128.65",
+      "type": "IPv4",
+      "name": "185.77.128.65",
+      "normalized_name": "185.77.128.65",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_68"
+      ],
+      "report_id": "Grabit",
+      "value": "185.77.128.65",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_193.0.200.136",
+      "type": "IPv4",
+      "name": "193.0.200.136",
+      "normalized_name": "193.0.200.136",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_69"
+      ],
+      "report_id": "Grabit",
+      "value": "193.0.200.136",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_204.152.219.78",
+      "type": "IPv4",
+      "name": "204.152.219.78",
+      "normalized_name": "204.152.219.78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_65"
+      ],
+      "report_id": "Grabit",
+      "value": "204.152.219.78",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_208.91.199.223",
+      "type": "IPv4",
+      "name": "208.91.199.223",
+      "normalized_name": "208.91.199.223",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_70"
+      ],
+      "report_id": "Grabit",
+      "value": "208.91.199.223",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_31.170.163.242",
+      "type": "IPv4",
+      "name": "31.170.163.242",
+      "normalized_name": "31.170.163.242",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_67"
+      ],
+      "report_id": "Grabit",
+      "value": "31.170.163.242",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_31.170.164.81",
+      "type": "IPv4",
+      "name": "31.170.164.81",
+      "normalized_name": "31.170.164.81",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_71"
+      ],
+      "report_id": "Grabit",
+      "value": "31.170.164.81",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_31.220.16.147",
+      "type": "IPv4",
+      "name": "31.220.16.147",
+      "normalized_name": "31.220.16.147",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_64"
+      ],
+      "report_id": "Grabit",
+      "value": "31.220.16.147",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_0b96811e4f4cfaa57fe47ebc369fdac7dfb4a900a2af8a07a7b3f513eb3e0dfa",
+      "type": "SHA256",
+      "name": "0b96811e4f4cfaa57fe47ebc369fdac7dfb4a900a2af8a07a7b3f513eb3e0dfa",
+      "normalized_name": "0b96811e4f4cfaa57fe47ebc369fdac7dfb4a900a2af8a07a7b3f513eb3e0dfa",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51"
+      ],
+      "report_id": "Grabit",
+      "value": "0b96811e4f4cfaa57fe47ebc369fdac7dfb4a900a2af8a07a7b3f513eb3e0dfa",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1948f57cad96d37df95da2ee0057dd91dd4a9a67153efc278aa0736113f969e5",
+      "type": "SHA256",
+      "name": "1948f57cad96d37df95da2ee0057dd91dd4a9a67153efc278aa0736113f969e5",
+      "normalized_name": "1948f57cad96d37df95da2ee0057dd91dd4a9a67153efc278aa0736113f969e5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_52"
+      ],
+      "report_id": "Grabit",
+      "value": "1948f57cad96d37df95da2ee0057dd91dd4a9a67153efc278aa0736113f969e5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1d15003732430c004997f0df7cac7749ae10f992bea217a8da84e1c957143b1c",
+      "type": "SHA256",
+      "name": "1d15003732430c004997f0df7cac7749ae10f992bea217a8da84e1c957143b1c",
+      "normalized_name": "1d15003732430c004997f0df7cac7749ae10f992bea217a8da84e1c957143b1c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Grabit",
+      "value": "1d15003732430c004997f0df7cac7749ae10f992bea217a8da84e1c957143b1c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2049352f94a75978761a5367b01d486283aab1b7b94df7b08cf856f92352166b",
+      "type": "SHA256",
+      "name": "2049352f94a75978761a5367b01d486283aab1b7b94df7b08cf856f92352166b",
+      "normalized_name": "2049352f94a75978761a5367b01d486283aab1b7b94df7b08cf856f92352166b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Grabit",
+      "value": "2049352f94a75978761a5367b01d486283aab1b7b94df7b08cf856f92352166b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_26c6167dfcb7cda40621a952eac03b87a2f0dff1769ab9d09dafd09edc1a4c29",
+      "type": "SHA256",
+      "name": "26c6167dfcb7cda40621a952eac03b87a2f0dff1769ab9d09dafd09edc1a4c29",
+      "normalized_name": "26c6167dfcb7cda40621a952eac03b87a2f0dff1769ab9d09dafd09edc1a4c29",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "Grabit",
+      "value": "26c6167dfcb7cda40621a952eac03b87a2f0dff1769ab9d09dafd09edc1a4c29",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2e4507ff9e490f9137b73229cb0cd7b04b4dd88637890059eb1b90a757e99bcf",
+      "type": "SHA256",
+      "name": "2e4507ff9e490f9137b73229cb0cd7b04b4dd88637890059eb1b90a757e99bcf",
+      "normalized_name": "2e4507ff9e490f9137b73229cb0cd7b04b4dd88637890059eb1b90a757e99bcf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Grabit",
+      "value": "2e4507ff9e490f9137b73229cb0cd7b04b4dd88637890059eb1b90a757e99bcf",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3928ea510a114ad0411a3528cd894f6b65f59e3d52532d3e0c35157b1de27651",
+      "type": "SHA256",
+      "name": "3928ea510a114ad0411a3528cd894f6b65f59e3d52532d3e0c35157b1de27651",
+      "normalized_name": "3928ea510a114ad0411a3528cd894f6b65f59e3d52532d3e0c35157b1de27651",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Grabit",
+      "value": "3928ea510a114ad0411a3528cd894f6b65f59e3d52532d3e0c35157b1de27651",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_710960677066beba4db33a62e59d069676ffce4a01e63dc968ad7446158f55d6",
+      "type": "SHA256",
+      "name": "710960677066beba4db33a62e59d069676ffce4a01e63dc968ad7446158f55d6",
+      "normalized_name": "710960677066beba4db33a62e59d069676ffce4a01e63dc968ad7446158f55d6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "report_id": "Grabit",
+      "value": "710960677066beba4db33a62e59d069676ffce4a01e63dc968ad7446158f55d6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7371983a64ef9389bf3bfa8d2abacd3a909d13c3ee8b53cccf437026d5925df5",
+      "type": "SHA256",
+      "name": "7371983a64ef9389bf3bfa8d2abacd3a909d13c3ee8b53cccf437026d5925df5",
+      "normalized_name": "7371983a64ef9389bf3bfa8d2abacd3a909d13c3ee8b53cccf437026d5925df5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59"
+      ],
+      "report_id": "Grabit",
+      "value": "7371983a64ef9389bf3bfa8d2abacd3a909d13c3ee8b53cccf437026d5925df5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_76ba61e510a340f8751e46449a7d857a2d242bd4724d0d040b060137ab5fb31a",
+      "type": "SHA256",
+      "name": "76ba61e510a340f8751e46449a7d857a2d242bd4724d0d040b060137ab5fb31a",
+      "normalized_name": "76ba61e510a340f8751e46449a7d857a2d242bd4724d0d040b060137ab5fb31a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60"
+      ],
+      "report_id": "Grabit",
+      "value": "76ba61e510a340f8751e46449a7d857a2d242bd4724d0d040b060137ab5fb31a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_78970883afe52e4ee846f4a7cf75b569f6e5a8e7a830d69358a8b33d186d6fec",
+      "type": "SHA256",
+      "name": "78970883afe52e4ee846f4a7cf75b569f6e5a8e7a830d69358a8b33d186d6fec",
+      "normalized_name": "78970883afe52e4ee846f4a7cf75b569f6e5a8e7a830d69358a8b33d186d6fec",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_61"
+      ],
+      "report_id": "Grabit",
+      "value": "78970883afe52e4ee846f4a7cf75b569f6e5a8e7a830d69358a8b33d186d6fec",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7c8c3247ffeb269dbf840c7648e9bfaa8cf3d375a03066b57773c48de2b6d477",
+      "type": "SHA256",
+      "name": "7c8c3247ffeb269dbf840c7648e9bfaa8cf3d375a03066b57773c48de2b6d477",
+      "normalized_name": "7c8c3247ffeb269dbf840c7648e9bfaa8cf3d375a03066b57773c48de2b6d477",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Grabit",
+      "value": "7c8c3247ffeb269dbf840c7648e9bfaa8cf3d375a03066b57773c48de2b6d477",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7f0c4d3644fdcd8ac5bc2e007bb5c3e9eab56a3d2d470bb796af88125cd74ac9",
+      "type": "SHA256",
+      "name": "7f0c4d3644fdcd8ac5bc2e007bb5c3e9eab56a3d2d470bb796af88125cd74ac9",
+      "normalized_name": "7f0c4d3644fdcd8ac5bc2e007bb5c3e9eab56a3d2d470bb796af88125cd74ac9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "Grabit",
+      "value": "7f0c4d3644fdcd8ac5bc2e007bb5c3e9eab56a3d2d470bb796af88125cd74ac9",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9b48a2e82d8a82c1717f135fa750ba774403e972b6edb2a522f9870bed57e72a",
+      "type": "SHA256",
+      "name": "9b48a2e82d8a82c1717f135fa750ba774403e972b6edb2a522f9870bed57e72a",
+      "normalized_name": "9b48a2e82d8a82c1717f135fa750ba774403e972b6edb2a522f9870bed57e72a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Grabit",
+      "value": "9b48a2e82d8a82c1717f135fa750ba774403e972b6edb2a522f9870bed57e72a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ea57da38870f0460f526b8504b5f4f1af3ee490ba8acfde4ad781a4e206a3d27",
+      "type": "SHA256",
+      "name": "ea57da38870f0460f526b8504b5f4f1af3ee490ba8acfde4ad781a4e206a3d27",
+      "normalized_name": "ea57da38870f0460f526b8504b5f4f1af3ee490ba8acfde4ad781a4e206a3d27",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Grabit",
+      "value": "ea57da38870f0460f526b8504b5f4f1af3ee490ba8acfde4ad781a4e206a3d27",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_3f77403a64a2dde60c4962a6752de601d56a621a",
+      "type": "SHA1",
+      "name": "3f77403a64a2dde60c4962a6752de601d56a621a",
+      "normalized_name": "3f77403a64a2dde60c4962a6752de601d56a621a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "report_id": "Grabit",
+      "value": "3f77403a64a2dde60c4962a6752de601d56a621a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4E7765F3BF73AEC6E350F412B623C23D37964DFC",
+      "type": "SHA1",
+      "name": "4E7765F3BF73AEC6E350F412B623C23D37964DFC",
+      "normalized_name": "4E7765F3BF73AEC6E350F412B623C23D37964DFC",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "report_id": "Grabit",
+      "value": "4E7765F3BF73AEC6E350F412B623C23D37964DFC",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Grabit",
+      "type": "alias_of",
+      "head_id": "ent_malware_AudioEndpointBuilder.exe",
+      "tail_id": "ent_malware_AudioEndpointBuilder",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_46"
+      ],
+      "primary_evidence_id": "ev_37",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Grabit",
+      "type": "alias_of",
+      "head_id": "ent_malware_BrokerInfrastructure.exe",
+      "tail_id": "ent_malware_BrokerInfrastructure",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_47"
+      ],
+      "primary_evidence_id": "ev_37",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Grabit",
+      "type": "alias_of",
+      "head_id": "ent_malware_WindowsUpdate.exe",
+      "tail_id": "ent_malware_WindowsUpdate",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37",
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_37",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s10"
+      },
+      "text": "One of the threat actor’s successful implementations contained the well-known DarkComet .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "From what we have seen so far, the malware is being delivered as a Microsoft Office Word (.doc) email attachment, containing a malicious macro called AutoOpen.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s10"
+      },
+      "text": "AudioEndpointBuilder.exe BrokerInfrastructure.exe WindowsUpdate.exe Malware extensions: .zip or .exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "IP Addresses: 31.220.16.147 204.152.219.78 128.90.15.98 31.170.163.242 185.77.128.65 193.0.200.136 208.91.199.223 31.170.164.81 185.28.21.35 185.28.21.32 112.209.76.184",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "3f77403a64a2dde60c4962a6752de601d56a621a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "4E7765F3BF73AEC6E350F412B623C23D37964DFC",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "AudioEndpointBuilder.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "BrokerInfrastructure.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r7"
+      },
+      "text": "WindowsUpdate.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "9b48a2e82d8a82c1717f135fa750ba774403e972b6edb2a522f9870bed57e72a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "ea57da38870f0460f526b8504b5f4f1af3ee490ba8acfde4ad781a4e206a3d27",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "0b96811e4f4cfaa57fe47ebc369fdac7dfb4a900a2af8a07a7b3f513eb3e0dfa",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "1948f57cad96d37df95da2ee0057dd91dd4a9a67153efc278aa0736113f969e5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "1d15003732430c004997f0df7cac7749ae10f992bea217a8da84e1c957143b1c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r4"
+      },
+      "text": "2049352f94a75978761a5367b01d486283aab1b7b94df7b08cf856f92352166b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r5"
+      },
+      "text": "26c6167dfcb7cda40621a952eac03b87a2f0dff1769ab9d09dafd09edc1a4c29",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r6"
+      },
+      "text": "2e4507ff9e490f9137b73229cb0cd7b04b4dd88637890059eb1b90a757e99bcf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r7"
+      },
+      "text": "3928ea510a114ad0411a3528cd894f6b65f59e3d52532d3e0c35157b1de27651",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r8"
+      },
+      "text": "710960677066beba4db33a62e59d069676ffce4a01e63dc968ad7446158f55d6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r9"
+      },
+      "text": "7371983a64ef9389bf3bfa8d2abacd3a909d13c3ee8b53cccf437026d5925df5",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r10"
+      },
+      "text": "76ba61e510a340f8751e46449a7d857a2d242bd4724d0d040b060137ab5fb31a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r11"
+      },
+      "text": "78970883afe52e4ee846f4a7cf75b569f6e5a8e7a830d69358a8b33d186d6fec",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r12"
+      },
+      "text": "7c8c3247ffeb269dbf840c7648e9bfaa8cf3d375a03066b57773c48de2b6d477",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r13"
+      },
+      "text": "7f0c4d3644fdcd8ac5bc2e007bb5c3e9eab56a3d2d470bb796af88125cd74ac9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r14"
+      },
+      "text": "31.220.16.147",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r15"
+      },
+      "text": "204.152.219.78",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r16"
+      },
+      "text": "128.90.15.98",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r17"
+      },
+      "text": "31.170.163.242",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r18"
+      },
+      "text": "185.77.128.65",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r19"
+      },
+      "text": "193.0.200.136",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r20"
+      },
+      "text": "208.91.199.223",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r21"
+      },
+      "text": "31.170.164.81",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r22"
+      },
+      "text": "185.28.21.35",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r23"
+      },
+      "text": "185.28.21.32",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Grabit",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r24"
+      },
+      "text": "112.209.76.184",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_37",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_AudioEndpointBuilder",
+        "ent_malware_BrokerInfrastructure",
+        "ent_malware_WindowsUpdate",
+        "ent_file_AudioEndpointBuilder.exe",
+        "ent_malware_AudioEndpointBuilder.exe",
+        "ent_file_BrokerInfrastructure.exe",
+        "ent_malware_BrokerInfrastructure.exe",
+        "ent_file_WindowsUpdate.exe",
+        "ent_malware_WindowsUpdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_AudioEndpointBuilder",
+        "ent_file_AudioEndpointBuilder.exe",
+        "ent_malware_AudioEndpointBuilder.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_BrokerInfrastructure",
+        "ent_file_BrokerInfrastructure.exe",
+        "ent_malware_BrokerInfrastructure.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_WindowsUpdate",
+        "ent_file_WindowsUpdate.exe",
+        "ent_malware_WindowsUpdate.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_malware_AutoOpen"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

@@ -1,0 +1,889 @@
+{
+  "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+  "title": "Spear Phishing Techniques Used in Attacks Targeting the Mongolian Government",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017).pdf",
+    "file_path": "/root/APTtext/Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 7504,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Poison_Ivy",
+      "type": "Malware",
+      "name": "Poison Ivy",
+      "normalized_name": "Poison Ivy",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_2",
+        "ev_27",
+        "ev_28",
+        "ev_29"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "family": "Poison Ivy",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_2",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Userinit",
+      "type": "Malware",
+      "name": "Userinit",
+      "normalized_name": "Userinit",
+      "aliases": [
+        "userinit.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27",
+        "ev_33",
+        "ev_39",
+        "ev_9"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_27",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_userinit.exe",
+      "family": "Userinit",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_userinit.exe",
+      "type": "Malware",
+      "name": "userinit.exe",
+      "normalized_name": "userinit.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_27",
+        "ev_33",
+        "ev_39"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Userinit"
+    },
+    {
+      "id": "ent_malware_userinit.exe",
+      "type": "Malware",
+      "name": "userinit.exe",
+      "normalized_name": "userinit.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27",
+        "ev_33",
+        "ev_39",
+        "ev_9"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "file_name": "userinit.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_27",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_f0921.ps1",
+      "type": "File",
+      "name": "f0921.ps1",
+      "normalized_name": "f0921.ps1",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_38"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "file_name": "f0921.ps1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_winword.exe",
+      "type": "File",
+      "name": "winword.exe",
+      "normalized_name": "winword.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_20",
+        "ev_22",
+        "ev_37",
+        "ev_38"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "file_name": "winword.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_22",
+        "ev_37",
+        "ev_20"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Mongolian_Government",
+      "type": "Victim",
+      "name": "Mongolian Government",
+      "normalized_name": "Mongolian Government",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_file_regsvr32.exe",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "File",
+      "name": "regsvr32.exe",
+      "normalized_name": "regsvr32.exe",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_14"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "regsvr32.exe",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_userinit.exe",
+      "tail_id": "ent_malware_Userinit",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27",
+        "ev_33"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "downloads",
+      "head_id": "ent_file_winword.exe",
+      "tail_id": "ent_file_f0921.ps1",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.8,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "download_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "After launching the decoy document in the second winword.exe process, the PowerShell script downloads and runs another PowerShell script named f0921.ps1 as shown in Figure 7."
+      },
+      "head": {
+        "id": "ent_file_winword.exe",
+        "type": "File",
+        "name": "winword.exe",
+        "normalized_name": "winword.exe",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_20",
+          "ev_22",
+          "ev_37",
+          "ev_38"
+        ],
+        "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+        "file_name": "winword.exe",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_38",
+        "supporting_evidence_ids": [
+          "ev_22",
+          "ev_37",
+          "ev_20"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      },
+      "tail": {
+        "id": "ent_file_f0921.ps1",
+        "type": "File",
+        "name": "f0921.ps1",
+        "normalized_name": "f0921.ps1",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_22",
+          "ev_38"
+        ],
+        "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+        "file_name": "f0921.ps1",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_38",
+        "supporting_evidence_ids": [
+          "ev_22"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "file_artifact",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "executes",
+      "head_id": "ent_file_winword.exe",
+      "tail_id": "ent_file_f0921.ps1",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_22",
+        "ev_38"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "executes",
+      "head_id": "ent_malware_Poison_Ivy",
+      "tail_id": "ent_malware_Userinit",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_27",
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "loads",
+      "head_id": "ent_file_f0921.ps1",
+      "tail_id": "ent_malware_Poison_Ivy",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_39",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "script_loads_payload",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "loads",
+      "head_id": "ent_file_winword.exe",
+      "tail_id": "ent_file_f0921.ps1",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_22",
+        "ev_38"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "loads",
+      "head_id": "ent_file_winword.exe",
+      "tail_id": "ent_malware_Poison_Ivy",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_38"
+      ],
+      "primary_evidence_id": "ev_38",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "loads",
+      "head_id": "ent_file_winword.exe",
+      "tail_id": "ent_malware_Userinit",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_20",
+        "ev_22"
+      ],
+      "primary_evidence_id": "ev_20",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "type": "loads",
+      "head_id": "ent_malware_Poison_Ivy",
+      "tail_id": "ent_malware_Userinit",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_27",
+        "ev_39"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "executes",
+      "summary": "winword.exe executes f0921.ps1",
+      "evidence_ids": [
+        "ev_22",
+        "ev_38"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "executes",
+      "summary": "Poison Ivy executes Userinit",
+      "evidence_ids": [
+        "ev_27",
+        "ev_39"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "loads",
+      "summary": "f0921.ps1 loads Poison Ivy",
+      "evidence_ids": [
+        "ev_39"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "loads",
+      "summary": "winword.exe loads f0921.ps1",
+      "evidence_ids": [
+        "ev_22",
+        "ev_38"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "loads",
+      "summary": "winword.exe loads Poison Ivy",
+      "evidence_ids": [
+        "ev_38"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "winword.exe loads Userinit",
+      "evidence_ids": [
+        "ev_20",
+        "ev_22"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "Poison Ivy loads Userinit",
+      "evidence_ids": [
+        "ev_27",
+        "ev_39"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "command_and_control",
+      "relation_id": "rel_0002",
+      "type": "downloads",
+      "summary": "winword.exe downloads f0921.ps1",
+      "evidence_ids": [
+        "ev_22"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "FireEye recently observed a sophisticated campaign targeting individuals within the Mongolian government.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Targeted individuals that enabled macros in a malicious Microsoft Word document may have been infected with Poison Ivy , a popular remote access tool (RAT) that has been used for nearly a decade for key logging, screen and video capture, file transfers, password theft, system administration, traffic relaying, and more.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s9"
+      },
+      "text": "The threat actors used two publicly available techniques, an AppLocker whitelisting bypass and a script to inject shellcode into the userinit.exe process.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "In April 2016, a security researcher demonstrated a way to bypass this using regsvr32.exe, a legitimate Microsoft executable permitted to execute in many AppLocker policies.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s3"
+      },
+      "text": "There was code to download a decoy document from the Internet and open it in a second winword.exe process using the Start-Process cmdlet.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "After launching the decoy document in the second winword.exe process, the PowerShell script downloads and runs another PowerShell script named f0921.ps1 as shown in Figure 7.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "After the shellcode is decrypted and run, it injects a Poison Ivy backdoor into the userinit.exe as shown in Figure 14.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "In the decrypted shellcode, we also observed content and configuration related to Poison Ivy.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "Conclusion Although Poison Ivy has been a proven threat for some time, the delivery mechanism for this backdoor uses recent publicly available techniques that differ from previously observed campaigns.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "The threat actors used two publicly available techniques, an AppLocker whitelisting bypass and a script to inject shellcode into the userinit.exe process. The malicious payload was spread across multiple PowerShell scripts, making its execution difficult to trace. Rather than being written to disk as individual script files, the PowerShell payloads were stored in the registry.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "1. There was code to download a decoy document from the Internet and open it in a second winword.exe process using the Start-Process cmdlet. When the victim enables macros, they will see the decoy document shown in Figure 6. This document contains the content described in the spear phishing email.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "2. After launching the decoy document in the second winword.exe process, the PowerShell script downloads and runs another PowerShell script named f0921.ps1 as shown in Figure 7.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_SpearPhishing-Targeting-Mongolian-Government(02-22-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "After the shellcode is decrypted and run, it injects a Poison Ivy backdoor into the userinit.exe as shown in Figure 14.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_33",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Userinit",
+        "ent_malware_userinit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Userinit",
+        "ent_malware_userinit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_f0921.ps1",
+        "ent_file_winword.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_38",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_f0921.ps1",
+        "ent_file_winword.exe"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_27",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Poison_Ivy",
+        "ent_malware_Userinit",
+        "ent_malware_userinit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Poison_Ivy",
+        "ent_malware_Userinit",
+        "ent_malware_userinit.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

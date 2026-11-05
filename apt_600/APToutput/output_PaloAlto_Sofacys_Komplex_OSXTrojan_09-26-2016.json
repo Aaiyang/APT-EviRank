@@ -1,0 +1,3098 @@
+{
+  "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+  "title": "Sofacy’s ‘Komplex’ OS X Trojan",
+  "source": "Unit 42",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016).pdf",
+    "file_path": "/root/APTtext/PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 20893,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT28",
+      "type": "ThreatActor",
+      "name": "APT28",
+      "normalized_name": "APT28",
+      "aliases": [
+        "The Sofacy group",
+        "Pawn Storm",
+        "Fancy Bear",
+        "Sednit"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Komplex_Trojan",
+      "type": "ThreatActor",
+      "name": "Komplex Trojan",
+      "normalized_name": "Komplex Trojan",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_36",
+        "ev_44",
+        "ev_47",
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_47",
+        "ev_48",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Sofacy",
+      "type": "ThreatActor",
+      "name": "Sofacy",
+      "normalized_name": "Sofacy",
+      "aliases": [
+        "Fancy Bear",
+        "Pawn Storm",
+        "Sednit"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_5",
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_9",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Carberp",
+      "type": "Malware",
+      "name": "Carberp",
+      "normalized_name": "Carberp",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_30",
+        "ev_36",
+        "ev_4",
+        "ev_47"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "family": "Carberp",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_47",
+        "ev_30",
+        "ev_4"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Komplex",
+      "type": "Malware",
+      "name": "Komplex",
+      "normalized_name": "Komplex",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_36",
+        "ev_44",
+        "ev_47",
+        "ev_48"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "family": "Komplex",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_47",
+        "ev_48",
+        "ev_44"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [
+        "Komplex Trojan"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Sofacy_Carberp_variant",
+      "type": "Malware",
+      "name": "Sofacy Carberp variant",
+      "normalized_name": "Sofacy Carberp variant",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "family": "Sofacy Carberp variant",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_aerospace_industry",
+      "type": "Victim",
+      "name": "aerospace industry",
+      "normalized_name": "aerospace industry",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2",
+        "ev_46",
+        "ev_9"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Fancy_Bear",
+      "type": "ThreatActor",
+      "name": "Fancy Bear",
+      "normalized_name": "Fancy Bear",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT28"
+    },
+    {
+      "id": "ent_campaign_Pawn_Storm",
+      "type": "Campaign",
+      "name": "Pawn Storm",
+      "normalized_name": "Pawn Storm",
+      "aliases": [
+        "Sofacy"
+      ],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_2",
+        "ev_35",
+        "ev_38",
+        "ev_40"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_35",
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_threatactor_Pawn_Storm",
+      "type": "ThreatActor",
+      "name": "Pawn Storm",
+      "normalized_name": "Pawn Storm",
+      "aliases": [
+        "Sofacy"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_5",
+        "ev_9",
+        "ev_35",
+        "ev_38",
+        "ev_40"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_2",
+        "ev_9",
+        "ev_1"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Sofacy"
+    },
+    {
+      "id": "ent_threatactor_Sednit",
+      "type": "ThreatActor",
+      "name": "Sednit",
+      "normalized_name": "Sednit",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT28"
+    },
+    {
+      "id": "ent_threatactor_The_Sofacy_group",
+      "type": "ThreatActor",
+      "name": "The Sofacy group",
+      "normalized_name": "The Sofacy group",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_APT28"
+    },
+    {
+      "id": "ent_malware_getOsInfo",
+      "type": "Malware",
+      "name": "getOsInfo",
+      "normalized_name": "getOsInfo",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "family": "getOsInfo",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_SHA256",
+      "type": "Malware",
+      "name": "SHA256",
+      "normalized_name": "SHA256",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_35",
+        "ev_42"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "family": "SHA256",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_domain_-2025.app",
+      "type": "Domain",
+      "name": "-2025.app",
+      "normalized_name": "-2025.app",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "-2025.app",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_apple-iclouds.net",
+      "type": "Domain",
+      "name": "apple-iclouds.net",
+      "normalized_name": "apple-iclouds.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_50",
+        "ev_67",
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "apple-iclouds.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_67",
+        "ev_70",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_appleupdate.org",
+      "type": "Domain",
+      "name": "appleupdate.org",
+      "normalized_name": "appleupdate.org",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_41",
+        "ev_67",
+        "ev_68"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "appleupdate.org",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_38",
+        "ev_67",
+        "ev_41"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_iclouds.net",
+      "type": "Domain",
+      "name": "iclouds.net",
+      "normalized_name": "iclouds.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_67"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "iclouds.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_itunes-helper.net",
+      "type": "Domain",
+      "name": "itunes-helper.net",
+      "normalized_name": "itunes-helper.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_50",
+        "ev_67",
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "itunes-helper.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_38",
+      "supporting_evidence_ids": [
+        "ev_67",
+        "ev_70",
+        "ev_50"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "reference_ioc"
+    },
+    {
+      "id": "ent_domain_preview.app",
+      "type": "Domain",
+      "name": "preview.app",
+      "normalized_name": "preview.app",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71",
+        "ev_72"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "preview.app",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_researchcenter.paloaltonetworks.com",
+      "type": "Domain",
+      "name": "researchcenter.paloaltonetworks.com",
+      "normalized_name": "researchcenter.paloaltonetworks.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73",
+        "ev_74"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "researchcenter.paloaltonetworks.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_start.sh",
+      "type": "Domain",
+      "name": "start.sh",
+      "normalized_name": "start.sh",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_10",
+        "ev_11"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "start.sh",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [
+        "ev_11"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.apple.com",
+      "type": "Domain",
+      "name": "www.apple.com",
+      "normalized_name": "www.apple.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75",
+        "ev_76"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "www.apple.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_76"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_185.10.58.170",
+      "type": "IPv4",
+      "name": "185.10.58.170",
+      "normalized_name": "185.10.58.170",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_41",
+        "ev_42",
+        "ev_68",
+        "ev_70"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "185.10.58.170",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_42",
+        "ev_41",
+        "ev_70"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_www.apple.com_DTDs_PropertyList-1.0.dtd",
+      "type": "URL",
+      "name": "http://www.apple.com/DTDs/PropertyList-1.0.dtd",
+      "normalized_name": "http://www.apple.com/DTDs/PropertyList-1.0.dtd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75",
+        "ev_76"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "http://www.apple.com/DTDs/PropertyList-1.0.dtd",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_76"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_www.google.com",
+      "type": "URL",
+      "name": "http://www.google.com",
+      "normalized_name": "http://www.google.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77",
+        "ev_78",
+        "ev_79"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "http://www.google.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_77",
+        "ev_79"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "service_endpoint"
+    },
+    {
+      "id": "ent_ioc_sha256_1f22e8f489abff004a3c47210a9642798e1c53efc9d6f333a1072af4b11d71ef",
+      "type": "SHA256",
+      "name": "1f22e8f489abff004a3c47210a9642798e1c53efc9d6f333a1072af4b11d71ef",
+      "normalized_name": "1f22e8f489abff004a3c47210a9642798e1c53efc9d6f333a1072af4b11d71ef",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "1f22e8f489abff004a3c47210a9642798e1c53efc9d6f333a1072af4b11d71ef",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5",
+      "type": "SHA256",
+      "name": "227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5",
+      "normalized_name": "227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_58",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_55",
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134",
+      "type": "SHA256",
+      "name": "2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134",
+      "normalized_name": "2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54",
+      "type": "SHA256",
+      "name": "45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54",
+      "normalized_name": "45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_68",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_42",
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd",
+      "type": "SHA256",
+      "name": "638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd",
+      "normalized_name": "638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_35",
+        "ev_66"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [
+        "ev_66"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3",
+      "type": "SHA256",
+      "name": "96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3",
+      "normalized_name": "96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7",
+      "type": "SHA256",
+      "name": "c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7",
+      "normalized_name": "c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4",
+      "type": "SHA256",
+      "name": "cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4",
+      "normalized_name": "cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_69"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_69"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d494e9f885ad2d6a2686424843142ddc680bb5485414023976b4d15e3b6be800",
+      "type": "SHA256",
+      "name": "d494e9f885ad2d6a2686424843142ddc680bb5485414023976b4d15e3b6be800",
+      "normalized_name": "d494e9f885ad2d6a2686424843142ddc680bb5485414023976b4d15e3b6be800",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "d494e9f885ad2d6a2686424843142ddc680bb5485414023976b4d15e3b6be800",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73",
+      "type": "SHA256",
+      "name": "da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73",
+      "normalized_name": "da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_42",
+        "ev_68"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "value": "da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [
+        "ev_42"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file__Users_Shared_start.sh",
+      "type": "File",
+      "name": "/Users/Shared/start.sh",
+      "normalized_name": "/Users/Shared/start.sh",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "file_name": "/Users/Shared/start.sh",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_10",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_roskosmos_2015-2025.pdf",
+      "type": "File",
+      "name": "roskosmos_2015-2025.pdf",
+      "normalized_name": "roskosmos_2015-2025.pdf",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "file_name": "roskosmos_2015-2025.pdf",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_8",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_start.sh",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "File",
+      "name": "start.sh",
+      "normalized_name": "start.sh",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "start.sh",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Fancy_Bear",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Fancy_Bear",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Pawn_Storm",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Pawn_Storm",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 1.0,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_40"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity; llm_sentence",
+        "schema_version": "v3.1-projector",
+        "evidence_span": "Pawn Storm (Sofacy)"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Sednit",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Sednit",
+      "tail_id": "ent_threatactor_Sofacy",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_The_Sofacy_group",
+      "tail_id": "ent_threatactor_APT28",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "drops",
+      "head_id": "ent_malware_Komplex",
+      "tail_id": "ent_file__Users_Shared_start.sh",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.82,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "drops",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "delivery",
+        "notes": "report_drop_support",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_10"
+      },
+      "head": {
+        "id": "ent_malware_Komplex",
+        "type": "Malware",
+        "name": "Komplex",
+        "normalized_name": "Komplex",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_36",
+          "ev_44",
+          "ev_47",
+          "ev_48"
+        ],
+        "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+        "family": "Komplex",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_36",
+        "supporting_evidence_ids": [
+          "ev_47",
+          "ev_48",
+          "ev_44"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [
+          "Komplex Trojan"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_file__Users_Shared_start.sh",
+        "type": "File",
+        "name": "/Users/Shared/start.sh",
+        "normalized_name": "/Users/Shared/start.sh",
+        "aliases": [],
+        "confidence": 0.94,
+        "evidence_ids": [
+          "ev_10"
+        ],
+        "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+        "file_name": "/Users/Shared/start.sh",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_10",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "file_role": "malicious_component",
+        "entity_scope": "supporting",
+        "core_observation": false,
+        "observation_kind": "supporting_file_artifact"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "executes",
+      "head_id": "ent_file__Users_Shared_start.sh",
+      "tail_id": "ent_file_start.sh",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "executes",
+      "head_id": "ent_malware_Komplex",
+      "tail_id": "ent_file_roskosmos_2015-2025.pdf",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_8"
+      ],
+      "primary_evidence_id": "ev_8",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "executes",
+      "head_id": "ent_malware_Komplex",
+      "tail_id": "ent_malware_Carberp",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "loads",
+      "head_id": "ent_file__Users_Shared_start.sh",
+      "tail_id": "ent_file_start.sh",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "loads",
+      "head_id": "ent_file__Users_Shared_start.sh",
+      "tail_id": "ent_malware_Komplex",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_10"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "related_family",
+      "head_id": "ent_malware_Komplex",
+      "tail_id": "ent_malware_Carberp",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.76,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "primary_evidence_id": "ev_47",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "related_family",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "family_head",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "The Komplex Trojan revealed a design similar to Sofacy’s Carberp variant Trojan, which we believe may have been done in order to handle compromised Windows and OS X systems using the same C2 server application with relative ease."
+      },
+      "head": {
+        "id": "ent_malware_Komplex",
+        "type": "Malware",
+        "name": "Komplex",
+        "normalized_name": "Komplex",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_36",
+          "ev_44",
+          "ev_47",
+          "ev_48"
+        ],
+        "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+        "family": "Komplex",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_36",
+        "supporting_evidence_ids": [
+          "ev_47",
+          "ev_48",
+          "ev_44"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [
+          "Komplex Trojan"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_Carberp",
+        "type": "Malware",
+        "name": "Carberp",
+        "normalized_name": "Carberp",
+        "aliases": [],
+        "confidence": 0.93,
+        "evidence_ids": [
+          "ev_30",
+          "ev_36",
+          "ev_4",
+          "ev_47"
+        ],
+        "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+        "family": "Carberp",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_36",
+        "supporting_evidence_ids": [
+          "ev_47",
+          "ev_30",
+          "ev_4"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "targets",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_victim_aerospace_industry",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "targets",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_victim_aerospace_industry",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "primary_evidence_id": "ev_2",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_Komplex",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_44",
+        "ev_1",
+        "ev_6"
+      ],
+      "primary_evidence_id": "ev_44",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_or_event_use; report_use_support",
+        "schema_version": "v5.0-event-frame",
+        "evidence_span": "ev_1"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Komplex_Trojan",
+      "tail_id": "ent_malware_Carberp",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_36",
+        "ev_47",
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; report_use_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_36"
+      }
+    },
+    {
+      "id": "rel_0019",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Komplex_Trojan",
+      "tail_id": "ent_malware_Komplex",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_36",
+        "ev_44",
+        "ev_47"
+      ],
+      "primary_evidence_id": "ev_36",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; report_use_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_36"
+      }
+    },
+    {
+      "id": "rel_0020",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Komplex_Trojan",
+      "tail_id": "ent_malware_Sofacy_Carberp_variant",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "primary_evidence_id": "ev_66",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "sparse_core_use_recovery; report_use_support",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "ev_66"
+      }
+    },
+    {
+      "id": "rel_0021",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_malware_Carberp",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_4",
+        "ev_35",
+        "ev_36",
+        "ev_47",
+        "ev_66",
+        "ev_3",
+        "ev_30",
+        "ev_31",
+        "ev_34",
+        "ev_37",
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_4",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=fancy bear|pawn storm|sednit, event_use, headline_or_event_use",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0022",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_malware_Komplex",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_1",
+        "ev_3",
+        "ev_4",
+        "ev_5",
+        "ev_6",
+        "ev_35",
+        "ev_36",
+        "ev_43",
+        "ev_44",
+        "ev_47",
+        "ev_62",
+        "ev_66",
+        "ev_68",
+        "ev_2",
+        "ev_7",
+        "ev_30",
+        "ev_31",
+        "ev_34",
+        "ev_37",
+        "ev_45",
+        "ev_48"
+      ],
+      "primary_evidence_id": "ev_1",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "with",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=fancy bear|pawn storm|sednit, event_use, headline_or_event_use; use_head",
+        "schema_version": "v2.0-evidence",
+        "evidence_span": "The Sofacy C2 server will respond to this HTTP request with encrypted data that the payload will decrypt using the same custom algorithm used to encrypt the POST data. The Komplex payload will parse the C2 response for the following strings: “[file]” and “[/file]”, “FileName=”, “PathToSave=”, “Shell=”, “Execute”, and “Delete”. The “Delete” action does nothing more than delete a file specified by ‘PathToSave’/’FileNam"
+      }
+    },
+    {
+      "id": "rel_0023",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_Sofacy",
+      "tail_id": "ent_malware_Sofacy_Carberp_variant",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.92,
+      "evidence_ids": [
+        "ev_35",
+        "ev_66",
+        "ev_34",
+        "ev_36"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "using",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "aliases_seen=fancy bear|pawn storm|sednit",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0024",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "type": "uses_service_api",
+      "head_id": "ent_malware_Komplex",
+      "tail_id": "ent_url_http_www.google.com",
+      "head_type": "Malware",
+      "tail_type": "URL",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_77",
+        "ev_79"
+      ],
+      "primary_evidence_id": "ev_77",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_service_api",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_service_comm, c2_service_api",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0008",
+      "type": "drops",
+      "summary": "Komplex drops /Users/Shared/start.sh",
+      "evidence_ids": [
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "executes",
+      "summary": "/Users/Shared/start.sh executes start.sh",
+      "evidence_ids": [
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "executes",
+      "summary": "Komplex executes roskosmos_2015-2025.pdf",
+      "evidence_ids": [
+        "ev_8"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "executes",
+      "summary": "Komplex executes Carberp",
+      "evidence_ids": [
+        "ev_4"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "/Users/Shared/start.sh loads start.sh",
+      "evidence_ids": [
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "/Users/Shared/start.sh loads Komplex",
+      "evidence_ids": [
+        "ev_10"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0017",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware Komplex",
+      "evidence_ids": [
+        "ev_44",
+        "ev_1",
+        "ev_6"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0018",
+      "type": "uses_malware",
+      "summary": "Komplex Trojan uses_malware Carberp",
+      "evidence_ids": [
+        "ev_36",
+        "ev_47",
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0019",
+      "type": "uses_malware",
+      "summary": "Komplex Trojan uses_malware Komplex",
+      "evidence_ids": [
+        "ev_36",
+        "ev_44",
+        "ev_47"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0020",
+      "type": "uses_malware",
+      "summary": "Komplex Trojan uses_malware Sofacy Carberp variant",
+      "evidence_ids": [
+        "ev_66"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0021",
+      "type": "uses_malware",
+      "summary": "Sofacy uses_malware Carberp",
+      "evidence_ids": [
+        "ev_4",
+        "ev_35",
+        "ev_36"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0022",
+      "type": "uses_malware",
+      "summary": "Sofacy uses_malware Komplex",
+      "evidence_ids": [
+        "ev_1",
+        "ev_3",
+        "ev_4"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0023",
+      "type": "uses_malware",
+      "summary": "Sofacy uses_malware Sofacy Carberp variant",
+      "evidence_ids": [
+        "ev_35",
+        "ev_66",
+        "ev_34"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "command_and_control",
+      "relation_id": "rel_0024",
+      "type": "uses_service_api",
+      "summary": "Komplex uses_service_api http://www.google.com",
+      "evidence_ids": [
+        "ev_77",
+        "ev_79"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Unit 42 researchers identified a new OS X Trojan associated with the Sofacy group that we are now tracking with the ‘Komplex’ tag using the Palo Alto Networks AutoFocus threat intelligence platform.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "The Sofacy group, also known as APT28, Pawn Storm, Fancy Bear, and Sednit, continues to add to the variety of tools they use in attacks; in this case, targeting individuals in the aerospace industry running the OS X operating system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "During our analysis, we determined that Komplex was used in a previous attack campaign targeting individuals running OS X that exploited a vulnerability in the MacKeeper antivirus application to deliver Komplex as a payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "Komplex shares a significant amount of functionality and traits with another tool used by Sofacy – the Carberp variant that Sofacy had used in previous attack campaigns on systems running Windows.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "In addition to shared code and functionality, we also discovered Komplex command and control (C2) domains that overlapped with previously identified phishing campaign infrastructures associated with the Sofacy group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "Komplex Binder Komplex is a Trojan that the Sofacy group created to compromise individuals using OS X devices.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "The Trojan has multiple parts, first leading with a binder component that is responsible for saving a second payload and a decoy document to the system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 The binder component saves a decoy document named roskosmos_2015-2025.pdf to the system and opens it using the Preview application built into OS X.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "We do not have detailed targeting information regarding the Sofacy group’s attack campaign delivering Komplex at this time; however, based on the contents of the decoy document, we believe that the target is likely associated with the aerospace industry.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 The shell script saved to ‘/Users/Shared/start.sh’ calls the system command ‘launchctl’ to add a plist entry into ‘launchd’ to automatically execute the Komplex payload each time the system starts.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "Figure 4 shows the contents of the ‘start.sh’ script that sets up persistence for the payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s8"
+      },
+      "text": "The system information sent to the C2 includes data such as the system version, username, and process list, which is gathered within a function named “getOsInfo” within the “InfoOS” class (Figure 10).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s8"
+      },
+      "text": "The second code overlap ties the Komplex Trojan to Sofacy’s Carberp variant, which we have analyzed in previous research efforts .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s9"
+      },
+      "text": "Same URL generation logic using random path values, a random file extension and encrypted token Same file extensions used in C2 URL that are listed within the binaries in the same order",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "Checks for Internet connectivity by connecting to google.com Uses an 11-byte XOR key to decrypt strings within the configuration",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "In addition to these common traits, we found a Sofacy Carberp variant (SHA256: 638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd) using the same TOKEN value of ‘h8sn3vq6kl’ within its C2 URL, as observed in Komplex payloads.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s4"
+      },
+      "text": "Based on these observations, we believe that the author of Sofacy’s Carberp variant used the same code, or at least the same design, to create the Komplex Trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s5"
+      },
+      "text": "A benefit of retaining many of the same functionalities within the Windows and OS X Trojans is that it would require fewer alterations to the C2 server application to handle cross-platform implants.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s6"
+      },
+      "text": "Infrastructure Overlap While Komplex’s C2 domain appleupdate[.]org does not appear to have any previously known activity associated with it, both the apple-iclouds[.]net and itunes-helper[.]net domains have direct ties to Sofacy activity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s7"
+      },
+      "text": "The apple- iclouds[.]net domain is mentioned within a PwC Tactical Intelligence Bulletin that discussed a phishing campaign conducted by the Sofacy group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s8"
+      },
+      "text": "The itunes-helper[.]net domain is associated with separate activity discussed in Trend Micro’s blog titled Looking Into a Cyber-Attack Facilitator in the Netherlands that included research on hosting providers used by Pawn Storm (Sofacy).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_41",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s9"
+      },
+      "text": "The domain appleupdate[.]org does have one interesting correlation point, specifically involving the IP 185.10.58[.]170 that resolved this domain between April 2015 through April 2016.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s10"
+      },
+      "text": "Researchers at BAE Systems provided Unit 42 the Komplex payload delivered through the exploitation of MacKeeper (Dropper SHA256: da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73 and Payload SHA256: 45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54), which used the IP address 185.10.58[.]170 within its configuration as a C2 server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s11"
+      },
+      "text": "This infrastructure overlap further strengthens the connection between the Komplex payload we discovered with the prior campaign using MacKeeper for delivery.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s12"
+      },
+      "text": "Conclusion The Sofacy group created the Komplex Trojan to use in attack campaigns targeting the OS X operating system – a move that showcases their continued evolution toward multi-platform attacks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s13"
+      },
+      "text": "The tool is capable of downloading additional files to the system, executing and deleting files, as well as directly interacting with the system shell.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s14"
+      },
+      "text": "While detailed targeting information is not currently available, we believe Komplex has been used in attacks on individuals related to the aerospace industry, as well as attacks leveraging an exploit in MacKeeper to deliver the Trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s15"
+      },
+      "text": "The Komplex Trojan revealed a design similar to Sofacy’s Carberp variant Trojan, which we believe may have been done in order to handle compromised Windows and OS X systems using the same C2 server application with relative ease.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s16"
+      },
+      "text": "WildFire correctly identifies known Komplex executables as malicious IPS signature #14442 Sofacy.Gen Command And Control Traffic can detect and block outbound C2 requests generated by the Komplex Trojan.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "C2 Locations: appleupdate[.]org apple-iclouds[.]net itunes-helper[.]net 185.10.58.170",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134: Mach-O 64- bit executable x86_64 c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7: Mach-O executable i386 cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4: Mach-O universal binary with 2 architectures",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "The Komplex dropper component is saved to the system as “/tmp/content” (SHA256: 96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3) and is responsible for installing a third executable to the system and setting up persistence for the third executable to launch each time the OS X operating system starts. This dropper also provided the basis for the name “Komplex”, which is seen in several folder paths that were included within the Mach-O file, such as “/Users/kazak/Desktop/Project/komplex”.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r3"
+      },
+      "text": "1f22e8f489abff004a3c47210a9642798e1c53efc9d6f333a1072af4b11d71ef)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "d494e9f885ad2d6a2686424843142ddc680bb5485414023976b4d15e3b6be800)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "The ultimate purpose of the aforementioned components is to install and execute the Komplex payload. The dropper component saves the payload to “/Users/Shared/.local/kextd” (SHA256: 227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5) and ultimately executes the payload. The payload begins by conducting an anti-debugging check to see if it is being debugged before proceeding with executing its main functionality, which can be seen in the “AmIBeingDebugged” function in Figure 6. The “AmIBeingDebugged” function uses the “sysctl” function to check to see if a specific “P_TRACED” flag is set, which signifies that the process is being debugged. A particularly interesting part of this function is that it is very similar to the function provided by Apple to its developers in a guide created in 2004 titled “Detecting the Debugger”. This is not the first time the Sofacy group’s malware authors have obtained techniques from publicly available sources, as demonstrated in the use of the Office Test Persistence Method that they obtained from a blog posted in 2014 .",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "The Sofacy C2 server will respond to this HTTP request with encrypted data that the payload will decrypt using the same custom algorithm used to encrypt the POST data. The Komplex payload will parse the C2 response for the following strings: “[file]” and “[/file]”, “FileName=”, “PathToSave=”, “Shell=”, “Execute”, and “Delete”. The “Delete” action does nothing more than delete a file specified by ‘PathToSave’/’FileName’, whereas the “Execute” action involves running the following system commands before executing the specified file:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "In addition to these common traits, we found a Sofacy Carberp variant (SHA256: 638e7ca68643d4b01432f0ecaaa0495b805cc3cccc17a753b0fa511d94a22bdd) using the same TOKEN value of ‘h8sn3vq6kl’ within its C2 URL, as observed in Komplex payloads. Based on these observations, we believe that the author of Sofacy’s Carberp variant used the same code, or at least the same design, to create the Komplex Trojan. A benefit of retaining many of the same functionalities within the Windows and OS X Trojans is that it would require fewer alterations to the C2 server application to handle cross-platform implants.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "While Komplex’s C2 domain appleupdate[.]org does not appear to have any previously known activity associated with it, both the apple-iclouds[.]net and itunes-helper[.]net domains have direct ties to Sofacy activity. The apple- iclouds[.]net domain is mentioned within a PwC Tactical Intelligence Bulletin that discussed a phishing campaign conducted by the Sofacy group. The itunes-helper[.]net domain is associated with separate activity discussed in Trend Micro’s blog titled Looking Into a Cyber-Attack Facilitator in the Netherlands that included research on hosting providers used by Pawn Storm (Sofacy).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "The domain appleupdate[.]org does have one interesting correlation point, specifically involving the IP 185.10.58[.]170 that resolved this domain between April 2015 through April 2016. Researchers at BAE Systems provided Unit 42 the Komplex payload delivered through the exploitation of MacKeeper (Dropper SHA256: da43d39c749c121e99bba00ce809ca63794df3f704e7ad4077094abde4cf2a73 and Payload SHA256: 45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54), which used the IP address 185.10.58[.]170 within its configuration as a C2 server. This infrastructure overlap further strengthens the connection between the Komplex payload we discovered with the prior campaign using MacKeeper for delivery.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134 c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7 cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4 96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3 227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5 45a93e4b9ae5bece0d53a3a9a83186b8975953344d4dfb340e9de0015a247c54",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r2"
+      },
+      "text": "C2 Locations: appleupdate[.]org apple-iclouds[.]net itunes-helper[.]net 185.10.58.170",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb71"
+      },
+      "text": "var_58 = [NSString stringWithFormat:@\"open -a Preview.app %@/roskosmos_2015-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule_backfill",
+        "sentence_id": "p2_rb72"
+      },
+      "text": "pp\", var_38]; var_58 = [NSString stringWithFormat:@\"open -a Preview.app %@/roskosmos_2015- 2025.pdf\", var_38]; [[NSData dataWithBytes:_joiner length:0x20f74] writeToFile:@\"/tmp/con",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb73"
+      },
+      "text": "researchcenter.paloaltonetworks.com /2016/09/unit42-sofacys-komplex-os-x-trojan/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb74"
+      },
+      "text": "Sofacy’s ‘Komplex’ OS X Trojan researchcenter.paloaltonetworks.com /2016/09/unit42-sofacys-komplex-os-x-trojan/ By Dani Creus , Tyler Halfpop and Robert Falcone Unit 42 researchers",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb75"
+      },
+      "text": "\"http://www.apple.com/DTDs/PropertyList-1.0.dtd\">",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 5,
+        "section": "rule_backfill",
+        "sentence_id": "p5_rb76"
+      },
+      "text": "!DOCTYPE plist PUBLIC \"-//Apple//DTD PLIST 1.0//EN\" \"http://www.apple.com/DTDs/PropertyList-1.0.dtd\"> <plist version=\"1.0\"> <dict> <key>Label</key> <string>com.apple.updates</strin",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb77"
+      },
+      "text": "payload is able to communicate with “http://www.google.com” before carrying out its functionality.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb78"
+      },
+      "text": "URLWithString:@\"http://www.google.com\"]] != 0x0) {",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "PaloAlto_Sofacys_Komplex_OSXTrojan(09-26-2016)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb79"
+      },
+      "text": "t confirms whether the payload is able to communicate with “http://www.google.com” before carrying out its functionality. 1 2 3 4 5 6 7 8 9 10 11 int connectedToInternet()() { if (",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_66",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Komplex_Trojan",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Carberp",
+        "ent_malware_Komplex",
+        "ent_malware_Sofacy_Carberp_variant",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Komplex_Trojan",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Carberp",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_62",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Carberp",
+        "ent_malware_Komplex",
+        "ent_malware_Sofacy_Carberp_variant",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_4",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Carberp",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_46",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_Komplex",
+        "ent_victim_aerospace_industry"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_2",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_victim_aerospace_industry",
+        "ent_threatactor_Fancy_Bear",
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_Sednit",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Komplex_Trojan",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Carberp",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_48",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Komplex_Trojan",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_67",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_5",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_44",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Komplex_Trojan",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_threatactor_Komplex_Trojan",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Carberp",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_40",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_38",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm",
+        "ent_threatactor_The_Sofacy_group"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_74",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_malware_Komplex",
+        "ent_threatactor_Pawn_Storm",
+        "ent_domain_researchcenter.paloaltonetworks.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_threatactor_Sofacy",
+        "ent_threatactor_Pawn_Storm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_Komplex",
+        "ent_file__Users_Shared_start.sh"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Komplex",
+        "ent_domain_researchcenter.paloaltonetworks.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_domain_start.sh",
+        "ent_file_start.sh"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

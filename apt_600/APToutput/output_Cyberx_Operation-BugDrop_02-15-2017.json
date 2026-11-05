@@ -1,0 +1,2012 @@
+{
+  "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+  "title": "Operation BugDrop: CyberX Discovers Large-Scale Cyber- Reconnaissance Operation Targeting Ukrainian Organizations",
+  "source": "ESET",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Cyberx_Operation-BugDrop(02-15-2017).pdf",
+    "file_path": "/root/APTtext/Cyberx_Operation-BugDrop(02-15-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 14893,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_BugDrop",
+      "type": "Malware",
+      "name": "BugDrop",
+      "normalized_name": "BugDrop",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "family": "BugDrop",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Esmina",
+      "type": "Malware",
+      "name": "Esmina",
+      "normalized_name": "Esmina",
+      "aliases": [
+        "esmina.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_45"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_esmina.dll",
+      "family": "Esmina",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_BugDrop",
+      "type": "Campaign",
+      "name": "Operation BugDrop",
+      "normalized_name": "Operation BugDrop",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_10",
+        "ev_36",
+        "ev_7",
+        "ev_9",
+        "ev_3"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [
+        "ev_9",
+        "ev_10",
+        "ev_36"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Targeting_Ukrainian_Organizations",
+      "type": "Campaign",
+      "name": "Operation Targeting Ukrainian Organizations",
+      "normalized_name": "Operation Targeting Ukrainian Organizations",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Operation_BugDrop",
+      "type": "Malware",
+      "name": "Operation BugDrop",
+      "normalized_name": "Operation BugDrop",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_3",
+        "ev_7",
+        "ev_9"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "family": "Operation BugDrop",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_7",
+        "ev_10",
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_file_esmina.dll",
+      "type": "File",
+      "name": "esmina.dll",
+      "normalized_name": "esmina.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_22",
+        "ev_45"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "file_name": "esmina.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [
+        "ev_22"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_esmina.dll",
+      "type": "Malware",
+      "name": "esmina.dll",
+      "normalized_name": "esmina.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_22",
+        "ev_45"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Esmina"
+    },
+    {
+      "id": "ent_campaign_Examples_of_Operation",
+      "type": "Campaign",
+      "name": "Examples of Operation",
+      "normalized_name": "Examples of Operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_cyberx-labs.com",
+      "type": "Domain",
+      "name": "cyberx-labs.com",
+      "normalized_name": "cyberx-labs.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "cyberx-labs.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_mail.ru",
+      "type": "Domain",
+      "name": "mail.ru",
+      "normalized_name": "mail.ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_27"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "mail.ru",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_s017.radikal.ru",
+      "type": "Domain",
+      "name": "s017.radikal.ru",
+      "normalized_name": "s017.radikal.ru",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "s017.radikal.ru",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_sevastopol.su",
+      "type": "Domain",
+      "name": "sevastopol.su",
+      "normalized_name": "sevastopol.su",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "sevastopol.su",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_windows-problem-reporting.site88.net",
+      "type": "Domain",
+      "name": "windows-problem-reporting.site88.net",
+      "normalized_name": "windows-problem-reporting.site88.net",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64",
+        "ev_65"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "windows-problem-reporting.site88.net",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_s017.radikal.ru_i424_1609_83_0c3a23de7967.jpg_.",
+      "type": "URL",
+      "name": "http://s017.radikal.ru/i424/1609/83/0c3a23de7967.jpg).",
+      "normalized_name": "http://s017.radikal.ru/i424/1609/83/0c3a23de7967.jpg).",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "http://s017.radikal.ru/i424/1609/83/0c3a23de7967.jpg).",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_http_sevastopol.su_world.php_id_90195_.",
+      "type": "URL",
+      "name": "http://sevastopol.su/world.php?id=90195).",
+      "normalized_name": "http://sevastopol.su/world.php?id=90195).",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "http://sevastopol.su/world.php?id=90195).",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_01aab8341e1ef1a8305cf458db714a0392016432c192332e1cd9f7479507027f",
+      "type": "SHA256",
+      "name": "01aab8341e1ef1a8305cf458db714a0392016432c192332e1cd9f7479507027f",
+      "normalized_name": "01aab8341e1ef1a8305cf458db714a0392016432c192332e1cd9f7479507027f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_51"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "01aab8341e1ef1a8305cf458db714a0392016432c192332e1cd9f7479507027f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_06dcf3dc4eab45c7bd5794aafe4d3f72bb75bcfb36bdbf2ba010a5d108b096dc",
+      "type": "SHA256",
+      "name": "06dcf3dc4eab45c7bd5794aafe4d3f72bb75bcfb36bdbf2ba010a5d108b096dc",
+      "normalized_name": "06dcf3dc4eab45c7bd5794aafe4d3f72bb75bcfb36bdbf2ba010a5d108b096dc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_52"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "06dcf3dc4eab45c7bd5794aafe4d3f72bb75bcfb36bdbf2ba010a5d108b096dc",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_07c25eebdbd16f176d0907e656224d6a4091eb000419823f989b387b407bfd29",
+      "type": "SHA256",
+      "name": "07c25eebdbd16f176d0907e656224d6a4091eb000419823f989b387b407bfd29",
+      "normalized_name": "07c25eebdbd16f176d0907e656224d6a4091eb000419823f989b387b407bfd29",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "07c25eebdbd16f176d0907e656224d6a4091eb000419823f989b387b407bfd29",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1f5e663882fa6c96eb6aa952b6fa45542c2151d6a9191c1d5d1deb9e814e5a50",
+      "type": "SHA256",
+      "name": "1f5e663882fa6c96eb6aa952b6fa45542c2151d6a9191c1d5d1deb9e814e5a50",
+      "normalized_name": "1f5e663882fa6c96eb6aa952b6fa45542c2151d6a9191c1d5d1deb9e814e5a50",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "1f5e663882fa6c96eb6aa952b6fa45542c2151d6a9191c1d5d1deb9e814e5a50",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_24f56ba4d779b913fefed80127e9243303307728ebec85bdb5a61adc50df9eb6",
+      "type": "SHA256",
+      "name": "24f56ba4d779b913fefed80127e9243303307728ebec85bdb5a61adc50df9eb6",
+      "normalized_name": "24f56ba4d779b913fefed80127e9243303307728ebec85bdb5a61adc50df9eb6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_52"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "24f56ba4d779b913fefed80127e9243303307728ebec85bdb5a61adc50df9eb6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_296c738805040b5b02eae3cc2b114c27b4fb73fa58bc877b12927492c038e27c",
+      "type": "SHA256",
+      "name": "296c738805040b5b02eae3cc2b114c27b4fb73fa58bc877b12927492c038e27c",
+      "normalized_name": "296c738805040b5b02eae3cc2b114c27b4fb73fa58bc877b12927492c038e27c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40",
+        "ev_54"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "296c738805040b5b02eae3cc2b114c27b4fb73fa58bc877b12927492c038e27c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_3c0f18157f30414bcfed7a138066bc25ef44a24c5f1e56abb0e2ab5617a91000",
+      "type": "SHA256",
+      "name": "3c0f18157f30414bcfed7a138066bc25ef44a24c5f1e56abb0e2ab5617a91000",
+      "normalized_name": "3c0f18157f30414bcfed7a138066bc25ef44a24c5f1e56abb0e2ab5617a91000",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "3c0f18157f30414bcfed7a138066bc25ef44a24c5f1e56abb0e2ab5617a91000",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5383e18c66271b210f93bee8cc145b823786637b2b8660bb32475dbe600be46e",
+      "type": "SHA256",
+      "name": "5383e18c66271b210f93bee8cc145b823786637b2b8660bb32475dbe600be46e",
+      "normalized_name": "5383e18c66271b210f93bee8cc145b823786637b2b8660bb32475dbe600be46e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "5383e18c66271b210f93bee8cc145b823786637b2b8660bb32475dbe600be46e",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_61244d5f47bb442a32c99c9370b53ff9fc2ecb200494c144e8b55069bc2fa166",
+      "type": "SHA256",
+      "name": "61244d5f47bb442a32c99c9370b53ff9fc2ecb200494c144e8b55069bc2fa166",
+      "normalized_name": "61244d5f47bb442a32c99c9370b53ff9fc2ecb200494c144e8b55069bc2fa166",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40",
+        "ev_54"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "61244d5f47bb442a32c99c9370b53ff9fc2ecb200494c144e8b55069bc2fa166",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_691afe0547bd0ab6c955a8ec93febecc298e78342f78b3dd1c8242948c051de6",
+      "type": "SHA256",
+      "name": "691afe0547bd0ab6c955a8ec93febecc298e78342f78b3dd1c8242948c051de6",
+      "normalized_name": "691afe0547bd0ab6c955a8ec93febecc298e78342f78b3dd1c8242948c051de6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "691afe0547bd0ab6c955a8ec93febecc298e78342f78b3dd1c8242948c051de6",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_6c479da2e2cc296c18f21ddecc787562f600088bd37cc2154c467b0af2621937",
+      "type": "SHA256",
+      "name": "6c479da2e2cc296c18f21ddecc787562f600088bd37cc2154c467b0af2621937",
+      "normalized_name": "6c479da2e2cc296c18f21ddecc787562f600088bd37cc2154c467b0af2621937",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_51"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "6c479da2e2cc296c18f21ddecc787562f600088bd37cc2154c467b0af2621937",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7d97008b00756905195e9fc008bee7c1b398a940e00b0bd4c56920c875f28bfe",
+      "type": "SHA256",
+      "name": "7d97008b00756905195e9fc008bee7c1b398a940e00b0bd4c56920c875f28bfe",
+      "normalized_name": "7d97008b00756905195e9fc008bee7c1b398a940e00b0bd4c56920c875f28bfe",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "7d97008b00756905195e9fc008bee7c1b398a940e00b0bd4c56920c875f28bfe",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_7e4b2edf01e577599d3a2022866512d7dd9d2da7846b8d3eb8cea7507fb6c92a",
+      "type": "SHA256",
+      "name": "7e4b2edf01e577599d3a2022866512d7dd9d2da7846b8d3eb8cea7507fb6c92a",
+      "normalized_name": "7e4b2edf01e577599d3a2022866512d7dd9d2da7846b8d3eb8cea7507fb6c92a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "7e4b2edf01e577599d3a2022866512d7dd9d2da7846b8d3eb8cea7507fb6c92a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_912d54589b28ee822c0442b664b2a9f05055ea445c0ec28f3352b227dc6aa2db",
+      "type": "SHA256",
+      "name": "912d54589b28ee822c0442b664b2a9f05055ea445c0ec28f3352b227dc6aa2db",
+      "normalized_name": "912d54589b28ee822c0442b664b2a9f05055ea445c0ec28f3352b227dc6aa2db",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "912d54589b28ee822c0442b664b2a9f05055ea445c0ec28f3352b227dc6aa2db",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_943daa88fe4b5930cc627f14bf422def6bab6d738a4cafd3196f71f1b7c72539",
+      "type": "SHA256",
+      "name": "943daa88fe4b5930cc627f14bf422def6bab6d738a4cafd3196f71f1b7c72539",
+      "normalized_name": "943daa88fe4b5930cc627f14bf422def6bab6d738a4cafd3196f71f1b7c72539",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_51"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "943daa88fe4b5930cc627f14bf422def6bab6d738a4cafd3196f71f1b7c72539",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_966804ac9bc376bede3e1432e5800dd2188decd22c358e6f913fbaaaa5a6114d",
+      "type": "SHA256",
+      "name": "966804ac9bc376bede3e1432e5800dd2188decd22c358e6f913fbaaaa5a6114d",
+      "normalized_name": "966804ac9bc376bede3e1432e5800dd2188decd22c358e6f913fbaaaa5a6114d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40",
+        "ev_54"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "966804ac9bc376bede3e1432e5800dd2188decd22c358e6f913fbaaaa5a6114d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_997841515222dbfa65d1aea79e9e6a89a0142819eaeec3467c31fa169e57076a",
+      "type": "SHA256",
+      "name": "997841515222dbfa65d1aea79e9e6a89a0142819eaeec3467c31fa169e57076a",
+      "normalized_name": "997841515222dbfa65d1aea79e9e6a89a0142819eaeec3467c31fa169e57076a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "997841515222dbfa65d1aea79e9e6a89a0142819eaeec3467c31fa169e57076a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a0400125d98f63feecac6cb4c47ed2e0027bd89c111981ea702f767a6ce2ef75",
+      "type": "SHA256",
+      "name": "a0400125d98f63feecac6cb4c47ed2e0027bd89c111981ea702f767a6ce2ef75",
+      "normalized_name": "a0400125d98f63feecac6cb4c47ed2e0027bd89c111981ea702f767a6ce2ef75",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40",
+        "ev_54"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "a0400125d98f63feecac6cb4c47ed2e0027bd89c111981ea702f767a6ce2ef75",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a47e6fab82ac654332f4e56efcc514cb2b45c5a126b9ffcd2c84a842fb0283a2",
+      "type": "SHA256",
+      "name": "a47e6fab82ac654332f4e56efcc514cb2b45c5a126b9ffcd2c84a842fb0283a2",
+      "normalized_name": "a47e6fab82ac654332f4e56efcc514cb2b45c5a126b9ffcd2c84a842fb0283a2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_53"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "a47e6fab82ac654332f4e56efcc514cb2b45c5a126b9ffcd2c84a842fb0283a2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_53",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a65e79bdf971631d2097b18e43af9c25f007ae9c5baaa9bda1c470af20e1347c",
+      "type": "SHA256",
+      "name": "a65e79bdf971631d2097b18e43af9c25f007ae9c5baaa9bda1c470af20e1347c",
+      "normalized_name": "a65e79bdf971631d2097b18e43af9c25f007ae9c5baaa9bda1c470af20e1347c",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_52"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "a65e79bdf971631d2097b18e43af9c25f007ae9c5baaa9bda1c470af20e1347c",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bbe8394eb3b752741df0b30e1d1487eeda7e94e0223055771311939d27d52f78",
+      "type": "SHA256",
+      "name": "bbe8394eb3b752741df0b30e1d1487eeda7e94e0223055771311939d27d52f78",
+      "normalized_name": "bbe8394eb3b752741df0b30e1d1487eeda7e94e0223055771311939d27d52f78",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_51"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "bbe8394eb3b752741df0b30e1d1487eeda7e94e0223055771311939d27d52f78",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c9bf4443135c080fb81ab79910c9cfb2d36d1027c7bf3e29ee2b194168a463a7",
+      "type": "SHA256",
+      "name": "c9bf4443135c080fb81ab79910c9cfb2d36d1027c7bf3e29ee2b194168a463a7",
+      "normalized_name": "c9bf4443135c080fb81ab79910c9cfb2d36d1027c7bf3e29ee2b194168a463a7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "c9bf4443135c080fb81ab79910c9cfb2d36d1027c7bf3e29ee2b194168a463a7",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_cae95953c7c4c8219325074addc9432dee640023d18fa08341bf209a42352d7d",
+      "type": "SHA256",
+      "name": "cae95953c7c4c8219325074addc9432dee640023d18fa08341bf209a42352d7d",
+      "normalized_name": "cae95953c7c4c8219325074addc9432dee640023d18fa08341bf209a42352d7d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40",
+        "ev_54"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "cae95953c7c4c8219325074addc9432dee640023d18fa08341bf209a42352d7d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_d96e5a74da7f9b204f3dfad6d33d2ab29f860f77f5348487f4ef5276f4262311",
+      "type": "SHA256",
+      "name": "d96e5a74da7f9b204f3dfad6d33d2ab29f860f77f5348487f4ef5276f4262311",
+      "normalized_name": "d96e5a74da7f9b204f3dfad6d33d2ab29f860f77f5348487f4ef5276f4262311",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "d96e5a74da7f9b204f3dfad6d33d2ab29f860f77f5348487f4ef5276f4262311",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_daf7d349b1b12d9cf2014384a70d5826ca3be6d05df13f7cb1af5b5f5db68d54",
+      "type": "SHA256",
+      "name": "daf7d349b1b12d9cf2014384a70d5826ca3be6d05df13f7cb1af5b5f5db68d54",
+      "normalized_name": "daf7d349b1b12d9cf2014384a70d5826ca3be6d05df13f7cb1af5b5f5db68d54",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_39",
+        "ev_52"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "daf7d349b1b12d9cf2014384a70d5826ca3be6d05df13f7cb1af5b5f5db68d54",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_52",
+      "supporting_evidence_ids": [
+        "ev_39"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_dc21527bd925a7dc95b84167c162747069feb2f4e2c1645661a27e63dff8c326",
+      "type": "SHA256",
+      "name": "dc21527bd925a7dc95b84167c162747069feb2f4e2c1645661a27e63dff8c326",
+      "normalized_name": "dc21527bd925a7dc95b84167c162747069feb2f4e2c1645661a27e63dff8c326",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_50"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "dc21527bd925a7dc95b84167c162747069feb2f4e2c1645661a27e63dff8c326",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_50",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f778ca5942d3b762367be1fd85cf7add557d26794fad187c4511b3318aff5cfd",
+      "type": "SHA256",
+      "name": "f778ca5942d3b762367be1fd85cf7add557d26794fad187c4511b3318aff5cfd",
+      "normalized_name": "f778ca5942d3b762367be1fd85cf7add557d26794fad187c4511b3318aff5cfd",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "f778ca5942d3b762367be1fd85cf7add557d26794fad187c4511b3318aff5cfd",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fb836d9897f3e8b1a59ebc00f59486f4c7aec526a9e83b171fd3e8657aadd1a1",
+      "type": "SHA256",
+      "name": "fb836d9897f3e8b1a59ebc00f59486f4c7aec526a9e83b171fd3e8657aadd1a1",
+      "normalized_name": "fb836d9897f3e8b1a59ebc00f59486f4c7aec526a9e83b171fd3e8657aadd1a1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_40",
+        "ev_54"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "fb836d9897f3e8b1a59ebc00f59486f4c7aec526a9e83b171fd3e8657aadd1a1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_40"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_fc391f843b265e60de2f44f108b34e64c358f8362507a8c6e2e4c8c689fcdf67",
+      "type": "SHA256",
+      "name": "fc391f843b265e60de2f44f108b34e64c358f8362507a8c6e2e4c8c689fcdf67",
+      "normalized_name": "fc391f843b265e60de2f44f108b34e64c358f8362507a8c6e2e4c8c689fcdf67",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_38",
+        "ev_51"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "value": "fc391f843b265e60de2f44f108b34e64c358f8362507a8c6e2e4c8c689fcdf67",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_51",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_iodonk18.dll",
+      "type": "File",
+      "name": "iodonk18.dll",
+      "normalized_name": "iodonk18.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "file_name": "iodonk18.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "family_hints": [
+        "RUNDLL32",
+        "USERPROFILE",
+        "MSDN",
+        "IDLE"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_loadCryptRunner.dll",
+      "type": "File",
+      "name": "loadCryptRunner.dll",
+      "normalized_name": "loadCryptRunner.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_44"
+      ],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "file_name": "loadCryptRunner.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_44",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_victim_Ukrainian_Organizations",
+      "type": "Victim",
+      "name": "Ukrainian Organizations",
+      "normalized_name": "Ukrainian Organizations",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [],
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "type": "alias_of",
+      "head_id": "ent_malware_esmina.dll",
+      "tail_id": "ent_malware_Esmina",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22",
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_22",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Operation_BugDrop",
+      "tail_id": "ent_malware_BugDrop",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "primary_evidence_id": "ev_3",
+      "direction": "head_to_tail",
+      "extraction_method": "llm_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "headline_actor_tool",
+        "schema_version": "v3.0-evidence-reasoner",
+        "evidence_span": "Operation BugDrop is a well-organized operation that employs sophisticated malware and appears to be backed by an organization with substantial resources."
+      },
+      "head": {
+        "id": "ent_campaign_Operation_BugDrop",
+        "type": "Campaign",
+        "name": "Operation BugDrop",
+        "normalized_name": "Operation BugDrop",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [
+          "ev_10",
+          "ev_36",
+          "ev_7",
+          "ev_9",
+          "ev_3"
+        ],
+        "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": "ev_7",
+        "supporting_evidence_ids": [
+          "ev_9",
+          "ev_10",
+          "ev_36"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_BugDrop",
+        "type": "Malware",
+        "name": "BugDrop",
+        "normalized_name": "BugDrop",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+        "family": "BugDrop",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Operation_Targeting_Ukrainian_Organizations",
+      "tail_id": "ent_malware_BugDrop",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_campaign_Operation_Targeting_Ukrainian_Organizations",
+        "type": "Campaign",
+        "name": "Operation Targeting Ukrainian Organizations",
+        "normalized_name": "Operation Targeting Ukrainian Organizations",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [],
+        "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": null,
+        "supporting_evidence_ids": [],
+        "needs_review": true,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_BugDrop",
+        "type": "Malware",
+        "name": "BugDrop",
+        "normalized_name": "BugDrop",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+        "family": "BugDrop",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "uses_malware",
+      "summary": "Operation BugDrop uses_malware BugDrop",
+      "evidence_ids": [
+        "ev_3"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "uses_malware",
+      "summary": "Operation Targeting Ukrainian Organizations uses_malware BugDrop",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "Operation BugDrop is a well-organized operation that employs sophisticated malware and appears to be backed by an organization with substantial resources.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s3"
+      },
+      "text": "Operation BugDrop uses a free web hosting site to store the core malware module that gets downloaded to infected victims.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s5"
+      },
+      "text": "Operation BugDrop infects its victims using targeted email phishing attacks and malicious macros embedded in Microsoft Office attachments.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s6"
+      },
+      "text": "How CyberX Investigated Operation BugDrop CyberX’s Threat Intelligence Research team initially discovered Operation BugDrop malware in the wild.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s2"
+      },
+      "text": "Dropper – Stage 2 – Downloader for Main Module Internal name: esmina.dll",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "Name: P***** Email: P********@mail.ru 8.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s10"
+      },
+      "text": "Conclusions 1) Operation BugDrop was a cyber-reconnaissance mission; its goal was to gather intelligence about targets in various domains including critical infrastructure, media, and scientific research.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "Appendix Hashes (SHA-256) Plugins Keylogger: fc391f843b265e60de2f44f108b34e64c358f8362507a8c6e2e4c8c689fcdf67 943daa88fe4b5930cc627f14bf422def6bab6d738a4cafd3196f71f1b7c72539 bbe8394eb3b752741df0b30e1d1487eeda7e94e0223055771311939d27d52f78 6c479da2e2cc296c18f21ddecc787562f600088bd37cc2154c467b0af2621937 01aab8341e1ef1a8305cf458db714a0392016432c192332e1cd9f7479507027f",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "File Collector 06dcf3dc4eab45c7bd5794aafe4d3f72bb75bcfb36bdbf2ba010a5d108b096dc daf7d349b1b12d9cf2014384a70d5826ca3be6d05df13f7cb1af5b5f5db68d54 24f56ba4d779b913fefed80127e9243303307728ebec85bdb5a61adc50df9eb6 a65e79bdf971631d2097b18e43af9c25f007ae9c5baaa9bda1c470af20e1347c",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "Browser Data Collector: fb836d9897f3e8b1a59ebc00f59486f4c7aec526a9e83b171fd3e8657aadd1a1 966804ac9bc376bede3e1432e5800dd2188decd22c358e6f913fbaaaa5a6114d 296c738805040b5b02eae3cc2b114c27b4fb73fa58bc877b12927492c038e27c 61244d5f47bb442a32c99c9370b53ff9fc2ecb200494c144e8b55069bc2fa166 cae95953c7c4c8219325074addc9432dee640023d18fa08341bf209a42352d7d a0400125d98f63feecac6cb4c47ed2e0027bd89c111981ea702f767a6ce2ef75",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r2"
+      },
+      "text": "Internal name: loadCryptRunner.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "Internal name: esmina.dll",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "RUNDLL32 “%USERPROFILE%\\AppData\\Roaming\\Microsoft\\MSDN\\iodonk18.dll”, IDLE",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "Decoy Document: 997841515222dbfa65d1aea79e9e6a89a0142819eaeec3467c31fa169e57076a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "Dropper: f778ca5942d3b762367be1fd85cf7add557d26794fad187c4511b3318aff5cfd",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_50",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "Screenshot Collector: 7d97008b00756905195e9fc008bee7c1b398a940e00b0bd4c56920c875f28bfe dc21527bd925a7dc95b84167c162747069feb2f4e2c1645661a27e63dff8c326 7e4b2edf01e577599d3a2022866512d7dd9d2da7846b8d3eb8cea7507fb6c92a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "Keylogger: fc391f843b265e60de2f44f108b34e64c358f8362507a8c6e2e4c8c689fcdf67 943daa88fe4b5930cc627f14bf422def6bab6d738a4cafd3196f71f1b7c72539 bbe8394eb3b752741df0b30e1d1487eeda7e94e0223055771311939d27d52f78 6c479da2e2cc296c18f21ddecc787562f600088bd37cc2154c467b0af2621937 01aab8341e1ef1a8305cf458db714a0392016432c192332e1cd9f7479507027f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r5"
+      },
+      "text": "File Collector 06dcf3dc4eab45c7bd5794aafe4d3f72bb75bcfb36bdbf2ba010a5d108b096dc daf7d349b1b12d9cf2014384a70d5826ca3be6d05df13f7cb1af5b5f5db68d54 24f56ba4d779b913fefed80127e9243303307728ebec85bdb5a61adc50df9eb6 a65e79bdf971631d2097b18e43af9c25f007ae9c5baaa9bda1c470af20e1347c",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_53",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r6"
+      },
+      "text": "USB File Collector: a47e6fab82ac654332f4e56efcc514cb2b45c5a126b9ffcd2c84a842fb0283a2 07c25eebdbd16f176d0907e656224d6a4091eb000419823f989b387b407bfd29 3c0f18157f30414bcfed7a138066bc25ef44a24c5f1e56abb0e2ab5617a91000",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r7"
+      },
+      "text": "Browser Data Collector: fb836d9897f3e8b1a59ebc00f59486f4c7aec526a9e83b171fd3e8657aadd1a1 966804ac9bc376bede3e1432e5800dd2188decd22c358e6f913fbaaaa5a6114d 296c738805040b5b02eae3cc2b114c27b4fb73fa58bc877b12927492c038e27c 61244d5f47bb442a32c99c9370b53ff9fc2ecb200494c144e8b55069bc2fa166 cae95953c7c4c8219325074addc9432dee640023d18fa08341bf209a42352d7d a0400125d98f63feecac6cb4c47ed2e0027bd89c111981ea702f767a6ce2ef75",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r8"
+      },
+      "text": "Microphone: 1f5e663882fa6c96eb6aa952b6fa45542c2151d6a9191c1d5d1deb9e814e5a50 912d54589b28ee822c0442b664b2a9f05055ea445c0ec28f3352b227dc6aa2db 691afe0547bd0ab6c955a8ec93febecc298e78342f78b3dd1c8242948c051de6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r9"
+      },
+      "text": "Computer Info Collector: c9bf4443135c080fb81ab79910c9cfb2d36d1027c7bf3e29ee2b194168a463a7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r1"
+      },
+      "text": "5383e18c66271b210f93bee8cc145b823786637b2b8660bb32475dbe600be46e d96e5a74da7f9b204f3dfad6d33d2ab29f860f77f5348487f4ef5276f4262311",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb58"
+      },
+      "text": "cyberx-labs.com/en/blog/operation-bugdrop-cyberx-discovers-large-scale-cyber-reconnaissance-operation/",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb59"
+      },
+      "text": "Reconnaissance Operation Targeting Ukrainian Organizations cyberx-labs.com/en/blog/operation-bugdrop-cyberx-discovers-large-scale-cyber-reconnaissance-operation/ CyberX has discove",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb60"
+      },
+      "text": "e icon itself is a meme that jokes about Ukrainians (http://s017.radikal.ru/i424/1609/83/0c3a23de7967.jpg).",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb61"
+      },
+      "text": "e icon itself is a meme that jokes about Ukrainians (http://s017.radikal.ru/i424/1609/83/0c3a23de7967.jpg). Dropper icon 6/11",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb62"
+      },
+      "text": "(http://sevastopol.su/world.php?id=90195).",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule_backfill",
+        "sentence_id": "p6_rb63"
+      },
+      "text": "der EXE was copied from a Russian social media site (http://sevastopol.su/world.php?id=90195). The icon itself is a meme that jokes about Ukrainians (http://s017.radikal.ru/i424/16",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb64"
+      },
+      "text": "windows-problem-reporting.site88.net [Note: Do not visit this malicious site.]",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Cyberx_Operation-BugDrop(02-15-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule_backfill",
+        "sentence_id": "p8_rb65"
+      },
+      "text": "s hosted on a free web hosting site with the following URL: windows-problem-reporting.site88.net [Note: Do not visit this malicious site.] We were unable to find any information ab",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_BugDrop",
+        "ent_campaign_Operation_Targeting_Ukrainian_Organizations"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_BugDrop"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_9",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_BugDrop"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_22",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Esmina",
+        "ent_file_esmina.dll",
+        "ent_malware_esmina.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_45",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Esmina",
+        "ent_file_esmina.dll",
+        "ent_malware_esmina.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_3",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_BugDrop"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_10",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_BugDrop"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_36",
+      "page": 9,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_BugDrop"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_BugDrop",
+        "ent_campaign_Operation_Targeting_Ukrainian_Organizations"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

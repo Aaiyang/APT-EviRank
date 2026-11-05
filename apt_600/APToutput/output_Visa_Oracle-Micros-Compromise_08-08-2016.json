@@ -1,0 +1,691 @@
+{
+  "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+  "title": "Visa Security Alert AUGUST 2016",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Visa_Oracle-Micros-Compromise(08-08-2016).pdf",
+    "file_path": "/root/APTtext/Visa_Oracle-Micros-Compromise(08-08-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 5874,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_MalumPOS",
+      "type": "Malware",
+      "name": "MalumPOS",
+      "normalized_name": "MalumPOS",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_3",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "family": "MalumPOS",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Distribution",
+      "type": "Campaign",
+      "name": "Distribution",
+      "normalized_name": "Distribution",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_visa.com",
+      "type": "Domain",
+      "name": "visa.com",
+      "normalized_name": "visa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "visa.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_email_paymentintelligence_visa.com",
+      "type": "Email",
+      "name": "paymentintelligence@visa.com",
+      "normalized_name": "paymentintelligence@visa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_7"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "paymentintelligence@visa.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_7",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_USFraudControl_visa.com",
+      "type": "Email",
+      "name": "USFraudControl@visa.com",
+      "normalized_name": "USFraudControl@visa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_12",
+        "ev_13"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "USFraudControl@visa.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_email_VIFraudControl_visa.com",
+      "type": "Email",
+      "name": "VIFraudControl@visa.com",
+      "normalized_name": "VIFraudControl@visa.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "VIFraudControl@visa.com",
+      "ioc_type": "email",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_13",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "contact_address"
+    },
+    {
+      "id": "ent_ioc_sha1_2cf2f41d2454b59641a84f8180fd7e32135a0dbc",
+      "type": "SHA1",
+      "name": "2cf2f41d2454b59641a84f8180fd7e32135a0dbc",
+      "normalized_name": "2cf2f41d2454b59641a84f8180fd7e32135a0dbc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "2cf2f41d2454b59641a84f8180fd7e32135a0dbc",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_757ae5eed0c5e229ad9bae586f1281b5de053767",
+      "type": "SHA1",
+      "name": "757ae5eed0c5e229ad9bae586f1281b5de053767",
+      "normalized_name": "757ae5eed0c5e229ad9bae586f1281b5de053767",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "757ae5eed0c5e229ad9bae586f1281b5de053767",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_798bc2d91293c18af7e99ba7c9a4fd3010051741",
+      "type": "SHA1",
+      "name": "798bc2d91293c18af7e99ba7c9a4fd3010051741",
+      "normalized_name": "798bc2d91293c18af7e99ba7c9a4fd3010051741",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "798bc2d91293c18af7e99ba7c9a4fd3010051741",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_90e85b471b64667dbcde3aee3fa504c0d4b0ad35",
+      "type": "SHA1",
+      "name": "90e85b471b64667dbcde3aee3fa504c0d4b0ad35",
+      "normalized_name": "90e85b471b64667dbcde3aee3fa504c0d4b0ad35",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "90e85b471b64667dbcde3aee3fa504c0d4b0ad35",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d0b3562d868694fd1147e15483f88f3a78ebedfb",
+      "type": "SHA1",
+      "name": "d0b3562d868694fd1147e15483f88f3a78ebedfb",
+      "normalized_name": "d0b3562d868694fd1147e15483f88f3a78ebedfb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "d0b3562d868694fd1147e15483f88f3a78ebedfb",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a",
+      "type": "SHA1",
+      "name": "f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a",
+      "normalized_name": "f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_fe713f9bb90b999250c3b6a3bba965d603de32a3",
+      "type": "SHA1",
+      "name": "fe713f9bb90b999250c3b6a3bba965d603de32a3",
+      "normalized_name": "fe713f9bb90b999250c3b6a3bba965d603de32a3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "value": "fe713f9bb90b999250c3b6a3bba965d603de32a3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_Mnv.exe",
+      "type": "File",
+      "name": "Mnv.exe",
+      "normalized_name": "Mnv.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "file_name": "Mnv.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MICROS",
+        "VISAD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Nvsvc.exe",
+      "type": "File",
+      "name": "Nvsvc.exe",
+      "normalized_name": "Nvsvc.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "file_name": "Nvsvc.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MICROS",
+        "VISAD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Rdp.exe",
+      "type": "File",
+      "name": "Rdp.exe",
+      "normalized_name": "Rdp.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "file_name": "Rdp.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MICROS",
+        "VISAD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Svchost.exe",
+      "type": "File",
+      "name": "Svchost.exe",
+      "normalized_name": "Svchost.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_9"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "file_name": "Svchost.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_9",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "abused_legitimate_file",
+      "is_likely_legitimate": true,
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_Winini.exe",
+      "type": "File",
+      "name": "Winini.exe",
+      "normalized_name": "Winini.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_11",
+        "ev_5"
+      ],
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "file_name": "Winini.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_11",
+      "supporting_evidence_ids": [
+        "ev_5"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "MICROS",
+        "VISAD"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "MalumPOS is described as simple and non-obfuscated malware, written in the Delphi programming language.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": " Scan networks for IOCs linked to MalumPOS: File Name File Name Description Mnv.exe 757ae5eed0c5e229ad9bae586f1281b5de053767 Oracle Forms process, MICROS 9700 VISAD Driver Nvsvc.exe 2cf2f41d2454b59641a84f8180fd7e32135a0dbc MICROS 9700 SSL GW Nvsvc.exe f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a Oracle Forms process, Web- based PoS systems Nvsvc.exe 798bc2d91293c18af7e99ba7c9a4fd3010051741 Accessed through MicrosoftTM, Windows Internet Explorer, Shift4 Corporation Universal Nvsvc.exe 90e85b471b64667dbcde3aee3fa504c0d4b0ad35 Transaction Gateway, PAR Springer-Miller Systems Rdp.exe fe713f9bb90b999250c3b6a3bba965d603de32a3 Looks like a test Winini.exe d0b3562d868694fd1147e15483f88f3a78ebedfb Client stub  Additionally, Visa recommends the following best practices to reduce the risk of exposure:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_7",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "For questions and information please contact, paymentintelligence@visa.com To report a data breach, contact Visa Fraud Control:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "– Psexec file – Files with .bin extension (located in \\All users\\%AppData%\\Mozilla\\ or c:\\ProgramData\\Mozilla\\) – Svchost.exe file (located in Windows\\System32\\com\\catalogue\\) – Svchost.exefile (located in C:\\ProgramData\\Mozilla\\svchost.exe)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_11",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule",
+        "sentence_id": "p3_r1"
+      },
+      "text": " Scan networks for IOCs linked to MalumPOS: File Name File Name Description Mnv.exe 757ae5eed0c5e229ad9bae586f1281b5de053767 Oracle Forms process, MICROS 9700 VISAD Driver Nvsvc.exe 2cf2f41d2454b59641a84f8180fd7e32135a0dbc MICROS 9700 SSL GW Nvsvc.exe f728bf7d6dbfc4c7bea21d6a3fd0b88f4fe52a4a Oracle Forms process, Web- based PoS systems Nvsvc.exe 798bc2d91293c18af7e99ba7c9a4fd3010051741 Accessed through MicrosoftTM, Windows Internet Explorer, Shift4 Corporation Universal Nvsvc.exe 90e85b471b64667dbcde3aee3fa504c0d4b0ad35 Transaction Gateway, PAR Springer-Miller Systems Rdp.exe fe713f9bb90b999250c3b6a3bba965d603de32a3 Looks like a test Winini.exe d0b3562d868694fd1147e15483f88f3a78ebedfb Client stub  Additionally, Visa recommends the following best practices to reduce the risk of exposure:",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb12"
+      },
+      "text": "U.S. and Canada: USFraudControl@visa.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Visa_Oracle-Micros-Compromise(08-08-2016)",
+      "locator": {
+        "page": 3,
+        "section": "rule_backfill",
+        "sentence_id": "p3_rb13"
+      },
+      "text": "t/Africa Region: VIFraudControl@visa.com  U.S. and Canada: USFraudControl@visa.com",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_5",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_MalumPOS",
+        "ent_file_Mnv.exe",
+        "ent_file_Nvsvc.exe",
+        "ent_file_Rdp.exe",
+        "ent_file_Winini.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_11",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_malware_MalumPOS",
+        "ent_file_Mnv.exe",
+        "ent_file_Nvsvc.exe",
+        "ent_file_Rdp.exe",
+        "ent_file_Winini.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_13",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_visa.com",
+        "ent_email_USFraudControl_visa.com",
+        "ent_email_VIFraudControl_visa.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_7",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_visa.com",
+        "ent_email_paymentintelligence_visa.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_12",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_domain_visa.com",
+        "ent_email_USFraudControl_visa.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

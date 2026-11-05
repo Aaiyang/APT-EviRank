@@ -1,0 +1,1299 @@
+{
+  "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+  "title": "Reverse-engineering DUBNIUM",
+  "source": null,
+  "published_date": "2016/06/09",
+  "report_metadata": {
+    "file_name": "Microsoft_DUBNIUM(06-09-2016).pdf",
+    "file_path": "/root/APTtext/Microsoft_DUBNIUM(06-09-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 16759,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_DUBNIUM",
+      "type": "Malware",
+      "name": "DUBNIUM",
+      "normalized_name": "DUBNIUM",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "family": "DUBNIUM",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Mshta",
+      "type": "Malware",
+      "name": "Mshta",
+      "normalized_name": "Mshta",
+      "aliases": [
+        "mshta.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_57",
+        "ev_58",
+        "ev_59"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_46",
+        "ev_57",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "DUBNIUM"
+      ],
+      "derived_from_file_id": "ent_file_mshta.exe",
+      "family": "Mshta",
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_mshta.exe",
+      "type": "Malware",
+      "name": "mshta.exe",
+      "normalized_name": "mshta.exe",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_46",
+        "ev_57",
+        "ev_58"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted",
+      "alias_for": "ent_malware_Mshta"
+    },
+    {
+      "id": "ent_malware_mshta.exe",
+      "type": "Malware",
+      "name": "mshta.exe",
+      "normalized_name": "mshta.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_46",
+        "ev_57",
+        "ev_58",
+        "ev_59"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "file_name": "mshta.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_59",
+      "supporting_evidence_ids": [
+        "ev_46",
+        "ev_57",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "DUBNIUM"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_ioc_sha1_09b022ef88b825041b67da9c9a2588e962817f6d",
+      "type": "SHA1",
+      "name": "09b022ef88b825041b67da9c9a2588e962817f6d",
+      "normalized_name": "09b022ef88b825041b67da9c9a2588e962817f6d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_63"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "09b022ef88b825041b67da9c9a2588e962817f6d",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_0ac65c60ad6f23b2b2f208e5ab8be0372371e4b3",
+      "type": "SHA1",
+      "name": "0ac65c60ad6f23b2b2f208e5ab8be0372371e4b3",
+      "normalized_name": "0ac65c60ad6f23b2b2f208e5ab8be0372371e4b3",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_69"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "0ac65c60ad6f23b2b2f208e5ab8be0372371e4b3",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_69",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1949a9753df57eec586aeb6b4763f92c0ca6a895",
+      "type": "SHA1",
+      "name": "1949a9753df57eec586aeb6b4763f92c0ca6a895",
+      "normalized_name": "1949a9753df57eec586aeb6b4763f92c0ca6a895",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_70"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "1949a9753df57eec586aeb6b4763f92c0ca6a895",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_70",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_259f0d98e96602223d7694852137d6312af78967",
+      "type": "SHA1",
+      "name": "259f0d98e96602223d7694852137d6312af78967",
+      "normalized_name": "259f0d98e96602223d7694852137d6312af78967",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_71"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "259f0d98e96602223d7694852137d6312af78967",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_71",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_35847c56e3068a98cff85088005ba1a611b6261f",
+      "type": "SHA1",
+      "name": "35847c56e3068a98cff85088005ba1a611b6261f",
+      "normalized_name": "35847c56e3068a98cff85088005ba1a611b6261f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "35847c56e3068a98cff85088005ba1a611b6261f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4627cff4cd90dc47df5c4d53480101bdc1d46720",
+      "type": "SHA1",
+      "name": "4627cff4cd90dc47df5c4d53480101bdc1d46720",
+      "normalized_name": "4627cff4cd90dc47df5c4d53480101bdc1d46720",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_72"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "4627cff4cd90dc47df5c4d53480101bdc1d46720",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_72",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_561db51eba971ab4afe0a811361e7a678b8f8129",
+      "type": "SHA1",
+      "name": "561db51eba971ab4afe0a811361e7a678b8f8129",
+      "normalized_name": "561db51eba971ab4afe0a811361e7a678b8f8129",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_73"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "561db51eba971ab4afe0a811361e7a678b8f8129",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_73",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6ccba071425ba9ed69d5a79bb53ad27541577cb9",
+      "type": "SHA1",
+      "name": "6ccba071425ba9ed69d5a79bb53ad27541577cb9",
+      "normalized_name": "6ccba071425ba9ed69d5a79bb53ad27541577cb9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_81"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "6ccba071425ba9ed69d5a79bb53ad27541577cb9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_81",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_6e74da35695e7838456f3f719d6eb283d4198735",
+      "type": "SHA1",
+      "name": "6e74da35695e7838456f3f719d6eb283d4198735",
+      "normalized_name": "6e74da35695e7838456f3f719d6eb283d4198735",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_74"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "6e74da35695e7838456f3f719d6eb283d4198735",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_74",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_7f9ecfc95462b5e01e233b64dcedbcf944e97fca",
+      "type": "SHA1",
+      "name": "7f9ecfc95462b5e01e233b64dcedbcf944e97fca",
+      "normalized_name": "7f9ecfc95462b5e01e233b64dcedbcf944e97fca",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_64"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "7f9ecfc95462b5e01e233b64dcedbcf944e97fca",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8ff7f64356f7577623bf424f601c7fa0f720e5fb",
+      "type": "SHA1",
+      "name": "8ff7f64356f7577623bf424f601c7fa0f720e5fb",
+      "normalized_name": "8ff7f64356f7577623bf424f601c7fa0f720e5fb",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75",
+        "ev_80"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "8ff7f64356f7577623bf424f601c7fa0f720e5fb",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_80",
+      "supporting_evidence_ids": [
+        "ev_75"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_a3bcaecf62d9bc92e48b703750b78816bc38dbe8",
+      "type": "SHA1",
+      "name": "a3bcaecf62d9bc92e48b703750b78816bc38dbe8",
+      "normalized_name": "a3bcaecf62d9bc92e48b703750b78816bc38dbe8",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_76"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "a3bcaecf62d9bc92e48b703750b78816bc38dbe8",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_76",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_aee8d6f39e4286506cee0c849ede01d6f42110cc",
+      "type": "SHA1",
+      "name": "aee8d6f39e4286506cee0c849ede01d6f42110cc",
+      "normalized_name": "aee8d6f39e4286506cee0c849ede01d6f42110cc",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_67"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "aee8d6f39e4286506cee0c849ede01d6f42110cc",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_67",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b42ca359fe942456de14283fd2e199113c8789e6",
+      "type": "SHA1",
+      "name": "b42ca359fe942456de14283fd2e199113c8789e6",
+      "normalized_name": "b42ca359fe942456de14283fd2e199113c8789e6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_68"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "b42ca359fe942456de14283fd2e199113c8789e6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_68",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_c9cd559ed73a0b066b48090243436103eb52cc45",
+      "type": "SHA1",
+      "name": "c9cd559ed73a0b066b48090243436103eb52cc45",
+      "normalized_name": "c9cd559ed73a0b066b48090243436103eb52cc45",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_77"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "c9cd559ed73a0b066b48090243436103eb52cc45",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_77",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_cad21e4ae48f2f1ba91faa9f875816f83737bcaf",
+      "type": "SHA1",
+      "name": "cad21e4ae48f2f1ba91faa9f875816f83737bcaf",
+      "normalized_name": "cad21e4ae48f2f1ba91faa9f875816f83737bcaf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_65"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "cad21e4ae48f2f1ba91faa9f875816f83737bcaf",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_65",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_dc3ab3f6af87405d889b6af2557c835d7b7ed588",
+      "type": "SHA1",
+      "name": "dc3ab3f6af87405d889b6af2557c835d7b7ed588",
+      "normalized_name": "dc3ab3f6af87405d889b6af2557c835d7b7ed588",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_51",
+        "ev_78"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "dc3ab3f6af87405d889b6af2557c835d7b7ed588",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_78",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_df793d097017b90bc9d7da9a85f929422004f6b6",
+      "type": "SHA1",
+      "name": "df793d097017b90bc9d7da9a85f929422004f6b6",
+      "normalized_name": "df793d097017b90bc9d7da9a85f929422004f6b6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_79"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "df793d097017b90bc9d7da9a85f929422004f6b6",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_79",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_ebccb1e12c88d838db15957366cee93c079b5a8e",
+      "type": "SHA1",
+      "name": "ebccb1e12c88d838db15957366cee93c079b5a8e",
+      "normalized_name": "ebccb1e12c88d838db15957366cee93c079b5a8e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_66"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "value": "ebccb1e12c88d838db15957366cee93c079b5a8e",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_66",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_360sd.exe",
+      "type": "File",
+      "name": "360sd.exe",
+      "normalized_name": "360sd.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_55"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "file_name": "360sd.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "QQPCRTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_360tray.exe",
+      "type": "File",
+      "name": "360tray.exe",
+      "normalized_name": "360tray.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_55"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "file_name": "360tray.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "QQPCRTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_QQPCRTP.exe",
+      "type": "File",
+      "name": "QQPCRTP.exe",
+      "normalized_name": "QQPCRTP.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30",
+        "ev_55"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "file_name": "QQPCRTP.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "QQPCRTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_QQPCTray.exe",
+      "type": "File",
+      "name": "QQPCTray.exe",
+      "normalized_name": "QQPCTray.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_30",
+        "ev_55"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "file_name": "QQPCTray.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_30"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "QQPCRTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_ZhuDongFangYu.exe",
+      "type": "File",
+      "name": "ZhuDongFangYu.exe",
+      "normalized_name": "ZhuDongFangYu.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_31",
+        "ev_55"
+      ],
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "file_name": "ZhuDongFangYu.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_55",
+      "supporting_evidence_ids": [
+        "ev_31"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "QQPCRTP"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_mshta.exe",
+      "tail_id": "ent_malware_Mshta",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46",
+        "ev_57"
+      ],
+      "primary_evidence_id": "ev_46",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s4"
+      },
+      "text": "For example, QQPCRTP.exe and QQPCTray.exe are from a messaging software by a company based in China.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s5"
+      },
+      "text": "Also, ZhuDongFangYu.exe , 360tray.exe and 360sd.exe process names are used by security products that originate from China.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s12"
+      },
+      "text": "As you can see from the figures below, it uses process- related documented and undocumented APIs to retrieve file handles from the mshta.exe process, resolves their names and uses filename heuristics to check if it is a response file or not.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "In this blog, we’ll be using sample SHA1: dc3ab3f6af87405d889b6af2557c835d7b7ed588 in our examples and analysis.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 7,
+        "section": "rule",
+        "sentence_id": "p7_r1"
+      },
+      "text": "One other very interesting fact is the presence of process names that are associated with software mainly used in China. For example, QQPCRTP.exe and QQPCTray.exe are from a messaging software by a company based in China. Also, ZhuDongFangYu.exe , 360tray.exe and 360sd.exe process names are used by security products that originate from China. From the software it detects, we get the impression that the malware is focusing on a specific geolocation as its target.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "The way the first stage payload downloads the second payload is both interesting and unique. It doesn’t access the Internet directly from the code, but it uses the system- installed mshta.exe binary. Mshta.exe is often used by malware to run VBscript for malicious purposes, but using it for downloading a general purpose payload is not so common. This is because mshta.exe doesn’t support downloading URL contents directly to an arbitrary location.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "DUBNIUM spawns the mshta.exe process with the URL to download and waits for some time, after that it opens the mshta.exe process and goes through open file handles to find a handle for the temporary file that is associated with the downloaded contents.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "As you can see from the figures below, it uses process- related documented and undocumented APIs to retrieve file handles from the mshta.exe process, resolves their names and uses filename heuristics to check if it is a response file or not.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "35847c56e3068a98cff85088005ba1a611b6261f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "09b022ef88b825041b67da9c9a2588e962817f6d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r5"
+      },
+      "text": "7f9ecfc95462b5e01e233b64dcedbcf944e97fca",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r6"
+      },
+      "text": "cad21e4ae48f2f1ba91faa9f875816f83737bcaf",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_66",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r7"
+      },
+      "text": "ebccb1e12c88d838db15957366cee93c079b5a8e",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_67",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r1"
+      },
+      "text": "aee8d6f39e4286506cee0c849ede01d6f42110cc",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_68",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r2"
+      },
+      "text": "b42ca359fe942456de14283fd2e199113c8789e6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "0ac65c60ad6f23b2b2f208e5ab8be0372371e4b3",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_70",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r4"
+      },
+      "text": "1949a9753df57eec586aeb6b4763f92c0ca6a895",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_71",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r5"
+      },
+      "text": "259f0d98e96602223d7694852137d6312af78967",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r6"
+      },
+      "text": "4627cff4cd90dc47df5c4d53480101bdc1d46720",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_73",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r7"
+      },
+      "text": "561db51eba971ab4afe0a811361e7a678b8f8129",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_74",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r8"
+      },
+      "text": "6e74da35695e7838456f3f719d6eb283d4198735",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r9"
+      },
+      "text": "8ff7f64356f7577623bf424f601c7fa0f720e5fb",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_76",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r10"
+      },
+      "text": "a3bcaecf62d9bc92e48b703750b78816bc38dbe8",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r11"
+      },
+      "text": "c9cd559ed73a0b066b48090243436103eb52cc45",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_78",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r12"
+      },
+      "text": "dc3ab3f6af87405d889b6af2557c835d7b7ed588",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_79",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r13"
+      },
+      "text": "df793d097017b90bc9d7da9a85f929422004f6b6",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_80",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r14"
+      },
+      "text": "8ff7f64356f7577623bf424f601c7fa0f720e5fb",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_81",
+      "evidence_type": "report_text",
+      "report_id": "Microsoft_DUBNIUM(06-09-2016)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r15"
+      },
+      "text": "6ccba071425ba9ed69d5a79bb53ad27541577cb9",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_46",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Mshta",
+        "ent_malware_mshta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_57",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Mshta",
+        "ent_malware_mshta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_59",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_Mshta",
+        "ent_malware_mshta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_55",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_360sd.exe",
+        "ent_file_360tray.exe",
+        "ent_file_QQPCRTP.exe",
+        "ent_file_QQPCTray.exe",
+        "ent_file_ZhuDongFangYu.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_58",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_DUBNIUM",
+        "ent_malware_Mshta",
+        "ent_malware_mshta.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_31",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_360sd.exe",
+        "ent_file_360tray.exe",
+        "ent_file_ZhuDongFangYu.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_30",
+      "page": 7,
+      "candidate_entity_ids": [
+        "ent_file_QQPCRTP.exe",
+        "ent_file_QQPCTray.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

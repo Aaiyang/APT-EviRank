@@ -1,0 +1,120 @@
+{
+  "report_id": "Case_Study_Operation_Aurora_V11",
+  "title": "C ASE S TUDY : O PERATION A URORA",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Case_Study_Operation_Aurora_V11.pdf",
+    "file_path": "/root/APTtext/Case_Study_Operation_Aurora_V11.pdf",
+    "source_type": "pdf",
+    "char_length": 9206,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_PERATION",
+      "type": "Malware",
+      "name": "PERATION",
+      "normalized_name": "PERATION",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Case_Study_Operation_Aurora_V11",
+      "family": "PERATION",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_URORA",
+      "type": "Malware",
+      "name": "URORA",
+      "normalized_name": "URORA",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Case_Study_Operation_Aurora_V11",
+      "family": "URORA",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Aurora",
+      "type": "Campaign",
+      "name": "Operation Aurora",
+      "normalized_name": "Operation Aurora",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_3",
+        "ev_6"
+      ],
+      "report_id": "Case_Study_Operation_Aurora_V11",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Case_Study_Operation_Aurora_V11",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s3"
+      },
+      "text": "The fact that the files and keys associated with Operation Aurora have random names would guarantee that they would be perceived as anomalous despite the fact that humans might tend to confuse them with legitimate Windows services.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Case_Study_Operation_Aurora_V11",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "For Operation Aurora these correlation functions would group all of the anomalous attributes and then perform a risk assessment on this group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_malware_PERATION",
+        "ent_malware_URORA"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

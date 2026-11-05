@@ -1,0 +1,617 @@
+{
+  "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+  "title": "Attacks on SWIFT Banking System Benefit From Insider Knowledge",
+  "source": null,
+  "published_date": "May 20, 2016",
+  "report_metadata": {
+    "file_name": "McAfee_SWIFT-Insider-Knowledge(05-20-2016).pdf",
+    "file_path": "/root/APTtext/McAfee_SWIFT-Insider-Knowledge(05-20-2016).pdf",
+    "source_type": "pdf",
+    "char_length": 6060,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_Fpdsdk",
+      "type": "Malware",
+      "name": "Fpdsdk",
+      "normalized_name": "Fpdsdk",
+      "aliases": [
+        "fpdsdk.dll"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_34"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "derived_from_file_id": "ent_file_fpdsdk.dll",
+      "family": "Fpdsdk",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Lmutilps32",
+      "type": "Malware",
+      "name": "Lmutilps32",
+      "normalized_name": "Lmutilps32",
+      "aliases": [
+        "Lmutilps32.dat"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_9"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "WRTU"
+      ],
+      "derived_from_file_id": "ent_file_Lmutilps32.dat",
+      "family": "Lmutilps32",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_SWIFT",
+      "type": "Malware",
+      "name": "SWIFT",
+      "normalized_name": "SWIFT",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "family": "SWIFT",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Vietnamese_bank",
+      "type": "Victim",
+      "name": "Vietnamese bank",
+      "normalized_name": "Vietnamese bank",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_5"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_fpdsdk.dll",
+      "type": "File",
+      "name": "fpdsdk.dll",
+      "normalized_name": "fpdsdk.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_16",
+        "ev_34"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "file_name": "fpdsdk.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_16"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_fpdsdk.dll",
+      "type": "Malware",
+      "name": "fpdsdk.dll",
+      "normalized_name": "fpdsdk.dll",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_16",
+        "ev_34"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Fpdsdk"
+    },
+    {
+      "id": "ent_file_Lmutilps32.dat",
+      "type": "File",
+      "name": "Lmutilps32.dat",
+      "normalized_name": "Lmutilps32.dat",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_33",
+        "ev_9"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "file_name": "Lmutilps32.dat",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [
+        "ev_9"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "config_or_data",
+      "family_hints": [
+        "WRTU"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "conflict_demoted"
+    },
+    {
+      "id": "ent_malware_Lmutilps32.dat",
+      "type": "Malware",
+      "name": "Lmutilps32.dat",
+      "normalized_name": "Lmutilps32.dat",
+      "aliases": [],
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_33",
+        "ev_9"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_malware_Lmutilps32"
+    },
+    {
+      "id": "ent_campaign_MD5",
+      "type": "Campaign",
+      "name": "MD5",
+      "normalized_name": "MD5",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_29"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_domain_securingtomorrow.mcafee.com",
+      "type": "Domain",
+      "name": "securingtomorrow.mcafee.com",
+      "normalized_name": "securingtomorrow.mcafee.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "value": "securingtomorrow.mcafee.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "network_ioc"
+    },
+    {
+      "id": "ent_ioc_md5_0b9bf941e2539eaa34756a9e2c0d5343",
+      "type": "MD5",
+      "name": "0b9bf941e2539eaa34756a9e2c0d5343",
+      "normalized_name": "0b9bf941e2539eaa34756a9e2c0d5343",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "value": "0b9bf941e2539eaa34756a9e2c0d5343",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_909e1b840909522fe6ba3d4dfd197d93",
+      "type": "MD5",
+      "name": "909e1b840909522fe6ba3d4dfd197d93",
+      "normalized_name": "909e1b840909522fe6ba3d4dfd197d93",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_31"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "value": "909e1b840909522fe6ba3d4dfd197d93",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_31",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_FoxltReader.exe",
+      "type": "File",
+      "name": "FoxltReader.exe",
+      "normalized_name": "FoxltReader.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_32",
+        "ev_6"
+      ],
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "file_name": "FoxltReader.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_Lmutilps32.dat",
+      "tail_id": "ent_malware_Lmutilps32",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_9"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "type": "alias_of",
+      "head_id": "ent_malware_fpdsdk.dll",
+      "tail_id": "ent_malware_Fpdsdk",
+      "head_type": "Malware",
+      "tail_type": "Malware",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_16",
+        "ev_34"
+      ],
+      "primary_evidence_id": "ev_16",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "May 20, 2016 securingtomorrow.mcafee.com /mcafee-labs/attacks-swift-banking-system-benefit-insider-knowledge This week SWIFT sent another warning without details about another bank, this time in Vietnam that was compromised.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s5"
+      },
+      "text": "In the case of the Vietnamese bank, the file used for the attack is a fake version of the popular PDF reader Foxit.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s6"
+      },
+      "text": "The malware installs itself in the original Foxit installation directory and renames the original file to FoxltReader.exe.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_9",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "As in the case of the Bangladeshi bank, the malware uses the configuration file Lmutilps32.dat, which can also be found in C:\\\\Windows\\\\temp\\WRTU\\.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_16",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s8"
+      },
+      "text": "In the code, we found that the malware uses the original driver fpdsdk.dll from the Foxit SDK to execute the transformation of the files.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s8"
+      },
+      "text": "In this case, investigators can share indicators such as MD5 sums, but because the attackers have customized their malware, sharing would be of little value.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "MD5: 0b9bf941e2539eaa34756a9e2c0d5343 MD5: 909e1b840909522fe6ba3d4dfd197d93",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "In the case of the Vietnamese bank, the file used for the attack is a fake version of the popular PDF reader Foxit. The malware installs itself in the original Foxit installation directory and renames the original file to FoxltReader.exe.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "As in the case of the Bangladeshi bank, the malware uses the configuration file Lmutilps32.dat, which can also be found in C:\\\\Windows\\\\temp\\WRTU\\. This file is also XOR encoded, with the value 0x7C4D5978.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "McAfee_SWIFT-Insider-Knowledge(05-20-2016)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "In the code, we found that the malware uses the original driver fpdsdk.dll from the Foxit SDK to execute the transformation of the files.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_9",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Lmutilps32",
+        "ent_file_Lmutilps32.dat",
+        "ent_malware_Lmutilps32.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_16",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Fpdsdk",
+        "ent_file_fpdsdk.dll",
+        "ent_malware_fpdsdk.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_33",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Lmutilps32",
+        "ent_file_Lmutilps32.dat",
+        "ent_malware_Lmutilps32.dat"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 2,
+      "candidate_entity_ids": [
+        "ent_malware_Fpdsdk",
+        "ent_file_fpdsdk.dll",
+        "ent_malware_fpdsdk.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_SWIFT",
+        "ent_domain_securingtomorrow.mcafee.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

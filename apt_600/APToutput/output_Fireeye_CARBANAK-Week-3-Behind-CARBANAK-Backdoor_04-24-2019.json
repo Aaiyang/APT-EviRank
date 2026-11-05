@@ -1,0 +1,401 @@
+{
+  "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+  "title": "CARBANAK Week Part Three: Behind the CARBANAK Backdoor",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019).pdf",
+    "file_path": "/root/APTtext/Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019).pdf",
+    "source_type": "pdf",
+    "char_length": 14249,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_malware_CARBANAK",
+      "type": "Malware",
+      "name": "CARBANAK",
+      "normalized_name": "CARBANAK",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "family": "CARBANAK",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_ON_IFOBS",
+      "type": "Malware",
+      "name": "ON_IFOBS",
+      "normalized_name": "ON_IFOBS",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "family": "ON_IFOBS",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_tinymet",
+      "type": "Malware",
+      "name": "tinymet",
+      "normalized_name": "tinymet",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_19",
+        "ev_20",
+        "ev_21",
+        "ev_27"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "family": "tinymet",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [
+        "ev_19",
+        "ev_21",
+        "ev_27"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_file_bot.dll",
+      "type": "File",
+      "name": "bot.dll",
+      "normalized_name": "bot.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_10",
+        "ev_32"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "file_name": "bot.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_10"
+      ],
+      "needs_review": false,
+      "file_role": "malicious_component",
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "CARBANAK"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_metsrv.dll",
+      "type": "File",
+      "name": "metsrv.dll",
+      "normalized_name": "metsrv.dll",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_27",
+        "ev_28",
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "file_name": "metsrv.dll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_27",
+        "ev_35",
+        "ev_28"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "type": "executes",
+      "head_id": "ent_malware_CARBANAK",
+      "tail_id": "ent_file_metsrv.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "primary_evidence_id": "ev_34",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "type": "executes",
+      "head_id": "ent_malware_tinymet",
+      "tail_id": "ent_file_metsrv.dll",
+      "head_type": "Malware",
+      "tail_type": "File",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_26"
+      ],
+      "primary_evidence_id": "ev_26",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_execute",
+        "schema_version": "v5.0-event-frame"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "CARBANAK executes metsrv.dll",
+      "evidence_ids": [
+        "ev_34"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "executes",
+      "summary": "tinymet executes metsrv.dll",
+      "evidence_ids": [
+        "ev_26"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "across an executable named bot.dll that happened to be one of the template binaries to be used by the build tool.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s1"
+      },
+      "text": "0x6FD593 (absent) ifobs 0xB22A5A7 Add/update klgconfig updklgcfg 0x4ACAFC3 Upload files to the C2 server findfiles 0xB0603B4 Download and execute shellcode tinymet",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s2"
+      },
+      "text": "The source code in Figure 10 shows the table of commands that CARBANAK understands, and the ifobs command (0x6FD593) is surrounded by an #ifdef, preventing the ifobs code from being compiled into the backdoor unless the ON_IFOBS preprocessor parameter is enabled.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s1"
+      },
+      "text": "Our analysis of the tinymet command ended here, until the binary file named met.plug was discovered.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_26",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s4"
+      },
+      "text": "Figure 13 shows the shellcode decoder and the beginning of the encoded metsrv.dll.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s5"
+      },
+      "text": "The XOR key the shellcode uses is 0xEF47A2D0 which fits with how the five-byte mov edi instruction, decoder, and adjacent metsrv.dll will be laid out in memory.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s6"
+      },
+      "text": "Decoding yielded a copy of metsrv.dll starting at offset 0x1b.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "across an executable named bot.dll that happened to be one of the template binaries to be used by the build tool. Running strings on this binary revealed that most meaningful strings that were specific to the workings of the CARBANAK backdoor were, in fact, sandwiched between “BS” and “ES”, as shown in Figure 5.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r1"
+      },
+      "text": "The end of the file is misaligned by five missing bytes, corresponding to the dynamically assembled mov edi preamble in the tasking source code. However, the single-byte XOR key 0x50 that was found in the source code did not succeed in decoding this file. After some confusion and further analysis, it was realized that the first 27 bytes of this file are a shellcode decoder that looked very similar to call4_dword_xor. Figure 13 shows the shellcode decoder and the beginning of the encoded metsrv.dll. The XOR key the shellcode uses is 0xEF47A2D0 which fits with how the five-byte mov edi instruction, decoder, and adjacent metsrv.dll will be laid out in memory.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_CARBANAK-Week-3-Behind-CARBANAK-Backdoor(04-24-2019)",
+      "locator": {
+        "page": 14,
+        "section": "rule",
+        "sentence_id": "p14_r2"
+      },
+      "text": "Decoding yielded a copy of metsrv.dll starting at offset 0x1b. When shellcode execution exits the decoder loop, it executes Metasploit’s executable DOS header.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_32",
+      "page": 4,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_file_bot.dll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_20",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_malware_CARBANAK",
+        "ent_malware_ON_IFOBS"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

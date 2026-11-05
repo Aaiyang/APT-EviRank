@@ -1,0 +1,855 @@
+{
+  "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+  "title": "Evidence Aurora Operation Still Active Part 2: More Ties Uncovered Between CCleaner Hack & Chinese Hackers",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017).pdf",
+    "file_path": "/root/APTtext/Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 7189,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT17",
+      "type": "ThreatActor",
+      "name": "APT17",
+      "normalized_name": "APT17",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_3"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_Axiom",
+      "type": "ThreatActor",
+      "name": "Axiom",
+      "normalized_name": "Axiom",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_14",
+        "ev_2",
+        "ev_4"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_14",
+      "supporting_evidence_ids": [
+        "ev_1",
+        "ev_4",
+        "ev_2"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_threatactor_CCBkdr",
+      "type": "ThreatActor",
+      "name": "CCBkdr",
+      "normalized_name": "CCBkdr",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_4"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_Still_Active_Part",
+      "type": "Campaign",
+      "name": "Operation Still Active Part",
+      "normalized_name": "Operation Still Active Part",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": null,
+      "supporting_evidence_ids": [],
+      "needs_review": true,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_domain_intezer.com",
+      "type": "Domain",
+      "name": "intezer.com",
+      "normalized_name": "intezer.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "intezer.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [
+        "ev_35"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_13.59.9.90",
+      "type": "IPv4",
+      "name": "13.59.9.90",
+      "normalized_name": "13.59.9.90",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_13",
+        "ev_28"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "13.59.9.90",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_https_update.microsoft.com",
+      "type": "URL",
+      "name": "https://update.microsoft.com",
+      "normalized_name": "https://update.microsoft.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_36",
+        "ev_37"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "https://update.microsoft.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [
+        "ev_37"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_url_https_www.microsoft.com",
+      "type": "URL",
+      "name": "https://www.microsoft.com",
+      "normalized_name": "https://www.microsoft.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_37"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "https://www.microsoft.com",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_37",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha256_0375b4216334c85a4b29441a3d37e61d7797c2e1cb94b14cf6292449fb25c7b2",
+      "type": "SHA256",
+      "name": "0375b4216334c85a4b29441a3d37e61d7797c2e1cb94b14cf6292449fb25c7b2",
+      "normalized_name": "0375b4216334c85a4b29441a3d37e61d7797c2e1cb94b14cf6292449fb25c7b2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_20"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "0375b4216334c85a4b29441a3d37e61d7797c2e1cb94b14cf6292449fb25c7b2",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_20",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_07f93e49c7015b68e2542fc591ad2b4a1bc01349f79d48db67c53938ad4b525d",
+      "type": "SHA256",
+      "name": "07f93e49c7015b68e2542fc591ad2b4a1bc01349f79d48db67c53938ad4b525d",
+      "normalized_name": "07f93e49c7015b68e2542fc591ad2b4a1bc01349f79d48db67c53938ad4b525d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_19"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "07f93e49c7015b68e2542fc591ad2b4a1bc01349f79d48db67c53938ad4b525d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_07fb252d2e853a9b1b32f30ede411f2efbb9f01e4a7782db5eacf3f55cf34902",
+      "type": "SHA256",
+      "name": "07fb252d2e853a9b1b32f30ede411f2efbb9f01e4a7782db5eacf3f55cf34902",
+      "normalized_name": "07fb252d2e853a9b1b32f30ede411f2efbb9f01e4a7782db5eacf3f55cf34902",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_30"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "07fb252d2e853a9b1b32f30ede411f2efbb9f01e4a7782db5eacf3f55cf34902",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_30",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f",
+      "type": "SHA256",
+      "name": "128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f",
+      "normalized_name": "128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_25",
+        "ev_32"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_20cd49fd0f244944a8f5ba1d7656af3026e67d170133c1b3546c8b2de38d4f27",
+      "type": "SHA256",
+      "name": "20cd49fd0f244944a8f5ba1d7656af3026e67d170133c1b3546c8b2de38d4f27",
+      "normalized_name": "20cd49fd0f244944a8f5ba1d7656af3026e67d170133c1b3546c8b2de38d4f27",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_21"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "20cd49fd0f244944a8f5ba1d7656af3026e67d170133c1b3546c8b2de38d4f27",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_21",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_75eaa1889dbc93f11544cf3e40e3b9342b81b1678af5d83026496ee6a1b2ef79",
+      "type": "SHA256",
+      "name": "75eaa1889dbc93f11544cf3e40e3b9342b81b1678af5d83026496ee6a1b2ef79",
+      "normalized_name": "75eaa1889dbc93f11544cf3e40e3b9342b81b1678af5d83026496ee6a1b2ef79",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "75eaa1889dbc93f11544cf3e40e3b9342b81b1678af5d83026496ee6a1b2ef79",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_33",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83",
+      "type": "SHA256",
+      "name": "dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83",
+      "normalized_name": "dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_24",
+        "ev_29",
+        "ev_6"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_29",
+      "supporting_evidence_ids": [
+        "ev_24",
+        "ev_6"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_ee362a8161bd442073775363bf5fa1305abac2ce39b903d63df0d7121ba60550",
+      "type": "SHA256",
+      "name": "ee362a8161bd442073775363bf5fa1305abac2ce39b903d63df0d7121ba60550",
+      "normalized_name": "ee362a8161bd442073775363bf5fa1305abac2ce39b903d63df0d7121ba60550",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_22"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "ee362a8161bd442073775363bf5fa1305abac2ce39b903d63df0d7121ba60550",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_22",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a",
+      "type": "SHA256",
+      "name": "f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a",
+      "normalized_name": "f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_18",
+        "ev_27",
+        "ev_31"
+      ],
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "value": "f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_27",
+      "supporting_evidence_ids": [
+        "ev_31",
+        "ev_18"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    }
+  ],
+  "relations": [],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Since my last post , we have found new evidence in the next stage payloads of the CCleaner supply chain attack that provide a stronger link between this attack and the Axiom group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "After uploading the different binaries to Intezer Analyze™ , the final payload (that I have access to) had a match with a binary relating to the Axiom group.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s1"
+      },
+      "text": "Related APT17 samples:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s1"
+      },
+      "text": "Not only did the first payload have shared code between the Axiom group and CCBkdr, but the second did as well.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_6",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "The stage two payload that was analyzed in this report (dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83), after launching the infected version of CCleaner, was dropped to only a selective group of targets, as reported by Talos.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "The value is then XOR decrypted by 0x31415926 which gives you 0x5A093B0D or the IP address: 13.59.9.90 Conclusion:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_14",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s2"
+      },
+      "text": "Considering this new evidence, the malware can be attributed to the Axiom group due to both the nature of the attack itself and the specific code reuse throughout that our technology was able to uncover.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_18",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r1"
+      },
+      "text": "f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r2"
+      },
+      "text": "07f93e49c7015b68e2542fc591ad2b4a1bc01349f79d48db67c53938ad4b525d",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_20",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r3"
+      },
+      "text": "0375b4216334c85a4b29441a3d37e61d7797c2e1cb94b14cf6292449fb25c7b2",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r4"
+      },
+      "text": "20cd49fd0f244944a8f5ba1d7656af3026e67d170133c1b3546c8b2de38d4f27",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_22",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 2,
+        "section": "rule",
+        "sentence_id": "p2_r5"
+      },
+      "text": "ee362a8161bd442073775363bf5fa1305abac2ce39b903d63df0d7121ba60550",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_24",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 4,
+        "section": "rule",
+        "sentence_id": "p4_r1"
+      },
+      "text": "The stage two payload that was analyzed in this report (dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83), after launching the infected version of CCleaner, was dropped to only a selective group of targets, as reported by Talos. Although there is an x64 version, the following analysis will only include the x86 version because they are nearly identical. I will not be going too far in depth as full comprehension of the technical analysis will require an understanding of reverse engineering.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "Depending on if you’re running x86 or x64 Windows, it will drop a different module. (32-bit 07fb252d2e853a9b1b32f30ede411f2efbb9f01e4a7782db5eacf3f55cf34902, 64-bit 128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f) Both modules are actually legitimate software with additional code and a modified execution flow.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_27",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 12,
+        "section": "rule",
+        "sentence_id": "p12_r1"
+      },
+      "text": "The next payload is executed, which decrypts another module and loads it. If we look at the memory of the next decrypted payload, we can see something that looks like a PE header without the MZ signature. From here, it is as simple as modifying the first two bytes to represent MZ and we have a valid PE file. (f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a)",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r1"
+      },
+      "text": "The value is then XOR decrypted by 0x31415926 which gives you 0x5A093B0D or the IP address: 13.59.9.90",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r2"
+      },
+      "text": "Stage 2 Payload: dc9b5e8aa6ec86db8af0a7aa897ca61db3e5f3d2e0942e319074db1aaccfdc83",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_30",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r3"
+      },
+      "text": "x86 Trojanized Binary: 07fb252d2e853a9b1b32f30ede411f2efbb9f01e4a7782db5eacf3f55cf34902",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_31",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r4"
+      },
+      "text": "x86 Registry Payload: f0d1f88c59a005312faad902528d60acbf9cd5a7b36093db8ca811f763e1292a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r5"
+      },
+      "text": "x64 Trojanized Binary: 128aca58be325174f0220bd7ca6030e4e206b4378796e82da460055733bb6f4f",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 17,
+        "section": "rule",
+        "sentence_id": "p17_r1"
+      },
+      "text": "x64 Registry Payload: 75eaa1889dbc93f11544cf3e40e3b9342b81b1678af5d83026496ee6a1b2ef79",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb34"
+      },
+      "text": "intezer.com /evidence-aurora-operation-still-active-part-2-more-ties-uncovered-between-ccleaner-hack-chinese-",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule_backfill",
+        "sentence_id": "p1_rb35"
+      },
+      "text": "More Ties Uncovered Between CCleaner Hack & Chinese Hackers intezer.com /evidence-aurora-operation-still-active-part-2-more-ties-uncovered-between-ccleaner-hack-chinese- hackers/ S",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb36"
+      },
+      "text": "https://update.microsoft.com.",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_37",
+      "evidence_type": "report_text",
+      "report_id": "Intezer_Evidence-Aurora-Supply-Chain-Attack-CCleaner-Part2(10-02-2017)",
+      "locator": {
+        "page": 14,
+        "section": "rule_backfill",
+        "sentence_id": "p14_rb37"
+      },
+      "text": "ves the correct response from https://www.microsoft.com and https://update.microsoft.com. 14/17",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_4",
+      "page": 3,
+      "candidate_entity_ids": [
+        "ent_threatactor_Axiom",
+        "ent_threatactor_CCBkdr"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

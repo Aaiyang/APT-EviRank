@@ -1,0 +1,2999 @@
+{
+  "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+  "title": "Fortinet Zero-Day and Custom Malware Used by Suspected Chinese Actor in Espionage Operation",
+  "source": "Mandiant",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023).pdf",
+    "file_path": "/root/APTtext/Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023).pdf",
+    "source_type": "pdf",
+    "char_length": 40272,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_UNC3886",
+      "type": "ThreatActor",
+      "name": "UNC3886",
+      "normalized_name": "UNC3886",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_85",
+        "ev_87",
+        "ev_88",
+        "ev_89"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_88",
+      "supporting_evidence_ids": [
+        "ev_89",
+        "ev_85",
+        "ev_87"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_CASTLETAP",
+      "type": "Malware",
+      "name": "CASTLETAP",
+      "normalized_name": "CASTLETAP",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_54",
+        "ev_59",
+        "ev_77",
+        "ev_8"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_59",
+        "ev_77",
+        "ev_8"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "CASTLETAP",
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_cve_CVE-2022-41328",
+      "type": "CVE",
+      "name": "CVE-2022-41328",
+      "normalized_name": "CVE-2022-41328",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_147",
+        "ev_96",
+        "ev_98",
+        "ev_99"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_147",
+      "supporting_evidence_ids": [
+        "ev_96",
+        "ev_98",
+        "ev_99"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_a_threat_actor",
+      "type": "ThreatActor",
+      "name": "a threat actor",
+      "normalized_name": "a threat actor",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_28",
+        "ev_29"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [
+        "ev_29"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Access_Control_Lists",
+      "type": "ThreatActor",
+      "name": "Access Control Lists",
+      "normalized_name": "Access Control Lists",
+      "aliases": [
+        "ACL"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_12",
+        "ev_57",
+        "ev_58",
+        "ev_65"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_65",
+        "ev_12",
+        "ev_58"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_tool_TABLEFLIP",
+      "type": "Tool",
+      "name": "TABLEFLIP",
+      "normalized_name": "TABLEFLIP",
+      "aliases": [
+        "Traffic Redirection Utility"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_12",
+        "ev_13",
+        "ev_64",
+        "ev_75"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_12",
+      "supporting_evidence_ids": [
+        "ev_64",
+        "ev_75",
+        "ev_13"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "TABLEFLIP",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_technique_T1016",
+      "type": "Technique",
+      "name": "T1016",
+      "normalized_name": "T1016",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1016",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1021.004",
+      "type": "Technique",
+      "name": "T1021.004",
+      "normalized_name": "T1021.004",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_167"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1021.004",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_167",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1027",
+      "type": "Technique",
+      "name": "T1027",
+      "normalized_name": "T1027",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1027",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1033",
+      "type": "Technique",
+      "name": "T1033",
+      "normalized_name": "T1033",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1033",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1057",
+      "type": "Technique",
+      "name": "T1057",
+      "normalized_name": "T1057",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1057",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1059",
+      "type": "Technique",
+      "name": "T1059",
+      "normalized_name": "T1059",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1059",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1059.001",
+      "type": "Technique",
+      "name": "T1059.001",
+      "normalized_name": "T1059.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1059.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1059.003",
+      "type": "Technique",
+      "name": "T1059.003",
+      "normalized_name": "T1059.003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1059.003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1059.004",
+      "type": "Technique",
+      "name": "T1059.004",
+      "normalized_name": "T1059.004",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1059.004",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1059.006",
+      "type": "Technique",
+      "name": "T1059.006",
+      "normalized_name": "T1059.006",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1059.006",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1070",
+      "type": "Technique",
+      "name": "T1070",
+      "normalized_name": "T1070",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1070",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1070.003",
+      "type": "Technique",
+      "name": "T1070.003",
+      "normalized_name": "T1070.003",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1070.003",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1070.004",
+      "type": "Technique",
+      "name": "T1070.004",
+      "normalized_name": "T1070.004",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1070.004",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1074.001",
+      "type": "Technique",
+      "name": "T1074.001",
+      "normalized_name": "T1074.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_153",
+        "ev_93"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1074.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1078",
+      "type": "Technique",
+      "name": "T1078",
+      "normalized_name": "T1078",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1078",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1082",
+      "type": "Technique",
+      "name": "T1082",
+      "normalized_name": "T1082",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1082",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1083",
+      "type": "Technique",
+      "name": "T1083",
+      "normalized_name": "T1083",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1083",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1087",
+      "type": "Technique",
+      "name": "T1087",
+      "normalized_name": "T1087",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1087",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1095",
+      "type": "Technique",
+      "name": "T1095",
+      "normalized_name": "T1095",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_155"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1095",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1102.001",
+      "type": "Technique",
+      "name": "T1102.001",
+      "normalized_name": "T1102.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_155"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1102.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1105",
+      "type": "Technique",
+      "name": "T1105",
+      "normalized_name": "T1105",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_155"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1105",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1129",
+      "type": "Technique",
+      "name": "T1129",
+      "normalized_name": "T1129",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_154"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1129",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_154",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1140",
+      "type": "Technique",
+      "name": "T1140",
+      "normalized_name": "T1140",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1140",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1202",
+      "type": "Technique",
+      "name": "T1202",
+      "normalized_name": "T1202",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1202",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1218.011",
+      "type": "Technique",
+      "name": "T1218.011",
+      "normalized_name": "T1218.011",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1218.011",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1222",
+      "type": "Technique",
+      "name": "T1222",
+      "normalized_name": "T1222",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1222",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1497",
+      "type": "Technique",
+      "name": "T1497",
+      "normalized_name": "T1497",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1497",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1497.001",
+      "type": "Technique",
+      "name": "T1497.001",
+      "normalized_name": "T1497.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1497.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1518",
+      "type": "Technique",
+      "name": "T1518",
+      "normalized_name": "T1518",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_152"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1518",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_152",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1552",
+      "type": "Technique",
+      "name": "T1552",
+      "normalized_name": "T1552",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_151",
+        "ev_92"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1552",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [
+        "ev_151"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1555.005",
+      "type": "Technique",
+      "name": "T1555.005",
+      "normalized_name": "T1555.005",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_151",
+        "ev_92"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1555.005",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [
+        "ev_151"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1560",
+      "type": "Technique",
+      "name": "T1560",
+      "normalized_name": "T1560",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_153",
+        "ev_93"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1560",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1560.001",
+      "type": "Technique",
+      "name": "T1560.001",
+      "normalized_name": "T1560.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_153",
+        "ev_93"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1560.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_153",
+      "supporting_evidence_ids": [
+        "ev_93"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1565.001",
+      "type": "Technique",
+      "name": "T1565.001",
+      "normalized_name": "T1565.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_149",
+        "ev_92"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1565.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_92",
+      "supporting_evidence_ids": [
+        "ev_149"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "mapped_or_listed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "mapped_or_listed_technique"
+    },
+    {
+      "id": "ent_technique_T1571",
+      "type": "Technique",
+      "name": "T1571",
+      "normalized_name": "T1571",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_155"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1571",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1573.001",
+      "type": "Technique",
+      "name": "T1573.001",
+      "normalized_name": "T1573.001",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_155"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1573.001",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_155",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_technique_T1620",
+      "type": "Technique",
+      "name": "T1620",
+      "normalized_name": "T1620",
+      "aliases": [],
+      "confidence": 0.98,
+      "evidence_ids": [
+        "ev_150"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "technique_id": "T1620",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_150",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "technique_scope": "observed",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "observed_technique"
+    },
+    {
+      "id": "ent_ioc_sha256_18afbad17dee0e4330a85b782e8e580c6125d8a7127cda69ad0e2728d505a6f5",
+      "type": "SHA256",
+      "name": "18afbad17dee0e4330a85b782e8e580c6125d8a7127cda69ad0e2728d505a6f5",
+      "normalized_name": "18afbad17dee0e4330a85b782e8e580c6125d8a7127cda69ad0e2728d505a6f5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_189"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "18afbad17dee0e4330a85b782e8e580c6125d8a7127cda69ad0e2728d505a6f5",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_189",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2266667af7532a32b9c21c330a9fe56356ca66610e39654804a7262f2af61017",
+      "type": "SHA256",
+      "name": "2266667af7532a32b9c21c330a9fe56356ca66610e39654804a7262f2af61017",
+      "normalized_name": "2266667af7532a32b9c21c330a9fe56356ca66610e39654804a7262f2af61017",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_194"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "2266667af7532a32b9c21c330a9fe56356ca66610e39654804a7262f2af61017",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_194",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_245e4646e5d984c2da4cfe223bb2fae679441bcf42b254fc193ae97dc32af7ad",
+      "type": "SHA256",
+      "name": "245e4646e5d984c2da4cfe223bb2fae679441bcf42b254fc193ae97dc32af7ad",
+      "normalized_name": "245e4646e5d984c2da4cfe223bb2fae679441bcf42b254fc193ae97dc32af7ad",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_187"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "245e4646e5d984c2da4cfe223bb2fae679441bcf42b254fc193ae97dc32af7ad",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_187",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_33c22b2db8c0948c67204485972d2eb856e13dca16132371337fc3534e3df16d",
+      "type": "SHA256",
+      "name": "33c22b2db8c0948c67204485972d2eb856e13dca16132371337fc3534e3df16d",
+      "normalized_name": "33c22b2db8c0948c67204485972d2eb856e13dca16132371337fc3534e3df16d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_192"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "33c22b2db8c0948c67204485972d2eb856e13dca16132371337fc3534e3df16d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_192",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_4e4c5e5ca588bd84b67a37b654ec522768fa83e535ff795a5c196da8f8b9737d",
+      "type": "SHA256",
+      "name": "4e4c5e5ca588bd84b67a37b654ec522768fa83e535ff795a5c196da8f8b9737d",
+      "normalized_name": "4e4c5e5ca588bd84b67a37b654ec522768fa83e535ff795a5c196da8f8b9737d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_195"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "4e4c5e5ca588bd84b67a37b654ec522768fa83e535ff795a5c196da8f8b9737d",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_195",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_9fb09fe6db61fbdd19ac9c368e2f64fb9606119649830762fa467719c480ed44",
+      "type": "SHA256",
+      "name": "9fb09fe6db61fbdd19ac9c368e2f64fb9606119649830762fa467719c480ed44",
+      "normalized_name": "9fb09fe6db61fbdd19ac9c368e2f64fb9606119649830762fa467719c480ed44",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_188"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "9fb09fe6db61fbdd19ac9c368e2f64fb9606119649830762fa467719c480ed44",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_188",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_a00fed53b1ece4610c8b52934c20af3667d455f092a77f8d9bc46fdb9047e41a",
+      "type": "SHA256",
+      "name": "a00fed53b1ece4610c8b52934c20af3667d455f092a77f8d9bc46fdb9047e41a",
+      "normalized_name": "a00fed53b1ece4610c8b52934c20af3667d455f092a77f8d9bc46fdb9047e41a",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_190"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "a00fed53b1ece4610c8b52934c20af3667d455f092a77f8d9bc46fdb9047e41a",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_190",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_abefe121e5c895bf63be80152ccbe2d7bb5ad985aa3ab989bcb7c0804b90d004",
+      "type": "SHA256",
+      "name": "abefe121e5c895bf63be80152ccbe2d7bb5ad985aa3ab989bcb7c0804b90d004",
+      "normalized_name": "abefe121e5c895bf63be80152ccbe2d7bb5ad985aa3ab989bcb7c0804b90d004",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_193"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "abefe121e5c895bf63be80152ccbe2d7bb5ad985aa3ab989bcb7c0804b90d004",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_193",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_eb6af99148f0ce5b58e414162ff2b7567b4cf08953862a088996365ff306014b",
+      "type": "SHA256",
+      "name": "eb6af99148f0ce5b58e414162ff2b7567b4cf08953862a088996365ff306014b",
+      "normalized_name": "eb6af99148f0ce5b58e414162ff2b7567b4cf08953862a088996365ff306014b",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_191"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "eb6af99148f0ce5b58e414162ff2b7567b4cf08953862a088996365ff306014b",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_191",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_1a077212735617a665a6b631e34a6aedcbc41713",
+      "type": "SHA1",
+      "name": "1a077212735617a665a6b631e34a6aedcbc41713",
+      "normalized_name": "1a077212735617a665a6b631e34a6aedcbc41713",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_184"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "1a077212735617a665a6b631e34a6aedcbc41713",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_184",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_3109b890901499f7ebb90f8870a7d1617d27e7c9",
+      "type": "SHA1",
+      "name": "3109b890901499f7ebb90f8870a7d1617d27e7c9",
+      "normalized_name": "3109b890901499f7ebb90f8870a7d1617d27e7c9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_182"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "3109b890901499f7ebb90f8870a7d1617d27e7c9",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_182",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_75c092098e3409d366a46fdde6a92ff97d29cee1",
+      "type": "SHA1",
+      "name": "75c092098e3409d366a46fdde6a92ff97d29cee1",
+      "normalized_name": "75c092098e3409d366a46fdde6a92ff97d29cee1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_179"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "75c092098e3409d366a46fdde6a92ff97d29cee1",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_179",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_86f3623b3fb8d5303b6c9d8295292a5c2ceb2889",
+      "type": "SHA1",
+      "name": "86f3623b3fb8d5303b6c9d8295292a5c2ceb2889",
+      "normalized_name": "86f3623b3fb8d5303b6c9d8295292a5c2ceb2889",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_178"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "86f3623b3fb8d5303b6c9d8295292a5c2ceb2889",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_178",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8c40fc87fa3b25a559585b10a8ca11c81fb09f75",
+      "type": "SHA1",
+      "name": "8c40fc87fa3b25a559585b10a8ca11c81fb09f75",
+      "normalized_name": "8c40fc87fa3b25a559585b10a8ca11c81fb09f75",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_181"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "8c40fc87fa3b25a559585b10a8ca11c81fb09f75",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_181",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_8ef5159944d048fe84e51a818c9b11ebcfa98517",
+      "type": "SHA1",
+      "name": "8ef5159944d048fe84e51a818c9b11ebcfa98517",
+      "normalized_name": "8ef5159944d048fe84e51a818c9b11ebcfa98517",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_186"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "8ef5159944d048fe84e51a818c9b11ebcfa98517",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_186",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_9dca7f1af5752bb007e5cc55acd2511f03049ee5",
+      "type": "SHA1",
+      "name": "9dca7f1af5752bb007e5cc55acd2511f03049ee5",
+      "normalized_name": "9dca7f1af5752bb007e5cc55acd2511f03049ee5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_180"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "9dca7f1af5752bb007e5cc55acd2511f03049ee5",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_180",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_b8bdaa1bd204a6c710875b0c4265655d1fd37d52",
+      "type": "SHA1",
+      "name": "b8bdaa1bd204a6c710875b0c4265655d1fd37d52",
+      "normalized_name": "b8bdaa1bd204a6c710875b0c4265655d1fd37d52",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_183"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "b8bdaa1bd204a6c710875b0c4265655d1fd37d52",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_183",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d5f8436e9815358e33b8243abda76c9b398943e2",
+      "type": "SHA1",
+      "name": "d5f8436e9815358e33b8243abda76c9b398943e2",
+      "normalized_name": "d5f8436e9815358e33b8243abda76c9b398943e2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_185"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "d5f8436e9815358e33b8243abda76c9b398943e2",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_185",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_3e43511c4f7f551290292394c4e21de7",
+      "type": "MD5",
+      "name": "3e43511c4f7f551290292394c4e21de7",
+      "normalized_name": "3e43511c4f7f551290292394c4e21de7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_177"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "3e43511c4f7f551290292394c4e21de7",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_177",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_53a69adac914808eced2bf8155a7512d",
+      "type": "MD5",
+      "name": "53a69adac914808eced2bf8155a7512d",
+      "normalized_name": "53a69adac914808eced2bf8155a7512d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_137",
+        "ev_170",
+        "ev_174",
+        "ev_208"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "53a69adac914808eced2bf8155a7512d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_137",
+      "supporting_evidence_ids": [
+        "ev_170",
+        "ev_174",
+        "ev_208"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_64bdf7a631bc76b01b985f1d46b35ea6",
+      "type": "MD5",
+      "name": "64bdf7a631bc76b01b985f1d46b35ea6",
+      "normalized_name": "64bdf7a631bc76b01b985f1d46b35ea6",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_175"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "64bdf7a631bc76b01b985f1d46b35ea6",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_175",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_88711ebc99e1390f1ce2f42a6de0654d",
+      "type": "MD5",
+      "name": "88711ebc99e1390f1ce2f42a6de0654d",
+      "normalized_name": "88711ebc99e1390f1ce2f42a6de0654d",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_172"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "88711ebc99e1390f1ce2f42a6de0654d",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_172",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_9ce2459168cf4b5af494776a70e0feda",
+      "type": "MD5",
+      "name": "9ce2459168cf4b5af494776a70e0feda",
+      "normalized_name": "9ce2459168cf4b5af494776a70e0feda",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_168"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "9ce2459168cf4b5af494776a70e0feda",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_168",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a388ebaef45add5da503e4bf2b9da546",
+      "type": "MD5",
+      "name": "a388ebaef45add5da503e4bf2b9da546",
+      "normalized_name": "a388ebaef45add5da503e4bf2b9da546",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_142",
+        "ev_171"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "a388ebaef45add5da503e4bf2b9da546",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_171",
+      "supporting_evidence_ids": [
+        "ev_142"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_a86a8fe875a89816e5808588154a067e",
+      "type": "MD5",
+      "name": "a86a8fe875a89816e5808588154a067e",
+      "normalized_name": "a86a8fe875a89816e5808588154a067e",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_176"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "a86a8fe875a89816e5808588154a067e",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_176",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_b6e92149efaf78e9ce7552297505b9d5",
+      "type": "MD5",
+      "name": "b6e92149efaf78e9ce7552297505b9d5",
+      "normalized_name": "b6e92149efaf78e9ce7552297505b9d5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_136",
+        "ev_169",
+        "ev_197",
+        "ev_64"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "b6e92149efaf78e9ce7552297505b9d5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_169",
+      "supporting_evidence_ids": [
+        "ev_197",
+        "ev_64",
+        "ev_136"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e2d2884869f48f40b32fb27cc3bdefff",
+      "type": "MD5",
+      "name": "e2d2884869f48f40b32fb27cc3bdefff",
+      "normalized_name": "e2d2884869f48f40b32fb27cc3bdefff",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_173",
+        "ev_218",
+        "ev_231"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "value": "e2d2884869f48f40b32fb27cc3bdefff",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_173",
+      "supporting_evidence_ids": [
+        "ev_231",
+        "ev_218"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_extlinux.sys",
+      "type": "File",
+      "name": "extlinux.sys",
+      "normalized_name": "extlinux.sys",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_144"
+      ],
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "file_name": "extlinux.sys",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_144",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "indicator_artifact",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "type": "exploits",
+      "head_id": "ent_threatactor_UNC3886",
+      "tail_id": "ent_cve_CVE-2022-41328",
+      "head_type": "ThreatActor",
+      "tail_type": "CVE",
+      "confidence": 0.91,
+      "evidence_ids": [
+        "ev_99",
+        "ev_21",
+        "ev_23",
+        "ev_1",
+        "ev_96"
+      ],
+      "primary_evidence_id": "ev_99",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "exploited",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "initial_access",
+        "notes": "evidence_exploit",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_UNC3886",
+      "tail_id": "ent_malware_CASTLETAP",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.84,
+      "evidence_ids": [
+        "ev_54"
+      ],
+      "primary_evidence_id": "ev_54",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "title_generic_actor_payload",
+        "schema_version": "v4.0-event-refiner"
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "initial_access",
+      "relation_id": "rel_0001",
+      "type": "exploits",
+      "summary": "UNC3886 exploits CVE-2022-41328",
+      "evidence_ids": [
+        "ev_99",
+        "ev_21",
+        "ev_23"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "uses_malware",
+      "summary": "UNC3886 uses_malware CASTLETAP",
+      "evidence_ids": [
+        "ev_54"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Utilized a local directory traversal zero-day (CVE-2022-41328) exploit to write files to FortiGate firewall disks outside of the normal bounds allowed with shell access.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 2,
+        "section": "body",
+        "sentence_id": "p2_s2"
+      },
+      "text": "Once persistence was established across the two devices, FortiManager scripts were used to deploy backdoors (CASTLETAP) across the FortiGate devices.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_12",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s1"
+      },
+      "text": "During this attack lifecycle, as seen in Figure 2, the threat actor deployed a network traffic redirection utility (TABLEFLIP) and reverse shell backdoor (REPTILE) on the FortiManager device to circumvent the new ACLs.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_13",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 4,
+        "section": "body",
+        "sentence_id": "p4_s2"
+      },
+      "text": "With the redirection rules established by the TABLEFLIP utility, the threat actor was able to access the REPTILE backdoor directly from the Internet for continued access to the environment.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "While the backdoor function in views.py , get_device_info , was the same as FortiManager, the API call used to access the backdoor was changed to",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s3"
+      },
+      "text": "The threat actor deleted these FortiManager scripts from the FortiManager device before they could be recovered for analysis, but correlation of multiple event log types show that the scripts took advantage of a path traversal vulnerability (CVE-2022-41328).",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s2"
+      },
+      "text": "The command did not validate the type of file being uploaded and was susceptible to a directory traversal exploit allowing a threat actor with Super Administrator privileges to upload a file smaller than 65,535 bytes to any location on the file system.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_29",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s3"
+      },
+      "text": "This means that outside of the size constraints of the command,­ a threat actor could replace any legitimate system file on the FortiGate firewall.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "Once CASTLETAP was deployed to the FortiGate firewalls, the threat actor connected to ESXi and vCenter machines.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s6"
+      },
+      "text": "Scenario #2 (Detailed): FortiManager Not Exposed to the Internet The technical details that follow describe the attack path taken by the threat actor where the FortiManager had network Access Control Lists (ACL) set up to restrict external access.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s7"
+      },
+      "text": "Regaining Access to the Internet-restricted FortiManager When ACLs were implemented on the FortiManager device, the threat actor lost direct public access to device.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s8"
+      },
+      "text": "To regain access to the FortiManager, the threat actor pivoted from a FortiGate Firewall compromised with CASTLETAP.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "To enable continued access directly from the Internet, the threat actor implemented TABLEFLIP (MD5: b6e92149efaf78e9ce7552297505b9d5 ), a passive traffic redirection utility that listens on all active interfaces for specialized command packets.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s2"
+      },
+      "text": "With this utility in place, and regardless of the ACL’s in place, the threat actor would be able to connect directly to the FortiManager as seen in Figure 15.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 13,
+        "section": "body",
+        "sentence_id": "p13_s8"
+      },
+      "text": "With the assistance of TABLEFLIP, the threat actor was able to successfully forward traffic and access the REPTILE backdoor using iptables traffic redirection rules.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_77",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 14,
+        "section": "body",
+        "sentence_id": "p14_s1"
+      },
+      "text": "Similar to the method used by CASTLETAP to decode the C2 information, REPTILE derived a single-byte XOR key from the Epoch date stamp to decrypt payload data, which caused the encryption key to change daily.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_85",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s3"
+      },
+      "text": "UNC3886 has been observed targeting firewall and virtualization technologies which lack EDR support.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_87",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s5"
+      },
+      "text": "UNC3886 has modified publicly available malware, specifically targeting *nix operating systems.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_88",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s6"
+      },
+      "text": "Another threat cluster unrelated to UNC3886, suspected to be from China has recently been observed targeting zero-day vulnerabilities in Fortinet as reported by Mandiant in mid-January of 2023.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_89",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 15,
+        "section": "body",
+        "sentence_id": "p15_s7"
+      },
+      "text": "Mandiant continues to gather evidence and identify overlaps between UNC3886 and other groups that are attributed to Chinese APT.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_92",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s2"
+      },
+      "text": "MITRE ATT&CK Techniques Impact T1565.001: Stored Data Manipulation Defense Evasion Credential Access T1552: Unsecured Credentials T1555.005: Password Managers",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_93",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s3"
+      },
+      "text": "Discovery T1074.001: Local Data Staging T1560: Archive Collected Data T1560.001: Archive via Utility",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_96",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "1. Utilized a local directory traversal zero-day (CVE-2022-41328) exploit to write files to FortiGate firewall disks outside of the",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_98",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r2"
+      },
+      "text": "Exploitation of CVE-2022-41328 on FortiGate Devices",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_99",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r3"
+      },
+      "text": "The threat actor deleted these FortiManager scripts from the FortiManager device before they could be recovered for analysis, but correlation of multiple event log types show that the scripts took advantage of a path traversal vulnerability (CVE-2022-41328). The vulnerability was exploited by the threat actor using the command execute wireless-controller hs20-icon upload-icon (as seen in Figure 8). This command allowed the threat actor to overwrite legitimate files in a normally restricted system directory. Normally, the execute wireless-controller hs20-icon upload-icon command is used to upload .ico files (icon files) from a",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_136",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 11,
+        "section": "rule",
+        "sentence_id": "p11_r9"
+      },
+      "text": "b6e92149efaf78e9ce7552297505b9d5 ), a passive traffic redirection utility that listens on all active interfaces for specialized command packets. With this utility in place, and regardless of the ACL’s in place, the threat actor would be able to connect directly to the FortiManager as seen in Figure 15.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_137",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 13,
+        "section": "rule",
+        "sentence_id": "p13_r1"
+      },
+      "text": "To achieve persistent access on the FortiManager device, the threat actor deployed a backdoor with the filename /bin/klogd (MD5: 53a69adac914808eced2bf8155a7512d ) that Mandiant refers to as REPTILE, a variant of a publicly available Linux kernel module (LKM) rootkit. With the assistance of TABLEFLIP, the threat actor was able to successfully forward traffic and access the REPTILE backdoor using iptables traffic redirection rules.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_142",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 15,
+        "section": "rule",
+        "sentence_id": "p15_r2"
+      },
+      "text": "Comparing the compromised /bin/smit ( a388ebaef45add5da503e4bf2b9da546 ) with a clean version from both FortiManager and FortiAnalyzer, the modified binary contained a single byte difference. The modified location within /bin/smit is executed when the mount command line argument is given on system startup. Normally, the mount function would perform OpenSSL 1.1.0 digital signature verification checks on the files in Figure 24 against /data/.fmg_sign , but this modification changed a conditional jump instruction to an unconditional jump instruction which always skipped digital signature verification checks normally made on the system files.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_144",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 15,
+        "section": "rule",
+        "sentence_id": "p15_r4"
+      },
+      "text": "/data/extlinux.sys",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_147",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r1"
+      },
+      "text": "Fortinet released two additional resources covering CVE-2022-41328 and an analysis of identified attacker activity.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_149",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r3"
+      },
+      "text": "T1565.001: Stored Data Manipulation",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_150",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r4"
+      },
+      "text": "T1027: Obfuscated Files or Information T1070: Indicator Removal T1070.003: Clear Command History T1070.004: File Deletion T1078: Valid Accounts T1140: Deobfuscate/Decode Files or Information T1202: Indirect Command Execution T1218.011: Rundll32 T1222: File and Directory Permissions Modification T1497: Virtualization/Sandbox Evasion T1497.001: System Checks T1620: Reflective Code Loading",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r5"
+      },
+      "text": "T1552: Unsecured Credentials T1555.005: Password Managers",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r6"
+      },
+      "text": "T1016: System Network Configuration Discovery T1033: System Owner/User Discovery T1057: Process Discovery T1082: System Information Discovery T1083: File and Directory Discovery T1087: Account Discovery T1518: Software Discovery",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_153",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r7"
+      },
+      "text": "T1074.001: Local Data Staging T1560: Archive Collected Data T1560.001: Archive via Utility",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_154",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r8"
+      },
+      "text": "T1059: Command and Scripting Interpreter T1059.001: PowerShell T1059.003: Windows Command Shell T1059.004: Unix Shell T1059.006: Python T1129: Shared Modules",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_155",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 16,
+        "section": "rule",
+        "sentence_id": "p16_r9"
+      },
+      "text": "T1095: Non-Application Layer Protocol T1102.001: Dead Drop Resolver T1105: Ingress Tool Transfer T1571: Non-Standard Port T1573.001: Symmetric Cryptography",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_167",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 17,
+        "section": "rule",
+        "sentence_id": "p17_r12"
+      },
+      "text": "T1021.004: SSH",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_168",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r1"
+      },
+      "text": "MD5 9ce2459168cf4b5af494776a70e0feda Threat actor script which launches /bin/auth (TABLEFLIP) and /bin/klogd (REPTILE) and deletes the two files along with /bin/support from disk",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_169",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r2"
+      },
+      "text": "MD5 b6e92149efaf78e9ce7552297505b9d5 TABLEFLIP sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_170",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r3"
+      },
+      "text": "MD5 53a69adac914808eced2bf8155a7512d REPTILE variant sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_171",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r4"
+      },
+      "text": "MD5 a388ebaef45add5da503e4bf2b9da546 Modified /bin/smit",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_172",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r5"
+      },
+      "text": "MD5 88711ebc99e1390f1ce2f42a6de0654d Localnet sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_173",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r6"
+      },
+      "text": "MD5 e2d2884869f48f40b32fb27cc3bdefff CASTLETAP sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_174",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r7"
+      },
+      "text": "MD5 53a69adac914808eced2bf8155a7512d REPTILE variant sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_175",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r8"
+      },
+      "text": "MD5 64bdf7a631bc76b01b985f1d46b35ea6 THINCRUST sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_176",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r9"
+      },
+      "text": "MD5 a86a8fe875a89816e5808588154a067e THINCRUST sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_177",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r10"
+      },
+      "text": "MD5 3e43511c4f7f551290292394c4e21de7 Related to THINCRUST",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_178",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r11"
+      },
+      "text": "SHA1 86f3623b3fb8d5303b6c9d8295292a5c2ceb2889 Localnet sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_179",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r12"
+      },
+      "text": "SHA1 75c092098e3409d366a46fdde6a92ff97d29cee1 Smit sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_180",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r13"
+      },
+      "text": "SHA1 9dca7f1af5752bb007e5cc55acd2511f03049ee5 TABLEFLIP sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_181",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r14"
+      },
+      "text": "SHA1 8c40fc87fa3b25a559585b10a8ca11c81fb09f75 CASTLETAP sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_182",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r15"
+      },
+      "text": "SHA1 3109b890901499f7ebb90f8870a7d1617d27e7c9 REPTILE variant sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_183",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r16"
+      },
+      "text": "SHA1 b8bdaa1bd204a6c710875b0c4265655d1fd37d52 /bin/support sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_184",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r17"
+      },
+      "text": "SHA1 1a077212735617a665a6b631e34a6aedcbc41713 THINCRUST sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_185",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r18"
+      },
+      "text": "SHA1 d5f8436e9815358e33b8243abda76c9b398943e2 THINCRUST sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_186",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r19"
+      },
+      "text": "SHA1 8ef5159944d048fe84e51a818c9b11ebcfa98517 Related to THINCRUST",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_187",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r20"
+      },
+      "text": "SHA256 245e4646e5d984c2da4cfe223bb2fae679441bcf42b254fc193ae97dc32af7ad Localnet sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_188",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r21"
+      },
+      "text": "SHA256 9fb09fe6db61fbdd19ac9c368e2f64fb9606119649830762fa467719c480ed44 Smit sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_189",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 18,
+        "section": "rule",
+        "sentence_id": "p18_r22"
+      },
+      "text": "SHA256 18afbad17dee0e4330a85b782e8e580c6125d8a7127cda69ad0e2728d505a6f5 TABLEFLIP sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_190",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r1"
+      },
+      "text": "SHA256 a00fed53b1ece4610c8b52934c20af3667d455f092a77f8d9bc46fdb9047e41a CASTLETAP sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_191",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r2"
+      },
+      "text": "SHA256 eb6af99148f0ce5b58e414162ff2b7567b4cf08953862a088996365ff306014b REPTILE variant sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_192",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r3"
+      },
+      "text": "SHA256 33c22b2db8c0948c67204485972d2eb856e13dca16132371337fc3534e3df16d /bin/support sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_193",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r4"
+      },
+      "text": "SHA256 abefe121e5c895bf63be80152ccbe2d7bb5ad985aa3ab989bcb7c0804b90d004 THINCRUST sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_194",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r5"
+      },
+      "text": "SHA256 2266667af7532a32b9c21c330a9fe56356ca66610e39654804a7262f2af61017 THINCRUST sample",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_195",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r6"
+      },
+      "text": "SHA256 4e4c5e5ca588bd84b67a37b654ec522768fa83e535ff795a5c196da8f8b9737d Related to THINCRUST",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_197",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 19,
+        "section": "rule",
+        "sentence_id": "p19_r8"
+      },
+      "text": "md5 = \"b6e92149efaf78e9ce7552297505b9d5\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_208",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 20,
+        "section": "rule",
+        "sentence_id": "p20_r2"
+      },
+      "text": "md5 = \"53a69adac914808eced2bf8155a7512d\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_218",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r2"
+      },
+      "text": "md5 = \"e2d2884869f48f40b32fb27cc3bdefff\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_231",
+      "evidence_type": "report_text",
+      "report_id": "Mandiant_Fortinet-Zero-Day-Suspected-Chinese-Operation(03-16-2023)",
+      "locator": {
+        "page": 21,
+        "section": "rule",
+        "sentence_id": "p21_r15"
+      },
+      "text": "md5 = \"e2d2884869f48f40b32fb27cc3bdefff\"",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ]
+}

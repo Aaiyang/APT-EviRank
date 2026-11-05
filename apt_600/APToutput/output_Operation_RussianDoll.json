@@ -1,0 +1,751 @@
+{
+  "report_id": "Operation RussianDoll",
+  "title": "Operation RussianDoll: Adobe & Windows Zero-Day Exploits Likely Leveraged by Russia’s APT28 in Highly-Targeted Attack « Threat Research | FireEye Inc",
+  "source": null,
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Operation RussianDoll.pdf",
+    "file_path": "/root/APTtext/Operation RussianDoll.pdf",
+    "source_type": "pdf",
+    "char_length": 10721,
+    "report_profile": "reverse_engineering"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_APT28",
+      "type": "ThreatActor",
+      "name": "APT28",
+      "normalized_name": "APT28",
+      "aliases": [],
+      "confidence": 0.95,
+      "evidence_ids": [
+        "ev_1",
+        "ev_28",
+        "ev_34",
+        "ev_35"
+      ],
+      "report_id": "Operation RussianDoll",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_35",
+        "ev_28",
+        "ev_34"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_FireEye",
+      "type": "Malware",
+      "name": "FireEye",
+      "normalized_name": "FireEye",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Operation RussianDoll",
+      "family": "FireEye",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_RussianDoll",
+      "type": "Malware",
+      "name": "RussianDoll",
+      "normalized_name": "RussianDoll",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Operation RussianDoll",
+      "family": "RussianDoll",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_campaign_Operation_RussianDoll",
+      "type": "Campaign",
+      "name": "Operation RussianDoll",
+      "normalized_name": "Operation RussianDoll",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Operation RussianDoll",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_domain_icloud.com",
+      "type": "Domain",
+      "name": "icloud.com",
+      "normalized_name": "icloud.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_33",
+        "ev_45"
+      ],
+      "report_id": "Operation RussianDoll",
+      "value": "icloud.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_45",
+      "supporting_evidence_ids": [
+        "ev_33"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_an_international_government_entity",
+      "type": "Victim",
+      "name": "an international government entity",
+      "normalized_name": "an international government entity",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "report_id": "Operation RussianDoll",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_35",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_campaign_limited_APT_campaign",
+      "type": "Campaign",
+      "name": "limited APT campaign",
+      "normalized_name": "limited APT campaign",
+      "aliases": [],
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_2"
+      ],
+      "report_id": "Operation RussianDoll",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_2",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_domain_fireeye.com",
+      "type": "Domain",
+      "name": "fireeye.com",
+      "normalized_name": "fireeye.com",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_1"
+      ],
+      "report_id": "Operation RussianDoll",
+      "value": "fireeye.com",
+      "ioc_type": "domain",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_ioc"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Operation RussianDoll",
+      "type": "communicates_with",
+      "head_id": "ent_malware_FireEye",
+      "tail_id": "ent_domain_icloud.com",
+      "head_type": "Malware",
+      "tail_type": "Domain",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_33",
+        "ev_45"
+      ],
+      "primary_evidence_id": "ev_33",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "communicates_with",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "command_and_control",
+        "notes": "event_comm",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Operation RussianDoll",
+      "type": "targets",
+      "head_id": "ent_campaign_Operation_RussianDoll",
+      "tail_id": "ent_victim_an_international_government_entity",
+      "head_type": "Campaign",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_35",
+        "ev_1"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "title_target, evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Operation RussianDoll",
+      "type": "targets",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_victim_an_international_government_entity",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_35"
+      ],
+      "primary_evidence_id": "ev_35",
+      "direction": "head_to_tail",
+      "extraction_method": "rule",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "",
+        "schema_version": "v2.0-evidence"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Operation RussianDoll",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Operation_RussianDoll",
+      "tail_id": "ent_malware_FireEye",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_campaign_Operation_RussianDoll",
+        "type": "Campaign",
+        "name": "Operation RussianDoll",
+        "normalized_name": "Operation RussianDoll",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [
+          "ev_1"
+        ],
+        "report_id": "Operation RussianDoll",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_FireEye",
+        "type": "Malware",
+        "name": "FireEye",
+        "normalized_name": "FireEye",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Operation RussianDoll",
+        "family": "FireEye",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Operation RussianDoll",
+      "type": "uses_malware",
+      "head_id": "ent_campaign_Operation_RussianDoll",
+      "tail_id": "ent_malware_RussianDoll",
+      "head_type": "Campaign",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_campaign_Operation_RussianDoll",
+        "type": "Campaign",
+        "name": "Operation RussianDoll",
+        "normalized_name": "Operation RussianDoll",
+        "aliases": [],
+        "confidence": 0.9,
+        "evidence_ids": [
+          "ev_1"
+        ],
+        "report_id": "Operation RussianDoll",
+        "sources": [
+          "llm",
+          "title_derive"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_RussianDoll",
+        "type": "Malware",
+        "name": "RussianDoll",
+        "normalized_name": "RussianDoll",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Operation RussianDoll",
+        "family": "RussianDoll",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0006",
+      "report_id": "Operation RussianDoll",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_FireEye",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_threatactor_APT28",
+        "type": "ThreatActor",
+        "name": "APT28",
+        "normalized_name": "APT28",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_28",
+          "ev_34",
+          "ev_35"
+        ],
+        "report_id": "Operation RussianDoll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_35",
+          "ev_28",
+          "ev_34"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_FireEye",
+        "type": "Malware",
+        "name": "FireEye",
+        "normalized_name": "FireEye",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Operation RussianDoll",
+        "family": "FireEye",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    },
+    {
+      "id": "rel_0007",
+      "report_id": "Operation RussianDoll",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_APT28",
+      "tail_id": "ent_malware_RussianDoll",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_title"
+      ],
+      "primary_evidence_id": "ev_title",
+      "direction": "head_to_tail",
+      "extraction_method": "rule_sentence",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": true,
+        "stage": "execution",
+        "notes": "title_actor_tail",
+        "schema_version": "v3.2-report-recovery",
+        "evidence_span": "ev_title"
+      },
+      "head": {
+        "id": "ent_threatactor_APT28",
+        "type": "ThreatActor",
+        "name": "APT28",
+        "normalized_name": "APT28",
+        "aliases": [],
+        "confidence": 0.95,
+        "evidence_ids": [
+          "ev_1",
+          "ev_28",
+          "ev_34",
+          "ev_35"
+        ],
+        "report_id": "Operation RussianDoll",
+        "sources": [
+          "llm",
+          "rule"
+        ],
+        "primary_evidence_id": "ev_1",
+        "supporting_evidence_ids": [
+          "ev_35",
+          "ev_28",
+          "ev_34"
+        ],
+        "needs_review": false,
+        "historical_aliases": [],
+        "related_families": [],
+        "entity_scope": "core",
+        "core_observation": true
+      },
+      "tail": {
+        "id": "ent_malware_RussianDoll",
+        "type": "Malware",
+        "name": "RussianDoll",
+        "normalized_name": "RussianDoll",
+        "aliases": [],
+        "confidence": 0.86,
+        "evidence_ids": [],
+        "report_id": "Operation RussianDoll",
+        "family": "RussianDoll",
+        "sources": [
+          "title_derive"
+        ],
+        "entity_scope": "core",
+        "core_observation": true
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0004",
+      "type": "uses_malware",
+      "summary": "Operation RussianDoll uses_malware FireEye",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "Operation RussianDoll uses_malware RussianDoll",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0006",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware FireEye",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0007",
+      "type": "uses_malware",
+      "summary": "APT28 uses_malware RussianDoll",
+      "evidence_ids": [
+        "ev_title"
+      ]
+    },
+    {
+      "step_id": "step_005",
+      "stage": "command_and_control",
+      "relation_id": "rel_0001",
+      "type": "communicates_with",
+      "summary": "FireEye communicates_with icloud.com",
+      "evidence_ids": [
+        "ev_33",
+        "ev_45"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "fireeye.com Operation RussianDoll: Adobe & Windows Zero­Day Exploits LikelyLeveraged by Russia’s APT28 in Highly­Targeted Attack",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_2",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s2"
+      },
+      "text": "FireEye Labs recently detected a limited APT campaign exploiting zero­day vulnerabilities in Adobe Flash and a brand­new one in Microsoft Windows.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s3"
+      },
+      "text": "Payload & C2 This exploit delivers a malware variant that shares characteristics with the APT28 backdoors CHOPSTICK and CORESHELL malware families, both described in our APT28 whitepaper .",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_33",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s8"
+      },
+      "text": "One of the C2 locations for the new payload, 87.236.215[.]246, also hosts a suspected APT28 domain ssl­icloud[.]com.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s9"
+      },
+      "text": "The same subnet (87.236.215.0/24) also hosts several known or suspected APT28 domains, as seen in Table 1.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_35",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 5,
+        "section": "body",
+        "sentence_id": "p5_s10"
+      },
+      "text": "The target firm is an international government entity in an industry vertical that aligns with known APT28 targeting.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Operation RussianDoll",
+      "locator": {
+        "page": 5,
+        "section": "rule",
+        "sentence_id": "p5_r2"
+      },
+      "text": "One of the C2 locations for the new payload, 87.236.215[.]246, also hosts a suspected APT28 domain ssl­icloud[.]com. The same subnet (87.236.215.0/24) also hosts several known or suspected APT28 domains, as seen in Table 1.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_title",
+      "page": 0,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_FireEye",
+        "ent_malware_RussianDoll",
+        "ent_campaign_Operation_RussianDoll"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_malware_FireEye",
+        "ent_malware_RussianDoll",
+        "ent_campaign_Operation_RussianDoll",
+        "ent_domain_fireeye.com"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_35",
+      "page": 5,
+      "candidate_entity_ids": [
+        "ent_threatactor_APT28",
+        "ent_victim_an_international_government_entity"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}

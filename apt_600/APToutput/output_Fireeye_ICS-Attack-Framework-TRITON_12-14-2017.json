@@ -1,0 +1,1505 @@
+{
+  "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+  "title": "Attackers Deploy New ICS Attack Framework “TRITON” and Cause Operational Disruption to Critical Infrastructure",
+  "source": "Mandiant",
+  "published_date": null,
+  "report_metadata": {
+    "file_name": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017).pdf",
+    "file_path": "/root/APTtext/Fireeye_ICS-Attack-Framework-TRITON(12-14-2017).pdf",
+    "source_type": "pdf",
+    "char_length": 19953,
+    "report_profile": "incident_response"
+  },
+  "entities": [
+    {
+      "id": "ent_threatactor_TsHi",
+      "type": "ThreatActor",
+      "name": "TsHi",
+      "normalized_name": "TsHi",
+      "aliases": [],
+      "confidence": 0.93,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_34",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_malware_TRITON",
+      "type": "Malware",
+      "name": "TRITON",
+      "normalized_name": "TRITON",
+      "aliases": [],
+      "confidence": 0.86,
+      "evidence_ids": [],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "family": "TRITON",
+      "sources": [
+        "title_derive"
+      ],
+      "entity_scope": "core",
+      "core_observation": true
+    },
+    {
+      "id": "ent_victim_Trico",
+      "type": "Victim",
+      "name": "Trico",
+      "normalized_name": "Trico",
+      "aliases": [],
+      "confidence": 0.88,
+      "evidence_ids": [
+        "ev_19",
+        "ev_21",
+        "ev_25",
+        "ev_32"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "sources": [
+        "llm",
+        "title_derive"
+      ],
+      "primary_evidence_id": "ev_19",
+      "supporting_evidence_ids": [
+        "ev_21",
+        "ev_32",
+        "ev_25"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "core",
+      "core_observation": true
+    }
+  ],
+  "observations": [
+    {
+      "id": "ent_malware_Trilog",
+      "type": "Malware",
+      "name": "Trilog",
+      "normalized_name": "Trilog",
+      "aliases": [
+        "trilog.exe"
+      ],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_40",
+        "ev_43",
+        "ev_44",
+        "ev_45"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "sources": [
+        "derived",
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_44",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "family_hints": [
+        "TRITON"
+      ],
+      "derived_from_file_id": "ent_file_trilog.exe",
+      "family": "Trilog",
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "demoted_candidate"
+    },
+    {
+      "id": "ent_ioc_sha256_08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949",
+      "type": "SHA256",
+      "name": "08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949",
+      "normalized_name": "08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42",
+      "type": "SHA256",
+      "name": "1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42",
+      "normalized_name": "1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_54",
+        "ev_55"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_54",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326",
+      "type": "SHA256",
+      "name": "2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326",
+      "normalized_name": "2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_56",
+        "ev_57"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_56",
+      "supporting_evidence_ids": [
+        "ev_57"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32",
+      "type": "SHA256",
+      "name": "5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32",
+      "normalized_name": "5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_58",
+        "ev_59"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_58",
+      "supporting_evidence_ids": [
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14",
+      "type": "SHA256",
+      "name": "5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14",
+      "normalized_name": "5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272",
+      "type": "SHA256",
+      "name": "758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272",
+      "normalized_name": "758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_60",
+        "ev_61"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_60",
+      "supporting_evidence_ids": [
+        "ev_61"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59",
+      "type": "SHA256",
+      "name": "bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59",
+      "normalized_name": "bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1",
+      "type": "SHA256",
+      "name": "c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1",
+      "normalized_name": "c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_62",
+        "ev_63"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_62",
+      "supporting_evidence_ids": [
+        "ev_63"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_sha256_e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230",
+      "type": "SHA256",
+      "name": "e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230",
+      "normalized_name": "e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230",
+      "ioc_type": "sha256",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0544d425c7555dc4e9d76b571f31f500",
+      "type": "MD5",
+      "name": "0544d425c7555dc4e9d76b571f31f500",
+      "normalized_name": "0544d425c7555dc4e9d76b571f31f500",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_48"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "0544d425c7555dc4e9d76b571f31f500",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_48",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_0face841f7b2953e7c29c064d6886523",
+      "type": "MD5",
+      "name": "0face841f7b2953e7c29c064d6886523",
+      "normalized_name": "0face841f7b2953e7c29c064d6886523",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_49"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "0face841f7b2953e7c29c064d6886523",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_49",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_27c69aa39024d21ea109cc9c9d944a04",
+      "type": "MD5",
+      "name": "27c69aa39024d21ea109cc9c9d944a04",
+      "normalized_name": "27c69aa39024d21ea109cc9c9d944a04",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_61"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "27c69aa39024d21ea109cc9c9d944a04",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_288166952f934146be172f6353e9a1f5",
+      "type": "MD5",
+      "name": "288166952f934146be172f6353e9a1f5",
+      "normalized_name": "288166952f934146be172f6353e9a1f5",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_55",
+        "ev_57"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "288166952f934146be172f6353e9a1f5",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [
+        "ev_55"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_437f135ba179959a580412e564d3107f",
+      "type": "MD5",
+      "name": "437f135ba179959a580412e564d3107f",
+      "normalized_name": "437f135ba179959a580412e564d3107f",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_47"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "437f135ba179959a580412e564d3107f",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_47",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_6c39c3f4a08d3d78f2eb973a94bd7718",
+      "type": "MD5",
+      "name": "6c39c3f4a08d3d78f2eb973a94bd7718",
+      "normalized_name": "6c39c3f4a08d3d78f2eb973a94bd7718",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_46"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "6c39c3f4a08d3d78f2eb973a94bd7718",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_46",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_8b675db417cc8b23f4c43f3de5c83438",
+      "type": "MD5",
+      "name": "8b675db417cc8b23f4c43f3de5c83438",
+      "normalized_name": "8b675db417cc8b23f4c43f3de5c83438",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_63"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "8b675db417cc8b23f4c43f3de5c83438",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_63",
+      "supporting_evidence_ids": [
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_e98f4f3505f05bf90e17554fbc97bba9",
+      "type": "MD5",
+      "name": "e98f4f3505f05bf90e17554fbc97bba9",
+      "normalized_name": "e98f4f3505f05bf90e17554fbc97bba9",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_57"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "e98f4f3505f05bf90e17554fbc97bba9",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_57",
+      "supporting_evidence_ids": [],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_ioc_md5_f6b3a73c8c87506acda430671360ce15",
+      "type": "MD5",
+      "name": "f6b3a73c8c87506acda430671360ce15",
+      "normalized_name": "f6b3a73c8c87506acda430671360ce15",
+      "aliases": [],
+      "confidence": 0.99,
+      "evidence_ids": [
+        "ev_59",
+        "ev_61"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "value": "f6b3a73c8c87506acda430671360ce15",
+      "ioc_type": "md5",
+      "sources": [
+        "rule"
+      ],
+      "primary_evidence_id": "ev_61",
+      "supporting_evidence_ids": [
+        "ev_59"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_hash"
+    },
+    {
+      "id": "ent_file_imain.bin",
+      "type": "File",
+      "name": "imain.bin",
+      "normalized_name": "imain.bin",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_28",
+        "ev_42",
+        "ev_43"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "file_name": "imain.bin",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_28",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "TRITON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_inject.bin",
+      "type": "File",
+      "name": "inject.bin",
+      "normalized_name": "inject.bin",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_23",
+        "ev_28",
+        "ev_42",
+        "ev_43"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "file_name": "inject.bin",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_42",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_28",
+        "ev_23"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "TRITON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_libraries.zip",
+      "type": "File",
+      "name": "libraries.zip",
+      "normalized_name": "libraries.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_1",
+        "ev_38"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "file_name": "libraries.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_38"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TRITON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_library.zip",
+      "type": "File",
+      "name": "library.zip",
+      "normalized_name": "library.zip",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_1",
+        "ev_39",
+        "ev_49"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "file_name": "library.zip",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_1",
+      "supporting_evidence_ids": [
+        "ev_39",
+        "ev_49"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "file_artifact",
+      "family_hints": [
+        "TRITON",
+        "SHA-256"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    },
+    {
+      "id": "ent_file_trilog.exe",
+      "type": "File",
+      "name": "trilog.exe",
+      "normalized_name": "trilog.exe",
+      "aliases": [],
+      "confidence": 0.94,
+      "evidence_ids": [
+        "ev_40",
+        "ev_43",
+        "ev_44",
+        "ev_45"
+      ],
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "file_name": "trilog.exe",
+      "sources": [
+        "llm",
+        "rule"
+      ],
+      "primary_evidence_id": "ev_40",
+      "supporting_evidence_ids": [
+        "ev_43",
+        "ev_44",
+        "ev_45"
+      ],
+      "needs_review": false,
+      "historical_aliases": [],
+      "related_families": [],
+      "file_role": "malicious_component",
+      "family_hints": [
+        "TRITON"
+      ],
+      "entity_scope": "supporting",
+      "core_observation": false,
+      "observation_kind": "supporting_file_artifact"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel_0001",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "type": "executes",
+      "head_id": "ent_file_trilog.exe",
+      "tail_id": "ent_file_inject.bin",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_28",
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "executes",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "execute_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0002",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "type": "loads",
+      "head_id": "ent_file_inject.bin",
+      "tail_id": "ent_file_imain.bin",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_23",
+        "ev_42",
+        "ev_52"
+      ],
+      "primary_evidence_id": "ev_23",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0003",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "type": "loads",
+      "head_id": "ent_file_trilog.exe",
+      "tail_id": "ent_file_inject.bin",
+      "head_type": "File",
+      "tail_type": "File",
+      "confidence": 0.89,
+      "evidence_ids": [
+        "ev_28",
+        "ev_43"
+      ],
+      "primary_evidence_id": "ev_28",
+      "direction": "head_to_tail",
+      "extraction_method": "event_frame",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "loads",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "carry_file_chain, load_event",
+        "schema_version": "v5.0-event-frame"
+      }
+    },
+    {
+      "id": "rel_0004",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "type": "targets",
+      "head_id": "ent_threatactor_TsHi",
+      "tail_id": "ent_victim_Trico",
+      "head_type": "ThreatActor",
+      "tail_type": "Victim",
+      "confidence": 0.86,
+      "evidence_ids": [
+        "ev_25"
+      ],
+      "primary_evidence_id": "ev_25",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "targets",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": null,
+        "notes": "evidence_target",
+        "schema_version": "v4.0-event-refiner"
+      }
+    },
+    {
+      "id": "rel_0005",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "type": "uses_malware",
+      "head_id": "ent_threatactor_TsHi",
+      "tail_id": "ent_malware_TRITON",
+      "head_type": "ThreatActor",
+      "tail_type": "Malware",
+      "confidence": 0.9,
+      "evidence_ids": [
+        "ev_34"
+      ],
+      "primary_evidence_id": "ev_34",
+      "direction": "head_to_tail",
+      "extraction_method": "event_refiner",
+      "status": "confirmed",
+      "attributes": {
+        "trigger": "uses_malware",
+        "negated": false,
+        "cross_sentence": false,
+        "stage": "execution",
+        "notes": "event_use; use_head",
+        "schema_version": "v4.0-event-refiner",
+        "evidence_span": "TsHi is the high-level interface created by the malware’s authors that allows the threat actor’s operators to implement attack scripts using the TRITON framework."
+      }
+    }
+  ],
+  "attack_chain": [
+    {
+      "step_id": "step_001",
+      "stage": "execution",
+      "relation_id": "rel_0001",
+      "type": "executes",
+      "summary": "trilog.exe executes inject.bin",
+      "evidence_ids": [
+        "ev_28",
+        "ev_43"
+      ]
+    },
+    {
+      "step_id": "step_002",
+      "stage": "execution",
+      "relation_id": "rel_0002",
+      "type": "loads",
+      "summary": "inject.bin loads imain.bin",
+      "evidence_ids": [
+        "ev_23",
+        "ev_42",
+        "ev_52"
+      ]
+    },
+    {
+      "step_id": "step_003",
+      "stage": "execution",
+      "relation_id": "rel_0003",
+      "type": "loads",
+      "summary": "trilog.exe loads inject.bin",
+      "evidence_ids": [
+        "ev_28",
+        "ev_43"
+      ]
+    },
+    {
+      "step_id": "step_004",
+      "stage": "execution",
+      "relation_id": "rel_0005",
+      "type": "uses_malware",
+      "summary": "TsHi uses_malware TRITON",
+      "evidence_ids": [
+        "ev_34"
+      ]
+    }
+  ],
+  "evidences": [
+    {
+      "id": "ev_1",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "body",
+        "sentence_id": "p1_s1"
+      },
+      "text": "Malware Family Main Modules Description TRITON trilog.exe Main executable leveraging libraries.zip library.zip Custom communication library for interaction with Triconex controllers.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_19",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 6,
+        "section": "body",
+        "sentence_id": "p6_s2"
+      },
+      "text": "The TRITON malware contained the capability to communicate with Triconex SIS controllers (e.g.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_21",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 7,
+        "section": "body",
+        "sentence_id": "p7_s1"
+      },
+      "text": "The malware was named to masquerade as the legitimate Triconex Trilog application.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_23",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s1"
+      },
+      "text": "Along with the executable, two binary files, inject.bin (malicious function code) and imain.bin (malicious control logic) , were deployed as the controller’s payload.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_25",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s3"
+      },
+      "text": "Trilog.exe took one option from the command line, which was a single IP address of the target Triconex device.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_28",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s6"
+      },
+      "text": "If the controller was in a running state, trilog.exe encoded the two payload files inject.bin and imain.bin and passed them to the communication libraries to be appended to the controller’s program memory and execution table.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_32",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s10"
+      },
+      "text": "Working with the asset owner, Mandiant ran trilog.exe in a lab environment with a valid Triconex controller and discovered a conditional check in the malware that prevented the payload binary from persisting in the environment.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_34",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "body",
+        "sentence_id": "p8_s12"
+      },
+      "text": "TsHi is the high-level interface created by the malware’s authors that allows the threat actor’s operators to implement attack scripts using the TRITON framework.",
+      "language": "en",
+      "confidence": 0.95,
+      "note": "narrative sentence evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_38",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r1"
+      },
+      "text": "TRITON trilog.exe Main executable leveraging libraries.zip",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_39",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 1,
+        "section": "rule",
+        "sentence_id": "p1_r2"
+      },
+      "text": "library.zip Custom communication library for interaction with Triconex controllers.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_40",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 6,
+        "section": "rule",
+        "sentence_id": "p6_r1"
+      },
+      "text": "The TRITON attack tool was built with a number of features, including the ability to read and write programs, read and write individual functions and query the state of the SIS controller. However, only some of these capabilities were leveraged in the trilog.exe sample (e.g. the attacker did not leverage all of TRITON’s extensive reconnaissance capabilities).",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_42",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r1"
+      },
+      "text": "developed Triconex attack framework for interacting with the Triconex controllers. Along with the executable, two binary files, inject.bin (malicious function code) and imain.bin (malicious control logic) , were deployed as the controller’s payload. These file names were hard coded in the Py2EXE compiled python script.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_43",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r2"
+      },
+      "text": "Trilog.exe took one option from the command line, which was a single IP address of the target Triconex device. It did not leverage the underlying TRITON library’s capability for Triconex device discovery, instead an instance of trilog.exe had to be invoked separately for each target controller in the environment. Once invoked, trilog.exe checked the status of the controller, then read the configuration information exposed by the TriStation protocol. If the controller was in a running state, trilog.exe encoded the two payload files inject.bin and imain.bin and passed them to the communication libraries to be appended to the controller’s program memory and execution table.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_44",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r3"
+      },
+      "text": "After payload files were inserted into memory on the Triconex controller, the script initiated a countdown, periodically checking the status of the controller. If an error was detected, the communication library’s method SafeAppendProgramMod attempted to reset the controller to the previous state using a TriStation protocol command. If this failed, trilog.exe attempted to write a small ‘dummy’ program to memory. We assess that this was an anti-forensics technique to hide the presence of the attacker code on the Triconex controller.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_45",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 8,
+        "section": "rule",
+        "sentence_id": "p8_r4"
+      },
+      "text": "Working with the asset owner, Mandiant ran trilog.exe in a lab environment with a valid Triconex controller and discovered a conditional check in the malware that prevented the payload binary from persisting in the environment. Mandiant confirmed that, after correcting patching the attack script to remove this check, the payload binary would persist in controller memory, and the controller would continue to run.",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_46",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r1"
+      },
+      "text": "trilog.exe MD5: 6c39c3f4a08d3d78f2eb973a94bd7718 SHA-256: e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_47",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r2"
+      },
+      "text": "imain.bin MD5: 437f135ba179959a580412e564d3107f SHA-256: 08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_48",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r3"
+      },
+      "text": "inject.bin MD5: 0544d425c7555dc4e9d76b571f31f500 SHA-256: 5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_49",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule",
+        "sentence_id": "p9_r4"
+      },
+      "text": "library.zip MD5: 0face841f7b2953e7c29c064d6886523 SHA-256: bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_52",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 10,
+        "section": "rule",
+        "sentence_id": "p10_r3"
+      },
+      "text": "$py_TRIDENT_01 = \"inject.bin\" ascii nocase wide $py_TRIDENT_02 = \"imain.bin\" ascii nocase wide",
+      "language": "en",
+      "confidence": 0.98,
+      "note": "rule or indicator snippet evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_54",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb54"
+      },
+      "text": "1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_55",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb55"
+      },
+      "text": "6 TsBase.pyc MD5: 288166952f934146be172f6353e9a1f5 SHA-256: 1a2ab4df156ccd685f795baee7df49f8e701f271d3e5676b507112e30ce03c42 TsHi.pyc MD5: 27c69aa39024d21ea109cc9c9d944a04 SHA-256:",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_56",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb56"
+      },
+      "text": "2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_57",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb57"
+      },
+      "text": "S_cnames.pyc MD5: e98f4f3505f05bf90e17554fbc97bba9 SHA-256: 2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326 TsBase.pyc MD5: 288166952f934146be172f6353e9a1f5 SHA-25",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_58",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb58"
+      },
+      "text": "5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_59",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb59"
+      },
+      "text": "72 TsLow.pyc MD5: f6b3a73c8c87506acda430671360ce15 SHA-256: 5c776a33568f4c16fee7140c249c0d2b1e0798a96c7a01bfd2d5684e58c9bb32 sh.pyc MD5: 8b675db417cc8b23f4c43f3de5c83438 SHA-256: c",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_60",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb60"
+      },
+      "text": "758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_61",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb61"
+      },
+      "text": "c42 TsHi.pyc MD5: 27c69aa39024d21ea109cc9c9d944a04 SHA-256: 758598370c3b84c6fbb452e3d7119f700f970ed566171e879d3cb41102154272 TsLow.pyc MD5: f6b3a73c8c87506acda430671360ce15 SHA-256",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_62",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb62"
+      },
+      "text": "c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    },
+    {
+      "id": "ev_63",
+      "evidence_type": "report_text",
+      "report_id": "Fireeye_ICS-Attack-Framework-TRITON(12-14-2017)",
+      "locator": {
+        "page": 9,
+        "section": "rule_backfill",
+        "sentence_id": "p9_rb63"
+      },
+      "text": "9bb32 sh.pyc MD5: 8b675db417cc8b23f4c43f3de5c83438 SHA-256: c96ed56bf7ee85a4398cc43a98b4db86d3da311c619f17c8540ae424ca6546e1 Detection 9/10",
+      "language": "en",
+      "confidence": 0.97,
+      "note": "supplemental exact-match evidence",
+      "source": "document"
+    }
+  ],
+  "structured_relation_blocks": [
+    {
+      "evidence_id": "ev_40",
+      "page": 6,
+      "candidate_entity_ids": [
+        "ent_malware_TRITON",
+        "ent_file_trilog.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_1",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_TRITON",
+        "ent_file_libraries.zip",
+        "ent_file_library.zip",
+        "ent_file_trilog.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_43",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_malware_TRITON",
+        "ent_file_imain.bin",
+        "ent_file_inject.bin",
+        "ent_file_trilog.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_34",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_threatactor_TsHi",
+        "ent_malware_TRITON"
+      ],
+      "rule_relation_count": 1,
+      "llm_relation_count": 1
+    },
+    {
+      "evidence_id": "ev_23",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_imain.bin",
+        "ent_file_inject.bin"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_42",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_imain.bin",
+        "ent_file_inject.bin"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_38",
+      "page": 1,
+      "candidate_entity_ids": [
+        "ent_malware_TRITON",
+        "ent_file_libraries.zip",
+        "ent_file_trilog.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_28",
+      "page": 8,
+      "candidate_entity_ids": [
+        "ent_file_imain.bin",
+        "ent_file_inject.bin",
+        "ent_file_trilog.exe"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    },
+    {
+      "evidence_id": "ev_52",
+      "page": 10,
+      "candidate_entity_ids": [
+        "ent_file_imain.bin",
+        "ent_file_inject.bin"
+      ],
+      "rule_relation_count": 0,
+      "llm_relation_count": 0
+    }
+  ]
+}
